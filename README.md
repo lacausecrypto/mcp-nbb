@@ -3,8 +3,8 @@
 <!-- mcp-name: io.github.lacausecrypto/mcp-nbb -->
 
 [![CI](https://github.com/lacausecrypto/mcp-nbb/actions/workflows/ci.yml/badge.svg)](https://github.com/lacausecrypto/mcp-nbb/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/mcp-nbb.svg)](https://pypi.org/project/mcp-nbb/)
-[![Python](https://img.shields.io/pypi/pyversions/mcp-nbb.svg)](https://pypi.org/project/mcp-nbb/)
+[![PyPI version](https://badge.fury.io/py/mcp-nbb.svg)](https://pypi.org/project/mcp-nbb/)
+[![Python versions](https://img.shields.io/pypi/pyversions/mcp-nbb?cacheSeconds=300)](https://pypi.org/project/mcp-nbb/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![MCP compatible](https://img.shields.io/badge/MCP-compatible-blue)](https://modelcontextprotocol.io)
 
