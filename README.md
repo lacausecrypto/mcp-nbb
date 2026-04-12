@@ -1,5 +1,7 @@
 # mcp-nbb
 
+<!-- mcp-name: io.github.lacausecrypto/mcp-nbb -->
+
 [![CI](https://github.com/lacausecrypto/mcp-nbb/actions/workflows/ci.yml/badge.svg)](https://github.com/lacausecrypto/mcp-nbb/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/mcp-nbb.svg)](https://pypi.org/project/mcp-nbb/)
 [![Python](https://img.shields.io/pypi/pyversions/mcp-nbb.svg)](https://pypi.org/project/mcp-nbb/)

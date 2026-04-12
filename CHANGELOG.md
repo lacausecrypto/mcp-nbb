@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.1.1] — 2026-04-12
+
+### Added
+- `<!-- mcp-name: io.github.lacausecrypto/mcp-nbb -->` marker in the README
+  so the official MCP Registry can verify PyPI package ownership.
+- `server.json` manifest at the repo root for Registry publication via
+  `mcp-publisher`.
+
 ## [0.1.0] — 2026-04-12
 
 Initial public release.
@@ -55,5 +63,6 @@ Initial public release.
 - **Community files**: `LICENSE` (MIT), `SECURITY.md`, `CONTRIBUTING.md`,
   `CODE_OF_CONDUCT.md`, issue and PR templates.
 
-[Unreleased]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/lacausecrypto/mcp-nbb/releases/tag/v0.1.0

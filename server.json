@@ -1,0 +1,40 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.lacausecrypto/mcp-nbb",
+  "description": "MCP server for the National Bank of Belgium SDMX statistical API (221 dataflows).",
+  "repository": {
+    "url": "https://github.com/lacausecrypto/mcp-nbb",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "mcp-nbb",
+      "version": "0.1.1",
+      "transport": { "type": "stdio" },
+      "runtimeHint": "uvx",
+      "environmentVariables": [
+        {
+          "name": "NBB_LOG_LEVEL",
+          "description": "Log level: DEBUG, INFO, WARNING, ERROR",
+          "isRequired": false,
+          "default": "INFO"
+        },
+        {
+          "name": "NBB_LOG_FORMAT",
+          "description": "Log format: 'json' or 'console'",
+          "isRequired": false,
+          "default": "json"
+        },
+        {
+          "name": "NBB_HTTP_CACHE_ENABLED",
+          "description": "Enable the persistent HTTP disk cache",
+          "isRequired": false,
+          "default": "true"
+        }
+      ]
+    }
+  ]
+}
