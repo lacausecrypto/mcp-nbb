@@ -169,7 +169,11 @@ class _DiskCacheTransport(httpx.AsyncBaseTransport):
             return await self._inner.handle_async_request(request)
 
         ttl = _ttl_for_path(request.url.path, self._structure_ttl, self._data_ttl)
-        if ttl is None:
+        # ``ttl <= 0`` means caching is disabled for this endpoint family. On
+        # Windows the timer resolution of ``time.time()`` can be coarse enough
+        # that ``(now - stored_at) > 0`` is False on a back-to-back call, which
+        # would otherwise serve a stale hit for ttl=0.
+        if ttl is None or ttl <= 0:
             return await self._inner.handle_async_request(request)
 
         key = self._key(request)

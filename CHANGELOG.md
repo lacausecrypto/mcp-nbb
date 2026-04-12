@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.1.2] — 2026-04-12
+
+### Fixed
+- Disk cache now completely bypasses lookup/store when the configured TTL
+  is `<= 0`, fixing a flaky `test_disk_cache_respects_ttl` on Windows
+  Python 3.11 where `time.time()` timer resolution could return equal
+  values on back-to-back calls.
+
 ## [0.1.1] — 2026-04-12
 
 ### Added
@@ -63,6 +71,7 @@ Initial public release.
 - **Community files**: `LICENSE` (MIT), `SECURITY.md`, `CONTRIBUTING.md`,
   `CODE_OF_CONDUCT.md`, issue and PR templates.
 
-[Unreleased]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/lacausecrypto/mcp-nbb/releases/tag/v0.1.0
