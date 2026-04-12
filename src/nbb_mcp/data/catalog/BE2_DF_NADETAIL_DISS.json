@@ -1,0 +1,392 @@
+{
+  "agency": "BE2",
+  "id": "DF_NADETAIL_DISS",
+  "version": "1.0",
+  "category": "national_accounts",
+  "is_final": true,
+  "names": {
+    "en": "Detailed composition and identity of GDP",
+    "fr": "Composition et répartition détaillées du PIB",
+    "nl": "Gedetailleerde samenstelling en verdeling van het BBP",
+    "de": "Detailed composition and identity of GDP"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ACCOUNT",
+      "position": 1,
+      "name": "ACCOUNT",
+      "codes": [
+        {
+          "id": "1",
+          "name": "Gross value added by industry"
+        },
+        {
+          "id": "2",
+          "name": "Main categories of expenditure of GDP"
+        },
+        {
+          "id": "3",
+          "name": "Main categories of gross domestic income"
+        },
+        {
+          "id": "4",
+          "name": "Disposable income, saving and net lending or borrowing"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "INDICATOR",
+      "position": 2,
+      "name": "INDICATOR",
+      "codes": [
+        {
+          "id": "B11",
+          "name": "p.m. Net- exports of goods and services"
+        },
+        {
+          "id": "B1G",
+          "name": "Added value (at basic prices) (B.1g)"
+        },
+        {
+          "id": "B1QG",
+          "name": "Gross domestic product at market prices (GDP)"
+        },
+        {
+          "id": "B1QG_1",
+          "name": "Gross domestic product at market prices (B.1g+D.21-D.31)"
+        },
+        {
+          "id": "B1QG_2",
+          "name": "Gross domestic product at market prices (P.3+P.5+P.6-P.7)"
+        },
+        {
+          "id": "B1QG_3",
+          "name": "Gross domestic product at market prices (D.1+B.2g+B.3g+D.2-D.3)"
+        },
+        {
+          "id": "B2G3G",
+          "name": "Gross operating surplus (B.2g) and mixed income (B.3g)"
+        },
+        {
+          "id": "B5QG",
+          "name": "Gross national income (GNI)"
+        },
+        {
+          "id": "B5QG_3",
+          "name": "Gross national income (GNI)"
+        },
+        {
+          "id": "B5QG_RL",
+          "name": "Real gross national income"
+        },
+        {
+          "id": "B5QN",
+          "name": "Net national income"
+        },
+        {
+          "id": "B5QN_RL",
+          "name": "Real net national income"
+        },
+        {
+          "id": "B6QN",
+          "name": "Net national disposable income"
+        },
+        {
+          "id": "B6QN_RL",
+          "name": "Real net national disposable income"
+        },
+        {
+          "id": "B8N",
+          "name": "Net national saving"
+        },
+        {
+          "id": "B9",
+          "name": "Net lending (+) or borrowing (-) of the total economy (B.9)"
+        },
+        {
+          "id": "D1",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "D1D4",
+          "name": "Balance of primary incomes receivable from / payable to the rest of the world"
+        },
+        {
+          "id": "D1D4_RL",
+          "name": "Balance of real primary incomes receivable from / payable to the rest of the world"
+        },
+        {
+          "id": "D1P_S2",
+          "name": "Compensation of employees paid to the rest of the world (D.1)"
+        },
+        {
+          "id": "D1R_S2",
+          "name": "Compensation of employees received from the rest of the world (D.1)"
+        },
+        {
+          "id": "D2",
+          "name": "Taxes on production and imports (D.2)"
+        },
+        {
+          "id": "D21",
+          "name": "Taxes on products (D.21)"
+        },
+        {
+          "id": "D2P_S2",
+          "name": "Taxes on production and imports paid to the rest of the world (D.2)"
+        },
+        {
+          "id": "D3",
+          "name": "Subsidies (D.3) (-)"
+        },
+        {
+          "id": "D31",
+          "name": "Subsidies on products (D.31) (-)"
+        },
+        {
+          "id": "D3R_S2",
+          "name": "Subsidies received from the rest of the world (D.3)"
+        },
+        {
+          "id": "D4P_S2",
+          "name": "Property income paid to the rest of the world (D.4)"
+        },
+        {
+          "id": "D4R_S2",
+          "name": "Property income received from the rest of the world (D.4)"
+        },
+        {
+          "id": "D5D7",
+          "name": "Balance of current transfers receivable from / payable to the rest of the world (D.5, D.6, D.7)"
+        },
+        {
+          "id": "D5D7_RL",
+          "name": "Balance of real current transfers receivable from / payable to the rest of the world"
+        },
+        {
+          "id": "D8",
+          "name": "Adjustment for the change in net equity of households in pension funds reserves (D.8)"
+        },
+        {
+          "id": "D9",
+          "name": "Balance of capital transfers receivable from / payable to the rest of the world (D.9)"
+        },
+        {
+          "id": "GDI_RL",
+          "name": "Real gross domestic income"
+        },
+        {
+          "id": "K1",
+          "name": "Consumption of fixed capital (K.1)"
+        },
+        {
+          "id": "K1_RL",
+          "name": "Consumption of fixed capital (K.1)"
+        },
+        {
+          "id": "K2",
+          "name": "Acquisitions less disposals of non-financial non-produced assets (K.2)"
+        },
+        {
+          "id": "P1",
+          "name": "Output (at basic prices) (P.1)"
+        },
+        {
+          "id": "P2",
+          "name": "Intermediate consumption (at purchasers' prices) (P.2)"
+        },
+        {
+          "id": "P3",
+          "name": "Final consumption expenditure (P.3)"
+        },
+        {
+          "id": "P3_4",
+          "name": "National final consumption"
+        },
+        {
+          "id": "P3_S13",
+          "name": "General government final consumption expenditure"
+        },
+        {
+          "id": "P3_S14",
+          "name": "Household final consumption expenditure"
+        },
+        {
+          "id": "P3_S15",
+          "name": "NPI final consumption expenditure"
+        },
+        {
+          "id": "P31_S13",
+          "name": "Individual consumption expenditure (P.31)"
+        },
+        {
+          "id": "P32_S13",
+          "name": "Collective consumption expenditure (P.32)"
+        },
+        {
+          "id": "P3EF_S14",
+          "name": "p.m. Household final consumption expenditure excluding FISIM"
+        },
+        {
+          "id": "P3P5",
+          "name": "Total of the national uses"
+        },
+        {
+          "id": "P3P6",
+          "name": "Total of the final uses"
+        },
+        {
+          "id": "P5",
+          "name": "Gross capital formation (P.5)"
+        },
+        {
+          "id": "P51",
+          "name": "Gross fixed capital formation (P.51)"
+        },
+        {
+          "id": "P51_4",
+          "name": "Gross fixed capital formation (P.51)"
+        },
+        {
+          "id": "P52",
+          "name": "Changes in inventories (P.52)"
+        },
+        {
+          "id": "P52_4",
+          "name": "Changes in inventories (P.52)"
+        },
+        {
+          "id": "P53",
+          "name": "Acquisitions less disposals of valuables (P.53)"
+        },
+        {
+          "id": "P53_4",
+          "name": "Acquisitions less disposals of valuables (P.53)"
+        },
+        {
+          "id": "P6_S2",
+          "name": "Exports of goods and services (P.6)"
+        },
+        {
+          "id": "P6EF",
+          "name": "p.m. Exports of goods and services (P.6), excluding FISIM"
+        },
+        {
+          "id": "P7_S2",
+          "name": "Imports of goods and services (P.7)"
+        },
+        {
+          "id": "P7EF",
+          "name": "p.m. Imports of goods and services (P.7), excluding FISIM"
+        },
+        {
+          "id": "TGL",
+          "name": "Trading gain or loss"
+        }
+      ],
+      "total_codes": 61,
+      "truncated": false
+    },
+    {
+      "id": "PRICES",
+      "position": 3,
+      "name": "PRICES",
+      "codes": [
+        {
+          "id": "CQ",
+          "name": "Contributions to the volume change - Q to Q"
+        },
+        {
+          "id": "CY",
+          "name": "Contributions to the volume change - Y to Y"
+        },
+        {
+          "id": "D",
+          "name": "Deflator"
+        },
+        {
+          "id": "L",
+          "name": "In volume: chain linked, in millions of euro"
+        },
+        {
+          "id": "LQ",
+          "name": "Chain linked - Q to Q percentage change (reference year 2020)"
+        },
+        {
+          "id": "LY",
+          "name": "Chain linked - Y to Y percentage change (reference year 2020)"
+        },
+        {
+          "id": "V",
+          "name": "Current prices in millions of euro"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ACCOUNT}.{INDICATOR}.{PRICES}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:47+00:00",
+  "schema_version": 1
+}

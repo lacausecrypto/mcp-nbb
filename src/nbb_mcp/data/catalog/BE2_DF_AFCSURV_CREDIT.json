@@ -1,0 +1,168 @@
+{
+  "agency": "BE2",
+  "id": "DF_AFCSURV_CREDIT",
+  "version": "1.0",
+  "category": "surveys",
+  "is_final": true,
+  "names": {
+    "en": "Quarterly survey on the assessment of financing conditions: Credit constraint perception",
+    "fr": "Enquête trimestrielle sur l'appréciation des conditions de crédit  : Perception de la contrainte de crédit",
+    "nl": "Kwartaalenquête naar de beoordeling van de kredietvoorwaarden  : Perceptie van de kredietbelemmering",
+    "de": "Quarterly survey on the assessment of financing conditions: Credit constraint perception"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "AFCSURV_SIZE",
+      "position": 1,
+      "name": "AFCSURV_SIZE",
+      "codes": [
+        {
+          "id": "A",
+          "name": "All enterprises"
+        },
+        {
+          "id": "S",
+          "name": "Small (1 - 49 workers)"
+        },
+        {
+          "id": "M",
+          "name": "Medium (50 - 249 workers)"
+        },
+        {
+          "id": "L",
+          "name": "Large (250 - 499 workers)"
+        },
+        {
+          "id": "V",
+          "name": "Very large (500 and more workers)"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "AFCSURV_BRANCH",
+      "position": 2,
+      "name": "AFCSURV_BRANCH",
+      "codes": [
+        {
+          "id": "T",
+          "name": "Total"
+        },
+        {
+          "id": "M",
+          "name": "Manufacturing industry"
+        },
+        {
+          "id": "S",
+          "name": "Business-related services"
+        },
+        {
+          "id": "C",
+          "name": "Building industry"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "AFCSURV_INDIC",
+      "position": 3,
+      "name": "AFCSURV_INDIC",
+      "codes": [
+        {
+          "id": "CCP",
+          "name": "Credit constraint perception"
+        },
+        {
+          "id": "GCO",
+          "name": "General conditions at the moment of the survey"
+        },
+        {
+          "id": "MPQ",
+          "name": "Movements during the quarter preceding the survey"
+        },
+        {
+          "id": "M_I",
+          "name": "Interest rates"
+        },
+        {
+          "id": "M_C",
+          "name": "Costs"
+        },
+        {
+          "id": "M_V",
+          "name": "Volume of credit"
+        },
+        {
+          "id": "M_G",
+          "name": "Guarantees required"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{AFCSURV_SIZE}.{AFCSURV_BRANCH}.{AFCSURV_INDIC}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:22+00:00",
+  "schema_version": 1
+}

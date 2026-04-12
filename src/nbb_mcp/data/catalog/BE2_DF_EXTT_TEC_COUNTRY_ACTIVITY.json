@@ -1,0 +1,4327 @@
+{
+  "agency": "BE2",
+  "id": "DF_EXTT_TEC_COUNTRY_ACTIVITY",
+  "version": "1.0",
+  "category": "foreign_trade",
+  "is_final": true,
+  "names": {
+    "en": "Trade by enterprise characteristics: Trade by partner country and activity",
+    "fr": "Commerce par caractéristiques de l'entreprise: Commerce par pays partenaire et activité",
+    "nl": "Handel volgens kenmerken van de onderneming: Handel per partnerland en activiteit",
+    "de": "Trade by enterprise characteristics: Trade by partner country and activity"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "TABLE_IDENTIFIER",
+      "position": 0,
+      "name": "TABLE_IDENTIFIER",
+      "codes": [
+        {
+          "id": "T6",
+          "name": "Table 6"
+        },
+        {
+          "id": "T7",
+          "name": "Table 7"
+        },
+        {
+          "id": "T4",
+          "name": "Table 4"
+        },
+        {
+          "id": "T10",
+          "name": "Table 10"
+        },
+        {
+          "id": "T5",
+          "name": "Table 5"
+        },
+        {
+          "id": "T11",
+          "name": "Table 11"
+        },
+        {
+          "id": "T8",
+          "name": "Table 8"
+        },
+        {
+          "id": "T9",
+          "name": "Table 9"
+        },
+        {
+          "id": "T2BIS",
+          "name": "Table 2BIS"
+        },
+        {
+          "id": "T1",
+          "name": "Table 1"
+        },
+        {
+          "id": "T0",
+          "name": "Table 0"
+        },
+        {
+          "id": "T3",
+          "name": "Table 3"
+        },
+        {
+          "id": "T2",
+          "name": "Table 2"
+        },
+        {
+          "id": "B1",
+          "name": "Breakdown 1"
+        },
+        {
+          "id": "B2",
+          "name": "Breakdown 2"
+        },
+        {
+          "id": "B3",
+          "name": "Breakdown 3"
+        },
+        {
+          "id": "B4",
+          "name": "Breakdown 4"
+        },
+        {
+          "id": "B5",
+          "name": "Breakdown 5"
+        },
+        {
+          "id": "B6",
+          "name": "Breakdown 6"
+        },
+        {
+          "id": "B7",
+          "name": "Breakdown 7"
+        },
+        {
+          "id": "B8",
+          "name": "Breakdown 8"
+        },
+        {
+          "id": "B9",
+          "name": "Breakdown 9"
+        },
+        {
+          "id": "B10",
+          "name": "Breakdown 10"
+        },
+        {
+          "id": "B11",
+          "name": "Breakdown 11"
+        }
+      ],
+      "total_codes": 24,
+      "truncated": false
+    },
+    {
+      "id": "FREQ",
+      "position": 1,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "REF_AREA",
+      "position": 2,
+      "name": "REF_AREA",
+      "codes": [
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        },
+        {
+          "id": "ZW",
+          "name": "Zimbabwe"
+        },
+        {
+          "id": "ZM",
+          "name": "Zambia"
+        },
+        {
+          "id": "ZA",
+          "name": "South Africa"
+        },
+        {
+          "id": "Z1",
+          "name": "Intra-euro area  (changing composition)"
+        },
+        {
+          "id": "YE",
+          "name": "Yemen"
+        },
+        {
+          "id": "XU",
+          "name": "United Kingdom (excluding Northern Ireland)"
+        },
+        {
+          "id": "XS",
+          "name": "Serbia"
+        },
+        {
+          "id": "XL",
+          "name": "Melilla"
+        },
+        {
+          "id": "XK",
+          "name": "Kosovo"
+        },
+        {
+          "id": "XI",
+          "name": "United Kingdom (Northern Ireland)"
+        },
+        {
+          "id": "XC",
+          "name": "Ceuta"
+        },
+        {
+          "id": "WS",
+          "name": "Samoa"
+        },
+        {
+          "id": "WF",
+          "name": "Wallis and Futuna"
+        },
+        {
+          "id": "W1",
+          "name": "Rest of the World"
+        },
+        {
+          "id": "VU",
+          "name": "Vanuatu"
+        },
+        {
+          "id": "VN",
+          "name": "Viet Nam"
+        },
+        {
+          "id": "VI",
+          "name": "Virgin Islands, United States"
+        },
+        {
+          "id": "VG",
+          "name": "Virgin Islands, British"
+        },
+        {
+          "id": "VE",
+          "name": "Venezuela, Bolivarian Republic of"
+        },
+        {
+          "id": "VC",
+          "name": "St Vincent and the Grenadines"
+        },
+        {
+          "id": "VA",
+          "name": "Holy See"
+        },
+        {
+          "id": "UZ",
+          "name": "Uzbekistan"
+        },
+        {
+          "id": "UY",
+          "name": "Uruguay"
+        },
+        {
+          "id": "US",
+          "name": "United States"
+        },
+        {
+          "id": "UM",
+          "name": "United States Minor Outlying Islands"
+        },
+        {
+          "id": "UG",
+          "name": "Uganda"
+        },
+        {
+          "id": "UA",
+          "name": "Ukraine"
+        },
+        {
+          "id": "U4",
+          "name": "Extra Euro area  (changing composition)"
+        },
+        {
+          "id": "TZ",
+          "name": "Tanzania, United Republic of"
+        },
+        {
+          "id": "TW",
+          "name": "Taiwan"
+        },
+        {
+          "id": "TV",
+          "name": "Tuvalu"
+        },
+        {
+          "id": "TT",
+          "name": "Trinidad and Tobago"
+        },
+        {
+          "id": "TR",
+          "name": "Turkey"
+        },
+        {
+          "id": "TO",
+          "name": "Tonga"
+        },
+        {
+          "id": "TN",
+          "name": "Tunisia"
+        },
+        {
+          "id": "TM",
+          "name": "Turkmenistan"
+        },
+        {
+          "id": "TL",
+          "name": "Timor-Leste"
+        },
+        {
+          "id": "TK",
+          "name": "Tokelau"
+        },
+        {
+          "id": "TJ",
+          "name": "Tajikistan"
+        },
+        {
+          "id": "TH",
+          "name": "Thailand"
+        },
+        {
+          "id": "TG",
+          "name": "Togo"
+        },
+        {
+          "id": "TF",
+          "name": "French Southern Territories"
+        },
+        {
+          "id": "TD",
+          "name": "Chad"
+        },
+        {
+          "id": "TC",
+          "name": "Turks and Caicos Islands"
+        },
+        {
+          "id": "SZ",
+          "name": "Eswatini"
+        },
+        {
+          "id": "SY",
+          "name": "Syrian Arab Republic"
+        },
+        {
+          "id": "SX",
+          "name": "Sint Maarten (Dutch part)"
+        },
+        {
+          "id": "SV",
+          "name": "El Salvador"
+        },
+        {
+          "id": "ST",
+          "name": "Sao Tome and Principe"
+        },
+        {
+          "id": "SS",
+          "name": "South Sudan"
+        },
+        {
+          "id": "SR",
+          "name": "Suriname"
+        },
+        {
+          "id": "SO",
+          "name": "Somalia"
+        },
+        {
+          "id": "SN",
+          "name": "Senegal"
+        },
+        {
+          "id": "SM",
+          "name": "San Marino"
+        },
+        {
+          "id": "SL",
+          "name": "Sierra Leone"
+        },
+        {
+          "id": "SK",
+          "name": "Slovakia"
+        },
+        {
+          "id": "SI",
+          "name": "Slovenia"
+        },
+        {
+          "id": "SH",
+          "name": "Saint Helena, Ascension and Tristan da Cunha"
+        },
+        {
+          "id": "SG",
+          "name": "Singapore"
+        },
+        {
+          "id": "SE",
+          "name": "Sweden"
+        },
+        {
+          "id": "SD",
+          "name": "Sudan"
+        },
+        {
+          "id": "SC",
+          "name": "Seychelles"
+        },
+        {
+          "id": "SB",
+          "name": "Solomon Islands"
+        },
+        {
+          "id": "SA",
+          "name": "Saudi Arabia"
+        },
+        {
+          "id": "S6",
+          "name": "Other Asian countries"
+        },
+        {
+          "id": "S3",
+          "name": "Near and Middle East countries"
+        },
+        {
+          "id": "RW",
+          "name": "Rwanda"
+        },
+        {
+          "id": "RU",
+          "name": "Russian Federation"
+        },
+        {
+          "id": "RO",
+          "name": "Romania"
+        },
+        {
+          "id": "QZ",
+          "name": "Countries and territories not specified for commercial or military reasons in the framework of extra-Union trade"
+        },
+        {
+          "id": "QY",
+          "name": "Countries and territories not specified for commercial or military reasons in the framework of intra-Union trade"
+        },
+        {
+          "id": "QX",
+          "name": "Countries and territories not specified for commercial or military reasons"
+        },
+        {
+          "id": "QW",
+          "name": "Countries and territories not specified within the framework of extra-Union trade"
+        },
+        {
+          "id": "QV",
+          "name": "Countries and territories not specified within the framework of intra-Union trade"
+        },
+        {
+          "id": "QU",
+          "name": "Countries and territories not specified"
+        },
+        {
+          "id": "QS",
+          "name": "Stores and provisions within the framework of extra-Union trade"
+        },
+        {
+          "id": "QR",
+          "name": "Stores and provisions within the framework of intra-Union trade"
+        },
+        {
+          "id": "QQ",
+          "name": "Stores and provisions"
+        },
+        {
+          "id": "QP",
+          "name": "High seas"
+        },
+        {
+          "id": "QA",
+          "name": "Qatar"
+        },
+        {
+          "id": "PY",
+          "name": "Paraguay"
+        },
+        {
+          "id": "PW",
+          "name": "Palau"
+        },
+        {
+          "id": "PT",
+          "name": "Portugal"
+        },
+        {
+          "id": "PS",
+          "name": "Occupied Palestinian Territory"
+        },
+        {
+          "id": "PN",
+          "name": "Pitcairn"
+        },
+        {
+          "id": "PM",
+          "name": "St Pierre and Miquelon"
+        },
+        {
+          "id": "PL",
+          "name": "Poland"
+        },
+        {
+          "id": "PK",
+          "name": "Pakistan"
+        },
+        {
+          "id": "PH",
+          "name": "Philippines"
+        },
+        {
+          "id": "PG",
+          "name": "Papua New Guinea"
+        },
+        {
+          "id": "PF",
+          "name": "French Polynesia"
+        },
+        {
+          "id": "PE",
+          "name": "Peru"
+        },
+        {
+          "id": "PA",
+          "name": "Panama"
+        },
+        {
+          "id": "OM",
+          "name": "Oman"
+        },
+        {
+          "id": "O2",
+          "name": "Oceania and Polar Regions"
+        },
+        {
+          "id": "NZ",
+          "name": "New Zealand"
+        },
+        {
+          "id": "NU",
+          "name": "Niue"
+        },
+        {
+          "id": "NR",
+          "name": "Nauru"
+        },
+        {
+          "id": "NP",
+          "name": "Nepal"
+        },
+        {
+          "id": "NO",
+          "name": "Norway"
+        },
+        {
+          "id": "NL",
+          "name": "Netherlands"
+        },
+        {
+          "id": "NI",
+          "name": "Nicaragua"
+        },
+        {
+          "id": "NG",
+          "name": "Nigeria"
+        },
+        {
+          "id": "NF",
+          "name": "Norfolk Island"
+        },
+        {
+          "id": "NE",
+          "name": "Niger"
+        },
+        {
+          "id": "NC",
+          "name": "New Caledonia"
+        },
+        {
+          "id": "NA",
+          "name": "Namibia"
+        },
+        {
+          "id": "MZ",
+          "name": "Mozambique"
+        },
+        {
+          "id": "MY",
+          "name": "Malaysia"
+        },
+        {
+          "id": "MX",
+          "name": "Mexico"
+        },
+        {
+          "id": "MW",
+          "name": "Malawi"
+        },
+        {
+          "id": "MV",
+          "name": "Maldives"
+        },
+        {
+          "id": "MU",
+          "name": "Mauritius"
+        },
+        {
+          "id": "MT",
+          "name": "Malta"
+        },
+        {
+          "id": "MS",
+          "name": "Montserrat"
+        },
+        {
+          "id": "MR",
+          "name": "Mauritania"
+        },
+        {
+          "id": "MP",
+          "name": "Northern Mariana Islands"
+        },
+        {
+          "id": "MO",
+          "name": "Macao"
+        },
+        {
+          "id": "MN",
+          "name": "Mongolia"
+        },
+        {
+          "id": "MM",
+          "name": "Myanmar"
+        },
+        {
+          "id": "ML",
+          "name": "Mali"
+        },
+        {
+          "id": "MK",
+          "name": "North Macedonia"
+        },
+        {
+          "id": "MH",
+          "name": "Marshall Islands"
+        },
+        {
+          "id": "MG",
+          "name": "Madagascar"
+        },
+        {
+          "id": "ME",
+          "name": "Montenegro"
+        },
+        {
+          "id": "MD",
+          "name": "Moldova, Republic of"
+        },
+        {
+          "id": "MA",
+          "name": "Morocco"
+        },
+        {
+          "id": "LY",
+          "name": "Libya"
+        },
+        {
+          "id": "LV",
+          "name": "Latvia"
+        },
+        {
+          "id": "LU",
+          "name": "Luxembourg"
+        },
+        {
+          "id": "LT",
+          "name": "Lithuania"
+        },
+        {
+          "id": "LS",
+          "name": "Lesotho"
+        },
+        {
+          "id": "LR",
+          "name": "Liberia"
+        },
+        {
+          "id": "LK",
+          "name": "Sri Lanka"
+        },
+        {
+          "id": "LI",
+          "name": "Liechtenstein"
+        },
+        {
+          "id": "LC",
+          "name": "St Lucia"
+        },
+        {
+          "id": "LB",
+          "name": "Lebanon"
+        },
+        {
+          "id": "LA",
+          "name": "Lao People's Democratic Republic"
+        },
+        {
+          "id": "KZ",
+          "name": "Kazakhstan"
+        },
+        {
+          "id": "KY",
+          "name": "Cayman Islands"
+        },
+        {
+          "id": "KW",
+          "name": "Kuwait"
+        },
+        {
+          "id": "KR",
+          "name": "Korea, Republic of"
+        },
+        {
+          "id": "KP",
+          "name": "Korea, Democratic People's Republic of"
+        },
+        {
+          "id": "KN",
+          "name": "St Kitts and Nevis"
+        },
+        {
+          "id": "KM",
+          "name": "Comoros"
+        },
+        {
+          "id": "KI",
+          "name": "Kiribati"
+        },
+        {
+          "id": "KH",
+          "name": "Cambodia"
+        },
+        {
+          "id": "KG",
+          "name": "Kyrgyzstan"
+        },
+        {
+          "id": "KE",
+          "name": "Kenya"
+        },
+        {
+          "id": "JP",
+          "name": "Japan"
+        },
+        {
+          "id": "JO",
+          "name": "Jordan"
+        },
+        {
+          "id": "JM",
+          "name": "Jamaica"
+        },
+        {
+          "id": "IT",
+          "name": "Italy"
+        },
+        {
+          "id": "IS",
+          "name": "Iceland"
+        },
+        {
+          "id": "IR",
+          "name": "Iran, Islamic Republic of"
+        },
+        {
+          "id": "IQ",
+          "name": "Iraq"
+        },
+        {
+          "id": "IO",
+          "name": "British Indian Ocean Territory"
+        },
+        {
+          "id": "IN",
+          "name": "India"
+        },
+        {
+          "id": "IL",
+          "name": "Israel"
+        },
+        {
+          "id": "IE",
+          "name": "Ireland"
+        },
+        {
+          "id": "ID",
+          "name": "Indonesia"
+        },
+        {
+          "id": "HU",
+          "name": "Hungary"
+        },
+        {
+          "id": "HT",
+          "name": "Haiti"
+        },
+        {
+          "id": "HR",
+          "name": "Croatia"
+        },
+        {
+          "id": "HN",
+          "name": "Honduras"
+        },
+        {
+          "id": "HM",
+          "name": "Heard Island and McDonald Islands"
+        },
+        {
+          "id": "HK",
+          "name": "Hong Kong"
+        },
+        {
+          "id": "GY",
+          "name": "Guyana"
+        },
+        {
+          "id": "GW",
+          "name": "Guinea-Bissau"
+        },
+        {
+          "id": "GU",
+          "name": "Guam"
+        },
+        {
+          "id": "GT",
+          "name": "Guatemala"
+        },
+        {
+          "id": "GS",
+          "name": "South Georgia and South Sandwich Islands"
+        },
+        {
+          "id": "GR",
+          "name": "Greece"
+        },
+        {
+          "id": "GQ",
+          "name": "Equatorial Guinea"
+        },
+        {
+          "id": "GN",
+          "name": "Guinea"
+        },
+        {
+          "id": "GM",
+          "name": "Gambia"
+        },
+        {
+          "id": "GL",
+          "name": "Greenland"
+        },
+        {
+          "id": "GI",
+          "name": "Gibraltar"
+        },
+        {
+          "id": "GH",
+          "name": "Ghana"
+        },
+        {
+          "id": "GE",
+          "name": "Georgia"
+        },
+        {
+          "id": "GD",
+          "name": "Grenada"
+        },
+        {
+          "id": "GB",
+          "name": "United Kingdom"
+        },
+        {
+          "id": "GA",
+          "name": "Gabon"
+        },
+        {
+          "id": "G4",
+          "name": "Other European countries (not EU)"
+        },
+        {
+          "id": "FR",
+          "name": "France"
+        },
+        {
+          "id": "FO",
+          "name": "Faroe Islands"
+        },
+        {
+          "id": "FM",
+          "name": "Micronesia, Federated States of"
+        },
+        {
+          "id": "FK",
+          "name": "Falkland Islands"
+        },
+        {
+          "id": "FJ",
+          "name": "Fiji"
+        },
+        {
+          "id": "FI",
+          "name": "Finland"
+        },
+        {
+          "id": "F4",
+          "name": "North Africa"
+        },
+        {
+          "id": "F1XF4",
+          "name": "Africa excluding North Africa"
+        },
+        {
+          "id": "ET",
+          "name": "Ethiopia"
+        },
+        {
+          "id": "ES",
+          "name": "Spain"
+        },
+        {
+          "id": "ER",
+          "name": "Eritrea"
+        },
+        {
+          "id": "EH",
+          "name": "Western Sahara"
+        },
+        {
+          "id": "EG",
+          "name": "Egypt"
+        },
+        {
+          "id": "EE",
+          "name": "Estonia"
+        }
+      ],
+      "total_codes": 269,
+      "truncated": true
+    },
+    {
+      "id": "COUNTERPART_AREA",
+      "position": 3,
+      "name": "COUNTERPART_AREA",
+      "codes": [
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        },
+        {
+          "id": "ZW",
+          "name": "Zimbabwe"
+        },
+        {
+          "id": "ZM",
+          "name": "Zambia"
+        },
+        {
+          "id": "ZA",
+          "name": "South Africa"
+        },
+        {
+          "id": "Z1",
+          "name": "Intra-euro area  (changing composition)"
+        },
+        {
+          "id": "YE",
+          "name": "Yemen"
+        },
+        {
+          "id": "XU",
+          "name": "United Kingdom (excluding Northern Ireland)"
+        },
+        {
+          "id": "XS",
+          "name": "Serbia"
+        },
+        {
+          "id": "XL",
+          "name": "Melilla"
+        },
+        {
+          "id": "XK",
+          "name": "Kosovo"
+        },
+        {
+          "id": "XI",
+          "name": "United Kingdom (Northern Ireland)"
+        },
+        {
+          "id": "XC",
+          "name": "Ceuta"
+        },
+        {
+          "id": "WS",
+          "name": "Samoa"
+        },
+        {
+          "id": "WF",
+          "name": "Wallis and Futuna"
+        },
+        {
+          "id": "W1",
+          "name": "Rest of the World"
+        },
+        {
+          "id": "VU",
+          "name": "Vanuatu"
+        },
+        {
+          "id": "VN",
+          "name": "Viet Nam"
+        },
+        {
+          "id": "VI",
+          "name": "Virgin Islands, United States"
+        },
+        {
+          "id": "VG",
+          "name": "Virgin Islands, British"
+        },
+        {
+          "id": "VE",
+          "name": "Venezuela, Bolivarian Republic of"
+        },
+        {
+          "id": "VC",
+          "name": "St Vincent and the Grenadines"
+        },
+        {
+          "id": "VA",
+          "name": "Holy See"
+        },
+        {
+          "id": "UZ",
+          "name": "Uzbekistan"
+        },
+        {
+          "id": "UY",
+          "name": "Uruguay"
+        },
+        {
+          "id": "US",
+          "name": "United States"
+        },
+        {
+          "id": "UM",
+          "name": "United States Minor Outlying Islands"
+        },
+        {
+          "id": "UG",
+          "name": "Uganda"
+        },
+        {
+          "id": "UA",
+          "name": "Ukraine"
+        },
+        {
+          "id": "U4",
+          "name": "Extra Euro area  (changing composition)"
+        },
+        {
+          "id": "TZ",
+          "name": "Tanzania, United Republic of"
+        },
+        {
+          "id": "TW",
+          "name": "Taiwan"
+        },
+        {
+          "id": "TV",
+          "name": "Tuvalu"
+        },
+        {
+          "id": "TT",
+          "name": "Trinidad and Tobago"
+        },
+        {
+          "id": "TR",
+          "name": "Turkey"
+        },
+        {
+          "id": "TO",
+          "name": "Tonga"
+        },
+        {
+          "id": "TN",
+          "name": "Tunisia"
+        },
+        {
+          "id": "TM",
+          "name": "Turkmenistan"
+        },
+        {
+          "id": "TL",
+          "name": "Timor-Leste"
+        },
+        {
+          "id": "TK",
+          "name": "Tokelau"
+        },
+        {
+          "id": "TJ",
+          "name": "Tajikistan"
+        },
+        {
+          "id": "TH",
+          "name": "Thailand"
+        },
+        {
+          "id": "TG",
+          "name": "Togo"
+        },
+        {
+          "id": "TF",
+          "name": "French Southern Territories"
+        },
+        {
+          "id": "TD",
+          "name": "Chad"
+        },
+        {
+          "id": "TC",
+          "name": "Turks and Caicos Islands"
+        },
+        {
+          "id": "SZ",
+          "name": "Eswatini"
+        },
+        {
+          "id": "SY",
+          "name": "Syrian Arab Republic"
+        },
+        {
+          "id": "SX",
+          "name": "Sint Maarten (Dutch part)"
+        },
+        {
+          "id": "SV",
+          "name": "El Salvador"
+        },
+        {
+          "id": "ST",
+          "name": "Sao Tome and Principe"
+        },
+        {
+          "id": "SS",
+          "name": "South Sudan"
+        },
+        {
+          "id": "SR",
+          "name": "Suriname"
+        },
+        {
+          "id": "SO",
+          "name": "Somalia"
+        },
+        {
+          "id": "SN",
+          "name": "Senegal"
+        },
+        {
+          "id": "SM",
+          "name": "San Marino"
+        },
+        {
+          "id": "SL",
+          "name": "Sierra Leone"
+        },
+        {
+          "id": "SK",
+          "name": "Slovakia"
+        },
+        {
+          "id": "SI",
+          "name": "Slovenia"
+        },
+        {
+          "id": "SH",
+          "name": "Saint Helena, Ascension and Tristan da Cunha"
+        },
+        {
+          "id": "SG",
+          "name": "Singapore"
+        },
+        {
+          "id": "SE",
+          "name": "Sweden"
+        },
+        {
+          "id": "SD",
+          "name": "Sudan"
+        },
+        {
+          "id": "SC",
+          "name": "Seychelles"
+        },
+        {
+          "id": "SB",
+          "name": "Solomon Islands"
+        },
+        {
+          "id": "SA",
+          "name": "Saudi Arabia"
+        },
+        {
+          "id": "S6",
+          "name": "Other Asian countries"
+        },
+        {
+          "id": "S3",
+          "name": "Near and Middle East countries"
+        },
+        {
+          "id": "RW",
+          "name": "Rwanda"
+        },
+        {
+          "id": "RU",
+          "name": "Russian Federation"
+        },
+        {
+          "id": "RO",
+          "name": "Romania"
+        },
+        {
+          "id": "QZ",
+          "name": "Countries and territories not specified for commercial or military reasons in the framework of extra-Union trade"
+        },
+        {
+          "id": "QY",
+          "name": "Countries and territories not specified for commercial or military reasons in the framework of intra-Union trade"
+        },
+        {
+          "id": "QX",
+          "name": "Countries and territories not specified for commercial or military reasons"
+        },
+        {
+          "id": "QW",
+          "name": "Countries and territories not specified within the framework of extra-Union trade"
+        },
+        {
+          "id": "QV",
+          "name": "Countries and territories not specified within the framework of intra-Union trade"
+        },
+        {
+          "id": "QU",
+          "name": "Countries and territories not specified"
+        },
+        {
+          "id": "QS",
+          "name": "Stores and provisions within the framework of extra-Union trade"
+        },
+        {
+          "id": "QR",
+          "name": "Stores and provisions within the framework of intra-Union trade"
+        },
+        {
+          "id": "QQ",
+          "name": "Stores and provisions"
+        },
+        {
+          "id": "QP",
+          "name": "High seas"
+        },
+        {
+          "id": "QA",
+          "name": "Qatar"
+        },
+        {
+          "id": "PY",
+          "name": "Paraguay"
+        },
+        {
+          "id": "PW",
+          "name": "Palau"
+        },
+        {
+          "id": "PT",
+          "name": "Portugal"
+        },
+        {
+          "id": "PS",
+          "name": "Occupied Palestinian Territory"
+        },
+        {
+          "id": "PN",
+          "name": "Pitcairn"
+        },
+        {
+          "id": "PM",
+          "name": "St Pierre and Miquelon"
+        },
+        {
+          "id": "PL",
+          "name": "Poland"
+        },
+        {
+          "id": "PK",
+          "name": "Pakistan"
+        },
+        {
+          "id": "PH",
+          "name": "Philippines"
+        },
+        {
+          "id": "PG",
+          "name": "Papua New Guinea"
+        },
+        {
+          "id": "PF",
+          "name": "French Polynesia"
+        },
+        {
+          "id": "PE",
+          "name": "Peru"
+        },
+        {
+          "id": "PA",
+          "name": "Panama"
+        },
+        {
+          "id": "OM",
+          "name": "Oman"
+        },
+        {
+          "id": "O2",
+          "name": "Oceania and Polar Regions"
+        },
+        {
+          "id": "NZ",
+          "name": "New Zealand"
+        },
+        {
+          "id": "NU",
+          "name": "Niue"
+        },
+        {
+          "id": "NR",
+          "name": "Nauru"
+        },
+        {
+          "id": "NP",
+          "name": "Nepal"
+        },
+        {
+          "id": "NO",
+          "name": "Norway"
+        },
+        {
+          "id": "NL",
+          "name": "Netherlands"
+        },
+        {
+          "id": "NI",
+          "name": "Nicaragua"
+        },
+        {
+          "id": "NG",
+          "name": "Nigeria"
+        },
+        {
+          "id": "NF",
+          "name": "Norfolk Island"
+        },
+        {
+          "id": "NE",
+          "name": "Niger"
+        },
+        {
+          "id": "NC",
+          "name": "New Caledonia"
+        },
+        {
+          "id": "NA",
+          "name": "Namibia"
+        },
+        {
+          "id": "MZ",
+          "name": "Mozambique"
+        },
+        {
+          "id": "MY",
+          "name": "Malaysia"
+        },
+        {
+          "id": "MX",
+          "name": "Mexico"
+        },
+        {
+          "id": "MW",
+          "name": "Malawi"
+        },
+        {
+          "id": "MV",
+          "name": "Maldives"
+        },
+        {
+          "id": "MU",
+          "name": "Mauritius"
+        },
+        {
+          "id": "MT",
+          "name": "Malta"
+        },
+        {
+          "id": "MS",
+          "name": "Montserrat"
+        },
+        {
+          "id": "MR",
+          "name": "Mauritania"
+        },
+        {
+          "id": "MP",
+          "name": "Northern Mariana Islands"
+        },
+        {
+          "id": "MO",
+          "name": "Macao"
+        },
+        {
+          "id": "MN",
+          "name": "Mongolia"
+        },
+        {
+          "id": "MM",
+          "name": "Myanmar"
+        },
+        {
+          "id": "ML",
+          "name": "Mali"
+        },
+        {
+          "id": "MK",
+          "name": "North Macedonia"
+        },
+        {
+          "id": "MH",
+          "name": "Marshall Islands"
+        },
+        {
+          "id": "MG",
+          "name": "Madagascar"
+        },
+        {
+          "id": "ME",
+          "name": "Montenegro"
+        },
+        {
+          "id": "MD",
+          "name": "Moldova, Republic of"
+        },
+        {
+          "id": "MA",
+          "name": "Morocco"
+        },
+        {
+          "id": "LY",
+          "name": "Libya"
+        },
+        {
+          "id": "LV",
+          "name": "Latvia"
+        },
+        {
+          "id": "LU",
+          "name": "Luxembourg"
+        },
+        {
+          "id": "LT",
+          "name": "Lithuania"
+        },
+        {
+          "id": "LS",
+          "name": "Lesotho"
+        },
+        {
+          "id": "LR",
+          "name": "Liberia"
+        },
+        {
+          "id": "LK",
+          "name": "Sri Lanka"
+        },
+        {
+          "id": "LI",
+          "name": "Liechtenstein"
+        },
+        {
+          "id": "LC",
+          "name": "St Lucia"
+        },
+        {
+          "id": "LB",
+          "name": "Lebanon"
+        },
+        {
+          "id": "LA",
+          "name": "Lao People's Democratic Republic"
+        },
+        {
+          "id": "KZ",
+          "name": "Kazakhstan"
+        },
+        {
+          "id": "KY",
+          "name": "Cayman Islands"
+        },
+        {
+          "id": "KW",
+          "name": "Kuwait"
+        },
+        {
+          "id": "KR",
+          "name": "Korea, Republic of"
+        },
+        {
+          "id": "KP",
+          "name": "Korea, Democratic People's Republic of"
+        },
+        {
+          "id": "KN",
+          "name": "St Kitts and Nevis"
+        },
+        {
+          "id": "KM",
+          "name": "Comoros"
+        },
+        {
+          "id": "KI",
+          "name": "Kiribati"
+        },
+        {
+          "id": "KH",
+          "name": "Cambodia"
+        },
+        {
+          "id": "KG",
+          "name": "Kyrgyzstan"
+        },
+        {
+          "id": "KE",
+          "name": "Kenya"
+        },
+        {
+          "id": "JP",
+          "name": "Japan"
+        },
+        {
+          "id": "JO",
+          "name": "Jordan"
+        },
+        {
+          "id": "JM",
+          "name": "Jamaica"
+        },
+        {
+          "id": "IT",
+          "name": "Italy"
+        },
+        {
+          "id": "IS",
+          "name": "Iceland"
+        },
+        {
+          "id": "IR",
+          "name": "Iran, Islamic Republic of"
+        },
+        {
+          "id": "IQ",
+          "name": "Iraq"
+        },
+        {
+          "id": "IO",
+          "name": "British Indian Ocean Territory"
+        },
+        {
+          "id": "IN",
+          "name": "India"
+        },
+        {
+          "id": "IL",
+          "name": "Israel"
+        },
+        {
+          "id": "IE",
+          "name": "Ireland"
+        },
+        {
+          "id": "ID",
+          "name": "Indonesia"
+        },
+        {
+          "id": "HU",
+          "name": "Hungary"
+        },
+        {
+          "id": "HT",
+          "name": "Haiti"
+        },
+        {
+          "id": "HR",
+          "name": "Croatia"
+        },
+        {
+          "id": "HN",
+          "name": "Honduras"
+        },
+        {
+          "id": "HM",
+          "name": "Heard Island and McDonald Islands"
+        },
+        {
+          "id": "HK",
+          "name": "Hong Kong"
+        },
+        {
+          "id": "GY",
+          "name": "Guyana"
+        },
+        {
+          "id": "GW",
+          "name": "Guinea-Bissau"
+        },
+        {
+          "id": "GU",
+          "name": "Guam"
+        },
+        {
+          "id": "GT",
+          "name": "Guatemala"
+        },
+        {
+          "id": "GS",
+          "name": "South Georgia and South Sandwich Islands"
+        },
+        {
+          "id": "GR",
+          "name": "Greece"
+        },
+        {
+          "id": "GQ",
+          "name": "Equatorial Guinea"
+        },
+        {
+          "id": "GN",
+          "name": "Guinea"
+        },
+        {
+          "id": "GM",
+          "name": "Gambia"
+        },
+        {
+          "id": "GL",
+          "name": "Greenland"
+        },
+        {
+          "id": "GI",
+          "name": "Gibraltar"
+        },
+        {
+          "id": "GH",
+          "name": "Ghana"
+        },
+        {
+          "id": "GE",
+          "name": "Georgia"
+        },
+        {
+          "id": "GD",
+          "name": "Grenada"
+        },
+        {
+          "id": "GB",
+          "name": "United Kingdom"
+        },
+        {
+          "id": "GA",
+          "name": "Gabon"
+        },
+        {
+          "id": "G4",
+          "name": "Other European countries (not EU)"
+        },
+        {
+          "id": "FR",
+          "name": "France"
+        },
+        {
+          "id": "FO",
+          "name": "Faroe Islands"
+        },
+        {
+          "id": "FM",
+          "name": "Micronesia, Federated States of"
+        },
+        {
+          "id": "FK",
+          "name": "Falkland Islands"
+        },
+        {
+          "id": "FJ",
+          "name": "Fiji"
+        },
+        {
+          "id": "FI",
+          "name": "Finland"
+        },
+        {
+          "id": "F4",
+          "name": "North Africa"
+        },
+        {
+          "id": "F1XF4",
+          "name": "Africa excluding North Africa"
+        },
+        {
+          "id": "ET",
+          "name": "Ethiopia"
+        },
+        {
+          "id": "ES",
+          "name": "Spain"
+        },
+        {
+          "id": "ER",
+          "name": "Eritrea"
+        },
+        {
+          "id": "EH",
+          "name": "Western Sahara"
+        },
+        {
+          "id": "EG",
+          "name": "Egypt"
+        },
+        {
+          "id": "EE",
+          "name": "Estonia"
+        }
+      ],
+      "total_codes": 269,
+      "truncated": true
+    },
+    {
+      "id": "ACTIVITY",
+      "position": 4,
+      "name": "ACTIVITY",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Agriculture, forestry and fishing"
+        },
+        {
+          "id": "A01",
+          "name": "Crop and animal production, hunting and related service activities"
+        },
+        {
+          "id": "A011",
+          "name": "Growing of non-perennial crops"
+        },
+        {
+          "id": "A0111",
+          "name": "Growing of cereals (except rice), leguminous crops and oil seeds"
+        },
+        {
+          "id": "A0112",
+          "name": "Growing of rice"
+        },
+        {
+          "id": "A0113",
+          "name": "Growing of vegetables and melons, roots and tubers"
+        },
+        {
+          "id": "A0114",
+          "name": "Growing of sugar cane"
+        },
+        {
+          "id": "A0115",
+          "name": "Growing of tobacco"
+        },
+        {
+          "id": "A0116",
+          "name": "Growing of fibre crops"
+        },
+        {
+          "id": "A0119",
+          "name": "Growing of other non-perennial crops"
+        },
+        {
+          "id": "A012",
+          "name": "Growing of perennial crops"
+        },
+        {
+          "id": "A0121",
+          "name": "Growing of grapes"
+        },
+        {
+          "id": "A0122",
+          "name": "Growing of tropical and subtropical fruits"
+        },
+        {
+          "id": "A0123",
+          "name": "Growing of citrus fruits"
+        },
+        {
+          "id": "A0124",
+          "name": "Growing of pome fruits and stone fruits"
+        },
+        {
+          "id": "A0125",
+          "name": "Growing of other tree and bush fruits and nuts"
+        },
+        {
+          "id": "A0126",
+          "name": "Growing of oleaginous fruits"
+        },
+        {
+          "id": "A0127",
+          "name": "Growing of beverage crops"
+        },
+        {
+          "id": "A0128",
+          "name": "Growing of spices, aromatic, drug and pharmaceutical crops"
+        },
+        {
+          "id": "A0129",
+          "name": "Growing of other perennial crops"
+        },
+        {
+          "id": "A013",
+          "name": "Plant propagation"
+        },
+        {
+          "id": "A0130",
+          "name": "Plant propagation"
+        },
+        {
+          "id": "A014",
+          "name": "Animal production"
+        },
+        {
+          "id": "A0141",
+          "name": "Raising of dairy cattle"
+        },
+        {
+          "id": "A0142",
+          "name": "Raising of other cattle and buffaloes"
+        },
+        {
+          "id": "A0143",
+          "name": "Raising of horses and other equines"
+        },
+        {
+          "id": "A0144",
+          "name": "Raising of camels and camelids"
+        },
+        {
+          "id": "A0145",
+          "name": "Raising of sheep and goats"
+        },
+        {
+          "id": "A0146",
+          "name": "Raising of swine/pigs"
+        },
+        {
+          "id": "A0147",
+          "name": "Raising of poultry"
+        },
+        {
+          "id": "A0149",
+          "name": "Raising of other animals"
+        },
+        {
+          "id": "A015",
+          "name": "Mixed farming"
+        },
+        {
+          "id": "A0150",
+          "name": "Mixed farming"
+        },
+        {
+          "id": "A016",
+          "name": "Support activities to agriculture and post-harvest crop activities"
+        },
+        {
+          "id": "A0161",
+          "name": "Support activities for crop production"
+        },
+        {
+          "id": "A0162",
+          "name": "Support activities for animal production"
+        },
+        {
+          "id": "A0163",
+          "name": "Post-harvest crop activities"
+        },
+        {
+          "id": "A0164",
+          "name": "Seed processing for propagation"
+        },
+        {
+          "id": "A017",
+          "name": "Hunting, trapping and related service activities"
+        },
+        {
+          "id": "A0170",
+          "name": "Hunting, trapping and related service activities"
+        },
+        {
+          "id": "A01_02",
+          "name": "Agriculture and forestry"
+        },
+        {
+          "id": "A01_02X017",
+          "name": "Agriculture and forestry (except hunting)"
+        },
+        {
+          "id": "A01_IRR",
+          "name": "Irrigation in agriculture"
+        },
+        {
+          "id": "A02",
+          "name": "Forestry and logging"
+        },
+        {
+          "id": "A021",
+          "name": "Silviculture and other forestry activities"
+        },
+        {
+          "id": "A0210",
+          "name": "Silviculture and other forestry activities"
+        },
+        {
+          "id": "A022",
+          "name": "Logging"
+        },
+        {
+          "id": "A0220",
+          "name": "Logging"
+        },
+        {
+          "id": "A023",
+          "name": "Gathering of wild growing non-wood products"
+        },
+        {
+          "id": "A0230",
+          "name": "Gathering of wild growing non-wood products"
+        },
+        {
+          "id": "A024",
+          "name": "Support services to forestry"
+        },
+        {
+          "id": "A0240",
+          "name": "Support services to forestry"
+        },
+        {
+          "id": "A03",
+          "name": "Fishing and aquaculture"
+        },
+        {
+          "id": "A031",
+          "name": "Fishing"
+        },
+        {
+          "id": "A0311",
+          "name": "Marine fishing"
+        },
+        {
+          "id": "A0312",
+          "name": "Freshwater fishing"
+        },
+        {
+          "id": "A032",
+          "name": "Aquaculture"
+        },
+        {
+          "id": "A0321",
+          "name": "Marine aquaculture"
+        },
+        {
+          "id": "A0322",
+          "name": "Freshwater aquaculture"
+        },
+        {
+          "id": "AFT",
+          "name": "Agriculture, fishing and transport (except railways) - AFT"
+        },
+        {
+          "id": "ATC",
+          "name": "From a to C"
+        },
+        {
+          "id": "ATNXB",
+          "name": "Agriculture; industry and construction (except mining); services of the business economy"
+        },
+        {
+          "id": "ATS",
+          "name": "All activities except activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies"
+        },
+        {
+          "id": "ATT",
+          "name": "All NACE activities (except extra-territorial organisations and bodies)"
+        },
+        {
+          "id": "ATUXH491_492",
+          "name": "All NACE activities (except railways)"
+        },
+        {
+          "id": "A_B",
+          "name": "Agriculture, forestry and fishing; mining and quarrying"
+        },
+        {
+          "id": "A_EP_OTH",
+          "name": "Agriculture, forestry and fishing; other business sectors (mainly A, E38.3, F41 to U except O)"
+        },
+        {
+          "id": "A_F_HTU",
+          "name": "NACE branches other than Industry or Trade (A+F+H+I+J+K+L+M+N+O+P+Q+R+S+T+U)"
+        },
+        {
+          "id": "B",
+          "name": "Mining and quarrying"
+        },
+        {
+          "id": "B05",
+          "name": "Mining of coal and lignite"
+        },
+        {
+          "id": "B051",
+          "name": "Mining of hard coal"
+        },
+        {
+          "id": "B0510",
+          "name": "Mining of hard coal"
+        },
+        {
+          "id": "B052",
+          "name": "Mining of lignite"
+        },
+        {
+          "id": "B0520",
+          "name": "Mining of lignite"
+        },
+        {
+          "id": "B06",
+          "name": "Extraction of crude petroleum and natural gas"
+        },
+        {
+          "id": "B061",
+          "name": "Extraction of crude petroleum"
+        },
+        {
+          "id": "B0610",
+          "name": "Extraction of crude petroleum"
+        },
+        {
+          "id": "B062",
+          "name": "Extraction of natural gas"
+        },
+        {
+          "id": "B0620",
+          "name": "Extraction of natural gas"
+        },
+        {
+          "id": "B06T09",
+          "name": "Mining and quarrying (except mining of coal and lignite)"
+        },
+        {
+          "id": "B06_09",
+          "name": "Extraction of crude petroleum and natural gas; mining support service activities"
+        },
+        {
+          "id": "B07",
+          "name": "Mining of metal ores"
+        },
+        {
+          "id": "B071",
+          "name": "Mining of iron ores"
+        },
+        {
+          "id": "B0710",
+          "name": "Mining of iron ores"
+        },
+        {
+          "id": "B072",
+          "name": "Mining of non-ferrous metal ores"
+        },
+        {
+          "id": "B0721",
+          "name": "Mining of uranium and thorium ores"
+        },
+        {
+          "id": "B0729",
+          "name": "Mining of other non-ferrous metal ores"
+        },
+        {
+          "id": "B08",
+          "name": "Other mining and quarrying"
+        },
+        {
+          "id": "B081",
+          "name": "Quarrying of stone, sand and clay"
+        },
+        {
+          "id": "B0811",
+          "name": "Quarrying of ornamental and building stone, limestone, gypsum, chalk and slate"
+        },
+        {
+          "id": "B0812",
+          "name": "Operation of gravel and sand pits; mining of clays and kaolin"
+        },
+        {
+          "id": "B089",
+          "name": "Mining and quarrying n.e.c."
+        },
+        {
+          "id": "B0891",
+          "name": "Mining of chemical and fertiliser minerals"
+        },
+        {
+          "id": "B0892",
+          "name": "Extraction of peat"
+        },
+        {
+          "id": "B0893",
+          "name": "Extraction of salt"
+        },
+        {
+          "id": "B0899",
+          "name": "Other mining and quarrying n.e.c."
+        },
+        {
+          "id": "B09",
+          "name": "Mining support service activities"
+        },
+        {
+          "id": "B091",
+          "name": "Support activities for petroleum and natural gas extraction"
+        },
+        {
+          "id": "B0910",
+          "name": "Support activities for petroleum and natural gas extraction"
+        },
+        {
+          "id": "B099",
+          "name": "Support activities for other mining and quarrying"
+        },
+        {
+          "id": "B0990",
+          "name": "Support activities for other mining and quarrying"
+        },
+        {
+          "id": "BTD",
+          "name": "Mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply"
+        },
+        {
+          "id": "BTDXFOOD",
+          "name": "Mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply (except food, beverages and tobacco)"
+        },
+        {
+          "id": "BTD_F",
+          "name": "Mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply; construction"
+        },
+        {
+          "id": "BTE",
+          "name": "Industry (except construction)"
+        },
+        {
+          "id": "BTE36",
+          "name": "Industry (except construction, sewerage, waste management and remediation activities)"
+        },
+        {
+          "id": "BTE36XFOOD",
+          "name": "Industry (except construction, sewerage, waste management and remediation activities, food, beverages and tobacco)"
+        },
+        {
+          "id": "BTE36_F",
+          "name": "Industry and construction (except sewerage, waste management and remediation activities)"
+        },
+        {
+          "id": "BTEXFOOD",
+          "name": "Industry (except construction, food, beverages and tobacco)"
+        },
+        {
+          "id": "BTEXFOOD_NRG",
+          "name": "Industry (except construction, food, beverages, tobacco and energy)"
+        },
+        {
+          "id": "BTF",
+          "name": "Industry and construction"
+        },
+        {
+          "id": "BTM71_INN",
+          "name": "Innovation core activities (Com.Reg. 1450/2004)"
+        },
+        {
+          "id": "BTM73_INN",
+          "name": "Innovation core activities (Com.Reg. 995/2012)"
+        },
+        {
+          "id": "BTN",
+          "name": "Business economy"
+        },
+        {
+          "id": "BTNXK",
+          "name": "Total business economy (except financial and insurance activities)"
+        },
+        {
+          "id": "BTNXK642",
+          "name": "Business economy (except activities of holding companies)"
+        },
+        {
+          "id": "BTN_S95",
+          "name": "Total business economy; repair of computers, personal and household goods"
+        },
+        {
+          "id": "BTN_S95XK",
+          "name": "Total business economy; repair of computers, personal and household goods (except financial and insurance activities)"
+        },
+        {
+          "id": "BTS",
+          "name": "Industry, construction and services (except activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies)"
+        },
+        {
+          "id": "BTSXK642",
+          "name": "Industry, construction and services (except activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies; activities of holding companies)"
+        },
+        {
+          "id": "BTSXO",
+          "name": "Industry, construction and services (except public administration and defence; compulsory social security; activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies)"
+        },
+        {
+          "id": "BTSXO_S94",
+          "name": "Industry, construction and services (except public administration and defence; compulsory social security; activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies; activities of membership organisations)"
+        },
+        {
+          "id": "BTT",
+          "name": "Industry, construction and services (except activities of extraterritorial organisations and bodies)"
+        },
+        {
+          "id": "BTU",
+          "name": "Industry, construction and services"
+        },
+        {
+          "id": "B_C",
+          "name": "Mining and quarrying; manufacturing"
+        },
+        {
+          "id": "B_CXFD_MIG_NRG",
+          "name": "Mining and quarrying; manufacturing (except MIG energy), except food, beverages and tobacco"
+        },
+        {
+          "id": "B_CXFOOD",
+          "name": "Mining and quarrying; manufacturing (except food, beverages and tobacco)"
+        },
+        {
+          "id": "B_CXMIG_NRG",
+          "name": "Mining and quarrying; manufacturing (except MIG energy)"
+        },
+        {
+          "id": "B_DTFXB0721",
+          "name": "Mining and quarrying, electricity, gas, water supply,  construction (except mining of uranium)"
+        },
+        {
+          "id": "B_D_E",
+          "name": "Mining and quarrying; electricity, gas, steam and air conditioning supply; water supply, sewerage, waste management and remediation activities"
+        },
+        {
+          "id": "C",
+          "name": "Manufacturing"
+        },
+        {
+          "id": "C10",
+          "name": "Manufacture of food products"
+        },
+        {
+          "id": "C101",
+          "name": "Processing and preserving of meat and production of meat products"
+        },
+        {
+          "id": "C1011",
+          "name": "Processing and preserving of meat"
+        },
+        {
+          "id": "C1012",
+          "name": "Processing and preserving of poultry meat"
+        },
+        {
+          "id": "C1013",
+          "name": "Production of meat and poultry meat products"
+        },
+        {
+          "id": "C102",
+          "name": "Processing and preserving of fish, crustaceans and molluscs"
+        },
+        {
+          "id": "C1020",
+          "name": "Processing and preserving of fish, crustaceans and molluscs"
+        },
+        {
+          "id": "C103",
+          "name": "Processing and preserving of fruit and vegetables"
+        },
+        {
+          "id": "C1031",
+          "name": "Processing and preserving of potatoes"
+        },
+        {
+          "id": "C1032",
+          "name": "Manufacture of fruit and vegetable juice"
+        },
+        {
+          "id": "C1039",
+          "name": "Other processing and preserving of fruit and vegetables"
+        },
+        {
+          "id": "C104",
+          "name": "Manufacture of vegetable and animal oils and fats"
+        },
+        {
+          "id": "C1041",
+          "name": "Manufacture of oils and fats"
+        },
+        {
+          "id": "C1042",
+          "name": "Manufacture of margarine and similar edible fats"
+        },
+        {
+          "id": "C105",
+          "name": "Manufacture of dairy products"
+        },
+        {
+          "id": "C1051",
+          "name": "Operation of dairies and cheese making"
+        },
+        {
+          "id": "C1052",
+          "name": "Manufacture of ice cream"
+        },
+        {
+          "id": "C106",
+          "name": "Manufacture of grain mill products, starches and starch products"
+        },
+        {
+          "id": "C1061",
+          "name": "Manufacture of grain mill products"
+        },
+        {
+          "id": "C1062",
+          "name": "Manufacture of starches and starch products"
+        },
+        {
+          "id": "C107",
+          "name": "Manufacture of bakery and farinaceous products"
+        },
+        {
+          "id": "C1071",
+          "name": "Manufacture of bread; manufacture of fresh pastry goods and cakes"
+        },
+        {
+          "id": "C1072",
+          "name": "Manufacture of rusks and biscuits; manufacture of preserved pastry goods and cakes"
+        },
+        {
+          "id": "C1073",
+          "name": "Manufacture of macaroni, noodles, couscous and similar farinaceous products"
+        },
+        {
+          "id": "C108",
+          "name": "Manufacture of other food products"
+        },
+        {
+          "id": "C1081",
+          "name": "Manufacture of sugar"
+        },
+        {
+          "id": "C1082",
+          "name": "Manufacture of cocoa, chocolate and sugar confectionery"
+        },
+        {
+          "id": "C1083",
+          "name": "Processing of tea and coffee"
+        },
+        {
+          "id": "C1084",
+          "name": "Manufacture of condiments and seasonings"
+        },
+        {
+          "id": "C1085",
+          "name": "Manufacture of prepared meals and dishes"
+        },
+        {
+          "id": "C1086",
+          "name": "Manufacture of homogenised food preparations and dietetic food"
+        },
+        {
+          "id": "C1089",
+          "name": "Manufacture of other food products n.e.c."
+        },
+        {
+          "id": "C109",
+          "name": "Manufacture of prepared animal feeds"
+        },
+        {
+          "id": "C1091",
+          "name": "Manufacture of prepared feeds for farm animals"
+        },
+        {
+          "id": "C1092",
+          "name": "Manufacture of prepared pet foods"
+        },
+        {
+          "id": "C10T12",
+          "name": "Manufacture of food products; beverages and tobacco products"
+        },
+        {
+          "id": "C10T12X106_109",
+          "name": "Manufacture of food products; beverages and tobacco products (except manufacture of grain mill products, starches and starch products and of prepared animal feeds)"
+        },
+        {
+          "id": "C10T18",
+          "name": "Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing"
+        },
+        {
+          "id": "C10T33",
+          "name": "Manufacturing"
+        },
+        {
+          "id": "C10TE39",
+          "name": "Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities"
+        },
+        {
+          "id": "C10TF43",
+          "name": "Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction"
+        },
+        {
+          "id": "C10TS951XK",
+          "name": "All enterprises, without financial sector"
+        },
+        {
+          "id": "C10X106_109",
+          "name": "Manufacture of food products (except manufacture of grain mill products, starches and starch products and of prepared animal feeds)"
+        },
+        {
+          "id": "C10_11",
+          "name": "Manufacture of food products and beverages"
+        },
+        {
+          "id": "C11",
+          "name": "Manufacture of beverages"
+        },
+        {
+          "id": "C110",
+          "name": "Manufacture of beverages"
+        },
+        {
+          "id": "C1101",
+          "name": "Distilling, rectifying and blending of spirits"
+        },
+        {
+          "id": "C1102",
+          "name": "Manufacture of wine from grape"
+        },
+        {
+          "id": "C1103",
+          "name": "Manufacture of cider and other fruit wines"
+        },
+        {
+          "id": "C1104",
+          "name": "Manufacture of other non-distilled fermented beverages"
+        },
+        {
+          "id": "C1105",
+          "name": "Manufacture of beer"
+        },
+        {
+          "id": "C1106",
+          "name": "Manufacture of malt"
+        },
+        {
+          "id": "C1107",
+          "name": "Manufacture of soft drinks; production of mineral waters and other bottled waters"
+        },
+        {
+          "id": "C12",
+          "name": "Manufacture of tobacco products"
+        },
+        {
+          "id": "C120",
+          "name": "Manufacture of tobacco products"
+        },
+        {
+          "id": "C1200",
+          "name": "Manufacture of tobacco products"
+        },
+        {
+          "id": "C13",
+          "name": "Manufacture of textiles"
+        },
+        {
+          "id": "C131",
+          "name": "Preparation and spinning of textile fibres"
+        },
+        {
+          "id": "C1310",
+          "name": "Preparation and spinning of textile fibres"
+        },
+        {
+          "id": "C132",
+          "name": "Weaving of textiles"
+        },
+        {
+          "id": "C1320",
+          "name": "Weaving of textiles"
+        },
+        {
+          "id": "C133",
+          "name": "Finishing of textiles"
+        },
+        {
+          "id": "C1330",
+          "name": "Finishing of textiles"
+        },
+        {
+          "id": "C139",
+          "name": "Manufacture of other textiles"
+        },
+        {
+          "id": "C1391",
+          "name": "Manufacture of knitted and crocheted fabrics"
+        },
+        {
+          "id": "C1392",
+          "name": "Manufacture of made-up textile articles, except apparel"
+        },
+        {
+          "id": "C1393",
+          "name": "Manufacture of carpets and rugs"
+        },
+        {
+          "id": "C1394",
+          "name": "Manufacture of cordage, rope, twine and netting"
+        },
+        {
+          "id": "C1395",
+          "name": "Manufacture of non-wovens and articles made from non-wovens, except apparel"
+        }
+      ],
+      "total_codes": 1291,
+      "truncated": true
+    },
+    {
+      "id": "NUMBER_EMPL",
+      "position": 5,
+      "name": "NUMBER_EMPL",
+      "codes": [
+        {
+          "id": "_T",
+          "name": "Total"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "E0",
+          "name": "0"
+        },
+        {
+          "id": "E0T1",
+          "name": "From 0 to 1"
+        },
+        {
+          "id": "E0T49",
+          "name": "From 0 to 49"
+        },
+        {
+          "id": "E0T9",
+          "name": "From 0 to 9"
+        },
+        {
+          "id": "E10T19",
+          "name": "From 10 to 19"
+        },
+        {
+          "id": "E10T249",
+          "name": "From 10 to 249"
+        },
+        {
+          "id": "E10T49",
+          "name": "From 10 to 49"
+        },
+        {
+          "id": "E1T4",
+          "name": "From 1 to 4"
+        },
+        {
+          "id": "E1T9",
+          "name": "From 1 to 9"
+        },
+        {
+          "id": "E20T49",
+          "name": "From 20 to 49"
+        },
+        {
+          "id": "E250T499",
+          "name": "From 250 to 499"
+        },
+        {
+          "id": "E2T9",
+          "name": "From 2 to 9"
+        },
+        {
+          "id": "E500T999",
+          "name": "From 500 to 999"
+        },
+        {
+          "id": "E50T249",
+          "name": "From 50 to 249"
+        },
+        {
+          "id": "E5T9",
+          "name": "From 5 to 9"
+        },
+        {
+          "id": "EGE10",
+          "name": "10 or more"
+        },
+        {
+          "id": "EGE1000",
+          "name": "1000 or more"
+        },
+        {
+          "id": "EGE250",
+          "name": "250 or more"
+        },
+        {
+          "id": "EGE50",
+          "name": "50 or more"
+        },
+        {
+          "id": "EGE500",
+          "name": "500 or more"
+        },
+        {
+          "id": "ELT10",
+          "name": "Fewer than 10"
+        }
+      ],
+      "total_codes": 24,
+      "truncated": false
+    },
+    {
+      "id": "TOP_ENTERPRISES",
+      "position": 6,
+      "name": "TOP_ENTERPRISES",
+      "codes": [
+        {
+          "id": "T5",
+          "name": "Top 5 enterprises"
+        },
+        {
+          "id": "T10",
+          "name": "Top 10 enterprises"
+        },
+        {
+          "id": "T20",
+          "name": "Top 20 enterprises"
+        },
+        {
+          "id": "T50",
+          "name": "Top 50 enterprises"
+        },
+        {
+          "id": "T100",
+          "name": "Top 100 enterprises"
+        },
+        {
+          "id": "T500",
+          "name": "Top 500 enterprises"
+        },
+        {
+          "id": "T1000",
+          "name": "Top 1000 enterprises"
+        },
+        {
+          "id": "_T",
+          "name": "All enterprises"
+        }
+      ],
+      "total_codes": 8,
+      "truncated": false
+    },
+    {
+      "id": "NUMBER_PARTNERS",
+      "position": 7,
+      "name": "NUMBER_PARTNERS",
+      "codes": [
+        {
+          "id": "P1",
+          "name": "1 partner country"
+        },
+        {
+          "id": "P2",
+          "name": "2 partner countries"
+        },
+        {
+          "id": "P3T5",
+          "name": "3 to 5 partner countries"
+        },
+        {
+          "id": "P6T9",
+          "name": "6 to 9 partner countries"
+        },
+        {
+          "id": "P10T14",
+          "name": "10 to 14 partner countries"
+        },
+        {
+          "id": "P15T19",
+          "name": "15 to 19 partner countries"
+        },
+        {
+          "id": "PGE20",
+          "name": "20 or more partner countries"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        },
+        {
+          "id": "_T",
+          "name": "Total"
+        }
+      ],
+      "total_codes": 9,
+      "truncated": false
+    },
+    {
+      "id": "PRODUCT",
+      "position": 8,
+      "name": "PRODUCT",
+      "codes": [
+        {
+          "id": "_T",
+          "name": "Total - all CPA sections"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "CPA_A",
+          "name": "Products of agriculture, forestry and fishing"
+        },
+        {
+          "id": "CPA_A01",
+          "name": "Products of agriculture, hunting and related services"
+        },
+        {
+          "id": "CPA_A011",
+          "name": "Non-perennial crops"
+        },
+        {
+          "id": "CPA_A0111",
+          "name": "Cereals (except rice), leguminous crops and oil seeds"
+        },
+        {
+          "id": "CPA_A01111",
+          "name": "Wheat"
+        },
+        {
+          "id": "CPA_A011111",
+          "name": "Durum wheat"
+        },
+        {
+          "id": "CPA_A011112",
+          "name": "Wheat, except durum wheat"
+        },
+        {
+          "id": "CPA_A01112",
+          "name": "Maize"
+        },
+        {
+          "id": "CPA_A011120",
+          "name": "Maize"
+        },
+        {
+          "id": "CPA_A01113",
+          "name": "Barley, rye and oats"
+        },
+        {
+          "id": "CPA_A011131",
+          "name": "Barley"
+        },
+        {
+          "id": "CPA_A011132",
+          "name": "Rye"
+        },
+        {
+          "id": "CPA_A011133",
+          "name": "Oats"
+        },
+        {
+          "id": "CPA_A01114",
+          "name": "Sorghum, millet and other cereals"
+        },
+        {
+          "id": "CPA_A011141",
+          "name": "Sorghum"
+        },
+        {
+          "id": "CPA_A011142",
+          "name": "Millet"
+        },
+        {
+          "id": "CPA_A011143",
+          "name": "Triticale"
+        },
+        {
+          "id": "CPA_A011149",
+          "name": "Other cereals"
+        },
+        {
+          "id": "CPA_A01115",
+          "name": "Cereals straw and husks"
+        },
+        {
+          "id": "CPA_A011150",
+          "name": "Cereals straw and husks"
+        },
+        {
+          "id": "CPA_A01116",
+          "name": "Green leguminous vegetables"
+        },
+        {
+          "id": "CPA_A011161",
+          "name": "Beans, green"
+        },
+        {
+          "id": "CPA_A011162",
+          "name": "Peas, green"
+        },
+        {
+          "id": "CPA_A011169",
+          "name": "Other green leguminous vegetables"
+        },
+        {
+          "id": "CPA_A01117",
+          "name": "Dried leguminous vegetables"
+        },
+        {
+          "id": "CPA_A011171",
+          "name": "Beans, dry"
+        },
+        {
+          "id": "CPA_A011172",
+          "name": "Broad beans, dry"
+        },
+        {
+          "id": "CPA_A011173",
+          "name": "Chick peas, dry"
+        },
+        {
+          "id": "CPA_A011174",
+          "name": "Lentils, dry"
+        },
+        {
+          "id": "CPA_A011175",
+          "name": "Peas, dry"
+        },
+        {
+          "id": "CPA_A011176",
+          "name": "Cow peas"
+        },
+        {
+          "id": "CPA_A011177",
+          "name": "Pigeon peas, dry"
+        },
+        {
+          "id": "CPA_A011179",
+          "name": "Pulses (dried leguminous vegetables) n.e.c."
+        },
+        {
+          "id": "CPA_A01118",
+          "name": "Soya beans and groundnuts"
+        },
+        {
+          "id": "CPA_A011181",
+          "name": "Soya beans"
+        },
+        {
+          "id": "CPA_A011182",
+          "name": "Groundnuts, in shell"
+        },
+        {
+          "id": "CPA_A01119",
+          "name": "Other oil seeds"
+        },
+        {
+          "id": "CPA_A011191",
+          "name": "Lin seed"
+        },
+        {
+          "id": "CPA_A011192",
+          "name": "Mustard seed"
+        },
+        {
+          "id": "CPA_A011193",
+          "name": "Rape or colza seed"
+        },
+        {
+          "id": "CPA_A011194",
+          "name": "Sesame seed"
+        },
+        {
+          "id": "CPA_A011195",
+          "name": "Sunflower seed"
+        },
+        {
+          "id": "CPA_A011196",
+          "name": "Castor oil seeds"
+        },
+        {
+          "id": "CPA_A011199",
+          "name": "Other oil seeds n.e.c."
+        },
+        {
+          "id": "CPA_A0112",
+          "name": "Rice, not husked"
+        },
+        {
+          "id": "CPA_A01121",
+          "name": "Rice, not husked"
+        },
+        {
+          "id": "CPA_A011210",
+          "name": "Rice, not husked"
+        },
+        {
+          "id": "CPA_A0113",
+          "name": "Vegetables and melons, roots and tubers"
+        },
+        {
+          "id": "CPA_A01131",
+          "name": "Leafy or stem vegetables"
+        },
+        {
+          "id": "CPA_A011311",
+          "name": "Asparagus"
+        },
+        {
+          "id": "CPA_A011312",
+          "name": "Cabbages"
+        },
+        {
+          "id": "CPA_A011313",
+          "name": "Cauliflowers and broccoli"
+        },
+        {
+          "id": "CPA_A011314",
+          "name": "Lettuce"
+        },
+        {
+          "id": "CPA_A011315",
+          "name": "Chicory"
+        },
+        {
+          "id": "CPA_A011316",
+          "name": "Spinach"
+        },
+        {
+          "id": "CPA_A011317",
+          "name": "Artichokes"
+        },
+        {
+          "id": "CPA_A011319",
+          "name": "Other leafy or stem vegetables"
+        },
+        {
+          "id": "CPA_A01132",
+          "name": "Melons"
+        },
+        {
+          "id": "CPA_A011321",
+          "name": "Watermelons"
+        },
+        {
+          "id": "CPA_A011329",
+          "name": "Other melons"
+        },
+        {
+          "id": "CPA_A01133",
+          "name": "Other fruit-bearing vegetables"
+        },
+        {
+          "id": "CPA_A011331",
+          "name": "Chillies and peppers, green (only capsicum)"
+        },
+        {
+          "id": "CPA_A011332",
+          "name": "Cucumbers and gherkins"
+        },
+        {
+          "id": "CPA_A011333",
+          "name": "Eggplants (aubergines)"
+        },
+        {
+          "id": "CPA_A011334",
+          "name": "Tomatoes"
+        },
+        {
+          "id": "CPA_A011339",
+          "name": "Other fruit-bearing vegetables n.e.c."
+        },
+        {
+          "id": "CPA_A01134",
+          "name": "Root, bulb or tuberous vegetables"
+        },
+        {
+          "id": "CPA_A011341",
+          "name": "Carrots and turnips"
+        },
+        {
+          "id": "CPA_A011342",
+          "name": "Garlic"
+        },
+        {
+          "id": "CPA_A011343",
+          "name": "Onions"
+        },
+        {
+          "id": "CPA_A011344",
+          "name": "Leeks and other alliaceous vegetables"
+        },
+        {
+          "id": "CPA_A011349",
+          "name": "Other root, bulb or tuberous vegetables (without high starch or inulin content)"
+        },
+        {
+          "id": "CPA_A01135",
+          "name": "Edible roots and tubers with high starch or inulin content"
+        },
+        {
+          "id": "CPA_A011351",
+          "name": "Potatoes"
+        },
+        {
+          "id": "CPA_A011352",
+          "name": "Sweet potatoes"
+        },
+        {
+          "id": "CPA_A011353",
+          "name": "Cassava"
+        },
+        {
+          "id": "CPA_A011354",
+          "name": "Taro"
+        },
+        {
+          "id": "CPA_A011359",
+          "name": "Other edible roots and tubers with high starch or inulin content"
+        },
+        {
+          "id": "CPA_A01136",
+          "name": "Vegetable seeds, except beet seeds"
+        },
+        {
+          "id": "CPA_A011360",
+          "name": "Vegetable seeds, except beet seeds"
+        },
+        {
+          "id": "CPA_A01137",
+          "name": "Sugar beet and sugar beet seeds"
+        },
+        {
+          "id": "CPA_A011371",
+          "name": "Sugar beet"
+        },
+        {
+          "id": "CPA_A011372",
+          "name": "Sugar beet seeds"
+        },
+        {
+          "id": "CPA_A01138",
+          "name": "Mushrooms and truffles"
+        },
+        {
+          "id": "CPA_A011380",
+          "name": "Mushrooms and truffles"
+        },
+        {
+          "id": "CPA_A01139",
+          "name": "Vegetables, fresh, n.e.c."
+        },
+        {
+          "id": "CPA_A011390",
+          "name": "Vegetables, fresh, n.e.c."
+        },
+        {
+          "id": "CPA_A0114",
+          "name": "Sugar cane"
+        },
+        {
+          "id": "CPA_A01141",
+          "name": "Sugar cane"
+        },
+        {
+          "id": "CPA_A011410",
+          "name": "Sugar cane"
+        },
+        {
+          "id": "CPA_A0115",
+          "name": "Unmanufactured tobacco"
+        },
+        {
+          "id": "CPA_A01151",
+          "name": "Unmanufactured tobacco"
+        },
+        {
+          "id": "CPA_A011510",
+          "name": "Unmanufactured tobacco"
+        },
+        {
+          "id": "CPA_A0116",
+          "name": "Fibre crops"
+        },
+        {
+          "id": "CPA_A01161",
+          "name": "Fibre crops"
+        },
+        {
+          "id": "CPA_A011611",
+          "name": "Cotton, whether or not ginned"
+        },
+        {
+          "id": "CPA_A011612",
+          "name": "Jute, kenaf and other textile bast fibres, raw or retted, except flax, true hemp and ramie"
+        },
+        {
+          "id": "CPA_A011619",
+          "name": "Flax, true hemp and raw fibre crops n.e.c."
+        },
+        {
+          "id": "CPA_A0119",
+          "name": "Other non-perennial crops"
+        },
+        {
+          "id": "CPA_A01191",
+          "name": "Forage crops"
+        },
+        {
+          "id": "CPA_A011910",
+          "name": "Forage crops"
+        },
+        {
+          "id": "CPA_A01192",
+          "name": "Cut flowers and flower buds; flower seeds"
+        },
+        {
+          "id": "CPA_A011921",
+          "name": "Cut flowers and flower buds"
+        },
+        {
+          "id": "CPA_A011922",
+          "name": "Flower seeds"
+        },
+        {
+          "id": "CPA_A01193",
+          "name": "Beet seeds, seeds for forage plants; other raw vegetable materials"
+        },
+        {
+          "id": "CPA_A011931",
+          "name": "Beet seeds (excluding sugar beet seeds) and seeds for forage plants"
+        },
+        {
+          "id": "CPA_A011939",
+          "name": "Raw vegetable materials n.e.c."
+        },
+        {
+          "id": "CPA_A012",
+          "name": "Perennial crops"
+        },
+        {
+          "id": "CPA_A0121",
+          "name": "Grapes"
+        },
+        {
+          "id": "CPA_A01211",
+          "name": "Grapes"
+        },
+        {
+          "id": "CPA_A012111",
+          "name": "Table grapes"
+        },
+        {
+          "id": "CPA_A012112",
+          "name": "Other grapes, fresh"
+        },
+        {
+          "id": "CPA_A0122",
+          "name": "Tropical and subtropical fruits"
+        },
+        {
+          "id": "CPA_A01221",
+          "name": "Tropical and subtropical fruits"
+        },
+        {
+          "id": "CPA_A012211",
+          "name": "Avocados"
+        },
+        {
+          "id": "CPA_A012212",
+          "name": "Bananas, plantains and similar"
+        },
+        {
+          "id": "CPA_A012213",
+          "name": "Dates"
+        },
+        {
+          "id": "CPA_A012214",
+          "name": "Figs"
+        },
+        {
+          "id": "CPA_A012219",
+          "name": "Other tropical and subtropical fruits"
+        },
+        {
+          "id": "CPA_A0123",
+          "name": "Citrus fruits"
+        },
+        {
+          "id": "CPA_A01231",
+          "name": "Citrus fruits"
+        },
+        {
+          "id": "CPA_A012311",
+          "name": "Pomelo and grapefruits"
+        },
+        {
+          "id": "CPA_A012312",
+          "name": "Lemons and limes"
+        },
+        {
+          "id": "CPA_A012313",
+          "name": "Oranges"
+        },
+        {
+          "id": "CPA_A012314",
+          "name": "Tangerines, mandarins, clementines"
+        },
+        {
+          "id": "CPA_A012319",
+          "name": "Other citrus fruits"
+        },
+        {
+          "id": "CPA_A0124",
+          "name": "Pome fruits and stone fruits"
+        },
+        {
+          "id": "CPA_A01241",
+          "name": "Apples"
+        },
+        {
+          "id": "CPA_A012410",
+          "name": "Apples"
+        },
+        {
+          "id": "CPA_A01242",
+          "name": "Other pome fruits and stone fruits"
+        },
+        {
+          "id": "CPA_A012421",
+          "name": "Pears"
+        },
+        {
+          "id": "CPA_A012422",
+          "name": "Quinces"
+        },
+        {
+          "id": "CPA_A012423",
+          "name": "Apricots"
+        },
+        {
+          "id": "CPA_A012424",
+          "name": "Cherries"
+        },
+        {
+          "id": "CPA_A012425",
+          "name": "Peaches"
+        },
+        {
+          "id": "CPA_A012426",
+          "name": "Nectarines"
+        },
+        {
+          "id": "CPA_A012427",
+          "name": "Plums"
+        },
+        {
+          "id": "CPA_A012428",
+          "name": "Sloes"
+        },
+        {
+          "id": "CPA_A012429",
+          "name": "Other pome fruits and stone fruits n.e.c."
+        },
+        {
+          "id": "CPA_A0125",
+          "name": "Other tree and bush fruits and nuts"
+        },
+        {
+          "id": "CPA_A01251",
+          "name": "Berries and the fruits of the genus vaccinium"
+        },
+        {
+          "id": "CPA_A012511",
+          "name": "Kiwi fruit"
+        },
+        {
+          "id": "CPA_A012512",
+          "name": "Raspberries"
+        },
+        {
+          "id": "CPA_A012513",
+          "name": "Strawberries"
+        },
+        {
+          "id": "CPA_A012519",
+          "name": "Other berries, the fruits of the genus vaccinium n.e.c."
+        },
+        {
+          "id": "CPA_A01252",
+          "name": "Fruit seeds"
+        },
+        {
+          "id": "CPA_A012520",
+          "name": "Fruit seeds"
+        },
+        {
+          "id": "CPA_A01253",
+          "name": "Nuts (excluding wild edible nuts, groundnuts and coconuts)"
+        },
+        {
+          "id": "CPA_A012531",
+          "name": "Almonds"
+        },
+        {
+          "id": "CPA_A012532",
+          "name": "Chestnuts"
+        },
+        {
+          "id": "CPA_A012533",
+          "name": "Hazelnuts"
+        },
+        {
+          "id": "CPA_A012534",
+          "name": "Pistachios"
+        },
+        {
+          "id": "CPA_A012535",
+          "name": "Walnuts"
+        },
+        {
+          "id": "CPA_A012539",
+          "name": "Other nuts (excluding wild edible nuts, groundnuts and coconuts)"
+        },
+        {
+          "id": "CPA_A01259",
+          "name": "Other tree and bush fruits n.e.c."
+        },
+        {
+          "id": "CPA_A012590",
+          "name": "Other tree and bush fruits n.e.c."
+        },
+        {
+          "id": "CPA_A0126",
+          "name": "Oleaginous fruits"
+        },
+        {
+          "id": "CPA_A01261",
+          "name": "Olives"
+        },
+        {
+          "id": "CPA_A012611",
+          "name": "Table olives"
+        },
+        {
+          "id": "CPA_A012612",
+          "name": "Olives for production of olive oil"
+        },
+        {
+          "id": "CPA_A01262",
+          "name": "Coconuts"
+        },
+        {
+          "id": "CPA_A012620",
+          "name": "Coconuts"
+        },
+        {
+          "id": "CPA_A01269",
+          "name": "Other oleaginous fruits"
+        },
+        {
+          "id": "CPA_A012690",
+          "name": "Other oleaginous fruits"
+        },
+        {
+          "id": "CPA_A0127",
+          "name": "Beverage crops"
+        },
+        {
+          "id": "CPA_A01271",
+          "name": "Beverage crops"
+        },
+        {
+          "id": "CPA_A012711",
+          "name": "Coffee beans, not roasted"
+        },
+        {
+          "id": "CPA_A012712",
+          "name": "Tea leaves"
+        },
+        {
+          "id": "CPA_A012713",
+          "name": "Maté leaves"
+        },
+        {
+          "id": "CPA_A012714",
+          "name": "Cocoa beans"
+        },
+        {
+          "id": "CPA_A0128",
+          "name": "Spices, aromatic, drug and pharmaceutical crops"
+        },
+        {
+          "id": "CPA_A01281",
+          "name": "Spices, not processed"
+        },
+        {
+          "id": "CPA_A012811",
+          "name": "Pepper (piper spp.), raw"
+        },
+        {
+          "id": "CPA_A012812",
+          "name": "Chillies and peppers, dry (capsicum spp.), raw"
+        },
+        {
+          "id": "CPA_A012813",
+          "name": "Nutmeg, mace and cardamoms, raw"
+        },
+        {
+          "id": "CPA_A012814",
+          "name": "Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw"
+        },
+        {
+          "id": "CPA_A012815",
+          "name": "Cinnamon (canella), raw"
+        },
+        {
+          "id": "CPA_A012816",
+          "name": "Cloves (whole stems), raw"
+        },
+        {
+          "id": "CPA_A012817",
+          "name": "Ginger, dry, raw"
+        },
+        {
+          "id": "CPA_A012818",
+          "name": "Vanilla, raw"
+        },
+        {
+          "id": "CPA_A012819",
+          "name": "Other spices, not processed"
+        },
+        {
+          "id": "CPA_A01282",
+          "name": "Hop cones"
+        },
+        {
+          "id": "CPA_A012820",
+          "name": "Hop cones"
+        },
+        {
+          "id": "CPA_A01283",
+          "name": "Plants used primarily in perfumery, in pharmacy, or for insecticidal, fungicidal or similar purposes"
+        },
+        {
+          "id": "CPA_A012830",
+          "name": "Plants used primarily in perfumery, in pharmacy, or for insecticidal, fungicidal or similar purposes"
+        },
+        {
+          "id": "CPA_A0129",
+          "name": "Other perennial crops"
+        },
+        {
+          "id": "CPA_A01291",
+          "name": "Natural rubber"
+        },
+        {
+          "id": "CPA_A012910",
+          "name": "Natural rubber"
+        },
+        {
+          "id": "CPA_A01292",
+          "name": "Christmas trees, cut"
+        },
+        {
+          "id": "CPA_A012920",
+          "name": "Christmas trees, cut"
+        },
+        {
+          "id": "CPA_A01293",
+          "name": "Vegetable materials of a kind used primarily for plaiting or as stuffing or padding, or in dyeing or tanning"
+        },
+        {
+          "id": "CPA_A012930",
+          "name": "Vegetable materials of a kind used primarily for plaiting or as stuffing or padding, or in dyeing or tanning"
+        },
+        {
+          "id": "CPA_A013",
+          "name": "Planting material: live plants, bulbs, tubers and roots, cuttings and slips; mushroom spawn"
+        },
+        {
+          "id": "CPA_A0130",
+          "name": "Planting material: live plants, bulbs, tubers and roots, cuttings and slips; mushroom spawn"
+        },
+        {
+          "id": "CPA_A01301",
+          "name": "Planting material: live plants, bulbs, tubers and roots, cuttings and slips; mushroom spawn"
+        },
+        {
+          "id": "CPA_A013010",
+          "name": "Planting material: live plants, bulbs, tubers and roots, cuttings and slips; mushroom spawn"
+        },
+        {
+          "id": "CPA_A014",
+          "name": "Live animals and animal products"
+        }
+      ],
+      "total_codes": 5565,
+      "truncated": true
+    },
+    {
+      "id": "TRADE_POPULATION",
+      "position": 9,
+      "name": "TRADE_POPULATION",
+      "codes": [
+        {
+          "id": "_T",
+          "name": "Total trade"
+        },
+        {
+          "id": "BR",
+          "name": "Total trade with valid codes of which successfully matched with the Business Register"
+        },
+        {
+          "id": "NCL",
+          "name": "Unclassified trade, total"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown trade"
+        },
+        {
+          "id": "NRT",
+          "name": "Non-resident traders"
+        },
+        {
+          "id": "PI",
+          "name": "Private individuals"
+        },
+        {
+          "id": "BRM",
+          "name": "Enterprises with missing business register characteristics"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "FLOW",
+      "position": 10,
+      "name": "FLOW",
+      "codes": [
+        {
+          "id": "_T",
+          "name": "Total"
+        },
+        {
+          "id": "B",
+          "name": "Balance"
+        },
+        {
+          "id": "M",
+          "name": "Total Imports"
+        },
+        {
+          "id": "M1",
+          "name": "Import of foreign goods"
+        },
+        {
+          "id": "M2",
+          "name": "Re-imports"
+        },
+        {
+          "id": "M3",
+          "name": "Import of goods for inward processing"
+        },
+        {
+          "id": "M3_W",
+          "name": "Imports of goods for inward processing with change of ownership"
+        },
+        {
+          "id": "M3_WO",
+          "name": "Imports of goods for inward processing w/o change of ownership"
+        },
+        {
+          "id": "M4",
+          "name": "Import of goods after outward processing"
+        },
+        {
+          "id": "M4_W",
+          "name": "Import of goods after outward processing with change of ownership"
+        },
+        {
+          "id": "M4_WO",
+          "name": "Import of goods after outward processing w/o change of ownership"
+        },
+        {
+          "id": "M5",
+          "name": "Import on intra-firm trade"
+        },
+        {
+          "id": "X",
+          "name": "Total Exports"
+        },
+        {
+          "id": "X1",
+          "name": "Export of domestic goods"
+        },
+        {
+          "id": "X2",
+          "name": "Re-exports"
+        },
+        {
+          "id": "X3",
+          "name": "Export of goods after inward processing"
+        },
+        {
+          "id": "X3_W",
+          "name": "Export of goods after inward processing with change of ownership"
+        },
+        {
+          "id": "X3_WO",
+          "name": "Export of goods after inward processing w/o change of ownership"
+        },
+        {
+          "id": "X4",
+          "name": "Export of goods for outward processing"
+        },
+        {
+          "id": "X4_W",
+          "name": "Export of goods for outward processing with  change of ownership"
+        },
+        {
+          "id": "X4_WO",
+          "name": "Export of goods for outward processing w/o change of ownership"
+        },
+        {
+          "id": "X5",
+          "name": "Export on intra-firm trade"
+        }
+      ],
+      "total_codes": 22,
+      "truncated": false
+    },
+    {
+      "id": "TYPE_CONTROL",
+      "position": 11,
+      "name": "TYPE_CONTROL",
+      "codes": [
+        {
+          "id": "D",
+          "name": "Domestically controlled enterprises"
+        },
+        {
+          "id": "DI",
+          "name": "Domestically controlled enterprises without own affiliates abroad"
+        },
+        {
+          "id": "DM",
+          "name": "Domestically controlled enterprises with own affiliates abroad"
+        },
+        {
+          "id": "F",
+          "name": "Foreign controlled enterprises"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        },
+        {
+          "id": "_T",
+          "name": "Total"
+        }
+      ],
+      "total_codes": 6,
+      "truncated": false
+    },
+    {
+      "id": "TYPE_TRADER",
+      "position": 12,
+      "name": "TYPE_TRADER",
+      "codes": [
+        {
+          "id": "TWT",
+          "name": "Two-way trader"
+        },
+        {
+          "id": "OWT",
+          "name": "One-way trader"
+        },
+        {
+          "id": "_T",
+          "name": "Total"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    },
+    {
+      "id": "EXPORTS_INTENSITY",
+      "position": 13,
+      "name": "EXPORTS_INTENSITY",
+      "codes": [
+        {
+          "id": "PC0",
+          "name": "Zero percent"
+        },
+        {
+          "id": "PC0T24",
+          "name": "From 0 (0 excluded) to 24 percent NEW CODE"
+        },
+        {
+          "id": "PC25T49",
+          "name": "From 25 to 49 percent"
+        },
+        {
+          "id": "PC50T74",
+          "name": "From 50 to 74 percent"
+        },
+        {
+          "id": "PC_GE75",
+          "name": "75 percent or over"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        },
+        {
+          "id": "_T",
+          "name": "Total"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "INDICATOR",
+      "position": 14,
+      "name": "INDICATOR",
+      "codes": [
+        {
+          "id": "TOVT_PA",
+          "name": "Net turnover from the principal activity at the NACE2 three-digit level"
+        },
+        {
+          "id": "APROD",
+          "name": "Actual production"
+        },
+        {
+          "id": "AV",
+          "name": "Value added"
+        },
+        {
+          "id": "BUBA",
+          "name": "Bankruptcies"
+        },
+        {
+          "id": "BURE",
+          "name": "Registrations"
+        },
+        {
+          "id": "EMPL",
+          "name": "Number of employees and self-employed persons"
+        },
+        {
+          "id": "EMPL_BRTH",
+          "name": "Number of employees and self-employed persons in newly born enterprises"
+        },
+        {
+          "id": "EMPL_DTH",
+          "name": "Number of employees and self-employed persons in enterprise deaths"
+        },
+        {
+          "id": "EMPL_SALGE1",
+          "name": "Number of employees and self-employed persons in enterprises having at least one employee"
+        },
+        {
+          "id": "EMPL_SALGE1_BRTH",
+          "name": "Number of employees and self-employed persons in enterprises having the first employee"
+        },
+        {
+          "id": "EMPL_SALGE1_DTH",
+          "name": "Number of employees and self-employed persons in enterprises having no employees anymore"
+        },
+        {
+          "id": "EMPL_SALGE1_SRVL",
+          "name": "Number of employees and self-employed persons in survivals of enterprise having at least one employee"
+        },
+        {
+          "id": "EMPL_SALGE1_SRVL_YBRTH",
+          "name": "Number of employees and self-employed persons in survivals of enterprises having at least one employee, in the year of birth"
+        },
+        {
+          "id": "EMPL_SRVL",
+          "name": "Number of employees and self-employed persons in enterprise survivals (only for enterprises having survived for three calendar years)"
+        },
+        {
+          "id": "EMPL_SRVL_YBRTH",
+          "name": "Number of employees and self-employed persons in enterprise survivals, in the year of birth (only for enterprises having survived for three calendar years)"
+        },
+        {
+          "id": "EMPL_UNIT_LOC",
+          "name": "Number of employees and self-employed persons in local units"
+        },
+        {
+          "id": "ENT",
+          "name": "Number of active enterprises"
+        },
+        {
+          "id": "ENT_BRTH",
+          "name": "Enterprise births"
+        },
+        {
+          "id": "ENT_BRTH_SAL1",
+          "name": "Enterprises having the first employee"
+        },
+        {
+          "id": "ENT_DTH",
+          "name": "Enterprise deaths"
+        },
+        {
+          "id": "ENT_HGRW",
+          "name": "Number of high-growth enterprises"
+        },
+        {
+          "id": "ENT_HGRW_YNG",
+          "name": "Number of young high-growth enterprises"
+        },
+        {
+          "id": "ENT_SALGE1",
+          "name": "Number of enterprises having at least one employee"
+        },
+        {
+          "id": "ENT_SALGE1_BRTH",
+          "name": "Enterprises having the first employee"
+        },
+        {
+          "id": "ENT_SALGE1_DTH",
+          "name": "Enterprises having no employees anymore"
+        },
+        {
+          "id": "ENT_SALGE1_SRVL",
+          "name": "Survivals of enterprises having at least one employee"
+        },
+        {
+          "id": "ENT_SRVL",
+          "name": "Enterprise survivals"
+        },
+        {
+          "id": "ENT_TRD",
+          "name": "Number of enterprises engaged in international trade"
+        },
+        {
+          "id": "EXPN_SAL_BEN",
+          "name": "Employee benefits expense"
+        },
+        {
+          "id": "EXPN_SAL_BEN_IFATS",
+          "name": "Employee benefits expense in foreign-controlled enterprises"
+        },
+        {
+          "id": "GBARD",
+          "name": "Government budget allocations for research and development (GBARD)"
+        },
+        {
+          "id": "GOS",
+          "name": "Gross operating surplus"
+        },
+        {
+          "id": "GRSINV_BLD",
+          "name": "Gross investment in the acquisition of existing buildings"
+        },
+        {
+          "id": "GRSINV_CSTR",
+          "name": "Gross investment in construction and improvement of buildings"
+        },
+        {
+          "id": "GRSINV_LND",
+          "name": "Gross investment in land"
+        },
+        {
+          "id": "GRSINV_MCH",
+          "name": "Gross investment in machinery and equipment"
+        },
+        {
+          "id": "GRSINV_NTNCA_XGWL",
+          "name": "Gross investment in intangible non-current assets other than goodwill"
+        },
+        {
+          "id": "GRSINV_TNCA",
+          "name": "Gross investment in tangible non-current assets"
+        },
+        {
+          "id": "HOWK",
+          "name": "Hours worked by employees"
+        },
+        {
+          "id": "IMPR",
+          "name": "Import prices"
+        },
+        {
+          "id": "IMPX",
+          "name": "Import prices (non-euro area)"
+        },
+        {
+          "id": "IMPZ",
+          "name": "Import prices (euro area)"
+        },
+        {
+          "id": "IM_RND_EXPN",
+          "name": "Intramural R&D expenditure"
+        },
+        {
+          "id": "INV_SFT",
+          "name": "Investment in purchased software"
+        },
+        {
+          "id": "LEU",
+          "name": "Number of legal units in statistical unit"
+        },
+        {
+          "id": "MARG",
+          "name": "Gross margin on goods for resale"
+        },
+        {
+          "id": "PNUM",
+          "name": "Building permits: number of dwellings"
+        },
+        {
+          "id": "PREN",
+          "name": "Non-domestic producer prices"
+        },
+        {
+          "id": "PREX",
+          "name": "Non-domestic producer prices (non-euro area)"
+        },
+        {
+          "id": "PREZ",
+          "name": "Non-domestic producer prices (euro area)"
+        },
+        {
+          "id": "PRIN",
+          "name": "Domestic producer prices"
+        },
+        {
+          "id": "PROD",
+          "name": "Production (volume)"
+        },
+        {
+          "id": "PROD_OP_SC",
+          "name": "Production under sub-contracted operations"
+        },
+        {
+          "id": "PROD_SELL",
+          "name": "Sold production"
+        },
+        {
+          "id": "PRON",
+          "name": "Producer prices"
+        },
+        {
+          "id": "PSQM",
+          "name": "Building permits: square metres"
+        },
+        {
+          "id": "PUB_FUND_PERF",
+          "name": "National public funding to transnationally coordinated R&D"
+        },
+        {
+          "id": "PUR",
+          "name": "Total purchases of goods and services"
+        },
+        {
+          "id": "PUR_AGN",
+          "name": "Expenses on services provided through agency workers"
+        },
+        {
+          "id": "PUR_ENR",
+          "name": "Purchases of energy products"
+        },
+        {
+          "id": "PUR_RES",
+          "name": "Purchases of goods and services for resale"
+        },
+        {
+          "id": "PUR_RNT",
+          "name": "Expenses of long term rental and operating lease"
+        },
+        {
+          "id": "PUR_SC",
+          "name": "Payments to subcontractors"
+        },
+        {
+          "id": "QTY_NET_MASS",
+          "name": "Quantity of imports / exports of goods - Net Mass"
+        },
+        {
+          "id": "QTY_SU",
+          "name": "Quantity of imports / exports of goods - Supplementary Unit"
+        },
+        {
+          "id": "RND_PER",
+          "name": "R&D personnel"
+        },
+        {
+          "id": "RSE",
+          "name": "Researchers"
+        },
+        {
+          "id": "SAL",
+          "name": "Number of employees"
+        },
+        {
+          "id": "SALE_TINV",
+          "name": "Sales proceeds of tangible investments"
+        },
+        {
+          "id": "SAL_BRTH",
+          "name": "Number of employees in newly born enterprises"
+        },
+        {
+          "id": "SAL_DTH",
+          "name": "Number of employees in enterprise deaths"
+        },
+        {
+          "id": "SAL_FTE",
+          "name": "Number of employees in full-time equivalent units"
+        },
+        {
+          "id": "SAL_HGRW",
+          "name": "Number of employees in high-growth enterprises"
+        },
+        {
+          "id": "SAL_HGRW_YNG",
+          "name": "Number of employees in young high-growth enterprises"
+        },
+        {
+          "id": "SAL_SALGE1",
+          "name": "Number of employees in enterprises having at least one employee"
+        },
+        {
+          "id": "SAL_SALGE1_BRTH",
+          "name": "Number of employees in enterprises having the first employee"
+        },
+        {
+          "id": "SAL_SALGE1_DTH",
+          "name": "Number of employees in enterprises having no employees anymore"
+        },
+        {
+          "id": "SERV_EXP",
+          "name": "Exports of services"
+        },
+        {
+          "id": "SERV_IMP",
+          "name": "Imports of services"
+        },
+        {
+          "id": "SS_COST",
+          "name": "Social security costs"
+        },
+        {
+          "id": "STAT_UNIT",
+          "name": "Number of statistical units"
+        },
+        {
+          "id": "STAT_VAL",
+          "name": "Statistical value of imports / exports of goods/services"
+        },
+        {
+          "id": "STAT_VAL_EXP",
+          "name": "Statistical value of exports of goods by enterprises"
+        },
+        {
+          "id": "STK_CHG_GD",
+          "name": "Change in stock of goods"
+        },
+        {
+          "id": "STK_CHG_GD_FIN",
+          "name": "Change in stock of finished goods and work-in-progress"
+        },
+        {
+          "id": "STK_CHG_GD_RES",
+          "name": "Change in stock of goods for resale"
+        },
+        {
+          "id": "TOVD",
+          "name": "Domestic net turnover (value)"
+        },
+        {
+          "id": "TOVE",
+          "name": "Non-domestic net turnover (value)"
+        },
+        {
+          "id": "TOVT",
+          "name": "Net turnover (value)"
+        },
+        {
+          "id": "TOVT_ATF",
+          "name": "Net turnover from agriculture, forestry, fishing and industrial activities"
+        },
+        {
+          "id": "TOVT_BTE",
+          "name": "Net turnover from industrial activities excluding construction"
+        },
+        {
+          "id": "TOVT_BTF",
+          "name": "Net turnover from industrial activities"
+        },
+        {
+          "id": "TOVT_F",
+          "name": "Net turnover from construction"
+        },
+        {
+          "id": "TOVT_F41",
+          "name": "Net turnover from building"
+        },
+        {
+          "id": "TOVT_F42",
+          "name": "Net turnover from civil engineering"
+        },
+        {
+          "id": "TOVT_GTU",
+          "name": "Net turnover from service activities"
+        },
+        {
+          "id": "TOVT_NACE",
+          "name": "Net turnover of foreign-controlled enterprises"
+        },
+        {
+          "id": "TOVT_PRD",
+          "name": "Net turnover by product"
+        },
+        {
+          "id": "TOVT_RES",
+          "name": "Net turnover by residence of client"
+        },
+        {
+          "id": "TOVT_SC",
+          "name": "Net turnover from subcontracting"
+        },
+        {
+          "id": "TOVT_TRAD",
+          "name": "Net turnover from trading activities of purchase and resale and from intermediary activities"
+        },
+        {
+          "id": "TOVV",
+          "name": "Volume of sales"
+        },
+        {
+          "id": "TOVX",
+          "name": "Non-domestic net turnover (non-euro area) (value)"
+        },
+        {
+          "id": "TOVZ",
+          "name": "Non-domestic net turnover (euro area) (value)"
+        },
+        {
+          "id": "TRDR",
+          "name": "Number of traders"
+        },
+        {
+          "id": "UNIT_LOC",
+          "name": "Number of local units"
+        },
+        {
+          "id": "VAL_OUT",
+          "name": "Value of output"
+        },
+        {
+          "id": "WAGE",
+          "name": "Wages and salaries"
+        },
+        {
+          "id": "WAGE_UNIT_LOC",
+          "name": "Wages and salaries in local units"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "INST",
+          "name": "Institutions"
+        },
+        {
+          "id": "EM_RND_EXPN",
+          "name": "R&D extramural expenditure"
+        },
+        {
+          "id": "ENT_CV",
+          "name": "Coefficient of variation for indicator 210101 Number of active enterprises"
+        },
+        {
+          "id": "EMPL_CV",
+          "name": "Coefficient of variation for indicator 220101 Number of employees and self-employed persons"
+        },
+        {
+          "id": "TOVT_CV",
+          "name": "Coefficient of variation for indicator 250101 Net turnover"
+        },
+        {
+          "id": "AV_CV",
+          "name": "Coefficient of variation for indicator 250401 Value added"
+        },
+        {
+          "id": "SPL_CVG",
+          "name": "Sample coverage: number of employees and self-employed persons in the sample / number of employees and self-employed persons in target population (%)"
+        },
+        {
+          "id": "SPL_SZ",
+          "name": "Sample size= number of active enterprises in the sample (Alternatively, legal units may be used)"
+        },
+        {
+          "id": "SPL_RT",
+          "name": "Sample ratio= number of active enterprises in the sample / number of active enterprises in the target population (%) (Alternatively, legal units may be used)"
+        },
+        {
+          "id": "W_RPRT",
+          "name": "Weighted response rate= Unit non-response shall be weighted, preferably by number of employees and self-employed persons. (Alternatively, net turnover may be used or administrative data i.e. social security data for employment)"
+        },
+        {
+          "id": "NW_RPRT",
+          "name": "Unweighted response rate: number of responding active enterprises / number of active enterprise in the sample (%)"
+        }
+      ],
+      "total_codes": 121,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{TABLE_IDENTIFIER}.{FREQ}.{REF_AREA}.{COUNTERPART_AREA}.{ACTIVITY}.{NUMBER_EMPL}.{TOP_ENTERPRISES}.{NUMBER_PARTNERS}.{PRODUCT}.{TRADE_POPULATION}.{FLOW}.{TYPE_CONTROL}.{TYPE_TRADER}.{EXPORTS_INTENSITY}.{INDICATOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:50+00:00",
+  "schema_version": 1
+}

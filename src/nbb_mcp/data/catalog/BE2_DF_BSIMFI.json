@@ -1,0 +1,414 @@
+{
+  "agency": "BE2",
+  "id": "DF_BSIMFI",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Main balance sheet items of the monetary financial institutions, data on territorial basis",
+    "fr": "Principales rubriques du bilan des institutions financières monétaires, données sur base territoriale",
+    "nl": "Voornaamste balansrubrieken van de monetaire financiële instellingen, gegevens op territoriale basis",
+    "de": "Main balance sheet items of the monetary financial institutions, data on territorial basis"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "MBSI_ITEM",
+      "position": 1,
+      "name": "MBSI_ITEM",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Assets"
+        },
+        {
+          "id": "A1",
+          "name": "Cash"
+        },
+        {
+          "id": "A2",
+          "name": "Loans"
+        },
+        {
+          "id": "A2BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "A2BEMFI",
+          "name": "To monetary financial institutions"
+        },
+        {
+          "id": "A2BEOIU",
+          "name": "To institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "A2BEGG",
+          "name": "General government"
+        },
+        {
+          "id": "A2BEOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "A2MU",
+          "name": "Other member states of the Monetary Union"
+        },
+        {
+          "id": "A2MUMFI",
+          "name": "To monetary financial institutions"
+        },
+        {
+          "id": "A2MUOIU",
+          "name": "To institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "A2MUGG",
+          "name": "General government"
+        },
+        {
+          "id": "A2MUOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "A2RW",
+          "name": "Rest of the world"
+        },
+        {
+          "id": "A3",
+          "name": "Securities other than shares"
+        },
+        {
+          "id": "A3BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "A3BEEU",
+          "name": "Euro"
+        },
+        {
+          "id": "A3BEEUMFI",
+          "name": "Of monetary financial institutions"
+        },
+        {
+          "id": "A3BEEUOIU",
+          "name": "Of institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "A3BEEUGG",
+          "name": "General government"
+        },
+        {
+          "id": "A3BEEUOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "A3BEFC",
+          "name": "Foreign currencies"
+        },
+        {
+          "id": "A3BEFCMFI",
+          "name": "Of monetary financial institutions"
+        },
+        {
+          "id": "A3BEFCOIU",
+          "name": "Of institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "A3BEFCGG",
+          "name": "General government"
+        },
+        {
+          "id": "A3BEFCOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "A3MU",
+          "name": "Other member states of the Monetary Union"
+        },
+        {
+          "id": "A3MUEU",
+          "name": "Euro"
+        },
+        {
+          "id": "A3MUEUMFI",
+          "name": "Of monetary financial institutions"
+        },
+        {
+          "id": "A3MUEUOIU",
+          "name": "Of institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "A3MUEUGG",
+          "name": "General government"
+        },
+        {
+          "id": "A3MUEUOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "A3MUFC",
+          "name": "Foreign currencies"
+        },
+        {
+          "id": "A3MUFCMFI",
+          "name": "Of monetary financial institutions"
+        },
+        {
+          "id": "A3MUFCOIU",
+          "name": "Of institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "A3MUFCGG",
+          "name": "General government"
+        },
+        {
+          "id": "A3MUFCOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "A3RW",
+          "name": "Rest of the world"
+        },
+        {
+          "id": "A4",
+          "name": "Money market paper"
+        },
+        {
+          "id": "A4EU",
+          "name": "Euro"
+        },
+        {
+          "id": "A4FC",
+          "name": "Foreign currencies"
+        },
+        {
+          "id": "A5",
+          "name": "Shares and other equity"
+        },
+        {
+          "id": "A6",
+          "name": "Fixed assets"
+        },
+        {
+          "id": "A7",
+          "name": "Remaining assets"
+        },
+        {
+          "id": "L",
+          "name": "Liabilities"
+        },
+        {
+          "id": "L1",
+          "name": "Currency and coins in circulation"
+        },
+        {
+          "id": "L2",
+          "name": "Deposits"
+        },
+        {
+          "id": "L2BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "L2BEEU",
+          "name": "Euro"
+        },
+        {
+          "id": "L2BEEUMFI",
+          "name": "Of monetary financial institutions"
+        },
+        {
+          "id": "L2BEEUOIU",
+          "name": "Of institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "L2BEEUGG",
+          "name": "General government"
+        },
+        {
+          "id": "L2BEEUOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "L2BEFC",
+          "name": "Foreign currencies"
+        },
+        {
+          "id": "L2BEFCMFI",
+          "name": "Of monetary financial institutions"
+        },
+        {
+          "id": "L2BEFCOIU",
+          "name": "Of institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "L2BEFCGG",
+          "name": "General government"
+        },
+        {
+          "id": "L2BEFCOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "L2MU",
+          "name": "Other member states of the Monetary Union"
+        },
+        {
+          "id": "L2MUEU",
+          "name": "Euro"
+        },
+        {
+          "id": "L2MUEUMFI",
+          "name": "Of monetary financial institutions"
+        },
+        {
+          "id": "L2MUEUOIU",
+          "name": "Of institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "L2MUEUGG",
+          "name": "General government"
+        },
+        {
+          "id": "L2MUEUOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "L2MUFC",
+          "name": "Foreign currencies"
+        },
+        {
+          "id": "L2MUFCMFI",
+          "name": "Of monetary financial institutions"
+        },
+        {
+          "id": "L2MUFCOIU",
+          "name": "Of institutional units other than monetary financial institutions"
+        },
+        {
+          "id": "L2MUFCGG",
+          "name": "General government"
+        },
+        {
+          "id": "L2MUFCOR",
+          "name": "Other residents"
+        },
+        {
+          "id": "L2RW",
+          "name": "Rest of the world"
+        },
+        {
+          "id": "L3",
+          "name": "Shares issued of monetary collective investment institutions"
+        },
+        {
+          "id": "L4",
+          "name": "Debt securities issued"
+        },
+        {
+          "id": "L4EU",
+          "name": "Euro"
+        },
+        {
+          "id": "L4EU1",
+          "name": "Up to 1 year"
+        },
+        {
+          "id": "L4EU12",
+          "name": "Over 1 and up to 2 years"
+        },
+        {
+          "id": "L4EU2",
+          "name": "Over 2 years"
+        },
+        {
+          "id": "L4FC",
+          "name": "Foreign currencies"
+        },
+        {
+          "id": "L4FC1",
+          "name": "Up to 1 year"
+        },
+        {
+          "id": "L4FC12",
+          "name": "Over 1 and up to 2 years"
+        },
+        {
+          "id": "L4FC2",
+          "name": "Over 2 years"
+        },
+        {
+          "id": "L5",
+          "name": "Capital and reserves"
+        },
+        {
+          "id": "L6",
+          "name": "Remaining liabilities"
+        }
+      ],
+      "total_codes": 82,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{MBSI_ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:46+00:00",
+  "schema_version": 1
+}

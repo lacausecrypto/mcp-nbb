@@ -1,0 +1,1144 @@
+{
+  "agency": "BE2",
+  "id": "DF_NFGOVCOFOG_DISS",
+  "version": "1.0",
+  "category": "public_finances",
+  "is_final": true,
+  "names": {
+    "en": "Public expenditure by functions and transactions",
+    "fr": "Dépenses publiques par fonctions et transactions",
+    "nl": "Overheidsuitgaven naar functies en transacties",
+    "de": "Public expenditure by functions and transactions"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "FUNCTION",
+      "position": 1,
+      "name": "FUNCTION",
+      "codes": [
+        {
+          "id": "TOT",
+          "name": "Total"
+        },
+        {
+          "id": "F01",
+          "name": "01 General public services"
+        },
+        {
+          "id": "F01_1",
+          "name": "01.1 Executive and legislative organs, financial and fiscal affairs, external affairs"
+        },
+        {
+          "id": "F01_2",
+          "name": "01.2 Foreign economic aid"
+        },
+        {
+          "id": "F01_3",
+          "name": "01.3 General services"
+        },
+        {
+          "id": "F01_4",
+          "name": "01.4 Basic research"
+        },
+        {
+          "id": "F01_5",
+          "name": "01.5 R&D General public services"
+        },
+        {
+          "id": "F01_6",
+          "name": "01.6 General public services n.e.c."
+        },
+        {
+          "id": "F01_7",
+          "name": "01.7 Public debt transactions"
+        },
+        {
+          "id": "F01_8",
+          "name": "01.8 Transfers of a general character between different levels of government"
+        },
+        {
+          "id": "F02",
+          "name": "02 Defence"
+        },
+        {
+          "id": "F02_1",
+          "name": "02.1 Military defence"
+        },
+        {
+          "id": "F02_2",
+          "name": "02.2 Civil defence"
+        },
+        {
+          "id": "F02_3",
+          "name": "02.3 Foreign military aid"
+        },
+        {
+          "id": "F02_4",
+          "name": "02.4 R&D Defence"
+        },
+        {
+          "id": "F02_5",
+          "name": "02.5 Defence n.e.c."
+        },
+        {
+          "id": "F03",
+          "name": "03 Public order and safety"
+        },
+        {
+          "id": "F03_1",
+          "name": "03.1 Police services"
+        },
+        {
+          "id": "F03_2",
+          "name": "03.2 Fire-protection services"
+        },
+        {
+          "id": "F03_3",
+          "name": "03.3 Law courts"
+        },
+        {
+          "id": "F03_4",
+          "name": "03.4 Prisons"
+        },
+        {
+          "id": "F03_5",
+          "name": "03.5 R&D Public order and safety"
+        },
+        {
+          "id": "F03_6",
+          "name": "03.6 Public order and safety n.e.c."
+        },
+        {
+          "id": "F04",
+          "name": "04 Economic affairs"
+        },
+        {
+          "id": "F04_1",
+          "name": "04.1 General economic, commercial and labour affairs"
+        },
+        {
+          "id": "F04_2",
+          "name": "04.2 Agriculture, forestry, fishing and hunting"
+        },
+        {
+          "id": "F04_3",
+          "name": "04.3 Fuel and energy"
+        },
+        {
+          "id": "F04_4",
+          "name": "04.4 Mining, manufacturing and construction"
+        },
+        {
+          "id": "F04_5",
+          "name": "04.5 Transport"
+        },
+        {
+          "id": "F04_6",
+          "name": "04.6 Communication"
+        },
+        {
+          "id": "F04_7",
+          "name": "04.7 Other industries"
+        },
+        {
+          "id": "F04_8",
+          "name": "04.8 R&D Economic affairs"
+        },
+        {
+          "id": "F04_9",
+          "name": "04.9 Economic affairs n.e.c."
+        },
+        {
+          "id": "F05",
+          "name": "05 Environment protection"
+        },
+        {
+          "id": "F05_1",
+          "name": "05.1 Waste management"
+        },
+        {
+          "id": "F05_2",
+          "name": "05.2 Waste water management"
+        },
+        {
+          "id": "F05_3",
+          "name": "05.3 Pollution abatement"
+        },
+        {
+          "id": "F05_4",
+          "name": "05.4 Protection of biodiversity and landscape"
+        },
+        {
+          "id": "F05_5",
+          "name": "05.5 R&D Environmental protection"
+        },
+        {
+          "id": "F05_6",
+          "name": "05.6 Environmental protection n.e.c."
+        },
+        {
+          "id": "F06",
+          "name": "06 Housing"
+        },
+        {
+          "id": "F06_1",
+          "name": "06.1 Housing development"
+        },
+        {
+          "id": "F06_2",
+          "name": "06.2 Community development"
+        },
+        {
+          "id": "F06_3",
+          "name": "06.3 Water supply"
+        },
+        {
+          "id": "F06_4",
+          "name": "06.4 Street lighting"
+        },
+        {
+          "id": "F06_5",
+          "name": "06.5 R&D Housing and community amenities"
+        },
+        {
+          "id": "F06_6",
+          "name": "06.6 Housing and community amenities n.e.c."
+        },
+        {
+          "id": "F07",
+          "name": "07 Health"
+        },
+        {
+          "id": "F07_1",
+          "name": "07.1 Medical products, appliances and equipment"
+        },
+        {
+          "id": "F07_2",
+          "name": "07.2 Outpatient services"
+        },
+        {
+          "id": "F07_3",
+          "name": "07.3 Hospital services"
+        },
+        {
+          "id": "F07_4",
+          "name": "07.4 Public health services"
+        },
+        {
+          "id": "F07_5",
+          "name": "07.5 R&D Health"
+        },
+        {
+          "id": "F07_6",
+          "name": "07.6 Health n.e.c."
+        },
+        {
+          "id": "F08",
+          "name": "08 Recreation, culture and religion"
+        },
+        {
+          "id": "F08_1",
+          "name": "08.1 Recreational and sporting services"
+        },
+        {
+          "id": "F08_2",
+          "name": "08.2 Cultural services"
+        },
+        {
+          "id": "F08_3",
+          "name": "08.3 Broadcasting and publishing services"
+        },
+        {
+          "id": "F08_4",
+          "name": "08.4 Religious and other community services"
+        },
+        {
+          "id": "F08_5",
+          "name": "08.5 R&D Recreation, culture and religion"
+        },
+        {
+          "id": "F08_6",
+          "name": "08.6 Recreation, culture and religion n.e.c."
+        },
+        {
+          "id": "F09",
+          "name": "09 Education"
+        },
+        {
+          "id": "F09_1",
+          "name": "09.1 Pre-primary and primary education"
+        },
+        {
+          "id": "F09_2",
+          "name": "09.2 Secondary education"
+        },
+        {
+          "id": "F09_3",
+          "name": "09.3 Post-secondary non-tertiary education"
+        },
+        {
+          "id": "F09_4",
+          "name": "09.4 Tertiary education"
+        },
+        {
+          "id": "F09_5",
+          "name": "09.5 Education not definable by level"
+        },
+        {
+          "id": "F09_6",
+          "name": "09.6 Subsidiary services to education"
+        },
+        {
+          "id": "F09_7",
+          "name": "09.7 R&D Education"
+        },
+        {
+          "id": "F09_8",
+          "name": "09.8 Education n.e.c."
+        },
+        {
+          "id": "F10",
+          "name": "10 Social protection"
+        },
+        {
+          "id": "F10_1",
+          "name": "10.1 Sickness and disability"
+        },
+        {
+          "id": "F10_2",
+          "name": "10.2 Old age"
+        },
+        {
+          "id": "F10_3",
+          "name": "10.3 Survivors"
+        },
+        {
+          "id": "F10_4",
+          "name": "10.4 Family and children"
+        },
+        {
+          "id": "F10_5",
+          "name": "10.5 Unemployment"
+        },
+        {
+          "id": "F10_6",
+          "name": "10.6 Housing"
+        },
+        {
+          "id": "F10_7",
+          "name": "10.7 Social exclusion n.e.c."
+        },
+        {
+          "id": "F10_8",
+          "name": "10.8 R&D Social protection"
+        },
+        {
+          "id": "F10_9",
+          "name": "10.9 Social protection n.e.c."
+        }
+      ],
+      "total_codes": 80,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 2,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "4Y",
+          "name": "All the European Union institutions"
+        },
+        {
+          "id": "B0",
+          "name": "EU Member States (fixed composition) incl. EU institutions"
+        },
+        {
+          "id": "D0",
+          "name": "Extra-EU (fixed composition)"
+        },
+        {
+          "id": "DEF",
+          "name": "Net lending (+) or net borrowing (-)"
+        },
+        {
+          "id": "1EN_I",
+          "name": "of which Entity I"
+        },
+        {
+          "id": "1EN_II",
+          "name": "of which Entity II"
+        },
+        {
+          "id": "GGEXP",
+          "name": "Expenditure"
+        },
+        {
+          "id": "GGCAPE",
+          "name": "Capital expenditure"
+        },
+        {
+          "id": "GGCEEIC",
+          "name": "Current expenses excluding interest charges"
+        },
+        {
+          "id": "GGCE",
+          "name": "Compensation of employees"
+        },
+        {
+          "id": "GGCTCOMP",
+          "name": "Current transfers to companies"
+        },
+        {
+          "id": "GGCTHH",
+          "name": "Current transfers to households"
+        },
+        {
+          "id": "GGCTOS",
+          "name": "Capital transfers to other sectors"
+        },
+        {
+          "id": "GGCTREST",
+          "name": "Current transfers to the rest of the world (ROW)"
+        },
+        {
+          "id": "GGEXPO",
+          "name": "Other expenditure"
+        },
+        {
+          "id": "GGGFCF",
+          "name": "Gross fixed capital formation"
+        },
+        {
+          "id": "GGICPT",
+          "name": "Intermediate consumption and paid taxes"
+        },
+        {
+          "id": "GGINTC",
+          "name": "Interest charges"
+        },
+        {
+          "id": "GGONANF",
+          "name": "Other net acquisitions of non-financial assets"
+        },
+        {
+          "id": "GGPB",
+          "name": "Primary balance"
+        },
+        {
+          "id": "GGREC",
+          "name": "Receipts"
+        },
+        {
+          "id": "GGCAPTOS",
+          "name": "Capital transfers from other sectors"
+        },
+        {
+          "id": "GGCSPG",
+          "name": "Current sales of produced goods and services"
+        },
+        {
+          "id": "GGCURTOS",
+          "name": "Current transfers from other sectors"
+        },
+        {
+          "id": "GGFPR",
+          "name": "Fiscal and parafiscal receipts"
+        },
+        {
+          "id": "GGASC",
+          "name": "Actual social contributions"
+        },
+        {
+          "id": "GGDT",
+          "name": "Direct taxes"
+        },
+        {
+          "id": "GGCORP",
+          "name": "Corporations"
+        },
+        {
+          "id": "GGHH",
+          "name": "Households"
+        },
+        {
+          "id": "GGISC",
+          "name": "Imputed social contributions"
+        },
+        {
+          "id": "GGIT",
+          "name": "Indirect taxes"
+        },
+        {
+          "id": "GGOPI",
+          "name": "Other property income"
+        },
+        {
+          "id": "GGOS",
+          "name": "Other sectors"
+        },
+        {
+          "id": "GGRECO",
+          "name": "Other receipts"
+        },
+        {
+          "id": "GGRI",
+          "name": "Received interests"
+        },
+        {
+          "id": "GGSB",
+          "name": "Social benefits"
+        },
+        {
+          "id": "GGIC",
+          "name": "In cash"
+        },
+        {
+          "id": "GGIKMP",
+          "name": "In kind provided by market producers"
+        },
+        {
+          "id": "GGSC",
+          "name": "Subsidies to companies"
+        },
+        {
+          "id": "GGSG",
+          "name": "Saving, gross"
+        },
+        {
+          "id": "GGTOC",
+          "name": "Taxes on capital"
+        },
+        {
+          "id": "GSV",
+          "name": "Gross saving"
+        },
+        {
+          "id": "HHFCE",
+          "name": "Final consumption expenditure"
+        },
+        {
+          "id": "HHGDI",
+          "name": "Gross disposable income"
+        },
+        {
+          "id": "HHCER",
+          "name": "Compensation of employees (received)"
+        },
+        {
+          "id": "HHCTI",
+          "name": "Current taxes on income and wealth (-)"
+        },
+        {
+          "id": "HHGFCF",
+          "name": "Gross fixed capital formation"
+        },
+        {
+          "id": "HHGOSGMI",
+          "name": "Gross operating surplus and gross mixed income"
+        },
+        {
+          "id": "HHGS",
+          "name": "Gross saving"
+        },
+        {
+          "id": "HHKI",
+          "name": "Key indicators:"
+        },
+        {
+          "id": "HHIR",
+          "name": "Investment ratio (%)"
+        },
+        {
+          "id": "HHNST",
+          "name": "Net social transfers"
+        },
+        {
+          "id": "HHPI",
+          "name": "Property income and other net current transfers"
+        },
+        {
+          "id": "HHSR",
+          "name": "Savings ratio (%)"
+        },
+        {
+          "id": "NFCEOT",
+          "name": "Compensation of employees and other taxes less subsidies on production"
+        },
+        {
+          "id": "NFCEP",
+          "name": "Compensation of employees (paid)"
+        },
+        {
+          "id": "NFGAV",
+          "name": "Gross added value"
+        },
+        {
+          "id": "NFGFCF",
+          "name": "Gross fixed capital formation"
+        },
+        {
+          "id": "NFGOS",
+          "name": "Gross operating surplus"
+        },
+        {
+          "id": "NFKI",
+          "name": "Key indicators:"
+        },
+        {
+          "id": "NFIR",
+          "name": "Investment ratio (%)"
+        },
+        {
+          "id": "NFOT",
+          "name": "Other taxes less subsidies on production"
+        },
+        {
+          "id": "NFPF",
+          "name": "Profit share (%)"
+        },
+        {
+          "id": "NLNB",
+          "name": "Net lending (+) / Net borrowing (-)"
+        },
+        {
+          "id": "PDF",
+          "name": "Primary balance"
+        },
+        {
+          "id": "TOE",
+          "name": "Expenditure"
+        },
+        {
+          "id": "1CE",
+          "name": "Current expenditure excluding interest charges"
+        },
+        {
+          "id": "1CT",
+          "name": "Current transfers to the rest of the world (ROW)"
+        },
+        {
+          "id": "1CT_T",
+          "name": "Other current transfers to other government"
+        },
+        {
+          "id": "1FT_T",
+          "name": "Current transfers of fiscal receipts to other government"
+        },
+        {
+          "id": "1IC",
+          "name": "Intermediate consumption and paid taxes"
+        },
+        {
+          "id": "1OT",
+          "name": "Other current transfers"
+        },
+        {
+          "id": "1OT_CO",
+          "name": "Current transfers to companies"
+        },
+        {
+          "id": "1OT_HH",
+          "name": "Current transfers to households"
+        },
+        {
+          "id": "1SB",
+          "name": "Social benefits"
+        },
+        {
+          "id": "1SB_F",
+          "name": "Family allowances"
+        },
+        {
+          "id": "1SB_H",
+          "name": "Health care"
+        },
+        {
+          "id": "1SB_O",
+          "name": "Other"
+        },
+        {
+          "id": "1SB_P",
+          "name": "Pensions"
+        },
+        {
+          "id": "1SB_R",
+          "name": "Early retirement pensions and career termination"
+        },
+        {
+          "id": "1SB_S",
+          "name": "Sickness and disability benefits"
+        },
+        {
+          "id": "1SB_U",
+          "name": "Unemployment"
+        },
+        {
+          "id": "1SBM",
+          "name": "Social benefits in cash"
+        },
+        {
+          "id": "1SBN",
+          "name": "Social benefits in kind provided by market producers"
+        },
+        {
+          "id": "COE",
+          "name": "Compensation of employees"
+        },
+        {
+          "id": "CTE",
+          "name": "Subsidies"
+        },
+        {
+          "id": "INT_C",
+          "name": "Interest charges"
+        },
+        {
+          "id": "KEX",
+          "name": "Capital expenditure"
+        },
+        {
+          "id": "1CA",
+          "name": "Other capital expenditure"
+        },
+        {
+          "id": "1CA_A",
+          "name": "Other net acquisitions of non-financial assets"
+        },
+        {
+          "id": "1CA_O",
+          "name": "Capital transfers to other sectors"
+        },
+        {
+          "id": "1CA_T",
+          "name": "Capital transfers to other government"
+        },
+        {
+          "id": "INV",
+          "name": "Gross fixed capital formation"
+        },
+        {
+          "id": "TOR",
+          "name": "Receipts"
+        },
+        {
+          "id": "1CT_F",
+          "name": "Other current and capital transfers coming from other government"
+        },
+        {
+          "id": "1FP",
+          "name": "Fiscal and parafiscal receipts"
+        },
+        {
+          "id": "1FT_F",
+          "name": "Current transfers of fiscal receipts coming from other government"
+        },
+        {
+          "id": "1NF",
+          "name": "Non-fiscal and non-parafiscal receipts"
+        },
+        {
+          "id": "CAO",
+          "name": "Capital transfers from other sectors"
+        },
+        {
+          "id": "CAT_F",
+          "name": "Capital transfers coming from other government"
+        },
+        {
+          "id": "CSG",
+          "name": "Current sales of produced goods and services"
+        },
+        {
+          "id": "CUO",
+          "name": "Current transfers from other sectors and received subsidies"
+        },
+        {
+          "id": "CUT_F",
+          "name": "Other current transfers coming from other government"
+        },
+        {
+          "id": "DTX",
+          "name": "Direct taxes"
+        },
+        {
+          "id": "DTX_C",
+          "name": "Corporations"
+        },
+        {
+          "id": "DTX_I",
+          "name": "Households"
+        },
+        {
+          "id": "DTX_O",
+          "name": "Other sectors"
+        },
+        {
+          "id": "INT_R",
+          "name": "Received interests"
+        },
+        {
+          "id": "ITX",
+          "name": "Indirect taxes"
+        },
+        {
+          "id": "KTX",
+          "name": "Taxes on capital"
+        },
+        {
+          "id": "OPI",
+          "name": "Other property income"
+        },
+        {
+          "id": "SCA",
+          "name": "Actual social contributions"
+        },
+        {
+          "id": "SCI",
+          "name": "Imputed social contributions"
+        },
+        {
+          "id": "TOT",
+          "name": "Total government expenditure"
+        },
+        {
+          "id": "D1",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "D3",
+          "name": "Subsidies (D.3)"
+        },
+        {
+          "id": "D4",
+          "name": "Property income paid (D.4)"
+        },
+        {
+          "id": "D4_S1311",
+          "name": "Property income paid (D.4), property income of which payable to the federal government (S.1311)"
+        },
+        {
+          "id": "D4_S1312",
+          "name": "Property income paid (D.4), property income of which payable to the communities and regions (S.1312)"
+        },
+        {
+          "id": "D4_S1313",
+          "name": "Property income paid (D.4), property income of which payable to the local government (S.1313)"
+        },
+        {
+          "id": "D4_S1314",
+          "name": "p"
+        },
+        {
+          "id": "D41",
+          "name": "Interest paid (D.41)"
+        },
+        {
+          "id": "D62_D6311_D63121_D63131",
+          "name": "Social benefits other than social transfers in kind and social transfers in kind - purchased market production (D.6M)"
+        },
+        {
+          "id": "D62",
+          "name": "Social benefits other than social transfers in kind (D.62)"
+        },
+        {
+          "id": "D632",
+          "name": "Social transfers in kind - purchased market production (D.632)"
+        },
+        {
+          "id": "D7",
+          "name": "Other current transfers (D.7)"
+        },
+        {
+          "id": "D7_EGS",
+          "name": "Other current transfers (D.7), excluding current transfers to the government sector"
+        },
+        {
+          "id": "D7_GS",
+          "name": "Other current transfers (D.7) to the government sector"
+        },
+        {
+          "id": "D7_S1311",
+          "name": "Other current transfers (D.7), Other current transfers of which payable to the federal government (S.1311)"
+        },
+        {
+          "id": "D7_S1312",
+          "name": "Other current transfers (D.7), Other current transfers of which payable to the communities and regions (S.1312)"
+        },
+        {
+          "id": "D7_S1313",
+          "name": "Other current transfers (D.7), Other current transfers of which payable to the local government (S.1313)"
+        },
+        {
+          "id": "D7_S1314",
+          "name": "Other current transfers (D.7), Other current transfers of which payable to the social security funds (S.1314)"
+        },
+        {
+          "id": "D9",
+          "name": "Capital transfers (D.9)"
+        },
+        {
+          "id": "D9_D92",
+          "name": "Capital transfers (D.9), of which, investment grants (D.92)"
+        },
+        {
+          "id": "D9_EGS",
+          "name": "Capital transfers (D.9) excluding capital transfers to the government sector"
+        },
+        {
+          "id": "D9_GS",
+          "name": "Capital transfers (D.9) to the government sector"
+        },
+        {
+          "id": "D9_S1311",
+          "name": "Capital transfers (D.9), capital transfers of which payable to the federal government (S.1311)"
+        },
+        {
+          "id": "D9_S1312",
+          "name": "Capital transfers (D.9), capital transfers of which payable to the communities and regions (S.1312)"
+        },
+        {
+          "id": "D9_S1313",
+          "name": "Capital transfers (D.9), capital transfers of which payable to the local government (S.1313)"
+        },
+        {
+          "id": "D9_S1314",
+          "name": "Capital transfers (D.9), capital transfers of which payable to the social security funds (S.1314)"
+        },
+        {
+          "id": "OTE",
+          "name": "Total expenditure (OTE)"
+        },
+        {
+          "id": "P2_D29_D5_D8",
+          "name": "Intermediate consumption  + Other taxes on production + Current taxes on income, wealth, etc. + Adjustment for the change in net equity of households in pension entitlements (OEC)"
+        },
+        {
+          "id": "OED",
+          "name": "Other taxes on production + Current taxes on income, wealth, etc. + Adjustment for the change in net equity of households in pension entitlements (OED)"
+        },
+        {
+          "id": "P2",
+          "name": "Intermediate consumption (P.2)"
+        },
+        {
+          "id": "P3",
+          "name": "Final consumption expenditure (P.3)"
+        },
+        {
+          "id": "P31",
+          "name": "Individual consumption expenditure (P.31)"
+        },
+        {
+          "id": "P32",
+          "name": "Collective consumption expenditure (P.32)"
+        },
+        {
+          "id": "P5_K2",
+          "name": "Gross capital formation + acquisitions less disposals of non-financial non-produced assets (OP.5ANP)"
+        },
+        {
+          "id": "P5",
+          "name": "Gross capital formation (P.5) and acquisitions less disposals of non-produced assets (NP)"
+        },
+        {
+          "id": "P5_NP",
+          "name": "Acquisitions less disposals of non-financial non-produced assets (NP)"
+        },
+        {
+          "id": "P5_P51G",
+          "name": "Gross capital formation (P.5), of which, gross fixed capital formation (P.51g)"
+        },
+        {
+          "id": "U2",
+          "name": "Euro area (Member States and Institutions of the Euro Area) fixed composition"
+        },
+        {
+          "id": "U3",
+          "name": "Intra EU Extra Euro Area (EU member states and institutions not belonging to the Euro area) fixed composition"
+        },
+        {
+          "id": "W1",
+          "name": "Total"
+        }
+      ],
+      "total_codes": 154,
+      "truncated": false
+    },
+    {
+      "id": "SECTOR",
+      "position": 3,
+      "name": "SECTOR",
+      "codes": [
+        {
+          "id": "C",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "F",
+          "name": "Financial and non-financial corporations"
+        },
+        {
+          "id": "G",
+          "name": "General government"
+        },
+        {
+          "id": "H",
+          "name": "Households"
+        },
+        {
+          "id": "T",
+          "name": "Total economy"
+        },
+        {
+          "id": "S1",
+          "name": "Total economy (S.1)"
+        },
+        {
+          "id": "S11",
+          "name": "Non financial corporations (S.11)"
+        },
+        {
+          "id": "S12",
+          "name": "Financial corporations (S.12)"
+        },
+        {
+          "id": "S13",
+          "name": "General government (S.13)"
+        },
+        {
+          "id": "S1300",
+          "name": "General government"
+        },
+        {
+          "id": "S1311",
+          "name": "Federal government"
+        },
+        {
+          "id": "S1312",
+          "name": "Communities and regions"
+        },
+        {
+          "id": "S1312_BX",
+          "name": "Brussels Capital region"
+        },
+        {
+          "id": "S1312_CCF",
+          "name": "Commission of the French speaking community"
+        },
+        {
+          "id": "S1312_DE",
+          "name": "German community"
+        },
+        {
+          "id": "S1312_FR",
+          "name": "French community"
+        },
+        {
+          "id": "S1312_JCC",
+          "name": "Joint Community Commission"
+        },
+        {
+          "id": "S1312_NA",
+          "name": "Not allocated"
+        },
+        {
+          "id": "S1312_VGC",
+          "name": "Commission of the Flemish community"
+        },
+        {
+          "id": "S1312_VL",
+          "name": "Flemish community"
+        },
+        {
+          "id": "S1312_WL",
+          "name": "Walloon region"
+        },
+        {
+          "id": "S1313",
+          "name": "Local government"
+        },
+        {
+          "id": "S1314",
+          "name": "Social security funds"
+        },
+        {
+          "id": "S14",
+          "name": "Households (S.14)"
+        },
+        {
+          "id": "S14_15",
+          "name": "Households and Non-profit institutions serving households (S.14 + S.15)"
+        },
+        {
+          "id": "S15",
+          "name": "Non profit institutions serving households (S.15)"
+        }
+      ],
+      "total_codes": 26,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{FUNCTION}.{ITEM}.{SECTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:55+00:00",
+  "schema_version": 1
+}

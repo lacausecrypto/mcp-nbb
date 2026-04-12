@@ -1,0 +1,130 @@
+{
+  "agency": "BE2",
+  "id": "DF_STOCCOM",
+  "version": "1.0",
+  "category": "other",
+  "is_final": true,
+  "names": {
+    "en": "Stocks and commodities market",
+    "fr": "Marchés boursiers et des matières premières",
+    "nl": "Aandelen- en grondstoffenmarkt",
+    "de": "Stocks and commodities market"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "STOCCOM_ITEM",
+      "position": 1,
+      "name": "STOCCOM_ITEM",
+      "codes": [
+        {
+          "id": "STOC",
+          "name": "Stock market"
+        },
+        {
+          "id": "BEL20",
+          "name": "BEL 20"
+        },
+        {
+          "id": "DJIDX",
+          "name": "DJ Europe Stoxx 50P IDX"
+        },
+        {
+          "id": "NIKK",
+          "name": "Nikkei"
+        },
+        {
+          "id": "DOWJ",
+          "name": "Dow Jones Industrial"
+        },
+        {
+          "id": "BSPIX",
+          "name": "Belgian Share Price Index"
+        },
+        {
+          "id": "COM",
+          "name": "Commodities market"
+        },
+        {
+          "id": "GOLD",
+          "name": "Gold in Brussels (EUR/kg)"
+        },
+        {
+          "id": "SGOLD",
+          "name": "Sales price gold"
+        },
+        {
+          "id": "PGOLD",
+          "name": "Purchase price of gold"
+        },
+        {
+          "id": "BRENT",
+          "name": "Brent (USD/barrel)"
+        }
+      ],
+      "total_codes": 11,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{STOCCOM_ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:01+00:00",
+  "schema_version": 1
+}

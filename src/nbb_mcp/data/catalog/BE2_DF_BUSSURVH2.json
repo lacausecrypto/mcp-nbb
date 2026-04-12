@@ -1,0 +1,332 @@
+{
+  "agency": "BE2",
+  "id": "DF_BUSSURVH2",
+  "version": "1.0",
+  "category": "surveys",
+  "is_final": true,
+  "names": {
+    "en": "Biannual survey on investments",
+    "fr": "Enquête semestrielle sur les investissements",
+    "nl": "Zesmaandelijkse enquête investeringen",
+    "de": "Biannual survey on investments"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "BUSSURVH2_INDIC",
+      "position": 0,
+      "name": "BUSSURVH2_INDIC",
+      "codes": [
+        {
+          "id": "EHVJ",
+          "name": "Survey in the autumn of the preceeding year"
+        },
+        {
+          "id": "TIHV",
+          "name": "Overall investment"
+        },
+        {
+          "id": "MU_1",
+          "name": "Machinery and equipment"
+        },
+        {
+          "id": "TGI_1",
+          "name": "Land, buildings and other infrastructure"
+        },
+        {
+          "id": "IM_1",
+          "name": "Intangibles"
+        },
+        {
+          "id": "REP_1",
+          "name": "Replacement"
+        },
+        {
+          "id": "EOC_1",
+          "name": "Expansion of capacity"
+        },
+        {
+          "id": "RAT_1",
+          "name": "Rationalisation"
+        },
+        {
+          "id": "OP_1",
+          "name": "Other purposes"
+        },
+        {
+          "id": "DEM_1",
+          "name": "Demand"
+        },
+        {
+          "id": "FIC_1",
+          "name": "Financial conditions"
+        },
+        {
+          "id": "TEF_1",
+          "name": "Technical factors"
+        },
+        {
+          "id": "OF_1",
+          "name": "Other factors"
+        },
+        {
+          "id": "ELBJ",
+          "name": "Survey in the spring of the current year"
+        },
+        {
+          "id": "TILB",
+          "name": "Overall investment"
+        },
+        {
+          "id": "MU_2",
+          "name": "Machinery and equipment"
+        },
+        {
+          "id": "TGI_2",
+          "name": "Buildings and other infrastructure"
+        },
+        {
+          "id": "IM_2",
+          "name": "Intangibles"
+        },
+        {
+          "id": "REP_2",
+          "name": "Replacement"
+        },
+        {
+          "id": "EOC_2",
+          "name": "Expansion of capacity"
+        },
+        {
+          "id": "RAT_2",
+          "name": "Rationalisation"
+        },
+        {
+          "id": "OP_2",
+          "name": "Other purposes"
+        },
+        {
+          "id": "DEM_2",
+          "name": "Demand"
+        },
+        {
+          "id": "FIC_2",
+          "name": "Financial conditions"
+        },
+        {
+          "id": "TEF_2",
+          "name": "Technical factors"
+        },
+        {
+          "id": "OF_2",
+          "name": "Other factors"
+        },
+        {
+          "id": "EHBJ",
+          "name": "Survey in the autumn of the current year"
+        },
+        {
+          "id": "TIHB",
+          "name": "Overall investment"
+        },
+        {
+          "id": "MU_3",
+          "name": "Machinery and equipment"
+        },
+        {
+          "id": "TGI_3",
+          "name": "Buildings and other infrastructure"
+        },
+        {
+          "id": "IM_3",
+          "name": "Intangibles"
+        },
+        {
+          "id": "REP_3",
+          "name": "Replacement"
+        },
+        {
+          "id": "EOC_3",
+          "name": "Expansion of capacity"
+        },
+        {
+          "id": "RAT_3",
+          "name": "Rationalisation"
+        },
+        {
+          "id": "OP_3",
+          "name": "Other purposes"
+        },
+        {
+          "id": "DEM_3",
+          "name": "Demand"
+        },
+        {
+          "id": "FIC_3",
+          "name": "Financial conditions"
+        },
+        {
+          "id": "TEF_3",
+          "name": "Technical factors"
+        },
+        {
+          "id": "OF_3",
+          "name": "Other factors"
+        },
+        {
+          "id": "ELVJ",
+          "name": "Survey in the spring of the following year"
+        },
+        {
+          "id": "TILV",
+          "name": "Overall investment"
+        },
+        {
+          "id": "MU_4",
+          "name": "Machinery and equipment"
+        },
+        {
+          "id": "TGI_4",
+          "name": "Buildings and other infrastructure"
+        },
+        {
+          "id": "IM_4",
+          "name": "Intangibles"
+        },
+        {
+          "id": "REP_4",
+          "name": "Replacement"
+        },
+        {
+          "id": "EOC_4",
+          "name": "Expansion of capacity"
+        },
+        {
+          "id": "RAT_4",
+          "name": "Rationalisation"
+        },
+        {
+          "id": "OP_4",
+          "name": "Other purposes"
+        },
+        {
+          "id": "DEM_4",
+          "name": "Demand"
+        },
+        {
+          "id": "FIC_4",
+          "name": "Financial conditions"
+        },
+        {
+          "id": "TEF_4",
+          "name": "Technical factors"
+        },
+        {
+          "id": "OF_4",
+          "name": "Other factors"
+        }
+      ],
+      "total_codes": 52,
+      "truncated": false
+    },
+    {
+      "id": "BUSSURVH2_SECTOR",
+      "position": 1,
+      "name": "BUSSURVH2_SECTOR",
+      "codes": [
+        {
+          "id": "VN",
+          "name": "Manufacturing industry"
+        },
+        {
+          "id": "DB",
+          "name": "Business-related services"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    },
+    {
+      "id": "BUSSURVH2_THEME",
+      "position": 2,
+      "name": "BUSSURVH2_THEME",
+      "codes": [
+        {
+          "id": "IIND",
+          "name": "Investment indicator"
+        },
+        {
+          "id": "EDI",
+          "name": "Investment purposes"
+        },
+        {
+          "id": "FIS",
+          "name": "Investment drivers"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    },
+    {
+      "id": "FREQ",
+      "position": 3,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{BUSSURVH2_INDIC}.{BUSSURVH2_SECTOR}.{BUSSURVH2_THEME}.{FREQ}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:46+00:00",
+  "schema_version": 1
+}

@@ -1,0 +1,258 @@
+{
+  "agency": "BE2",
+  "id": "DF_CREDINSNR",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Number of credit institutions registered",
+    "fr": "Nombre d'établissements de crédit inscrits",
+    "nl": "Aantal ingeschreven kredietinstellingen",
+    "de": "Number of credit institutions registered"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSNR_AREA",
+      "position": 1,
+      "name": "CREDINSNR_AREA",
+      "codes": [
+        {
+          "id": "TOT",
+          "name": "Total registered on the list"
+        },
+        {
+          "id": "BEL",
+          "name": "Governed by Belgian law"
+        },
+        {
+          "id": "B_BE",
+          "name": "With majority Belgian ownership"
+        },
+        {
+          "id": "B_FOR",
+          "name": "With majority foreign ownership"
+        },
+        {
+          "id": "B_EU",
+          "name": "From an EU Member State"
+        },
+        {
+          "id": "B_DE",
+          "name": "DE - Germany"
+        },
+        {
+          "id": "B_ES",
+          "name": "ES - Spain"
+        },
+        {
+          "id": "B_FR",
+          "name": "FR - France"
+        },
+        {
+          "id": "B_GB",
+          "name": "GB - United Kingdom"
+        },
+        {
+          "id": "B_IT",
+          "name": "IT - Italy"
+        },
+        {
+          "id": "B_LU",
+          "name": "LU - Luxembourg"
+        },
+        {
+          "id": "B_NL",
+          "name": "NL - Netherlands"
+        },
+        {
+          "id": "B_NEU",
+          "name": "From a country that is not a member of the EU"
+        },
+        {
+          "id": "B_CH",
+          "name": "CH - Switzerland"
+        },
+        {
+          "id": "B_CN",
+          "name": "CN - China"
+        },
+        {
+          "id": "NB_GB",
+          "name": "GB - United Kingdom"
+        },
+        {
+          "id": "B_JP",
+          "name": "JP - Japan"
+        },
+        {
+          "id": "B_LB",
+          "name": "LB - Lebanon"
+        },
+        {
+          "id": "B_TW",
+          "name": "TW - Taiwan"
+        },
+        {
+          "id": "B_US",
+          "name": "US - United States"
+        },
+        {
+          "id": "B_SYN",
+          "name": "Syndicated structure"
+        },
+        {
+          "id": "FOR",
+          "name": "Foreign (branches)"
+        },
+        {
+          "id": "F_EU",
+          "name": "From an EU Member State"
+        },
+        {
+          "id": "F_DE",
+          "name": "DE - Germany"
+        },
+        {
+          "id": "F_ES",
+          "name": "ES - Spain"
+        },
+        {
+          "id": "F_FR",
+          "name": "FR - France"
+        },
+        {
+          "id": "F_IE",
+          "name": "IE - Ireland"
+        },
+        {
+          "id": "F_GB",
+          "name": "GB - United Kingdom"
+        },
+        {
+          "id": "F_IT",
+          "name": "IT - Italy"
+        },
+        {
+          "id": "F_LU",
+          "name": "LU - Luxembourg"
+        },
+        {
+          "id": "F_MT",
+          "name": "MT - Malta"
+        },
+        {
+          "id": "F_NL",
+          "name": "NL - Netherlands"
+        },
+        {
+          "id": "F_SE",
+          "name": "SE - Sweden"
+        },
+        {
+          "id": "F_NEU",
+          "name": "From a country that is not a member of the EU"
+        },
+        {
+          "id": "NF_GB",
+          "name": "GB - United Kingdom"
+        },
+        {
+          "id": "F_IN",
+          "name": "IN - India"
+        },
+        {
+          "id": "F_JP",
+          "name": "JP - Japan"
+        },
+        {
+          "id": "F_MA",
+          "name": "MA - Morocco"
+        },
+        {
+          "id": "F_PK",
+          "name": "PK - Pakistan"
+        },
+        {
+          "id": "F_US",
+          "name": "US - United States"
+        },
+        {
+          "id": "B_GG",
+          "name": "GG - Guernsey"
+        },
+        {
+          "id": "F_LT",
+          "name": "LT - Lithuania"
+        },
+        {
+          "id": "F_DK",
+          "name": "DK - Denmark"
+        }
+      ],
+      "total_codes": 43,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{CREDINSNR_AREA}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:50+00:00",
+  "schema_version": 1
+}

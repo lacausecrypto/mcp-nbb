@@ -1,0 +1,1828 @@
+{
+  "agency": "BE2",
+  "id": "DF_ITSS",
+  "version": "1.0",
+  "category": "balance_of_payments",
+  "is_final": true,
+  "names": {
+    "en": "International Trade in Services",
+    "fr": "Commerce international de services",
+    "nl": "Internationale handel in diensten",
+    "de": "International Trade in Services"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "ITSS_AREA",
+      "position": 0,
+      "name": "ITSS_AREA",
+      "codes": [
+        {
+          "id": "W1",
+          "name": "Total World"
+        },
+        {
+          "id": "GEO",
+          "name": "Geographical breakdown"
+        },
+        {
+          "id": "E1",
+          "name": "Europe"
+        },
+        {
+          "id": "B6",
+          "name": "EU 27 excl. GB"
+        },
+        {
+          "id": "AT",
+          "name": "Austria"
+        },
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "CY",
+          "name": "Cyprus"
+        },
+        {
+          "id": "DE",
+          "name": "Germany"
+        },
+        {
+          "id": "EE",
+          "name": "Estonia"
+        },
+        {
+          "id": "ES",
+          "name": "Spain"
+        },
+        {
+          "id": "FI",
+          "name": "Finland"
+        },
+        {
+          "id": "FR",
+          "name": "France"
+        },
+        {
+          "id": "GR",
+          "name": "Greece"
+        },
+        {
+          "id": "IE",
+          "name": "Ireland"
+        },
+        {
+          "id": "IT",
+          "name": "Italy"
+        },
+        {
+          "id": "LT",
+          "name": "Lithuania"
+        },
+        {
+          "id": "LU",
+          "name": "Luxembourg"
+        },
+        {
+          "id": "LV",
+          "name": "Latvia"
+        },
+        {
+          "id": "MT",
+          "name": "Malta"
+        },
+        {
+          "id": "NL",
+          "name": "Netherlands"
+        },
+        {
+          "id": "PT",
+          "name": "Portugal"
+        },
+        {
+          "id": "SI",
+          "name": "Slovenia"
+        },
+        {
+          "id": "SK",
+          "name": "Slovakia"
+        },
+        {
+          "id": "U29",
+          "name": "Intra Euro Area non allocated"
+        },
+        {
+          "id": "BG",
+          "name": "Bulgaria"
+        },
+        {
+          "id": "CZ",
+          "name": "Czech Republic"
+        },
+        {
+          "id": "DK",
+          "name": "Denmark"
+        },
+        {
+          "id": "HR",
+          "name": "Croatia"
+        },
+        {
+          "id": "HU",
+          "name": "Hungary"
+        },
+        {
+          "id": "PL",
+          "name": "Poland"
+        },
+        {
+          "id": "RO",
+          "name": "Romania"
+        },
+        {
+          "id": "SE",
+          "name": "Sweden"
+        },
+        {
+          "id": "B09",
+          "name": "Intra EU non allocated"
+        },
+        {
+          "id": "R2",
+          "name": "EFTA (european free trade association)"
+        },
+        {
+          "id": "CH",
+          "name": "Switzerland"
+        },
+        {
+          "id": "IS",
+          "name": "Iceland"
+        },
+        {
+          "id": "LI",
+          "name": "Liechtenstein"
+        },
+        {
+          "id": "NO",
+          "name": "Norway"
+        },
+        {
+          "id": "G10",
+          "name": "Other European countries (incl. GB)"
+        },
+        {
+          "id": "E7",
+          "name": "Central and eastern Europe"
+        },
+        {
+          "id": "AL",
+          "name": "Albania"
+        },
+        {
+          "id": "BA",
+          "name": "Bosnia and Herzegovina"
+        },
+        {
+          "id": "ME",
+          "name": "Montenegro"
+        },
+        {
+          "id": "MK",
+          "name": "Macedonia, the former Yugoslav Republic of"
+        },
+        {
+          "id": "RS",
+          "name": "Serbia"
+        },
+        {
+          "id": "XK",
+          "name": "Kosovo"
+        },
+        {
+          "id": "GB",
+          "name": "United Kingdom"
+        },
+        {
+          "id": "AD",
+          "name": "Andorra"
+        },
+        {
+          "id": "BY",
+          "name": "Belarus"
+        },
+        {
+          "id": "FO",
+          "name": "Faroe Islands"
+        },
+        {
+          "id": "GG",
+          "name": "Guernsey"
+        },
+        {
+          "id": "GI",
+          "name": "Gibraltar"
+        },
+        {
+          "id": "IM",
+          "name": "Isle of Man"
+        },
+        {
+          "id": "JE",
+          "name": "Jersey"
+        },
+        {
+          "id": "MD",
+          "name": "Moldova"
+        },
+        {
+          "id": "RU",
+          "name": "Russia"
+        },
+        {
+          "id": "SM",
+          "name": "San Marino"
+        },
+        {
+          "id": "TR",
+          "name": "Turkey"
+        },
+        {
+          "id": "UA",
+          "name": "Ukraine"
+        },
+        {
+          "id": "VA",
+          "name": "Holy see (Vatican City State)"
+        },
+        {
+          "id": "E19",
+          "name": "Europe not allocated"
+        },
+        {
+          "id": "F1",
+          "name": "Africa"
+        },
+        {
+          "id": "F4",
+          "name": "North Africa"
+        },
+        {
+          "id": "DZ",
+          "name": "Algeria"
+        },
+        {
+          "id": "EG",
+          "name": "Egypt"
+        },
+        {
+          "id": "LY",
+          "name": "Libya"
+        },
+        {
+          "id": "MA",
+          "name": "Morocco"
+        },
+        {
+          "id": "TN",
+          "name": "Tunisia"
+        },
+        {
+          "id": "F2",
+          "name": "Other african countries"
+        },
+        {
+          "id": "AO",
+          "name": "Angola"
+        },
+        {
+          "id": "BF",
+          "name": "Burkina Faso"
+        },
+        {
+          "id": "BI",
+          "name": "Burundi"
+        },
+        {
+          "id": "BJ",
+          "name": "Benin"
+        },
+        {
+          "id": "BW",
+          "name": "Botswana"
+        },
+        {
+          "id": "CD",
+          "name": "Congo, the Democratic Republic of the"
+        },
+        {
+          "id": "CF",
+          "name": "Central African Republic"
+        },
+        {
+          "id": "CG",
+          "name": "Congo"
+        },
+        {
+          "id": "CI",
+          "name": "Côte d'Ivoire"
+        },
+        {
+          "id": "CM",
+          "name": "Cameroon"
+        },
+        {
+          "id": "CV",
+          "name": "Cape Verde"
+        },
+        {
+          "id": "DJ",
+          "name": "Djibouti"
+        },
+        {
+          "id": "ER",
+          "name": "Eritrea"
+        },
+        {
+          "id": "ET",
+          "name": "Ethiopia"
+        },
+        {
+          "id": "GA",
+          "name": "Gabon"
+        },
+        {
+          "id": "GH",
+          "name": "Ghana"
+        },
+        {
+          "id": "GM",
+          "name": "Gambia"
+        },
+        {
+          "id": "GN",
+          "name": "Guinea"
+        },
+        {
+          "id": "GQ",
+          "name": "Equatorial Guinea"
+        },
+        {
+          "id": "GW",
+          "name": "Guinea-Bissau"
+        },
+        {
+          "id": "IO",
+          "name": "British Indian Ocean Territory"
+        },
+        {
+          "id": "KE",
+          "name": "Kenya"
+        },
+        {
+          "id": "KM",
+          "name": "Comoros"
+        },
+        {
+          "id": "LR",
+          "name": "Liberia"
+        },
+        {
+          "id": "LS",
+          "name": "Lesotho"
+        },
+        {
+          "id": "MG",
+          "name": "Madagascar"
+        },
+        {
+          "id": "ML",
+          "name": "Mali"
+        },
+        {
+          "id": "MR",
+          "name": "Mauritania"
+        },
+        {
+          "id": "MU",
+          "name": "Mauritius"
+        },
+        {
+          "id": "MW",
+          "name": "Malawi"
+        },
+        {
+          "id": "MZ",
+          "name": "Mozambique"
+        },
+        {
+          "id": "NA",
+          "name": "Namibia"
+        },
+        {
+          "id": "NE",
+          "name": "Niger"
+        },
+        {
+          "id": "NG",
+          "name": "Nigeria"
+        },
+        {
+          "id": "RW",
+          "name": "Rwanda"
+        },
+        {
+          "id": "SC",
+          "name": "Seychelles"
+        },
+        {
+          "id": "SD",
+          "name": "Sudan"
+        },
+        {
+          "id": "SH",
+          "name": "St Helena"
+        },
+        {
+          "id": "SL",
+          "name": "Sierra Leone"
+        },
+        {
+          "id": "SN",
+          "name": "Senegal"
+        },
+        {
+          "id": "SO",
+          "name": "Somalia"
+        },
+        {
+          "id": "SS",
+          "name": "South Sudan"
+        },
+        {
+          "id": "ST",
+          "name": "Sao Tome and Principe"
+        },
+        {
+          "id": "SZ",
+          "name": "Swaziland"
+        },
+        {
+          "id": "TD",
+          "name": "Chad"
+        },
+        {
+          "id": "TG",
+          "name": "Togo"
+        },
+        {
+          "id": "TZ",
+          "name": "Tanzania, United Republic of"
+        },
+        {
+          "id": "UG",
+          "name": "Uganda"
+        },
+        {
+          "id": "ZA",
+          "name": "South Africa"
+        },
+        {
+          "id": "ZM",
+          "name": "Zambia"
+        },
+        {
+          "id": "ZW",
+          "name": "Zimbabwe"
+        },
+        {
+          "id": "F19",
+          "name": "Africa not allocated"
+        },
+        {
+          "id": "A1",
+          "name": "America"
+        },
+        {
+          "id": "A2",
+          "name": "North American countries"
+        },
+        {
+          "id": "CA",
+          "name": "Canada"
+        },
+        {
+          "id": "GL",
+          "name": "Greenland"
+        },
+        {
+          "id": "US",
+          "name": "United States of America"
+        },
+        {
+          "id": "A5",
+          "name": "Central American countries"
+        },
+        {
+          "id": "AG",
+          "name": "Antigua and Barbuda"
+        },
+        {
+          "id": "AI",
+          "name": "Anguilla"
+        },
+        {
+          "id": "AW",
+          "name": "Aruba"
+        },
+        {
+          "id": "BB",
+          "name": "Barbados"
+        },
+        {
+          "id": "BM",
+          "name": "Bermuda"
+        },
+        {
+          "id": "BQ",
+          "name": "Bonaire, St Eustatius and Saba"
+        },
+        {
+          "id": "BS",
+          "name": "Bahamas"
+        },
+        {
+          "id": "BZ",
+          "name": "Belize"
+        },
+        {
+          "id": "CR",
+          "name": "Costa Rica"
+        },
+        {
+          "id": "CU",
+          "name": "Cuba"
+        },
+        {
+          "id": "CW",
+          "name": "Curaçao"
+        },
+        {
+          "id": "DM",
+          "name": "Dominica"
+        },
+        {
+          "id": "DO",
+          "name": "Dominican Republic"
+        },
+        {
+          "id": "GD",
+          "name": "Grenada"
+        },
+        {
+          "id": "GT",
+          "name": "Guatemala"
+        },
+        {
+          "id": "HN",
+          "name": "Honduras"
+        },
+        {
+          "id": "HT",
+          "name": "Haiti"
+        },
+        {
+          "id": "JM",
+          "name": "Jamaica"
+        },
+        {
+          "id": "KN",
+          "name": "St Kitts and Nevis"
+        },
+        {
+          "id": "KY",
+          "name": "Cayman Islands"
+        },
+        {
+          "id": "LC",
+          "name": "Saint Lucia"
+        },
+        {
+          "id": "MS",
+          "name": "Montserrat"
+        },
+        {
+          "id": "MX",
+          "name": "Mexico"
+        },
+        {
+          "id": "NI",
+          "name": "Nicaragua"
+        },
+        {
+          "id": "PA",
+          "name": "Panama"
+        },
+        {
+          "id": "SV",
+          "name": "El Salvador"
+        },
+        {
+          "id": "SX",
+          "name": "St Maarten"
+        },
+        {
+          "id": "TC",
+          "name": "Turks and Caicos Islands"
+        },
+        {
+          "id": "TT",
+          "name": "Trinidad and Tobago"
+        },
+        {
+          "id": "VC",
+          "name": "St Vincent and the Grenadines"
+        },
+        {
+          "id": "VG",
+          "name": "Virgin Islands, British"
+        },
+        {
+          "id": "VI",
+          "name": "Virgin Islands, U.S."
+        },
+        {
+          "id": "A7",
+          "name": "South American countries"
+        },
+        {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        {
+          "id": "BO",
+          "name": "Bolivia"
+        },
+        {
+          "id": "BR",
+          "name": "Brazil"
+        },
+        {
+          "id": "CL",
+          "name": "Chile"
+        },
+        {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        {
+          "id": "EC",
+          "name": "Ecuador"
+        },
+        {
+          "id": "FK",
+          "name": "Falkland Islands"
+        },
+        {
+          "id": "GY",
+          "name": "Guyana"
+        },
+        {
+          "id": "PE",
+          "name": "Peru"
+        },
+        {
+          "id": "PY",
+          "name": "Paraguay"
+        },
+        {
+          "id": "SR",
+          "name": "Suriname"
+        },
+        {
+          "id": "UY",
+          "name": "Uruguay"
+        },
+        {
+          "id": "VE",
+          "name": "Venezuela"
+        },
+        {
+          "id": "A19",
+          "name": "America not allocated"
+        },
+        {
+          "id": "S1",
+          "name": "Asia"
+        },
+        {
+          "id": "S3",
+          "name": "Near and Middle East countries"
+        },
+        {
+          "id": "S35",
+          "name": "Gulf Arabian countries"
+        },
+        {
+          "id": "AE",
+          "name": "United Arab Emirates"
+        },
+        {
+          "id": "BH",
+          "name": "Bahrain"
+        },
+        {
+          "id": "IQ",
+          "name": "Iraq"
+        },
+        {
+          "id": "KW",
+          "name": "Kuwait"
+        },
+        {
+          "id": "OM",
+          "name": "Oman"
+        },
+        {
+          "id": "QA",
+          "name": "Qatar"
+        },
+        {
+          "id": "SA",
+          "name": "Saudi Arabia"
+        },
+        {
+          "id": "YE",
+          "name": "Yemen"
+        },
+        {
+          "id": "S37",
+          "name": "Other Near and Middle East countries"
+        },
+        {
+          "id": "AM",
+          "name": "Armenia"
+        },
+        {
+          "id": "AZ",
+          "name": "Azerbaijan"
+        },
+        {
+          "id": "GE",
+          "name": "Georgia"
+        },
+        {
+          "id": "IL",
+          "name": "Israel"
+        },
+        {
+          "id": "JO",
+          "name": "Jordan"
+        },
+        {
+          "id": "LB",
+          "name": "Lebanon"
+        },
+        {
+          "id": "PS",
+          "name": "Palestinian Territory"
+        },
+        {
+          "id": "SY",
+          "name": "Syria"
+        },
+        {
+          "id": "S6",
+          "name": "Other asian countries"
+        },
+        {
+          "id": "AF",
+          "name": "Afghanistan"
+        },
+        {
+          "id": "BD",
+          "name": "Bangladesh"
+        },
+        {
+          "id": "BN",
+          "name": "Brunei Darussalam"
+        },
+        {
+          "id": "BT",
+          "name": "Bhutan"
+        },
+        {
+          "id": "CN",
+          "name": "China"
+        }
+      ],
+      "total_codes": 305,
+      "truncated": true
+    },
+    {
+      "id": "ACCOUNTING_ENTRY",
+      "position": 1,
+      "name": "ACCOUNTING_ENTRY",
+      "codes": [
+        {
+          "id": "_X",
+          "name": "Unspecified"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "A",
+          "name": "Assets (Net Acquisition of)"
+        },
+        {
+          "id": "AD",
+          "name": "Gross sales of assets (decrease)"
+        },
+        {
+          "id": "AI",
+          "name": "Gross acquisition of assets (increase)"
+        },
+        {
+          "id": "AS",
+          "name": "Assets - short position"
+        },
+        {
+          "id": "B",
+          "name": "Balance (credits minus debits)"
+        },
+        {
+          "id": "C",
+          "name": "Credit (resources)"
+        },
+        {
+          "id": "CL",
+          "name": "Contingent liabilities (EDP and GFS)"
+        },
+        {
+          "id": "D",
+          "name": "Debit (uses)"
+        },
+        {
+          "id": "FI",
+          "name": "Inflows (reserves template)"
+        },
+        {
+          "id": "FN",
+          "name": "Net flows (reserves template)"
+        },
+        {
+          "id": "FO",
+          "name": "Outflows (reserves template)"
+        },
+        {
+          "id": "II",
+          "name": "Net income on inward FDI"
+        },
+        {
+          "id": "IO",
+          "name": "Net income on outward FDI"
+        },
+        {
+          "id": "L",
+          "name": "Liabilities (net Incurrence of)"
+        },
+        {
+          "id": "LD",
+          "name": "Gross decrease in liabilities"
+        },
+        {
+          "id": "LI",
+          "name": "Gross incurrence of liabilities"
+        },
+        {
+          "id": "N",
+          "name": "Net (assets minus Liabilities)"
+        },
+        {
+          "id": "NE",
+          "name": "Net Liabilities (liabilities minus Assets)"
+        },
+        {
+          "id": "NI",
+          "name": "Net FDI Inward"
+        },
+        {
+          "id": "NO",
+          "name": "Net FDI Outward"
+        },
+        {
+          "id": "DT",
+          "name": "Transformation use"
+        },
+        {
+          "id": "DE",
+          "name": "End use"
+        },
+        {
+          "id": "DER",
+          "name": "End use, of which emissions relevant"
+        },
+        {
+          "id": "EC",
+          "name": "Economy to environment"
+        },
+        {
+          "id": "EN",
+          "name": "Environment to economy"
+        },
+        {
+          "id": "C_EN",
+          "name": "Credit (environment + economy)"
+        },
+        {
+          "id": "D_EN",
+          "name": "Debit (environment + economy)"
+        },
+        {
+          "id": "DT_EN",
+          "name": "Transformation use (environment + economy)"
+        },
+        {
+          "id": "DE_EN",
+          "name": "End use (environment + economy)"
+        }
+      ],
+      "total_codes": 31,
+      "truncated": false
+    },
+    {
+      "id": "INT_ACC_ITEM",
+      "position": 2,
+      "name": "INT_ACC_ITEM",
+      "codes": [
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "CA",
+          "name": "Current account"
+        },
+        {
+          "id": "CKA",
+          "name": "Current plus capital account (if balance = Net lending (+) / net borrowing (-))"
+        },
+        {
+          "id": "CKAFA",
+          "name": "Current plus capital plus financial account"
+        },
+        {
+          "id": "D1",
+          "name": "Primary income: Compensation of employees"
+        },
+        {
+          "id": "D11",
+          "name": "Primary income: Wages and salaries excluding Employers social contributions"
+        },
+        {
+          "id": "D12",
+          "name": "Primary income: Employerssocial contributions"
+        },
+        {
+          "id": "D121",
+          "name": "Primary income: Employers actual social contributions"
+        },
+        {
+          "id": "D1211",
+          "name": "Primary income: Employers actual pension contributions"
+        },
+        {
+          "id": "D1212",
+          "name": "Primary income: Employers actual non-pension contributions"
+        },
+        {
+          "id": "D122",
+          "name": "Primary income: Employers imputed social contributions"
+        },
+        {
+          "id": "D1221",
+          "name": "Primary income: Employers imputed pension contributions"
+        },
+        {
+          "id": "D1222",
+          "name": "Primary income: Employers imputed non-pension contributions"
+        },
+        {
+          "id": "D2",
+          "name": "Primary income: Taxes on production and imports"
+        },
+        {
+          "id": "D21",
+          "name": "Primary income: Taxes on products"
+        },
+        {
+          "id": "D2121EU1",
+          "name": "Primary income: Taxes and duties on imports, Customs duties, Traditional Own Resources"
+        },
+        {
+          "id": "D2122EU2",
+          "name": "Primary income: Taxes and duties on imports, Agricultural levies, Trade with non member countries under the CAP, Traditional Own Resources"
+        },
+        {
+          "id": "D214AEU3",
+          "name": "Primary income: Taxes on products, Sugar/isoglucose production levies, Traditional Own Resources"
+        },
+        {
+          "id": "D21EU",
+          "name": "Primary income: Taxes on products involing EU Institutions, Traditional Own Resources"
+        },
+        {
+          "id": "D21OTH",
+          "name": "Primary income: Taxes on products, Other than those involing EU Institutions"
+        },
+        {
+          "id": "D29",
+          "name": "Primary income: Other taxes on production"
+        },
+        {
+          "id": "D29EU",
+          "name": "Primary income: Other taxes on production - involving EU institutions"
+        },
+        {
+          "id": "D29OTH",
+          "name": "Primary income: Other taxes on production, Other than those involving EU Institutions"
+        },
+        {
+          "id": "D3",
+          "name": "Primary income: Subsidies"
+        },
+        {
+          "id": "D31",
+          "name": "Primary income: Subsidies on products"
+        },
+        {
+          "id": "D31EU",
+          "name": "Primary income: Subsidies on products, EU Institutions"
+        },
+        {
+          "id": "D31EU1",
+          "name": "Primary income: Subsidies on products - Agriculture and fishery"
+        },
+        {
+          "id": "D31OTH",
+          "name": "Primary income: Subsidies on products, Other than those involving EU Institutions"
+        },
+        {
+          "id": "D39",
+          "name": "Primary income: Other subsidies on production excluding subsidies on products"
+        },
+        {
+          "id": "D39EU",
+          "name": "Primary income: Other subsidies on production excluding subsidies on products, EU Institutions"
+        },
+        {
+          "id": "D39EU1",
+          "name": "Primary income: Subsidies on production - Agriculture and fishery"
+        },
+        {
+          "id": "D39EU2",
+          "name": "Primary income: Subsidies on production - Grants for interest relief"
+        },
+        {
+          "id": "D39EU3",
+          "name": "Primary income: Subsidies on production - Other excluding agriculture, fishery and grants for interest of relief"
+        },
+        {
+          "id": "D39OTH",
+          "name": "Primary income: Other subsidies on production excluding subsidies on products, Other than those involing EU Institutions"
+        },
+        {
+          "id": "D4",
+          "name": "Property income"
+        },
+        {
+          "id": "D41",
+          "name": "Primary income: interest"
+        },
+        {
+          "id": "D41G",
+          "name": "Primary income: interest before FISIM"
+        },
+        {
+          "id": "D41L",
+          "name": "Primary income: interests (lending fees on equity securities, gold loans and gold swaps)"
+        },
+        {
+          "id": "D42",
+          "name": "Primary income: Dividends and withdrawals from income of quasi corporations (excluding RIE and excluding IF)"
+        },
+        {
+          "id": "D421",
+          "name": "Dividends"
+        },
+        {
+          "id": "D422",
+          "name": "Withdrawals from income of quasi corporations"
+        },
+        {
+          "id": "D42R",
+          "name": "Primary income: dividends, withdrawals from income of quasi corporations (including RIE, excluding IF)"
+        },
+        {
+          "id": "D42S",
+          "name": "Primary income: dividends, withdrawals from income of quasi corporations and income distributed to investment fund shareholders (excluding RIE)"
+        },
+        {
+          "id": "D43",
+          "name": "Primary income: Reinvested earnings on FDI (Excluding IF)"
+        },
+        {
+          "id": "D43S",
+          "name": "Primary income: reinvested earnings on FDI (Including IF)"
+        },
+        {
+          "id": "D44",
+          "name": "Other investment income (ESA)"
+        },
+        {
+          "id": "D441",
+          "name": "Investment income attributable to insurance policy holders"
+        },
+        {
+          "id": "D442",
+          "name": "Investment income payable on pension entitlements"
+        },
+        {
+          "id": "D443",
+          "name": "Investment income attributable to collective investment fund shareholders (IF)"
+        },
+        {
+          "id": "D4431",
+          "name": "Dividends distributed to collective investment fund shareholders (IF)"
+        },
+        {
+          "id": "D4432",
+          "name": "Reinvested earnings attributable to collective investment fund shareholders (IF)"
+        },
+        {
+          "id": "D44P",
+          "name": "Primary income: Investment income attributable to policy holders (insurance, pension and standardized guarantee schemes)"
+        },
+        {
+          "id": "D45",
+          "name": "Primary income: Rent"
+        },
+        {
+          "id": "D4O",
+          "name": "Primary income: Other primary income"
+        },
+        {
+          "id": "D4P",
+          "name": "Primary income: Investment income"
+        },
+        {
+          "id": "D4Q",
+          "name": "Primary income: Interest and income attributable to policy holders"
+        },
+        {
+          "id": "D4S",
+          "name": "Primary income: Investment income attributable to shareholders, including income on IF, including RIE"
+        },
+        {
+          "id": "D5",
+          "name": "Secondary income: Current taxes on income, wealth, etc."
+        },
+        {
+          "id": "D51",
+          "name": "Secondary income: Taxes on income"
+        },
+        {
+          "id": "D59",
+          "name": "Secondary income: Other current taxes excluding on income"
+        },
+        {
+          "id": "D5Z",
+          "name": "Secondary income: Current taxes on income, wealth, etc. Of which: payable by border, seasonal, and other short-term workers (Current taxes on income, wealth, etc.)"
+        },
+        {
+          "id": "D6",
+          "name": "Secondary income: Social contributions and benefits"
+        },
+        {
+          "id": "D61",
+          "name": "Secondary income: Social contributions"
+        },
+        {
+          "id": "D611",
+          "name": "Secondary income: Employers  actual social contributions"
+        },
+        {
+          "id": "D6111",
+          "name": "Secondary income: Employers  actual pension contributions"
+        },
+        {
+          "id": "D6112",
+          "name": "Secondary income: Employers  actual non-pension contributions"
+        },
+        {
+          "id": "D612",
+          "name": "Secondary income: Employers  imputed social contributions"
+        },
+        {
+          "id": "D613",
+          "name": "Secondary income: Households' actual social contributions"
+        },
+        {
+          "id": "D6131",
+          "name": "Secondary income: Households' actual pension contributions"
+        },
+        {
+          "id": "D6132",
+          "name": "Secondary income: Households' actual non-pension contributions"
+        },
+        {
+          "id": "D61Z",
+          "name": "Secondary income: Of which: payable by border, seasonal, and other short-term workers (Social contributions)"
+        },
+        {
+          "id": "D62",
+          "name": "Secondary income: Social benefits"
+        },
+        {
+          "id": "D62O",
+          "name": "Secondary income: Other social allowances (payments of family, education, medical services and other allowances) excluding retirement and survivors' pensions"
+        },
+        {
+          "id": "D62P",
+          "name": "Secondary income: Retirement and survivors' Pensions"
+        },
+        {
+          "id": "D63",
+          "name": "Social transfers in kind"
+        },
+        {
+          "id": "D7",
+          "name": "Other current transfers"
+        },
+        {
+          "id": "D71",
+          "name": "Secondary income: Net non-life insurance premiums"
+        },
+        {
+          "id": "D711",
+          "name": "Net non-life direct insurance premiums"
+        },
+        {
+          "id": "D712",
+          "name": "Net non-life reinsurance premiums"
+        },
+        {
+          "id": "D72",
+          "name": "Secondary income: Nonlife insurance claims"
+        },
+        {
+          "id": "D721",
+          "name": "Non-life direct insurance claims"
+        },
+        {
+          "id": "D722",
+          "name": "Non-life reinsurance claims"
+        },
+        {
+          "id": "D73",
+          "name": "Current transfers within general government"
+        },
+        {
+          "id": "D74",
+          "name": "Secondary income: Current international cooperation"
+        },
+        {
+          "id": "D74EF",
+          "name": "Secondary income: Mémo: o/w Exceptional financing"
+        },
+        {
+          "id": "D74EF1",
+          "name": "Secondary income: Mémo: o/w Exceptional financing: Grants received from IMF subsidy accounts"
+        },
+        {
+          "id": "D74EF2",
+          "name": "Secondary income: Mémo: o/w Exceptional financing: Other intergovernmental grants"
+        },
+        {
+          "id": "D74EU",
+          "name": "Secondary income: Current international cooperation involving the EU institutions"
+        },
+        {
+          "id": "D74EU1",
+          "name": "Secondary income: Current international cooperation -European Development Fund"
+        },
+        {
+          "id": "D74EU2",
+          "name": "Secondary income: Current international cooperation -European Social Fund"
+        },
+        {
+          "id": "D74EU3",
+          "name": "Secondary income: Current international cooperation -Agriculture and Fish (Guidance and other)"
+        },
+        {
+          "id": "D74EU4",
+          "name": "Secondary income: Current international cooperation -European Regional Development Fund"
+        },
+        {
+          "id": "D74EU5",
+          "name": "Secondary income: Current international cooperation -European Community Steel and Coal transfers"
+        },
+        {
+          "id": "D74EU6",
+          "name": "Secondary income: Current international cooperation - Other"
+        },
+        {
+          "id": "D74OTH",
+          "name": "Secondary income: Current international cooperation other"
+        },
+        {
+          "id": "D75",
+          "name": "Secondary income: Miscellaneous current transfers"
+        },
+        {
+          "id": "D751",
+          "name": "Secondary income: Current transfers to NPISH"
+        },
+        {
+          "id": "D752",
+          "name": "Secondary income: Personal transfers (Current transfers between resident and nonresident households)"
+        },
+        {
+          "id": "D752O",
+          "name": "Secondary income: Personal transfers other than Workers' remittances"
+        },
+        {
+          "id": "D752W",
+          "name": "Secondary income: Of which: Workers' remittances"
+        },
+        {
+          "id": "D759",
+          "name": "Secondary income: Other miscellaneous current transfers"
+        },
+        {
+          "id": "D76",
+          "name": "Secondary income: Value added tax and gross national income-based European Union own resources"
+        },
+        {
+          "id": "D761",
+          "name": "VAT-based third EU own resource"
+        },
+        {
+          "id": "D762",
+          "name": "GNI-based fourth EU own resource"
+        },
+        {
+          "id": "D762K",
+          "name": "Current transfers of which UK rebate"
+        },
+        {
+          "id": "D763",
+          "name": "Miscellaneous non-tax contribution of the government to the institutions of the EU"
+        },
+        {
+          "id": "D7N",
+          "name": "Current international cooperation, miscellaneous current transfers (including in the EU VAT and GNI-based own resources)"
+        },
+        {
+          "id": "D7O",
+          "name": "Secondary income: All miscellaneous current transfers"
+        },
+        {
+          "id": "D8",
+          "name": "Secondary income : Adjustment for change in pension entitlements"
+        },
+        {
+          "id": "D9",
+          "name": "Capital transfers"
+        },
+        {
+          "id": "D91",
+          "name": "Capital taxes"
+        },
+        {
+          "id": "D92",
+          "name": "Investment grants"
+        },
+        {
+          "id": "D92EU",
+          "name": "Investment grants involving EU Institutions"
+        },
+        {
+          "id": "D92EU1",
+          "name": "Agriculture and Fishery grants (EAGGF guidance and others)"
+        },
+        {
+          "id": "D92EU2",
+          "name": "European Regional Development Fund -  grants"
+        },
+        {
+          "id": "D92EU3",
+          "name": "European Development Fund: EU Commission capital transfers to third countries"
+        },
+        {
+          "id": "D92EU4",
+          "name": "Cohesion funds"
+        },
+        {
+          "id": "D92EU5",
+          "name": "Investment grants - Other"
+        },
+        {
+          "id": "D92OTH",
+          "name": "Investment grants other"
+        },
+        {
+          "id": "D99",
+          "name": "Other capital transfers"
+        },
+        {
+          "id": "D99A",
+          "name": "Other capital transfers: Debt forgiveness"
+        },
+        {
+          "id": "D99AEF",
+          "name": "Mémo: o/w Exceptional financing: Debt forgiveness"
+        },
+        {
+          "id": "D99B",
+          "name": "Other capital transfers excluding debt forgiveness"
+        },
+        {
+          "id": "D99EU",
+          "name": "Other capital transfers involving EU Institutions"
+        },
+        {
+          "id": "D99EU1",
+          "name": "Other capital transfers - Agriculture and Fishery  (EAGGF guidance and others)"
+        },
+        {
+          "id": "D99EU2",
+          "name": "Other capital transfers - Other"
+        },
+        {
+          "id": "D99OTH",
+          "name": "Other capital transfers, other"
+        },
+        {
+          "id": "D99R1",
+          "name": "Mémo: Capital transfers between households"
+        },
+        {
+          "id": "D99R2",
+          "name": "Mémo: Capital transfers to NPISH"
+        },
+        {
+          "id": "D9A",
+          "name": "Capital transfers other than debt forgiveness"
+        },
+        {
+          "id": "D9AEF",
+          "name": "Mémo: o/w Exceptional financing: Other investment grants"
+        },
+        {
+          "id": "D9EF",
+          "name": "Capital transfers: Mémo: o/w Exceptional financing"
+        },
+        {
+          "id": "D9Z",
+          "name": "Mémo: o/w Exceptional financing: Grants received from IMF subsidy accounts"
+        },
+        {
+          "id": "EO",
+          "name": "Net errors and omissions"
+        },
+        {
+          "id": "FA",
+          "name": "Financial account"
+        },
+        {
+          "id": "FEF",
+          "name": "Mémo: o/w  Exceptional Financing: Total"
+        },
+        {
+          "id": "FEF1",
+          "name": "Mémo: o/w  Exceptional Financing:  Equity investment associated with debt reduction"
+        },
+        {
+          "id": "FEF2",
+          "name": "Mémo: o/w  Exceptional Financing:  Drawings on new loans/Issues of new securities by authorities or by other sectors on behalf of authorities"
+        },
+        {
+          "id": "FEF3",
+          "name": "Mémo: o/w  Exceptional Financing:  Prepayment/buyback"
+        },
+        {
+          "id": "FEF4",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of arrears, Total"
+        },
+        {
+          "id": "FEF41",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of arrears on Principal"
+        },
+        {
+          "id": "FEF42",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of arrears on interest/coupon"
+        },
+        {
+          "id": "FEF5",
+          "name": "Mémo: o/w  Exceptional Financing:  Accumulation of arrears, Total"
+        },
+        {
+          "id": "FEF51",
+          "name": "Mémo: o/w  Exceptional Financing:  Accumulation of arrears, on Principal"
+        },
+        {
+          "id": "FEF52",
+          "name": "Mémo: o/w  Exceptional Financing:  Accumulation of arrears, on original interest/coupon"
+        },
+        {
+          "id": "FEF53",
+          "name": "Mémo: o/w  Exceptional Financing:  Accumulation of arrears, on penalty interest"
+        },
+        {
+          "id": "FEF6",
+          "name": "Mémo: o/w  Exceptional Financing:  Repayment of arrears, Total"
+        },
+        {
+          "id": "FEF61",
+          "name": "Mémo: o/w  Exceptional Financing:  Repayment of arrears, on Principal"
+        },
+        {
+          "id": "FEF62",
+          "name": "Mémo: o/w  Exceptional Financing:  Repayment of arrears, on interest/coupon"
+        },
+        {
+          "id": "FEF7",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of payments due in current reporting period, Total"
+        },
+        {
+          "id": "FEF71",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of payments due in current reporting period, on Principal"
+        },
+        {
+          "id": "FEF72",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of payments due in current reporting period, on interest/coupon"
+        },
+        {
+          "id": "FEF8",
+          "name": "Mémo: o/w  Exceptional Financing:  Cancellation of arrears, Total"
+        },
+        {
+          "id": "FEF81",
+          "name": "Mémo: o/w  Exceptional Financing:  Cancellation of arrears, on Principal"
+        },
+        {
+          "id": "FEF82",
+          "name": "Mémo: o/w  Exceptional Financing:  Cancellation of arrears, on interest/coupon"
+        },
+        {
+          "id": "FEF9",
+          "name": "Supplementary item: o/w Arrears not in exceptional financing"
+        },
+        {
+          "id": "G",
+          "name": "Goods"
+        },
+        {
+          "id": "G1",
+          "name": "General merchandise on a balance of payments basis"
+        },
+        {
+          "id": "G1Z",
+          "name": "General merchandise on a balance of payments basis of which Re-exports"
+        },
+        {
+          "id": "G2",
+          "name": "Net exports of goods under merchanting"
+        },
+        {
+          "id": "G21",
+          "name": "Goods acquired under merchanting"
+        },
+        {
+          "id": "G22",
+          "name": "Goods sold under merchanting"
+        },
+        {
+          "id": "G3",
+          "name": "Nonmonetary gold"
+        },
+        {
+          "id": "G4EU",
+          "name": "Branding - quasi-transit trade adjustment"
+        },
+        {
+          "id": "GS",
+          "name": "Goods and services"
+        },
+        {
+          "id": "GSIN1",
+          "name": "Goods, services and primary income"
+        },
+        {
+          "id": "IN",
+          "name": "Primary plus secondary income"
+        },
+        {
+          "id": "IN1",
+          "name": "Primary income"
+        },
+        {
+          "id": "IN2",
+          "name": "Secondary income"
+        },
+        {
+          "id": "IN21",
+          "name": "Secondary income, current transfers"
+        },
+        {
+          "id": "IN22",
+          "name": "Secondary income: Other current transfers excluding personal transfers"
+        },
+        {
+          "id": "KA",
+          "name": "Capital account"
+        },
+        {
+          "id": "KAFA",
+          "name": "Capital and financial account"
+        },
+        {
+          "id": "NP",
+          "name": "Gross acquisitions  / disposals  of nonproduced nonfinancial assets"
+        },
+        {
+          "id": "R1",
+          "name": "Supplementary item: Personal Remittances"
+        },
+        {
+          "id": "R1WR",
+          "name": "Supplementary item: Workers remittances and compensation of employees"
+        },
+        {
+          "id": "R2",
+          "name": "Supplementary item: Total Remittances"
+        },
+        {
+          "id": "R3",
+          "name": "Supplementary item: Remittances and transfers"
+        },
+        {
+          "id": "RT1",
+          "name": "Reserves Template: principal and accrued interest/coupon"
+        },
+        {
+          "id": "RT10",
+          "name": "Reserves Template: instrument subject to margin"
+        },
+        {
+          "id": "RT11",
+          "name": "Reserves Template: principal"
+        },
+        {
+          "id": "RT12",
+          "name": "Reserves Template: accrued interest/coupon"
+        },
+        {
+          "id": "RT2",
+          "name": "Reserves Template: short/long positions"
+        },
+        {
+          "id": "RT2C",
+          "name": "Reserves Template: calls"
+        },
+        {
+          "id": "RT2P",
+          "name": "Reserves Template: puts"
+        },
+        {
+          "id": "RT3",
+          "name": "Reserves Template: collateral guarantees"
+        },
+        {
+          "id": "RT4",
+          "name": "Reserves Template: liabilities other than on collateral guarantees"
+        },
+        {
+          "id": "RT5",
+          "name": "Reserves Template: in-the-money options, at current exchange rates"
+        },
+        {
+          "id": "RT5A",
+          "name": "Reserves Template: in-the-money options, + 5 % (depreciation of 5%)"
+        },
+        {
+          "id": "RT5B",
+          "name": "Reserves Template: in-the-money options, + 5 % (appreciation of 5%)"
+        },
+        {
+          "id": "RT5C",
+          "name": "Reserves Template: in-the-money options, + 10 % (depreciation of 10%)"
+        },
+        {
+          "id": "RT5D",
+          "name": "Reserves Template: in-the-money options, + 10 % (appreciation of 10%)"
+        },
+        {
+          "id": "RT5E",
+          "name": "Reserves Template: in-the-money options, Other"
+        },
+        {
+          "id": "RT6",
+          "name": "Reserves Template: instrument indexed to the exchange rate"
+        },
+        {
+          "id": "RT7",
+          "name": "Reserves Template: instrument denominated in foreign currency and settled by other means (e.g., in domestic currency)"
+        },
+        {
+          "id": "RT8",
+          "name": "Reserves Template: pledged instruments"
+        },
+        {
+          "id": "RT9",
+          "name": "Reserves Template: instrument lent and on repo"
+        },
+        {
+          "id": "RT9A",
+          "name": "Reserves Template: instrument lent or on repo  and included in Section I"
+        },
+        {
+          "id": "RT9B",
+          "name": "Reserves Template: instrument lent or on repo but not included in Section I"
+        },
+        {
+          "id": "RT9C",
+          "name": "Reserves Template: instrument borrowed or acquired and included in Section I"
+        }
+      ],
+      "total_codes": 367,
+      "truncated": true
+    },
+    {
+      "id": "FREQ",
+      "position": 3,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{ITSS_AREA}.{ACCOUNTING_ENTRY}.{INT_ACC_ITEM}.{FREQ}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:38+00:00",
+  "schema_version": 1
+}

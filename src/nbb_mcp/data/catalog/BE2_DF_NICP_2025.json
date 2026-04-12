@@ -1,0 +1,1057 @@
+{
+  "agency": "BE2",
+  "id": "DF_NICP_2025",
+  "version": "1.0",
+  "category": "prices",
+  "is_final": true,
+  "names": {
+    "en": "Consumer price index; base period = 2025",
+    "fr": "Indices des prix à la consommation: période de base=2025",
+    "nl": "Consumptieprijsindex: basisperiode=2025",
+    "de": "Consumer price index; base period = 2025"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "NBB_COICOP",
+      "position": 1,
+      "name": "NBB_COICOP",
+      "codes": [
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "99_9_9_9_99",
+          "name": "General index"
+        },
+        {
+          "id": "HEALTH",
+          "name": "Health index"
+        },
+        {
+          "id": "XEFUN0",
+          "name": "Index less unprocessed food and energy"
+        },
+        {
+          "id": "XFUELL",
+          "name": "Index less petroleum products"
+        },
+        {
+          "id": "XE0000",
+          "name": "Index less energy"
+        },
+        {
+          "id": "CLASS_P",
+          "name": "Classification by product group"
+        },
+        {
+          "id": "01",
+          "name": "Foodstuffs and non-alcoholic beverages"
+        },
+        {
+          "id": "01_1",
+          "name": "Foodstuffs"
+        },
+        {
+          "id": "01_1_1",
+          "name": "Cereals and cereal products (ND)"
+        },
+        {
+          "id": "01_1_1_1",
+          "name": "Cereals (ND)"
+        },
+        {
+          "id": "01_1_1_2",
+          "name": "Flour of cereals (ND)"
+        },
+        {
+          "id": "01_1_1_3",
+          "name": "Bread and bakery products (ND)"
+        },
+        {
+          "id": "01_1_1_4",
+          "name": "Breakfast cereals (ND)"
+        },
+        {
+          "id": "01_1_1_5",
+          "name": "Macaroni, noodles, couscous and similar pasta products (ND)"
+        },
+        {
+          "id": "01_1_1_9",
+          "name": "Other cereal and grain mill products (ND)"
+        },
+        {
+          "id": "01_1_2",
+          "name": "Live animals, meat and other parts of slaughtered land animals (ND)"
+        },
+        {
+          "id": "01_1_2_2",
+          "name": "Meat, fresh, chilled or frozen (ND)"
+        },
+        {
+          "id": "01_1_2_2_1",
+          "name": "Meat of bovine animals, fresh, chilled or frozen"
+        },
+        {
+          "id": "01_1_2_2_2",
+          "name": "Meat of pigs, fresh, chilled or frozen"
+        },
+        {
+          "id": "01_1_2_2_3",
+          "name": "Meat of goats, lambs and sheep, fresh, chilled or frozen"
+        },
+        {
+          "id": "01_1_2_2_4",
+          "name": "Meat of poultry, fresh, chilled or frozen"
+        },
+        {
+          "id": "01_1_2_2_9",
+          "name": "Other meat, fresh, chilled or frozen"
+        },
+        {
+          "id": "01_1_2_3",
+          "name": "Meat, dried, salted, in brine or smoked (ND)"
+        },
+        {
+          "id": "01_1_2_5",
+          "name": "Meat, offal, blood and other parts of slaughtered animals' preparations (ND)"
+        },
+        {
+          "id": "01_1_3",
+          "name": "Fish and other seafood (ND)"
+        },
+        {
+          "id": "01_1_3_1",
+          "name": "Fish, live, fresh, chilled or frozen (ND)"
+        },
+        {
+          "id": "01_1_3_2",
+          "name": "Fish, dried, salted, in brine or smoked (ND)"
+        },
+        {
+          "id": "01_1_3_3",
+          "name": "Fish preparations (ND)"
+        },
+        {
+          "id": "01_1_3_4",
+          "name": "Other seafood, live, fresh, chilled or frozen (ND)"
+        },
+        {
+          "id": "01_1_3_6",
+          "name": "Other seafood preparations (ND)"
+        },
+        {
+          "id": "01_1_4",
+          "name": "Milk, other dairy products and eggs (ND)"
+        },
+        {
+          "id": "01_1_4_1",
+          "name": "Raw and whole milk (ND)"
+        },
+        {
+          "id": "01_1_4_2",
+          "name": "Skimmed milk (ND)"
+        },
+        {
+          "id": "01_1_4_3",
+          "name": "Other milk and cream (ND)"
+        },
+        {
+          "id": "01_1_4_4",
+          "name": "Non-animal milk (ND)"
+        },
+        {
+          "id": "01_1_4_5",
+          "name": "Cheese (ND)"
+        },
+        {
+          "id": "01_1_4_6",
+          "name": "Yoghurt and similar products (ND)"
+        },
+        {
+          "id": "01_1_4_7",
+          "name": "Milk-based dessert and beverages (ND)"
+        },
+        {
+          "id": "01_1_4_8",
+          "name": "Eggs (ND)"
+        },
+        {
+          "id": "01_1_4_9",
+          "name": "other milk products"
+        },
+        {
+          "id": "01_1_5",
+          "name": "Oils and fats (ND)"
+        },
+        {
+          "id": "01_1_5_1",
+          "name": "Vegetable oils (ND)"
+        },
+        {
+          "id": "01_1_5_2",
+          "name": "Butter and other fats and oils derived from milk (ND)"
+        },
+        {
+          "id": "01_1_5_3",
+          "name": "Margarine and similar preparations (ND)"
+        },
+        {
+          "id": "01_1_6",
+          "name": "Fruits and nuts (ND)"
+        },
+        {
+          "id": "01_1_6_1",
+          "name": "Dates, figs and tropical fruits, fresh (ND)"
+        },
+        {
+          "id": "01_1_6_2",
+          "name": "Citrus fruits, fresh (ND)"
+        },
+        {
+          "id": "01_1_6_3",
+          "name": "Stone fruits and pome fruits, fresh (ND)"
+        },
+        {
+          "id": "01_1_6_4",
+          "name": "Berries, fresh (ND)"
+        },
+        {
+          "id": "01_1_6_5",
+          "name": "Other fruits, fresh (ND)"
+        },
+        {
+          "id": "01_1_6_6",
+          "name": "Frozen fruits"
+        },
+        {
+          "id": "01_1_6_7",
+          "name": "Fruit, dried and dehydrated (ND)"
+        },
+        {
+          "id": "01_1_6_8",
+          "name": "Nuts, in shell or shelled (ND)"
+        },
+        {
+          "id": "01_1_6_9",
+          "name": "Fruit and nuts ground and other preparations (ND)"
+        },
+        {
+          "id": "01_1_7",
+          "name": "Vegetables, tubers, plantains, cooking bananas and pulses (ND)"
+        },
+        {
+          "id": "01_1_7_1",
+          "name": "Leafy or stem vegetables, fresh or chilled (ND)"
+        },
+        {
+          "id": "01_1_7_2",
+          "name": "Fruit-bearing vegetables, fresh or chilled (ND)"
+        },
+        {
+          "id": "01_1_7_3",
+          "name": "Green leguminous vegetables, fresh or chilled (ND)"
+        },
+        {
+          "id": "01_1_7_4",
+          "name": "Other vegetables, fresh or chilled (ND)"
+        },
+        {
+          "id": "01_1_7_5",
+          "name": "Tubers, plantains and cooking bananas (ND)"
+        },
+        {
+          "id": "01_1_7_6",
+          "name": "Dry vegetables"
+        },
+        {
+          "id": "01_1_7_8",
+          "name": "Vegetables, tubers, plantains and cooking bananas, frozen (ND)"
+        },
+        {
+          "id": "01_1_7_9",
+          "name": "Vegetables, tubers, plantains, cooking bananas and pulses ground and other preparations (ND)"
+        },
+        {
+          "id": "01_1_8",
+          "name": "Sugar, confectionery and desserts (ND)"
+        },
+        {
+          "id": "01_1_8_1",
+          "name": "Cane and beet sugar (ND)"
+        },
+        {
+          "id": "01_1_8_2",
+          "name": "Other sugar and sugar substitutes (ND)"
+        },
+        {
+          "id": "01_1_8_3",
+          "name": "Jams, fruit jellies, marmalades, fruit purée and pastes, honey (ND)"
+        },
+        {
+          "id": "01_1_8_4",
+          "name": "Nut purees, butters and pastes"
+        },
+        {
+          "id": "01_1_8_5",
+          "name": "Chocolate, cocoa, and cocoa-based food products (ND)"
+        },
+        {
+          "id": "01_1_8_6",
+          "name": "Ice, ice cream and sorbet (ND)"
+        },
+        {
+          "id": "01_1_8_9",
+          "name": "Other sugar confectionery and desserts n_e_c_ (ND)"
+        },
+        {
+          "id": "01_1_9",
+          "name": "Ready-made food and other food products n_e_c_ (ND)"
+        },
+        {
+          "id": "01_1_9_1",
+          "name": "Ready-made food (ND)"
+        },
+        {
+          "id": "01_1_9_2",
+          "name": "Baby food (ND)"
+        },
+        {
+          "id": "01_1_9_3",
+          "name": "Salt, condiments and sauces (ND)"
+        },
+        {
+          "id": "01_1_9_4",
+          "name": "Spices, culinary herbs and seeds (ND)"
+        },
+        {
+          "id": "01_1_9_9",
+          "name": "Other food products n_e_c_ (ND)"
+        },
+        {
+          "id": "01_2",
+          "name": "Non-alcoholic beverages"
+        },
+        {
+          "id": "01_2_1",
+          "name": "Fruit and vegetable juices (ND)"
+        },
+        {
+          "id": "01_2_1_0",
+          "name": "Fruit and vegetable juices (ND)"
+        },
+        {
+          "id": "01_2_2",
+          "name": "Coffee and coffee substitutes (ND)"
+        },
+        {
+          "id": "01_2_2_0",
+          "name": "Coffee and coffee substitutes (ND)"
+        },
+        {
+          "id": "01_2_3",
+          "name": "Tea, maté and other plant products for infusion (ND)"
+        },
+        {
+          "id": "01_2_3_0",
+          "name": "Tea, maté and other plant products for infusion (ND)"
+        },
+        {
+          "id": "01_2_4",
+          "name": "Cocoa drinks (ND)"
+        },
+        {
+          "id": "01_2_4_0",
+          "name": "Cocoa drinks (ND)"
+        },
+        {
+          "id": "01_2_5",
+          "name": "Water (ND)"
+        },
+        {
+          "id": "01_2_5_0",
+          "name": "Water (ND)"
+        },
+        {
+          "id": "01_2_6",
+          "name": "Soft drinks (ND)"
+        },
+        {
+          "id": "01_2_6_0",
+          "name": "Soft drinks (ND)"
+        },
+        {
+          "id": "01_2_9",
+          "name": "Other non-alcoholic beverages (ND)"
+        },
+        {
+          "id": "01_2_9_0",
+          "name": "Other non-alcoholic beverages (ND)"
+        },
+        {
+          "id": "02",
+          "name": "Alcoholic beverages, tobacco and narcotics"
+        },
+        {
+          "id": "02_1",
+          "name": "Alcoholic beverages"
+        },
+        {
+          "id": "02_1_1",
+          "name": "Spirits and liquors (ND)"
+        },
+        {
+          "id": "02_1_1_0",
+          "name": "Spirits and liquors (ND)"
+        },
+        {
+          "id": "02_1_2",
+          "name": "Wine (ND)"
+        },
+        {
+          "id": "02_1_2_1",
+          "name": "Wine from grapes (ND)"
+        },
+        {
+          "id": "02_1_2_2",
+          "name": "Wine from other sources (ND)"
+        },
+        {
+          "id": "02_1_3",
+          "name": "Beer (ND)"
+        },
+        {
+          "id": "02_1_3_0",
+          "name": "Beer (ND)"
+        },
+        {
+          "id": "02_1_9",
+          "name": "Other alcoholic beverages (ND)"
+        },
+        {
+          "id": "02_1_9_0",
+          "name": "Other alcoholic beverages (ND)"
+        },
+        {
+          "id": "02_3",
+          "name": "Tobacco"
+        },
+        {
+          "id": "02_3_0",
+          "name": "Tobacco (ND)"
+        },
+        {
+          "id": "02_3_0_1",
+          "name": "Cigarettes (ND)"
+        },
+        {
+          "id": "02_3_0_9",
+          "name": "Other tobacco products (ND)"
+        },
+        {
+          "id": "03",
+          "name": "Clothing and footwear"
+        },
+        {
+          "id": "03_1",
+          "name": "Clothing"
+        },
+        {
+          "id": "03_1_1",
+          "name": "Clothing materials (SD)"
+        },
+        {
+          "id": "03_1_1_0",
+          "name": "Clothing materials (SD)"
+        },
+        {
+          "id": "03_1_2",
+          "name": "Garments (SD)"
+        },
+        {
+          "id": "03_1_2_1",
+          "name": "Garments for men or boys (SD)"
+        },
+        {
+          "id": "03_1_2_2",
+          "name": "Garments for women or girls (SD)"
+        },
+        {
+          "id": "03_1_2_3",
+          "name": "Garments for infants (0 to under 2 years) (SD)"
+        },
+        {
+          "id": "03_1_3",
+          "name": "Other articles of clothing and clothing accessories (SD)"
+        },
+        {
+          "id": "03_1_3_1",
+          "name": "Other articles of clothing (SD)"
+        },
+        {
+          "id": "03_1_3_2",
+          "name": "Clothing accessories (SD)"
+        },
+        {
+          "id": "03_1_4",
+          "name": "Cleaning, repair, tailoring and hire of clothing (S)"
+        },
+        {
+          "id": "03_1_4_1",
+          "name": "Cleaning of clothing (S)"
+        },
+        {
+          "id": "03_1_4_2",
+          "name": "Repair, tailoring and hire of clothing (S)"
+        },
+        {
+          "id": "03_2",
+          "name": "Footwear"
+        },
+        {
+          "id": "03_2_1",
+          "name": "Shoes and other footwear (SD)"
+        },
+        {
+          "id": "03_2_1_1",
+          "name": "Footwear for men (SD)"
+        },
+        {
+          "id": "03_2_1_2",
+          "name": "Footwear for women (SD)"
+        },
+        {
+          "id": "03_2_1_3",
+          "name": "Footwear for infants and children (SD)"
+        },
+        {
+          "id": "03_2_2",
+          "name": "Cleaning, repair, and hire of footwear (S)"
+        },
+        {
+          "id": "03_2_2_0",
+          "name": "Cleaning, repair, and hire of footwear (S)"
+        },
+        {
+          "id": "04",
+          "name": "Housing, water, electricity, gas and other fuels"
+        },
+        {
+          "id": "04_1",
+          "name": "Actual rentals for housing"
+        },
+        {
+          "id": "04_1_1",
+          "name": "Actual rentals paid by tenants for main residence (S)"
+        },
+        {
+          "id": "04_1_1_0",
+          "name": "Actual rentals paid by tenants for main residence (S)"
+        },
+        {
+          "id": "04_1_2",
+          "name": "Other actual rentals (S)"
+        },
+        {
+          "id": "04_1_2_1",
+          "name": "Actual rentals paid by tenants for secondary residences (S)"
+        },
+        {
+          "id": "04_1_2_2",
+          "name": "Garage rentals and other rentals paid by tenants (S)"
+        },
+        {
+          "id": "04_3",
+          "name": "Maintenance, repair and security of the dwelling"
+        },
+        {
+          "id": "04_3_1",
+          "name": "Security equipment and materials for the maintenance and repair of the dwelling (ND)"
+        },
+        {
+          "id": "04_3_1_1",
+          "name": "Materials for the maintenance repair of the dwelling (ND)"
+        },
+        {
+          "id": "04_3_2",
+          "name": "Services for the maintenance, repair and security of the dwelling (S)"
+        },
+        {
+          "id": "04_3_2_0",
+          "name": "Services for the maintenance, repair and security of the dwelling (S)"
+        },
+        {
+          "id": "04_4",
+          "name": "Water supply and miscellaneous services relating to the dwelling"
+        },
+        {
+          "id": "04_4_1",
+          "name": "Water supply (ND)"
+        },
+        {
+          "id": "04_4_1_1",
+          "name": "Water supply through network systems (ND)"
+        },
+        {
+          "id": "04_4_2",
+          "name": "Refuse collection (S)"
+        },
+        {
+          "id": "04_4_2_0",
+          "name": "Refuse collection (S)"
+        },
+        {
+          "id": "04_4_3",
+          "name": "Sewage collection (S)"
+        },
+        {
+          "id": "04_4_3_1",
+          "name": "Sewage collection through sewer systems (S)"
+        },
+        {
+          "id": "04_4_4",
+          "name": "Other services relating to the dwelling n_e_c_ (S)"
+        },
+        {
+          "id": "04_4_4_1",
+          "name": "Maintenance charges in multi-occupied buildings (S)"
+        },
+        {
+          "id": "04_4_4_9",
+          "name": "Other services related to dwelling (S)"
+        },
+        {
+          "id": "04_5",
+          "name": "Electricity, gas and other fuels"
+        },
+        {
+          "id": "04_5_1",
+          "name": "Electricity (ND)"
+        },
+        {
+          "id": "04_5_1_0",
+          "name": "Electricity (ND)"
+        },
+        {
+          "id": "04_5_2",
+          "name": "Gas (ND)"
+        },
+        {
+          "id": "04_5_2_1",
+          "name": "Natural gas through networks (ND)"
+        },
+        {
+          "id": "04_5_2_2",
+          "name": "Liquefied hydrocarbons (ND)"
+        },
+        {
+          "id": "04_5_3",
+          "name": "Liquid fuels (ND)"
+        },
+        {
+          "id": "04_5_3_0",
+          "name": "Liquid fuels (ND)"
+        },
+        {
+          "id": "04_5_4",
+          "name": "Solid fuels (ND)"
+        },
+        {
+          "id": "04_5_4_2",
+          "name": "Wood fuel, including pellets and briquettes (ND)"
+        },
+        {
+          "id": "04_5_4_3",
+          "name": "Charcoal (ND)"
+        },
+        {
+          "id": "04_5_4_9",
+          "name": "Other solid fuels (ND)"
+        },
+        {
+          "id": "05",
+          "name": "Furnishings, household equipment and routine household maintenance"
+        },
+        {
+          "id": "05_1",
+          "name": "Furniture , Furnishings, and loose carpets"
+        },
+        {
+          "id": "05_1_1",
+          "name": "Furniture, furnishings and loose carpets (D)"
+        },
+        {
+          "id": "05_1_1_1",
+          "name": "Household furniture (D)"
+        },
+        {
+          "id": "05_1_1_2",
+          "name": "Garden and camping furniture (D)"
+        },
+        {
+          "id": "05_1_1_3",
+          "name": "Lighting equipment (D)"
+        },
+        {
+          "id": "05_1_1_4",
+          "name": "Furnishings, loose carpets and rugs (D)"
+        },
+        {
+          "id": "05_2",
+          "name": "Household textiles"
+        },
+        {
+          "id": "05_2_1",
+          "name": "Household textiles (SD)"
+        },
+        {
+          "id": "05_2_1_1",
+          "name": "Furnishing fabrics and curtains (SD)"
+        },
+        {
+          "id": "05_2_1_2",
+          "name": "Bed linen (SD)"
+        },
+        {
+          "id": "05_2_1_3",
+          "name": "Table linen and bathroom linen (SD)"
+        },
+        {
+          "id": "05_3",
+          "name": "Household appliances"
+        },
+        {
+          "id": "05_3_1",
+          "name": "Major household appliances, whether electric or not (D)"
+        },
+        {
+          "id": "05_3_1_1",
+          "name": "Major kitchen appliances (D)"
+        },
+        {
+          "id": "05_3_1_2",
+          "name": "Major laundry appliances (D)"
+        },
+        {
+          "id": "05_3_1_3",
+          "name": "Heaters, air conditioners (D)"
+        },
+        {
+          "id": "05_3_1_4",
+          "name": "Cleaning equipment (D)"
+        },
+        {
+          "id": "05_3_2",
+          "name": "Small household appliances (SD)"
+        },
+        {
+          "id": "05_3_2_1",
+          "name": "Small appliances for cooking and processing of food (SD)"
+        },
+        {
+          "id": "05_3_2_2",
+          "name": "Small appliances for preparing beverages (SD)"
+        },
+        {
+          "id": "05_3_2_9",
+          "name": "Other small household appliances (SD)"
+        },
+        {
+          "id": "05_4",
+          "name": "Glassware, tableware and household utensils (SD)"
+        },
+        {
+          "id": "05_4_0",
+          "name": "Glassware, tableware and household utensils (SD)"
+        },
+        {
+          "id": "05_4_0_1",
+          "name": "Glassware, crystal-ware, ceramic ware and chinaware (SD)"
+        },
+        {
+          "id": "05_4_0_2",
+          "name": "Cutlery, flatware and silverware (SD)"
+        },
+        {
+          "id": "05_4_0_3",
+          "name": "Kitchen utensils and articles (SD)"
+        },
+        {
+          "id": "05_5",
+          "name": "Tools and equipment for house and garden"
+        },
+        {
+          "id": "05_5_1",
+          "name": "Motorized tools and equipment (D)"
+        },
+        {
+          "id": "05_5_1_0",
+          "name": "Motorized tools and equipment (D)"
+        },
+        {
+          "id": "05_5_2",
+          "name": "Non-motorized tools and miscellaneous accessories (SD)"
+        },
+        {
+          "id": "05_5_2_1",
+          "name": "Non-motorized tools (SD)"
+        },
+        {
+          "id": "05_5_2_2",
+          "name": "Miscellaneous accessories (SD)"
+        },
+        {
+          "id": "05_5_3",
+          "name": "Repair and hire of motorized and non-motorized tools and equipment (S)"
+        },
+        {
+          "id": "05_5_3_0",
+          "name": "Repair and hire of motorized and non-motorized tools and equipment (S)"
+        },
+        {
+          "id": "05_6",
+          "name": "Goods and services for routine household appliance"
+        },
+        {
+          "id": "05_6_1",
+          "name": "Non-durable household goods (ND)"
+        }
+      ],
+      "total_codes": 421,
+      "truncated": true
+    },
+    {
+      "id": "INDEX_BASE",
+      "position": 2,
+      "name": "INDEX_BASE",
+      "codes": [
+        {
+          "id": "1914",
+          "name": "April 1914"
+        },
+        {
+          "id": "1953",
+          "name": "1953"
+        },
+        {
+          "id": "1966",
+          "name": "1966"
+        },
+        {
+          "id": "1971",
+          "name": "1971"
+        },
+        {
+          "id": "1974",
+          "name": "2nd half-year 1974 / 1st half-year 1975"
+        },
+        {
+          "id": "1981",
+          "name": "1981"
+        },
+        {
+          "id": "1988",
+          "name": "1988"
+        },
+        {
+          "id": "1996",
+          "name": "1996"
+        },
+        {
+          "id": "2004",
+          "name": "2004"
+        },
+        {
+          "id": "2010",
+          "name": "2010"
+        },
+        {
+          "id": "2013",
+          "name": "2013"
+        },
+        {
+          "id": "2015",
+          "name": "2015"
+        },
+        {
+          "id": "2016",
+          "name": "2016"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "1997",
+          "name": "1997"
+        },
+        {
+          "id": "2020",
+          "name": "2020"
+        },
+        {
+          "id": "2021",
+          "name": "2021"
+        },
+        {
+          "id": "2025",
+          "name": "2025"
+        }
+      ],
+      "total_codes": 18,
+      "truncated": false
+    },
+    {
+      "id": "INDEX_TYPE",
+      "position": 3,
+      "name": "INDEX_TYPE",
+      "codes": [
+        {
+          "id": "NCP",
+          "name": "Consumer Price Index"
+        },
+        {
+          "id": "WNICP",
+          "name": "Weights of Consumer Price Index"
+        },
+        {
+          "id": "HCP",
+          "name": "Harmonized Index of Consumer Prices"
+        },
+        {
+          "id": "INDPROD",
+          "name": "Industrial Production"
+        },
+        {
+          "id": "CONSPROD",
+          "name": "Construction Industry Production"
+        },
+        {
+          "id": "RAWMATERIALSIP",
+          "name": "Basic Materials Price Index"
+        },
+        {
+          "id": "WAGES",
+          "name": "Regulatory wages"
+        },
+        {
+          "id": "HUR",
+          "name": "Adjusted Harmonized Unemployment Rate"
+        },
+        {
+          "id": "NHU",
+          "name": "Non-harmonized Unemployment"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "LBCI",
+          "name": "Labor costs, wages, and gross salaries in industry"
+        },
+        {
+          "id": "NFT",
+          "name": "Non harmonized external trade"
+        },
+        {
+          "id": "HFT",
+          "name": "Harmonized external trade"
+        }
+      ],
+      "total_codes": 13,
+      "truncated": false
+    },
+    {
+      "id": "DERIVATION",
+      "position": 4,
+      "name": "DERIVATION",
+      "codes": [
+        {
+          "id": "INDICES",
+          "name": "Indices"
+        },
+        {
+          "id": "GROWTH_RATE",
+          "name": "Percentage of change"
+        },
+        {
+          "id": "RATE",
+          "name": "Percentage"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "GROWTH_VALUE",
+          "name": "Value of change"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{NBB_COICOP}.{INDEX_BASE}.{INDEX_TYPE}.{DERIVATION}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:33:00+00:00",
+  "schema_version": 1
+}

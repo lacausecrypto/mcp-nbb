@@ -1,0 +1,407 @@
+{
+  "agency": "BE2",
+  "id": "DF_MIR",
+  "version": "1.0",
+  "category": "exchange_interest_rates",
+  "is_final": true,
+  "names": {
+    "en": "MFI interest rates (MIR)",
+    "fr": "MFI taux d'intérêt (MIR)",
+    "nl": "MFI rentetarieven (MIR)",
+    "de": "MFI interest rates (MIR)"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "MIR_ITEM",
+      "position": 1,
+      "name": "MIR_ITEM",
+      "codes": [
+        {
+          "id": "R_N",
+          "name": "Interest rates on new business"
+        },
+        {
+          "id": "R_O",
+          "name": "Average interest rates on outstanding amounts"
+        },
+        {
+          "id": "B_N",
+          "name": "Amount of new business"
+        },
+        {
+          "id": "IA",
+          "name": "Auxiliary information"
+        },
+        {
+          "id": "DIS",
+          "name": "Dispersion of interest rates on new business"
+        },
+        {
+          "id": "FAC",
+          "name": "Breakdown info factors of interest rates on new business"
+        },
+        {
+          "id": "SCR",
+          "name": "Statistics of cash receipts"
+        },
+        {
+          "id": "DISTB",
+          "name": "Dispersion of interest rate effects on new issues of treasury bonds"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 9,
+      "truncated": false
+    },
+    {
+      "id": "MIR_SECTOR",
+      "position": 2,
+      "name": "MIR_SECTOR",
+      "codes": [
+        {
+          "id": "2240",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "2250",
+          "name": "Households"
+        },
+        {
+          "id": "0000",
+          "name": "Total"
+        },
+        {
+          "id": "_Z",
+          "name": "not applicable"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "MIR_INSTRUMENT",
+      "position": 3,
+      "name": "MIR_INSTRUMENT",
+      "codes": [
+        {
+          "id": "L20",
+          "name": "Deposits in EUR"
+        },
+        {
+          "id": "L21",
+          "name": "Overnight"
+        },
+        {
+          "id": "L22",
+          "name": "With agreed maturity"
+        },
+        {
+          "id": "L23",
+          "name": "Redeemable at up to 3 months notice"
+        },
+        {
+          "id": "A20",
+          "name": "Loans in EUR"
+        },
+        {
+          "id": "A2Z1",
+          "name": "Advances on current account"
+        },
+        {
+          "id": "A2A",
+          "name": "Loans (other than bank overdraft)"
+        },
+        {
+          "id": "A2A_0",
+          "name": "Up to EUR 1 million"
+        },
+        {
+          "id": "A2A_1",
+          "name": "Over EUR 1 million"
+        },
+        {
+          "id": "A2A_2",
+          "name": "Up to EUR 0.25 million"
+        },
+        {
+          "id": "A2A_3",
+          "name": "Over EUR 0.25 million and up to EUR 1 million"
+        },
+        {
+          "id": "A2B",
+          "name": "Loans for consumption"
+        },
+        {
+          "id": "A2C",
+          "name": "Loans for house purchase"
+        },
+        {
+          "id": "A2D",
+          "name": "Loans for other purposes"
+        },
+        {
+          "id": "A25",
+          "name": "Loans for consumption and other purposes"
+        },
+        {
+          "id": "1CB",
+          "name": "Cash bonds"
+        },
+        {
+          "id": "CB_1",
+          "name": "Cost-of-borrowing indicator for households for house purchase"
+        },
+        {
+          "id": "CB_2",
+          "name": "Cost-of-borrowing indicator for non-financial corporations"
+        },
+        {
+          "id": "CB_3",
+          "name": "Cost-of-borrowing indicator for new long-term loans to households and non-financial corporations"
+        },
+        {
+          "id": "CB_4",
+          "name": "Cost-of-borrowing indicator for new short-term loans to households and non-financial corporations"
+        }
+      ],
+      "total_codes": 20,
+      "truncated": false
+    },
+    {
+      "id": "MIR_MATURITY",
+      "position": 4,
+      "name": "MIR_MATURITY",
+      "codes": [
+        {
+          "id": "Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "LX",
+          "name": "Deposits maturity"
+        },
+        {
+          "id": "L_1",
+          "name": "Below 1 month"
+        },
+        {
+          "id": "L_F",
+          "name": "Up to 1 year"
+        },
+        {
+          "id": "L_G",
+          "name": "Over 1 and up to 2 years"
+        },
+        {
+          "id": "L_L",
+          "name": "Up to 2 years"
+        },
+        {
+          "id": "L_H",
+          "name": "Over 2 years"
+        },
+        {
+          "id": "AXN",
+          "name": "Loans maturity (new business)"
+        },
+        {
+          "id": "A_D",
+          "name": "Floating rate and up to 3 months initial rate fixation"
+        },
+        {
+          "id": "A_F",
+          "name": "Floating rate and up to 1 year initial rate fixation"
+        },
+        {
+          "id": "A_I",
+          "name": "Over 1 and up to 5 years initial rate fixation"
+        },
+        {
+          "id": "A_J",
+          "name": "Over 5 years initial rate fixation"
+        },
+        {
+          "id": "A_Q",
+          "name": "Over 3 months and up to 1 year initial rate fixation"
+        },
+        {
+          "id": "A_S",
+          "name": "Over 3 and up to 5 years initial rate fixation"
+        },
+        {
+          "id": "A_O",
+          "name": "Over 5 and up to 10 years initial rate fixation"
+        },
+        {
+          "id": "A_P",
+          "name": "Over 10 years initial rate fixation"
+        },
+        {
+          "id": "A_Y",
+          "name": "Floating rate and up to 1 year period of initial rate fixation, with original maturity over 1 year"
+        },
+        {
+          "id": "A_1",
+          "name": "With original maturity below 1 month"
+        },
+        {
+          "id": "A_2",
+          "name": "Annual percent rate of charge"
+        },
+        {
+          "id": "AXO",
+          "name": "Loans maturity (outstanding amounts)"
+        },
+        {
+          "id": "O_F",
+          "name": "Up to 1 year"
+        },
+        {
+          "id": "O_I",
+          "name": "Over 1 and up to 5 years"
+        },
+        {
+          "id": "O_J",
+          "name": "Over 5 years"
+        },
+        {
+          "id": "CBX",
+          "name": "Cash bonds maturity"
+        },
+        {
+          "id": "CB1",
+          "name": "With 1 year maturity"
+        },
+        {
+          "id": "CB3",
+          "name": "With 3 years maturity"
+        },
+        {
+          "id": "CB5",
+          "name": "With 5 years maturity"
+        },
+        {
+          "id": "CB10",
+          "name": "With maturity between 5 an 10 years (interval)"
+        }
+      ],
+      "total_codes": 28,
+      "truncated": false
+    },
+    {
+      "id": "MIR_QUARTILE",
+      "position": 5,
+      "name": "MIR_QUARTILE",
+      "codes": [
+        {
+          "id": "3",
+          "name": "Q3"
+        },
+        {
+          "id": "1",
+          "name": "Q1"
+        },
+        {
+          "id": "I",
+          "name": "IQ"
+        },
+        {
+          "id": "Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "MIR_FACTOR",
+      "position": 6,
+      "name": "MIR_FACTOR",
+      "codes": [
+        {
+          "id": "T",
+          "name": "Total of effects"
+        },
+        {
+          "id": "R",
+          "name": "Rate effect"
+        },
+        {
+          "id": "S",
+          "name": "Weighting structure effect"
+        },
+        {
+          "id": "Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{MIR_ITEM}.{MIR_SECTOR}.{MIR_INSTRUMENT}.{MIR_MATURITY}.{MIR_QUARTILE}.{MIR_FACTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:50+00:00",
+  "schema_version": 1
+}

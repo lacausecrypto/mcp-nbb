@@ -1,0 +1,1462 @@
+{
+  "agency": "BE2",
+  "id": "DF_REGACSEC",
+  "version": "1.0",
+  "category": "regional",
+  "is_final": true,
+  "names": {
+    "en": "Regional accounts by institutional sector – overview",
+    "fr": "Comptes régionaux par secteur institutionnel – aperçu",
+    "nl": "Regionale rekeningen per institutionele sector- overzicht",
+    "de": "Regional accounts by institutional sector – overview"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 1,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "B11000",
+          "name": "Net exports of goods and services"
+        },
+        {
+          "id": "B11100",
+          "name": "Net exports of goods"
+        },
+        {
+          "id": "B11200",
+          "name": "Net exports of services"
+        },
+        {
+          "id": "B1G000",
+          "name": "Gross value added at basic prices (B.1g)"
+        },
+        {
+          "id": "B1GCAP",
+          "name": "Gross value added at basic prices per resident"
+        },
+        {
+          "id": "B1QCAP",
+          "name": "Gross domestic product per resident"
+        },
+        {
+          "id": "B1QG00",
+          "name": "Gross domestic product (GDP)"
+        },
+        {
+          "id": "B6NCAP",
+          "name": "Disposable income per resident (in euros)"
+        },
+        {
+          "id": "D10000",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "EMPLOY",
+          "name": "Number of employees"
+        },
+        {
+          "id": "GSR",
+          "name": "Gross saving rate (in %)"
+        },
+        {
+          "id": "HRWEMP",
+          "name": "Number of hours worked : Employees"
+        },
+        {
+          "id": "HRWSEP",
+          "name": "Number of hours worked : Self-employed persons"
+        },
+        {
+          "id": "HRWTOT",
+          "name": "Number of hours worked : Total employment"
+        },
+        {
+          "id": "IA1",
+          "name": "Allocation of primary income account"
+        },
+        {
+          "id": "1R",
+          "name": "Resources"
+        },
+        {
+          "id": "1R_B2N",
+          "name": "Operating surplus (B.2n)"
+        },
+        {
+          "id": "1R_B3N",
+          "name": "Mixed income (B.3n)"
+        },
+        {
+          "id": "1R_D1",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "1R_D11",
+          "name": "Wages and salaries (D.11)"
+        },
+        {
+          "id": "1R_D12",
+          "name": "Employers' social contributions (D.12)"
+        },
+        {
+          "id": "1R_D121",
+          "name": "Employers' actual social contributions (D.121)"
+        },
+        {
+          "id": "1R_D122",
+          "name": "Employers' imputed social contributions (D.122)"
+        },
+        {
+          "id": "1R_D4",
+          "name": "Property income (D.4)"
+        },
+        {
+          "id": "1U",
+          "name": "Uses"
+        },
+        {
+          "id": "1U_B5N",
+          "name": "Balance of primary incomes (B.5n)"
+        },
+        {
+          "id": "1U_D4",
+          "name": "Property income (D.4)"
+        },
+        {
+          "id": "IA2",
+          "name": "Secondary distribution of income account"
+        },
+        {
+          "id": "2R",
+          "name": "Resources"
+        },
+        {
+          "id": "2R_B5N",
+          "name": "Balance of primary incomes (B.5n)"
+        },
+        {
+          "id": "2R_D612",
+          "name": "Employers' imputed social contributions (D.612)"
+        },
+        {
+          "id": "2R_D62",
+          "name": "Social benefits other than social transfers in kind (D.62)"
+        },
+        {
+          "id": "2R_D621",
+          "name": "Social security benefits in cash (D.621)"
+        },
+        {
+          "id": "2R_D622",
+          "name": "Other social insurance benefits (D.622)"
+        },
+        {
+          "id": "2R_D623",
+          "name": "Social assistance benefits in cash (D.623)"
+        },
+        {
+          "id": "2R_D7",
+          "name": "Other current transfers (D.7)"
+        },
+        {
+          "id": "2U",
+          "name": "Uses"
+        },
+        {
+          "id": "2U_B6N",
+          "name": "Disposable income (B.6n)"
+        },
+        {
+          "id": "2U_D5",
+          "name": "Current taxes on income, wealth, etc. (D.5)"
+        },
+        {
+          "id": "2U_D61",
+          "name": "Social contributions (D.61)"
+        },
+        {
+          "id": "2U_D611",
+          "name": "Employers' actual social contributions (D.611)"
+        },
+        {
+          "id": "2U_D612",
+          "name": "Employers' imputed social contributions (D.612)"
+        },
+        {
+          "id": "2U_D613",
+          "name": "Households' actual social contributions (D.613)"
+        },
+        {
+          "id": "2U_D614",
+          "name": "Households' social contributions supplements (D.614)"
+        },
+        {
+          "id": "2U_D61SC",
+          "name": "Social insurance scheme service charge (D61SC)"
+        },
+        {
+          "id": "2U_D622",
+          "name": "Other social insurance benefits (D.622)"
+        },
+        {
+          "id": "2U_D7",
+          "name": "Other current transfers (D.7)"
+        },
+        {
+          "id": "IIA3",
+          "name": "Redistribution of income in kind account (II.3)"
+        },
+        {
+          "id": "3R",
+          "name": "Resources"
+        },
+        {
+          "id": "3R_B6G",
+          "name": "Disposable income, gross (B.6g)"
+        },
+        {
+          "id": "3R_B6N",
+          "name": "Disposable income, net (B.6n)"
+        },
+        {
+          "id": "3R_D63",
+          "name": "Social transfers in kind (D.63)"
+        },
+        {
+          "id": "3R_D631",
+          "name": "Social transfers in kind - non-market production (D.631)"
+        },
+        {
+          "id": "3R_D632",
+          "name": "Social transfers in kind - purchased market production (D.632)"
+        },
+        {
+          "id": "3U",
+          "name": "Uses"
+        },
+        {
+          "id": "3U_B7G",
+          "name": "Adjusted disposable income, gross (B.7g)"
+        },
+        {
+          "id": "3U_B7N",
+          "name": "Adjusted disposable income, net (B.7n)"
+        },
+        {
+          "id": "IIA41",
+          "name": "Use of disposable income account (II.4.1)"
+        },
+        {
+          "id": "41R",
+          "name": "Resources"
+        },
+        {
+          "id": "41R_B6G",
+          "name": "Disposable income, gross (B.6g)"
+        },
+        {
+          "id": "41R_B6N",
+          "name": "Disposable income, net (B.6n)"
+        },
+        {
+          "id": "41R_D8",
+          "name": "Adjustment for the change in pension entitlements (D.8)"
+        },
+        {
+          "id": "41U",
+          "name": "Uses"
+        },
+        {
+          "id": "41U_B8G",
+          "name": "Saving, gross (B.8g)"
+        },
+        {
+          "id": "41U_B8N",
+          "name": "Saving, net (B.8n)"
+        },
+        {
+          "id": "41U_P3",
+          "name": "Final consumption expenditure (P.3)"
+        },
+        {
+          "id": "41U_P31",
+          "name": "Individual consumption expenditure (P.31)"
+        },
+        {
+          "id": "IIA42",
+          "name": "Use of adjusted disposable income account (II.4.2)"
+        },
+        {
+          "id": "42R",
+          "name": "Resources"
+        },
+        {
+          "id": "42R_B7G",
+          "name": "Adjusted disposable income, gross (B.7g)"
+        },
+        {
+          "id": "42R_B7N",
+          "name": "Adjusted disposable income, net (B.7n)"
+        },
+        {
+          "id": "42R_D8",
+          "name": "Adjustment for the change in pension entitlements (D.8)"
+        },
+        {
+          "id": "42U",
+          "name": "Uses"
+        },
+        {
+          "id": "42U_B8G",
+          "name": "Saving, gross (B.8g)"
+        },
+        {
+          "id": "42U_B8N",
+          "name": "Saving, net (B.8n)"
+        },
+        {
+          "id": "42U_P4",
+          "name": "Actual final consumption (P.4)"
+        },
+        {
+          "id": "42U_P41",
+          "name": "Actual individual consumption (P.41)"
+        },
+        {
+          "id": "K1",
+          "name": "Consumption of fixed capital"
+        },
+        {
+          "id": "NSR",
+          "name": "Net saving rate (in %)"
+        },
+        {
+          "id": "P3",
+          "name": "Final consumption expenditure (P.3)"
+        },
+        {
+          "id": "P31",
+          "name": "Individual consumption expenditure (P.31)"
+        },
+        {
+          "id": "D63",
+          "name": "Social transfers in kind (D.63)"
+        },
+        {
+          "id": "D631",
+          "name": "Social transfers in kind - non-market production (D.631)"
+        },
+        {
+          "id": "D632",
+          "name": "Social transfers in kind - purchased market production (D.632)"
+        },
+        {
+          "id": "D632_1",
+          "name": "Refunds of the 'INAMI'"
+        },
+        {
+          "id": "D632_2",
+          "name": "Interventions of the FEDRIS"
+        },
+        {
+          "id": "D632_3",
+          "name": "Interventions in the daily price of hospitals"
+        },
+        {
+          "id": "D632_4",
+          "name": "Interventions in kind from 'CPAS'"
+        },
+        {
+          "id": "D632_5",
+          "name": "Interventions for the elderly and/or disabled and for childcare"
+        },
+        {
+          "id": "D632_6",
+          "name": "Interventions of the 'INIG'"
+        },
+        {
+          "id": "D632_7",
+          "name": "Other social transfers in kind"
+        },
+        {
+          "id": "P32",
+          "name": "Collective consumption expenditure (P.32)"
+        },
+        {
+          "id": "P4",
+          "name": "Actual final consumption (P.4)"
+        },
+        {
+          "id": "P41_S14",
+          "name": "Household actual final consumption (P.41_S.14)"
+        },
+        {
+          "id": "P31_S13",
+          "name": "Individual consumption expenditure of general government (P.31_S.13)"
+        },
+        {
+          "id": "P31_S14",
+          "name": "Final consumption expenditure of households (P.31_S.14)"
+        },
+        {
+          "id": "P31_S15",
+          "name": "Individual consumption expenditure of non-profit institutions serving households (NPISHs) (P.31_S.15)"
+        },
+        {
+          "id": "P42_S13",
+          "name": "General government actual collective consumption (P.42_S.13)"
+        },
+        {
+          "id": "P51000",
+          "name": "Gross fixed capital formation"
+        },
+        {
+          "id": "P60000",
+          "name": "Exports of goods and services"
+        },
+        {
+          "id": "P61000",
+          "name": "Exports of goods"
+        },
+        {
+          "id": "P62000",
+          "name": "Exports of services"
+        },
+        {
+          "id": "P70000",
+          "name": "Import of goods and services"
+        },
+        {
+          "id": "P71000",
+          "name": "Import of goods"
+        },
+        {
+          "id": "P72000",
+          "name": "Import of services"
+        },
+        {
+          "id": "POPULA",
+          "name": "Average population in units"
+        },
+        {
+          "id": "SELFEM",
+          "name": "Number of self-employed persons"
+        },
+        {
+          "id": "TOTEMP",
+          "name": "Total employment"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 109,
+      "truncated": false
+    },
+    {
+      "id": "NUTS",
+      "position": 2,
+      "name": "NUTS",
+      "codes": [
+        {
+          "id": "336",
+          "name": "p.m. German community"
+        },
+        {
+          "id": "400",
+          "name": "Extra-territorial region"
+        },
+        {
+          "id": "000",
+          "name": "Belgium"
+        },
+        {
+          "id": "100",
+          "name": "Brussels Capital region"
+        },
+        {
+          "id": "200",
+          "name": "Flemish region"
+        },
+        {
+          "id": "210",
+          "name": "Antwerp (province)"
+        },
+        {
+          "id": "211",
+          "name": "Antwerp (district)"
+        },
+        {
+          "id": "212",
+          "name": "Mechelen"
+        },
+        {
+          "id": "213",
+          "name": "Turnhout"
+        },
+        {
+          "id": "220",
+          "name": "Limburg"
+        },
+        {
+          "id": "221",
+          "name": "Hasselt"
+        },
+        {
+          "id": "222",
+          "name": "Maaseik"
+        },
+        {
+          "id": "223",
+          "name": "Tongeren"
+        },
+        {
+          "id": "230",
+          "name": "East Flanders"
+        },
+        {
+          "id": "231",
+          "name": "Aalst"
+        },
+        {
+          "id": "232",
+          "name": "Dendermonde"
+        },
+        {
+          "id": "233",
+          "name": "Eeklo"
+        },
+        {
+          "id": "234",
+          "name": "Ghent"
+        },
+        {
+          "id": "235",
+          "name": "Oudenaarde"
+        },
+        {
+          "id": "236",
+          "name": "Sint-Niklaas"
+        },
+        {
+          "id": "240",
+          "name": "Flemish Brabant"
+        },
+        {
+          "id": "241",
+          "name": "Halle-Vilvoorde"
+        },
+        {
+          "id": "242",
+          "name": "Leuven"
+        },
+        {
+          "id": "250",
+          "name": "West Flanders"
+        },
+        {
+          "id": "251",
+          "name": "Bruges"
+        },
+        {
+          "id": "252",
+          "name": "Dixmude"
+        },
+        {
+          "id": "253",
+          "name": "Ypres"
+        },
+        {
+          "id": "254",
+          "name": "Courtrai"
+        },
+        {
+          "id": "255",
+          "name": "Ostend"
+        },
+        {
+          "id": "256",
+          "name": "Roulers"
+        },
+        {
+          "id": "257",
+          "name": "Tielt"
+        },
+        {
+          "id": "258",
+          "name": "Furnes"
+        },
+        {
+          "id": "300",
+          "name": "Walloon Region"
+        },
+        {
+          "id": "310",
+          "name": "Walloon Brabant"
+        },
+        {
+          "id": "320",
+          "name": "Hainault"
+        },
+        {
+          "id": "321",
+          "name": "Ath"
+        },
+        {
+          "id": "322",
+          "name": "Charleroi"
+        },
+        {
+          "id": "323",
+          "name": "Mons"
+        },
+        {
+          "id": "324",
+          "name": "Mouscron"
+        },
+        {
+          "id": "325",
+          "name": "Soignies"
+        },
+        {
+          "id": "326",
+          "name": "Thuin"
+        },
+        {
+          "id": "327",
+          "name": "Tournai"
+        },
+        {
+          "id": "328",
+          "name": "Tournai-Mouscron"
+        },
+        {
+          "id": "329",
+          "name": "La Louvière"
+        },
+        {
+          "id": "330",
+          "name": "Liège (province)"
+        },
+        {
+          "id": "331",
+          "name": "Huy"
+        },
+        {
+          "id": "332",
+          "name": "Liège (district)"
+        },
+        {
+          "id": "333",
+          "name": "Verviers"
+        },
+        {
+          "id": "334",
+          "name": "Waremme"
+        },
+        {
+          "id": "335",
+          "name": "Verviers (F)"
+        },
+        {
+          "id": "337",
+          "name": "Verviers (G)"
+        },
+        {
+          "id": "340",
+          "name": "Luxemburg"
+        },
+        {
+          "id": "341",
+          "name": "Arlon"
+        },
+        {
+          "id": "342",
+          "name": "Bastogne"
+        },
+        {
+          "id": "343",
+          "name": "Marche-en-Famenne"
+        },
+        {
+          "id": "344",
+          "name": "Neufchâteau"
+        },
+        {
+          "id": "345",
+          "name": "Virton"
+        },
+        {
+          "id": "350",
+          "name": "Namur (province)"
+        },
+        {
+          "id": "351",
+          "name": "Dinant"
+        },
+        {
+          "id": "352",
+          "name": "Namur (district)"
+        },
+        {
+          "id": "353",
+          "name": "Philippeville"
+        }
+      ],
+      "total_codes": 61,
+      "truncated": false
+    },
+    {
+      "id": "BRANCH",
+      "position": 3,
+      "name": "BRANCH",
+      "codes": [
+        {
+          "id": "TOT",
+          "name": "Total"
+        },
+        {
+          "id": "1",
+          "name": "Agriculture, forestry and fishing"
+        },
+        {
+          "id": "2",
+          "name": "Industry"
+        },
+        {
+          "id": "3",
+          "name": "Construction"
+        },
+        {
+          "id": "4",
+          "name": "Wholesale and retail trade; transportation; accommodation and food service activities"
+        },
+        {
+          "id": "5",
+          "name": "Information and communication"
+        },
+        {
+          "id": "6",
+          "name": "Financial and insurance activities"
+        },
+        {
+          "id": "7",
+          "name": "Real estate activities"
+        },
+        {
+          "id": "8",
+          "name": "Professional, scientific and technical activities; administrative and support service activities"
+        },
+        {
+          "id": "9",
+          "name": "Public administration and defence; education; human health and social work activities"
+        },
+        {
+          "id": "10",
+          "name": "Arts, entertainment and recreation; other service activities; activities of households as employers"
+        },
+        {
+          "id": "16",
+          "name": "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials (16)"
+        },
+        {
+          "id": "17",
+          "name": "Manufacture of paper and paper products (17)"
+        },
+        {
+          "id": "18",
+          "name": "Printing and reproduction of recorded media (18)"
+        },
+        {
+          "id": "19",
+          "name": "Manufacture of coke and refined petroleum products (19)"
+        },
+        {
+          "id": "20",
+          "name": "Manufacture of chemicals and chemical products (20)"
+        },
+        {
+          "id": "21",
+          "name": "Manufacture of basic pharmaceutical products and pharmaceutical preparations (21)"
+        },
+        {
+          "id": "22",
+          "name": "Manufacture of rubber and plastics products (22)"
+        },
+        {
+          "id": "23",
+          "name": "Manufacture of other non-metallic mineral products (23)"
+        },
+        {
+          "id": "24",
+          "name": "Manufacture of basic metals (24)"
+        },
+        {
+          "id": "25",
+          "name": "Manufacture of fabricated metal products, except machinery and equipment (25)"
+        },
+        {
+          "id": "26",
+          "name": "Manufacture of computer, electronic and optical products (26)"
+        },
+        {
+          "id": "27",
+          "name": "Manufacture of electrical equipment (27)"
+        },
+        {
+          "id": "28",
+          "name": "Manufacture of machinery and equipment n.e.c. (28)"
+        },
+        {
+          "id": "29",
+          "name": "Manufacture of motor vehicles, trailers and semi-trailers (29)"
+        },
+        {
+          "id": "30",
+          "name": "Manufacture of other transport equipment (30)"
+        },
+        {
+          "id": "33",
+          "name": "Repair and installation of machinery and equipment (33)"
+        },
+        {
+          "id": "35",
+          "name": "Electricity, gas, steam and air conditioning supply (35)"
+        },
+        {
+          "id": "36",
+          "name": "Water collection, treatment and supply (36)"
+        },
+        {
+          "id": "45",
+          "name": "Wholesale and retail trade and repair of motor vehicles and motorcycles (45)"
+        },
+        {
+          "id": "46",
+          "name": "Wholesale trade, except of motor vehicles and motorcycles (46)"
+        },
+        {
+          "id": "47",
+          "name": "Retail trade, except of motor vehicles and motorcycles (47)"
+        },
+        {
+          "id": "49",
+          "name": "Land transport and transport via pipelines (49)"
+        },
+        {
+          "id": "50",
+          "name": "Water transport (50)"
+        },
+        {
+          "id": "51",
+          "name": "Air transport (51)"
+        },
+        {
+          "id": "52",
+          "name": "Warehousing and support activities for transportation (52)"
+        },
+        {
+          "id": "53",
+          "name": "Postal and courier activities (53)"
+        },
+        {
+          "id": "58",
+          "name": "Publishing activities (58)"
+        },
+        {
+          "id": "61",
+          "name": "Telecommunications (61)"
+        },
+        {
+          "id": "64",
+          "name": "Financial service activities, except insurance and pension funding (64)"
+        },
+        {
+          "id": "65",
+          "name": "Insurance, reinsurance and pension funding, except compulsory social security (65)"
+        },
+        {
+          "id": "66",
+          "name": "Activities auxiliary to financial services and insurance activities (66)"
+        },
+        {
+          "id": "68",
+          "name": "Real estate activities (68)"
+        },
+        {
+          "id": "71",
+          "name": "Architecture and engineering activities; technical testing and analysis (71)"
+        },
+        {
+          "id": "72",
+          "name": "Scientific research and development (72)"
+        },
+        {
+          "id": "73",
+          "name": "Advertising and market research (73)"
+        },
+        {
+          "id": "77",
+          "name": "Rental and leasing activities (77)"
+        },
+        {
+          "id": "78",
+          "name": "Employment activities (78)"
+        },
+        {
+          "id": "79",
+          "name": "Travel agency, tour operator reservation service and related activities (79)"
+        },
+        {
+          "id": "84",
+          "name": "Public administration and defence; compulsory social security (84)"
+        },
+        {
+          "id": "85",
+          "name": "Education (85)"
+        },
+        {
+          "id": "86",
+          "name": "Human health activities (86)"
+        },
+        {
+          "id": "93",
+          "name": "Sports activities and amusement and recreation activities (93)"
+        },
+        {
+          "id": "94",
+          "name": "Activities of membership organisations (94)"
+        },
+        {
+          "id": "95",
+          "name": "Repair of computers and personal and household goods (95)"
+        },
+        {
+          "id": "96",
+          "name": "Other personal service activities (96)"
+        },
+        {
+          "id": "99",
+          "name": "Extraterritorial organisations and bodies (99)"
+        },
+        {
+          "id": "05_09",
+          "name": "Mining and quarrying (05-09)"
+        },
+        {
+          "id": "10_12",
+          "name": "Manufacture of food products, beverages and tobacco products (10-12)"
+        },
+        {
+          "id": "13_15",
+          "name": "Manufacture of textiles, wearing apparel and leather products (13-15)"
+        },
+        {
+          "id": "19_20",
+          "name": "Manufacture of coke and refined petroleum products, manufacture of chemicals and chemical products (19+20)"
+        },
+        {
+          "id": "2_3",
+          "name": "Industry and construction"
+        },
+        {
+          "id": "31_32",
+          "name": "Manufacture of furniture; other manufacturing (31-32)"
+        },
+        {
+          "id": "37_39",
+          "name": "Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services (37-39)"
+        },
+        {
+          "id": "3S",
+          "name": "Trade and services"
+        },
+        {
+          "id": "41_43",
+          "name": "Construction (41-43)"
+        },
+        {
+          "id": "50_51",
+          "name": "Water and air transport (50-51)"
+        },
+        {
+          "id": "53_61",
+          "name": "Postal and courier activities and telecommunications (53+61)"
+        },
+        {
+          "id": "55_56",
+          "name": "Accommodation; food and beverage service activities (55-56)"
+        },
+        {
+          "id": "59_60",
+          "name": "Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities (59-60)"
+        },
+        {
+          "id": "62_63",
+          "name": "Computer programming, consultancy and related activities; information service activities (62-63)"
+        },
+        {
+          "id": "69_70",
+          "name": "Legal and accounting activities; activities of head offices; management consultancy activities (69-70)"
+        },
+        {
+          "id": "74_75",
+          "name": "Other professional, scientific and technical activities; veterinary activities (74-75)"
+        },
+        {
+          "id": "80_82",
+          "name": "Security and investigation activities; services to buildings and landscape activities; office administrative, office support and other business support (80-82)"
+        },
+        {
+          "id": "87_88",
+          "name": "Social work activities (87-88)"
+        },
+        {
+          "id": "90_92",
+          "name": "Creative, arts and entertainment activities; libraries archives, museums and other cultural activities; gambling and betting activities (90-92)"
+        },
+        {
+          "id": "97_98",
+          "name": "Activities of households as employers of domestic personnel and undifferentiated goods and services production of households for own use (97-98)"
+        },
+        {
+          "id": "A",
+          "name": "Agriculture, forestry and fishing (A)"
+        },
+        {
+          "id": "AA",
+          "name": "Agriculture, forestry and fishing (AA)"
+        },
+        {
+          "id": "B",
+          "name": "Mining and quarrying (B)"
+        },
+        {
+          "id": "BB",
+          "name": "Mining and quarrying (BB)"
+        },
+        {
+          "id": "BB_CG",
+          "name": "Mining and quarrying, and manufacture of rubber and plastics products and other non-metallic mineral products (BB+CG)"
+        },
+        {
+          "id": "C",
+          "name": "Manufacturing (C)"
+        },
+        {
+          "id": "CA",
+          "name": "Manufacture of food products, beverages and tobacco products (CA)"
+        },
+        {
+          "id": "CB",
+          "name": "Manufacture of textiles, wearing apparel and leather products (CB)"
+        },
+        {
+          "id": "CC",
+          "name": "Manufacture of wood and paper products, and printing (CC)"
+        },
+        {
+          "id": "CD",
+          "name": "Manufacture of coke and refined petroleum products (CD)"
+        },
+        {
+          "id": "CD_CE",
+          "name": "Manufacture of coke and refined petroleum products and manufacture of chemicals and chemical products (CD+CE)"
+        },
+        {
+          "id": "CE",
+          "name": "Manufacture of chemicals and chemical products (CE)"
+        },
+        {
+          "id": "CF",
+          "name": "Manufacture of basic pharmaceutical products and pharmaceutical preparations (CF)"
+        },
+        {
+          "id": "CG",
+          "name": "Manufacture of rubber and plastics products, and other non-metallic mineral products (CG)"
+        },
+        {
+          "id": "CH",
+          "name": "Manufacture of basic metals and fabricated metal products, except machinery and equipment (CH)"
+        },
+        {
+          "id": "CI",
+          "name": "Manufacture of computer, electronic and optical products (CI)"
+        },
+        {
+          "id": "CI_CJ",
+          "name": "Manufacture of computer, electronic and optical products and electrical equipment (CI+CJ)"
+        },
+        {
+          "id": "CJ",
+          "name": "Manufacture of electrical equipment (CJ)"
+        },
+        {
+          "id": "CK",
+          "name": "Manufacture of machinery and equipment n.e.c. (CK)"
+        },
+        {
+          "id": "CL",
+          "name": "Manufacture of transport equipment (CL)"
+        },
+        {
+          "id": "CM",
+          "name": "Manufacture of furniture; other manufacturing; repair and installation of machinery and equipment (CM)"
+        },
+        {
+          "id": "D",
+          "name": "Electricity, gas, steam and air conditioning supply (D)"
+        },
+        {
+          "id": "DD",
+          "name": "Electricity, gas, steam and air-conditioning supply (DD)"
+        },
+        {
+          "id": "DD_EE",
+          "name": "Electricity, gas, steam and air-conditioning supply, water supply; sewerage, waste management and remediation activities (DD+EE)"
+        },
+        {
+          "id": "E",
+          "name": "Water supply; sewerage, waste management and remediation activities (E)"
+        },
+        {
+          "id": "EE",
+          "name": "Water supply; sewerage, waste management and remediation activities (EE)"
+        },
+        {
+          "id": "F",
+          "name": "Construction (F)"
+        },
+        {
+          "id": "FF",
+          "name": "Construction (FF)"
+        },
+        {
+          "id": "G",
+          "name": "Wholesale and retail trade; repair of motor vehicles and motorcycles (G)"
+        },
+        {
+          "id": "GG",
+          "name": "Wholesale and retail trade, repair of motor vehicles and motorcycles (GG)"
+        },
+        {
+          "id": "H",
+          "name": "Transportation and storage (H)"
+        },
+        {
+          "id": "HH",
+          "name": "Transportation and storage (HH)"
+        },
+        {
+          "id": "HH_JB",
+          "name": "Transportation, storage and telecommunications (HH+JB)"
+        },
+        {
+          "id": "I",
+          "name": "Accommodation and food service activities (I)"
+        },
+        {
+          "id": "II",
+          "name": "Accommodation and food service activities (II)"
+        },
+        {
+          "id": "J",
+          "name": "Information and communication (J)"
+        },
+        {
+          "id": "JA",
+          "name": "Publishing, audiovisual and broadcasting activities (JA)"
+        },
+        {
+          "id": "JA_JC",
+          "name": "Publishing, audiovisual and broadcasting activities; Telecommunications; Computer programming, consultancy and related activities; information service activities (JA+JB+JC)"
+        },
+        {
+          "id": "JB",
+          "name": "Telecommunications (JB)"
+        },
+        {
+          "id": "JC",
+          "name": "Computer programming, consultancy and related activities; information service activities (JC)"
+        },
+        {
+          "id": "K",
+          "name": "Financial and insurance activities (K)"
+        },
+        {
+          "id": "KK",
+          "name": "Financial and insurance activities (KK)"
+        },
+        {
+          "id": "L",
+          "name": "Real estate activities (L)"
+        },
+        {
+          "id": "L1",
+          "name": "Real estate activities, of which: investment in housing by households"
+        },
+        {
+          "id": "LL",
+          "name": "Real estate activities (LL)"
+        },
+        {
+          "id": "M",
+          "name": "Professional, scientific and technical activities (M)"
+        },
+        {
+          "id": "MA",
+          "name": "Legal and accounting activities; activities of head offices; management consultancy activities; architecture and engineering activities; technical testing and analysis (MA)"
+        },
+        {
+          "id": "MB",
+          "name": "Scientific research and development (MB)"
+        },
+        {
+          "id": "MB_MC",
+          "name": "Scientific researand development; advertising and market research; other professional, scientific and technical activities; veterinary activities (MB+MC)"
+        },
+        {
+          "id": "MC",
+          "name": "Advertising and market research; other professional, scientific and technical activities; veterinary activities (MC)"
+        },
+        {
+          "id": "N",
+          "name": "Administrative and support service activities (N)"
+        },
+        {
+          "id": "NN",
+          "name": "Administrative and support service activities (NN)"
+        },
+        {
+          "id": "O",
+          "name": "Public administration and defence; compulsory social security (O)"
+        },
+        {
+          "id": "OO",
+          "name": "Public administration and defence; compulsory social security (OO)"
+        },
+        {
+          "id": "P",
+          "name": "Education (P)"
+        },
+        {
+          "id": "PP",
+          "name": "Education (PP)"
+        },
+        {
+          "id": "Q",
+          "name": "Human health and social work activities (Q)"
+        },
+        {
+          "id": "QA",
+          "name": "Human health activities (QA)"
+        },
+        {
+          "id": "QB",
+          "name": "Social work activities (QB)"
+        },
+        {
+          "id": "R",
+          "name": "Arts, entertainment and recreation (R)"
+        },
+        {
+          "id": "RR",
+          "name": "Arts, entertainment and recreation (RR)"
+        },
+        {
+          "id": "S",
+          "name": "Other service activities (S)"
+        },
+        {
+          "id": "SS",
+          "name": "Other service activities (SS)"
+        },
+        {
+          "id": "T",
+          "name": "Activities of households as employers; undifferentiated goods -and services-producing activities of households for own use (T)"
+        },
+        {
+          "id": "TT",
+          "name": "Activities of households as employers of domestic personnel and undifferentiated goods and services production of households for own use (TT)"
+        },
+        {
+          "id": "U",
+          "name": "Activities of extraterritorial organizations and bodies (U)"
+        },
+        {
+          "id": "UU",
+          "name": "Extraterritorial activities and bodies (UU)"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "01",
+          "name": "Crop and animal production, hunting and related service activities (01)"
+        },
+        {
+          "id": "02",
+          "name": "Forestry and logging (02)"
+        },
+        {
+          "id": "03",
+          "name": "Fishing and aquaculture (03)"
+        }
+      ],
+      "total_codes": 148,
+      "truncated": false
+    },
+    {
+      "id": "UNIT",
+      "position": 4,
+      "name": "UNIT",
+      "codes": [
+        {
+          "id": "AB",
+          "name": "Thousand hours"
+        },
+        {
+          "id": "CH",
+          "name": "Millions of chained euro (reference year 2020)"
+        },
+        {
+          "id": "CU",
+          "name": "Current prices in millions of euro"
+        },
+        {
+          "id": "EU",
+          "name": "Euros"
+        },
+        {
+          "id": "NP",
+          "name": "Number of persons"
+        },
+        {
+          "id": "PB",
+          "name": "Part of each branch of industry in percentage"
+        },
+        {
+          "id": "PG",
+          "name": "Part of each geographical unit in percentage"
+        },
+        {
+          "id": "PR",
+          "name": "Ratio in relation to total of Belgium in percentage"
+        },
+        {
+          "id": "PV",
+          "name": "Relative significance by variable in percentage"
+        },
+        {
+          "id": "PY",
+          "name": "Percentage change compared to the previous year"
+        }
+      ],
+      "total_codes": 10,
+      "truncated": false
+    },
+    {
+      "id": "SECTOR",
+      "position": 5,
+      "name": "SECTOR",
+      "codes": [
+        {
+          "id": "S1",
+          "name": "Total economy"
+        },
+        {
+          "id": "S11",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "S12",
+          "name": "Financial corporations"
+        },
+        {
+          "id": "S13",
+          "name": "General government"
+        },
+        {
+          "id": "S14",
+          "name": "Households"
+        },
+        {
+          "id": "S15",
+          "name": "Non profit institutions serving households"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ITEM}.{NUTS}.{BRANCH}.{UNIT}.{SECTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:03+00:00",
+  "schema_version": 1
+}

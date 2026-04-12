@@ -1,0 +1,2772 @@
+{
+  "agency": "IMF",
+  "id": "DCS",
+  "version": "1.0",
+  "category": "imf_sdds",
+  "is_final": true,
+  "names": {
+    "en": "Depository Corporations Survey",
+    "fr": "Depository Corporations Survey",
+    "nl": "Depository Corporations Survey",
+    "de": "Depository Corporations Survey"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "W",
+    "D",
+    "B",
+    "N"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "DATA_DOMAIN",
+      "position": 0,
+      "name": "DATA_DOMAIN",
+      "codes": [
+        {
+          "id": "BOP5",
+          "name": "Balance of Payments (BPM5)"
+        },
+        {
+          "id": "BOP6",
+          "name": "Balance of Payments (BPM6)"
+        },
+        {
+          "id": "IIP5",
+          "name": "International Investment Position (BPM5)"
+        },
+        {
+          "id": "IIP6",
+          "name": "International Investment Position (BPM6)"
+        },
+        {
+          "id": "1PI",
+          "name": "Coordinated Portfolio Investment Survey"
+        },
+        {
+          "id": "1DI",
+          "name": "Coordinated Direct Investment Survey"
+        },
+        {
+          "id": "RTD",
+          "name": "Reserves Template"
+        },
+        {
+          "id": "DOTS",
+          "name": "Direction of Trade Statistics"
+        },
+        {
+          "id": "FSD",
+          "name": "FSI: Data Report Form"
+        },
+        {
+          "id": "FS1",
+          "name": "FSI: Institution of Deposit Takers and OFCs"
+        },
+        {
+          "id": "FS2",
+          "name": "FSI: Sectoral Financial Statements"
+        },
+        {
+          "id": "GFB",
+          "name": "GFS: Budgetary Central Govt: Operational Statement, Cash Statement, Balance Sheet"
+        },
+        {
+          "id": "GFC",
+          "name": "GFS: Consolidated Central Govt"
+        },
+        {
+          "id": "GFG",
+          "name": "GFS: Consolidated General Govt"
+        },
+        {
+          "id": "GYQ",
+          "name": "GFS: Yearkbook Questionnaire"
+        },
+        {
+          "id": "FAS",
+          "name": "Financial Access Survey"
+        },
+        {
+          "id": "1SR",
+          "name": "M&B: Central Bank"
+        },
+        {
+          "id": "6SR",
+          "name": "M&B: Interest Rates and Share Prices"
+        },
+        {
+          "id": "5SR",
+          "name": "M&B: Monetary Aggregates"
+        },
+        {
+          "id": "2SR",
+          "name": "M&B: Other Depository Corporations"
+        },
+        {
+          "id": "4SR",
+          "name": "M&B: Other Financial Corporations"
+        },
+        {
+          "id": "SRE",
+          "name": "COFER: Currency Composition of Foreign Exchange Reserves"
+        },
+        {
+          "id": "01R",
+          "name": "Exchange Rates and International Reserves"
+        },
+        {
+          "id": "90R",
+          "name": "RES: National Accounts"
+        },
+        {
+          "id": "60R",
+          "name": "RES: Prices, Production, Labor and Trade"
+        },
+        {
+          "id": "NAG",
+          "name": "National Accounts - GDP"
+        },
+        {
+          "id": "IND",
+          "name": "Ind. Of Economic Activity"
+        },
+        {
+          "id": "FLI",
+          "name": "Forward looking Indicators"
+        },
+        {
+          "id": "SBS",
+          "name": "Accumulation Accounts (Sectoral Balance Sheets)"
+        },
+        {
+          "id": "EMP",
+          "name": "Employment"
+        },
+        {
+          "id": "UEM",
+          "name": "Unemployment"
+        },
+        {
+          "id": "WOE",
+          "name": "Wages/earnings"
+        },
+        {
+          "id": "CPI",
+          "name": "Consumer price indices"
+        },
+        {
+          "id": "PPI",
+          "name": "Producer price indices"
+        },
+        {
+          "id": "GGO",
+          "name": "General Government Operations"
+        },
+        {
+          "id": "GGD",
+          "name": "General government gross debt"
+        },
+        {
+          "id": "CGO",
+          "name": "Central government operations"
+        },
+        {
+          "id": "CGD",
+          "name": "Central government debt"
+        },
+        {
+          "id": "DCS",
+          "name": "Depository Corporations Survey"
+        },
+        {
+          "id": "CBS",
+          "name": "Central Bank Survey"
+        },
+        {
+          "id": "OFS",
+          "name": "Other Financial Corporations (OFC) survey"
+        },
+        {
+          "id": "INR",
+          "name": "Interest rates"
+        },
+        {
+          "id": "DSE",
+          "name": "Debt Securities"
+        },
+        {
+          "id": "SPI",
+          "name": "Share price index"
+        },
+        {
+          "id": "ILV1",
+          "name": "Official reserve assets"
+        },
+        {
+          "id": "ILV2",
+          "name": "Template on International Reserves and Foreign Currency Liquidity"
+        },
+        {
+          "id": "MET",
+          "name": "Merchandise trade"
+        },
+        {
+          "id": "CPS",
+          "name": "Coordinated Portfolio Investment Survey"
+        },
+        {
+          "id": "CDS",
+          "name": "Coordinated Direct Investment Survey"
+        },
+        {
+          "id": "EXD",
+          "name": "External debt"
+        },
+        {
+          "id": "EXR",
+          "name": "Exchange rates"
+        },
+        {
+          "id": "COF",
+          "name": "COFER: Currency Composition of Foreign Exchange Reserves"
+        },
+        {
+          "id": "POP",
+          "name": "Population"
+        },
+        {
+          "id": "LMI",
+          "name": "Labor Market Indicators"
+        },
+        {
+          "id": "FSI",
+          "name": "Financial Soundness Indicators"
+        },
+        {
+          "id": "CPIH",
+          "name": "Consumer Price Index Harmonized"
+        },
+        {
+          "id": "MSG",
+          "name": "Monetary and Financial Statistics Aggregates"
+        },
+        {
+          "id": "GBD",
+          "name": "Budgetary Central Government Gross Debt"
+        },
+        {
+          "id": "INF",
+          "name": "INFER: Instrument Composition of Transactions in Foreign Exchange Reserves"
+        },
+        {
+          "id": "SOC",
+          "name": "Socio-Demographic"
+        },
+        {
+          "id": "BCG",
+          "name": "Budgetary Central Government"
+        }
+      ],
+      "total_codes": 61,
+      "truncated": false
+    },
+    {
+      "id": "REF_AREA",
+      "position": 1,
+      "name": "REF_AREA",
+      "codes": [
+        {
+          "id": "_X",
+          "name": "Not allocated/ unspecified"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "1A",
+          "name": "International organisations"
+        },
+        {
+          "id": "1B",
+          "name": "UN organisations"
+        },
+        {
+          "id": "1C",
+          "name": "IMF (International Monetary Fund)"
+        },
+        {
+          "id": "1D",
+          "name": "World Trade Organisation"
+        },
+        {
+          "id": "1E",
+          "name": "IBRD (International Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "1F",
+          "name": "IDA (International Development Association)"
+        },
+        {
+          "id": "1G",
+          "name": "ICSID (International Centre for Settlement of Investment Disputes)"
+        },
+        {
+          "id": "1H",
+          "name": "UNESCO (United Nations Educational, Scientific and Cultural Organisation)"
+        },
+        {
+          "id": "1J",
+          "name": "FAO (Food and Agriculture Organisation)"
+        },
+        {
+          "id": "1K",
+          "name": "WHO (World Health Organisation)"
+        },
+        {
+          "id": "1L",
+          "name": "IFAD (International Fund for Agricultural Development)"
+        },
+        {
+          "id": "1M",
+          "name": "IFC (International Finance Corporation)"
+        },
+        {
+          "id": "1N",
+          "name": "MIGA (Multilateral Investment Guarantee Agency)"
+        },
+        {
+          "id": "1O",
+          "name": "UNICEF (United Nations Children Fund)"
+        },
+        {
+          "id": "1P",
+          "name": "UNHCR (United Nations High Commissioner for Refugees)"
+        },
+        {
+          "id": "1Q",
+          "name": "UNRWA (United Nations Relief and Works Agency for Palestine)"
+        },
+        {
+          "id": "1R",
+          "name": "IAEA (International Atomic Energy Agency)"
+        },
+        {
+          "id": "1S",
+          "name": "ILO (International Labour Organisation)"
+        },
+        {
+          "id": "1T",
+          "name": "ITU (International Telecommunication Union)"
+        },
+        {
+          "id": "1W",
+          "name": "World Bank Group"
+        },
+        {
+          "id": "1U",
+          "name": "Rest of UN Organisations n.i.e."
+        },
+        {
+          "id": "1U1",
+          "name": "UNECE (United Nations Economic Commission for Europe)"
+        },
+        {
+          "id": "4A",
+          "name": "All the European Union Institutions excluding the ECB and ESM"
+        },
+        {
+          "id": "4B",
+          "name": "EMS (European Monetary System)"
+        },
+        {
+          "id": "4C",
+          "name": "EIB (European Investment Bank)"
+        },
+        {
+          "id": "4D",
+          "name": "European Commission"
+        },
+        {
+          "id": "4DJ",
+          "name": "All the European Union Institutions financed via the EU Budget"
+        },
+        {
+          "id": "4E",
+          "name": "EDF (European Development Fund)"
+        },
+        {
+          "id": "4F",
+          "name": "ECB (European Central Bank)"
+        },
+        {
+          "id": "4G",
+          "name": "EIF (European Investment Fund)"
+        },
+        {
+          "id": "4H",
+          "name": "European Community of Steel and Coal"
+        },
+        {
+          "id": "4I",
+          "name": "Neighbourhood Investment Facility"
+        },
+        {
+          "id": "4J",
+          "name": "Other European Union Institutions, Organs and Organisms covered by General budget"
+        },
+        {
+          "id": "4J1",
+          "name": "European Parliament"
+        },
+        {
+          "id": "4J2",
+          "name": "Council of the European Union"
+        },
+        {
+          "id": "4J3",
+          "name": "Court of Justice"
+        },
+        {
+          "id": "4J4",
+          "name": "Court of Auditors"
+        },
+        {
+          "id": "4J5",
+          "name": "European Council"
+        },
+        {
+          "id": "4J6",
+          "name": "Economic and Social Committee"
+        },
+        {
+          "id": "4J7",
+          "name": "Committee of Regions"
+        },
+        {
+          "id": "4J8",
+          "name": "Other small European Union Institutions (Ombudsman, Data Protection Supervisor etc.)"
+        },
+        {
+          "id": "4R",
+          "name": "EU-Africa Infrastructure Trust Fund"
+        },
+        {
+          "id": "4S",
+          "name": "ESM (European Stability Mechanism)"
+        },
+        {
+          "id": "4T",
+          "name": "Joint Committee of the European Supervisory Authorities (ESAs)"
+        },
+        {
+          "id": "4T1",
+          "name": "EBA (European Banking Authority)"
+        },
+        {
+          "id": "4T2",
+          "name": "ESMA (European Securities and Markets Authority)"
+        },
+        {
+          "id": "4T3",
+          "name": "EIOPA (European Insurance and Occupational Pensions Authority)"
+        },
+        {
+          "id": "4U",
+          "name": "EURATOM"
+        },
+        {
+          "id": "4V",
+          "name": "FEMIP (Facility for Euro-Mediterranean Investment and Partnership)"
+        },
+        {
+          "id": "4W",
+          "name": "All the European Union Institutions financed via the EU Budget"
+        },
+        {
+          "id": "4X",
+          "name": "All the European Union Institutions not financed via the EU Budget (excluding ECB and ESM)"
+        },
+        {
+          "id": "4Y",
+          "name": "All European Community Institutions, Organs and Organisms, including ECB and ESM"
+        },
+        {
+          "id": "5A",
+          "name": "Other International Organisations (financial institutions)"
+        },
+        {
+          "id": "5AA",
+          "name": "Multilateral Lending Agencies"
+        },
+        {
+          "id": "5B",
+          "name": "BIS (Bank for International Settlements)"
+        },
+        {
+          "id": "5C",
+          "name": "IADB (Inter-American Development Bank)"
+        },
+        {
+          "id": "5D",
+          "name": "AfDB (African Development Bank)"
+        },
+        {
+          "id": "5E",
+          "name": "AsDB (Asian Development Bank)"
+        },
+        {
+          "id": "5F",
+          "name": "EBRD (European Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "5G",
+          "name": "IIC (Inter-American Investment Corporation)"
+        },
+        {
+          "id": "5H",
+          "name": "NIB (Nordic Investment Bank)"
+        },
+        {
+          "id": "5I",
+          "name": "ECCB (Eastern Caribbean Central Bank)"
+        },
+        {
+          "id": "5J",
+          "name": "IBEC (International Bank for Economic Co-operation)"
+        },
+        {
+          "id": "5K",
+          "name": "IIB (International Investment Bank)"
+        },
+        {
+          "id": "5L",
+          "name": "CDB (Caribbean Development Bank)"
+        },
+        {
+          "id": "5M",
+          "name": "AMF (Arab Monetary Fund)"
+        },
+        {
+          "id": "5N",
+          "name": "BADEA (Banque arabe pour le développement économique en Afrique)"
+        },
+        {
+          "id": "5O",
+          "name": "BCEAO (Banque Centrale des Etats de l`Afrique de l`Ouest)"
+        },
+        {
+          "id": "5P",
+          "name": "CASDB (Central African States Development Bank)"
+        },
+        {
+          "id": "5Q",
+          "name": "African Development Fund"
+        },
+        {
+          "id": "5R",
+          "name": "Asian Development Fund"
+        },
+        {
+          "id": "5S",
+          "name": "Fonds spécial unifié de développement"
+        },
+        {
+          "id": "5T",
+          "name": "CABEI (Central American Bank for Economic Integration)"
+        },
+        {
+          "id": "5U",
+          "name": "ADC (Andean Development Corporation)"
+        },
+        {
+          "id": "5W",
+          "name": "BEAC (Banque des Etats de l`Afrique Centrale)"
+        },
+        {
+          "id": "5X",
+          "name": "CEMAC (Communaut� �conomique et Mon�taire de l�Afrique Centrale)"
+        },
+        {
+          "id": "5Y",
+          "name": "ECCU (Eastern Caribbean Currency Union)"
+        },
+        {
+          "id": "5Z",
+          "name": "Other International Financial Organisations n.i.e."
+        },
+        {
+          "id": "6A",
+          "name": "Other International Organisations (non-financial institutions)"
+        },
+        {
+          "id": "6B",
+          "name": "NATO (North Atlantic Treaty Organisation)"
+        },
+        {
+          "id": "6C",
+          "name": "Council of Europe"
+        },
+        {
+          "id": "6D",
+          "name": "ICRC (International Committee of the Red Cross)"
+        },
+        {
+          "id": "6E",
+          "name": "ESA (European Space Agency)"
+        },
+        {
+          "id": "6F",
+          "name": "EPO (European Patent Office)"
+        },
+        {
+          "id": "6G",
+          "name": "EUROCONTROL (European Organisation for the Safety of Air Navigation)"
+        },
+        {
+          "id": "6H",
+          "name": "EUTELSAT (European Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6I",
+          "name": "EMBL (European Molecular Biology Laboratory)"
+        },
+        {
+          "id": "6J",
+          "name": "INTELSAT (International Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6K",
+          "name": "EBU/UER (European Broadcasting Union/Union europ�enne de radio-t�l�vision)"
+        },
+        {
+          "id": "6L",
+          "name": "EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites)"
+        },
+        {
+          "id": "6M",
+          "name": "ESO (European Southern Observatory)"
+        },
+        {
+          "id": "6N",
+          "name": "ECMWF (European Centre for Medium-Range Weather Forecasts)"
+        },
+        {
+          "id": "6O",
+          "name": "OECD (Organisation for Economic Co-operation and Development)"
+        },
+        {
+          "id": "6P",
+          "name": "CERN (European Organisation for Nuclear Research)"
+        },
+        {
+          "id": "6Q",
+          "name": "IOM (International Organisation for Migration)"
+        },
+        {
+          "id": "6Z",
+          "name": "Other International Non-Financial Organisations n.i.e."
+        },
+        {
+          "id": "7A",
+          "name": "WAEMU (West African Economic and Monetary Union)"
+        },
+        {
+          "id": "7B",
+          "name": "IDB (Islamic Development Bank)"
+        },
+        {
+          "id": "7C",
+          "name": "EDB (Eurasian Development Bank )"
+        },
+        {
+          "id": "7D",
+          "name": "Paris Club Creditor Institutions"
+        },
+        {
+          "id": "7E",
+          "name": "CEB (Council of Europe Development Bank)"
+        },
+        {
+          "id": "7F",
+          "name": "International Union of Credit and Investment Insurers"
+        },
+        {
+          "id": "7G",
+          "name": "Black Sea Trade and Development Banks"
+        },
+        {
+          "id": "7H",
+          "name": "AFREXIMBANK (African Export-Import Bank)"
+        },
+        {
+          "id": "7I",
+          "name": "BLADEX (Banco Latino Americano De Comercio Exterior)"
+        },
+        {
+          "id": "7J",
+          "name": "FLAR (Fondo Latino Americano de Reservas)"
+        },
+        {
+          "id": "7K",
+          "name": "Fonds Belgo-Congolais d'Amortissement et de Gestion"
+        },
+        {
+          "id": "7L",
+          "name": "IFFIm (International finance Facility for Immunisation)"
+        },
+        {
+          "id": "7M",
+          "name": "EUROFIMA (European Company for the Financing of Railroad Rolling Stock)"
+        },
+        {
+          "id": "9A",
+          "name": "International Organisations excluding European Union Institutions"
+        },
+        {
+          "id": "9B",
+          "name": "International organization excluding the BIS and the IMF"
+        },
+        {
+          "id": "A1",
+          "name": "America"
+        },
+        {
+          "id": "A19",
+          "name": "America Unallocated"
+        },
+        {
+          "id": "A1X",
+          "name": "America Excluding OECD countries"
+        },
+        {
+          "id": "A1X0",
+          "name": "America Excluding OECD countries (Fixed composition)"
+        },
+        {
+          "id": "A5",
+          "name": "Central America and Carribean countries"
+        },
+        {
+          "id": "A5X",
+          "name": "Central America and Caribbean countries excluding OECD countries"
+        },
+        {
+          "id": "A3",
+          "name": "Central America (UN composition, namely Belize, Costa Rica, El Salvador, Guatemala, Honduras, Mexico, Nicaragua and Panama)"
+        },
+        {
+          "id": "A39",
+          "name": "Central America Unallocated"
+        },
+        {
+          "id": "A3X",
+          "name": "Central America Excluding OECD countries"
+        },
+        {
+          "id": "A4",
+          "name": "Caribbean"
+        },
+        {
+          "id": "A41",
+          "name": "Windward Islands"
+        },
+        {
+          "id": "A42",
+          "name": "Leeward Islands"
+        },
+        {
+          "id": "A49",
+          "name": "Caribbean Unallocated"
+        },
+        {
+          "id": "AD",
+          "name": "Andorra"
+        },
+        {
+          "id": "AE",
+          "name": "United Arab Emirates"
+        },
+        {
+          "id": "AE1",
+          "name": "Abu Dhabi"
+        },
+        {
+          "id": "AE2",
+          "name": "Dubai"
+        },
+        {
+          "id": "AF",
+          "name": "Afghanistan"
+        },
+        {
+          "id": "AG",
+          "name": "Antigua and Barbuda"
+        },
+        {
+          "id": "AI",
+          "name": "Anguilla"
+        },
+        {
+          "id": "AL",
+          "name": "Albania"
+        },
+        {
+          "id": "AM",
+          "name": "Armenia"
+        },
+        {
+          "id": "AN",
+          "name": "Netherlands Antilles"
+        },
+        {
+          "id": "A2",
+          "name": "North American countries"
+        },
+        {
+          "id": "A29",
+          "name": "North America Unallocated"
+        },
+        {
+          "id": "A6",
+          "name": "North Atlantic & Caribbean"
+        },
+        {
+          "id": "A69",
+          "name": "North Atlantic & Caribbean not allocated"
+        },
+        {
+          "id": "A2X",
+          "name": "North America Excluding OECD countries"
+        },
+        {
+          "id": "AO",
+          "name": "Angola"
+        },
+        {
+          "id": "AQ",
+          "name": "Antarctica"
+        },
+        {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        {
+          "id": "AS",
+          "name": "American Samoa"
+        },
+        {
+          "id": "A7",
+          "name": "South American countries"
+        },
+        {
+          "id": "A79",
+          "name": "South America Unallocated"
+        },
+        {
+          "id": "A8",
+          "name": "Latin America"
+        },
+        {
+          "id": "A84",
+          "name": "Latin American NICs of the second wave of industrialization"
+        },
+        {
+          "id": "A9",
+          "name": "Latin America & Carribean"
+        },
+        {
+          "id": "A99",
+          "name": "Latin America & Carribean not allocated"
+        },
+        {
+          "id": "A7X",
+          "name": "South America Excluding OECD countries"
+        },
+        {
+          "id": "A7X0",
+          "name": "South America Excluding OECD countries (Fixed composition)"
+        },
+        {
+          "id": "AT",
+          "name": "Austria"
+        },
+        {
+          "id": "AU",
+          "name": "Australia"
+        },
+        {
+          "id": "AW",
+          "name": "Aruba"
+        },
+        {
+          "id": "A10",
+          "name": "Western Hemisphere"
+        },
+        {
+          "id": "A109",
+          "name": "Western Hemisphere not allocated"
+        },
+        {
+          "id": "AX",
+          "name": "Aland Islands"
+        },
+        {
+          "id": "AZ",
+          "name": "Azerbaijan"
+        },
+        {
+          "id": "B0",
+          "name": "EU changing composition"
+        },
+        {
+          "id": "B00",
+          "name": "Member States of the European Union (excluding EU institutions)"
+        },
+        {
+          "id": "B09",
+          "name": "Intra-EU (changing composition) not allocated"
+        },
+        {
+          "id": "B1",
+          "name": "Intra EU12 (fixed composition)"
+        },
+        {
+          "id": "B10",
+          "name": "EU12 excluding EU institutions"
+        },
+        {
+          "id": "B2",
+          "name": "EU15 (fixed composition)"
+        },
+        {
+          "id": "B20",
+          "name": "EU15 excluding EU institutions"
+        },
+        {
+          "id": "B3",
+          "name": "EU25 (fixed composition)"
+        },
+        {
+          "id": "B30",
+          "name": "EU25 excluding EU institutions"
+        },
+        {
+          "id": "B4",
+          "name": "EU 27 (fixed composition)"
+        },
+        {
+          "id": "B40",
+          "name": "EU27 excluding EU institutions"
+        },
+        {
+          "id": "B5",
+          "name": "EU28 (fixed composition)"
+        },
+        {
+          "id": "B50",
+          "name": "EU28 excluding EU institutions"
+        },
+        {
+          "id": "BA",
+          "name": "Bosnia and Herzegovina"
+        },
+        {
+          "id": "BB",
+          "name": "Barbados"
+        },
+        {
+          "id": "BD",
+          "name": "Bangladesh"
+        },
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "BF",
+          "name": "Burkina Faso"
+        },
+        {
+          "id": "BG",
+          "name": "Bulgaria"
+        },
+        {
+          "id": "BH",
+          "name": "Bahrain"
+        },
+        {
+          "id": "BI",
+          "name": "Burundi"
+        },
+        {
+          "id": "BJ",
+          "name": "Benin"
+        },
+        {
+          "id": "BL",
+          "name": "Saint Barthelemy"
+        },
+        {
+          "id": "BM",
+          "name": "Bermuda"
+        },
+        {
+          "id": "BN",
+          "name": "Brunei Darussalam"
+        },
+        {
+          "id": "BO",
+          "name": "Bolivia"
+        },
+        {
+          "id": "BQ",
+          "name": "Bonaire, Saint Eustatius and Saba"
+        },
+        {
+          "id": "BR",
+          "name": "Brazil"
+        },
+        {
+          "id": "BS",
+          "name": "Bahamas"
+        },
+        {
+          "id": "BT",
+          "name": "Bhutan"
+        },
+        {
+          "id": "BV",
+          "name": "Bouvet Island"
+        },
+        {
+          "id": "BW",
+          "name": "Botswana"
+        },
+        {
+          "id": "BY",
+          "name": "Belarus"
+        },
+        {
+          "id": "BZ",
+          "name": "Belize"
+        },
+        {
+          "id": "C0",
+          "name": "Candidate Countries (Changing composition)"
+        },
+        {
+          "id": "C1",
+          "name": "Candidates countries (HR,�MK,�TR)"
+        },
+        {
+          "id": "C2",
+          "name": "Candidate countries (HR,IS,MK,TR)"
+        },
+        {
+          "id": "C3",
+          "name": "Candidate countries (HR,IS,ME,MK,TR)"
+        },
+        {
+          "id": "C4",
+          "name": "Candidate countries (IS,ME,MK,RS,TR)"
+        },
+        {
+          "id": "C98",
+          "name": "New EU member states joining in 2004 and 2007 (BG,CY,CZ,EE,HU,LV,LT,MT,PL,RO,SK,SI)"
+        }
+      ],
+      "total_codes": 709,
+      "truncated": true
+    },
+    {
+      "id": "INDICATOR",
+      "position": 2,
+      "name": "INDICATOR",
+      "codes": [
+        {
+          "id": "FCIODC_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Institutions, Other Depository Corporations, Commercial banks, Number of"
+        },
+        {
+          "id": "FCIODU_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Institutions, Other Depository Corporations, Credit unions and financial cooperatives, Number of"
+        },
+        {
+          "id": "FCIODMF_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Institutions, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), Number of"
+        },
+        {
+          "id": "FCIODD_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Institutions, Other Depository Corporations, Other deposit takers, Number of"
+        },
+        {
+          "id": "FCIOFM_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Institutions, Other Financial Corporations, Other financial intermediaries, Number of"
+        },
+        {
+          "id": "FCIOFMFN_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Institutions, Other Financial Corporations, Other financial intermediaries, of which: non-deposit taking microfinance institutions (MFIs), Number of"
+        },
+        {
+          "id": "FCIOFI_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Institutions, Other Financial Corporations, Insurance corporations, Number of"
+        },
+        {
+          "id": "FCBODC_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Depository Corporations, Commercial banks, Number of"
+        },
+        {
+          "id": "FCBODCL_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Depository Corporations, Commercial banks, of which: in 3 largest cities, Number of"
+        },
+        {
+          "id": "FCBODU_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Depository Corporations, Credit unions and financial cooperatives, Number of"
+        },
+        {
+          "id": "FCBODUL_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Depository Corporations, Credit unions and financial cooperatives, of which: in 3 largest cities, Number of"
+        },
+        {
+          "id": "FCBODMF_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), Number of"
+        },
+        {
+          "id": "FCBODMFL_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), Number of"
+        },
+        {
+          "id": "FCBODD_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Depository Corporations, Other deposit takers, Number of"
+        },
+        {
+          "id": "FCBODDL_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Depository Corporations, Other deposit takers, of which: in 3 largest cities, Number of"
+        },
+        {
+          "id": "FCBM_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Financial Intermediaries, Number of"
+        },
+        {
+          "id": "FCBML_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Financial Intermediaries, of which: in 3 largest cities, Number of"
+        },
+        {
+          "id": "FCBMFN_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), Number of"
+        },
+        {
+          "id": "FCBMFNL_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: in 3 largest cities, Number of"
+        },
+        {
+          "id": "FCBMO_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Branches, Excluding Headquarters, Other Financial Intermediaries, Other Other Financial Intermediaries, Number of"
+        },
+        {
+          "id": "FCAC_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Automated Teller Machines (ATMs), Country wide, Number of"
+        },
+        {
+          "id": "FCACL_NUM",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Number of Automated Teller Machines (ATMs), Country wide, of which: in 3 largest cities, Number of"
+        },
+        {
+          "id": "FCDODC_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Commercial banks, Persons, Number of"
+        },
+        {
+          "id": "FCDODCS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Commercial banks, of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCDODCH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Commercial banks, of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCDODU_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Credit unions and financial cooperatives, Persons, Number of"
+        },
+        {
+          "id": "FCDODUS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Credit unions and financial cooperatives, of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCDODUH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Credit unions and financial cooperatives, of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCDODMF_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), Persons, Number of"
+        },
+        {
+          "id": "FCDODMFS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCDODD_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Other deposit takers, Persons, Number of"
+        },
+        {
+          "id": "FCDODDS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositorss, Other Depository Corporations, Other deposit takers, of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCDODDH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Depository Corporations, Other deposit takers, of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCDOF_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Persons, Number of"
+        },
+        {
+          "id": "FCDOFMS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Other financial intermediaries, of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCDOFMH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Other financial intermediaries, of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCDOFMFN_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Other financial intermediaries, Non-deposit taking microfinance institutions (MFIs), Persons, Number of"
+        },
+        {
+          "id": "FCDOFMFNS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Other financial intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCDOFMFNH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Other financial intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCDOFMO_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Other financial intermediaries, Other Other financial intermediaries, Persons, Number of"
+        },
+        {
+          "id": "FCDOFI_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Insurance corporations, Persons, Number of"
+        },
+        {
+          "id": "FCDOFILP_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Insurance corporations, of which: Life insurance, Persons, Number of"
+        },
+        {
+          "id": "FCDOFINP_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Insurance corporations, of which: Non-life insurance, Persons, Number of"
+        },
+        {
+          "id": "FCDOFIH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Depositors, Other Financial Corporations, Insurance corporations, of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCAODC_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Commercial banks, Number of"
+        },
+        {
+          "id": "FCAODCS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Commercial banks, of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCAODCH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Commercial banks, of which: households, Number of"
+        },
+        {
+          "id": "FCAODU_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Credit unions and financial cooperatives, Number of"
+        },
+        {
+          "id": "FCAODUS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Credit unions and financial cooperatives, of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCAODUH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Credit unions and financial cooperatives, of which: households, Number of"
+        },
+        {
+          "id": "FCAODMF_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services Number of Deposit Accounts, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), Number of"
+        },
+        {
+          "id": "FCAODMFS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCAODMFH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: households, Number of"
+        },
+        {
+          "id": "FCAODD_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Other deposit takers, Number of"
+        },
+        {
+          "id": "FCAODDS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Other deposit takers, of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCAODDH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Depository Corporations, Other deposit takers, of which: households, Number of"
+        },
+        {
+          "id": "FCAOFM_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Other Financial Corporations, Other financial intermediaries, Number of"
+        },
+        {
+          "id": "FCAOFMS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Other Financial Corporations, Other financial intermediaries, of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCAOFMH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Other Financial Corporations, Other financial intermediaries, of which: households, Number of"
+        },
+        {
+          "id": "FCAOFMFN_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Other Financial Corporations, Other financial intermediaries, Non-deposit taking microfinance institutions (MFIs), Number of"
+        },
+        {
+          "id": "FCAOFMFNS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Other Financial Corporations, Other financial intermediaries, Non-deposit taking microfinance, of which: small and medium enterprisesinstitutions (MFIs), Number of"
+        },
+        {
+          "id": "FCAOFMFNH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Other Financial Corporations, Other financial intermediaries, Non-deposit taking microfinance, of which: householdsinstitutions (MFIs), Number of"
+        },
+        {
+          "id": "FCAOFMO_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Other Financial Corporations, Other financial intermediaries, Other Other financial intermediaries, Number of"
+        },
+        {
+          "id": "FCAOFI_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Insurance Corporations, Number of"
+        },
+        {
+          "id": "FCAOFILP_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Insurance Corporations, of which: Life insurance, Number of"
+        },
+        {
+          "id": "FCAOFILN_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Deposit Accounts, Other Financial Corporations, Insurance Corporations, of which: Non-life insurance, Number of"
+        },
+        {
+          "id": "FCRODC_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Commercial banks, Persons, Number of"
+        },
+        {
+          "id": "FCRODCS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Commercial banks, of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCRODCH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Commercial banks, of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCRODU_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Credit unions and financial cooperatives, Persons, Number of"
+        },
+        {
+          "id": "FCRODUS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Credit unions and financial cooperatives, of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCRODUH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Credit unions and financial cooperatives, of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCRODMF_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), Persons, Number of"
+        },
+        {
+          "id": "FCRODMFS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCRODMFH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services Number of Borrowers, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCRODD_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Other deposit takers, Persons, Number of"
+        },
+        {
+          "id": "FCRODDS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Other deposit takers, of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCRODDH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Depository Corporations, Other deposit takers, of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCRM_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Financial Intermediaries, Persons, Number of"
+        },
+        {
+          "id": "FCRMS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Financial Intermediaries, of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCRMH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Financial Intermediaries, of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCRMFN_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), Persons, Number of"
+        },
+        {
+          "id": "FCRMFS_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, Persons, Number of"
+        },
+        {
+          "id": "FCRMFH_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: households, Persons, Number of"
+        },
+        {
+          "id": "FCRFO_PE_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Borrowers, Other Financial Intermediaries, Other Other financial intermediaries, Persons, Number of"
+        },
+        {
+          "id": "FCNODC_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Commercial banks, Number of"
+        },
+        {
+          "id": "FCNODCS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Commercial banks, of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCNODCH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Commercial banks, of which: households, Number of"
+        },
+        {
+          "id": "FCNODU_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Credit unions and financial cooperatives, Number of"
+        },
+        {
+          "id": "FCNODUS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Credit unions and financial cooperatives, of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCNODUH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Credit unions and financial cooperatives, of which: households, Number of"
+        },
+        {
+          "id": "FCNODMF_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), Number of"
+        },
+        {
+          "id": "FCNODMFS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCNODMFH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: households, Number of"
+        },
+        {
+          "id": "FCNODD_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Other deposit takers, Number of"
+        },
+        {
+          "id": "FCNODDS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Other deposit takers, of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCNODDH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Depository Corporations, Other deposit takers, of which: households, Number of"
+        },
+        {
+          "id": "FCNM_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Financial Intermediaries, Number of"
+        },
+        {
+          "id": "FCNMS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Financial Intermediaries, of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCNMH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Financial Intermediaries, of which: households, Number of"
+        },
+        {
+          "id": "FCNMFN_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), Number of"
+        },
+        {
+          "id": "FCNMFNS_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, Number of"
+        },
+        {
+          "id": "FCNMFNH_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: households, Number of"
+        },
+        {
+          "id": "FCNFO_NUM",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Number of Loan Accounts, Other Financial Intermediaries, Other Other financial intermediaries, Number of"
+        },
+        {
+          "id": "FCLODC_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Commercial banks, National Currency"
+        },
+        {
+          "id": "FCLODCS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Commercial banks, of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCLODCH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Commercial banks, of which: households, National Currency"
+        },
+        {
+          "id": "FCLODU_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Credit unions and financial cooperatives, National Currency"
+        },
+        {
+          "id": "FCLODUS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Credit unions and financial cooperatives, of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCLODUH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Credit unions and financial cooperatives, of which: households, National Currency"
+        },
+        {
+          "id": "FCLODMF_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), National Currency"
+        },
+        {
+          "id": "FCLODMFS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCLODMFH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: households, National Currency"
+        },
+        {
+          "id": "FCLODD_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Other deposit takers, National Currency"
+        },
+        {
+          "id": "FCLODDS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Other deposit takers, of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCLODDH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Other deposit takers, of which: households, National Currency"
+        },
+        {
+          "id": "FCLOFM_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Financial Corporations, Other Financial Intermediaries,, National Currency"
+        },
+        {
+          "id": "FCLOFMS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Financial Corporations, Other Financial Intermediaries, of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCLOFMH_XDC",
+          "name": "Financial, Financial Access Survey, Geographical Outreach, Liabilities: Outstanding Deposits, Other Financial Corporations, Other Financial Intermediaries, of which: households, National Currency"
+        },
+        {
+          "id": "FCLOFMF_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Financial Corporations, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), National Currency"
+        },
+        {
+          "id": "FCLOFMFS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Financial Corporations, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCLOFMFH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Financial Corporations, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: households, National Currency"
+        },
+        {
+          "id": "FCLOFO_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Financial Corporations, Other Financial Intermediaries, Other Other financial intermediaries, National Currency"
+        },
+        {
+          "id": "FCLOFI_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Insurance corporations, National Currency"
+        },
+        {
+          "id": "FCLOFILP_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Insurance corporations, of which: Life insurance, National Currency"
+        },
+        {
+          "id": "FCLOFINP_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Liabilities: Outstanding Deposits, Other Depository Corporations, Insurance corporations, of which:  Non-life insurance, National Currency"
+        },
+        {
+          "id": "FCSODC_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Commercial banks, National Currency"
+        },
+        {
+          "id": "FCSODCS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Commercial banks, of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCSODCH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Commercial banks, of which: households, National Currency"
+        },
+        {
+          "id": "FCSODU_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Credit unions and financial cooperatives, National Currency"
+        },
+        {
+          "id": "FCSODUS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Credit unions and financial cooperatives, of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCSODUH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Credit unions and financial cooperatives, of which: households, National Currency"
+        },
+        {
+          "id": "FCSODMF_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), National Currency"
+        },
+        {
+          "id": "FCSODMFS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCSODMFH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Deposit taking microfinance institutions (MFIs), of which: households, National Currency"
+        },
+        {
+          "id": "FCSODD_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Other deposit takers, National Currency"
+        },
+        {
+          "id": "FCSODDS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Other deposit takers, of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCSODDH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Depository Corporations, Other deposit takers, of which: households, National Currency"
+        },
+        {
+          "id": "FCSM_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Financial Intermediaries, National Currency"
+        },
+        {
+          "id": "FCSMS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Financial Intermediaries, of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCSMH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Financial Intermediaries , of which: households, National Currency"
+        },
+        {
+          "id": "FCSMMF_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), National Currency"
+        },
+        {
+          "id": "FCSMMFS_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: small and medium enterprises, National Currency"
+        },
+        {
+          "id": "FCSMMFH_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Financial Intermediaries, Non-deposit taking microfinance institutions (MFIs), of which: households, National Currency"
+        },
+        {
+          "id": "FCSMO_XDC",
+          "name": "Financial, Financial Access Survey, Use of Financial Services, Assets: Outstanding Loans, Other Financial Intermediaries, Other Other financial intermediaries, National Currency"
+        },
+        {
+          "id": "BCA_USD",
+          "name": "Balance of Payments, Current Account, Total, Net, US Dollars"
+        },
+        {
+          "id": "BG_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Net, US Dollars"
+        },
+        {
+          "id": "BXG_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Credit, US Dollars"
+        },
+        {
+          "id": "BMG_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Debit, US Dollars"
+        },
+        {
+          "id": "BXGM_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Credit, US Dollars"
+        },
+        {
+          "id": "BXGMT_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Trade Statistics, Credit, US Dollars"
+        },
+        {
+          "id": "BXGMA_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, Credit, US Dollars"
+        },
+        {
+          "id": "BXGMAC_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, For Coverage, Credit, US Dollars"
+        },
+        {
+          "id": "BXGMACL_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, For Classification, Credit, US Dollars"
+        },
+        {
+          "id": "BXGMAV_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, For Valuation, Credit, US Dollars"
+        },
+        {
+          "id": "BXGMAT_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, For Timing, Credit, US Dollars"
+        },
+        {
+          "id": "BMGM_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Debit, US Dollars"
+        },
+        {
+          "id": "BMGMT_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Trade Statistics, Debit, US Dollars"
+        },
+        {
+          "id": "BMGMA_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, Debit, US Dollars"
+        },
+        {
+          "id": "BMGMAC_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, For Coverage, Debit, US Dollars"
+        },
+        {
+          "id": "BMGMACL_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, For Classification, Debit, US Dollars"
+        },
+        {
+          "id": "BMGMAV_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, For Valuation, Debit, US Dollars"
+        },
+        {
+          "id": "BMGMAT_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, General Merchandise, Adjustments, For Timing, Debit, US Dollars"
+        },
+        {
+          "id": "BXGP_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods for Processing, Credit, US Dollars"
+        },
+        {
+          "id": "BMGP_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods for Processing, Debit, US Dollars"
+        },
+        {
+          "id": "BXGPA_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods for Processing, Processing Abroad, Credit, US Dollars"
+        },
+        {
+          "id": "BMGPA_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods for Processing, Processing Abroad, Debit, US Dollars"
+        },
+        {
+          "id": "BXGPC_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods for Processing, Processing in the Compiling Economy, Credit, US Dollars"
+        },
+        {
+          "id": "BMGPC_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods for Processing, Processing in the Compiling Economy, Debit, US Dollars"
+        },
+        {
+          "id": "BXGR_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Repairs on Goods, Credit, US Dollars"
+        },
+        {
+          "id": "BMGR_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Repairs on Goods, Debit, US Dollars"
+        },
+        {
+          "id": "BXGC_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods Procured in Ports by Carriers, Credit, US Dollars"
+        },
+        {
+          "id": "BMGC_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods Procured in Ports by Carriers, Debit, US Dollars"
+        },
+        {
+          "id": "BXGCS_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods Procured in Ports by Carriers, In Seaports, Credit, US Dollars"
+        },
+        {
+          "id": "BMGCS_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods Procured in Ports by Carriers, In Seaports, Debit, US Dollars"
+        },
+        {
+          "id": "BXGCA_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods Procured in Ports by Carriers, In Airports, Credit, US Dollars"
+        },
+        {
+          "id": "BMGCA_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods Procured in Ports by Carriers, In Airports, Debit, US Dollars"
+        },
+        {
+          "id": "BXGCO_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods Procured in Ports by Carriers, In Other Ports, Credit, US Dollars"
+        },
+        {
+          "id": "BMGCO_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Goods Procured in Ports by Carriers, In Other Ports, Debit, US Dollars"
+        },
+        {
+          "id": "BXGN_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Non-monetary Gold, Credit, US Dollars"
+        },
+        {
+          "id": "BMGN_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Non-monetary Gold, Debit, US Dollars"
+        },
+        {
+          "id": "BXGNS_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Non-monetary Gold Held as a Store of Value, Credit, US Dollars"
+        },
+        {
+          "id": "BMGNS_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Non-monetary Gold Held as a Store of Value, Debit, US Dollars"
+        },
+        {
+          "id": "BXGNO_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Non-monetary Gold, Other, Credit, US Dollars"
+        },
+        {
+          "id": "BMGNO_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Goods, Non-monetary Gold, Other, Debit, US Dollars"
+        },
+        {
+          "id": "BS_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Net, US Dollars"
+        },
+        {
+          "id": "BXS_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Credit, US Dollars"
+        },
+        {
+          "id": "BMS_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Debit, US Dollars"
+        },
+        {
+          "id": "BXSTR_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Credit, US Dollars"
+        },
+        {
+          "id": "BMSTR_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Debit, US Dollars"
+        },
+        {
+          "id": "BXSTRPA_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Passenger, Credit, US Dollars"
+        },
+        {
+          "id": "BMSTRPA_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Passenger, Debit, US Dollars"
+        },
+        {
+          "id": "BXSTRFR_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Freight, Credit, US Dollars"
+        },
+        {
+          "id": "BMSTRFR_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Freight, Debit, US Dollars"
+        },
+        {
+          "id": "BXSTROT_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Other, Credit, US Dollars"
+        },
+        {
+          "id": "BMSTROT_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Other, Debit, US Dollars"
+        },
+        {
+          "id": "BXSTRS_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Sea Transport, Credit, US Dollars"
+        },
+        {
+          "id": "BMSTRS_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Sea Transport, Debit, US Dollars"
+        },
+        {
+          "id": "BXSTRSP_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Sea Transport, Passenger, Credit, US Dollars"
+        },
+        {
+          "id": "BMSTRSP_USD",
+          "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Sea Transport, Passenger, Debit, US Dollars"
+        }
+      ],
+      "total_codes": 65863,
+      "truncated": true
+    },
+    {
+      "id": "COUNTERPART_AREA",
+      "position": 3,
+      "name": "COUNTERPART_AREA",
+      "codes": [
+        {
+          "id": "_X",
+          "name": "Not allocated/ unspecified"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "1A",
+          "name": "International organisations"
+        },
+        {
+          "id": "1B",
+          "name": "UN organisations"
+        },
+        {
+          "id": "1C",
+          "name": "IMF (International Monetary Fund)"
+        },
+        {
+          "id": "1D",
+          "name": "World Trade Organisation"
+        },
+        {
+          "id": "1E",
+          "name": "IBRD (International Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "1F",
+          "name": "IDA (International Development Association)"
+        },
+        {
+          "id": "1G",
+          "name": "ICSID (International Centre for Settlement of Investment Disputes)"
+        },
+        {
+          "id": "1H",
+          "name": "UNESCO (United Nations Educational, Scientific and Cultural Organisation)"
+        },
+        {
+          "id": "1J",
+          "name": "FAO (Food and Agriculture Organisation)"
+        },
+        {
+          "id": "1K",
+          "name": "WHO (World Health Organisation)"
+        },
+        {
+          "id": "1L",
+          "name": "IFAD (International Fund for Agricultural Development)"
+        },
+        {
+          "id": "1M",
+          "name": "IFC (International Finance Corporation)"
+        },
+        {
+          "id": "1N",
+          "name": "MIGA (Multilateral Investment Guarantee Agency)"
+        },
+        {
+          "id": "1O",
+          "name": "UNICEF (United Nations Children Fund)"
+        },
+        {
+          "id": "1P",
+          "name": "UNHCR (United Nations High Commissioner for Refugees)"
+        },
+        {
+          "id": "1Q",
+          "name": "UNRWA (United Nations Relief and Works Agency for Palestine)"
+        },
+        {
+          "id": "1R",
+          "name": "IAEA (International Atomic Energy Agency)"
+        },
+        {
+          "id": "1S",
+          "name": "ILO (International Labour Organisation)"
+        },
+        {
+          "id": "1T",
+          "name": "ITU (International Telecommunication Union)"
+        },
+        {
+          "id": "1W",
+          "name": "World Bank Group"
+        },
+        {
+          "id": "1U",
+          "name": "Rest of UN Organisations n.i.e."
+        },
+        {
+          "id": "1U1",
+          "name": "UNECE (United Nations Economic Commission for Europe)"
+        },
+        {
+          "id": "4A",
+          "name": "All the European Union Institutions excluding the ECB and ESM"
+        },
+        {
+          "id": "4B",
+          "name": "EMS (European Monetary System)"
+        },
+        {
+          "id": "4C",
+          "name": "EIB (European Investment Bank)"
+        },
+        {
+          "id": "4D",
+          "name": "European Commission"
+        },
+        {
+          "id": "4DJ",
+          "name": "All the European Union Institutions financed via the EU Budget"
+        },
+        {
+          "id": "4E",
+          "name": "EDF (European Development Fund)"
+        },
+        {
+          "id": "4F",
+          "name": "ECB (European Central Bank)"
+        },
+        {
+          "id": "4G",
+          "name": "EIF (European Investment Fund)"
+        },
+        {
+          "id": "4H",
+          "name": "European Community of Steel and Coal"
+        },
+        {
+          "id": "4I",
+          "name": "Neighbourhood Investment Facility"
+        },
+        {
+          "id": "4J",
+          "name": "Other European Union Institutions, Organs and Organisms covered by General budget"
+        },
+        {
+          "id": "4J1",
+          "name": "European Parliament"
+        },
+        {
+          "id": "4J2",
+          "name": "Council of the European Union"
+        },
+        {
+          "id": "4J3",
+          "name": "Court of Justice"
+        },
+        {
+          "id": "4J4",
+          "name": "Court of Auditors"
+        },
+        {
+          "id": "4J5",
+          "name": "European Council"
+        },
+        {
+          "id": "4J6",
+          "name": "Economic and Social Committee"
+        },
+        {
+          "id": "4J7",
+          "name": "Committee of Regions"
+        },
+        {
+          "id": "4J8",
+          "name": "Other small European Union Institutions (Ombudsman, Data Protection Supervisor etc.)"
+        },
+        {
+          "id": "4R",
+          "name": "EU-Africa Infrastructure Trust Fund"
+        },
+        {
+          "id": "4S",
+          "name": "ESM (European Stability Mechanism)"
+        },
+        {
+          "id": "4T",
+          "name": "Joint Committee of the European Supervisory Authorities (ESAs)"
+        },
+        {
+          "id": "4T1",
+          "name": "EBA (European Banking Authority)"
+        },
+        {
+          "id": "4T2",
+          "name": "ESMA (European Securities and Markets Authority)"
+        },
+        {
+          "id": "4T3",
+          "name": "EIOPA (European Insurance and Occupational Pensions Authority)"
+        },
+        {
+          "id": "4U",
+          "name": "EURATOM"
+        },
+        {
+          "id": "4V",
+          "name": "FEMIP (Facility for Euro-Mediterranean Investment and Partnership)"
+        },
+        {
+          "id": "4W",
+          "name": "All the European Union Institutions financed via the EU Budget"
+        },
+        {
+          "id": "4X",
+          "name": "All the European Union Institutions not financed via the EU Budget (excluding ECB and ESM)"
+        },
+        {
+          "id": "4Y",
+          "name": "All European Community Institutions, Organs and Organisms, including ECB and ESM"
+        },
+        {
+          "id": "5A",
+          "name": "Other International Organisations (financial institutions)"
+        },
+        {
+          "id": "5AA",
+          "name": "Multilateral Lending Agencies"
+        },
+        {
+          "id": "5B",
+          "name": "BIS (Bank for International Settlements)"
+        },
+        {
+          "id": "5C",
+          "name": "IADB (Inter-American Development Bank)"
+        },
+        {
+          "id": "5D",
+          "name": "AfDB (African Development Bank)"
+        },
+        {
+          "id": "5E",
+          "name": "AsDB (Asian Development Bank)"
+        },
+        {
+          "id": "5F",
+          "name": "EBRD (European Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "5G",
+          "name": "IIC (Inter-American Investment Corporation)"
+        },
+        {
+          "id": "5H",
+          "name": "NIB (Nordic Investment Bank)"
+        },
+        {
+          "id": "5I",
+          "name": "ECCB (Eastern Caribbean Central Bank)"
+        },
+        {
+          "id": "5J",
+          "name": "IBEC (International Bank for Economic Co-operation)"
+        },
+        {
+          "id": "5K",
+          "name": "IIB (International Investment Bank)"
+        },
+        {
+          "id": "5L",
+          "name": "CDB (Caribbean Development Bank)"
+        },
+        {
+          "id": "5M",
+          "name": "AMF (Arab Monetary Fund)"
+        },
+        {
+          "id": "5N",
+          "name": "BADEA (Banque arabe pour le développement économique en Afrique)"
+        },
+        {
+          "id": "5O",
+          "name": "BCEAO (Banque Centrale des Etats de l`Afrique de l`Ouest)"
+        },
+        {
+          "id": "5P",
+          "name": "CASDB (Central African States Development Bank)"
+        },
+        {
+          "id": "5Q",
+          "name": "African Development Fund"
+        },
+        {
+          "id": "5R",
+          "name": "Asian Development Fund"
+        },
+        {
+          "id": "5S",
+          "name": "Fonds spécial unifié de développement"
+        },
+        {
+          "id": "5T",
+          "name": "CABEI (Central American Bank for Economic Integration)"
+        },
+        {
+          "id": "5U",
+          "name": "ADC (Andean Development Corporation)"
+        },
+        {
+          "id": "5W",
+          "name": "BEAC (Banque des Etats de l`Afrique Centrale)"
+        },
+        {
+          "id": "5X",
+          "name": "CEMAC (Communaut� �conomique et Mon�taire de l�Afrique Centrale)"
+        },
+        {
+          "id": "5Y",
+          "name": "ECCU (Eastern Caribbean Currency Union)"
+        },
+        {
+          "id": "5Z",
+          "name": "Other International Financial Organisations n.i.e."
+        },
+        {
+          "id": "6A",
+          "name": "Other International Organisations (non-financial institutions)"
+        },
+        {
+          "id": "6B",
+          "name": "NATO (North Atlantic Treaty Organisation)"
+        },
+        {
+          "id": "6C",
+          "name": "Council of Europe"
+        },
+        {
+          "id": "6D",
+          "name": "ICRC (International Committee of the Red Cross)"
+        },
+        {
+          "id": "6E",
+          "name": "ESA (European Space Agency)"
+        },
+        {
+          "id": "6F",
+          "name": "EPO (European Patent Office)"
+        },
+        {
+          "id": "6G",
+          "name": "EUROCONTROL (European Organisation for the Safety of Air Navigation)"
+        },
+        {
+          "id": "6H",
+          "name": "EUTELSAT (European Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6I",
+          "name": "EMBL (European Molecular Biology Laboratory)"
+        },
+        {
+          "id": "6J",
+          "name": "INTELSAT (International Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6K",
+          "name": "EBU/UER (European Broadcasting Union/Union europ�enne de radio-t�l�vision)"
+        },
+        {
+          "id": "6L",
+          "name": "EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites)"
+        },
+        {
+          "id": "6M",
+          "name": "ESO (European Southern Observatory)"
+        },
+        {
+          "id": "6N",
+          "name": "ECMWF (European Centre for Medium-Range Weather Forecasts)"
+        },
+        {
+          "id": "6O",
+          "name": "OECD (Organisation for Economic Co-operation and Development)"
+        },
+        {
+          "id": "6P",
+          "name": "CERN (European Organisation for Nuclear Research)"
+        },
+        {
+          "id": "6Q",
+          "name": "IOM (International Organisation for Migration)"
+        },
+        {
+          "id": "6Z",
+          "name": "Other International Non-Financial Organisations n.i.e."
+        },
+        {
+          "id": "7A",
+          "name": "WAEMU (West African Economic and Monetary Union)"
+        },
+        {
+          "id": "7B",
+          "name": "IDB (Islamic Development Bank)"
+        },
+        {
+          "id": "7C",
+          "name": "EDB (Eurasian Development Bank )"
+        },
+        {
+          "id": "7D",
+          "name": "Paris Club Creditor Institutions"
+        },
+        {
+          "id": "7E",
+          "name": "CEB (Council of Europe Development Bank)"
+        },
+        {
+          "id": "7F",
+          "name": "International Union of Credit and Investment Insurers"
+        },
+        {
+          "id": "7G",
+          "name": "Black Sea Trade and Development Banks"
+        },
+        {
+          "id": "7H",
+          "name": "AFREXIMBANK (African Export-Import Bank)"
+        },
+        {
+          "id": "7I",
+          "name": "BLADEX (Banco Latino Americano De Comercio Exterior)"
+        },
+        {
+          "id": "7J",
+          "name": "FLAR (Fondo Latino Americano de Reservas)"
+        },
+        {
+          "id": "7K",
+          "name": "Fonds Belgo-Congolais d'Amortissement et de Gestion"
+        },
+        {
+          "id": "7L",
+          "name": "IFFIm (International finance Facility for Immunisation)"
+        },
+        {
+          "id": "7M",
+          "name": "EUROFIMA (European Company for the Financing of Railroad Rolling Stock)"
+        },
+        {
+          "id": "9A",
+          "name": "International Organisations excluding European Union Institutions"
+        },
+        {
+          "id": "9B",
+          "name": "International organization excluding the BIS and the IMF"
+        },
+        {
+          "id": "A1",
+          "name": "America"
+        },
+        {
+          "id": "A19",
+          "name": "America Unallocated"
+        },
+        {
+          "id": "A1X",
+          "name": "America Excluding OECD countries"
+        },
+        {
+          "id": "A1X0",
+          "name": "America Excluding OECD countries (Fixed composition)"
+        },
+        {
+          "id": "A5",
+          "name": "Central America and Carribean countries"
+        },
+        {
+          "id": "A5X",
+          "name": "Central America and Caribbean countries excluding OECD countries"
+        },
+        {
+          "id": "A3",
+          "name": "Central America (UN composition, namely Belize, Costa Rica, El Salvador, Guatemala, Honduras, Mexico, Nicaragua and Panama)"
+        },
+        {
+          "id": "A39",
+          "name": "Central America Unallocated"
+        },
+        {
+          "id": "A3X",
+          "name": "Central America Excluding OECD countries"
+        },
+        {
+          "id": "A4",
+          "name": "Caribbean"
+        },
+        {
+          "id": "A41",
+          "name": "Windward Islands"
+        },
+        {
+          "id": "A42",
+          "name": "Leeward Islands"
+        },
+        {
+          "id": "A49",
+          "name": "Caribbean Unallocated"
+        },
+        {
+          "id": "AD",
+          "name": "Andorra"
+        },
+        {
+          "id": "AE",
+          "name": "United Arab Emirates"
+        },
+        {
+          "id": "AE1",
+          "name": "Abu Dhabi"
+        },
+        {
+          "id": "AE2",
+          "name": "Dubai"
+        },
+        {
+          "id": "AF",
+          "name": "Afghanistan"
+        },
+        {
+          "id": "AG",
+          "name": "Antigua and Barbuda"
+        },
+        {
+          "id": "AI",
+          "name": "Anguilla"
+        },
+        {
+          "id": "AL",
+          "name": "Albania"
+        },
+        {
+          "id": "AM",
+          "name": "Armenia"
+        },
+        {
+          "id": "AN",
+          "name": "Netherlands Antilles"
+        },
+        {
+          "id": "A2",
+          "name": "North American countries"
+        },
+        {
+          "id": "A29",
+          "name": "North America Unallocated"
+        },
+        {
+          "id": "A6",
+          "name": "North Atlantic & Caribbean"
+        },
+        {
+          "id": "A69",
+          "name": "North Atlantic & Caribbean not allocated"
+        },
+        {
+          "id": "A2X",
+          "name": "North America Excluding OECD countries"
+        },
+        {
+          "id": "AO",
+          "name": "Angola"
+        },
+        {
+          "id": "AQ",
+          "name": "Antarctica"
+        },
+        {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        {
+          "id": "AS",
+          "name": "American Samoa"
+        },
+        {
+          "id": "A7",
+          "name": "South American countries"
+        },
+        {
+          "id": "A79",
+          "name": "South America Unallocated"
+        },
+        {
+          "id": "A8",
+          "name": "Latin America"
+        },
+        {
+          "id": "A84",
+          "name": "Latin American NICs of the second wave of industrialization"
+        },
+        {
+          "id": "A9",
+          "name": "Latin America & Carribean"
+        },
+        {
+          "id": "A99",
+          "name": "Latin America & Carribean not allocated"
+        },
+        {
+          "id": "A7X",
+          "name": "South America Excluding OECD countries"
+        },
+        {
+          "id": "A7X0",
+          "name": "South America Excluding OECD countries (Fixed composition)"
+        },
+        {
+          "id": "AT",
+          "name": "Austria"
+        },
+        {
+          "id": "AU",
+          "name": "Australia"
+        },
+        {
+          "id": "AW",
+          "name": "Aruba"
+        },
+        {
+          "id": "A10",
+          "name": "Western Hemisphere"
+        },
+        {
+          "id": "A109",
+          "name": "Western Hemisphere not allocated"
+        },
+        {
+          "id": "AX",
+          "name": "Aland Islands"
+        },
+        {
+          "id": "AZ",
+          "name": "Azerbaijan"
+        },
+        {
+          "id": "B0",
+          "name": "EU changing composition"
+        },
+        {
+          "id": "B00",
+          "name": "Member States of the European Union (excluding EU institutions)"
+        },
+        {
+          "id": "B09",
+          "name": "Intra-EU (changing composition) not allocated"
+        },
+        {
+          "id": "B1",
+          "name": "Intra EU12 (fixed composition)"
+        },
+        {
+          "id": "B10",
+          "name": "EU12 excluding EU institutions"
+        },
+        {
+          "id": "B2",
+          "name": "EU15 (fixed composition)"
+        },
+        {
+          "id": "B20",
+          "name": "EU15 excluding EU institutions"
+        },
+        {
+          "id": "B3",
+          "name": "EU25 (fixed composition)"
+        },
+        {
+          "id": "B30",
+          "name": "EU25 excluding EU institutions"
+        },
+        {
+          "id": "B4",
+          "name": "EU 27 (fixed composition)"
+        },
+        {
+          "id": "B40",
+          "name": "EU27 excluding EU institutions"
+        },
+        {
+          "id": "B5",
+          "name": "EU28 (fixed composition)"
+        },
+        {
+          "id": "B50",
+          "name": "EU28 excluding EU institutions"
+        },
+        {
+          "id": "BA",
+          "name": "Bosnia and Herzegovina"
+        },
+        {
+          "id": "BB",
+          "name": "Barbados"
+        },
+        {
+          "id": "BD",
+          "name": "Bangladesh"
+        },
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "BF",
+          "name": "Burkina Faso"
+        },
+        {
+          "id": "BG",
+          "name": "Bulgaria"
+        },
+        {
+          "id": "BH",
+          "name": "Bahrain"
+        },
+        {
+          "id": "BI",
+          "name": "Burundi"
+        },
+        {
+          "id": "BJ",
+          "name": "Benin"
+        },
+        {
+          "id": "BL",
+          "name": "Saint Barthelemy"
+        },
+        {
+          "id": "BM",
+          "name": "Bermuda"
+        },
+        {
+          "id": "BN",
+          "name": "Brunei Darussalam"
+        },
+        {
+          "id": "BO",
+          "name": "Bolivia"
+        },
+        {
+          "id": "BQ",
+          "name": "Bonaire, Saint Eustatius and Saba"
+        },
+        {
+          "id": "BR",
+          "name": "Brazil"
+        },
+        {
+          "id": "BS",
+          "name": "Bahamas"
+        },
+        {
+          "id": "BT",
+          "name": "Bhutan"
+        },
+        {
+          "id": "BV",
+          "name": "Bouvet Island"
+        },
+        {
+          "id": "BW",
+          "name": "Botswana"
+        },
+        {
+          "id": "BY",
+          "name": "Belarus"
+        },
+        {
+          "id": "BZ",
+          "name": "Belize"
+        },
+        {
+          "id": "C0",
+          "name": "Candidate Countries (Changing composition)"
+        },
+        {
+          "id": "C1",
+          "name": "Candidates countries (HR,�MK,�TR)"
+        },
+        {
+          "id": "C2",
+          "name": "Candidate countries (HR,IS,MK,TR)"
+        },
+        {
+          "id": "C3",
+          "name": "Candidate countries (HR,IS,ME,MK,TR)"
+        },
+        {
+          "id": "C4",
+          "name": "Candidate countries (IS,ME,MK,RS,TR)"
+        },
+        {
+          "id": "C98",
+          "name": "New EU member states joining in 2004 and 2007 (BG,CY,CZ,EE,HU,LV,LT,MT,PL,RO,SK,SI)"
+        }
+      ],
+      "total_codes": 709,
+      "truncated": true
+    },
+    {
+      "id": "FREQ",
+      "position": 4,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly, semester"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "W",
+          "name": "Weekly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        },
+        {
+          "id": "B",
+          "name": "Daily - business week"
+        },
+        {
+          "id": "N",
+          "name": "Minutely"
+        }
+      ],
+      "total_codes": 8,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{DATA_DOMAIN}.{REF_AREA}.{INDICATOR}.{COUNTERPART_AREA}.{FREQ}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "schema_version": 1
+}

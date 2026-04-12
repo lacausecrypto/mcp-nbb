@@ -1,0 +1,959 @@
+{
+  "agency": "BE2",
+  "id": "DF_NFGOVTSC_DISS",
+  "version": "1.0",
+  "category": "public_finances",
+  "is_final": true,
+  "names": {
+    "en": "Taxes and actual social contributions received by type",
+    "fr": "Impôts et cotisations sociales effectives reçus, par type",
+    "nl": "Ontvangen belastingen en werkelijke sociale premies per soort",
+    "de": "Taxes and actual social contributions received by type"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 1,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "1NF",
+          "name": "Total of taxes and social contributions"
+        },
+        {
+          "id": "1NF_N",
+          "name": "Total of taxes and net social contributions (including imputed social contributions)"
+        },
+        {
+          "id": "D61",
+          "name": "Net social contributions (D.61)"
+        },
+        {
+          "id": "D611_3",
+          "name": "p.m. Actual social contributions"
+        },
+        {
+          "id": "D611",
+          "name": "Employers' actual social contributions (D.611)"
+        },
+        {
+          "id": "D6111C",
+          "name": "Compulsory employers' actual social contributions (D.6111C)"
+        },
+        {
+          "id": "D6111C_S13",
+          "name": "To the general government account"
+        },
+        {
+          "id": "D6111C_X13",
+          "name": "To the other sectors' account"
+        },
+        {
+          "id": "D6111V",
+          "name": "Voluntary employers' actual social contributions (D.6111V)"
+        },
+        {
+          "id": "D6111V_S13",
+          "name": "To the general government account"
+        },
+        {
+          "id": "D6111V_X13",
+          "name": "To the other sectors' account"
+        },
+        {
+          "id": "D612",
+          "name": "Employers' imputed social contributions (D.612)"
+        },
+        {
+          "id": "D613",
+          "name": "Households' actual social contributions (D.613)"
+        },
+        {
+          "id": "D613E",
+          "name": "Employees' actual social contributions"
+        },
+        {
+          "id": "D613CE",
+          "name": "Compulsory employees' actual social contributions (D.613CE)"
+        },
+        {
+          "id": "D613N",
+          "name": "Non employed persons' actual social contributions"
+        },
+        {
+          "id": "D613CN",
+          "name": "Compulsory non employed persons' actual social contributions (D.613CN)"
+        },
+        {
+          "id": "D613S",
+          "name": "Self-employed persons' actual social contributions"
+        },
+        {
+          "id": "D613CS",
+          "name": "Compulsory self-employed persons' actual social contributions (D.613CS)"
+        },
+        {
+          "id": "D613VE",
+          "name": "Voluntary employees' actual social contributions (D.613VE)"
+        },
+        {
+          "id": "D613VN",
+          "name": "Voluntary non employed persons' actual social contributions (D.613VN)"
+        },
+        {
+          "id": "D613VS",
+          "name": "Voluntary self-employed persons' actual social contributions (D.613VS)"
+        },
+        {
+          "id": "D614",
+          "name": "Households' social contributions supplements (D.614)"
+        },
+        {
+          "id": "D61SC",
+          "name": "Social insurance scheme service charge (D.61SC)"
+        },
+        {
+          "id": "D995",
+          "name": "Capital transfers from general government to relevant sectors representing taxes and social contributions assessed but unlikely to be collected (D.995)"
+        },
+        {
+          "id": "D995A",
+          "name": "Taxes on products assessed but unlikely to be collected (D.995a)"
+        },
+        {
+          "id": "D995B",
+          "name": "VAT on products assessed but unlikely to be collected"
+        },
+        {
+          "id": "D995C",
+          "name": "Taxes on income assessed but unlikely to be collected (D.995c)"
+        },
+        {
+          "id": "D995E",
+          "name": "Employers' actual social contributions assessed but unlikely to be collected (D.995e)"
+        },
+        {
+          "id": "D995F",
+          "name": "Business' advance tax payment assessed but unlikely to be collected"
+        },
+        {
+          "id": "D995G",
+          "name": "Employers' actual social contributions assessed but unlikely to be collected"
+        },
+        {
+          "id": "ISB",
+          "name": "Breakdown of the social benefits"
+        },
+        {
+          "id": "D62",
+          "name": "Social benefits in cash"
+        },
+        {
+          "id": "D62_1",
+          "name": "Payments for sickness and invalidity"
+        },
+        {
+          "id": "D62_1_1",
+          "name": "Employees"
+        },
+        {
+          "id": "D62_1_2",
+          "name": "Self-employed"
+        },
+        {
+          "id": "D62_10",
+          "name": "Occupational diseases"
+        },
+        {
+          "id": "D62_11",
+          "name": "Subsistence allowance. From 2002 onwards, integration income"
+        },
+        {
+          "id": "D62_12",
+          "name": "Old persons' guaranteed income. From 2001 onwards, guaranteed income for the elderly"
+        },
+        {
+          "id": "D62_13",
+          "name": "Compensations for the handicapped"
+        },
+        {
+          "id": "D62_14",
+          "name": "War pensions"
+        },
+        {
+          "id": "D62_15",
+          "name": "Fund for the Closing of Corporations"
+        },
+        {
+          "id": "D62_16",
+          "name": "Social transfers (tax credits recoverable)"
+        },
+        {
+          "id": "D62_16_1",
+          "name": "Health and social care insurance"
+        },
+        {
+          "id": "D62_17",
+          "name": "Social benefits in cash, other"
+        },
+        {
+          "id": "D62_18",
+          "name": "Corona unemployment"
+        },
+        {
+          "id": "D62_19",
+          "name": "Bankruptcy / Replacement income"
+        },
+        {
+          "id": "D62_2",
+          "name": "Unemployment"
+        },
+        {
+          "id": "D62_3",
+          "name": "Unemployment benefits with employer top‑up (New name for early retirements since 2012)"
+        },
+        {
+          "id": "D62_4",
+          "name": "Career break and time-credit"
+        },
+        {
+          "id": "D62_5",
+          "name": "Retirement pension and survival pension (private sector)"
+        },
+        {
+          "id": "D62_5_1",
+          "name": "Employees"
+        },
+        {
+          "id": "D62_5_2",
+          "name": "Self-employed"
+        },
+        {
+          "id": "D62_5_3",
+          "name": "Service for Overseas Social Security"
+        },
+        {
+          "id": "D62_6",
+          "name": "Retirement pension and survival pension (public sector)"
+        },
+        {
+          "id": "D62_6_1",
+          "name": "Widow's and orphan's fund"
+        },
+        {
+          "id": "D62_6_10",
+          "name": "Employers' social insurance schemes: early retirements (military and teaching profession)"
+        },
+        {
+          "id": "D62_6_2",
+          "name": "Semi-governmental pool"
+        },
+        {
+          "id": "D62_6_3",
+          "name": "Municipal pensions (ex Funds for Municipal Pensions and Public Service for Social Security from the provincial and local government - Pool l and ll)"
+        },
+        {
+          "id": "D62_6_4",
+          "name": "Statutory staff of the Post Office"
+        },
+        {
+          "id": "D62_6_5",
+          "name": "Pension fund of the Integrated Police Force Pension fund of the Integrated Police Force. From 2012 onwards, Pension Fund of the Federal Police."
+        },
+        {
+          "id": "D62_6_6",
+          "name": "Statutory staff of Belgacom"
+        },
+        {
+          "id": "D62_6_7",
+          "name": "Statutory staff of the SNCB group"
+        },
+        {
+          "id": "D62_6_8",
+          "name": "Statutory staff of other public enterprises"
+        },
+        {
+          "id": "D62_6_9",
+          "name": "Employers' social insurance schemes: retirement pension and survival pension"
+        },
+        {
+          "id": "D62_7",
+          "name": "Child allowance (private sector)"
+        },
+        {
+          "id": "D62_7_1",
+          "name": "Employees"
+        },
+        {
+          "id": "D62_7_2",
+          "name": "Self-employed"
+        },
+        {
+          "id": "D62_7_3",
+          "name": "Guaranteed family allowance"
+        },
+        {
+          "id": "D62_8",
+          "name": "Child allowance (public sector)"
+        },
+        {
+          "id": "D62_8_1",
+          "name": "Public Service for Social Security from provincial and local government"
+        },
+        {
+          "id": "D62_8_2",
+          "name": "Employers' social insurance schemes"
+        },
+        {
+          "id": "D62_9",
+          "name": "Industrial accidents"
+        },
+        {
+          "id": "D631",
+          "name": "Social benefits in kind provided by market producers"
+        },
+        {
+          "id": "D631_1",
+          "name": "Medical care"
+        },
+        {
+          "id": "D631_1_1",
+          "name": "Employees (from 2008, no distinction anymore between the employees and the self-employed persons)"
+        },
+        {
+          "id": "D631_1_2",
+          "name": "Self-employed (from 2008, no distinction anymore between the employees and the self-employed persons)"
+        },
+        {
+          "id": "D631_1_3",
+          "name": "Disabled veterans, veterans and war casualties"
+        },
+        {
+          "id": "D631_1_4",
+          "name": "Service for Overseas Social Security"
+        },
+        {
+          "id": "D631_2",
+          "name": "Health and social care insurance"
+        },
+        {
+          "id": "D631_3",
+          "name": "Social benefits in kind, other"
+        },
+        {
+          "id": "PTC",
+          "name": "Total payable tax credits"
+        },
+        {
+          "id": "PTC_E",
+          "name": "of which payable tax credits that exceed the taxpayer's liability"
+        },
+        {
+          "id": "TTR",
+          "name": "Total tax receipts"
+        },
+        {
+          "id": "D2",
+          "name": "Taxes on production and imports (D.2)"
+        },
+        {
+          "id": "D21",
+          "name": "Taxes on products (D.21)"
+        },
+        {
+          "id": "D211",
+          "name": "Value added tax (VAT) (D.211)"
+        },
+        {
+          "id": "D211P",
+          "name": "VAT on products"
+        },
+        {
+          "id": "D212",
+          "name": "Taxes and duties on imports, excluding VAT (D.212)"
+        },
+        {
+          "id": "D2121",
+          "name": "Import duties (D.2121)"
+        },
+        {
+          "id": "D2121E",
+          "name": "Import duties including ECSC rights"
+        },
+        {
+          "id": "D2122",
+          "name": "Taxes on imports, excluding VAT and duties (D.2122)"
+        },
+        {
+          "id": "D2122A",
+          "name": "Levies on imported agriculture products (D.2122 A)"
+        },
+        {
+          "id": "D2122A_1",
+          "name": "Levies on agriculture (D.2122 A)"
+        },
+        {
+          "id": "D2122B",
+          "name": "Monetary compensatory amounts on imports (D.2122 B)"
+        },
+        {
+          "id": "D2122B_1",
+          "name": "Monetary compensatory amounts on imports (D.2122 B)"
+        },
+        {
+          "id": "D2122C",
+          "name": "Excise duties (D.2122 C)"
+        },
+        {
+          "id": "D2122C_1",
+          "name": "Excise duties on mineral oil"
+        },
+        {
+          "id": "D2122C_10",
+          "name": "Excise duties on sugar and refining syrup"
+        },
+        {
+          "id": "D2122C_11",
+          "name": "Excise duties on coffee"
+        },
+        {
+          "id": "D2122C_12",
+          "name": "Excise duties on intermediary products"
+        },
+        {
+          "id": "D2122C_13",
+          "name": "Contribution for the surveillance on domestic fuel oil"
+        },
+        {
+          "id": "D2122C_14",
+          "name": "Contribution on oil product for heating"
+        },
+        {
+          "id": "D2122C_15",
+          "name": "Contribution on energy"
+        },
+        {
+          "id": "D2122C_16",
+          "name": "Packing contribution"
+        },
+        {
+          "id": "D2122C_17",
+          "name": "Environmental charge"
+        },
+        {
+          "id": "D2122C_18",
+          "name": "Ecotax"
+        },
+        {
+          "id": "D2122C_19",
+          "name": "Contribution of the oil industry"
+        },
+        {
+          "id": "D2122C_2",
+          "name": "Excise duties on liquefied natural gas and liquefied hydrocarbon and benzol"
+        },
+        {
+          "id": "D2122C_3",
+          "name": "Excise duties on tobacco"
+        },
+        {
+          "id": "D2122C_4",
+          "name": "Excise duties on brandy"
+        },
+        {
+          "id": "D2122C_5",
+          "name": "Taxes on consumption of alcohol and brandy"
+        },
+        {
+          "id": "D2122C_6",
+          "name": "Excise duties on fermented sparkling drinks"
+        },
+        {
+          "id": "D2122C_7",
+          "name": "Excise duties on fermented fruit juices"
+        },
+        {
+          "id": "D2122C_8",
+          "name": "Excise duties on beer"
+        },
+        {
+          "id": "D2122C_9",
+          "name": "Excise duties on non-alcoholic beverages"
+        },
+        {
+          "id": "D2122D",
+          "name": "General sales or turnover taxes (D.2122 D)"
+        },
+        {
+          "id": "D2122D_1",
+          "name": "Taxes as tax stamps"
+        },
+        {
+          "id": "D2122E",
+          "name": "Taxes on specific services (D.2122 E)"
+        },
+        {
+          "id": "D2122F",
+          "name": "Profits of import monopoly (D.2122 F)"
+        },
+        {
+          "id": "D214",
+          "name": "Other taxes on products, except VAT and import taxes (D.214)"
+        },
+        {
+          "id": "D214A",
+          "name": "Excise duties and consumption taxes (D.214 A)"
+        },
+        {
+          "id": "D214A_1",
+          "name": "Excise duties on mineral oil"
+        },
+        {
+          "id": "D214A_10",
+          "name": "Excise duties on sugar and refining syrup"
+        },
+        {
+          "id": "D214A_11",
+          "name": "Excise duties on coffee"
+        },
+        {
+          "id": "D214A_12",
+          "name": "Excise duties on intermediary products"
+        },
+        {
+          "id": "D214A_13",
+          "name": "Contribution for the surveillance on domestic fuel oil"
+        },
+        {
+          "id": "D214A_14",
+          "name": "Contribution on oil product for heating"
+        },
+        {
+          "id": "D214A_15",
+          "name": "Contribution on energy"
+        },
+        {
+          "id": "D214A_16",
+          "name": "Federal contribution on electricity and natural gas / Contribution to the Energy Fund (FR)"
+        },
+        {
+          "id": "D214A_17",
+          "name": "Taxes on water (FR, WR and BCR)"
+        },
+        {
+          "id": "D214A_18",
+          "name": "Contributions on sugar"
+        },
+        {
+          "id": "D214A_19",
+          "name": "Super levy on milk"
+        },
+        {
+          "id": "D214A_2",
+          "name": "Excise duties on liquefied natural gas and liquefied hydrocarbon and benzol"
+        },
+        {
+          "id": "D214A_20",
+          "name": "Super levy on cereals"
+        },
+        {
+          "id": "D214A_21",
+          "name": "Super levy on mutton"
+        },
+        {
+          "id": "D214A_22",
+          "name": "Penalty for exceeding the milk quota"
+        },
+        {
+          "id": "D214A_23",
+          "name": "Compulsory contributions from producers of animals and animal products (Sanitel)"
+        },
+        {
+          "id": "D214A_24",
+          "name": "Levy ECSC"
+        },
+        {
+          "id": "D214A_25",
+          "name": "Packing contribution"
+        },
+        {
+          "id": "D214A_26",
+          "name": "Environmental charge"
+        },
+        {
+          "id": "D214A_27",
+          "name": "Ecotax"
+        },
+        {
+          "id": "D214A_28",
+          "name": "Contribution for FAPETRO"
+        },
+        {
+          "id": "D214A_29",
+          "name": "Contribution for APETRA"
+        },
+        {
+          "id": "D214A_3",
+          "name": "Excise duties on tobacco"
+        },
+        {
+          "id": "D214A_30",
+          "name": "FED - surtax on transmission price for offshore wind energy"
+        },
+        {
+          "id": "D214A_31",
+          "name": "FC - green certificates delivery"
+        },
+        {
+          "id": "D214A_32",
+          "name": "FC - surtax on distribution prices to finance green certificates"
+        },
+        {
+          "id": "D214A_33",
+          "name": "WR - green certificates delivery"
+        },
+        {
+          "id": "D214A_34",
+          "name": "WR - surtax on transmission prices to finance green certificates"
+        },
+        {
+          "id": "D214A_35",
+          "name": "BCR - green certificates delivery"
+        },
+        {
+          "id": "D214A_4",
+          "name": "Excise duties on brandy"
+        },
+        {
+          "id": "D214A_5",
+          "name": "Taxes on consumption of alcohol and brandy"
+        },
+        {
+          "id": "D214A_6",
+          "name": "Excise duties on fermented sparkling drinks"
+        },
+        {
+          "id": "D214A_7",
+          "name": "Excise duties on fermented fruit juices"
+        },
+        {
+          "id": "D214A_8",
+          "name": "Excise duties on beer"
+        },
+        {
+          "id": "D214A_9",
+          "name": "Excise duties on non-alcoholic beverages"
+        },
+        {
+          "id": "D214B",
+          "name": "Stamp taxes (D.214 B)"
+        },
+        {
+          "id": "D214B_1",
+          "name": "Stamp taxes (D.214 B)"
+        },
+        {
+          "id": "D214C",
+          "name": "Taxes on financial and capital transactions (D.214 C)"
+        },
+        {
+          "id": "D214C_1",
+          "name": "Registration rights"
+        },
+        {
+          "id": "D214C_2",
+          "name": "Mortgage rights"
+        },
+        {
+          "id": "D214C_3",
+          "name": "Court rights"
+        },
+        {
+          "id": "D214C_4",
+          "name": "Taxes on stock exchange business"
+        },
+        {
+          "id": "D214C_5",
+          "name": "Tax on delivery of securities to bearer"
+        },
+        {
+          "id": "D214C_6",
+          "name": "Duties on written documents"
+        },
+        {
+          "id": "D214D",
+          "name": "Registration taxes (D.214 D)"
+        },
+        {
+          "id": "D214D_1",
+          "name": "Car registration taxes"
+        },
+        {
+          "id": "D214D_2",
+          "name": "Traffic taxes"
+        },
+        {
+          "id": "D214E",
+          "name": "Taxes on entertainment (D.214 E)"
+        },
+        {
+          "id": "D214F",
+          "name": "Taxes on lotteries, gambling and betting (D.214 F)"
+        },
+        {
+          "id": "D214F_1",
+          "name": "Taxes on gambling and bets"
+        },
+        {
+          "id": "D214G",
+          "name": "Taxes on insurance premiums (D.214 G)"
+        },
+        {
+          "id": "D214G_1",
+          "name": "Taxes on insurance contracts"
+        },
+        {
+          "id": "D214G_2",
+          "name": "Additional levy on premiums for industrial accidents"
+        },
+        {
+          "id": "D214G_3",
+          "name": "Additional levy on car insurance premiums"
+        },
+        {
+          "id": "D214G_4",
+          "name": "Additional levy on fire insurance premiums"
+        },
+        {
+          "id": "D214G_5",
+          "name": "Additional levy on hospitalization insurance premiums"
+        },
+        {
+          "id": "D214G_6",
+          "name": "Receipts for the benefit of the Belgian Red Cross"
+        },
+        {
+          "id": "D214H",
+          "name": "Other taxes on specific services (D.214 H)"
+        },
+        {
+          "id": "D214H_1",
+          "name": "Tax on the embarkement of aircrafts"
+        },
+        {
+          "id": "D214I",
+          "name": "General sales or turnover taxes  (D.214 I)"
+        },
+        {
+          "id": "D214I_1",
+          "name": "Taxes as tax stamps"
+        },
+        {
+          "id": "D214J",
+          "name": "Profits of fiscal monopolies (D.214 J)"
+        },
+        {
+          "id": "D214J_1",
+          "name": "Profits of the national lottery"
+        },
+        {
+          "id": "D214K",
+          "name": "Export duties and monetary compensatory amounts on exports (D.214 K)"
+        },
+        {
+          "id": "D214K_1",
+          "name": "Monetary compensatory amounts on exports"
+        },
+        {
+          "id": "D214L",
+          "name": "Other taxes on products n.e.c. (D.214 L)"
+        },
+        {
+          "id": "D214L_1",
+          "name": "Taxes on poster advertising"
+        },
+        {
+          "id": "D214L_2",
+          "name": "Contribution on the turnover of the pharmaceutical industry"
+        },
+        {
+          "id": "D214L_3",
+          "name": "Levy on particular pharmaceutical products"
+        },
+        {
+          "id": "D214L_4",
+          "name": "Contracts art. 81 medicines"
+        },
+        {
+          "id": "D29",
+          "name": "Other taxes on production (D.29)"
+        },
+        {
+          "id": "D29A",
+          "name": "Taxes on land, buildings or other structures (D.29 A)"
+        },
+        {
+          "id": "D29A_1",
+          "name": "Advance tax payment on property (PP)"
+        },
+        {
+          "id": "D29A_2",
+          "name": "Advance tax payment on property (Corp)"
+        },
+        {
+          "id": "D29A_3",
+          "name": "Opening tax"
+        },
+        {
+          "id": "D29A_4",
+          "name": "Licence right"
+        },
+        {
+          "id": "D29A_5",
+          "name": "Regional tax (BCR) - From 2002 onwards, only regional tax payable by the building owners"
+        },
+        {
+          "id": "D29B",
+          "name": "Taxes on use of fixed assets (D.29 B)"
+        }
+      ],
+      "total_codes": 290,
+      "truncated": true
+    },
+    {
+      "id": "SECTOR",
+      "position": 2,
+      "name": "SECTOR",
+      "codes": [
+        {
+          "id": "S1300",
+          "name": "General government"
+        },
+        {
+          "id": "S1311",
+          "name": "Federal government"
+        },
+        {
+          "id": "S1312",
+          "name": "Communities and regions"
+        },
+        {
+          "id": "BCR",
+          "name": "Brussels-Capital Region"
+        },
+        {
+          "id": "CFL",
+          "name": "Commission of the Flemish Community"
+        },
+        {
+          "id": "CFR",
+          "name": "Commission of the French-speaking Community"
+        },
+        {
+          "id": "CJC",
+          "name": "Joint Community Commission"
+        },
+        {
+          "id": "FLC",
+          "name": "Flemish Community"
+        },
+        {
+          "id": "FRC",
+          "name": "French Community"
+        },
+        {
+          "id": "GEC",
+          "name": "German Community"
+        },
+        {
+          "id": "IU_NA",
+          "name": "Interregional units/Not allocated"
+        },
+        {
+          "id": "S1313",
+          "name": "Local government"
+        },
+        {
+          "id": "S1314",
+          "name": "Social security funds"
+        },
+        {
+          "id": "STD",
+          "name": "Statistical discrepancy"
+        },
+        {
+          "id": "WLR",
+          "name": "Walloon Region"
+        },
+        {
+          "id": "S212",
+          "name": "Institutions of the European Union"
+        }
+      ],
+      "total_codes": 16,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ITEM}.{SECTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:24+00:00",
+  "schema_version": 1
+}

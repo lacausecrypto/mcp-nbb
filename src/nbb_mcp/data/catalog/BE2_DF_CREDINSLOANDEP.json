@@ -1,0 +1,240 @@
+{
+  "agency": "BE2",
+  "id": "DF_CREDINSLOANDEP",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Loans and deposits, data on territorial basis",
+    "fr": "Crédits et dépôts, données sur base territoriale",
+    "nl": "Kredieten en deposito's, gegevens op territoriale basis",
+    "de": "Loans and deposits, data on territorial basis"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSLOANDEP_ITEM",
+      "position": 1,
+      "name": "CREDINSLOANDEP_ITEM",
+      "codes": [
+        {
+          "id": "L",
+          "name": "Loans originally granted by credit institutions"
+        },
+        {
+          "id": "LTA",
+          "name": "Total, adjusted for loans securitised or otherwise transferred"
+        },
+        {
+          "id": "LS",
+          "name": "Loans securitised or otherwise transferred"
+        },
+        {
+          "id": "LTR",
+          "name": "Total, recorded in the assets of the balance sheet"
+        },
+        {
+          "id": "LTR1",
+          "name": "Up to one year"
+        },
+        {
+          "id": "LTR1C",
+          "name": "Consumer credit"
+        },
+        {
+          "id": "LTR1H",
+          "name": "Lending for house purchase"
+        },
+        {
+          "id": "LTR1O",
+          "name": "Other lending"
+        },
+        {
+          "id": "LTR15",
+          "name": "Over one year and up to five years"
+        },
+        {
+          "id": "LTR15C",
+          "name": "Consumer credit"
+        },
+        {
+          "id": "LTR15H",
+          "name": "Lending for house purchase"
+        },
+        {
+          "id": "LTR15O",
+          "name": "Other lending"
+        },
+        {
+          "id": "LTR5",
+          "name": "Over five years"
+        },
+        {
+          "id": "LTR5C",
+          "name": "Consumer credit"
+        },
+        {
+          "id": "LTR5H",
+          "name": "Lending for house purchase"
+        },
+        {
+          "id": "LTR5O",
+          "name": "Other lending"
+        },
+        {
+          "id": "LHP",
+          "name": "Lending for house purchase"
+        },
+        {
+          "id": "DH",
+          "name": "Deposits and other receivables held with credit institutions"
+        },
+        {
+          "id": "D",
+          "name": "Deposits and other receivables held with credit institutions"
+        },
+        {
+          "id": "DS",
+          "name": "Sight deposits"
+        },
+        {
+          "id": "DAM",
+          "name": "Deposits with agreed maturity"
+        },
+        {
+          "id": "DRN",
+          "name": "Deposits redeemable at notice"
+        },
+        {
+          "id": "DGN",
+          "name": "Of which regulated saving deposits"
+        },
+        {
+          "id": "DR",
+          "name": "Repos"
+        }
+      ],
+      "total_codes": 24,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSLOANDEP_TYPE",
+      "position": 2,
+      "name": "CREDINSLOANDEP_TYPE",
+      "codes": [
+        {
+          "id": "G",
+          "name": "Annual growth rate"
+        },
+        {
+          "id": "S",
+          "name": "Outstanding amounts"
+        },
+        {
+          "id": "F",
+          "name": "Transactions"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSLOANDEP_SECTOR",
+      "position": 3,
+      "name": "CREDINSLOANDEP_SECTOR",
+      "codes": [
+        {
+          "id": "S14",
+          "name": "Belgian households"
+        },
+        {
+          "id": "S11",
+          "name": "Belgian non-financial corporations"
+        },
+        {
+          "id": "S126",
+          "name": "Belgian financial intermediaries and financial auxiliaries"
+        },
+        {
+          "id": "S128",
+          "name": "Belgian insurance corporations and pension funds"
+        },
+        {
+          "id": "S13",
+          "name": "Belgian general government"
+        },
+        {
+          "id": "S21",
+          "name": "Rest of the world - Euro area countries"
+        },
+        {
+          "id": "S22",
+          "name": "Rest of the world - non-euro area countries"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{CREDINSLOANDEP_ITEM}.{CREDINSLOANDEP_TYPE}.{CREDINSLOANDEP_SECTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "schema_version": 1
+}

@@ -1,0 +1,1744 @@
+{
+  "agency": "BE2",
+  "id": "DF_CBANACCA",
+  "version": "1.0",
+  "category": "corporate_accounts",
+  "is_final": true,
+  "names": {
+    "en": "Annual accounts of NPIs and foundations  (2009 - 2018)",
+    "fr": "Comptes annuels des associations et fondations (2009 -2018)",
+    "nl": "Jaarrekeningen van verenigingen en stichtingen (2009 -2018)",
+    "de": "Annual accounts of NPIs and foundations  (2009 - 2018)"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "CBANACCA_ITEM",
+      "position": 1,
+      "name": "CBANACCA_ITEM",
+      "codes": [
+        {
+          "id": "1000_",
+          "name": "Balance sheet after appropriation"
+        },
+        {
+          "id": "2000_",
+          "name": "Assets"
+        },
+        {
+          "id": "3000_20_28",
+          "name": "20/28 : Fixed assets"
+        },
+        {
+          "id": "4000_20",
+          "name": "20 : Formation expenses"
+        },
+        {
+          "id": "5000_21",
+          "name": "21 : Intangible fixed assets"
+        },
+        {
+          "id": "6000_22_27",
+          "name": "22/27 : Tangible fixed assets"
+        },
+        {
+          "id": "7000_22",
+          "name": "22 : Land and buildings"
+        },
+        {
+          "id": "8000_22_91",
+          "name": "22/91 : Owned by the association or the foundation in full property"
+        },
+        {
+          "id": "9000_22_92",
+          "name": "22/92 : Other"
+        },
+        {
+          "id": "10000_23",
+          "name": "23 : Plant, machinery and equipment"
+        },
+        {
+          "id": "11000_231",
+          "name": "231 : Owned by the association or the foundation in full property"
+        },
+        {
+          "id": "12000_232",
+          "name": "232 : Other"
+        },
+        {
+          "id": "13000_24",
+          "name": "24 : Furniture and vehicles"
+        },
+        {
+          "id": "14000_241",
+          "name": "241 : Owned by the association or the foundation in full property"
+        },
+        {
+          "id": "15000_242",
+          "name": "242 : Other"
+        },
+        {
+          "id": "16000_25",
+          "name": "25 : Leasing and similar rights"
+        },
+        {
+          "id": "17000_26",
+          "name": "26 : Other tangible fixed assets"
+        },
+        {
+          "id": "18000_261",
+          "name": "261 : Owned by the association or the foundation in full property"
+        },
+        {
+          "id": "19000_262",
+          "name": "262 : Other"
+        },
+        {
+          "id": "20000_27",
+          "name": "27 : Assets under construction and advance payments"
+        },
+        {
+          "id": "21000_28",
+          "name": "28 : Financial fixed assets"
+        },
+        {
+          "id": "22000_280_1",
+          "name": "280/1 : Affiliated entities"
+        },
+        {
+          "id": "23000_280",
+          "name": "280 : Participating interests"
+        },
+        {
+          "id": "24000_281",
+          "name": "281 : Amounts receivable"
+        },
+        {
+          "id": "25000_282_3",
+          "name": "282/3 : Other companies linked by participating interests"
+        },
+        {
+          "id": "26000_282",
+          "name": "282 : Participating interests"
+        },
+        {
+          "id": "27000_283",
+          "name": "283 : Amounts receivable"
+        },
+        {
+          "id": "28000_284_8",
+          "name": "284/8 : Other financial assets"
+        },
+        {
+          "id": "29000_284",
+          "name": "284 : Shares"
+        },
+        {
+          "id": "30000_285_8",
+          "name": "285/8 : Amounts receivable and cash guarantees"
+        },
+        {
+          "id": "31000_29_58",
+          "name": "29/58 : Current assets"
+        },
+        {
+          "id": "32000_29",
+          "name": "29 : Amounts receivable after more than one year"
+        },
+        {
+          "id": "33000_290",
+          "name": "290 : Trade debtors"
+        },
+        {
+          "id": "34000_291",
+          "name": "291 : Other amounts receivable"
+        },
+        {
+          "id": "35000_2915",
+          "name": "2915 : Of which non interest-bearing amounts receivable or with an abnormally low interest rate"
+        },
+        {
+          "id": "36000_3",
+          "name": "3 : Stocks and contracts in progress"
+        },
+        {
+          "id": "37000_30_36",
+          "name": "30/36 : Stocks"
+        },
+        {
+          "id": "38000_30_31",
+          "name": "30/31 : Raw materials and consumables"
+        },
+        {
+          "id": "39000_32",
+          "name": "32 : Work in progress"
+        },
+        {
+          "id": "40000_33",
+          "name": "33 : Finished goods"
+        },
+        {
+          "id": "41000_34",
+          "name": "34 : Goods purchased for resale"
+        },
+        {
+          "id": "42000_35",
+          "name": "35 : Immovable property intended for sale"
+        },
+        {
+          "id": "43000_36",
+          "name": "36 : Advance payments"
+        },
+        {
+          "id": "44000_37",
+          "name": "37 : Contracts in progress"
+        },
+        {
+          "id": "45000_40_41",
+          "name": "40/41 : Amounts receivable within one year"
+        },
+        {
+          "id": "46000_40",
+          "name": "40 : Trade debtors"
+        },
+        {
+          "id": "47000_41",
+          "name": "41 : Other amounts receivable"
+        },
+        {
+          "id": "48000_415",
+          "name": "415 : Of which non interest-bearing amounts receivable or with an abnormally low interest rate"
+        },
+        {
+          "id": "49000_50_53",
+          "name": "50/53 : Current investments"
+        },
+        {
+          "id": "50000_54_58",
+          "name": "54/58 : Cash at bank and in hand"
+        },
+        {
+          "id": "51000_490_1",
+          "name": "490/1 : Accruals and deferred income"
+        },
+        {
+          "id": "52000_20_58",
+          "name": "20/58 : Total assets"
+        },
+        {
+          "id": "53000_",
+          "name": "Equity and liabilities"
+        },
+        {
+          "id": "54000_",
+          "name": "Equity"
+        },
+        {
+          "id": "55000_10_15",
+          "name": "10/15 : Equity positive balance"
+        },
+        {
+          "id": "56000_10_15",
+          "name": "10/15 : Equity negative balance"
+        },
+        {
+          "id": "57000_",
+          "name": "Of which"
+        },
+        {
+          "id": "58000_10",
+          "name": "10 : Association or foundation funds"
+        },
+        {
+          "id": "59000_100",
+          "name": "100 : Opening equity"
+        },
+        {
+          "id": "60000_101",
+          "name": "101 : Permanent financing"
+        },
+        {
+          "id": "61000_12",
+          "name": "12 : Revaluation surpluses"
+        },
+        {
+          "id": "62000_13",
+          "name": "13 : Allocated funds"
+        },
+        {
+          "id": "63000_14",
+          "name": "14 : Accumulated positif income (+)"
+        },
+        {
+          "id": "64000_14",
+          "name": "14 : Accumulated negative income (-)"
+        },
+        {
+          "id": "65000_15",
+          "name": "15 : Investment grants"
+        },
+        {
+          "id": "66000_16",
+          "name": "16 : Provisions"
+        },
+        {
+          "id": "67000_160_5",
+          "name": "160/5 : Provisions for liabilities and charges"
+        },
+        {
+          "id": "68000_160",
+          "name": "160 : Pensions and similar obligations"
+        },
+        {
+          "id": "69000_161",
+          "name": "161 : Taxation"
+        },
+        {
+          "id": "70000_162",
+          "name": "162 : Major repairs and maintenance"
+        },
+        {
+          "id": "71000_163_5",
+          "name": "163/5 : Other liabilities and charges"
+        },
+        {
+          "id": "72000_168",
+          "name": "168 : Provisions for grants and legacies to reimburse and gifts with a recovery right"
+        },
+        {
+          "id": "73000_17_49",
+          "name": "17/49 : Amounts payable"
+        },
+        {
+          "id": "74000_17",
+          "name": "17 : Amounts payable after more than one year"
+        },
+        {
+          "id": "75000_170_4",
+          "name": "170/4 : Financial debts"
+        },
+        {
+          "id": "76000_172_3",
+          "name": "172/3 : Credit institutions, leasing and other similar obligations"
+        },
+        {
+          "id": "77000_172",
+          "name": "172 : Leasing and other similar obligations"
+        },
+        {
+          "id": "78000_173",
+          "name": "173 : Credit institutions"
+        },
+        {
+          "id": "79000_174_0",
+          "name": "174/0 : Other loans"
+        },
+        {
+          "id": "80000_170",
+          "name": "170 : Subordinated loans"
+        },
+        {
+          "id": "81000_171",
+          "name": "171 : Unsubordinated debentures"
+        },
+        {
+          "id": "82000_174",
+          "name": "174 : Other loans"
+        },
+        {
+          "id": "83000_175",
+          "name": "175 : Trade debts"
+        },
+        {
+          "id": "84000_1750",
+          "name": "1750 : Suppliers"
+        },
+        {
+          "id": "85000_1751",
+          "name": "1751 : Bills of exchange payable"
+        },
+        {
+          "id": "86000_176",
+          "name": "176 : Advances received on contracts in progress"
+        },
+        {
+          "id": "87000_179",
+          "name": "179 : Other amounts payable"
+        },
+        {
+          "id": "88000_1790",
+          "name": "1790 : Interest-bearing"
+        },
+        {
+          "id": "89000_1791",
+          "name": "1791 : Non interest-bearing or with an abnormally low interest rate"
+        },
+        {
+          "id": "90000_1792",
+          "name": "1792 : Cash deposit"
+        },
+        {
+          "id": "91000_42_48",
+          "name": "42/48 : Amounts payable within one year"
+        },
+        {
+          "id": "92000_42",
+          "name": "42 : Current portion of amounts payable after more than one year falling due within one year"
+        },
+        {
+          "id": "93000_43",
+          "name": "43 : Financial debts"
+        },
+        {
+          "id": "94000_430_8",
+          "name": "430/8 : Credit institutions"
+        },
+        {
+          "id": "95000_439",
+          "name": "439 : Other loans"
+        },
+        {
+          "id": "96000_44",
+          "name": "44 : Trade debts"
+        },
+        {
+          "id": "97000_440_4",
+          "name": "440/4 : Suppliers"
+        },
+        {
+          "id": "98000_441",
+          "name": "441 : Bills of exchange payable"
+        },
+        {
+          "id": "99000_46",
+          "name": "46 : Advances received on contracts in progress"
+        },
+        {
+          "id": "100000_45",
+          "name": "45 : Taxes, remuneration and social security"
+        },
+        {
+          "id": "101000_450_3",
+          "name": "450/3 : Taxes"
+        },
+        {
+          "id": "102000_454_9",
+          "name": "454/9 : Remuneration and social security"
+        },
+        {
+          "id": "103000_48",
+          "name": "48 : Miscellaneous amounts payable"
+        },
+        {
+          "id": "104000_480_8",
+          "name": "480/8 : Debentures and matured coupons, grants to repay and cash deposit"
+        },
+        {
+          "id": "105000_4890",
+          "name": "4890 : Miscellaneous interest-bearing amounts payable"
+        },
+        {
+          "id": "106000_4891",
+          "name": "4891 : Miscellaneous non interest-bearing amounts payable or with an abnormally low interest rate"
+        },
+        {
+          "id": "107000_492_3",
+          "name": "492/3 : Accruals and deferred income"
+        },
+        {
+          "id": "108000_10_49",
+          "name": "10/49 : Total liabilities"
+        },
+        {
+          "id": "109000_",
+          "name": "Income statement"
+        },
+        {
+          "id": "110000_9800",
+          "name": "9800 : Value added (excl. vat) positive balance"
+        },
+        {
+          "id": "111000_9800",
+          "name": "9800 : Value added (excl. vat) negative balance"
+        },
+        {
+          "id": "112000_70_74",
+          "name": "70/74 : Operating income (optional entry for abridged layouts)"
+        },
+        {
+          "id": "113000_70",
+          "name": "70 : Turnover (optional entry for abridged layouts)"
+        },
+        {
+          "id": "114000_71",
+          "name": "71 : Stocks of finished goods and work and contracts in progress: increase (+)"
+        },
+        {
+          "id": "115000_71",
+          "name": "71 : Stocks of finished goods and work and contracts in progress: decrease (-)"
+        },
+        {
+          "id": "116000_72",
+          "name": "72 : Produced fixed assets"
+        },
+        {
+          "id": "117000_73",
+          "name": "73 : Contributions, gifts, legacies and grants  (optional entry for abridged layouts)"
+        },
+        {
+          "id": "118000_74",
+          "name": "74 : Other operating income"
+        },
+        {
+          "id": "119000_60_64",
+          "name": "60/64 : Operating charges"
+        },
+        {
+          "id": "120000_60_61",
+          "name": "60/61 : Goods, raw and auxiliary materials, services and miscellaneous (optional entry for abridged layouts)"
+        },
+        {
+          "id": "121000_60",
+          "name": "60 : Goods, raw materials, consumables"
+        },
+        {
+          "id": "122000_600_8",
+          "name": "600/8 : Purchases"
+        },
+        {
+          "id": "123000_609",
+          "name": "609 : Stocks: decrease (+)"
+        },
+        {
+          "id": "124000_609",
+          "name": "609 : Stocks: increase (-)"
+        },
+        {
+          "id": "125000_61",
+          "name": "61 : Services and other goods"
+        },
+        {
+          "id": "126000_62",
+          "name": "62 : Remuneration, social security costs and pensions"
+        },
+        {
+          "id": "127000_630",
+          "name": "630 : Depreciation of and other amounts written off formation expenses, intangible and tangible fixed assets"
+        },
+        {
+          "id": "128000_631_4",
+          "name": "631/4 : Depreciation on stocks, contracts in progress and trade debtors: appropriations (+)"
+        },
+        {
+          "id": "129000_631_4",
+          "name": "631/4 : Depreciation on stocks, contracts in progress and trade debtors: reversing (-)"
+        },
+        {
+          "id": "130000_635_8",
+          "name": "635/8 : Provisions for risks and charges: appropriations (+)"
+        },
+        {
+          "id": "131000_635_8",
+          "name": "635/8 : Provisions for risks and charges: uses and reversing (-)"
+        },
+        {
+          "id": "132000_640_8",
+          "name": "640/8 : Other operating charges"
+        },
+        {
+          "id": "133000_649",
+          "name": "649 : Operating charges carried to assets as restructuring costs (-)"
+        },
+        {
+          "id": "134000_9901",
+          "name": "9901 : Positive operating income (+)"
+        },
+        {
+          "id": "135000_9901",
+          "name": "9901 : Negative operating income (-)"
+        },
+        {
+          "id": "136000_75",
+          "name": "75 : Financial income"
+        },
+        {
+          "id": "137000_750",
+          "name": "750 : Income from financial fixed assets"
+        },
+        {
+          "id": "138000_751",
+          "name": "751 : Income from current assets"
+        },
+        {
+          "id": "139000_752_9",
+          "name": "752/9 : Other financial income"
+        },
+        {
+          "id": "140000_65",
+          "name": "65 : Financial charges"
+        },
+        {
+          "id": "141000_650",
+          "name": "650 : Debt charges"
+        },
+        {
+          "id": "142000_651",
+          "name": "651 : Depreciation on current assets except stocks, contracts in progress and trade debtors: appropriations (reversing)"
+        },
+        {
+          "id": "143000_652_9",
+          "name": "652/9 : Other financial charges"
+        },
+        {
+          "id": "144000_9902",
+          "name": "9902 : Positive income on ordinary activities before taxes (+)"
+        },
+        {
+          "id": "145000_9902",
+          "name": "9902 : Negative income on ordinary activities before taxes (-)"
+        },
+        {
+          "id": "146000_76",
+          "name": "76 : Extraordinary income"
+        },
+        {
+          "id": "147000_760",
+          "name": "760 : Reversing depreciation and amounts written off intangible and tangible fixed assets"
+        },
+        {
+          "id": "148000_761",
+          "name": "761 : Reversing depreciation on financial fixed assets"
+        },
+        {
+          "id": "149000_762",
+          "name": "762 : Reversing provisions for extraordinary liabilities and charges"
+        },
+        {
+          "id": "150000_763",
+          "name": "763 : Capital gains on disposal of fixed assets"
+        },
+        {
+          "id": "151000_764_9",
+          "name": "764/9 : Other extraordinary income"
+        },
+        {
+          "id": "152000_66",
+          "name": "66 : Extraordinary charges"
+        },
+        {
+          "id": "153000_660",
+          "name": "660 : Extraordinary depreciation of and extraordinary amounts written off formation expenses, intangible and tangible fixed assets"
+        },
+        {
+          "id": "154000_661",
+          "name": "661 : Depreciation on financial fixed assets"
+        },
+        {
+          "id": "155000_662",
+          "name": "662 : Provisions for extraordinary liabilities and charges: appropriations (+)"
+        },
+        {
+          "id": "156000_662",
+          "name": "662 : Provisions for extraordinary liabilities and charges: uses (-)"
+        },
+        {
+          "id": "157000_663",
+          "name": "663 : Capital losses on disposal of fixed assets"
+        },
+        {
+          "id": "158000_664_8",
+          "name": "664/8 : Other extraordinary charges"
+        },
+        {
+          "id": "159000_669",
+          "name": "669 : Extraordinary charges carried to assets as restructuring costs (-)"
+        },
+        {
+          "id": "160000_9904",
+          "name": "9904 : Positive income for the period (+)"
+        },
+        {
+          "id": "161000_9904",
+          "name": "9904 : Negative income for the period (-)"
+        },
+        {
+          "id": "164000_9905",
+          "name": "9905 : Gain of the period available for appropriation (+)"
+        },
+        {
+          "id": "165000_9905",
+          "name": "9905 : Loss of the period available for appropriation (-)"
+        },
+        {
+          "id": "166000_",
+          "name": "Appropriation account"
+        },
+        {
+          "id": "167000_9906",
+          "name": "9906 : Positive income to be appropriated (+)"
+        },
+        {
+          "id": "168000_9906",
+          "name": "9906 : Negative income to be appropriated (-)"
+        },
+        {
+          "id": "169000_9905",
+          "name": "9905 : Positive income of the period available for appropriation (+)"
+        },
+        {
+          "id": "170000_9905",
+          "name": "9905 : Negative income of the period available for appropriation (-)"
+        },
+        {
+          "id": "171000_14P",
+          "name": "14P : Positive income of previous accounting year brought forward (+)"
+        },
+        {
+          "id": "172000_14P",
+          "name": "14P : Negative income of previous accounting year brought forward (-)"
+        },
+        {
+          "id": "173000_791_2",
+          "name": "791/2 : Withdrawals from capital and reserves"
+        },
+        {
+          "id": "174000_791",
+          "name": "791 : From the the association or foundation funds"
+        },
+        {
+          "id": "175000_792",
+          "name": "792 : From allocated funds"
+        },
+        {
+          "id": "176000_692",
+          "name": "692 : Appropriations to allocated funds"
+        },
+        {
+          "id": "177000_14",
+          "name": "14 : Positive income to be carried forward (+)"
+        },
+        {
+          "id": "178000_14",
+          "name": "14 : Negative income to be carried forward (-)"
+        },
+        {
+          "id": "179000_",
+          "name": "Explanatory disclosures"
+        },
+        {
+          "id": "180000_",
+          "name": "Statement of formation expenses"
+        },
+        {
+          "id": "181000_20P",
+          "name": "20P : Net book value at the end of the preceding period"
+        },
+        {
+          "id": "182000_",
+          "name": "Movements during the period"
+        },
+        {
+          "id": "183000_8002",
+          "name": "8002 : New expenses incurred"
+        },
+        {
+          "id": "184000_8003",
+          "name": "8003 : Amortization"
+        },
+        {
+          "id": "185000_8004",
+          "name": "8004 : Other"
+        },
+        {
+          "id": "186000_20",
+          "name": "20 : Net book value at the end of the period"
+        },
+        {
+          "id": "186500_",
+          "name": "Of which"
+        },
+        {
+          "id": "187000_200_2",
+          "name": "200/2 : Formation, loan issue expenses and other formation expenses"
+        },
+        {
+          "id": "188000_204",
+          "name": "204 : Restructuring costs"
+        },
+        {
+          "id": "198000_",
+          "name": "Statement of intangible fixed assets"
+        },
+        {
+          "id": "199000_",
+          "name": "Total of intangible fixed assets"
+        },
+        {
+          "id": "199500_",
+          "name": "Acquisition value"
+        },
+        {
+          "id": "200000_8059P",
+          "name": "8059P : Acquisition value at the end of the preceding period"
+        },
+        {
+          "id": "201000_",
+          "name": "Movements during the period"
+        },
+        {
+          "id": "202000_8029",
+          "name": "8029 : Acquisitions, including produced fixed assets"
+        },
+        {
+          "id": "203000_8039",
+          "name": "8039 : Sales and disposals"
+        },
+        {
+          "id": "204000_8049",
+          "name": "8049 : Transfers from one heading to another"
+        },
+        {
+          "id": "205000_8059",
+          "name": "8059 : Acquisition value at the end of the period"
+        },
+        {
+          "id": "205500_",
+          "name": "Amortizations and amounts written off"
+        },
+        {
+          "id": "206000_8129P",
+          "name": "8129P : Amortizations and amounts written off at the end of the preceding period"
+        },
+        {
+          "id": "207000_",
+          "name": "Movements during the period"
+        },
+        {
+          "id": "208000_8079",
+          "name": "8079 : Written"
+        }
+      ],
+      "total_codes": 1195,
+      "truncated": true
+    },
+    {
+      "id": "SECTOR",
+      "position": 2,
+      "name": "SECTOR",
+      "codes": [
+        {
+          "id": "1",
+          "name": "1 : By activity sector"
+        },
+        {
+          "id": "PU200",
+          "name": "PU200 : All non-financial enterprises"
+        },
+        {
+          "id": "PU210",
+          "name": "PU210 : Agriculture, hunting, forestry and fishing"
+        },
+        {
+          "id": "DE01",
+          "name": "DE01 : Agriculture, hunting and related service activities"
+        },
+        {
+          "id": "DE02",
+          "name": "DE02 : Forestry, logging and related service activities"
+        },
+        {
+          "id": "DE05",
+          "name": "DE05 : Fishing, operation of fish hatcheries and fish farms; farming of shellfish and crustaceans"
+        },
+        {
+          "id": "PU220",
+          "name": "PU220 : Energy and water management"
+        },
+        {
+          "id": "DE23",
+          "name": "DE23 : Manufacture of coke, refined petroleum products and nuclear fuel"
+        },
+        {
+          "id": "PU2201",
+          "name": "PU2201 : Production and distribution of electricity, gas, steam and warm water"
+        },
+        {
+          "id": "PU2202",
+          "name": "PU2202 : Water supply companies, (collection, purification and distribution of water)"
+        },
+        {
+          "id": "PU2211",
+          "name": "PU2211 : Mineral oil refining, sale (whole and retail) in petroleum products"
+        },
+        {
+          "id": "PU230",
+          "name": "PU230 : Production of intermediate goods (except for energy and water management and the automobile industry)"
+        },
+        {
+          "id": "DE14",
+          "name": "DE14 : Other mining and quarrying"
+        },
+        {
+          "id": "DE27",
+          "name": "DE27 : Manufacture of basic metals"
+        },
+        {
+          "id": "DE37",
+          "name": "DE37 : Recycling of recyclable waste"
+        },
+        {
+          "id": "PU2301",
+          "name": "PU2301 : Rubber and plastics processing industry"
+        },
+        {
+          "id": "DE252",
+          "name": "DE252 : Manufacture of plastic products"
+        },
+        {
+          "id": "PU2302",
+          "name": "PU2302 : Non-metallic mineral products industry"
+        },
+        {
+          "id": "DE261",
+          "name": "DE261 : Glass-making industry"
+        },
+        {
+          "id": "DE262A",
+          "name": "DE262A : Manufacture of ceramic products"
+        },
+        {
+          "id": "DE265A",
+          "name": "DE265A : Concrete-making industry"
+        },
+        {
+          "id": "DE267",
+          "name": "DE267 : Processing of natural stone"
+        },
+        {
+          "id": "PU2303",
+          "name": "PU2303 : Iron and steel industry"
+        },
+        {
+          "id": "PU2304",
+          "name": "PU2304 : Production and preliminary processing of  and non-ferrous metals"
+        },
+        {
+          "id": "PU2311",
+          "name": "PU2311 : Extraction and processing of non-energy producing minerals, chemical industry"
+        },
+        {
+          "id": "PU2312",
+          "name": "PU2312 : Chemical industry"
+        },
+        {
+          "id": "DE241",
+          "name": "DE241 : Manufacture of basic chemicals"
+        },
+        {
+          "id": "DE243",
+          "name": "DE243 : Manufacture of paints, varnishes and printing inks"
+        },
+        {
+          "id": "DE244",
+          "name": "DE244 : Manufacture of pharmaceutical products"
+        },
+        {
+          "id": "DE245",
+          "name": "DE245 : Manufacture of detergents and cosmetic articles"
+        },
+        {
+          "id": "PU2313",
+          "name": "PU2313 : Metal-processing industry"
+        },
+        {
+          "id": "PU240",
+          "name": "PU240 : Automobile industry"
+        },
+        {
+          "id": "PU250",
+          "name": "PU250 : Production of capital goods (except automobile industry)"
+        },
+        {
+          "id": "DE30",
+          "name": "DE30 : Manufacture of office machinery and computers"
+        },
+        {
+          "id": "PU2511",
+          "name": "PU2511 : Metal manufacture, precision engineering and optics industry"
+        },
+        {
+          "id": "DE28",
+          "name": "DE28 : Manufacture of fabricated metal products"
+        },
+        {
+          "id": "DE2811",
+          "name": "DE2811 : Manufacture of metal assembly workshops"
+        },
+        {
+          "id": "DE2812",
+          "name": "DE2812 : Manufacture and joining of metal structures"
+        },
+        {
+          "id": "DE285",
+          "name": "DE285 : Treatment and coating of metals"
+        },
+        {
+          "id": "DE29",
+          "name": "DE29 : Manufacture of machinery, equipment and tools"
+        },
+        {
+          "id": "DE32",
+          "name": "DE32 : Manufacture of audio-, video- and telecommunications apparatus"
+        },
+        {
+          "id": "DE33",
+          "name": "DE33 : Manufacture of medical apparatus, precision and optical instruments and clocks and watches"
+        },
+        {
+          "id": "DE35",
+          "name": "DE35 : Manufacture of other means of transport"
+        },
+        {
+          "id": "DE9611",
+          "name": "DE9611 : Manufacture of electronic, optical and information technology products"
+        },
+        {
+          "id": "DE9612",
+          "name": "DE9612 : Manufacture of computers, peripheral equipment and electronic components"
+        },
+        {
+          "id": "PU260",
+          "name": "PU260 : Production of durable consumer goods (except automobile industry)"
+        },
+        {
+          "id": "PU2611",
+          "name": "PU2611 : Electrical engineering industry, construction of office machinery and computers"
+        },
+        {
+          "id": "DE31",
+          "name": "DE31 : Manufacture of electrical machinery and equipment"
+        },
+        {
+          "id": "PU270",
+          "name": "PU270 : Manufacture of food, beverages and tobacco (except starch and animal fodder)"
+        },
+        {
+          "id": "DE151A",
+          "name": "DE151A : Meat and fish industry"
+        },
+        {
+          "id": "DE155",
+          "name": "DE155 : Dairy products industry"
+        },
+        {
+          "id": "DE153A",
+          "name": "DE153A : Industry for oils and plant-based products"
+        },
+        {
+          "id": "DE158A",
+          "name": "DE158A : Bakeries, patisseries, manufacture of biscuits and rusks"
+        },
+        {
+          "id": "DE159",
+          "name": "DE159 : Manufacture of beverages"
+        },
+        {
+          "id": "DE16",
+          "name": "DE16 : Manufacture of tobacco products"
+        },
+        {
+          "id": "PU280",
+          "name": "PU280 : Production of non-durable consumer goods (with exception of food, beverages and tobacco)"
+        },
+        {
+          "id": "PU2801",
+          "name": "PU2801 : Textile industry"
+        },
+        {
+          "id": "DE171A",
+          "name": "DE171A : Manufacture, spinning, weaving of textiles and refinement of textiles"
+        },
+        {
+          "id": "DE174",
+          "name": "DE174 : Manufacture of ready-made textile articles (except apparel)"
+        },
+        {
+          "id": "DE175",
+          "name": "DE175 : Manufacture of other textiles"
+        },
+        {
+          "id": "PU2802",
+          "name": "PU2802 : Leather, footwear and clothing industry"
+        },
+        {
+          "id": "DE18",
+          "name": "DE18 : Manufacture of wearing apparel and fur industry"
+        },
+        {
+          "id": "DE182",
+          "name": "DE182 : Manufacture of apparel (except clothing made of leather)"
+        },
+        {
+          "id": "DE19",
+          "name": "DE19 : Manufacture of leather and shoes"
+        },
+        {
+          "id": "PU2803",
+          "name": "PU2803 : Timber and wooden furniture industry"
+        },
+        {
+          "id": "DE20",
+          "name": "DE20 : Manufacture of products made of wood, cork and straw"
+        },
+        {
+          "id": "DE201",
+          "name": "DE201 : Sawing of wood and industrial preparation"
+        },
+        {
+          "id": "DE203",
+          "name": "DE203 : Manufacture of carpentry and joinery"
+        },
+        {
+          "id": "DE202A",
+          "name": "DE202A : Other working of wood"
+        },
+        {
+          "id": "DE361A",
+          "name": "DE361A : Manufacture of furniture"
+        },
+        {
+          "id": "PU2811",
+          "name": "PU2811 : Manufacturing of paper and paper products, printing and publishing"
+        },
+        {
+          "id": "DE21",
+          "name": "DE21 : Manufacture of pulp, paper and paper products"
+        },
+        {
+          "id": "DE22",
+          "name": "DE22 : Publishing, printing and reproduction of recorded media"
+        },
+        {
+          "id": "DE221",
+          "name": "DE221 : Publishing"
+        },
+        {
+          "id": "DE222",
+          "name": "DE222 : Printing and service activities related to printing"
+        },
+        {
+          "id": "PU2850",
+          "name": "PU2850 : Other manufacturing industries"
+        },
+        {
+          "id": "DE15",
+          "name": "DE15 : Manufacture of food products and beverages"
+        },
+        {
+          "id": "DE36",
+          "name": "DE36 : Manufacture of furniture, other industries"
+        },
+        {
+          "id": "DE362",
+          "name": "DE362 : Working of precious stones and production of jewellery"
+        },
+        {
+          "id": "DE363A",
+          "name": "DE363A : Manufacture of leisure articles, other industries"
+        },
+        {
+          "id": "PU2860",
+          "name": "PU2860 : Repair and installation of machinery and equipment"
+        },
+        {
+          "id": "PU290",
+          "name": "PU290 : All of manufacturing industry"
+        },
+        {
+          "id": "PU300",
+          "name": "PU300 : Building and civil engineering"
+        },
+        {
+          "id": "DE452",
+          "name": "DE452 : Construction of residential and non-residential buildings; civil engineering"
+        },
+        {
+          "id": "DE4521",
+          "name": "DE4521 : General construction of buildings and civil engineering works"
+        },
+        {
+          "id": "DE4522",
+          "name": "DE4522 : Erection of roof covering and frames"
+        },
+        {
+          "id": "DE453",
+          "name": "DE453 : Building installation"
+        },
+        {
+          "id": "DE4531",
+          "name": "DE4531 : Electrical installation"
+        },
+        {
+          "id": "DE4533",
+          "name": "DE4533 : Plumbing"
+        },
+        {
+          "id": "DE454",
+          "name": "DE454 : Building completion and finishing"
+        },
+        {
+          "id": "DE4542",
+          "name": "DE4542 : Joinery installation"
+        },
+        {
+          "id": "DE4543",
+          "name": "DE4543 : Floor and wall covering"
+        },
+        {
+          "id": "DE4544",
+          "name": "DE4544 : Painting and glazing"
+        },
+        {
+          "id": "PU310",
+          "name": "PU310 : Trade in and repair of automobiles and consumer goods"
+        },
+        {
+          "id": "DE50",
+          "name": "DE50 : Sale and repair of motor vehicles and motorcycles, sale of motor fuels"
+        },
+        {
+          "id": "DE501",
+          "name": "DE501 : Trade in motor vehicles"
+        },
+        {
+          "id": "DE502",
+          "name": "DE502 : Maintenance and repair of motor vehicles"
+        },
+        {
+          "id": "DE503",
+          "name": "DE503 : Sale of motor vehicle parts and accessories"
+        },
+        {
+          "id": "DE51",
+          "name": "DE51 : Wholesale and commission trade"
+        },
+        {
+          "id": "DE511",
+          "name": "DE511 : Wholesale on a fee or contract basis"
+        },
+        {
+          "id": "DE52",
+          "name": "DE52 : Retail trade (not including motor vehicles and motorcycles)"
+        },
+        {
+          "id": "PU3101",
+          "name": "PU3101 : Wholesale distribution"
+        },
+        {
+          "id": "DE512",
+          "name": "DE512 : Wholesale of agricultural raw materials and live animals"
+        },
+        {
+          "id": "DE513",
+          "name": "DE513 : Wholesale of food, beverages and tobacco"
+        },
+        {
+          "id": "DE514",
+          "name": "DE514 : Wholesale of non-food consumergoods"
+        },
+        {
+          "id": "DE514A",
+          "name": "DE514A : Wholesale of textiles, apparel and footwear"
+        },
+        {
+          "id": "DE514B",
+          "name": "DE514B : Wholesale of furniture and electrical household apparatus"
+        },
+        {
+          "id": "DE514C",
+          "name": "DE514C : Wholesale of pharmaceutical and beauty products"
+        },
+        {
+          "id": "DE514D",
+          "name": "DE514D : Wholesale of other consumer goods"
+        },
+        {
+          "id": "DE515",
+          "name": "DE515 : Wholesale of intermediate products, waste and scrap"
+        },
+        {
+          "id": "DE515A",
+          "name": "DE515A : Wholesale of fuels, metals and ores"
+        },
+        {
+          "id": "DE5153",
+          "name": "DE5153 : Wholesale of wood, paint, varnish and construction materials"
+        },
+        {
+          "id": "DE515B",
+          "name": "DE515B : Wholesale of other intermediate products"
+        },
+        {
+          "id": "DE518",
+          "name": "DE518 : Wholesale of machinery, equipment and accessories"
+        },
+        {
+          "id": "DE518A",
+          "name": "DE518A : Wholesale of office machinery and equipment"
+        },
+        {
+          "id": "DE5187",
+          "name": "DE5187 : Wholesale of other machinery for use in industry and trade"
+        },
+        {
+          "id": "DE519",
+          "name": "DE519 : Other wholesale"
+        },
+        {
+          "id": "PU3102",
+          "name": "PU3102 : Retail distribution"
+        },
+        {
+          "id": "DE521",
+          "name": "DE521 : Retail sale in non-specialised stores"
+        },
+        {
+          "id": "DE5211",
+          "name": "DE5211 : Retail sale in non-specialised stores with food, beverages and tobacco"
+        },
+        {
+          "id": "DE522",
+          "name": "DE522 : Retail sale of food, beverages and tobacco in specialised stores"
+        },
+        {
+          "id": "DE523",
+          "name": "DE523 : Retail sale of pharmaceutical products, perfume and cosmetics"
+        },
+        {
+          "id": "DE5231",
+          "name": "DE5231 : Dispensing chemists"
+        },
+        {
+          "id": "DE5241",
+          "name": "DE5241 : Retail sale of textiles"
+        },
+        {
+          "id": "DE5242",
+          "name": "DE5242 : Retail sale of clothing"
+        },
+        {
+          "id": "DE5243",
+          "name": "DE5243 : Retail sale of footwear and leather goods"
+        },
+        {
+          "id": "DE5244",
+          "name": "DE5244 : Retail sale of furniture and home furnishings"
+        },
+        {
+          "id": "DE5245",
+          "name": "DE5245 : Retail sale of electrical household appliances, audio and video equipment"
+        },
+        {
+          "id": "DE5246",
+          "name": "DE5246 : Retail sale of ironmongery and paint"
+        },
+        {
+          "id": "DE5247",
+          "name": "DE5247 : Retail sale of books, newspapers and stationery"
+        },
+        {
+          "id": "DE524A",
+          "name": "DE524A : Other retail sale in specialised stores"
+        },
+        {
+          "id": "DE525A",
+          "name": "DE525A : Other retail sale"
+        },
+        {
+          "id": "PU320",
+          "name": "PU320 : Accommodation, restaurants and cafes"
+        },
+        {
+          "id": "DE551A",
+          "name": "DE551A : Hotels and other places of accommodation"
+        },
+        {
+          "id": "DE553A",
+          "name": "DE553A : Restaurants and cafes"
+        },
+        {
+          "id": "DE555",
+          "name": "DE555 : Canteens and catering"
+        },
+        {
+          "id": "PU330",
+          "name": "PU330 : Transport and communication"
+        },
+        {
+          "id": "PU3301",
+          "name": "PU3301 : Transport"
+        },
+        {
+          "id": "DE60",
+          "name": "DE60 : Transport by land"
+        },
+        {
+          "id": "DE602",
+          "name": "DE602 : Urban and road transport"
+        },
+        {
+          "id": "DE6024",
+          "name": "DE6024 : Freight transport by road and removal services"
+        },
+        {
+          "id": "DE61",
+          "name": "DE61 : Transport by water"
+        },
+        {
+          "id": "DE62",
+          "name": "DE62 : Transport by air"
+        },
+        {
+          "id": "DE63",
+          "name": "DE63 : Supporting and auxiliary transport activities"
+        },
+        {
+          "id": "DE633",
+          "name": "DE633 : Activities of travel agencies and tour operators"
+        },
+        {
+          "id": "DE634",
+          "name": "DE634 : Organisation of freight transport"
+        },
+        {
+          "id": "PU3302",
+          "name": "PU3302 : Post and telecommunication"
+        },
+        {
+          "id": "PU340",
+          "name": "PU340 : Services to businesses and individuals"
+        },
+        {
+          "id": "DE804",
+          "name": "DE804 : Private educational institutions (driving school, adult formation)"
+        },
+        {
+          "id": "PU3401",
+          "name": "PU3401 : Firms auxiliary to banking and insurance institutions"
+        },
+        {
+          "id": "DE671",
+          "name": "DE671 : Activities auxiliary to financial institutions"
+        },
+        {
+          "id": "DE672",
+          "name": "DE672 : Activities auxiliary to insurance companies"
+        },
+        {
+          "id": "PU3402",
+          "name": "PU3402 : Renting and trade in real estate"
+        },
+        {
+          "id": "DE701",
+          "name": "DE701 : Real estate activities carried out on own account"
+        },
+        {
+          "id": "DE702",
+          "name": "DE702 : Letting of own real estate"
+        },
+        {
+          "id": "DE703",
+          "name": "DE703 : Real estate activities on a fee or contract basis"
+        },
+        {
+          "id": "PU3403",
+          "name": "PU3403 : Provision of services to businesses, rental, collection of waste water and waste products, street cleaning"
+        },
+        {
+          "id": "DE71",
+          "name": "DE71 : Renting without operator"
+        },
+        {
+          "id": "DE73",
+          "name": "DE73 : Research and development work"
+        },
+        {
+          "id": "DE74A",
+          "name": "DE74A : Other provision of services to businesses"
+        },
+        {
+          "id": "DE7411",
+          "name": "DE7411 : Legal activities"
+        },
+        {
+          "id": "DE7412",
+          "name": "DE7412 : Accounting, bookkeeping and auditing activities"
+        },
+        {
+          "id": "DE741A",
+          "name": "DE741A : Marketing research and advice bureaus"
+        },
+        {
+          "id": "DE7415",
+          "name": "DE7415 : Co-ordination centres"
+        },
+        {
+          "id": "DE742A",
+          "name": "DE742A : Technical support"
+        },
+        {
+          "id": "DE744",
+          "name": "DE744 : Advertising"
+        },
+        {
+          "id": "DE745",
+          "name": "DE745 : Labour recruitment and provision of personnel"
+        },
+        {
+          "id": "DE746A",
+          "name": "DE746A : Other provision of services to companies"
+        },
+        {
+          "id": "DE7481",
+          "name": "DE7481 : Photographic activities"
+        },
+        {
+          "id": "DE747",
+          "name": "DE747 : Industrial cleaning"
+        },
+        {
+          "id": "DE90",
+          "name": "DE90 : Sewage and refuse disposal, sanitation and street cleaning"
+        },
+        {
+          "id": "PU3404",
+          "name": "PU3404 : Provision of services to individuals, culture, sport and recreation"
+        },
+        {
+          "id": "DE92",
+          "name": "DE92 : Recreational, cultural and sporting activities"
+        },
+        {
+          "id": "DE921A",
+          "name": "DE921A : Audio-visual sector and cultural activities"
+        },
+        {
+          "id": "DE926A",
+          "name": "DE926A : Recreation and sport"
+        },
+        {
+          "id": "DE93",
+          "name": "DE93 : Personal services"
+        },
+        {
+          "id": "DE930A",
+          "name": "DE930A : Hairdressing and bodycare"
+        },
+        {
+          "id": "PU3405",
+          "name": "PU3405 : Information and communication"
+        },
+        {
+          "id": "DE72",
+          "name": "DE72 : Computing and related activities"
+        },
+        {
+          "id": "DE722",
+          "name": "DE722 : Production of computer programmes and systems ready for use"
+        },
+        {
+          "id": "DE9601",
+          "name": "DE9601 : Telecommunication"
+        },
+        {
+          "id": "DE9602",
+          "name": "DE9602 : Publishing"
+        },
+        {
+          "id": "DE9603",
+          "name": "DE9603 : Radio, television, video and film related activities"
+        },
+        {
+          "id": "DE9604",
+          "name": "DE9604 : Information technology activities"
+        },
+        {
+          "id": "PU400",
+          "name": "PU400 : All non-financial companies except co-ordination centers"
+        },
+        {
+          "id": "PU405",
+          "name": "PU405 : Portfolio companies and management of holdings"
+        },
+        {
+          "id": "PU416",
+          "name": "PU416 : Human health and social care activities"
+        },
+        {
+          "id": "PU410",
+          "name": "PU410 : Healthcare and social work"
+        },
+        {
+          "id": "DE9701",
+          "name": "DE9701 : Human healthcare"
+        },
+        {
+          "id": "DE8511",
+          "name": "DE8511 : Hospital activities"
+        },
+        {
+          "id": "DE851A",
+          "name": "DE851A : Healthcare and veterinary services"
+        },
+        {
+          "id": "DE9702",
+          "name": "DE9702 : Medical and dental practices"
+        },
+        {
+          "id": "DE9703",
+          "name": "DE9703 : Other human healthcare"
+        },
+        {
+          "id": "DE853",
+          "name": "DE853 : Social work activities"
+        },
+        {
+          "id": "DE9704",
+          "name": "DE9704 : Provision of medical and social services with accommodation"
+        },
+        {
+          "id": "DE9705",
+          "name": "DE9705 : Provision of social services with accommodation for persons with mental disability or psychiatric problems and drug and alcohol addicts"
+        },
+        {
+          "id": "DE9710",
+          "name": "DE9710 : Elderly homes and social work activities for the elderly and disabled"
+        },
+        {
+          "id": "DE9706",
+          "name": "DE9706 : Other provision of social services with accommodation"
+        },
+        {
+          "id": "DE88",
+          "name": "DE88 : Social work activities without accommodation"
+        },
+        {
+          "id": "DE9708",
+          "name": "DE9708 : Day nurseries and child care"
+        }
+      ],
+      "total_codes": 232,
+      "truncated": true
+    },
+    {
+      "id": "AMNR",
+      "position": 3,
+      "name": "AMNR",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Values"
+        },
+        {
+          "id": "AC",
+          "name": "Complete"
+        },
+        {
+          "id": "AA",
+          "name": "Abbreviated"
+        },
+        {
+          "id": "AM",
+          "name": "Micro"
+        },
+        {
+          "id": "AT",
+          "name": "Total"
+        },
+        {
+          "id": "N",
+          "name": "Number of enterprises"
+        },
+        {
+          "id": "NC",
+          "name": "Complete"
+        },
+        {
+          "id": "NA",
+          "name": "Abbreviated"
+        },
+        {
+          "id": "NM",
+          "name": "Micro"
+        },
+        {
+          "id": "NT",
+          "name": "Total"
+        }
+      ],
+      "total_codes": 10,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{CBANACCA_ITEM}.{SECTOR}.{AMNR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:48+00:00",
+  "schema_version": 1
+}

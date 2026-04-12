@@ -1,0 +1,166 @@
+{
+  "agency": "BE2",
+  "id": "DF_ISSHARES",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Issues of shares",
+    "fr": "Emissions d'actions",
+    "nl": "Uitgiften van aandelen",
+    "de": "Issues of shares"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 1,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Amount of the financial transactions (in millions of euro)"
+        },
+        {
+          "id": "AF",
+          "name": "Company formations"
+        },
+        {
+          "id": "AFC",
+          "name": "Contributions in cash"
+        },
+        {
+          "id": "AFK",
+          "name": "Contributions in kind"
+        },
+        {
+          "id": "AFP",
+          "name": "Amount to be paid up"
+        },
+        {
+          "id": "AI",
+          "name": "Capital increases"
+        },
+        {
+          "id": "AIC",
+          "name": "Contributions in cash"
+        },
+        {
+          "id": "AIK",
+          "name": "Contributions in kind"
+        },
+        {
+          "id": "AIP",
+          "name": "Amount to be paid up"
+        },
+        {
+          "id": "AIE",
+          "name": "Conversions of equity"
+        },
+        {
+          "id": "AID",
+          "name": "Conversions of debts"
+        },
+        {
+          "id": "AII",
+          "name": "Issue premiums"
+        },
+        {
+          "id": "AR",
+          "name": "Capital reductions"
+        },
+        {
+          "id": "ARR",
+          "name": "Repayments to shareholders"
+        },
+        {
+          "id": "ARL",
+          "name": "Incorporation of losses"
+        },
+        {
+          "id": "ARO",
+          "name": "Other"
+        },
+        {
+          "id": "N",
+          "name": "Number of companies (in units)"
+        },
+        {
+          "id": "NF",
+          "name": "Company formations"
+        },
+        {
+          "id": "NI",
+          "name": "Capital increases"
+        },
+        {
+          "id": "NR",
+          "name": "Capital reductions"
+        }
+      ],
+      "total_codes": 20,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:32+00:00",
+  "schema_version": 1
+}

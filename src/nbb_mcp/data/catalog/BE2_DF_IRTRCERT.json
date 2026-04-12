@@ -1,0 +1,138 @@
+{
+  "agency": "BE2",
+  "id": "DF_IRTRCERT",
+  "version": "1.0",
+  "category": "exchange_interest_rates",
+  "is_final": true,
+  "names": {
+    "en": "Reference rates of treasury certificates issued by the Belgian state on the secondary market",
+    "fr": "Taux indicatifs des certificats de trésorerie belges émis au marché secondaire",
+    "nl": "Indicatieve rente voor Belgische schatkistcertificaten uitgegeven op de secundaire markt",
+    "de": "Reference rates of treasury certificates issued by the Belgian state on the secondary market"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "IRTRCERT_MATUR",
+      "position": 1,
+      "name": "IRTRCERT_MATUR",
+      "codes": [
+        {
+          "id": "1W",
+          "name": "1 week"
+        },
+        {
+          "id": "1M",
+          "name": "1 month"
+        },
+        {
+          "id": "2M",
+          "name": "2 months"
+        },
+        {
+          "id": "3M",
+          "name": "3 months"
+        },
+        {
+          "id": "4M",
+          "name": "4 months"
+        },
+        {
+          "id": "5M",
+          "name": "5 months"
+        },
+        {
+          "id": "6M",
+          "name": "6 months"
+        },
+        {
+          "id": "7M",
+          "name": "7 month"
+        },
+        {
+          "id": "8M",
+          "name": "8 months"
+        },
+        {
+          "id": "9M",
+          "name": "9 months"
+        },
+        {
+          "id": "10M",
+          "name": "10 months"
+        },
+        {
+          "id": "11M",
+          "name": "11 months"
+        },
+        {
+          "id": "12M",
+          "name": "12 months"
+        }
+      ],
+      "total_codes": 13,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{IRTRCERT_MATUR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:26+00:00",
+  "schema_version": 1
+}

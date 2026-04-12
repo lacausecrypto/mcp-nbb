@@ -1,0 +1,1366 @@
+{
+  "agency": "BE2",
+  "id": "DF_INDPROD",
+  "version": "1.0",
+  "category": "prices",
+  "is_final": true,
+  "names": {
+    "en": "Industrial production indices",
+    "fr": "Indices de la production industrielle",
+    "nl": "Indexcijfers van de industriële productie",
+    "de": "Industrial production indices"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "INDEX_BASE",
+      "position": 1,
+      "name": "INDEX_BASE",
+      "codes": [
+        {
+          "id": "1914",
+          "name": "April 1914"
+        },
+        {
+          "id": "1953",
+          "name": "1953"
+        },
+        {
+          "id": "1966",
+          "name": "1966"
+        },
+        {
+          "id": "1971",
+          "name": "1971"
+        },
+        {
+          "id": "1974",
+          "name": "2nd half-year 1974 / 1st half-year 1975"
+        },
+        {
+          "id": "1981",
+          "name": "1981"
+        },
+        {
+          "id": "1988",
+          "name": "1988"
+        },
+        {
+          "id": "1996",
+          "name": "1996"
+        },
+        {
+          "id": "2004",
+          "name": "2004"
+        },
+        {
+          "id": "2010",
+          "name": "2010"
+        },
+        {
+          "id": "2013",
+          "name": "2013"
+        },
+        {
+          "id": "2015",
+          "name": "2015"
+        },
+        {
+          "id": "2016",
+          "name": "2016"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "1997",
+          "name": "1997"
+        },
+        {
+          "id": "2020",
+          "name": "2020"
+        },
+        {
+          "id": "2021",
+          "name": "2021"
+        },
+        {
+          "id": "2025",
+          "name": "2025"
+        }
+      ],
+      "total_codes": 18,
+      "truncated": false
+    },
+    {
+      "id": "INDEX_TYPE",
+      "position": 2,
+      "name": "INDEX_TYPE",
+      "codes": [
+        {
+          "id": "NCP",
+          "name": "Consumer Price Index"
+        },
+        {
+          "id": "WNICP",
+          "name": "Weights of Consumer Price Index"
+        },
+        {
+          "id": "HCP",
+          "name": "Harmonized Index of Consumer Prices"
+        },
+        {
+          "id": "INDPROD",
+          "name": "Industrial Production"
+        },
+        {
+          "id": "CONSPROD",
+          "name": "Construction Industry Production"
+        },
+        {
+          "id": "RAWMATERIALSIP",
+          "name": "Basic Materials Price Index"
+        },
+        {
+          "id": "WAGES",
+          "name": "Regulatory wages"
+        },
+        {
+          "id": "HUR",
+          "name": "Adjusted Harmonized Unemployment Rate"
+        },
+        {
+          "id": "NHU",
+          "name": "Non-harmonized Unemployment"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "LBCI",
+          "name": "Labor costs, wages, and gross salaries in industry"
+        },
+        {
+          "id": "NFT",
+          "name": "Non harmonized external trade"
+        },
+        {
+          "id": "HFT",
+          "name": "Harmonized external trade"
+        }
+      ],
+      "total_codes": 13,
+      "truncated": false
+    },
+    {
+      "id": "ADJUSTMENT",
+      "position": 3,
+      "name": "ADJUSTMENT",
+      "codes": [
+        {
+          "id": "N",
+          "name": "Neither seasonally adjusted nor calendar adjusted data"
+        },
+        {
+          "id": "Y",
+          "name": "Calendar and seasonally adjusted data"
+        },
+        {
+          "id": "T",
+          "name": "Trend"
+        },
+        {
+          "id": "W",
+          "name": "Calendar adjusted data, not seasonally adjusted"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "C",
+          "name": "Trend-cycle data, calendar adjusted"
+        },
+        {
+          "id": "R",
+          "name": "Trend-cycle data, not calendar adjusted"
+        },
+        {
+          "id": "K",
+          "name": "Calendar component"
+        },
+        {
+          "id": "X",
+          "name": "Seasonal component"
+        },
+        {
+          "id": "M",
+          "name": "Seasonal and calendar components"
+        },
+        {
+          "id": "I",
+          "name": "Irregular component"
+        },
+        {
+          "id": "S",
+          "name": "Seasonally adjusted data, not calendar adjusted"
+        }
+      ],
+      "total_codes": 12,
+      "truncated": false
+    },
+    {
+      "id": "NBB_PROD_SECTOR",
+      "position": 4,
+      "name": "NBB_PROD_SECTOR",
+      "codes": [
+        {
+          "id": "20",
+          "name": "General index figure"
+        },
+        {
+          "id": "31",
+          "name": "General index figure, except energy"
+        },
+        {
+          "id": "35",
+          "name": "Index by types of industry"
+        },
+        {
+          "id": "100",
+          "name": "Mining and quarrying (05-09)"
+        },
+        {
+          "id": "200",
+          "name": "Manufacturing (10-33)"
+        },
+        {
+          "id": "3500",
+          "name": "Production and supply of electricity, gas, steam and air-conditioned"
+        },
+        {
+          "id": "257",
+          "name": "Manufacture of metal products, machinery and equipment (25-30)"
+        },
+        {
+          "id": "37",
+          "name": "Index by use of products"
+        },
+        {
+          "id": "39",
+          "name": "Intermediate products and energy"
+        },
+        {
+          "id": "40",
+          "name": "Intermediate products except energy"
+        },
+        {
+          "id": "80",
+          "name": "Consumer goods"
+        },
+        {
+          "id": "60",
+          "name": "Durable consumer goods"
+        },
+        {
+          "id": "70",
+          "name": "Non-durable consumer goods"
+        },
+        {
+          "id": "50",
+          "name": "Investment goods"
+        },
+        {
+          "id": "90",
+          "name": "Energy"
+        },
+        {
+          "id": "1920",
+          "name": "Manufacture of refined petroleum products"
+        },
+        {
+          "id": "3510",
+          "name": "Production transmission and distribution of electricity"
+        },
+        {
+          "id": "3520",
+          "name": "Production and distribution of gas"
+        },
+        {
+          "id": "3600",
+          "name": "Collection, purification and distribution of water"
+        },
+        {
+          "id": "2400",
+          "name": "Manufacture of basic metals"
+        },
+        {
+          "id": "2410",
+          "name": "Manufacture of iron and steel from ferrous alloys"
+        },
+        {
+          "id": "2430",
+          "name": "Manufacture of others products of the  first processing of iron and steel"
+        },
+        {
+          "id": "2434",
+          "name": "Cold wire draw"
+        },
+        {
+          "id": "2440",
+          "name": "Production of precious metals and of non-ferrous metals"
+        },
+        {
+          "id": "2444",
+          "name": "Production of copper"
+        },
+        {
+          "id": "2450",
+          "name": "Casting of metals"
+        },
+        {
+          "id": "2451",
+          "name": "Casting of iron"
+        },
+        {
+          "id": "2453",
+          "name": "Casting of light metals"
+        },
+        {
+          "id": "2300",
+          "name": "Manufacture of other non-metallic mineral products"
+        },
+        {
+          "id": "2310",
+          "name": "Manufacture of glass and glasswork"
+        },
+        {
+          "id": "2311",
+          "name": "Manufacture of flat glass"
+        },
+        {
+          "id": "2312",
+          "name": "Manufacturing and processing industry of flat glass"
+        },
+        {
+          "id": "2314",
+          "name": "Manufacture of glass fibres"
+        },
+        {
+          "id": "2330",
+          "name": "Manufacture of construction products, in baked clay"
+        },
+        {
+          "id": "2332",
+          "name": "Manufacture of bricks, roof tiles and other products made of fired clay used in building"
+        },
+        {
+          "id": "2350",
+          "name": "Manufacture of cement, lime and plaster"
+        },
+        {
+          "id": "2351",
+          "name": "Manufacture of cement"
+        },
+        {
+          "id": "2360",
+          "name": "Manufacture of concrete, plaster and cement products"
+        },
+        {
+          "id": "2361",
+          "name": "Manufacture of concrete products for construction"
+        },
+        {
+          "id": "2362",
+          "name": "Manufacture of plaster products for construction"
+        },
+        {
+          "id": "2363",
+          "name": "Manufacture of ready for use concrete products"
+        },
+        {
+          "id": "2369",
+          "name": "Manufacture of others concrete, plaster and cement products"
+        },
+        {
+          "id": "2370",
+          "name": "Cutting, processing and finishing of natural stone"
+        },
+        {
+          "id": "2390",
+          "name": "Manufacture of abrasive products and non-metallic mineral products n.e.m."
+        },
+        {
+          "id": "2399",
+          "name": "Manufacture of non-metallic mineral products n.e.m."
+        },
+        {
+          "id": "810",
+          "name": "Quarrying of stone, sand and clay"
+        },
+        {
+          "id": "811",
+          "name": "Quarrying of ornemental and building stone, calcareous, plasterstone, chalk and slate"
+        },
+        {
+          "id": "812",
+          "name": "Exploitation of gravel and sand quarry, quarrying of clay and kaolin"
+        },
+        {
+          "id": "2000",
+          "name": "Manufacture of chemicals and chemical products"
+        },
+        {
+          "id": "2010",
+          "name": "Manufacture of basic chemical products, nitrate fertilizers, basic plastic products and synthetic rubber"
+        },
+        {
+          "id": "2011",
+          "name": "Manufacture of industrial gas"
+        },
+        {
+          "id": "2012",
+          "name": "Manufacture of dyes and pigments"
+        },
+        {
+          "id": "2013",
+          "name": "Manufacture of other inorganic basic chemical products"
+        },
+        {
+          "id": "2014",
+          "name": "Manufacture of other organic basic chemical products"
+        },
+        {
+          "id": "2016",
+          "name": "Manufacture of basic plastic products"
+        },
+        {
+          "id": "2030",
+          "name": "Manufacture of paints, varnishes, printing ink and mastics"
+        },
+        {
+          "id": "2040",
+          "name": "Manufacture of soap, cleaning materials, perfumes and toilet products"
+        },
+        {
+          "id": "2042",
+          "name": "Manufacture of perfumes and toilet products"
+        },
+        {
+          "id": "2050",
+          "name": "Manufacture of other chemical products"
+        },
+        {
+          "id": "2053",
+          "name": "Manufacture of essential oils"
+        },
+        {
+          "id": "2059",
+          "name": "Manufacture of other chemical products n.e.m."
+        },
+        {
+          "id": "2060",
+          "name": "Manufacture of artificial and synthetic fibres"
+        },
+        {
+          "id": "2100",
+          "name": "Manufacture of pharmaceutical products"
+        },
+        {
+          "id": "2110",
+          "name": "Manufacture of basic pharmaceutical products"
+        },
+        {
+          "id": "2120",
+          "name": "Manufacture of pharmaceutical products"
+        },
+        {
+          "id": "2500",
+          "name": "Manufacture of fabricated metal products, except machines and equipment"
+        },
+        {
+          "id": "2510",
+          "name": "Manufacture of metal products for construction"
+        },
+        {
+          "id": "2511",
+          "name": "Manufacture of metalic structures and parts of structures"
+        },
+        {
+          "id": "2512",
+          "name": "Manufacture of metalic doors and windows"
+        },
+        {
+          "id": "2520",
+          "name": "Manufacturing of tanks, reservoirs and containers of metal"
+        },
+        {
+          "id": "2521",
+          "name": "Manufacture of radiator and central heating boiler"
+        },
+        {
+          "id": "2529",
+          "name": "Manufacturing of others tanks, reservoirs and containers of metal"
+        },
+        {
+          "id": "2560",
+          "name": "Treatment and coating of metals; machining"
+        },
+        {
+          "id": "2561",
+          "name": "Treatment and coating of metals"
+        },
+        {
+          "id": "2562",
+          "name": "Machining"
+        },
+        {
+          "id": "2570",
+          "name": "Manufacture of cutlery, tools and generals hardware"
+        },
+        {
+          "id": "2590",
+          "name": "Manufacture of other fabricated metal products"
+        },
+        {
+          "id": "2599",
+          "name": "Manufacture of other metallic products n.e.m."
+        },
+        {
+          "id": "2800",
+          "name": "Manufacture of machinery and equipment n.e.m."
+        },
+        {
+          "id": "2810",
+          "name": "Manufacture of general purpose machinery"
+        },
+        {
+          "id": "2820",
+          "name": "Manufacture of other general purpose machinery"
+        },
+        {
+          "id": "2822",
+          "name": "Manufacture of lifting and handling apparatus"
+        },
+        {
+          "id": "2825",
+          "name": "Manufacture of non-domestic cooling and ventilation equipment"
+        },
+        {
+          "id": "2829",
+          "name": "Manufacture of other general purpose machinery n.e.m."
+        },
+        {
+          "id": "2830",
+          "name": "Manufacture of agricultural and forestry machinery"
+        },
+        {
+          "id": "2890",
+          "name": "Manufacture of other special purpose machinery"
+        },
+        {
+          "id": "2893",
+          "name": "Manufacture of machinery for food, beverage and tobacco processing"
+        },
+        {
+          "id": "2894",
+          "name": "Manufacture of machines for textile industry"
+        },
+        {
+          "id": "2600",
+          "name": "Manufacture of computers, electronical and optical products"
+        },
+        {
+          "id": "2630",
+          "name": "Manufacture of communication equipment"
+        },
+        {
+          "id": "2700",
+          "name": "Manufacture of electrical apparatus"
+        },
+        {
+          "id": "2710",
+          "name": "Manufacture of electric motors, generators and transformers, electricity distribution and control apparatus"
+        },
+        {
+          "id": "2711",
+          "name": "Manufacture of electric motors, generators and transformers"
+        },
+        {
+          "id": "2730",
+          "name": "Manufacture of wire, cable and electronical apparatus"
+        },
+        {
+          "id": "2732",
+          "name": "Manufacture of other electronical cable"
+        },
+        {
+          "id": "2733",
+          "name": "Manufacture of electrical installation material"
+        },
+        {
+          "id": "2740",
+          "name": "Manufacture of electric lamps and lighting appliances"
+        },
+        {
+          "id": "2750",
+          "name": "Manufacture of domestic appliances"
+        },
+        {
+          "id": "2752",
+          "name": "Manufacture of non-electrical domestic appliances"
+        },
+        {
+          "id": "2790",
+          "name": "Manufacture of other electronical apparatus"
+        },
+        {
+          "id": "2900",
+          "name": "Manufacture of motor vehicles, trailers and semi-trailers"
+        },
+        {
+          "id": "2910",
+          "name": "Manufacture of motor vehicles"
+        },
+        {
+          "id": "2920",
+          "name": "Manufacture of vehicle's body, manufacture of trailer and semitrailer"
+        },
+        {
+          "id": "2930",
+          "name": "Manufacture of equipments for vehicles"
+        },
+        {
+          "id": "2932",
+          "name": "Manufacture of other equipments for vehicles"
+        },
+        {
+          "id": "1000",
+          "name": "Manufacture of food products"
+        },
+        {
+          "id": "1010",
+          "name": "Processing and preserving of meat, preparing of meat products"
+        },
+        {
+          "id": "1011",
+          "name": "Processing and preserving of meat, except poultry"
+        },
+        {
+          "id": "1012",
+          "name": "Processing and preserving of poultry"
+        },
+        {
+          "id": "1013",
+          "name": "Preparing of meat or poultry products"
+        },
+        {
+          "id": "1020",
+          "name": "Processing and preserving of fish, shellfish and mollusc"
+        },
+        {
+          "id": "1030",
+          "name": "Processing and preserving of fruit and vegetables"
+        },
+        {
+          "id": "1031",
+          "name": "Processing and preserving of potatoes"
+        },
+        {
+          "id": "1039",
+          "name": "Other processing and preserving of fruit and vegetables"
+        },
+        {
+          "id": "1040",
+          "name": "Manufacture of vegetable and animal oils and fats"
+        },
+        {
+          "id": "1050",
+          "name": "Manufacture of dairy products"
+        },
+        {
+          "id": "1051",
+          "name": "Operation of dairies and cheese making"
+        },
+        {
+          "id": "1052",
+          "name": "Manufacture of ice cream"
+        },
+        {
+          "id": "1060",
+          "name": "Manufacture of grain mill products, starches and starch products"
+        },
+        {
+          "id": "1061",
+          "name": "Manufacture of grain mill products"
+        },
+        {
+          "id": "1062",
+          "name": "Manufacture of starches and starch products"
+        },
+        {
+          "id": "1070",
+          "name": "Manufacture of bakery products and pasta"
+        },
+        {
+          "id": "1071",
+          "name": "Manufacture of bread, fresh pastry goods and cakes"
+        },
+        {
+          "id": "1072",
+          "name": "Manufacture of biscuits and rusks and  other preserved pastry goods and cakes"
+        },
+        {
+          "id": "1080",
+          "name": "Manufacture of other foodstuffs"
+        },
+        {
+          "id": "1082",
+          "name": "Manufacture of cocoa, chocolate and sugar products"
+        },
+        {
+          "id": "1083",
+          "name": "Processing of tea and coffee"
+        },
+        {
+          "id": "1084",
+          "name": "Manufacture of condiments and seasonings"
+        },
+        {
+          "id": "1085",
+          "name": "Manufacture of ready-cooked dish"
+        },
+        {
+          "id": "1089",
+          "name": "Manufacture of other foodstuffs  n.e.m."
+        },
+        {
+          "id": "1090",
+          "name": "Manufacture of prepared pet foods"
+        },
+        {
+          "id": "1091",
+          "name": "Manufacture of prepared animal feeds"
+        },
+        {
+          "id": "1100",
+          "name": "Manufacture of beverages"
+        },
+        {
+          "id": "1101",
+          "name": "Manufacture of distilled alcoholic beverages"
+        },
+        {
+          "id": "1105",
+          "name": "Manufacture of beer"
+        },
+        {
+          "id": "1107",
+          "name": "Production of mineral water and soft drinks"
+        },
+        {
+          "id": "1200",
+          "name": "Manufacture of tobacco"
+        },
+        {
+          "id": "1300",
+          "name": "Manufacture of textiles"
+        },
+        {
+          "id": "1310",
+          "name": "Preparation and spinning of textile fibers"
+        },
+        {
+          "id": "1320",
+          "name": "Textile weaving"
+        },
+        {
+          "id": "1330",
+          "name": "Finishing of textiles"
+        },
+        {
+          "id": "1390",
+          "name": "Manufacture of other textile products"
+        },
+        {
+          "id": "1392",
+          "name": "Manufacture of made-up textile articles, except apparel"
+        },
+        {
+          "id": "1393",
+          "name": "Manufacture of carpets and rugs"
+        },
+        {
+          "id": "1396",
+          "name": "Manufacture of other mechanical and industrial textiles"
+        },
+        {
+          "id": "1410",
+          "name": "Manufacture of non-fur wearing apparel"
+        },
+        {
+          "id": "1412",
+          "name": "Manufacture of workwear"
+        },
+        {
+          "id": "1413",
+          "name": "Manufacture of other outerwear"
+        },
+        {
+          "id": "1414",
+          "name": "Manufacture of underwear"
+        },
+        {
+          "id": "1419",
+          "name": "Manufacture of other wearing apparel and accessories"
+        },
+        {
+          "id": "1430",
+          "name": "Manufacture of knitted and crocheted clothes"
+        },
+        {
+          "id": "1439",
+          "name": "Manufacture of other knitted and crocheted clothes"
+        },
+        {
+          "id": "1500",
+          "name": "Manufatcure of leather and leather shoes"
+        },
+        {
+          "id": "1510",
+          "name": "Dressing and tanning of leather, preparing and dyeing of fur, manufacture of luggage, handbags, saddery, harness and foo"
+        },
+        {
+          "id": "1512",
+          "name": "Manufacture of luggage, handbags and the like, saddlery and harness"
+        },
+        {
+          "id": "1600",
+          "name": "Manufacture of wood and wood products, cork  (except furniture), manufacture of articles of straw and plaiting materials"
+        },
+        {
+          "id": "1610",
+          "name": "Sawmilling and planning of wood"
+        },
+        {
+          "id": "1620",
+          "name": "Manufacture of products of wood, articles of cork, straw and plaiting materials"
+        },
+        {
+          "id": "1621",
+          "name": "Manufacture of veneer sheets, wood panels and boards"
+        },
+        {
+          "id": "1623",
+          "name": "Manufacture of other builder's carpentry and joinery"
+        },
+        {
+          "id": "1624",
+          "name": "Manufacture of wooden containers"
+        },
+        {
+          "id": "1629",
+          "name": "Manufacture of other produtcs of wood, cork, straw and plaiting materials"
+        },
+        {
+          "id": "1700",
+          "name": "Manufacture of paper and paper products"
+        },
+        {
+          "id": "1720",
+          "name": "Manufacture of articles of paper and paperboard"
+        },
+        {
+          "id": "1721",
+          "name": "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard"
+        },
+        {
+          "id": "1722",
+          "name": "Manufacture of household and sanitary goods and of toilet requisites"
+        },
+        {
+          "id": "1729",
+          "name": "Manufacture of other paper or paperboard products"
+        },
+        {
+          "id": "2200",
+          "name": "Manufacture of rubber and plastic products"
+        },
+        {
+          "id": "2210",
+          "name": "Manufacture of rubber products"
+        },
+        {
+          "id": "2219",
+          "name": "Manufacture of other rubber products"
+        },
+        {
+          "id": "2220",
+          "name": "Manufacture of plastic products"
+        },
+        {
+          "id": "2221",
+          "name": "Manufacture of plastic plates, sheets, tubes and profiles"
+        },
+        {
+          "id": "2222",
+          "name": "Manufacture of plastic packing goods"
+        },
+        {
+          "id": "2223",
+          "name": "Manufacture of builders'ware of plastic"
+        },
+        {
+          "id": "2229",
+          "name": "Manufacture of other plastic products"
+        },
+        {
+          "id": "3100",
+          "name": "Manufacture of furniture"
+        },
+        {
+          "id": "3101",
+          "name": "Manufacture of office and shop furniture"
+        },
+        {
+          "id": "3102",
+          "name": "Manufacture of kitchen furniture"
+        },
+        {
+          "id": "3103",
+          "name": "Manufacture of mattresses"
+        },
+        {
+          "id": "3109",
+          "name": "Manufacture of other furniture"
+        },
+        {
+          "id": "3200",
+          "name": "Other manufacturing"
+        },
+        {
+          "id": "3250",
+          "name": "Manufacture of medical and dental instrument"
+        },
+        {
+          "id": "3290",
+          "name": "Manufacturing n.e.m."
+        },
+        {
+          "id": "3299",
+          "name": "Miscellaneous manufacturing n.e.m."
+        },
+        {
+          "id": "3310",
+          "name": "Repair of metal products, machinery and appliances"
+        },
+        {
+          "id": "3312",
+          "name": "Repair of machinery"
+        },
+        {
+          "id": "3320",
+          "name": "Installation of industrial machinery and equipment"
+        },
+        {
+          "id": "B_C_D_E",
+          "name": "Industry excluding construction (SECTION B - C - D - E)"
+        },
+        {
+          "id": "B_TO_E_X_FOOD",
+          "name": "except food, beverages and tobacco"
+        },
+        {
+          "id": "B_TO_E36",
+          "name": "Industry excl. construction, except sewerage, waste management and remediation activities"
+        },
+        {
+          "id": "B_TO_E36_X_FOOD",
+          "name": "except food, beverages and tobacco"
+        },
+        {
+          "id": "B_C_D",
+          "name": "Mining and quarrying, manufacturing and electricity, gas, steam and air conditioning supply (SECTION B - C - D)"
+        },
+        {
+          "id": "B_C_D_X_FOOD",
+          "name": "except food, beverages and tobacco"
+        },
+        {
+          "id": "B_C",
+          "name": "Mining and quarrying and manufacturing  (SECTION B - C)"
+        },
+        {
+          "id": "B_C_X_FOOD",
+          "name": "except food, beverages and tobacco"
+        },
+        {
+          "id": "B_C_X_MIG_NRG",
+          "name": "except MIG energy"
+        },
+        {
+          "id": "B_C_X_FD_MIG_NRG",
+          "name": "except MIG energy and food, beverages and tobacco"
+        },
+        {
+          "id": "B",
+          "name": "SECTION B - MINING AND QUARRYING"
+        },
+        {
+          "id": "B05",
+          "name": "Mining of coal and lignite"
+        },
+        {
+          "id": "B08",
+          "name": "Other mining and quarrying"
+        }
+      ],
+      "total_codes": 252,
+      "truncated": true
+    },
+    {
+      "id": "BE_AREA",
+      "position": 5,
+      "name": "BE_AREA",
+      "codes": [
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "VL",
+          "name": "Flemish Region"
+        },
+        {
+          "id": "WL",
+          "name": "Walloon Region"
+        },
+        {
+          "id": "BX",
+          "name": "Brussels-Capital Region"
+        },
+        {
+          "id": "BR",
+          "name": "Brussels"
+        },
+        {
+          "id": "000",
+          "name": "Belgium"
+        },
+        {
+          "id": "100",
+          "name": "Brussels-Capital Region"
+        },
+        {
+          "id": "200",
+          "name": "Flemish Region"
+        },
+        {
+          "id": "210",
+          "name": "Antwerp (province)"
+        },
+        {
+          "id": "211",
+          "name": "Antwerp (district)"
+        },
+        {
+          "id": "212",
+          "name": "Mechelen"
+        },
+        {
+          "id": "213",
+          "name": "Turnhout"
+        },
+        {
+          "id": "220",
+          "name": "Limburg"
+        },
+        {
+          "id": "221",
+          "name": "Hasselt"
+        },
+        {
+          "id": "222",
+          "name": "Maaseik"
+        },
+        {
+          "id": "223",
+          "name": "Tongeren"
+        },
+        {
+          "id": "230",
+          "name": "East Flanders"
+        },
+        {
+          "id": "231",
+          "name": "Aalst"
+        },
+        {
+          "id": "232",
+          "name": "Dendermonde"
+        },
+        {
+          "id": "233",
+          "name": "Eeklo"
+        },
+        {
+          "id": "234",
+          "name": "Ghent"
+        },
+        {
+          "id": "235",
+          "name": "Oudenaarde"
+        },
+        {
+          "id": "236",
+          "name": "Sint-Niklaas"
+        },
+        {
+          "id": "240",
+          "name": "Flemish Brabant"
+        },
+        {
+          "id": "241",
+          "name": "Halle-Vilvoorde"
+        },
+        {
+          "id": "242",
+          "name": "Leuven"
+        },
+        {
+          "id": "250",
+          "name": "West Flanders"
+        },
+        {
+          "id": "251",
+          "name": "Bruges"
+        },
+        {
+          "id": "252",
+          "name": "Diksmuide"
+        },
+        {
+          "id": "253",
+          "name": "Ypres"
+        },
+        {
+          "id": "254",
+          "name": "Kortrijk"
+        },
+        {
+          "id": "255",
+          "name": "Ostend"
+        },
+        {
+          "id": "256",
+          "name": "Roeselare"
+        },
+        {
+          "id": "257",
+          "name": "Tielt"
+        },
+        {
+          "id": "258",
+          "name": "Veurne"
+        },
+        {
+          "id": "300",
+          "name": "Walloon Region"
+        },
+        {
+          "id": "310",
+          "name": "Walloon Brabant"
+        },
+        {
+          "id": "320",
+          "name": "Hainaut"
+        },
+        {
+          "id": "321",
+          "name": "Ath"
+        },
+        {
+          "id": "322",
+          "name": "Charleroi"
+        },
+        {
+          "id": "323",
+          "name": "Mons"
+        },
+        {
+          "id": "324",
+          "name": "Mouscron"
+        },
+        {
+          "id": "325",
+          "name": "Soignies"
+        },
+        {
+          "id": "326",
+          "name": "Thuin"
+        },
+        {
+          "id": "327",
+          "name": "Tournai"
+        },
+        {
+          "id": "328",
+          "name": "Tournai-Mouscron"
+        },
+        {
+          "id": "329",
+          "name": "La Louvière"
+        },
+        {
+          "id": "330",
+          "name": "Liège (province)"
+        },
+        {
+          "id": "331",
+          "name": "Huy"
+        },
+        {
+          "id": "332",
+          "name": "Liège (district)"
+        },
+        {
+          "id": "333",
+          "name": "Verviers"
+        },
+        {
+          "id": "335",
+          "name": "Verviers (F)"
+        },
+        {
+          "id": "337",
+          "name": "Verviers (G)"
+        },
+        {
+          "id": "334",
+          "name": "Waremme"
+        },
+        {
+          "id": "340",
+          "name": "Luxembourg"
+        },
+        {
+          "id": "341",
+          "name": "Arlon"
+        },
+        {
+          "id": "342",
+          "name": "Bastogne"
+        },
+        {
+          "id": "343",
+          "name": "Marche-en-Famenne"
+        },
+        {
+          "id": "344",
+          "name": "Neufchâteau"
+        },
+        {
+          "id": "345",
+          "name": "Virton"
+        },
+        {
+          "id": "350",
+          "name": "Namur (province)"
+        },
+        {
+          "id": "351",
+          "name": "Dinant"
+        },
+        {
+          "id": "352",
+          "name": "Namur (district)"
+        },
+        {
+          "id": "353",
+          "name": "Philippeville"
+        },
+        {
+          "id": "400",
+          "name": "Extraregional area"
+        },
+        {
+          "id": "336",
+          "name": "German-speaking Community"
+        },
+        {
+          "id": "354",
+          "name": "Nivelles"
+        }
+      ],
+      "total_codes": 68,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{INDEX_BASE}.{INDEX_TYPE}.{ADJUSTMENT}.{NBB_PROD_SECTOR}.{BE_AREA}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:03+00:00",
+  "schema_version": 1
+}

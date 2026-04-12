@@ -1,0 +1,194 @@
+{
+  "agency": "BE2",
+  "id": "DF_CGDHCM",
+  "version": "1.0",
+  "category": "public_finances",
+  "is_final": true,
+  "names": {
+    "en": "Breakdown of consolidated gross debt of general government",
+    "fr": "Ventilation de la dette brute consolidée des administrations publiques",
+    "nl": "Opsplitsing van de geconsolideerde brutoschuld van de overheid",
+    "de": "Breakdown of consolidated gross debt of general government"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "BREAKDOWN",
+      "position": 1,
+      "name": "BREAKDOWN",
+      "codes": [
+        {
+          "id": "F3C",
+          "name": "p.m. Zero-coupon debt (redemption value)"
+        },
+        {
+          "id": "CGD",
+          "name": "Consolidated gross debt"
+        },
+        {
+          "id": "W0",
+          "name": "Breakdown by holder"
+        },
+        {
+          "id": "W2",
+          "name": "Residents"
+        },
+        {
+          "id": "S121",
+          "name": "Central bank"
+        },
+        {
+          "id": "S122",
+          "name": "Other monetary financial institutions"
+        },
+        {
+          "id": "S12P",
+          "name": "Other financial institutions"
+        },
+        {
+          "id": "S1U",
+          "name": "Other residents"
+        },
+        {
+          "id": "W1",
+          "name": "Non-residents"
+        },
+        {
+          "id": "I7",
+          "name": "Euro area"
+        },
+        {
+          "id": "J7",
+          "name": "Non-euro area"
+        },
+        {
+          "id": "XC",
+          "name": "Breakdown by currency"
+        },
+        {
+          "id": "XDC",
+          "name": "National currency"
+        },
+        {
+          "id": "XPC",
+          "name": "Foreign currency of countries participating in the euro area"
+        },
+        {
+          "id": "XNC",
+          "name": "Foreign currency of countries not participating in the euro area"
+        },
+        {
+          "id": "GDT",
+          "name": "Breakdown by maturity"
+        },
+        {
+          "id": "GDS",
+          "name": "Short-term debt"
+        },
+        {
+          "id": "GDL",
+          "name": "Long-term debt"
+        },
+        {
+          "id": "GDAL",
+          "name": "of which debt at variable interest rate"
+        },
+        {
+          "id": "T",
+          "name": "Breakdown by residual maturity"
+        },
+        {
+          "id": "TS",
+          "name": "Up to 1 year"
+        },
+        {
+          "id": "TY1",
+          "name": "Over 1 year"
+        },
+        {
+          "id": "TY15",
+          "name": "Over 1 year and up to 5 years"
+        },
+        {
+          "id": "GDA_TY15",
+          "name": "of which debt at variable interest rate"
+        },
+        {
+          "id": "TY5",
+          "name": "Over 5 years"
+        },
+        {
+          "id": "GDA_TY5",
+          "name": "of which debt at variable interest rate"
+        },
+        {
+          "id": "GD_YR",
+          "name": "p.m. Average maturity of debt in years"
+        }
+      ],
+      "total_codes": 27,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{BREAKDOWN}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:37+00:00",
+  "schema_version": 1
+}

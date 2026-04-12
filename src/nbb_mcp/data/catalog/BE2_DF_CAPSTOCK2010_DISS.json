@@ -1,0 +1,678 @@
+{
+  "agency": "BE2",
+  "id": "DF_CAPSTOCK2010_DISS",
+  "version": "1.0",
+  "category": "national_accounts",
+  "is_final": true,
+  "names": {
+    "en": "Capital Stock",
+    "fr": "Stock de capital",
+    "nl": "Kapitaalgoederenvoorraad",
+    "de": "Capital Stock"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "INDICATOR",
+      "position": 1,
+      "name": "INDICATOR",
+      "codes": [
+        {
+          "id": "GCS",
+          "name": "Gross capital stock"
+        },
+        {
+          "id": "GFA",
+          "name": "Gross stock of non financial assets"
+        },
+        {
+          "id": "INV",
+          "name": "Inventories (AN.12)"
+        },
+        {
+          "id": "NCS",
+          "name": "Net capital stock"
+        },
+        {
+          "id": "NFA",
+          "name": "Net stock of non financial assets"
+        },
+        {
+          "id": "SLS",
+          "name": "Stocks of Land by sector"
+        },
+        {
+          "id": "COMEMP",
+          "name": "Compensation of employees (in millions of euros)"
+        },
+        {
+          "id": "HRWORK",
+          "name": "Number of hours worked (in thousands of hours)"
+        },
+        {
+          "id": "HRSELF",
+          "name": "Number of hours worked by self-employed (in thousands of hours)"
+        },
+        {
+          "id": "HRSEMP",
+          "name": "Number of hours worked by employees (in thousands of hours)"
+        },
+        {
+          "id": "TOTEMP",
+          "name": "Employment (thousands of persons)"
+        },
+        {
+          "id": "EMPLOY",
+          "name": "Number of employees (thousands of persons)"
+        },
+        {
+          "id": "SELFEM",
+          "name": "Number of self-employed (thousands of persons)"
+        }
+      ],
+      "total_codes": 13,
+      "truncated": false
+    },
+    {
+      "id": "BRANCH",
+      "position": 2,
+      "name": "BRANCH",
+      "codes": [
+        {
+          "id": "A21",
+          "name": "A21"
+        },
+        {
+          "id": "A21_A",
+          "name": "Agriculture, forestry and fishing (A)"
+        },
+        {
+          "id": "A21_B",
+          "name": "Mining and quarrying (B)"
+        },
+        {
+          "id": "A21_C",
+          "name": "Manufacturing (C)"
+        },
+        {
+          "id": "A21_D",
+          "name": "Electricity, gas, steam and air conditioning supply (D)"
+        },
+        {
+          "id": "A21_E",
+          "name": "Water supply; sewerage, waste management and remediation activities (E)"
+        },
+        {
+          "id": "A21_F",
+          "name": "Construction (F)"
+        },
+        {
+          "id": "A21_G",
+          "name": "Wholesale and retail trade; repair of motor vehicles and motorcycles (G)"
+        },
+        {
+          "id": "A21_H",
+          "name": "Transportation and storage (H)"
+        },
+        {
+          "id": "A21_I",
+          "name": "Accommodation and food service activities (I)"
+        },
+        {
+          "id": "A21_J",
+          "name": "Information and communication (J)"
+        },
+        {
+          "id": "A21_K",
+          "name": "Financial and insurance activities (K)"
+        },
+        {
+          "id": "A21_L",
+          "name": "Real estate activities (L)"
+        },
+        {
+          "id": "A21_M",
+          "name": "Professional, scientific and technical activities (M)"
+        },
+        {
+          "id": "A21_N",
+          "name": "Administrative and support service activities (N)"
+        },
+        {
+          "id": "A21_O",
+          "name": "Public administration and defence; compulsory social security (O)"
+        },
+        {
+          "id": "A21_P",
+          "name": "Education (P)"
+        },
+        {
+          "id": "A21_Q",
+          "name": "Human health and social work activities (Q)"
+        },
+        {
+          "id": "A21_R",
+          "name": "Arts, entertainment and recreation (R)"
+        },
+        {
+          "id": "A21_S",
+          "name": "Other service activities (S)"
+        },
+        {
+          "id": "A21_T",
+          "name": "Activities of households as employers; undifferentiated goods -and services-producing activities of households for own use (T)"
+        },
+        {
+          "id": "A38",
+          "name": "A38"
+        },
+        {
+          "id": "A38_AA",
+          "name": "AA Agriculture, forestry and fishing"
+        },
+        {
+          "id": "A38_BB",
+          "name": "BB Mining and quarrying"
+        },
+        {
+          "id": "A38_CA",
+          "name": "CA Manufacture of food products, beverages and tobacco products"
+        },
+        {
+          "id": "A38_CB",
+          "name": "CB Manufacture of textiles, wearing apparel and leather products"
+        },
+        {
+          "id": "A38_CC",
+          "name": "CC Manufacture of wood and paper products, and printing"
+        },
+        {
+          "id": "A38_CD",
+          "name": "CD Manufacture of coke and refined petroleum products"
+        },
+        {
+          "id": "A38_CE",
+          "name": "CE Manufacture of chemicals and chemical products"
+        },
+        {
+          "id": "A38_CF",
+          "name": "CF Manufacture of basic pharmaceutical products and pharmaceutical preparations"
+        },
+        {
+          "id": "A38_CG",
+          "name": "CG Manufacture of rubber and plastics products, and other non-metallic mineral products"
+        },
+        {
+          "id": "A38_CH",
+          "name": "CH Manufacture of basic metals and fabricated metal products, except machinery and equipment"
+        },
+        {
+          "id": "A38_CI",
+          "name": "CI Manufacture of computer, electronic and optical products"
+        },
+        {
+          "id": "A38_CJ",
+          "name": "CJ Manufacture of electrical equipment"
+        },
+        {
+          "id": "A38_CK",
+          "name": "CK Manufacture of machinery and equipment n.e.c."
+        },
+        {
+          "id": "A38_CL",
+          "name": "CL Manufacture of transport equipment"
+        },
+        {
+          "id": "A38_CM",
+          "name": "CM Manufacture of furniture, other manufacturing, repair and installation of machinery and equipment"
+        },
+        {
+          "id": "A38_DD",
+          "name": "DD Electricity, gas, steam and air-conditioning supply"
+        },
+        {
+          "id": "A38_EE",
+          "name": "EE Water supply, sewerage, waste management and remediation activities"
+        },
+        {
+          "id": "A38_FF",
+          "name": "FF Construction"
+        },
+        {
+          "id": "A38_GG",
+          "name": "GG Wholesale and retail trade, repair of motor vehicles and motorcycles"
+        },
+        {
+          "id": "A38_HH",
+          "name": "HH Transportation and storage"
+        },
+        {
+          "id": "A38_II",
+          "name": "II Accommodation and food service activities"
+        },
+        {
+          "id": "A38_JA",
+          "name": "JA Publishing, audiovisual and broadcasting activities"
+        },
+        {
+          "id": "A38_JB",
+          "name": "JB Telecommunications"
+        },
+        {
+          "id": "A38_JC",
+          "name": "JC Computer programming, consultancy and related activities, information service activities"
+        },
+        {
+          "id": "A38_KK",
+          "name": "KK Financial and insurance activities"
+        },
+        {
+          "id": "A38_LL",
+          "name": "LL Real estate activities"
+        },
+        {
+          "id": "A38_MA",
+          "name": "MA Legal and accounting activities, activities of head offices, management consultancy activities, architecture and engineering activities, technical testing and analysis"
+        },
+        {
+          "id": "A38_MB",
+          "name": "MB Scientific research and development"
+        },
+        {
+          "id": "A38_MC",
+          "name": "MC Advertising and market research, other professional, scientific and technical activities, veterinary activities"
+        },
+        {
+          "id": "A38_NN",
+          "name": "NN Administrative and support service activities"
+        },
+        {
+          "id": "A38_OO",
+          "name": "OO Public administration and defence, compulsory social security"
+        },
+        {
+          "id": "A38_PP",
+          "name": "PP Education"
+        },
+        {
+          "id": "A38_QA",
+          "name": "QA Human health activities"
+        },
+        {
+          "id": "A38_QB",
+          "name": "QB Social work activities"
+        },
+        {
+          "id": "A38_RR",
+          "name": "RR Arts, entertainment and recreation"
+        },
+        {
+          "id": "A38_SS",
+          "name": "SS Other service activities"
+        },
+        {
+          "id": "A38_TT",
+          "name": "TT Activities of households as employers of domestic personnel and undifferentiated goods and services production of households for own use"
+        },
+        {
+          "id": "TOT",
+          "name": "Total"
+        }
+      ],
+      "total_codes": 60,
+      "truncated": false
+    },
+    {
+      "id": "PRODUCT",
+      "position": 3,
+      "name": "PRODUCT",
+      "codes": [
+        {
+          "id": "AI",
+          "name": "Fixed assets and inventories (AN.11000+ AN.12000)"
+        },
+        {
+          "id": "TOT",
+          "name": "Fixed assets (AN.11000)"
+        },
+        {
+          "id": "AN1",
+          "name": "Dwellings (AN.11100)"
+        },
+        {
+          "id": "AN2",
+          "name": "Non-residential buildings & other structures (AN.11210 + AN.11220)"
+        },
+        {
+          "id": "AN2A",
+          "name": "Buildings other than dwellings (AN.11210)"
+        },
+        {
+          "id": "AN2B",
+          "name": "Other structures (AN.11220)"
+        },
+        {
+          "id": "AN3A",
+          "name": "Machinery and equipment and weapons systems (AN.11300+AN.11400)"
+        },
+        {
+          "id": "AN3",
+          "name": "Machinery and equipment & weapon systems (AN.11310 + AN.11321 + AN.11322 + AN.11390 + AN.11400)"
+        },
+        {
+          "id": "AN4",
+          "name": "Transport equipment (AN.11310)"
+        },
+        {
+          "id": "AN5",
+          "name": "Computer & hardware (AN.11321)"
+        },
+        {
+          "id": "AN6",
+          "name": "Telecoms (AN.11322)"
+        },
+        {
+          "id": "AN7",
+          "name": "Other machinery and equipment & weapon systems (AN.11390 + AN.11400)"
+        },
+        {
+          "id": "AN8",
+          "name": "Cultivated biological resources (AN.11500)"
+        },
+        {
+          "id": "AN9",
+          "name": "Intellectual property products (AN.11700)"
+        },
+        {
+          "id": "AN10",
+          "name": "Research and development (AN.11710)"
+        },
+        {
+          "id": "AN10A",
+          "name": "Mineral exploration and evaluation (AN.11720)"
+        },
+        {
+          "id": "AN11",
+          "name": "Computer software and databases (AN.11730)"
+        },
+        {
+          "id": "AN12",
+          "name": "Other intellectual property products (AN.11740 + AN.11790)"
+        },
+        {
+          "id": "AN13",
+          "name": "Entertainment, literary or artistic originals (AN.11740)"
+        },
+        {
+          "id": "AN14",
+          "name": "Other intellectual property products (AN.11790)"
+        },
+        {
+          "id": "AN15",
+          "name": "Inventories (AN.12000)"
+        },
+        {
+          "id": "AN21000",
+          "name": "Land (AN.21000)"
+        },
+        {
+          "id": "AN21110",
+          "name": "Land underlying buildings and structures (AN.21110)"
+        },
+        {
+          "id": "AN21111",
+          "name": "Land underlying dwellings  (AN.21111)"
+        },
+        {
+          "id": "AN21112",
+          "name": "Land underlying other buildings and structures   (AN.21112)"
+        },
+        {
+          "id": "AN21120",
+          "name": "Land under cultivation (AN.21120)"
+        },
+        {
+          "id": "AN21121",
+          "name": "Agricultural land (AN.21121)"
+        },
+        {
+          "id": "AN21122",
+          "name": "Forestry land  (AN.21122)"
+        },
+        {
+          "id": "AN21123",
+          "name": "Surface water used for aquaculture (AN.21123)"
+        },
+        {
+          "id": "AN21130",
+          "name": "Recreational land and associated surface water (AN.21130)"
+        },
+        {
+          "id": "AN21190",
+          "name": "Other land and associated surface water (AN.21190)"
+        },
+        {
+          "id": "AN21191",
+          "name": "Building land (AN.21191)"
+        },
+        {
+          "id": "AN21192",
+          "name": "Other land (AN.21192)"
+        }
+      ],
+      "total_codes": 33,
+      "truncated": false
+    },
+    {
+      "id": "PRICES",
+      "position": 4,
+      "name": "PRICES",
+      "codes": [
+        {
+          "id": "CQ",
+          "name": "Contributions to the volume change - Q to Q"
+        },
+        {
+          "id": "CY",
+          "name": "Contributions to the volume change - Y to Y"
+        },
+        {
+          "id": "D",
+          "name": "Deflator"
+        },
+        {
+          "id": "L",
+          "name": "In volume: chain linked, in millions of euro"
+        },
+        {
+          "id": "LQ",
+          "name": "Chain linked - Q to Q percentage change (reference year 2020)"
+        },
+        {
+          "id": "LY",
+          "name": "Chain linked - Y to Y percentage change (reference year 2020)"
+        },
+        {
+          "id": "V",
+          "name": "Current prices in millions of euro"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "SECTOR",
+      "position": 5,
+      "name": "SECTOR",
+      "codes": [
+        {
+          "id": "C",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "F",
+          "name": "Financial and non-financial corporations"
+        },
+        {
+          "id": "G",
+          "name": "General government"
+        },
+        {
+          "id": "H",
+          "name": "Households"
+        },
+        {
+          "id": "T",
+          "name": "Total economy"
+        },
+        {
+          "id": "S1",
+          "name": "Total economy (S.1)"
+        },
+        {
+          "id": "S11",
+          "name": "Non financial corporations (S.11)"
+        },
+        {
+          "id": "S12",
+          "name": "Financial corporations (S.12)"
+        },
+        {
+          "id": "S13",
+          "name": "General government (S.13)"
+        },
+        {
+          "id": "S1300",
+          "name": "General government"
+        },
+        {
+          "id": "S1311",
+          "name": "Federal government"
+        },
+        {
+          "id": "S1312",
+          "name": "Communities and regions"
+        },
+        {
+          "id": "S1312_BX",
+          "name": "Brussels Capital region"
+        },
+        {
+          "id": "S1312_CCF",
+          "name": "Commission of the French speaking community"
+        },
+        {
+          "id": "S1312_DE",
+          "name": "German community"
+        },
+        {
+          "id": "S1312_FR",
+          "name": "French community"
+        },
+        {
+          "id": "S1312_JCC",
+          "name": "Joint Community Commission"
+        },
+        {
+          "id": "S1312_NA",
+          "name": "Not allocated"
+        },
+        {
+          "id": "S1312_VGC",
+          "name": "Commission of the Flemish community"
+        },
+        {
+          "id": "S1312_VL",
+          "name": "Flemish community"
+        },
+        {
+          "id": "S1312_WL",
+          "name": "Walloon region"
+        },
+        {
+          "id": "S1313",
+          "name": "Local government"
+        },
+        {
+          "id": "S1314",
+          "name": "Social security funds"
+        },
+        {
+          "id": "S14",
+          "name": "Households (S.14)"
+        },
+        {
+          "id": "S14_15",
+          "name": "Households and Non-profit institutions serving households (S.14 + S.15)"
+        },
+        {
+          "id": "S15",
+          "name": "Non profit institutions serving households (S.15)"
+        }
+      ],
+      "total_codes": 26,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{INDICATOR}.{BRANCH}.{PRODUCT}.{PRICES}.{SECTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:48+00:00",
+  "schema_version": 1
+}

@@ -1,0 +1,612 @@
+{
+  "agency": "BE2",
+  "id": "DF_MCUCIIC",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Management companies of UCI and investment firms",
+    "fr": "Sociétés de gestion d'OPC et entreprises d'investissement",
+    "nl": "Beheersvennootschappen van ICB's en beleggingsondernemingen",
+    "de": "Management companies of UCI and investment firms"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ACCOUNT",
+      "position": 1,
+      "name": "ACCOUNT",
+      "codes": [
+        {
+          "id": "1",
+          "name": "Balance sheet"
+        },
+        {
+          "id": "2",
+          "name": "Profit and loss account"
+        },
+        {
+          "id": "3",
+          "name": "Movement in assets managed"
+        },
+        {
+          "id": "4",
+          "name": "Number"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "INSTTYPE",
+      "position": 2,
+      "name": "INSTTYPE",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Management companies of UCI"
+        },
+        {
+          "id": "I",
+          "name": "Investment firms"
+        },
+        {
+          "id": "B",
+          "name": "Stockbroking firms"
+        },
+        {
+          "id": "C",
+          "name": "Portfolio management and investment advice companies"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 3,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "1",
+          "name": "Balance sheet"
+        },
+        {
+          "id": "A",
+          "name": "Total assets"
+        },
+        {
+          "id": "A01",
+          "name": "Cash and cash balances with central banks and postal cheque offices"
+        },
+        {
+          "id": "A02",
+          "name": "Public securities eligible for refinancing with the central bank"
+        },
+        {
+          "id": "A03",
+          "name": "Claims on credit institutions"
+        },
+        {
+          "id": "A031",
+          "name": "Repayable on demand"
+        },
+        {
+          "id": "A032",
+          "name": "Other claims (at fixed term or at notice)"
+        },
+        {
+          "id": "A04",
+          "name": "Claims on clients"
+        },
+        {
+          "id": "A05",
+          "name": "Bonds and other fixed-income securities"
+        },
+        {
+          "id": "A051",
+          "name": "Issued by public bodies"
+        },
+        {
+          "id": "A052",
+          "name": "Issued by other issuers"
+        },
+        {
+          "id": "A06",
+          "name": "Shares, interests in companies and other variable-income securities"
+        },
+        {
+          "id": "A07",
+          "name": "Financial fixed assets"
+        },
+        {
+          "id": "A071",
+          "name": "Participations in affiliated enterprises"
+        },
+        {
+          "id": "A072",
+          "name": "Participations in other enterprises linked by a participating interest"
+        },
+        {
+          "id": "A073",
+          "name": "Other shares and equity constituting financial fixed assets"
+        },
+        {
+          "id": "A074",
+          "name": "Subordinated claims on affiliated enterprises and other enterprises linked by a participating interest"
+        },
+        {
+          "id": "A08",
+          "name": "Formation expenses and intangible fixed assets"
+        },
+        {
+          "id": "A09",
+          "name": "Tangible fixed assets"
+        },
+        {
+          "id": "A10",
+          "name": "Own shares"
+        },
+        {
+          "id": "A11",
+          "name": "Other assets"
+        },
+        {
+          "id": "A12",
+          "name": "Differed charges and accrued income"
+        },
+        {
+          "id": "L",
+          "name": "Total liabilities"
+        },
+        {
+          "id": "LT",
+          "name": "Third-party funds"
+        },
+        {
+          "id": "LT01",
+          "name": "Amounts payable to credit institutions"
+        },
+        {
+          "id": "LT011",
+          "name": "Repayable on demand"
+        },
+        {
+          "id": "LT012",
+          "name": "Debts resulting from mobilisation by rediscounting of commercial bills"
+        },
+        {
+          "id": "LT013",
+          "name": "Other debts at fixed term or at notice"
+        },
+        {
+          "id": "LT02",
+          "name": "Amounts payable to customers"
+        },
+        {
+          "id": "LT021",
+          "name": "Savings deposits"
+        },
+        {
+          "id": "LT022",
+          "name": "Other debts"
+        },
+        {
+          "id": "LT0221",
+          "name": "Repayable on demand"
+        },
+        {
+          "id": "LT0222",
+          "name": "At fixed term or at notice"
+        },
+        {
+          "id": "LT0223",
+          "name": "Resulting from mobilisation by rediscounting of commercial bills"
+        },
+        {
+          "id": "LT03",
+          "name": "Debts represented by a security"
+        },
+        {
+          "id": "LT031",
+          "name": "Notes and bonds in circulation"
+        },
+        {
+          "id": "LT032",
+          "name": "Other items"
+        },
+        {
+          "id": "LT04",
+          "name": "Other liabilities"
+        },
+        {
+          "id": "LT05",
+          "name": "Differed charges and accrued income"
+        },
+        {
+          "id": "LT06",
+          "name": "Provisions and deferred tax liabilities"
+        },
+        {
+          "id": "LT061",
+          "name": "Provisions for risks and charges"
+        },
+        {
+          "id": "LT0611",
+          "name": "Pensions and similar obligations"
+        },
+        {
+          "id": "LT0612",
+          "name": "Tax liabilities"
+        },
+        {
+          "id": "LT0613",
+          "name": "Other risks and charges"
+        },
+        {
+          "id": "LT062",
+          "name": "Deferred tax liabilities"
+        },
+        {
+          "id": "LT07",
+          "name": "Fund for general banking risks"
+        },
+        {
+          "id": "LT08",
+          "name": "Subordinated debts"
+        },
+        {
+          "id": "LE",
+          "name": "Equity"
+        },
+        {
+          "id": "LE01",
+          "name": "Capital"
+        },
+        {
+          "id": "LE011",
+          "name": "Paid-in capital"
+        },
+        {
+          "id": "LE012",
+          "name": "Uncalled capital"
+        },
+        {
+          "id": "LE02",
+          "name": "Share premium account"
+        },
+        {
+          "id": "LE03",
+          "name": "Revaluation gains"
+        },
+        {
+          "id": "LE04",
+          "name": "Reserves"
+        },
+        {
+          "id": "LE041",
+          "name": "Legal reserves"
+        },
+        {
+          "id": "LE042",
+          "name": "Unavailable reserves"
+        },
+        {
+          "id": "LE0421",
+          "name": "For own shares"
+        },
+        {
+          "id": "LE0422",
+          "name": "Other items"
+        },
+        {
+          "id": "LE043",
+          "name": "Tax-exempt reserves"
+        },
+        {
+          "id": "LE044",
+          "name": "Available reserves"
+        },
+        {
+          "id": "LE05",
+          "name": "Profit carried forward (+) or loss carried forward (-)"
+        },
+        {
+          "id": "LE06",
+          "name": "Income (+) or loss (-) at the end of the period"
+        },
+        {
+          "id": "2",
+          "name": "Profit and loss account"
+        },
+        {
+          "id": "R01",
+          "name": "Interest received and similar proceeds"
+        },
+        {
+          "id": "R011",
+          "name": "Of which: from fixed-income securities"
+        },
+        {
+          "id": "R02",
+          "name": "Interest payable and similar charges"
+        },
+        {
+          "id": "R03",
+          "name": "Income from variable-income securities"
+        },
+        {
+          "id": "R031",
+          "name": "From shares, interests in companies and other variable-income securities"
+        },
+        {
+          "id": "R032",
+          "name": "From participations in affiliated enterprises"
+        },
+        {
+          "id": "R033",
+          "name": "From participations in other enterprises linked by a participating interest"
+        },
+        {
+          "id": "R034",
+          "name": "From other shares and interests in companies constituting financial fixed assets"
+        },
+        {
+          "id": "R04",
+          "name": "Commissions received"
+        },
+        {
+          "id": "R041",
+          "name": "Brokerage and similar commissions"
+        },
+        {
+          "id": "R042",
+          "name": "Remuneration of management, advice and custody services"
+        },
+        {
+          "id": "R043",
+          "name": "Other commissions received"
+        },
+        {
+          "id": "R05",
+          "name": "Commissions paid"
+        },
+        {
+          "id": "R06",
+          "name": "Profit (loss) from financial operations (+)(-)"
+        },
+        {
+          "id": "R061",
+          "name": "From the exchange and trading of securities and other financial instruments"
+        },
+        {
+          "id": "R062",
+          "name": "From the realisation of investment securities"
+        },
+        {
+          "id": "R07",
+          "name": "General and administrative expenses"
+        },
+        {
+          "id": "R071",
+          "name": "Remunerations, social charges and pensions"
+        },
+        {
+          "id": "R072",
+          "name": "Other administrative expenses"
+        },
+        {
+          "id": "R08",
+          "name": "Depreciation and write-downs on formation expenses, on intangible and tangible fixed assets"
+        },
+        {
+          "id": "R09",
+          "name": "Write-downs on claims and provisions for the items \"I. Possible liabilities\" and \"II. Commitments liable to creating a credit risk\" off-balance sheet : appropriations (withdrawals) (+)(-)"
+        },
+        {
+          "id": "R10",
+          "name": "Write-downs on the portfolio of investment in bonds, shares and other fixed- or variable-income securities : appropriations (withdrawals) (+)(-)"
+        },
+        {
+          "id": "R11",
+          "name": "Provisions for risks and other charges than those aimed at by the items \"I. Possible liabilities\" and \"II. Commitments liable to creating a credit risk\" off-balance sheet : uses (drawings) (+)(-)"
+        },
+        {
+          "id": "R12",
+          "name": "Provisions for risks and other charges than those aimed at by the items \"I. Possible liabilities\" and \"II. Commitments liable to creating a credit risk\" off-balance sheet"
+        },
+        {
+          "id": "R13",
+          "name": "Levy on the (appropriation to) the fund for general banking risks (+)(-)"
+        },
+        {
+          "id": "R14",
+          "name": "Other operating income"
+        },
+        {
+          "id": "R15",
+          "name": "Other operating expenses"
+        },
+        {
+          "id": "R16",
+          "name": "Profit on ordinary activities (loss on ordinary activities) before taxes (+)(-)"
+        },
+        {
+          "id": "R17",
+          "name": "Extraordinary proceeds"
+        },
+        {
+          "id": "R171",
+          "name": "Release of depreciation and write-downs on intangible and tangible fixed assets"
+        },
+        {
+          "id": "R172",
+          "name": "Release of write-downs on financial fixed assets"
+        },
+        {
+          "id": "R173",
+          "name": "Drawings from provisions for risks and exceptional charges"
+        },
+        {
+          "id": "R174",
+          "name": "Gains on the realisation of fixed assets"
+        },
+        {
+          "id": "R175",
+          "name": "Other extraordinary proceeds"
+        },
+        {
+          "id": "R18",
+          "name": "Extraordinary charges"
+        },
+        {
+          "id": "R181",
+          "name": "Extraordinary depreciation and write-downs on formation expenses, on intangible and tangible fixed assets"
+        },
+        {
+          "id": "R182",
+          "name": "Value reduction on financial fixed assets"
+        },
+        {
+          "id": "R183",
+          "name": "Provisions for extraordinary risks and charges: appropriations (uses) (+)(-)"
+        },
+        {
+          "id": "R184",
+          "name": "Losses on the realisation of fixed assets"
+        },
+        {
+          "id": "R185",
+          "name": "Other extraordinary charges"
+        },
+        {
+          "id": "R19",
+          "name": "Income (+) or loss (-) before taxes"
+        },
+        {
+          "id": "R20",
+          "name": "Transfer to deferred taxes"
+        },
+        {
+          "id": "R21",
+          "name": "Drawings from deferred taxes"
+        },
+        {
+          "id": "R22",
+          "name": "Taxes on the profit or loss (+)(-)"
+        },
+        {
+          "id": "R221",
+          "name": "Taxes"
+        },
+        {
+          "id": "R222",
+          "name": "Regularisations of tax and drawings from provisions for taxation"
+        },
+        {
+          "id": "R23",
+          "name": "Income (+) or loss (-) at the end of the period"
+        },
+        {
+          "id": "R24",
+          "name": "Transfer to (drawings from) the tax-exempt reserves (+)(-)"
+        },
+        {
+          "id": "R25",
+          "name": "Profit (loss) on the year for appropriation (+)(-)"
+        },
+        {
+          "id": "3",
+          "name": "Movement in assets managed"
+        },
+        {
+          "id": "AUM",
+          "name": "Assets under management"
+        },
+        {
+          "id": "4",
+          "name": "Distribution"
+        },
+        {
+          "id": "D",
+          "name": "Total registered in Belgium"
+        },
+        {
+          "id": "D1",
+          "name": "Under belgian law"
+        },
+        {
+          "id": "D21",
+          "name": "Belgian-registered branches governed by the law of another member state of the EEA"
+        },
+        {
+          "id": "D22",
+          "name": "Belgian-registered branches governed by the law of non-member state of the EEA"
+        }
+      ],
+      "total_codes": 119,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ACCOUNT}.{INSTTYPE}.{ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:44+00:00",
+  "schema_version": 1
+}

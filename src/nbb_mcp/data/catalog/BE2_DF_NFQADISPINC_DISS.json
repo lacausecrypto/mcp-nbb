@@ -1,0 +1,192 @@
+{
+  "agency": "BE2",
+  "id": "DF_NFQADISPINC_DISS",
+  "version": "1.0",
+  "category": "other",
+  "is_final": true,
+  "names": {
+    "en": "Income, savings, and net lending/borrowing – quarterly and annual data",
+    "fr": "Revenus, épargne et solde de financement – données trimestrielles et annuelles",
+    "nl": "Inkomen, besparingen en financieringssaldo - kwartaal- en jaargegevens",
+    "de": "Income, savings, and net lending/borrowing – quarterly and annual data"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "INDICATOR",
+      "position": 1,
+      "name": "INDICATOR",
+      "codes": [
+        {
+          "id": "B5GM",
+          "name": "Gross national income"
+        },
+        {
+          "id": "B5NM",
+          "name": "Net national income"
+        },
+        {
+          "id": "B6N_NAT",
+          "name": "Net national disposable income"
+        },
+        {
+          "id": "B8N",
+          "name": "Net national saving"
+        },
+        {
+          "id": "B9",
+          "name": "Net lending (+) or borrowing (-)"
+        },
+        {
+          "id": "D5_TO_D7_S2",
+          "name": "Balance of current transfers receivable from/payable to the rest of the world"
+        },
+        {
+          "id": "D9_S2",
+          "name": "Balance of capital transfers receivable from/payable to the rest of the world"
+        },
+        {
+          "id": "GDI",
+          "name": "Gross domestic income"
+        },
+        {
+          "id": "D1_D4_S2",
+          "name": "Balance of primary incomes receivable from/payable to the rest of the world"
+        },
+        {
+          "id": "K1",
+          "name": "Consumption of fixed capital"
+        },
+        {
+          "id": "P3",
+          "name": "National final consumption"
+        },
+        {
+          "id": "P51",
+          "name": "Gross fixed capital formation"
+        },
+        {
+          "id": "P52",
+          "name": "Changes in stocks"
+        }
+      ],
+      "total_codes": 13,
+      "truncated": false
+    },
+    {
+      "id": "PRICES",
+      "position": 2,
+      "name": "PRICES",
+      "codes": [
+        {
+          "id": "CQ",
+          "name": "Contributions to the volume change - Q to Q"
+        },
+        {
+          "id": "CY",
+          "name": "Contributions to the volume change - Y to Y"
+        },
+        {
+          "id": "D",
+          "name": "Deflator"
+        },
+        {
+          "id": "L",
+          "name": "In volume: chain linked, in millions of euro"
+        },
+        {
+          "id": "LQ",
+          "name": "Chain linked - Q to Q percentage change (reference year 2020)"
+        },
+        {
+          "id": "LY",
+          "name": "Chain linked - Y to Y percentage change (reference year 2020)"
+        },
+        {
+          "id": "V",
+          "name": "Current prices in millions of euro"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "ADJUSTMENT",
+      "position": 3,
+      "name": "ADJUSTMENT",
+      "codes": [
+        {
+          "id": "N",
+          "name": "Gross data"
+        },
+        {
+          "id": "Y",
+          "name": "Working day and seasonally adjusted"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{INDICATOR}.{PRICES}.{ADJUSTMENT}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:42+00:00",
+  "schema_version": 1
+}

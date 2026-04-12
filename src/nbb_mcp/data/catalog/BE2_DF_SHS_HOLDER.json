@@ -1,0 +1,143 @@
+{
+  "agency": "BE2",
+  "id": "DF_SHS_HOLDER",
+  "version": "1.0",
+  "category": "public_finances",
+  "is_final": true,
+  "names": {
+    "en": "Holdership of debt securities issued by the federal state",
+    "fr": "Détention des titres de créance émis par l'état fédéral",
+    "nl": "Houderschap van schuldbewijzen uitgegeven door de federale staat",
+    "de": "Holdership of debt securities issued by the federal state"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "SHS_TYPE",
+      "position": 1,
+      "name": "SHS_TYPE",
+      "codes": [
+        {
+          "id": "OLO",
+          "name": "Linear bonds"
+        },
+        {
+          "id": "TRC",
+          "name": "Treasury certificates"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    },
+    {
+      "id": "SHS_HOLDER",
+      "position": 2,
+      "name": "SHS_HOLDER",
+      "codes": [
+        {
+          "id": "TOT",
+          "name": "Grand total"
+        },
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "BE_CI",
+          "name": "Credit institutions"
+        },
+        {
+          "id": "BE_IC",
+          "name": "Insurance corporations"
+        },
+        {
+          "id": "BE_OFI",
+          "name": "Other financial institutions"
+        },
+        {
+          "id": "BE_GG",
+          "name": "General government"
+        },
+        {
+          "id": "BE_O",
+          "name": "Other Belgian residents"
+        },
+        {
+          "id": "FC",
+          "name": "Foreign countries"
+        },
+        {
+          "id": "FC_EU",
+          "name": "Residents of the Euro area"
+        },
+        {
+          "id": "FC_NEU",
+          "name": "Residents outside the Euro area"
+        }
+      ],
+      "total_codes": 10,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{SHS_TYPE}.{SHS_HOLDER}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "schema_version": 1
+}

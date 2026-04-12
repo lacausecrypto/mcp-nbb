@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    groups:
+      python-runtime:
+        patterns:
+          - "httpx"
+          - "pydantic"
+          - "structlog"
+          - "stamina"
+          - "aiolimiter"
+          - "rapidfuzz"
+          - "cachetools"
+          - "platformdirs"
+      python-dev:
+        dependency-type: "development"
+      mcp:
+        patterns:
+          - "mcp"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"

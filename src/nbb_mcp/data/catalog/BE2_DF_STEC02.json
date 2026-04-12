@@ -1,0 +1,4912 @@
+{
+  "agency": "BE2",
+  "id": "DF_STEC02",
+  "version": "1.0",
+  "category": "balance_of_payments",
+  "is_final": true,
+  "names": {
+    "en": "International Trade in Services by enterprise characteristics : by economic activity, by service (STEC02)",
+    "fr": "Commerce international de services par caractéristiques d'entreprise selon l'activité et service (STEC02)",
+    "nl": "Internationale handel in diensten naar bedrijfskenmerken : per activiteit en dienst (STEC02)",
+    "de": "International Trade in Services by enterprise characteristics : by economic activity, by service (STEC02)"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "TABLE_IDENTIFIER",
+      "position": 0,
+      "name": "TABLE_IDENTIFIER",
+      "codes": [
+        {
+          "id": "STEC01",
+          "name": "ext_stec01"
+        },
+        {
+          "id": "STEC02",
+          "name": "ext_stec02"
+        },
+        {
+          "id": "STEC03",
+          "name": "ext_stec03"
+        },
+        {
+          "id": "STEC04",
+          "name": "ext_stec04"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "FREQ",
+      "position": 1,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "REF_AREA",
+      "position": 2,
+      "name": "REF_AREA",
+      "codes": [
+        {
+          "id": "_X",
+          "name": "Not allocated/ unspecified"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "1A",
+          "name": "International organisations"
+        },
+        {
+          "id": "1B",
+          "name": "UN organisations"
+        },
+        {
+          "id": "1C",
+          "name": "IMF (International Monetary Fund)"
+        },
+        {
+          "id": "1D",
+          "name": "WTO (World Trade Organisation)"
+        },
+        {
+          "id": "1E",
+          "name": "IBRD (International Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "1F",
+          "name": "IDA (International Development Association)"
+        },
+        {
+          "id": "1G",
+          "name": "ICSID (International Centre for Settlement of Investment Disputes)"
+        },
+        {
+          "id": "1H",
+          "name": "UNESCO (United Nations Educational, Scientific and Cultural Organisation)"
+        },
+        {
+          "id": "1J",
+          "name": "FAO (Food and Agriculture Organisation)"
+        },
+        {
+          "id": "1K",
+          "name": "WHO (World Health Organisation)"
+        },
+        {
+          "id": "1L",
+          "name": "IFAD (International Fund for Agricultural Development)"
+        },
+        {
+          "id": "1M",
+          "name": "IFC (International Finance Corporation)"
+        },
+        {
+          "id": "1N",
+          "name": "MIGA (Multilateral Investment Guarantee Agency)"
+        },
+        {
+          "id": "1O",
+          "name": "UNICEF (United Nations Children Fund)"
+        },
+        {
+          "id": "1P",
+          "name": "UNHCR (United Nations High Commissioner for Refugees)"
+        },
+        {
+          "id": "1Q",
+          "name": "UNRWA (United Nations Relief and Works Agency for Palestine)"
+        },
+        {
+          "id": "1R",
+          "name": "IAEA (International Atomic Energy Agency)"
+        },
+        {
+          "id": "1S",
+          "name": "ILO (International Labour Organisation)"
+        },
+        {
+          "id": "1T",
+          "name": "ITU (International Telecommunication Union)"
+        },
+        {
+          "id": "1U",
+          "name": "Rest of UN Organisations n.i.e."
+        },
+        {
+          "id": "1U1",
+          "name": "UNECE (United Nations Economic Commission for Europe)"
+        },
+        {
+          "id": "1U2",
+          "name": "UNFCCC (United Nations Framework Convention for Climate Change)"
+        },
+        {
+          "id": "1V",
+          "name": "Universal Postal Union"
+        },
+        {
+          "id": "1W",
+          "name": "World Bank Group"
+        },
+        {
+          "id": "4A",
+          "name": "All the European Union Institutions excluding the institutions of the euro area (changing composition)"
+        },
+        {
+          "id": "4AA",
+          "name": "All the European Union Institutions excluding the ECB"
+        },
+        {
+          "id": "4B",
+          "name": "EMS (European Monetary System)"
+        },
+        {
+          "id": "4C",
+          "name": "EIB (European Investment Bank)"
+        },
+        {
+          "id": "4D",
+          "name": "European Commission"
+        },
+        {
+          "id": "4DJ",
+          "name": "All the European Union Institutions financed via the EU Budget"
+        },
+        {
+          "id": "4E",
+          "name": "EDF (European Development Fund)"
+        },
+        {
+          "id": "4F",
+          "name": "ECB (European Central Bank)"
+        },
+        {
+          "id": "4G",
+          "name": "EIF (European Investment Fund)"
+        },
+        {
+          "id": "4H",
+          "name": "European Coal and Steel Community"
+        },
+        {
+          "id": "4I",
+          "name": "Neighbourhood Investment Facility"
+        },
+        {
+          "id": "4J",
+          "name": "Other European Union Institutions, Organs and Organisms covered by General budget"
+        },
+        {
+          "id": "4J1",
+          "name": "European Parliament"
+        },
+        {
+          "id": "4J2",
+          "name": "Council of the European Union"
+        },
+        {
+          "id": "4J3",
+          "name": "Court of Justice"
+        },
+        {
+          "id": "4J4",
+          "name": "Court of Auditors"
+        },
+        {
+          "id": "4J5",
+          "name": "European Council"
+        },
+        {
+          "id": "4J6",
+          "name": "Economic and Social Committee"
+        },
+        {
+          "id": "4J7",
+          "name": "Committee of Regions"
+        },
+        {
+          "id": "4J8",
+          "name": "Other small European Union Institutions and agencies (Ombudsman, Data Protection Supervisor etc.)"
+        },
+        {
+          "id": "4J81",
+          "name": "Agency for the Cooperation of Energy Regulators"
+        },
+        {
+          "id": "4J810",
+          "name": "European Centre for Disease Prevention and Control"
+        },
+        {
+          "id": "4J811",
+          "name": "European Centre for the Development of Vocational Training"
+        },
+        {
+          "id": "4J812",
+          "name": "European Chemicals Agency"
+        },
+        {
+          "id": "4J813",
+          "name": "European Data Protection Supervisor"
+        },
+        {
+          "id": "4J814",
+          "name": "European Defence Agency"
+        },
+        {
+          "id": "4J815",
+          "name": "European Environment Agency"
+        },
+        {
+          "id": "4J816",
+          "name": "European External Action Service"
+        },
+        {
+          "id": "4J817",
+          "name": "European Fisheries Control Agency"
+        },
+        {
+          "id": "4J818",
+          "name": "European Food Safety Authority"
+        },
+        {
+          "id": "4J819",
+          "name": "European Foundation for the Improvement of Living and Working Conditions"
+        },
+        {
+          "id": "4J82",
+          "name": "Body of European Regulators for Electronic Communications"
+        },
+        {
+          "id": "4J820",
+          "name": "European GNSS Agency"
+        },
+        {
+          "id": "4J821",
+          "name": "European Institute for Gender Equality"
+        },
+        {
+          "id": "4J822",
+          "name": "European Institute of Innovation and Technology"
+        },
+        {
+          "id": "4J823",
+          "name": "European Maritime Safety Agency"
+        },
+        {
+          "id": "4J824",
+          "name": "European Medicines Agency"
+        },
+        {
+          "id": "4J825",
+          "name": "European Monitoring Centre for Drugs and Drug Addiction"
+        },
+        {
+          "id": "4J826",
+          "name": "European Network and Information Security Agency"
+        },
+        {
+          "id": "4J827",
+          "name": "European Ombudsman"
+        },
+        {
+          "id": "4J828",
+          "name": "European Personnel Selection Office"
+        },
+        {
+          "id": "4J829",
+          "name": "European Police College"
+        },
+        {
+          "id": "4J83",
+          "name": "Community Plant Variety Office"
+        },
+        {
+          "id": "4J830",
+          "name": "European Police Office"
+        },
+        {
+          "id": "4J831",
+          "name": "European Public Prosecutor's Office (in preparation)"
+        },
+        {
+          "id": "4J832",
+          "name": "European Railway Agency"
+        },
+        {
+          "id": "4J833",
+          "name": "European School of Administration"
+        },
+        {
+          "id": "4J834",
+          "name": "European Training Foundation"
+        },
+        {
+          "id": "4J835",
+          "name": "European Union Agency for Fundamental Rights"
+        },
+        {
+          "id": "4J836",
+          "name": "European Union Institute for Security Studies"
+        },
+        {
+          "id": "4J837",
+          "name": "European Union Intellectual Property Office"
+        },
+        {
+          "id": "4J838",
+          "name": "European Union Satellite Centre"
+        },
+        {
+          "id": "4J839",
+          "name": "Publications Office of the European Union"
+        },
+        {
+          "id": "4J84",
+          "name": "Computer Emergency Response Team"
+        },
+        {
+          "id": "4J840",
+          "name": "The European Union’s Judicial Cooperation Unit"
+        },
+        {
+          "id": "4J841",
+          "name": "Translation Centre for the Bodies of the European Union"
+        },
+        {
+          "id": "4J842",
+          "name": "ATHENA Mechanism"
+        },
+        {
+          "id": "4J85",
+          "name": "European Agency for Safety and Health at Work"
+        },
+        {
+          "id": "4J86",
+          "name": "European Agency for the Management of Operational Cooperation at the External Borders"
+        },
+        {
+          "id": "4J87",
+          "name": "European Agency for the operational management of large-scale IT systems in the area of freedom, security and justice"
+        },
+        {
+          "id": "4J88",
+          "name": "European Asylum Support Office"
+        },
+        {
+          "id": "4J89",
+          "name": "European Aviation Safety Agency"
+        },
+        {
+          "id": "4M",
+          "name": "SRB (Single Resolution Board)"
+        },
+        {
+          "id": "4R",
+          "name": "EU-Africa Infrastructure Trust Fund"
+        },
+        {
+          "id": "4S",
+          "name": "ESM (European Stability Mechanism)"
+        },
+        {
+          "id": "4T",
+          "name": "Joint Committee of the European Supervisory Authorities (ESAs)"
+        },
+        {
+          "id": "4T1",
+          "name": "EBA (European Banking Authority)"
+        },
+        {
+          "id": "4T2",
+          "name": "ESMA (European Securities and Markets Authority)"
+        },
+        {
+          "id": "4T3",
+          "name": "EIOPA (European Insurance and Occupational Pensions Authority)"
+        },
+        {
+          "id": "4U",
+          "name": "EURATOM"
+        },
+        {
+          "id": "4V",
+          "name": "FEMIP (Facility for Euro-Mediterranean Investment and Partnership)"
+        },
+        {
+          "id": "4W",
+          "name": "EFSF (European Financial Stability Facility)"
+        },
+        {
+          "id": "4X",
+          "name": "All the European Union Institutions not financed via the EU Budget"
+        },
+        {
+          "id": "4Y",
+          "name": "All European Community Institutions, Organs and Organisms, including ECB, ESM and EFSF"
+        },
+        {
+          "id": "5A",
+          "name": "Other International Organisations (financial institutions)"
+        },
+        {
+          "id": "5AA",
+          "name": "Multilateral Lending Agencies"
+        },
+        {
+          "id": "5B",
+          "name": "BIS (Bank for International Settlements)"
+        },
+        {
+          "id": "5C",
+          "name": "IADB (Inter-American Development Bank)"
+        },
+        {
+          "id": "5D",
+          "name": "AfDB (African Development Bank)"
+        },
+        {
+          "id": "5E",
+          "name": "AsDB (Asian Development Bank)"
+        },
+        {
+          "id": "5F",
+          "name": "EBRD (European Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "5G",
+          "name": "IIC (Inter-American Investment Corporation)"
+        },
+        {
+          "id": "5H",
+          "name": "NIB (Nordic Investment Bank)"
+        },
+        {
+          "id": "5I",
+          "name": "ECCB (Eastern Caribbean Central Bank)"
+        },
+        {
+          "id": "5J",
+          "name": "IBEC (International Bank for Economic Co-operation)"
+        },
+        {
+          "id": "5K",
+          "name": "IIB (International Investment Bank)"
+        },
+        {
+          "id": "5L",
+          "name": "CDB (Caribbean Development Bank)"
+        },
+        {
+          "id": "5M",
+          "name": "AMF (Arab Monetary Fund)"
+        },
+        {
+          "id": "5N",
+          "name": "BADEA (Banque arabe pour le développement économique en Afrique)"
+        },
+        {
+          "id": "5O",
+          "name": "BCEAO (Banque Centrale des Etats de l`Afrique de l`Ouest)"
+        },
+        {
+          "id": "5P",
+          "name": "CASDB (Central African States Development Bank)"
+        },
+        {
+          "id": "5Q",
+          "name": "African Development Fund"
+        },
+        {
+          "id": "5R",
+          "name": "Asian Development Fund"
+        },
+        {
+          "id": "5S",
+          "name": "Fonds spécial unifié de développement"
+        },
+        {
+          "id": "5T",
+          "name": "CABEI (Central American Bank for Economic Integration)"
+        },
+        {
+          "id": "5U",
+          "name": "ADC (Andean Development Corporation)"
+        },
+        {
+          "id": "5W",
+          "name": "BEAC (Banque des Etats de l`Afrique Centrale)"
+        },
+        {
+          "id": "5X",
+          "name": "Asian Infrastructure Investment Bank"
+        },
+        {
+          "id": "5Z",
+          "name": "Other International Financial Organisations n.i.e."
+        },
+        {
+          "id": "5Z1",
+          "name": "Africa Finance Corporation"
+        },
+        {
+          "id": "5Z10",
+          "name": "International Civil Aviation Organization"
+        },
+        {
+          "id": "5Z11",
+          "name": "International Cocoa Organization"
+        },
+        {
+          "id": "5Z12",
+          "name": "International Coffee Organization"
+        },
+        {
+          "id": "5Z13",
+          "name": "International Copper Study Group"
+        },
+        {
+          "id": "5Z14",
+          "name": "International Cotton Advisory Committee"
+        },
+        {
+          "id": "5Z15",
+          "name": "International Grains Council"
+        },
+        {
+          "id": "5Z16",
+          "name": "International Jute Study Group"
+        },
+        {
+          "id": "5Z17",
+          "name": "International Lead and Zinc Study Group"
+        },
+        {
+          "id": "5Z18",
+          "name": "International Maritime Organization"
+        },
+        {
+          "id": "5Z19",
+          "name": "International Maritime Satellite Organization"
+        },
+        {
+          "id": "5Z2",
+          "name": "African Development Bank Group"
+        },
+        {
+          "id": "5Z20",
+          "name": "International Olive Oil Council"
+        },
+        {
+          "id": "5Z21",
+          "name": "International Rubber Study Group"
+        },
+        {
+          "id": "5Z22",
+          "name": "International Sugar Organization"
+        },
+        {
+          "id": "5Z23",
+          "name": "Latin American and the Caribbean Economic System"
+        },
+        {
+          "id": "5Z24",
+          "name": "Latin American Energy Organization"
+        },
+        {
+          "id": "5Z25",
+          "name": "Latin American Integration Association"
+        },
+        {
+          "id": "5Z26",
+          "name": "League of Arab States"
+        },
+        {
+          "id": "5Z27",
+          "name": "Organisation of Eastern Caribbean States"
+        },
+        {
+          "id": "5Z28",
+          "name": "Organization of American States"
+        },
+        {
+          "id": "5Z29",
+          "name": "Organization of Arab Petroleum Exporting Countries"
+        },
+        {
+          "id": "5Z3",
+          "name": "Arab Fund for Economic and Social Development"
+        },
+        {
+          "id": "5Z30",
+          "name": "Organization of Central American States"
+        },
+        {
+          "id": "5Z31",
+          "name": "Organization of the Petroleum Exporting Countries"
+        },
+        {
+          "id": "5Z33",
+          "name": "South Asian Association for Regional Cooperation"
+        },
+        {
+          "id": "5Z34",
+          "name": "United Nations Conference on Trade and Development"
+        },
+        {
+          "id": "5Z35",
+          "name": "West African Economic Community"
+        },
+        {
+          "id": "5Z36",
+          "name": "West African Health Organisation"
+        },
+        {
+          "id": "5Z37",
+          "name": "West African Monetary Agency"
+        },
+        {
+          "id": "5Z38",
+          "name": "West African Monetary Institute"
+        },
+        {
+          "id": "5Z39",
+          "name": "World Council of Churches"
+        },
+        {
+          "id": "5Z4",
+          "name": "Asian Clearing Union"
+        },
+        {
+          "id": "5Z40",
+          "name": "World Intellectual Property Organization"
+        },
+        {
+          "id": "5Z41",
+          "name": "World Meteorological Organization"
+        },
+        {
+          "id": "5Z42",
+          "name": "World Tourism Organization"
+        },
+        {
+          "id": "5Z43",
+          "name": "The Nordic Development Fund"
+        },
+        {
+          "id": "5Z44",
+          "name": "The North American Development Bank"
+        },
+        {
+          "id": "5Z45",
+          "name": "International Council for the Exploration of the Sea (ICES)"
+        },
+        {
+          "id": "5Z5",
+          "name": "Colombo Plan"
+        },
+        {
+          "id": "5Z6",
+          "name": "Economic Community of West African States"
+        },
+        {
+          "id": "5Z7",
+          "name": "European Free Trade Association"
+        },
+        {
+          "id": "5Z8",
+          "name": "Fusion for Energy"
+        },
+        {
+          "id": "5Z9",
+          "name": "Intergovernmental Council of Copper Exporting Countries"
+        },
+        {
+          "id": "6A",
+          "name": "Other International Organisations (non-financial institutions)"
+        },
+        {
+          "id": "6A1",
+          "name": "African Union"
+        },
+        {
+          "id": "6A10",
+          "name": "IEA (International Energy Agency)"
+        },
+        {
+          "id": "6A11",
+          "name": "Eurasian Economic Commission"
+        },
+        {
+          "id": "6A2",
+          "name": "Association of Southeast Asian Nations"
+        },
+        {
+          "id": "6A3",
+          "name": "Caribbean Community and Common Market"
+        },
+        {
+          "id": "6A4",
+          "name": "Central American Common Market"
+        },
+        {
+          "id": "6A5",
+          "name": "East African Development Bank"
+        },
+        {
+          "id": "6A6",
+          "name": "ECOWAS Bank for Investment and Development"
+        },
+        {
+          "id": "6A7",
+          "name": "Latin American Association of Development Financing Institutions"
+        },
+        {
+          "id": "6A8",
+          "name": "OPEC Fund for International Development"
+        },
+        {
+          "id": "6A9",
+          "name": "The Permanent Court of Arbitration"
+        },
+        {
+          "id": "6B",
+          "name": "NATO (North Atlantic Treaty Organisation)"
+        },
+        {
+          "id": "6C",
+          "name": "Council of Europe"
+        },
+        {
+          "id": "6D",
+          "name": "ICRC (International Committee of the Red Cross)"
+        },
+        {
+          "id": "6E",
+          "name": "ESA (European Space Agency)"
+        },
+        {
+          "id": "6F",
+          "name": "EPO (European Patent Office)"
+        },
+        {
+          "id": "6G",
+          "name": "EUROCONTROL (European Organisation for the Safety of Air Navigation)"
+        },
+        {
+          "id": "6H",
+          "name": "EUTELSAT (European Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6I",
+          "name": "EMBL (European Molecular Biology Laboratory)"
+        },
+        {
+          "id": "6J",
+          "name": "ITSO (International Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6K",
+          "name": "EBU/UER (European Broadcasting Union/Union européenne de radio-télévision)"
+        },
+        {
+          "id": "6L",
+          "name": "EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites)"
+        },
+        {
+          "id": "6M",
+          "name": "ESO (European Southern Observatory)"
+        },
+        {
+          "id": "6N",
+          "name": "ECMWF (European Centre for Medium-Range Weather Forecasts)"
+        },
+        {
+          "id": "6O",
+          "name": "OECD (Organisation for Economic Co-operation and Development)"
+        },
+        {
+          "id": "6P",
+          "name": "CERN (European Organisation for Nuclear Research)"
+        },
+        {
+          "id": "6Q",
+          "name": "IOM (International Organisation for Migration)"
+        },
+        {
+          "id": "6Z",
+          "name": "Other International Non-Financial Organisations n.i.e."
+        },
+        {
+          "id": "6Z1",
+          "name": "The Global Fund to Fight AIDS, Tuberculosis and Malaria"
+        },
+        {
+          "id": "7A",
+          "name": "WAEMU (West African Economic and Monetary Union)"
+        }
+      ],
+      "total_codes": 1000,
+      "truncated": true
+    },
+    {
+      "id": "UNIT_MEASURE",
+      "position": 3,
+      "name": "UNIT_MEASURE",
+      "codes": [
+        {
+          "id": "_T",
+          "name": "All currencies"
+        },
+        {
+          "id": "_X",
+          "name": "Not specified"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "BEF",
+          "name": "Belgian franc"
+        },
+        {
+          "id": "EUR",
+          "name": "Euro"
+        },
+        {
+          "id": "PS",
+          "name": "Persons"
+        },
+        {
+          "id": "PT",
+          "name": "Percent"
+        },
+        {
+          "id": "RO",
+          "name": "Ratio"
+        },
+        {
+          "id": "USD",
+          "name": "US dollar"
+        },
+        {
+          "id": "ADF",
+          "name": "Andorran franc (1-1 peg to the French franc)"
+        },
+        {
+          "id": "ADP",
+          "name": "Andorran peseta (1-1 peg to the Spanish peseta)"
+        },
+        {
+          "id": "AED",
+          "name": "United Arab Emirates dirham"
+        },
+        {
+          "id": "AFA",
+          "name": "Afghanistan afghani (old)"
+        },
+        {
+          "id": "AFN",
+          "name": "Afghanistan, Afghanis"
+        },
+        {
+          "id": "ALL",
+          "name": "Albanian lek"
+        },
+        {
+          "id": "AMD",
+          "name": "Armenian dram"
+        },
+        {
+          "id": "ANG",
+          "name": "Netherlands Antillean guilder"
+        },
+        {
+          "id": "AOA",
+          "name": "Angolan kwanza"
+        },
+        {
+          "id": "AON",
+          "name": "Angolan kwanza (old)"
+        },
+        {
+          "id": "AOR",
+          "name": "Angolan kwanza readjustado (old)"
+        },
+        {
+          "id": "ARS",
+          "name": "Argentine peso"
+        },
+        {
+          "id": "ATS",
+          "name": "Austrian schilling"
+        },
+        {
+          "id": "AUD",
+          "name": "Australian dollar"
+        },
+        {
+          "id": "AWG",
+          "name": "Aruban florin/guilder"
+        },
+        {
+          "id": "AZM",
+          "name": "Azerbaijanian manat (old)"
+        },
+        {
+          "id": "AZN",
+          "name": "Azerbaijan, manats"
+        },
+        {
+          "id": "BAM",
+          "name": "Bosnia-Hezergovinian convertible mark"
+        },
+        {
+          "id": "BBD",
+          "name": "Barbados dollar"
+        },
+        {
+          "id": "BDT",
+          "name": "Bangladesh taka"
+        },
+        {
+          "id": "BEL",
+          "name": "Belgian franc (financial)"
+        },
+        {
+          "id": "BGL",
+          "name": "Bulgarian lev (old)"
+        },
+        {
+          "id": "BGN",
+          "name": "Bulgarian lev"
+        },
+        {
+          "id": "BHD",
+          "name": "Bahraini dinar"
+        },
+        {
+          "id": "BIF",
+          "name": "Burundi franc"
+        },
+        {
+          "id": "BMD",
+          "name": "Bermudian dollar"
+        },
+        {
+          "id": "BND",
+          "name": "Brunei dollar"
+        },
+        {
+          "id": "BOB",
+          "name": "Bolivian boliviano"
+        },
+        {
+          "id": "BRL",
+          "name": "Brazilian real"
+        },
+        {
+          "id": "BSD",
+          "name": "Bahamas dollar"
+        },
+        {
+          "id": "BTN",
+          "name": "Bhutan ngultrum"
+        },
+        {
+          "id": "BWP",
+          "name": "Botswana pula"
+        },
+        {
+          "id": "BYB",
+          "name": "Belarussian rouble (old)"
+        },
+        {
+          "id": "BYR",
+          "name": "Belarus, Rubles (deprecated)"
+        },
+        {
+          "id": "BZD",
+          "name": "Belize dollar"
+        },
+        {
+          "id": "CAD",
+          "name": "Canadian dollar"
+        },
+        {
+          "id": "CD",
+          "name": "National currency per US dollar (unit for exchange rates and PPP)"
+        },
+        {
+          "id": "CDF",
+          "name": "Congo franc (ex Zaire)"
+        },
+        {
+          "id": "CE",
+          "name": "National currency per Euro (unit for exchange rates and PPP)"
+        },
+        {
+          "id": "CHE",
+          "name": "WIR Euro"
+        },
+        {
+          "id": "CHF",
+          "name": "Swiss franc"
+        },
+        {
+          "id": "CHW",
+          "name": "WIR Franc"
+        },
+        {
+          "id": "CLF",
+          "name": "Unidades de fomento"
+        },
+        {
+          "id": "CLP",
+          "name": "Chilean peso"
+        },
+        {
+          "id": "CNY",
+          "name": "Chinese yuan renminbi"
+        },
+        {
+          "id": "COP",
+          "name": "Colombian peso"
+        },
+        {
+          "id": "COU",
+          "name": "Unidad de Valor Real"
+        },
+        {
+          "id": "CRC",
+          "name": "Costa Rican colon"
+        },
+        {
+          "id": "CSD",
+          "name": "Serbian dinar (old)"
+        },
+        {
+          "id": "CUP",
+          "name": "Cuban peso"
+        },
+        {
+          "id": "CVE",
+          "name": "Cape Verde escudo"
+        },
+        {
+          "id": "CYP",
+          "name": "Cypriot pound"
+        },
+        {
+          "id": "CZK",
+          "name": "Czech koruna"
+        },
+        {
+          "id": "DEM",
+          "name": "Deutschmark"
+        },
+        {
+          "id": "DJF",
+          "name": "Djibouti franc"
+        },
+        {
+          "id": "DKK",
+          "name": "Danish krone"
+        },
+        {
+          "id": "DOP",
+          "name": "Dominican peso"
+        },
+        {
+          "id": "DY",
+          "name": "Days"
+        },
+        {
+          "id": "DZD",
+          "name": "Algerian dinar"
+        },
+        {
+          "id": "E0",
+          "name": "EER-12 group of trading partners (of the euro area moving composition): AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US"
+        },
+        {
+          "id": "E1",
+          "name": "EER-20 group of trading partners (of the euro area-18 composition): AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,LT,HU,PL,RO,CN and HR"
+        },
+        {
+          "id": "E2",
+          "name": "EER-19 group of trading partners (of the euro area-18 composition): AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,LT,HU,PL,RO,CN"
+        },
+        {
+          "id": "E3",
+          "name": "EER-39 group of trading partners (of the euro area-18 composition): AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,LT,HU,PL,RO,CN and HR,DZ,AR,BR,CL,IS,IN,ID,IL,MY,MX,MA,NZ,PH,RU,ZA,TW,TH,TR,VE"
+        },
+        {
+          "id": "E4",
+          "name": "EER-12 group of trading partners (of the euro area-18 composition): AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US"
+        },
+        {
+          "id": "E5",
+          "name": "EER-19 group of trading partners: AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,HU,PL,RO,CN and HR"
+        },
+        {
+          "id": "E6",
+          "name": "EER-18 group of trading partners: AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,HU,PL,RO,CN"
+        },
+        {
+          "id": "E7",
+          "name": "EER-38 group of trading partners: AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,HU,PL,RO,CN and HR,DZ,AR,BR,CL, IS,IN,ID,IL,MY,MX,MA,NZ,PH,RU,ZA,TW,TH,TR,VE"
+        },
+        {
+          "id": "E8",
+          "name": "EER-12 group of trading partners: AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US"
+        },
+        {
+          "id": "ECS",
+          "name": "Ecuador sucre (old)"
+        },
+        {
+          "id": "EEK",
+          "name": "Estonian kroon"
+        },
+        {
+          "id": "EGP",
+          "name": "Egyptian pound"
+        },
+        {
+          "id": "ERN",
+          "name": "Erytrean nafka"
+        },
+        {
+          "id": "ESP",
+          "name": "Spanish peseta"
+        },
+        {
+          "id": "ETB",
+          "name": "Ethiopian birr"
+        },
+        {
+          "id": "EUR_R_ACTIVITY",
+          "name": "Euro; ratio to total activity"
+        },
+        {
+          "id": "EUR_R_B1G",
+          "name": "Euro; ratio to gross value added"
+        },
+        {
+          "id": "EUR_R_B1GQ",
+          "name": "Euro; ratio to gross domestic product"
+        },
+        {
+          "id": "EUR_R_B1GQ_L",
+          "name": "Euro; ratio to gross domestic product (chained linked volume)"
+        },
+        {
+          "id": "EUR_R_B1GQ_LA",
+          "name": "Euro; ratio to gross domestic product (annual levels)"
+        },
+        {
+          "id": "EUR_R_B2",
+          "name": "Euro; ratio to EU15"
+        },
+        {
+          "id": "EUR_R_B4",
+          "name": "Euro; ratio to EU27"
+        },
+        {
+          "id": "EUR_R_B5",
+          "name": "Euro; ratio to EU28"
+        },
+        {
+          "id": "EUR_R_F5",
+          "name": "Euro; ratio to equity and investment fund shares"
+        },
+        {
+          "id": "EUR_R_I6",
+          "name": "Euro; ratio to Euro Area 17"
+        },
+        {
+          "id": "EUR_R_I7",
+          "name": "Euro; ratio to Euro Area 18"
+        },
+        {
+          "id": "EUR_R_I8",
+          "name": "Euro; ratio to Euro Area 19"
+        },
+        {
+          "id": "EUR_R_POP",
+          "name": "Euro; ratio to total population"
+        },
+        {
+          "id": "EUR_R_SAL_HW",
+          "name": "Euro; ratio to employees in hours worked"
+        },
+        {
+          "id": "EUR_R_SAL_PS",
+          "name": "Euro; ratio to employees in persons"
+        },
+        {
+          "id": "EUR_R_U2",
+          "name": "Euro; ratio to Euro Area (changing composition)"
+        },
+        {
+          "id": "FIM",
+          "name": "Finnish markka"
+        },
+        {
+          "id": "FJD",
+          "name": "Fiji dollar"
+        },
+        {
+          "id": "FKP",
+          "name": "Falkland Islands pound"
+        },
+        {
+          "id": "FRF",
+          "name": "French franc"
+        },
+        {
+          "id": "FT",
+          "name": "Full time equivalent"
+        },
+        {
+          "id": "FT_R_ACTIVITY",
+          "name": "Full time equivalents; ratio to total activity"
+        },
+        {
+          "id": "GBP",
+          "name": "UK pound sterling"
+        },
+        {
+          "id": "GEL",
+          "name": "Georgian lari"
+        },
+        {
+          "id": "GGP",
+          "name": "Guernsey, Pounds"
+        },
+        {
+          "id": "GHC",
+          "name": "Ghanaian cedi (old)"
+        },
+        {
+          "id": "GHS",
+          "name": "Ghana Cedi"
+        },
+        {
+          "id": "GIP",
+          "name": "Gibraltar pound"
+        },
+        {
+          "id": "GMD",
+          "name": "Gambian dalasi"
+        },
+        {
+          "id": "GNF",
+          "name": "Guinea franc"
+        },
+        {
+          "id": "GR",
+          "name": "Grams"
+        },
+        {
+          "id": "GRD",
+          "name": "Greek drachma"
+        },
+        {
+          "id": "GTQ",
+          "name": "Guatemalan quetzal"
+        },
+        {
+          "id": "GWP",
+          "name": "Guinea-Bissau Peso"
+        },
+        {
+          "id": "GYD",
+          "name": "Guyanan dollar"
+        },
+        {
+          "id": "H1",
+          "name": "Euro area-18 countries: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LV,MT,SK"
+        },
+        {
+          "id": "H10",
+          "name": "Euro area-19 countries and EER-38 group of trading partners: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LT,LV,MT,SK and AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,HU,PL,RO,CN and HR,DZ,AR,BR,CL,IS,IN,ID,IL,MY,MX,MA,NZ,PH,RU,ZA,TW,TH,TR,VE"
+        },
+        {
+          "id": "H11",
+          "name": "Euro area-19 countries and EER-19 group of trading partners: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LT,LV,MT,SK and AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,HU,PL,RO,CN and HR"
+        },
+        {
+          "id": "H2",
+          "name": "Euro area-18 countries and EER-12 group of trading partners: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LV,MT,SK and AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US"
+        },
+        {
+          "id": "H3",
+          "name": "Euro area-18 countries and EER-19 group of trading partners: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LV,MT,SK and AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,LT,HU,PL,RO,CN"
+        },
+        {
+          "id": "H36",
+          "name": "European Commission IC-36 group of trading partners: BE,DE,EE,GR,ES,FR,IE,IT,CY,LU,NL,MT,AT,PT,SI,SK,FI,BG,CZ,DK,LV,LT,HU,PL,RO,SE,GB and US,AU,CA,JP,MX,NZ,NO,CH,TR"
+        },
+        {
+          "id": "H37",
+          "name": "European Commission IC-37 group of trading partners: BE,DE,EE,GR,ES,FR,IE,IT,CY,LU,NL,MT,AT,PT,SI,SK,FI,BG,CZ,DK,HR,LV,LT,HU,PL,RO,SE,GB and US,AU,CA,JP,MX,NZ,NO,CH,TR"
+        },
+        {
+          "id": "H4",
+          "name": "Euro area-18 countries and EER-39 group of trading partners: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LV,MT,SK and AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,LT,HU,PL,RO,CN and HR,DZ,AR,BR,CL,IS,IN,ID,IL,MY,MX,MA,NZ,PH,RU,ZA,TW,TH,TR,VE"
+        },
+        {
+          "id": "H5",
+          "name": "Euro area-18 countries and EER-20 group of trading partners: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LV,MT,SK and AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,LT,HU,PL,RO,CN and HR"
+        },
+        {
+          "id": "H6",
+          "name": "Euro area-18 countries and EER-21 group of trading partners: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LV,MT,SK and AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,LT,HU,PL,RO,HR,TR,RU"
+        },
+        {
+          "id": "H7",
+          "name": "Euro area-19 countries: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LT,LV,MT,SK"
+        },
+        {
+          "id": "H8",
+          "name": "Euro area-19 countries and EER-12 group of trading partners: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LT,LV,MT,SK and AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US"
+        },
+        {
+          "id": "H9",
+          "name": "Euro area-19 countries and EER-18 group of trading partners: FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,CY,EE,LT,LV,MT,SK and AU,CA,DK,HK,JP,NO,SG,KR,SE,CH,GB,US and BG,CZ,HU,PL,RO,CN"
+        },
+        {
+          "id": "HKD",
+          "name": "Hong Kong dollar"
+        },
+        {
+          "id": "HKQ",
+          "name": "Hong Kong dollar (old)"
+        },
+        {
+          "id": "HNL",
+          "name": "Honduran lempira"
+        },
+        {
+          "id": "HR",
+          "name": "Hours"
+        },
+        {
+          "id": "HRK",
+          "name": "Croatian kuna"
+        },
+        {
+          "id": "HTG",
+          "name": "Haitian gourde"
+        },
+        {
+          "id": "HUF",
+          "name": "Hungarian forint"
+        },
+        {
+          "id": "HW",
+          "name": "Hours worked"
+        },
+        {
+          "id": "HW_R_ACTIVITY",
+          "name": "Hours worked; ratio to total activity"
+        },
+        {
+          "id": "IDR",
+          "name": "Indonesian rupiah"
+        },
+        {
+          "id": "IEP",
+          "name": "Irish pound"
+        },
+        {
+          "id": "ILS",
+          "name": "Israeli shekel"
+        },
+        {
+          "id": "IMP",
+          "name": "Isle of Man, Pounds"
+        },
+        {
+          "id": "INR",
+          "name": "Indian rupee"
+        },
+        {
+          "id": "IQD",
+          "name": "Iraqi dinar"
+        },
+        {
+          "id": "IRR",
+          "name": "Iranian rial"
+        },
+        {
+          "id": "ISK",
+          "name": "Iceland krona"
+        },
+        {
+          "id": "ITL",
+          "name": "Italian lira"
+        },
+        {
+          "id": "IX",
+          "name": "Index"
+        },
+        {
+          "id": "JB",
+          "name": "Jobs"
+        },
+        {
+          "id": "JB_R_ACTIVITY",
+          "name": "Jobs; ratio to total activity"
+        },
+        {
+          "id": "JEP",
+          "name": "Jersey, Pounds"
+        },
+        {
+          "id": "JMD",
+          "name": "Jamaican dollar"
+        },
+        {
+          "id": "JOD",
+          "name": "Jordanian dinar"
+        },
+        {
+          "id": "JPY",
+          "name": "Japanese yen"
+        },
+        {
+          "id": "KES",
+          "name": "Kenyan shilling"
+        },
+        {
+          "id": "KG",
+          "name": "Kilograms"
+        },
+        {
+          "id": "KGS",
+          "name": "Kyrgyzstan som"
+        },
+        {
+          "id": "KHR",
+          "name": "Kampuchean real (Cambodian)"
+        },
+        {
+          "id": "KL",
+          "name": "Kilolitres"
+        },
+        {
+          "id": "KMF",
+          "name": "Comoros franc"
+        },
+        {
+          "id": "KPW",
+          "name": "Korean won (North)"
+        },
+        {
+          "id": "KRW",
+          "name": "Korean won (Republic)"
+        },
+        {
+          "id": "KWD",
+          "name": "Kuwait dinar"
+        },
+        {
+          "id": "KYD",
+          "name": "Cayman Islands dollar"
+        },
+        {
+          "id": "KZT",
+          "name": "Kazakstan tenge"
+        },
+        {
+          "id": "LAK",
+          "name": "Lao kip"
+        },
+        {
+          "id": "LBP",
+          "name": "Lebanese pound"
+        },
+        {
+          "id": "LKR",
+          "name": "Sri Lanka rupee"
+        },
+        {
+          "id": "LRD",
+          "name": "Liberian dollar"
+        },
+        {
+          "id": "LSL",
+          "name": "Lesotho loti"
+        },
+        {
+          "id": "LT",
+          "name": "Litres"
+        },
+        {
+          "id": "LTL",
+          "name": "Lithuanian litas"
+        },
+        {
+          "id": "LUF",
+          "name": "Luxembourg franc"
+        },
+        {
+          "id": "LVL",
+          "name": "Latvian lats"
+        },
+        {
+          "id": "LYD",
+          "name": "Libyan dinar"
+        },
+        {
+          "id": "MAD",
+          "name": "Moroccan dirham"
+        },
+        {
+          "id": "MD",
+          "name": "Man Days"
+        },
+        {
+          "id": "MDL",
+          "name": "Moldovian leu"
+        },
+        {
+          "id": "MGA",
+          "name": "Madagascar, Ariary"
+        },
+        {
+          "id": "MGF",
+          "name": "Malagasy franc"
+        },
+        {
+          "id": "MH",
+          "name": "Months"
+        },
+        {
+          "id": "MKD",
+          "name": "Macedonian denar"
+        },
+        {
+          "id": "MMK",
+          "name": "Myanmar kyat"
+        },
+        {
+          "id": "MNT",
+          "name": "Mongolian tugrik"
+        },
+        {
+          "id": "MOP",
+          "name": "Macau pataca"
+        },
+        {
+          "id": "MQ",
+          "name": "Square Metres"
+        },
+        {
+          "id": "MRO",
+          "name": "Mauritanian ouguiya"
+        },
+        {
+          "id": "MTL",
+          "name": "Maltese lira"
+        },
+        {
+          "id": "MUR",
+          "name": "Mauritius rupee"
+        },
+        {
+          "id": "MVR",
+          "name": "Maldive rufiyaa"
+        },
+        {
+          "id": "MWK",
+          "name": "Malawi kwacha"
+        },
+        {
+          "id": "MXN",
+          "name": "Mexican peso"
+        },
+        {
+          "id": "MXP",
+          "name": "Mexican peso (old)"
+        },
+        {
+          "id": "MXV",
+          "name": "Mexican Unidad de Inversion (UDI)"
+        },
+        {
+          "id": "MY",
+          "name": "Man Years"
+        },
+        {
+          "id": "MYR",
+          "name": "Malaysian ringgit"
+        },
+        {
+          "id": "MZM",
+          "name": "Mozambique metical (old)"
+        },
+        {
+          "id": "MZN",
+          "name": "Mozambique, Meticais"
+        }
+      ],
+      "total_codes": 469,
+      "truncated": true
+    },
+    {
+      "id": "COUNTERPART_AREA",
+      "position": 4,
+      "name": "COUNTERPART_AREA",
+      "codes": [
+        {
+          "id": "_X",
+          "name": "Not allocated/ unspecified"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "1A",
+          "name": "International organisations"
+        },
+        {
+          "id": "1B",
+          "name": "UN organisations"
+        },
+        {
+          "id": "1C",
+          "name": "IMF (International Monetary Fund)"
+        },
+        {
+          "id": "1D",
+          "name": "WTO (World Trade Organisation)"
+        },
+        {
+          "id": "1E",
+          "name": "IBRD (International Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "1F",
+          "name": "IDA (International Development Association)"
+        },
+        {
+          "id": "1G",
+          "name": "ICSID (International Centre for Settlement of Investment Disputes)"
+        },
+        {
+          "id": "1H",
+          "name": "UNESCO (United Nations Educational, Scientific and Cultural Organisation)"
+        },
+        {
+          "id": "1J",
+          "name": "FAO (Food and Agriculture Organisation)"
+        },
+        {
+          "id": "1K",
+          "name": "WHO (World Health Organisation)"
+        },
+        {
+          "id": "1L",
+          "name": "IFAD (International Fund for Agricultural Development)"
+        },
+        {
+          "id": "1M",
+          "name": "IFC (International Finance Corporation)"
+        },
+        {
+          "id": "1N",
+          "name": "MIGA (Multilateral Investment Guarantee Agency)"
+        },
+        {
+          "id": "1O",
+          "name": "UNICEF (United Nations Children Fund)"
+        },
+        {
+          "id": "1P",
+          "name": "UNHCR (United Nations High Commissioner for Refugees)"
+        },
+        {
+          "id": "1Q",
+          "name": "UNRWA (United Nations Relief and Works Agency for Palestine)"
+        },
+        {
+          "id": "1R",
+          "name": "IAEA (International Atomic Energy Agency)"
+        },
+        {
+          "id": "1S",
+          "name": "ILO (International Labour Organisation)"
+        },
+        {
+          "id": "1T",
+          "name": "ITU (International Telecommunication Union)"
+        },
+        {
+          "id": "1U",
+          "name": "Rest of UN Organisations n.i.e."
+        },
+        {
+          "id": "1U1",
+          "name": "UNECE (United Nations Economic Commission for Europe)"
+        },
+        {
+          "id": "1U2",
+          "name": "UNFCCC (United Nations Framework Convention for Climate Change)"
+        },
+        {
+          "id": "1V",
+          "name": "Universal Postal Union"
+        },
+        {
+          "id": "1W",
+          "name": "World Bank Group"
+        },
+        {
+          "id": "4A",
+          "name": "All the European Union Institutions excluding the institutions of the euro area (changing composition)"
+        },
+        {
+          "id": "4AA",
+          "name": "All the European Union Institutions excluding the ECB"
+        },
+        {
+          "id": "4B",
+          "name": "EMS (European Monetary System)"
+        },
+        {
+          "id": "4C",
+          "name": "EIB (European Investment Bank)"
+        },
+        {
+          "id": "4D",
+          "name": "European Commission"
+        },
+        {
+          "id": "4DJ",
+          "name": "All the European Union Institutions financed via the EU Budget"
+        },
+        {
+          "id": "4E",
+          "name": "EDF (European Development Fund)"
+        },
+        {
+          "id": "4F",
+          "name": "ECB (European Central Bank)"
+        },
+        {
+          "id": "4G",
+          "name": "EIF (European Investment Fund)"
+        },
+        {
+          "id": "4H",
+          "name": "European Coal and Steel Community"
+        },
+        {
+          "id": "4I",
+          "name": "Neighbourhood Investment Facility"
+        },
+        {
+          "id": "4J",
+          "name": "Other European Union Institutions, Organs and Organisms covered by General budget"
+        },
+        {
+          "id": "4J1",
+          "name": "European Parliament"
+        },
+        {
+          "id": "4J2",
+          "name": "Council of the European Union"
+        },
+        {
+          "id": "4J3",
+          "name": "Court of Justice"
+        },
+        {
+          "id": "4J4",
+          "name": "Court of Auditors"
+        },
+        {
+          "id": "4J5",
+          "name": "European Council"
+        },
+        {
+          "id": "4J6",
+          "name": "Economic and Social Committee"
+        },
+        {
+          "id": "4J7",
+          "name": "Committee of Regions"
+        },
+        {
+          "id": "4J8",
+          "name": "Other small European Union Institutions and agencies (Ombudsman, Data Protection Supervisor etc.)"
+        },
+        {
+          "id": "4J81",
+          "name": "Agency for the Cooperation of Energy Regulators"
+        },
+        {
+          "id": "4J810",
+          "name": "European Centre for Disease Prevention and Control"
+        },
+        {
+          "id": "4J811",
+          "name": "European Centre for the Development of Vocational Training"
+        },
+        {
+          "id": "4J812",
+          "name": "European Chemicals Agency"
+        },
+        {
+          "id": "4J813",
+          "name": "European Data Protection Supervisor"
+        },
+        {
+          "id": "4J814",
+          "name": "European Defence Agency"
+        },
+        {
+          "id": "4J815",
+          "name": "European Environment Agency"
+        },
+        {
+          "id": "4J816",
+          "name": "European External Action Service"
+        },
+        {
+          "id": "4J817",
+          "name": "European Fisheries Control Agency"
+        },
+        {
+          "id": "4J818",
+          "name": "European Food Safety Authority"
+        },
+        {
+          "id": "4J819",
+          "name": "European Foundation for the Improvement of Living and Working Conditions"
+        },
+        {
+          "id": "4J82",
+          "name": "Body of European Regulators for Electronic Communications"
+        },
+        {
+          "id": "4J820",
+          "name": "European GNSS Agency"
+        },
+        {
+          "id": "4J821",
+          "name": "European Institute for Gender Equality"
+        },
+        {
+          "id": "4J822",
+          "name": "European Institute of Innovation and Technology"
+        },
+        {
+          "id": "4J823",
+          "name": "European Maritime Safety Agency"
+        },
+        {
+          "id": "4J824",
+          "name": "European Medicines Agency"
+        },
+        {
+          "id": "4J825",
+          "name": "European Monitoring Centre for Drugs and Drug Addiction"
+        },
+        {
+          "id": "4J826",
+          "name": "European Network and Information Security Agency"
+        },
+        {
+          "id": "4J827",
+          "name": "European Ombudsman"
+        },
+        {
+          "id": "4J828",
+          "name": "European Personnel Selection Office"
+        },
+        {
+          "id": "4J829",
+          "name": "European Police College"
+        },
+        {
+          "id": "4J83",
+          "name": "Community Plant Variety Office"
+        },
+        {
+          "id": "4J830",
+          "name": "European Police Office"
+        },
+        {
+          "id": "4J831",
+          "name": "European Public Prosecutor's Office (in preparation)"
+        },
+        {
+          "id": "4J832",
+          "name": "European Railway Agency"
+        },
+        {
+          "id": "4J833",
+          "name": "European School of Administration"
+        },
+        {
+          "id": "4J834",
+          "name": "European Training Foundation"
+        },
+        {
+          "id": "4J835",
+          "name": "European Union Agency for Fundamental Rights"
+        },
+        {
+          "id": "4J836",
+          "name": "European Union Institute for Security Studies"
+        },
+        {
+          "id": "4J837",
+          "name": "European Union Intellectual Property Office"
+        },
+        {
+          "id": "4J838",
+          "name": "European Union Satellite Centre"
+        },
+        {
+          "id": "4J839",
+          "name": "Publications Office of the European Union"
+        },
+        {
+          "id": "4J84",
+          "name": "Computer Emergency Response Team"
+        },
+        {
+          "id": "4J840",
+          "name": "The European Union’s Judicial Cooperation Unit"
+        },
+        {
+          "id": "4J841",
+          "name": "Translation Centre for the Bodies of the European Union"
+        },
+        {
+          "id": "4J842",
+          "name": "ATHENA Mechanism"
+        },
+        {
+          "id": "4J85",
+          "name": "European Agency for Safety and Health at Work"
+        },
+        {
+          "id": "4J86",
+          "name": "European Agency for the Management of Operational Cooperation at the External Borders"
+        },
+        {
+          "id": "4J87",
+          "name": "European Agency for the operational management of large-scale IT systems in the area of freedom, security and justice"
+        },
+        {
+          "id": "4J88",
+          "name": "European Asylum Support Office"
+        },
+        {
+          "id": "4J89",
+          "name": "European Aviation Safety Agency"
+        },
+        {
+          "id": "4M",
+          "name": "SRB (Single Resolution Board)"
+        },
+        {
+          "id": "4R",
+          "name": "EU-Africa Infrastructure Trust Fund"
+        },
+        {
+          "id": "4S",
+          "name": "ESM (European Stability Mechanism)"
+        },
+        {
+          "id": "4T",
+          "name": "Joint Committee of the European Supervisory Authorities (ESAs)"
+        },
+        {
+          "id": "4T1",
+          "name": "EBA (European Banking Authority)"
+        },
+        {
+          "id": "4T2",
+          "name": "ESMA (European Securities and Markets Authority)"
+        },
+        {
+          "id": "4T3",
+          "name": "EIOPA (European Insurance and Occupational Pensions Authority)"
+        },
+        {
+          "id": "4U",
+          "name": "EURATOM"
+        },
+        {
+          "id": "4V",
+          "name": "FEMIP (Facility for Euro-Mediterranean Investment and Partnership)"
+        },
+        {
+          "id": "4W",
+          "name": "EFSF (European Financial Stability Facility)"
+        },
+        {
+          "id": "4X",
+          "name": "All the European Union Institutions not financed via the EU Budget"
+        },
+        {
+          "id": "4Y",
+          "name": "All European Community Institutions, Organs and Organisms, including ECB, ESM and EFSF"
+        },
+        {
+          "id": "5A",
+          "name": "Other International Organisations (financial institutions)"
+        },
+        {
+          "id": "5AA",
+          "name": "Multilateral Lending Agencies"
+        },
+        {
+          "id": "5B",
+          "name": "BIS (Bank for International Settlements)"
+        },
+        {
+          "id": "5C",
+          "name": "IADB (Inter-American Development Bank)"
+        },
+        {
+          "id": "5D",
+          "name": "AfDB (African Development Bank)"
+        },
+        {
+          "id": "5E",
+          "name": "AsDB (Asian Development Bank)"
+        },
+        {
+          "id": "5F",
+          "name": "EBRD (European Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "5G",
+          "name": "IIC (Inter-American Investment Corporation)"
+        },
+        {
+          "id": "5H",
+          "name": "NIB (Nordic Investment Bank)"
+        },
+        {
+          "id": "5I",
+          "name": "ECCB (Eastern Caribbean Central Bank)"
+        },
+        {
+          "id": "5J",
+          "name": "IBEC (International Bank for Economic Co-operation)"
+        },
+        {
+          "id": "5K",
+          "name": "IIB (International Investment Bank)"
+        },
+        {
+          "id": "5L",
+          "name": "CDB (Caribbean Development Bank)"
+        },
+        {
+          "id": "5M",
+          "name": "AMF (Arab Monetary Fund)"
+        },
+        {
+          "id": "5N",
+          "name": "BADEA (Banque arabe pour le développement économique en Afrique)"
+        },
+        {
+          "id": "5O",
+          "name": "BCEAO (Banque Centrale des Etats de l`Afrique de l`Ouest)"
+        },
+        {
+          "id": "5P",
+          "name": "CASDB (Central African States Development Bank)"
+        },
+        {
+          "id": "5Q",
+          "name": "African Development Fund"
+        },
+        {
+          "id": "5R",
+          "name": "Asian Development Fund"
+        },
+        {
+          "id": "5S",
+          "name": "Fonds spécial unifié de développement"
+        },
+        {
+          "id": "5T",
+          "name": "CABEI (Central American Bank for Economic Integration)"
+        },
+        {
+          "id": "5U",
+          "name": "ADC (Andean Development Corporation)"
+        },
+        {
+          "id": "5W",
+          "name": "BEAC (Banque des Etats de l`Afrique Centrale)"
+        },
+        {
+          "id": "5X",
+          "name": "Asian Infrastructure Investment Bank"
+        },
+        {
+          "id": "5Z",
+          "name": "Other International Financial Organisations n.i.e."
+        },
+        {
+          "id": "5Z1",
+          "name": "Africa Finance Corporation"
+        },
+        {
+          "id": "5Z10",
+          "name": "International Civil Aviation Organization"
+        },
+        {
+          "id": "5Z11",
+          "name": "International Cocoa Organization"
+        },
+        {
+          "id": "5Z12",
+          "name": "International Coffee Organization"
+        },
+        {
+          "id": "5Z13",
+          "name": "International Copper Study Group"
+        },
+        {
+          "id": "5Z14",
+          "name": "International Cotton Advisory Committee"
+        },
+        {
+          "id": "5Z15",
+          "name": "International Grains Council"
+        },
+        {
+          "id": "5Z16",
+          "name": "International Jute Study Group"
+        },
+        {
+          "id": "5Z17",
+          "name": "International Lead and Zinc Study Group"
+        },
+        {
+          "id": "5Z18",
+          "name": "International Maritime Organization"
+        },
+        {
+          "id": "5Z19",
+          "name": "International Maritime Satellite Organization"
+        },
+        {
+          "id": "5Z2",
+          "name": "African Development Bank Group"
+        },
+        {
+          "id": "5Z20",
+          "name": "International Olive Oil Council"
+        },
+        {
+          "id": "5Z21",
+          "name": "International Rubber Study Group"
+        },
+        {
+          "id": "5Z22",
+          "name": "International Sugar Organization"
+        },
+        {
+          "id": "5Z23",
+          "name": "Latin American and the Caribbean Economic System"
+        },
+        {
+          "id": "5Z24",
+          "name": "Latin American Energy Organization"
+        },
+        {
+          "id": "5Z25",
+          "name": "Latin American Integration Association"
+        },
+        {
+          "id": "5Z26",
+          "name": "League of Arab States"
+        },
+        {
+          "id": "5Z27",
+          "name": "Organisation of Eastern Caribbean States"
+        },
+        {
+          "id": "5Z28",
+          "name": "Organization of American States"
+        },
+        {
+          "id": "5Z29",
+          "name": "Organization of Arab Petroleum Exporting Countries"
+        },
+        {
+          "id": "5Z3",
+          "name": "Arab Fund for Economic and Social Development"
+        },
+        {
+          "id": "5Z30",
+          "name": "Organization of Central American States"
+        },
+        {
+          "id": "5Z31",
+          "name": "Organization of the Petroleum Exporting Countries"
+        },
+        {
+          "id": "5Z33",
+          "name": "South Asian Association for Regional Cooperation"
+        },
+        {
+          "id": "5Z34",
+          "name": "United Nations Conference on Trade and Development"
+        },
+        {
+          "id": "5Z35",
+          "name": "West African Economic Community"
+        },
+        {
+          "id": "5Z36",
+          "name": "West African Health Organisation"
+        },
+        {
+          "id": "5Z37",
+          "name": "West African Monetary Agency"
+        },
+        {
+          "id": "5Z38",
+          "name": "West African Monetary Institute"
+        },
+        {
+          "id": "5Z39",
+          "name": "World Council of Churches"
+        },
+        {
+          "id": "5Z4",
+          "name": "Asian Clearing Union"
+        },
+        {
+          "id": "5Z40",
+          "name": "World Intellectual Property Organization"
+        },
+        {
+          "id": "5Z41",
+          "name": "World Meteorological Organization"
+        },
+        {
+          "id": "5Z42",
+          "name": "World Tourism Organization"
+        },
+        {
+          "id": "5Z43",
+          "name": "The Nordic Development Fund"
+        },
+        {
+          "id": "5Z44",
+          "name": "The North American Development Bank"
+        },
+        {
+          "id": "5Z45",
+          "name": "International Council for the Exploration of the Sea (ICES)"
+        },
+        {
+          "id": "5Z5",
+          "name": "Colombo Plan"
+        },
+        {
+          "id": "5Z6",
+          "name": "Economic Community of West African States"
+        },
+        {
+          "id": "5Z7",
+          "name": "European Free Trade Association"
+        },
+        {
+          "id": "5Z8",
+          "name": "Fusion for Energy"
+        },
+        {
+          "id": "5Z9",
+          "name": "Intergovernmental Council of Copper Exporting Countries"
+        },
+        {
+          "id": "6A",
+          "name": "Other International Organisations (non-financial institutions)"
+        },
+        {
+          "id": "6A1",
+          "name": "African Union"
+        },
+        {
+          "id": "6A10",
+          "name": "IEA (International Energy Agency)"
+        },
+        {
+          "id": "6A11",
+          "name": "Eurasian Economic Commission"
+        },
+        {
+          "id": "6A2",
+          "name": "Association of Southeast Asian Nations"
+        },
+        {
+          "id": "6A3",
+          "name": "Caribbean Community and Common Market"
+        },
+        {
+          "id": "6A4",
+          "name": "Central American Common Market"
+        },
+        {
+          "id": "6A5",
+          "name": "East African Development Bank"
+        },
+        {
+          "id": "6A6",
+          "name": "ECOWAS Bank for Investment and Development"
+        },
+        {
+          "id": "6A7",
+          "name": "Latin American Association of Development Financing Institutions"
+        },
+        {
+          "id": "6A8",
+          "name": "OPEC Fund for International Development"
+        },
+        {
+          "id": "6A9",
+          "name": "The Permanent Court of Arbitration"
+        },
+        {
+          "id": "6B",
+          "name": "NATO (North Atlantic Treaty Organisation)"
+        },
+        {
+          "id": "6C",
+          "name": "Council of Europe"
+        },
+        {
+          "id": "6D",
+          "name": "ICRC (International Committee of the Red Cross)"
+        },
+        {
+          "id": "6E",
+          "name": "ESA (European Space Agency)"
+        },
+        {
+          "id": "6F",
+          "name": "EPO (European Patent Office)"
+        },
+        {
+          "id": "6G",
+          "name": "EUROCONTROL (European Organisation for the Safety of Air Navigation)"
+        },
+        {
+          "id": "6H",
+          "name": "EUTELSAT (European Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6I",
+          "name": "EMBL (European Molecular Biology Laboratory)"
+        },
+        {
+          "id": "6J",
+          "name": "ITSO (International Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6K",
+          "name": "EBU/UER (European Broadcasting Union/Union européenne de radio-télévision)"
+        },
+        {
+          "id": "6L",
+          "name": "EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites)"
+        },
+        {
+          "id": "6M",
+          "name": "ESO (European Southern Observatory)"
+        },
+        {
+          "id": "6N",
+          "name": "ECMWF (European Centre for Medium-Range Weather Forecasts)"
+        },
+        {
+          "id": "6O",
+          "name": "OECD (Organisation for Economic Co-operation and Development)"
+        },
+        {
+          "id": "6P",
+          "name": "CERN (European Organisation for Nuclear Research)"
+        },
+        {
+          "id": "6Q",
+          "name": "IOM (International Organisation for Migration)"
+        },
+        {
+          "id": "6Z",
+          "name": "Other International Non-Financial Organisations n.i.e."
+        },
+        {
+          "id": "6Z1",
+          "name": "The Global Fund to Fight AIDS, Tuberculosis and Malaria"
+        },
+        {
+          "id": "7A",
+          "name": "WAEMU (West African Economic and Monetary Union)"
+        }
+      ],
+      "total_codes": 1000,
+      "truncated": true
+    },
+    {
+      "id": "INDICATOR",
+      "position": 5,
+      "name": "INDICATOR",
+      "codes": [
+        {
+          "id": "TOVT_PA",
+          "name": "Net turnover from the principal activity at the NACE2 three-digit level"
+        },
+        {
+          "id": "APROD",
+          "name": "Actual production"
+        },
+        {
+          "id": "AV",
+          "name": "Value added"
+        },
+        {
+          "id": "BUBA",
+          "name": "Bankruptcies"
+        },
+        {
+          "id": "BURE",
+          "name": "Registrations"
+        },
+        {
+          "id": "EMPL",
+          "name": "Number of employees and self-employed persons"
+        },
+        {
+          "id": "EMPL_BRTH",
+          "name": "Number of employees and self-employed persons in newly born enterprises"
+        },
+        {
+          "id": "EMPL_DTH",
+          "name": "Number of employees and self-employed persons in enterprise deaths"
+        },
+        {
+          "id": "EMPL_SALGE1",
+          "name": "Number of employees and self-employed persons in enterprises having at least one employee"
+        },
+        {
+          "id": "EMPL_SALGE1_BRTH",
+          "name": "Number of employees and self-employed persons in enterprises having the first employee"
+        },
+        {
+          "id": "EMPL_SALGE1_DTH",
+          "name": "Number of employees and self-employed persons in enterprises having no employees anymore"
+        },
+        {
+          "id": "EMPL_SALGE1_SRVL",
+          "name": "Number of employees and self-employed persons in survivals of enterprise having at least one employee"
+        },
+        {
+          "id": "EMPL_SALGE1_SRVL_YBRTH",
+          "name": "Number of employees and self-employed persons in survivals of enterprises having at least one employee, in the year of birth"
+        },
+        {
+          "id": "EMPL_SRVL",
+          "name": "Number of employees and self-employed persons in enterprise survivals (only for enterprises having survived for three calendar years)"
+        },
+        {
+          "id": "EMPL_SRVL_YBRTH",
+          "name": "Number of employees and self-employed persons in enterprise survivals, in the year of birth (only for enterprises having survived for three calendar years)"
+        },
+        {
+          "id": "EMPL_UNIT_LOC",
+          "name": "Number of employees and self-employed persons in local units"
+        },
+        {
+          "id": "ENT",
+          "name": "Number of active enterprises"
+        },
+        {
+          "id": "ENT_BRTH",
+          "name": "Enterprise births"
+        },
+        {
+          "id": "ENT_BRTH_SAL1",
+          "name": "Enterprises having the first employee"
+        },
+        {
+          "id": "ENT_DTH",
+          "name": "Enterprise deaths"
+        },
+        {
+          "id": "ENT_HGRW",
+          "name": "Number of high-growth enterprises"
+        },
+        {
+          "id": "ENT_HGRW_YNG",
+          "name": "Number of young high-growth enterprises"
+        },
+        {
+          "id": "ENT_SALGE1",
+          "name": "Number of enterprises having at least one employee"
+        },
+        {
+          "id": "ENT_SALGE1_BRTH",
+          "name": "Enterprises having the first employee"
+        },
+        {
+          "id": "ENT_SALGE1_DTH",
+          "name": "Enterprises having no employees anymore"
+        },
+        {
+          "id": "ENT_SALGE1_SRVL",
+          "name": "Survivals of enterprises having at least one employee"
+        },
+        {
+          "id": "ENT_SRVL",
+          "name": "Enterprise survivals"
+        },
+        {
+          "id": "ENT_TRD",
+          "name": "Number of enterprises engaged in international trade"
+        },
+        {
+          "id": "EXPN_SAL_BEN",
+          "name": "Employee benefits expense"
+        },
+        {
+          "id": "EXPN_SAL_BEN_IFATS",
+          "name": "Employee benefits expense in foreign-controlled enterprises"
+        },
+        {
+          "id": "GBARD",
+          "name": "Government budget allocations for research and development (GBARD)"
+        },
+        {
+          "id": "GOS",
+          "name": "Gross operating surplus"
+        },
+        {
+          "id": "GRSINV_BLD",
+          "name": "Gross investment in the acquisition of existing buildings"
+        },
+        {
+          "id": "GRSINV_CSTR",
+          "name": "Gross investment in construction and improvement of buildings"
+        },
+        {
+          "id": "GRSINV_LND",
+          "name": "Gross investment in land"
+        },
+        {
+          "id": "GRSINV_MCH",
+          "name": "Gross investment in machinery and equipment"
+        },
+        {
+          "id": "GRSINV_NTNCA_XGWL",
+          "name": "Gross investment in intangible non-current assets other than goodwill"
+        },
+        {
+          "id": "GRSINV_TNCA",
+          "name": "Gross investment in tangible non-current assets"
+        },
+        {
+          "id": "HOWK",
+          "name": "Hours worked by employees"
+        },
+        {
+          "id": "IMPR",
+          "name": "Import prices"
+        },
+        {
+          "id": "IMPX",
+          "name": "Import prices (non-euro area)"
+        },
+        {
+          "id": "IMPZ",
+          "name": "Import prices (euro area)"
+        },
+        {
+          "id": "IM_RND_EXPN",
+          "name": "Intramural R&D expenditure"
+        },
+        {
+          "id": "INV_SFT",
+          "name": "Investment in purchased software"
+        },
+        {
+          "id": "LEU",
+          "name": "Number of legal units in statistical unit"
+        },
+        {
+          "id": "MARG",
+          "name": "Gross margin on goods for resale"
+        },
+        {
+          "id": "PNUM",
+          "name": "Building permits: number of dwellings"
+        },
+        {
+          "id": "PREN",
+          "name": "Non-domestic producer prices"
+        },
+        {
+          "id": "PREX",
+          "name": "Non-domestic producer prices (non-euro area)"
+        },
+        {
+          "id": "PREZ",
+          "name": "Non-domestic producer prices (euro area)"
+        },
+        {
+          "id": "PRIN",
+          "name": "Domestic producer prices"
+        },
+        {
+          "id": "PROD",
+          "name": "Production (volume)"
+        },
+        {
+          "id": "PROD_OP_SC",
+          "name": "Production under sub-contracted operations"
+        },
+        {
+          "id": "PROD_SELL",
+          "name": "Sold production"
+        },
+        {
+          "id": "PRON",
+          "name": "Producer prices"
+        },
+        {
+          "id": "PSQM",
+          "name": "Building permits: square metres"
+        },
+        {
+          "id": "PUB_FUND_PERF",
+          "name": "National public funding to transnationally coordinated R&D"
+        },
+        {
+          "id": "PUR",
+          "name": "Total purchases of goods and services"
+        },
+        {
+          "id": "PUR_AGN",
+          "name": "Expenses on services provided through agency workers"
+        },
+        {
+          "id": "PUR_ENR",
+          "name": "Purchases of energy products"
+        },
+        {
+          "id": "PUR_RES",
+          "name": "Purchases of goods and services for resale"
+        },
+        {
+          "id": "PUR_RNT",
+          "name": "Expenses of long term rental and operating lease"
+        },
+        {
+          "id": "PUR_SC",
+          "name": "Payments to subcontractors"
+        },
+        {
+          "id": "QTY_NET_MASS",
+          "name": "Quantity of imports / exports of goods - Net Mass"
+        },
+        {
+          "id": "QTY_SU",
+          "name": "Quantity of imports / exports of goods - Supplementary Unit"
+        },
+        {
+          "id": "RND_PER",
+          "name": "R&D personnel"
+        },
+        {
+          "id": "RSE",
+          "name": "Researchers"
+        },
+        {
+          "id": "SAL",
+          "name": "Number of employees"
+        },
+        {
+          "id": "SALE_TINV",
+          "name": "Sales proceeds of tangible investments"
+        },
+        {
+          "id": "SAL_BRTH",
+          "name": "Number of employees in newly born enterprises"
+        },
+        {
+          "id": "SAL_DTH",
+          "name": "Number of employees in enterprise deaths"
+        },
+        {
+          "id": "SAL_FTE",
+          "name": "Number of employees in full-time equivalent units"
+        },
+        {
+          "id": "SAL_HGRW",
+          "name": "Number of employees in high-growth enterprises"
+        },
+        {
+          "id": "SAL_HGRW_YNG",
+          "name": "Number of employees in young high-growth enterprises"
+        },
+        {
+          "id": "SAL_SALGE1",
+          "name": "Number of employees in enterprises having at least one employee"
+        },
+        {
+          "id": "SAL_SALGE1_BRTH",
+          "name": "Number of employees in enterprises having the first employee"
+        },
+        {
+          "id": "SAL_SALGE1_DTH",
+          "name": "Number of employees in enterprises having no employees anymore"
+        },
+        {
+          "id": "SERV_EXP",
+          "name": "Exports of services"
+        },
+        {
+          "id": "SERV_IMP",
+          "name": "Imports of services"
+        },
+        {
+          "id": "SS_COST",
+          "name": "Social security costs"
+        },
+        {
+          "id": "STAT_UNIT",
+          "name": "Number of statistical units"
+        },
+        {
+          "id": "STAT_VAL",
+          "name": "Statistical value of imports / exports of goods/services"
+        },
+        {
+          "id": "STAT_VAL_EXP",
+          "name": "Statistical value of exports of goods by enterprises"
+        },
+        {
+          "id": "STK_CHG_GD",
+          "name": "Change in stock of goods"
+        },
+        {
+          "id": "STK_CHG_GD_FIN",
+          "name": "Change in stock of finished goods and work-in-progress"
+        },
+        {
+          "id": "STK_CHG_GD_RES",
+          "name": "Change in stock of goods for resale"
+        },
+        {
+          "id": "TOVD",
+          "name": "Domestic net turnover (value)"
+        },
+        {
+          "id": "TOVE",
+          "name": "Non-domestic net turnover (value)"
+        },
+        {
+          "id": "TOVT",
+          "name": "Net turnover (value)"
+        },
+        {
+          "id": "TOVT_ATF",
+          "name": "Net turnover from agriculture, forestry, fishing and industrial activities"
+        },
+        {
+          "id": "TOVT_BTE",
+          "name": "Net turnover from industrial activities excluding construction"
+        },
+        {
+          "id": "TOVT_BTF",
+          "name": "Net turnover from industrial activities"
+        },
+        {
+          "id": "TOVT_F",
+          "name": "Net turnover from construction"
+        },
+        {
+          "id": "TOVT_F41",
+          "name": "Net turnover from building"
+        },
+        {
+          "id": "TOVT_F42",
+          "name": "Net turnover from civil engineering"
+        },
+        {
+          "id": "TOVT_GTU",
+          "name": "Net turnover from service activities"
+        },
+        {
+          "id": "TOVT_NACE",
+          "name": "Net turnover of foreign-controlled enterprises"
+        },
+        {
+          "id": "TOVT_PRD",
+          "name": "Net turnover by product"
+        },
+        {
+          "id": "TOVT_RES",
+          "name": "Net turnover by residence of client"
+        },
+        {
+          "id": "TOVT_SC",
+          "name": "Net turnover from subcontracting"
+        },
+        {
+          "id": "TOVT_TRAD",
+          "name": "Net turnover from trading activities of purchase and resale and from intermediary activities"
+        },
+        {
+          "id": "TOVV",
+          "name": "Volume of sales"
+        },
+        {
+          "id": "TOVX",
+          "name": "Non-domestic net turnover (non-euro area) (value)"
+        },
+        {
+          "id": "TOVZ",
+          "name": "Non-domestic net turnover (euro area) (value)"
+        },
+        {
+          "id": "TRDR",
+          "name": "Number of traders"
+        },
+        {
+          "id": "UNIT_LOC",
+          "name": "Number of local units"
+        },
+        {
+          "id": "VAL_OUT",
+          "name": "Value of output"
+        },
+        {
+          "id": "WAGE",
+          "name": "Wages and salaries"
+        },
+        {
+          "id": "WAGE_UNIT_LOC",
+          "name": "Wages and salaries in local units"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "INST",
+          "name": "Institutions"
+        },
+        {
+          "id": "EM_RND_EXPN",
+          "name": "R&D extramural expenditure"
+        },
+        {
+          "id": "ENT_CV",
+          "name": "Coefficient of variation for indicator 210101 Number of active enterprises"
+        },
+        {
+          "id": "EMPL_CV",
+          "name": "Coefficient of variation for indicator 220101 Number of employees and self-employed persons"
+        },
+        {
+          "id": "TOVT_CV",
+          "name": "Coefficient of variation for indicator 250101 Net turnover"
+        },
+        {
+          "id": "AV_CV",
+          "name": "Coefficient of variation for indicator 250401 Value added"
+        },
+        {
+          "id": "SPL_CVG",
+          "name": "Sample coverage: number of employees and self-employed persons in the sample / number of employees and self-employed persons in target population (%)"
+        },
+        {
+          "id": "SPL_SZ",
+          "name": "Sample size= number of active enterprises in the sample (Alternatively, legal units may be used)"
+        },
+        {
+          "id": "SPL_RT",
+          "name": "Sample ratio= number of active enterprises in the sample / number of active enterprises in the target population (%) (Alternatively, legal units may be used)"
+        },
+        {
+          "id": "W_RPRT",
+          "name": "Weighted response rate= Unit non-response shall be weighted, preferably by number of employees and self-employed persons. (Alternatively, net turnover may be used or administrative data i.e. social security data for employment)"
+        },
+        {
+          "id": "NW_RPRT",
+          "name": "Unweighted response rate: number of responding active enterprises / number of active enterprise in the sample (%)"
+        }
+      ],
+      "total_codes": 121,
+      "truncated": false
+    },
+    {
+      "id": "ACTIVITY",
+      "position": 6,
+      "name": "ACTIVITY",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Agriculture, forestry and fishing"
+        },
+        {
+          "id": "A01",
+          "name": "Crop and animal production, hunting and related service activities"
+        },
+        {
+          "id": "A011",
+          "name": "Growing of non-perennial crops"
+        },
+        {
+          "id": "A0111",
+          "name": "Growing of cereals (except rice), leguminous crops and oil seeds"
+        },
+        {
+          "id": "A0112",
+          "name": "Growing of rice"
+        },
+        {
+          "id": "A0113",
+          "name": "Growing of vegetables and melons, roots and tubers"
+        },
+        {
+          "id": "A0114",
+          "name": "Growing of sugar cane"
+        },
+        {
+          "id": "A0115",
+          "name": "Growing of tobacco"
+        },
+        {
+          "id": "A0116",
+          "name": "Growing of fibre crops"
+        },
+        {
+          "id": "A0119",
+          "name": "Growing of other non-perennial crops"
+        },
+        {
+          "id": "A012",
+          "name": "Growing of perennial crops"
+        },
+        {
+          "id": "A0121",
+          "name": "Growing of grapes"
+        },
+        {
+          "id": "A0122",
+          "name": "Growing of tropical and subtropical fruits"
+        },
+        {
+          "id": "A0123",
+          "name": "Growing of citrus fruits"
+        },
+        {
+          "id": "A0124",
+          "name": "Growing of pome fruits and stone fruits"
+        },
+        {
+          "id": "A0125",
+          "name": "Growing of other tree and bush fruits and nuts"
+        },
+        {
+          "id": "A0126",
+          "name": "Growing of oleaginous fruits"
+        },
+        {
+          "id": "A0127",
+          "name": "Growing of beverage crops"
+        },
+        {
+          "id": "A0128",
+          "name": "Growing of spices, aromatic, drug and pharmaceutical crops"
+        },
+        {
+          "id": "A0129",
+          "name": "Growing of other perennial crops"
+        },
+        {
+          "id": "A013",
+          "name": "Plant propagation"
+        },
+        {
+          "id": "A0130",
+          "name": "Plant propagation"
+        },
+        {
+          "id": "A014",
+          "name": "Animal production"
+        },
+        {
+          "id": "A0141",
+          "name": "Raising of dairy cattle"
+        },
+        {
+          "id": "A0142",
+          "name": "Raising of other cattle and buffaloes"
+        },
+        {
+          "id": "A0143",
+          "name": "Raising of horses and other equines"
+        },
+        {
+          "id": "A0144",
+          "name": "Raising of camels and camelids"
+        },
+        {
+          "id": "A0145",
+          "name": "Raising of sheep and goats"
+        },
+        {
+          "id": "A0146",
+          "name": "Raising of swine/pigs"
+        },
+        {
+          "id": "A0147",
+          "name": "Raising of poultry"
+        },
+        {
+          "id": "A0149",
+          "name": "Raising of other animals"
+        },
+        {
+          "id": "A015",
+          "name": "Mixed farming"
+        },
+        {
+          "id": "A0150",
+          "name": "Mixed farming"
+        },
+        {
+          "id": "A016",
+          "name": "Support activities to agriculture and post-harvest crop activities"
+        },
+        {
+          "id": "A0161",
+          "name": "Support activities for crop production"
+        },
+        {
+          "id": "A0162",
+          "name": "Support activities for animal production"
+        },
+        {
+          "id": "A0163",
+          "name": "Post-harvest crop activities"
+        },
+        {
+          "id": "A0164",
+          "name": "Seed processing for propagation"
+        },
+        {
+          "id": "A017",
+          "name": "Hunting, trapping and related service activities"
+        },
+        {
+          "id": "A0170",
+          "name": "Hunting, trapping and related service activities"
+        },
+        {
+          "id": "A01_02",
+          "name": "Agriculture and forestry"
+        },
+        {
+          "id": "A01_02X017",
+          "name": "Agriculture and forestry (except hunting)"
+        },
+        {
+          "id": "A01_IRR",
+          "name": "Irrigation in agriculture"
+        },
+        {
+          "id": "A02",
+          "name": "Forestry and logging"
+        },
+        {
+          "id": "A021",
+          "name": "Silviculture and other forestry activities"
+        },
+        {
+          "id": "A0210",
+          "name": "Silviculture and other forestry activities"
+        },
+        {
+          "id": "A022",
+          "name": "Logging"
+        },
+        {
+          "id": "A0220",
+          "name": "Logging"
+        },
+        {
+          "id": "A023",
+          "name": "Gathering of wild growing non-wood products"
+        },
+        {
+          "id": "A0230",
+          "name": "Gathering of wild growing non-wood products"
+        },
+        {
+          "id": "A024",
+          "name": "Support services to forestry"
+        },
+        {
+          "id": "A0240",
+          "name": "Support services to forestry"
+        },
+        {
+          "id": "A03",
+          "name": "Fishing and aquaculture"
+        },
+        {
+          "id": "A031",
+          "name": "Fishing"
+        },
+        {
+          "id": "A0311",
+          "name": "Marine fishing"
+        },
+        {
+          "id": "A0312",
+          "name": "Freshwater fishing"
+        },
+        {
+          "id": "A032",
+          "name": "Aquaculture"
+        },
+        {
+          "id": "A0321",
+          "name": "Marine aquaculture"
+        },
+        {
+          "id": "A0322",
+          "name": "Freshwater aquaculture"
+        },
+        {
+          "id": "AFT",
+          "name": "Agriculture, fishing and transport (except railways) - AFT"
+        },
+        {
+          "id": "ATC",
+          "name": "From a to C"
+        },
+        {
+          "id": "ATNXB",
+          "name": "Agriculture; industry and construction (except mining); services of the business economy"
+        },
+        {
+          "id": "ATS",
+          "name": "All activities except activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies"
+        },
+        {
+          "id": "ATT",
+          "name": "All NACE activities (except extra-territorial organisations and bodies)"
+        },
+        {
+          "id": "ATUXH491_492",
+          "name": "All NACE activities (except railways)"
+        },
+        {
+          "id": "A_B",
+          "name": "Agriculture, forestry and fishing; mining and quarrying"
+        },
+        {
+          "id": "A_EP_OTH",
+          "name": "Agriculture, forestry and fishing; other business sectors (mainly A, E38.3, F41 to U except O)"
+        },
+        {
+          "id": "A_F_HTU",
+          "name": "NACE branches other than Industry or Trade (A+F+H+I+J+K+L+M+N+O+P+Q+R+S+T+U)"
+        },
+        {
+          "id": "B",
+          "name": "Mining and quarrying"
+        },
+        {
+          "id": "B05",
+          "name": "Mining of coal and lignite"
+        },
+        {
+          "id": "B051",
+          "name": "Mining of hard coal"
+        },
+        {
+          "id": "B0510",
+          "name": "Mining of hard coal"
+        },
+        {
+          "id": "B052",
+          "name": "Mining of lignite"
+        },
+        {
+          "id": "B0520",
+          "name": "Mining of lignite"
+        },
+        {
+          "id": "B06",
+          "name": "Extraction of crude petroleum and natural gas"
+        },
+        {
+          "id": "B061",
+          "name": "Extraction of crude petroleum"
+        },
+        {
+          "id": "B0610",
+          "name": "Extraction of crude petroleum"
+        },
+        {
+          "id": "B062",
+          "name": "Extraction of natural gas"
+        },
+        {
+          "id": "B0620",
+          "name": "Extraction of natural gas"
+        },
+        {
+          "id": "B06T09",
+          "name": "Mining and quarrying (except mining of coal and lignite)"
+        },
+        {
+          "id": "B06_09",
+          "name": "Extraction of crude petroleum and natural gas; mining support service activities"
+        },
+        {
+          "id": "B07",
+          "name": "Mining of metal ores"
+        },
+        {
+          "id": "B071",
+          "name": "Mining of iron ores"
+        },
+        {
+          "id": "B0710",
+          "name": "Mining of iron ores"
+        },
+        {
+          "id": "B072",
+          "name": "Mining of non-ferrous metal ores"
+        },
+        {
+          "id": "B0721",
+          "name": "Mining of uranium and thorium ores"
+        },
+        {
+          "id": "B0729",
+          "name": "Mining of other non-ferrous metal ores"
+        },
+        {
+          "id": "B08",
+          "name": "Other mining and quarrying"
+        },
+        {
+          "id": "B081",
+          "name": "Quarrying of stone, sand and clay"
+        },
+        {
+          "id": "B0811",
+          "name": "Quarrying of ornamental and building stone, limestone, gypsum, chalk and slate"
+        },
+        {
+          "id": "B0812",
+          "name": "Operation of gravel and sand pits; mining of clays and kaolin"
+        },
+        {
+          "id": "B089",
+          "name": "Mining and quarrying n.e.c."
+        },
+        {
+          "id": "B0891",
+          "name": "Mining of chemical and fertiliser minerals"
+        },
+        {
+          "id": "B0892",
+          "name": "Extraction of peat"
+        },
+        {
+          "id": "B0893",
+          "name": "Extraction of salt"
+        },
+        {
+          "id": "B0899",
+          "name": "Other mining and quarrying n.e.c."
+        },
+        {
+          "id": "B09",
+          "name": "Mining support service activities"
+        },
+        {
+          "id": "B091",
+          "name": "Support activities for petroleum and natural gas extraction"
+        },
+        {
+          "id": "B0910",
+          "name": "Support activities for petroleum and natural gas extraction"
+        },
+        {
+          "id": "B099",
+          "name": "Support activities for other mining and quarrying"
+        },
+        {
+          "id": "B0990",
+          "name": "Support activities for other mining and quarrying"
+        },
+        {
+          "id": "BTD",
+          "name": "Mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply"
+        },
+        {
+          "id": "BTDXFOOD",
+          "name": "Mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply (except food, beverages and tobacco)"
+        },
+        {
+          "id": "BTD_F",
+          "name": "Mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply; construction"
+        },
+        {
+          "id": "BTE",
+          "name": "Industry (except construction)"
+        },
+        {
+          "id": "BTE36",
+          "name": "Industry (except construction, sewerage, waste management and remediation activities)"
+        },
+        {
+          "id": "BTE36XFOOD",
+          "name": "Industry (except construction, sewerage, waste management and remediation activities, food, beverages and tobacco)"
+        },
+        {
+          "id": "BTE36_F",
+          "name": "Industry and construction (except sewerage, waste management and remediation activities)"
+        },
+        {
+          "id": "BTEXFOOD",
+          "name": "Industry (except construction, food, beverages and tobacco)"
+        },
+        {
+          "id": "BTEXFOOD_NRG",
+          "name": "Industry (except construction, food, beverages, tobacco and energy)"
+        },
+        {
+          "id": "BTF",
+          "name": "Industry and construction"
+        },
+        {
+          "id": "BTM71_INN",
+          "name": "Innovation core activities (Com.Reg. 1450/2004)"
+        },
+        {
+          "id": "BTM73_INN",
+          "name": "Innovation core activities (Com.Reg. 995/2012)"
+        },
+        {
+          "id": "BTN",
+          "name": "Business economy"
+        },
+        {
+          "id": "BTNXK",
+          "name": "Total business economy (except financial and insurance activities)"
+        },
+        {
+          "id": "BTNXK642",
+          "name": "Business economy (except activities of holding companies)"
+        },
+        {
+          "id": "BTN_S95",
+          "name": "Total business economy; repair of computers, personal and household goods"
+        },
+        {
+          "id": "BTN_S95XK",
+          "name": "Total business economy; repair of computers, personal and household goods (except financial and insurance activities)"
+        },
+        {
+          "id": "BTS",
+          "name": "Industry, construction and services (except activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies)"
+        },
+        {
+          "id": "BTSXK642",
+          "name": "Industry, construction and services (except activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies; activities of holding companies)"
+        },
+        {
+          "id": "BTSXO",
+          "name": "Industry, construction and services (except public administration and defence; compulsory social security; activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies)"
+        },
+        {
+          "id": "BTSXO_S94",
+          "name": "Industry, construction and services (except public administration and defence; compulsory social security; activities of households as employers; undifferentiated goods- and services-producing activities of households for own use; activities of extraterritorial organisations and bodies; activities of membership organisations)"
+        },
+        {
+          "id": "BTT",
+          "name": "Industry, construction and services (except activities of extraterritorial organisations and bodies)"
+        },
+        {
+          "id": "BTU",
+          "name": "Industry, construction and services"
+        },
+        {
+          "id": "B_C",
+          "name": "Mining and quarrying; manufacturing"
+        },
+        {
+          "id": "B_CXFD_MIG_NRG",
+          "name": "Mining and quarrying; manufacturing (except MIG energy), except food, beverages and tobacco"
+        },
+        {
+          "id": "B_CXFOOD",
+          "name": "Mining and quarrying; manufacturing (except food, beverages and tobacco)"
+        },
+        {
+          "id": "B_CXMIG_NRG",
+          "name": "Mining and quarrying; manufacturing (except MIG energy)"
+        },
+        {
+          "id": "B_DTFXB0721",
+          "name": "Mining and quarrying, electricity, gas, water supply,  construction (except mining of uranium)"
+        },
+        {
+          "id": "B_D_E",
+          "name": "Mining and quarrying; electricity, gas, steam and air conditioning supply; water supply, sewerage, waste management and remediation activities"
+        },
+        {
+          "id": "C",
+          "name": "Manufacturing"
+        },
+        {
+          "id": "C10",
+          "name": "Manufacture of food products"
+        },
+        {
+          "id": "C101",
+          "name": "Processing and preserving of meat and production of meat products"
+        },
+        {
+          "id": "C1011",
+          "name": "Processing and preserving of meat"
+        },
+        {
+          "id": "C1012",
+          "name": "Processing and preserving of poultry meat"
+        },
+        {
+          "id": "C1013",
+          "name": "Production of meat and poultry meat products"
+        },
+        {
+          "id": "C102",
+          "name": "Processing and preserving of fish, crustaceans and molluscs"
+        },
+        {
+          "id": "C1020",
+          "name": "Processing and preserving of fish, crustaceans and molluscs"
+        },
+        {
+          "id": "C103",
+          "name": "Processing and preserving of fruit and vegetables"
+        },
+        {
+          "id": "C1031",
+          "name": "Processing and preserving of potatoes"
+        },
+        {
+          "id": "C1032",
+          "name": "Manufacture of fruit and vegetable juice"
+        },
+        {
+          "id": "C1039",
+          "name": "Other processing and preserving of fruit and vegetables"
+        },
+        {
+          "id": "C104",
+          "name": "Manufacture of vegetable and animal oils and fats"
+        },
+        {
+          "id": "C1041",
+          "name": "Manufacture of oils and fats"
+        },
+        {
+          "id": "C1042",
+          "name": "Manufacture of margarine and similar edible fats"
+        },
+        {
+          "id": "C105",
+          "name": "Manufacture of dairy products"
+        },
+        {
+          "id": "C1051",
+          "name": "Operation of dairies and cheese making"
+        },
+        {
+          "id": "C1052",
+          "name": "Manufacture of ice cream"
+        },
+        {
+          "id": "C106",
+          "name": "Manufacture of grain mill products, starches and starch products"
+        },
+        {
+          "id": "C1061",
+          "name": "Manufacture of grain mill products"
+        },
+        {
+          "id": "C1062",
+          "name": "Manufacture of starches and starch products"
+        },
+        {
+          "id": "C107",
+          "name": "Manufacture of bakery and farinaceous products"
+        },
+        {
+          "id": "C1071",
+          "name": "Manufacture of bread; manufacture of fresh pastry goods and cakes"
+        },
+        {
+          "id": "C1072",
+          "name": "Manufacture of rusks and biscuits; manufacture of preserved pastry goods and cakes"
+        },
+        {
+          "id": "C1073",
+          "name": "Manufacture of macaroni, noodles, couscous and similar farinaceous products"
+        },
+        {
+          "id": "C108",
+          "name": "Manufacture of other food products"
+        },
+        {
+          "id": "C1081",
+          "name": "Manufacture of sugar"
+        },
+        {
+          "id": "C1082",
+          "name": "Manufacture of cocoa, chocolate and sugar confectionery"
+        },
+        {
+          "id": "C1083",
+          "name": "Processing of tea and coffee"
+        },
+        {
+          "id": "C1084",
+          "name": "Manufacture of condiments and seasonings"
+        },
+        {
+          "id": "C1085",
+          "name": "Manufacture of prepared meals and dishes"
+        },
+        {
+          "id": "C1086",
+          "name": "Manufacture of homogenised food preparations and dietetic food"
+        },
+        {
+          "id": "C1089",
+          "name": "Manufacture of other food products n.e.c."
+        },
+        {
+          "id": "C109",
+          "name": "Manufacture of prepared animal feeds"
+        },
+        {
+          "id": "C1091",
+          "name": "Manufacture of prepared feeds for farm animals"
+        },
+        {
+          "id": "C1092",
+          "name": "Manufacture of prepared pet foods"
+        },
+        {
+          "id": "C10T12",
+          "name": "Manufacture of food products; beverages and tobacco products"
+        },
+        {
+          "id": "C10T12X106_109",
+          "name": "Manufacture of food products; beverages and tobacco products (except manufacture of grain mill products, starches and starch products and of prepared animal feeds)"
+        },
+        {
+          "id": "C10T18",
+          "name": "Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing"
+        },
+        {
+          "id": "C10T33",
+          "name": "Manufacturing"
+        },
+        {
+          "id": "C10TE39",
+          "name": "Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities"
+        },
+        {
+          "id": "C10TF43",
+          "name": "Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction"
+        },
+        {
+          "id": "C10TS951XK",
+          "name": "All enterprises, without financial sector"
+        },
+        {
+          "id": "C10X106_109",
+          "name": "Manufacture of food products (except manufacture of grain mill products, starches and starch products and of prepared animal feeds)"
+        },
+        {
+          "id": "C10_11",
+          "name": "Manufacture of food products and beverages"
+        },
+        {
+          "id": "C11",
+          "name": "Manufacture of beverages"
+        },
+        {
+          "id": "C110",
+          "name": "Manufacture of beverages"
+        },
+        {
+          "id": "C1101",
+          "name": "Distilling, rectifying and blending of spirits"
+        },
+        {
+          "id": "C1102",
+          "name": "Manufacture of wine from grape"
+        },
+        {
+          "id": "C1103",
+          "name": "Manufacture of cider and other fruit wines"
+        },
+        {
+          "id": "C1104",
+          "name": "Manufacture of other non-distilled fermented beverages"
+        },
+        {
+          "id": "C1105",
+          "name": "Manufacture of beer"
+        },
+        {
+          "id": "C1106",
+          "name": "Manufacture of malt"
+        },
+        {
+          "id": "C1107",
+          "name": "Manufacture of soft drinks; production of mineral waters and other bottled waters"
+        },
+        {
+          "id": "C12",
+          "name": "Manufacture of tobacco products"
+        },
+        {
+          "id": "C120",
+          "name": "Manufacture of tobacco products"
+        },
+        {
+          "id": "C1200",
+          "name": "Manufacture of tobacco products"
+        },
+        {
+          "id": "C13",
+          "name": "Manufacture of textiles"
+        },
+        {
+          "id": "C131",
+          "name": "Preparation and spinning of textile fibres"
+        },
+        {
+          "id": "C1310",
+          "name": "Preparation and spinning of textile fibres"
+        },
+        {
+          "id": "C132",
+          "name": "Weaving of textiles"
+        },
+        {
+          "id": "C1320",
+          "name": "Weaving of textiles"
+        },
+        {
+          "id": "C133",
+          "name": "Finishing of textiles"
+        },
+        {
+          "id": "C1330",
+          "name": "Finishing of textiles"
+        },
+        {
+          "id": "C139",
+          "name": "Manufacture of other textiles"
+        },
+        {
+          "id": "C1391",
+          "name": "Manufacture of knitted and crocheted fabrics"
+        },
+        {
+          "id": "C1392",
+          "name": "Manufacture of made-up textile articles, except apparel"
+        },
+        {
+          "id": "C1393",
+          "name": "Manufacture of carpets and rugs"
+        },
+        {
+          "id": "C1394",
+          "name": "Manufacture of cordage, rope, twine and netting"
+        },
+        {
+          "id": "C1395",
+          "name": "Manufacture of non-wovens and articles made from non-wovens, except apparel"
+        }
+      ],
+      "total_codes": 1291,
+      "truncated": true
+    },
+    {
+      "id": "PRODUCT",
+      "position": 7,
+      "name": "PRODUCT",
+      "codes": [
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "CA",
+          "name": "Current account"
+        },
+        {
+          "id": "CKA",
+          "name": "Current plus capital account (if balance = Net lending (+) / net borrowing (-))"
+        },
+        {
+          "id": "CKAFA",
+          "name": "Current plus capital plus financial account"
+        },
+        {
+          "id": "D1",
+          "name": "Primary income: Compensation of employees"
+        },
+        {
+          "id": "D11",
+          "name": "Primary income: Wages and salaries excluding Employers social contributions"
+        },
+        {
+          "id": "D12",
+          "name": "Primary income: Employerssocial contributions"
+        },
+        {
+          "id": "D121",
+          "name": "Primary income: Employers actual social contributions"
+        },
+        {
+          "id": "D1211",
+          "name": "Primary income: Employers actual pension contributions"
+        },
+        {
+          "id": "D1212",
+          "name": "Primary income: Employers actual non-pension contributions"
+        },
+        {
+          "id": "D122",
+          "name": "Primary income: Employers imputed social contributions"
+        },
+        {
+          "id": "D1221",
+          "name": "Primary income: Employers imputed pension contributions"
+        },
+        {
+          "id": "D1222",
+          "name": "Primary income: Employers imputed non-pension contributions"
+        },
+        {
+          "id": "D2",
+          "name": "Primary income: Taxes on production and imports"
+        },
+        {
+          "id": "D21",
+          "name": "Primary income: Taxes on products"
+        },
+        {
+          "id": "D2121EU1",
+          "name": "Primary income: Taxes and duties on imports, Customs duties, Traditional Own Resources"
+        },
+        {
+          "id": "D2122EU2",
+          "name": "Primary income: Taxes and duties on imports, Agricultural levies, Trade with non member countries under the CAP, Traditional Own Resources"
+        },
+        {
+          "id": "D214AEU3",
+          "name": "Primary income: Taxes on products, Sugar/isoglucose production levies, Traditional Own Resources"
+        },
+        {
+          "id": "D21EU",
+          "name": "Primary income: Taxes on products involing EU Institutions, Traditional Own Resources"
+        },
+        {
+          "id": "D21OTH",
+          "name": "Primary income: Taxes on products, Other than those involing EU Institutions"
+        },
+        {
+          "id": "D29",
+          "name": "Primary income: Other taxes on production"
+        },
+        {
+          "id": "D29EU",
+          "name": "Primary income: Other taxes on production - involving EU institutions"
+        },
+        {
+          "id": "D29OTH",
+          "name": "Primary income: Other taxes on production, Other than those involving EU Institutions"
+        },
+        {
+          "id": "D3",
+          "name": "Primary income: Subsidies"
+        },
+        {
+          "id": "D31",
+          "name": "Primary income: Subsidies on products"
+        },
+        {
+          "id": "D31EU",
+          "name": "Primary income: Subsidies on products, EU Institutions"
+        },
+        {
+          "id": "D31EU1",
+          "name": "Primary income: Subsidies on products - Agriculture and fishery"
+        },
+        {
+          "id": "D31OTH",
+          "name": "Primary income: Subsidies on products, Other than those involving EU Institutions"
+        },
+        {
+          "id": "D39",
+          "name": "Primary income: Other subsidies on production excluding subsidies on products"
+        },
+        {
+          "id": "D39EU",
+          "name": "Primary income: Other subsidies on production excluding subsidies on products, EU Institutions"
+        },
+        {
+          "id": "D39EU1",
+          "name": "Primary income: Subsidies on production - Agriculture and fishery"
+        },
+        {
+          "id": "D39EU2",
+          "name": "Primary income: Subsidies on production - Grants for interest relief"
+        },
+        {
+          "id": "D39EU3",
+          "name": "Primary income: Subsidies on production - Other excluding agriculture, fishery and grants for interest of relief"
+        },
+        {
+          "id": "D39OTH",
+          "name": "Primary income: Other subsidies on production excluding subsidies on products, Other than those involing EU Institutions"
+        },
+        {
+          "id": "D4",
+          "name": "Property income"
+        },
+        {
+          "id": "D41",
+          "name": "Primary income: interest"
+        },
+        {
+          "id": "D41G",
+          "name": "Primary income: interest before FISIM"
+        },
+        {
+          "id": "D41L",
+          "name": "Primary income: interests (lending fees on equity securities, gold loans and gold swaps)"
+        },
+        {
+          "id": "D42",
+          "name": "Primary income: Dividends and withdrawals from income of quasi corporations (excluding RIE and excluding IF)"
+        },
+        {
+          "id": "D421",
+          "name": "Dividends"
+        },
+        {
+          "id": "D422",
+          "name": "Withdrawals from income of quasi corporations"
+        },
+        {
+          "id": "D42R",
+          "name": "Primary income: dividends, withdrawals from income of quasi corporations (including RIE, excluding IF)"
+        },
+        {
+          "id": "D42S",
+          "name": "Primary income: dividends, withdrawals from income of quasi corporations and income distributed to investment fund shareholders (excluding RIE)"
+        },
+        {
+          "id": "D43",
+          "name": "Primary income: Reinvested earnings on FDI (Excluding IF)"
+        },
+        {
+          "id": "D43S",
+          "name": "Primary income: reinvested earnings on FDI (Including IF)"
+        },
+        {
+          "id": "D44",
+          "name": "Other investment income (ESA)"
+        },
+        {
+          "id": "D441",
+          "name": "Investment income attributable to insurance policy holders"
+        },
+        {
+          "id": "D442",
+          "name": "Investment income payable on pension entitlements"
+        },
+        {
+          "id": "D443",
+          "name": "Investment income attributable to collective investment fund shareholders (IF)"
+        },
+        {
+          "id": "D4431",
+          "name": "Dividends distributed to collective investment fund shareholders (IF)"
+        },
+        {
+          "id": "D4432",
+          "name": "Reinvested earnings attributable to collective investment fund shareholders (IF)"
+        },
+        {
+          "id": "D44P",
+          "name": "Primary income: Investment income attributable to policy holders (insurance, pension and standardized guarantee schemes)"
+        },
+        {
+          "id": "D45",
+          "name": "Primary income: Rent"
+        },
+        {
+          "id": "D4O",
+          "name": "Primary income: Other primary income"
+        },
+        {
+          "id": "D4P",
+          "name": "Primary income: Investment income"
+        },
+        {
+          "id": "D4Q",
+          "name": "Primary income: Interest and income attributable to policy holders"
+        },
+        {
+          "id": "D4S",
+          "name": "Primary income: Investment income attributable to shareholders, including income on IF, including RIE"
+        },
+        {
+          "id": "D5",
+          "name": "Secondary income: Current taxes on income, wealth, etc."
+        },
+        {
+          "id": "D51",
+          "name": "Secondary income: Taxes on income"
+        },
+        {
+          "id": "D59",
+          "name": "Secondary income: Other current taxes excluding on income"
+        },
+        {
+          "id": "D5Z",
+          "name": "Secondary income: Current taxes on income, wealth, etc. Of which: payable by border, seasonal, and other short-term workers (Current taxes on income, wealth, etc.)"
+        },
+        {
+          "id": "D6",
+          "name": "Secondary income: Social contributions and benefits"
+        },
+        {
+          "id": "D61",
+          "name": "Secondary income: Social contributions"
+        },
+        {
+          "id": "D611",
+          "name": "Secondary income: Employers  actual social contributions"
+        },
+        {
+          "id": "D6111",
+          "name": "Secondary income: Employers  actual pension contributions"
+        },
+        {
+          "id": "D6112",
+          "name": "Secondary income: Employers  actual non-pension contributions"
+        },
+        {
+          "id": "D612",
+          "name": "Secondary income: Employers  imputed social contributions"
+        },
+        {
+          "id": "D613",
+          "name": "Secondary income: Households' actual social contributions"
+        },
+        {
+          "id": "D6131",
+          "name": "Secondary income: Households' actual pension contributions"
+        },
+        {
+          "id": "D6132",
+          "name": "Secondary income: Households' actual non-pension contributions"
+        },
+        {
+          "id": "D61Z",
+          "name": "Secondary income: Of which: payable by border, seasonal, and other short-term workers (Social contributions)"
+        },
+        {
+          "id": "D62",
+          "name": "Secondary income: Social benefits"
+        },
+        {
+          "id": "D62O",
+          "name": "Secondary income: Other social allowances (payments of family, education, medical services and other allowances) excluding retirement and survivors' pensions"
+        },
+        {
+          "id": "D62P",
+          "name": "Secondary income: Retirement and survivors' Pensions"
+        },
+        {
+          "id": "D63",
+          "name": "Social transfers in kind"
+        },
+        {
+          "id": "D7",
+          "name": "Other current transfers"
+        },
+        {
+          "id": "D71",
+          "name": "Secondary income: Net non-life insurance premiums"
+        },
+        {
+          "id": "D711",
+          "name": "Net non-life direct insurance premiums"
+        },
+        {
+          "id": "D712",
+          "name": "Net non-life reinsurance premiums"
+        },
+        {
+          "id": "D72",
+          "name": "Secondary income: Nonlife insurance claims"
+        },
+        {
+          "id": "D721",
+          "name": "Non-life direct insurance claims"
+        },
+        {
+          "id": "D722",
+          "name": "Non-life reinsurance claims"
+        },
+        {
+          "id": "D73",
+          "name": "Current transfers within general government"
+        },
+        {
+          "id": "D74",
+          "name": "Secondary income: Current international cooperation"
+        },
+        {
+          "id": "D74EF",
+          "name": "Secondary income: Mémo: o/w Exceptional financing"
+        },
+        {
+          "id": "D74EF1",
+          "name": "Secondary income: Mémo: o/w Exceptional financing: Grants received from IMF subsidy accounts"
+        },
+        {
+          "id": "D74EF2",
+          "name": "Secondary income: Mémo: o/w Exceptional financing: Other intergovernmental grants"
+        },
+        {
+          "id": "D74EU",
+          "name": "Secondary income: Current international cooperation involving the EU institutions"
+        },
+        {
+          "id": "D74EU1",
+          "name": "Secondary income: Current international cooperation -European Development Fund"
+        },
+        {
+          "id": "D74EU2",
+          "name": "Secondary income: Current international cooperation -European Social Fund"
+        },
+        {
+          "id": "D74EU3",
+          "name": "Secondary income: Current international cooperation -Agriculture and Fish (Guidance and other)"
+        },
+        {
+          "id": "D74EU4",
+          "name": "Secondary income: Current international cooperation -European Regional Development Fund"
+        },
+        {
+          "id": "D74EU5",
+          "name": "Secondary income: Current international cooperation -European Community Steel and Coal transfers"
+        },
+        {
+          "id": "D74EU6",
+          "name": "Secondary income: Current international cooperation - Other"
+        },
+        {
+          "id": "D74OTH",
+          "name": "Secondary income: Current international cooperation other"
+        },
+        {
+          "id": "D75",
+          "name": "Secondary income: Miscellaneous current transfers"
+        },
+        {
+          "id": "D751",
+          "name": "Secondary income: Current transfers to NPISH"
+        },
+        {
+          "id": "D752",
+          "name": "Secondary income: Personal transfers (Current transfers between resident and nonresident households)"
+        },
+        {
+          "id": "D752O",
+          "name": "Secondary income: Personal transfers other than Workers' remittances"
+        },
+        {
+          "id": "D752W",
+          "name": "Secondary income: Of which: Workers' remittances"
+        },
+        {
+          "id": "D759",
+          "name": "Secondary income: Other miscellaneous current transfers"
+        },
+        {
+          "id": "D76",
+          "name": "Secondary income: Value added tax and gross national income-based European Union own resources"
+        },
+        {
+          "id": "D761",
+          "name": "VAT-based third EU own resource"
+        },
+        {
+          "id": "D762",
+          "name": "GNI-based fourth EU own resource"
+        },
+        {
+          "id": "D762K",
+          "name": "Current transfers of which UK rebate"
+        },
+        {
+          "id": "D763",
+          "name": "Miscellaneous non-tax contribution of the government to the institutions of the EU"
+        },
+        {
+          "id": "D7N",
+          "name": "Current international cooperation, miscellaneous current transfers (including in the EU VAT and GNI-based own resources)"
+        },
+        {
+          "id": "D7O",
+          "name": "Secondary income: All miscellaneous current transfers"
+        },
+        {
+          "id": "D8",
+          "name": "Secondary income : Adjustment for change in pension entitlements"
+        },
+        {
+          "id": "D9",
+          "name": "Capital transfers"
+        },
+        {
+          "id": "D91",
+          "name": "Capital taxes"
+        },
+        {
+          "id": "D92",
+          "name": "Investment grants"
+        },
+        {
+          "id": "D92EU",
+          "name": "Investment grants involving EU Institutions"
+        },
+        {
+          "id": "D92EU1",
+          "name": "Agriculture and Fishery grants (EAGGF guidance and others)"
+        },
+        {
+          "id": "D92EU2",
+          "name": "European Regional Development Fund -  grants"
+        },
+        {
+          "id": "D92EU3",
+          "name": "European Development Fund: EU Commission capital transfers to third countries"
+        },
+        {
+          "id": "D92EU4",
+          "name": "Cohesion funds"
+        },
+        {
+          "id": "D92EU5",
+          "name": "Investment grants - Other"
+        },
+        {
+          "id": "D92OTH",
+          "name": "Investment grants other"
+        },
+        {
+          "id": "D99",
+          "name": "Other capital transfers"
+        },
+        {
+          "id": "D99A",
+          "name": "Other capital transfers: Debt forgiveness"
+        },
+        {
+          "id": "D99AEF",
+          "name": "Mémo: o/w Exceptional financing: Debt forgiveness"
+        },
+        {
+          "id": "D99B",
+          "name": "Other capital transfers excluding debt forgiveness"
+        },
+        {
+          "id": "D99EU",
+          "name": "Other capital transfers involving EU Institutions"
+        },
+        {
+          "id": "D99EU1",
+          "name": "Other capital transfers - Agriculture and Fishery  (EAGGF guidance and others)"
+        },
+        {
+          "id": "D99EU2",
+          "name": "Other capital transfers - Other"
+        },
+        {
+          "id": "D99OTH",
+          "name": "Other capital transfers, other"
+        },
+        {
+          "id": "D99R1",
+          "name": "Mémo: Capital transfers between households"
+        },
+        {
+          "id": "D99R2",
+          "name": "Mémo: Capital transfers to NPISH"
+        },
+        {
+          "id": "D9A",
+          "name": "Capital transfers other than debt forgiveness"
+        },
+        {
+          "id": "D9AEF",
+          "name": "Mémo: o/w Exceptional financing: Other investment grants"
+        },
+        {
+          "id": "D9EF",
+          "name": "Capital transfers: Mémo: o/w Exceptional financing"
+        },
+        {
+          "id": "D9Z",
+          "name": "Mémo: o/w Exceptional financing: Grants received from IMF subsidy accounts"
+        },
+        {
+          "id": "EO",
+          "name": "Net errors and omissions"
+        },
+        {
+          "id": "FA",
+          "name": "Financial account"
+        },
+        {
+          "id": "FEF",
+          "name": "Mémo: o/w  Exceptional Financing: Total"
+        },
+        {
+          "id": "FEF1",
+          "name": "Mémo: o/w  Exceptional Financing:  Equity investment associated with debt reduction"
+        },
+        {
+          "id": "FEF2",
+          "name": "Mémo: o/w  Exceptional Financing:  Drawings on new loans/Issues of new securities by authorities or by other sectors on behalf of authorities"
+        },
+        {
+          "id": "FEF3",
+          "name": "Mémo: o/w  Exceptional Financing:  Prepayment/buyback"
+        },
+        {
+          "id": "FEF4",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of arrears, Total"
+        },
+        {
+          "id": "FEF41",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of arrears on Principal"
+        },
+        {
+          "id": "FEF42",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of arrears on interest/coupon"
+        },
+        {
+          "id": "FEF5",
+          "name": "Mémo: o/w  Exceptional Financing:  Accumulation of arrears, Total"
+        },
+        {
+          "id": "FEF51",
+          "name": "Mémo: o/w  Exceptional Financing:  Accumulation of arrears, on Principal"
+        },
+        {
+          "id": "FEF52",
+          "name": "Mémo: o/w  Exceptional Financing:  Accumulation of arrears, on original interest/coupon"
+        },
+        {
+          "id": "FEF53",
+          "name": "Mémo: o/w  Exceptional Financing:  Accumulation of arrears, on penalty interest"
+        },
+        {
+          "id": "FEF6",
+          "name": "Mémo: o/w  Exceptional Financing:  Repayment of arrears, Total"
+        },
+        {
+          "id": "FEF61",
+          "name": "Mémo: o/w  Exceptional Financing:  Repayment of arrears, on Principal"
+        },
+        {
+          "id": "FEF62",
+          "name": "Mémo: o/w  Exceptional Financing:  Repayment of arrears, on interest/coupon"
+        },
+        {
+          "id": "FEF7",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of payments due in current reporting period, Total"
+        },
+        {
+          "id": "FEF71",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of payments due in current reporting period, on Principal"
+        },
+        {
+          "id": "FEF72",
+          "name": "Mémo: o/w  Exceptional Financing:  Rescheduling of payments due in current reporting period, on interest/coupon"
+        },
+        {
+          "id": "FEF8",
+          "name": "Mémo: o/w  Exceptional Financing:  Cancellation of arrears, Total"
+        },
+        {
+          "id": "FEF81",
+          "name": "Mémo: o/w  Exceptional Financing:  Cancellation of arrears, on Principal"
+        },
+        {
+          "id": "FEF82",
+          "name": "Mémo: o/w  Exceptional Financing:  Cancellation of arrears, on interest/coupon"
+        },
+        {
+          "id": "FEF9",
+          "name": "Supplementary item: o/w Arrears not in exceptional financing"
+        },
+        {
+          "id": "G",
+          "name": "Goods"
+        },
+        {
+          "id": "G1",
+          "name": "General merchandise on a balance of payments basis"
+        },
+        {
+          "id": "G1Z",
+          "name": "General merchandise on a balance of payments basis of which Re-exports"
+        },
+        {
+          "id": "G2",
+          "name": "Net exports of goods under merchanting"
+        },
+        {
+          "id": "G21",
+          "name": "Goods acquired under merchanting"
+        },
+        {
+          "id": "G22",
+          "name": "Goods sold under merchanting"
+        },
+        {
+          "id": "G3",
+          "name": "Nonmonetary gold"
+        },
+        {
+          "id": "G4EU",
+          "name": "Branding - quasi-transit trade adjustment"
+        },
+        {
+          "id": "GS",
+          "name": "Goods and services"
+        },
+        {
+          "id": "GSIN1",
+          "name": "Goods, services and primary income"
+        },
+        {
+          "id": "IN",
+          "name": "Primary plus secondary income"
+        },
+        {
+          "id": "IN1",
+          "name": "Primary income"
+        },
+        {
+          "id": "IN2",
+          "name": "Secondary income"
+        },
+        {
+          "id": "IN21",
+          "name": "Secondary income, current transfers"
+        },
+        {
+          "id": "IN22",
+          "name": "Secondary income: Other current transfers excluding personal transfers"
+        },
+        {
+          "id": "KA",
+          "name": "Capital account"
+        },
+        {
+          "id": "KAFA",
+          "name": "Capital and financial account"
+        },
+        {
+          "id": "NP",
+          "name": "Gross acquisitions  / disposals  of nonproduced nonfinancial assets"
+        },
+        {
+          "id": "R1",
+          "name": "Supplementary item: Personal Remittances"
+        },
+        {
+          "id": "R1WR",
+          "name": "Supplementary item: Workers remittances and compensation of employees"
+        },
+        {
+          "id": "R2",
+          "name": "Supplementary item: Total Remittances"
+        },
+        {
+          "id": "R3",
+          "name": "Supplementary item: Remittances and transfers"
+        },
+        {
+          "id": "RT1",
+          "name": "Reserves Template: principal and accrued interest/coupon"
+        },
+        {
+          "id": "RT10",
+          "name": "Reserves Template: instrument subject to margin"
+        },
+        {
+          "id": "RT11",
+          "name": "Reserves Template: principal"
+        },
+        {
+          "id": "RT12",
+          "name": "Reserves Template: accrued interest/coupon"
+        },
+        {
+          "id": "RT2",
+          "name": "Reserves Template: short/long positions"
+        },
+        {
+          "id": "RT2C",
+          "name": "Reserves Template: calls"
+        },
+        {
+          "id": "RT2P",
+          "name": "Reserves Template: puts"
+        },
+        {
+          "id": "RT3",
+          "name": "Reserves Template: collateral guarantees"
+        },
+        {
+          "id": "RT4",
+          "name": "Reserves Template: liabilities other than on collateral guarantees"
+        },
+        {
+          "id": "RT5",
+          "name": "Reserves Template: in-the-money options, at current exchange rates"
+        },
+        {
+          "id": "RT5A",
+          "name": "Reserves Template: in-the-money options, + 5 % (depreciation of 5%)"
+        },
+        {
+          "id": "RT5B",
+          "name": "Reserves Template: in-the-money options, + 5 % (appreciation of 5%)"
+        },
+        {
+          "id": "RT5C",
+          "name": "Reserves Template: in-the-money options, + 10 % (depreciation of 10%)"
+        },
+        {
+          "id": "RT5D",
+          "name": "Reserves Template: in-the-money options, + 10 % (appreciation of 10%)"
+        },
+        {
+          "id": "RT5E",
+          "name": "Reserves Template: in-the-money options, Other"
+        },
+        {
+          "id": "RT6",
+          "name": "Reserves Template: instrument indexed to the exchange rate"
+        },
+        {
+          "id": "RT7",
+          "name": "Reserves Template: instrument denominated in foreign currency and settled by other means (e.g., in domestic currency)"
+        },
+        {
+          "id": "RT8",
+          "name": "Reserves Template: pledged instruments"
+        },
+        {
+          "id": "RT9",
+          "name": "Reserves Template: instrument lent and on repo"
+        },
+        {
+          "id": "RT9A",
+          "name": "Reserves Template: instrument lent or on repo  and included in Section I"
+        },
+        {
+          "id": "RT9B",
+          "name": "Reserves Template: instrument lent or on repo but not included in Section I"
+        },
+        {
+          "id": "RT9C",
+          "name": "Reserves Template: instrument borrowed or acquired and included in Section I"
+        }
+      ],
+      "total_codes": 367,
+      "truncated": true
+    },
+    {
+      "id": "FLOW",
+      "position": 8,
+      "name": "FLOW",
+      "codes": [
+        {
+          "id": "_T",
+          "name": "Total"
+        },
+        {
+          "id": "B",
+          "name": "Balance"
+        },
+        {
+          "id": "M",
+          "name": "Total Imports"
+        },
+        {
+          "id": "M1",
+          "name": "Import of foreign goods"
+        },
+        {
+          "id": "M2",
+          "name": "Re-imports"
+        },
+        {
+          "id": "M3",
+          "name": "Import of goods for inward processing"
+        },
+        {
+          "id": "M3_W",
+          "name": "Imports of goods for inward processing with change of ownership"
+        },
+        {
+          "id": "M3_WO",
+          "name": "Imports of goods for inward processing w/o change of ownership"
+        },
+        {
+          "id": "M4",
+          "name": "Import of goods after outward processing"
+        },
+        {
+          "id": "M4_W",
+          "name": "Import of goods after outward processing with change of ownership"
+        },
+        {
+          "id": "M4_WO",
+          "name": "Import of goods after outward processing w/o change of ownership"
+        },
+        {
+          "id": "M5",
+          "name": "Import on intra-firm trade"
+        },
+        {
+          "id": "X",
+          "name": "Total Exports"
+        },
+        {
+          "id": "X1",
+          "name": "Export of domestic goods"
+        },
+        {
+          "id": "X2",
+          "name": "Re-exports"
+        },
+        {
+          "id": "X3",
+          "name": "Export of goods after inward processing"
+        },
+        {
+          "id": "X3_W",
+          "name": "Export of goods after inward processing with change of ownership"
+        },
+        {
+          "id": "X3_WO",
+          "name": "Export of goods after inward processing w/o change of ownership"
+        },
+        {
+          "id": "X4",
+          "name": "Export of goods for outward processing"
+        },
+        {
+          "id": "X4_W",
+          "name": "Export of goods for outward processing with  change of ownership"
+        },
+        {
+          "id": "X4_WO",
+          "name": "Export of goods for outward processing w/o change of ownership"
+        },
+        {
+          "id": "X5",
+          "name": "Export on intra-firm trade"
+        }
+      ],
+      "total_codes": 22,
+      "truncated": false
+    },
+    {
+      "id": "NUMBER_EMPLOYEES",
+      "position": 9,
+      "name": "NUMBER_EMPLOYEES",
+      "codes": [
+        {
+          "id": "_T",
+          "name": "Total"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "E0",
+          "name": "0"
+        },
+        {
+          "id": "E0T1",
+          "name": "From 0 to 1"
+        },
+        {
+          "id": "E0T49",
+          "name": "From 0 to 49"
+        },
+        {
+          "id": "E0T9",
+          "name": "From 0 to 9"
+        },
+        {
+          "id": "E10T19",
+          "name": "From 10 to 19"
+        },
+        {
+          "id": "E10T249",
+          "name": "From 10 to 249"
+        },
+        {
+          "id": "E10T49",
+          "name": "From 10 to 49"
+        },
+        {
+          "id": "E1T4",
+          "name": "From 1 to 4"
+        },
+        {
+          "id": "E1T9",
+          "name": "From 1 to 9"
+        },
+        {
+          "id": "E20T49",
+          "name": "From 20 to 49"
+        },
+        {
+          "id": "E250T499",
+          "name": "From 250 to 499"
+        },
+        {
+          "id": "E2T9",
+          "name": "From 2 to 9"
+        },
+        {
+          "id": "E500T999",
+          "name": "From 500 to 999"
+        },
+        {
+          "id": "E50T249",
+          "name": "From 50 to 249"
+        },
+        {
+          "id": "E5T9",
+          "name": "From 5 to 9"
+        },
+        {
+          "id": "EGE10",
+          "name": "10 or more"
+        },
+        {
+          "id": "EGE1000",
+          "name": "1000 or more"
+        },
+        {
+          "id": "EGE250",
+          "name": "250 or more"
+        },
+        {
+          "id": "EGE50",
+          "name": "50 or more"
+        },
+        {
+          "id": "EGE500",
+          "name": "500 or more"
+        },
+        {
+          "id": "ELT10",
+          "name": "Fewer than 10"
+        }
+      ],
+      "total_codes": 24,
+      "truncated": false
+    },
+    {
+      "id": "TYPE_CTRL",
+      "position": 10,
+      "name": "TYPE_CTRL",
+      "codes": [
+        {
+          "id": "_T",
+          "name": "Total"
+        },
+        {
+          "id": "D",
+          "name": "Domestically controlled enterprises"
+        },
+        {
+          "id": "DI",
+          "name": "Domestically controlled enterprises without own affiliates abroad"
+        },
+        {
+          "id": "DM",
+          "name": "Domestically controlled enterprises with own affiliates abroad"
+        },
+        {
+          "id": "F",
+          "name": "Foreign controlled enterprises"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        }
+      ],
+      "total_codes": 6,
+      "truncated": false
+    },
+    {
+      "id": "EXP_INTENS",
+      "position": 11,
+      "name": "EXP_INTENS",
+      "codes": [
+        {
+          "id": "_T",
+          "name": "Total"
+        },
+        {
+          "id": "PC0",
+          "name": "Zero percent"
+        },
+        {
+          "id": "PC0T24",
+          "name": "From 0 (0 excluded) to 25 percent"
+        },
+        {
+          "id": "PC25T49",
+          "name": "From 25 to 50 percent"
+        },
+        {
+          "id": "PC50T74",
+          "name": "From 50 to 75 percent"
+        },
+        {
+          "id": "PC_GE75",
+          "name": "75 percent or over"
+        },
+        {
+          "id": "_U",
+          "name": "Unknown"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{TABLE_IDENTIFIER}.{FREQ}.{REF_AREA}.{UNIT_MEASURE}.{COUNTERPART_AREA}.{INDICATOR}.{ACTIVITY}.{PRODUCT}.{FLOW}.{NUMBER_EMPLOYEES}.{TYPE_CTRL}.{EXP_INTENS}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:50+00:00",
+  "schema_version": 1
+}

@@ -1,0 +1,979 @@
+{
+  "agency": "BE2",
+  "id": "DF_NASECDET2010_DISS",
+  "version": "1.0",
+  "category": "national_accounts",
+  "is_final": true,
+  "names": {
+    "en": "Detailed sector accounts – annual data",
+    "fr": "Comptes sectoriels détaillés – données annuelles",
+    "nl": "Gedetailleerde sectorrekeningen - jaargegevens",
+    "de": "Detailed sector accounts – annual data"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ACCOUNT",
+      "position": 1,
+      "name": "ACCOUNT",
+      "codes": [
+        {
+          "id": "I",
+          "name": "Production account (I)"
+        },
+        {
+          "id": "IR",
+          "name": "Resources"
+        },
+        {
+          "id": "IR_P1",
+          "name": "Output (P.1)"
+        },
+        {
+          "id": "IR_P11",
+          "name": "Market output (P.11)"
+        },
+        {
+          "id": "IR_P12",
+          "name": "Output for own final use (P.12)"
+        },
+        {
+          "id": "IR_P13",
+          "name": "Non-market output (P.13)"
+        },
+        {
+          "id": "IR_D2131",
+          "name": "Taxes less subsidies on products (D.21-D.31)"
+        },
+        {
+          "id": "IU",
+          "name": "Uses"
+        },
+        {
+          "id": "IU_P2",
+          "name": "Intermediate consumption (P.2)"
+        },
+        {
+          "id": "IU_B1QG",
+          "name": "Added value (gross) / Gross domestic product (B.1g)"
+        },
+        {
+          "id": "IU_P51C",
+          "name": "Consumption of fixed capital (P.51c)"
+        },
+        {
+          "id": "IU_B1QN",
+          "name": "Added value (net) / Net domestic product (B.1n)"
+        },
+        {
+          "id": "II",
+          "name": "Distribution and use of income accounts (II)"
+        },
+        {
+          "id": "II1",
+          "name": "Primary distribution of income accounts (II.1)"
+        },
+        {
+          "id": "II11",
+          "name": "Generation of income account (II.1.1)"
+        },
+        {
+          "id": "II11R",
+          "name": "Resources"
+        },
+        {
+          "id": "II11R_B1QG",
+          "name": "Added value (gross) / Gross domestic product (B.1g)"
+        },
+        {
+          "id": "II11U",
+          "name": "Uses"
+        },
+        {
+          "id": "II11U_D1",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "II11U_D11",
+          "name": "Wages and salaries (D.11)"
+        },
+        {
+          "id": "II11U_D12",
+          "name": "Employers' social contributions (D.12)"
+        },
+        {
+          "id": "II11U_D121",
+          "name": "Employers' actual social contributions (D.121)"
+        },
+        {
+          "id": "II11U_D121_S13",
+          "name": "Paid to the general government"
+        },
+        {
+          "id": "II11U_D121_X13",
+          "name": "Paid to the other sectors"
+        },
+        {
+          "id": "II11U_D122",
+          "name": "Employers' imputed social contributions (D.122)"
+        },
+        {
+          "id": "II11U_D2",
+          "name": "Taxes on production and imports (D.2)"
+        },
+        {
+          "id": "II11U_D21",
+          "name": "Taxes on products (D.21)"
+        },
+        {
+          "id": "II11U_D29",
+          "name": "Other taxes on production (D.29)"
+        },
+        {
+          "id": "II11U_D3",
+          "name": "Subsidies (D.3)"
+        },
+        {
+          "id": "II11U_D31",
+          "name": "Subsidies on products (D.31)"
+        },
+        {
+          "id": "II11U_D39",
+          "name": "Other subsidies on production (D.39)"
+        },
+        {
+          "id": "II11U_B2G",
+          "name": "Gross operating surplus (B.2g)"
+        },
+        {
+          "id": "II11U_B3G",
+          "name": "Gross mixed income (B.3g)"
+        },
+        {
+          "id": "II12",
+          "name": "Allocation of primary income account (II.1.2)"
+        },
+        {
+          "id": "II12R",
+          "name": "Resources"
+        },
+        {
+          "id": "II12R_B2G",
+          "name": "Gross operating surplus (B.2g)"
+        },
+        {
+          "id": "II12R_B3G",
+          "name": "Gross mixed income (B.3g)"
+        },
+        {
+          "id": "II12R_D1",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "II12R_D11",
+          "name": "Wages and salaries (D.11)"
+        },
+        {
+          "id": "II12R_D12",
+          "name": "Employers' social contributions (D.12)"
+        },
+        {
+          "id": "II12R_D121",
+          "name": "Employers' actual social contributions (D.121)"
+        },
+        {
+          "id": "II12R_D122",
+          "name": "Employers' imputed social contributions (D.122)"
+        },
+        {
+          "id": "II12R_D2",
+          "name": "Taxes on production and imports (D.2)"
+        },
+        {
+          "id": "II12R_D21",
+          "name": "Taxes on products (D.21)"
+        },
+        {
+          "id": "II12R_D211",
+          "name": "Value-added-type taxes (VAT) (D.211)"
+        },
+        {
+          "id": "II12R_D212",
+          "name": "Taxes and duties on imports, excluding VAT (D.212)"
+        },
+        {
+          "id": "II12R_D2121",
+          "name": "Import duties (D.2121)"
+        },
+        {
+          "id": "II12R_D2122",
+          "name": "Taxes on imports, excluding VAT and import duties (D.2122)"
+        },
+        {
+          "id": "II12R_D214",
+          "name": "Taxes on products, except VAT and import taxes (D.214)"
+        },
+        {
+          "id": "II12R_D29",
+          "name": "Other taxes on production (D.29)"
+        },
+        {
+          "id": "II12R_D3",
+          "name": "Subsidies (D.3)"
+        },
+        {
+          "id": "II12R_D31",
+          "name": "Subsidies on products (D.31)"
+        },
+        {
+          "id": "II12R_D311",
+          "name": "Import subsidies (D.311)"
+        },
+        {
+          "id": "II12R_D319",
+          "name": "Other subsidies on products (D.319)"
+        },
+        {
+          "id": "II12R_D39",
+          "name": "Other subsidies on production (D.39)"
+        },
+        {
+          "id": "II12R_D4",
+          "name": "Property income (D.4)"
+        },
+        {
+          "id": "II12R_D41",
+          "name": "Interest (D.41)"
+        },
+        {
+          "id": "II12R_D41G",
+          "name": "Total interest before allocation of FISIM (D.41g)"
+        },
+        {
+          "id": "II12R_D42",
+          "name": "Distributed income of corporations (D.42)"
+        },
+        {
+          "id": "II12R_D421",
+          "name": "Dividends (D.421)"
+        },
+        {
+          "id": "II12R_D422",
+          "name": "Withdrawals from income of quasi-corporations (D.422)"
+        },
+        {
+          "id": "II12R_D43",
+          "name": "Reinvested earnings on direct foreign investment (D.43)"
+        },
+        {
+          "id": "II12R_D44",
+          "name": "Other investment income (D.44)"
+        },
+        {
+          "id": "II12R_D441",
+          "name": "Investment income attibutable to insurance policy holders (D.441)"
+        },
+        {
+          "id": "II12R_D442",
+          "name": "Investment income payable on pension entitlements (D.442)"
+        },
+        {
+          "id": "II12R_D443",
+          "name": "Investment income attributable to collective investment fund shareholders (D.443)"
+        },
+        {
+          "id": "II12R_D45",
+          "name": "Rents (D.45)"
+        },
+        {
+          "id": "II12U",
+          "name": "Uses"
+        },
+        {
+          "id": "II12U_D4",
+          "name": "Property income (D.4)"
+        },
+        {
+          "id": "II12U_D41",
+          "name": "Interest (D.41)"
+        },
+        {
+          "id": "II12U_D41G",
+          "name": "Total interest before allocation of FISIM (D.41g)"
+        },
+        {
+          "id": "II12U_D42",
+          "name": "Distributed income of corporations (D.42)"
+        },
+        {
+          "id": "II12U_D421",
+          "name": "Dividends (D.421)"
+        },
+        {
+          "id": "II12U_D422",
+          "name": "Withdrawals from income of quasicorporations (D.422)"
+        },
+        {
+          "id": "II12U_D43",
+          "name": "Reinvested earnings on direct foreign investment (D.43)"
+        },
+        {
+          "id": "II12U_D44",
+          "name": "Other investment income (D.44)"
+        },
+        {
+          "id": "II12U_D441",
+          "name": "Investment income attibutable to insurance policy holders (D.441)"
+        },
+        {
+          "id": "II12U_D442",
+          "name": "Investment income payable on pension entitlements (D.442)"
+        },
+        {
+          "id": "II12U_D443",
+          "name": "Investment income attributable to collective investment fund shareholders (D.443)"
+        },
+        {
+          "id": "II12U_D45",
+          "name": "Rents (D.45)"
+        },
+        {
+          "id": "II12U_B5G",
+          "name": "Gross balance of primary incomes / Gross national income (B.5g)"
+        },
+        {
+          "id": "II121",
+          "name": "Entrepreneurial income accounts (II.1.2.1)"
+        },
+        {
+          "id": "II121_B4G",
+          "name": "Gross entrepreneurial income (B.4g)"
+        },
+        {
+          "id": "II2",
+          "name": "Secondary distribution of income account (II.2)"
+        },
+        {
+          "id": "II2R",
+          "name": "Resources"
+        },
+        {
+          "id": "II2R_B5G",
+          "name": "Gross balance of primary incomes / Gross national income (B.5g)"
+        },
+        {
+          "id": "II2R_D5",
+          "name": "Current taxes on income, wealth, etc. (D.5)"
+        },
+        {
+          "id": "II2R_D51",
+          "name": "Taxes on income (D.51)"
+        },
+        {
+          "id": "II2R_D59",
+          "name": "Other current taxes (D.59)"
+        },
+        {
+          "id": "II2R_D6",
+          "name": "Social contributions and benefits (D.6)"
+        },
+        {
+          "id": "II2R_D61",
+          "name": "Net social contributions (D.61)"
+        },
+        {
+          "id": "II2R_D611",
+          "name": "Employers' actual social contributions (D.611)"
+        },
+        {
+          "id": "II2R_D611C",
+          "name": "Compulsory employers' actual social contributions (D.611C)"
+        },
+        {
+          "id": "II2R_D611C_S13",
+          "name": "For general government"
+        },
+        {
+          "id": "II2R_D611C_X13",
+          "name": "For other sectors"
+        },
+        {
+          "id": "II2R_D611V",
+          "name": "Voluntary employers' actual social contributions (D.611V)"
+        },
+        {
+          "id": "II2R_D611V_S13",
+          "name": "For general government"
+        },
+        {
+          "id": "II2R_D611V_X13",
+          "name": "For other sectors"
+        },
+        {
+          "id": "II2R_D612",
+          "name": "Employers' imputed social contributions (D.612)"
+        },
+        {
+          "id": "II2R_D613",
+          "name": "Households' actual social contributions (D.613)"
+        },
+        {
+          "id": "II2R_D613E",
+          "name": "Employees' actual social contributions (D.613E)"
+        },
+        {
+          "id": "II2R_D613EC",
+          "name": "Compulsory employees' social contributions (D.613EC)"
+        },
+        {
+          "id": "II2R_D613EV",
+          "name": "Voluntary employees' social contributions (D.613EV)"
+        },
+        {
+          "id": "II2R_D613S",
+          "name": "Actual social contributions by the self-employed (D.613S)"
+        },
+        {
+          "id": "II2R_D613SC",
+          "name": "Compulsory actual social contributions by the self-employed (D.613SC)"
+        },
+        {
+          "id": "II2R_D613SV",
+          "name": "Voluntary actual social contributions by the self-employed (D.613SV)"
+        },
+        {
+          "id": "II2R_D613N",
+          "name": "Actual social contributions by the non-employed (D.613N)"
+        },
+        {
+          "id": "II2R_D613NC",
+          "name": "Compulsory actual social contributions by the non-employed (D.613NC)"
+        },
+        {
+          "id": "II2R_D613NV",
+          "name": "Voluntary actual social contributions by the non-employed (D.613NV)"
+        },
+        {
+          "id": "II2R_D614",
+          "name": "Households' social contributions supplements (D.614)"
+        },
+        {
+          "id": "II2R_D61SC",
+          "name": "Social insurance scheme service charge (D.61SC)"
+        },
+        {
+          "id": "II2R_D62",
+          "name": "Social benefits other than social transfers in kind (D.62)"
+        },
+        {
+          "id": "II2R_D621",
+          "name": "Social security benefits in cash (D.621)"
+        },
+        {
+          "id": "II2R_D622",
+          "name": "Other social insurance benefits (D.622)"
+        },
+        {
+          "id": "II2R_D622_P",
+          "name": "Benefits from pension funds and other social insurance"
+        },
+        {
+          "id": "II2R_D622_E",
+          "name": "Other social insurance benefits from employers"
+        },
+        {
+          "id": "II2R_D623",
+          "name": "Social assistance benefits in cash (D.623)"
+        },
+        {
+          "id": "II2R_D7",
+          "name": "Other current transfers (D.7)"
+        },
+        {
+          "id": "II2R_D71",
+          "name": "Net non-life insurance premiums (D.71)"
+        },
+        {
+          "id": "II2R_D72",
+          "name": "Non-life insurance claims (D.72)"
+        },
+        {
+          "id": "II2R_D73",
+          "name": "Current transfers within general government (D.73)"
+        },
+        {
+          "id": "II2R_D73FR",
+          "name": "Current transfers of fiscal receipts"
+        },
+        {
+          "id": "II2R_D73O",
+          "name": "Other current transfers between subsectors of the general government"
+        },
+        {
+          "id": "II2R_D74",
+          "name": "Current international cooperation (D.74)"
+        },
+        {
+          "id": "II2R_D74_S211",
+          "name": "Of the Member States of the European Union"
+        },
+        {
+          "id": "II2R_D74_S212",
+          "name": "Of the institutions and bodies of the European Union"
+        },
+        {
+          "id": "II2R_D74_S22",
+          "name": "Of non-member countries and international organisations non-resident in the EU"
+        },
+        {
+          "id": "II2R_D75",
+          "name": "Miscellaneous current transfers (D.75)"
+        },
+        {
+          "id": "II2R_D75_S13",
+          "name": "Of the general government"
+        },
+        {
+          "id": "II2R_D75_X13",
+          "name": "Of the other sectors"
+        },
+        {
+          "id": "II2U",
+          "name": "Uses"
+        },
+        {
+          "id": "II2U_D5",
+          "name": "Current taxes on income, wealth, etc. (D.5)"
+        },
+        {
+          "id": "II2U_D51",
+          "name": "Taxes on income (D.51)"
+        },
+        {
+          "id": "II2U_D59",
+          "name": "Other current taxes (D.59)"
+        },
+        {
+          "id": "II2U_D6",
+          "name": "Social contributions and benefits (D.6)"
+        },
+        {
+          "id": "II2U_D61",
+          "name": "Net social contributions (D.61)"
+        },
+        {
+          "id": "II2U_D611",
+          "name": "Employers' actual social contributions (D.611)"
+        },
+        {
+          "id": "II2U_D611C",
+          "name": "Compulsory employers' actual social contributions (D.611C)"
+        },
+        {
+          "id": "II2U_D611V",
+          "name": "Voluntary employers' actual social contributions (D.611V)"
+        },
+        {
+          "id": "II2U_D612",
+          "name": "Employers' imputed social contributions (D.612)"
+        },
+        {
+          "id": "II2U_D613",
+          "name": "Households' actual social contributions (D.613)"
+        },
+        {
+          "id": "II2U_D613E",
+          "name": "Employees' actual social contributions (D.613E)"
+        },
+        {
+          "id": "II2U_D613EC",
+          "name": "Compulsory employees' social contributions (D.613EC)"
+        },
+        {
+          "id": "II2U_D613EV",
+          "name": "Voluntary employees' social contributions (D.613EV)"
+        },
+        {
+          "id": "II2U_D613S",
+          "name": "Actual social contributions by the self-employed (D.613S)"
+        },
+        {
+          "id": "II2U_D613SC",
+          "name": "Compulsory actual social contributions by the self-employed (D.613SC)"
+        },
+        {
+          "id": "II2U_D613SV",
+          "name": "Voluntary actual social contributions by the self-employed (D.613SV)"
+        },
+        {
+          "id": "II2U_D613N",
+          "name": "Actual social contributions by the non-employed (D.613N)"
+        },
+        {
+          "id": "II2U_D613NC",
+          "name": "Compulsory actual social contributions by the non-employed (D.613NC)"
+        },
+        {
+          "id": "II2U_D613NV",
+          "name": "Voluntary actual social contributions by the non-employed (D.613NV)"
+        },
+        {
+          "id": "II2U_D614",
+          "name": "Households' social contributions supplements (D.614)"
+        },
+        {
+          "id": "II2U_D61SC",
+          "name": "Social insurance scheme service charge (D.61SC)"
+        },
+        {
+          "id": "II2U_D62",
+          "name": "Social benefits other than social transfers in kind (D.62)"
+        },
+        {
+          "id": "II2U_D621",
+          "name": "Social security benefits in cash (D.621)"
+        },
+        {
+          "id": "II2U_D622",
+          "name": "Other social insurance benefits (D.622)"
+        },
+        {
+          "id": "II2U_D622_P",
+          "name": "Benefits from pension funds and other social insurance"
+        },
+        {
+          "id": "II2U_D622_E",
+          "name": "Other social insurance benefits from employers"
+        },
+        {
+          "id": "II2U_D623",
+          "name": "Social assistance benefits in cash (D.623)"
+        },
+        {
+          "id": "II2U_D7",
+          "name": "Other current transfers (D.7)"
+        },
+        {
+          "id": "II2U_D71",
+          "name": "Net non-life insurance premiums (D.71)"
+        },
+        {
+          "id": "II2U_D72",
+          "name": "Non-life insurance claims (D.72)"
+        },
+        {
+          "id": "II2U_D73",
+          "name": "Current transfers within general government (D.73)"
+        },
+        {
+          "id": "II2U_D73FR",
+          "name": "Current transfers of fiscal receipts"
+        },
+        {
+          "id": "II2U_D73O",
+          "name": "Other current transfers between subsectors of the general government"
+        },
+        {
+          "id": "II2U_D74",
+          "name": "Current international cooperation (D.74)"
+        },
+        {
+          "id": "II2U_D74_S211",
+          "name": "To the Member States of the European Union"
+        },
+        {
+          "id": "II2U_D74_S212",
+          "name": "To the institutions and bodies of the European Union"
+        },
+        {
+          "id": "II2U_D74_S22",
+          "name": "To non-member countries and international organisations non-resident in the EU"
+        },
+        {
+          "id": "II2U_D75",
+          "name": "Miscellaneous current transfers (D.75)"
+        },
+        {
+          "id": "II2U_D75_S13",
+          "name": "To the general government"
+        },
+        {
+          "id": "II2U_D75_X13",
+          "name": "To the other sectors"
+        },
+        {
+          "id": "II2U_D76",
+          "name": "VAT- and GNI-based EU own resources (D.76)"
+        },
+        {
+          "id": "II2U_B6G",
+          "name": "Gross disposable income (B.6g)"
+        },
+        {
+          "id": "II3",
+          "name": "Redistribution of income in kind account (II.3)"
+        },
+        {
+          "id": "II3R",
+          "name": "Resources"
+        },
+        {
+          "id": "II3R_B6G",
+          "name": "Gross disposable income (B.6g)"
+        },
+        {
+          "id": "II3R_D63",
+          "name": "Social transfers in kind (D.63)"
+        },
+        {
+          "id": "II3R_D631",
+          "name": "Social transfers in kind - non-market production (D.631)"
+        },
+        {
+          "id": "II3R_D632",
+          "name": "Social transfers in kind - purchased market production (D.632)"
+        },
+        {
+          "id": "II3U",
+          "name": "Uses"
+        },
+        {
+          "id": "II3U_D63",
+          "name": "Social transfers in kind (D.63)"
+        },
+        {
+          "id": "II3U_D631",
+          "name": "Social transfers in kind - non-market production (D.631)"
+        },
+        {
+          "id": "II3U_D632",
+          "name": "Social transfers in kind - purchased market production (D.632)"
+        },
+        {
+          "id": "II3U_B7G",
+          "name": "Adjusted gross disposable income (B.7g)"
+        },
+        {
+          "id": "II4",
+          "name": "Use of income account (II.4)"
+        },
+        {
+          "id": "II41",
+          "name": "Use of disposable income account (II.4.1)"
+        },
+        {
+          "id": "II41R",
+          "name": "Resources"
+        },
+        {
+          "id": "II41R_B6G",
+          "name": "Gross disposable income (B.6g)"
+        },
+        {
+          "id": "II41R_D8",
+          "name": "Adjustment for the change in pension entitlements (D.8)"
+        },
+        {
+          "id": "II41U",
+          "name": "Uses"
+        },
+        {
+          "id": "II41U_P3",
+          "name": "Final consumption expenditure (P.3)"
+        },
+        {
+          "id": "II41U_P31",
+          "name": "Individual consumption expenditure (P.31)"
+        },
+        {
+          "id": "II41U_P32",
+          "name": "Collective consumption expenditure (P.32)"
+        },
+        {
+          "id": "II41U_D8",
+          "name": "Adjustment for the change in pension entitlements (D.8)"
+        },
+        {
+          "id": "II41U_B8G",
+          "name": "Gross saving (B.8g)"
+        },
+        {
+          "id": "II42",
+          "name": "Use of adjusted disposable income account (II.4.2)"
+        },
+        {
+          "id": "II42R",
+          "name": "Resources"
+        },
+        {
+          "id": "II42R_B7G",
+          "name": "Adjusted gross disposable income (B.7g)"
+        },
+        {
+          "id": "II42R_D8",
+          "name": "Adjustment for the change in pension entitlements (D.8)"
+        },
+        {
+          "id": "II42U",
+          "name": "Uses"
+        }
+      ],
+      "total_codes": 405,
+      "truncated": true
+    },
+    {
+      "id": "SECTOR",
+      "position": 2,
+      "name": "SECTOR",
+      "codes": [
+        {
+          "id": "S1",
+          "name": "Total economy (S.1)"
+        },
+        {
+          "id": "S11",
+          "name": "Non financial corporations (S.11)"
+        },
+        {
+          "id": "S12",
+          "name": "Financial corporations (S.12)"
+        },
+        {
+          "id": "S121_123",
+          "name": "Central bank, deposit-taking corposations and money market funds (S.121 + S.122 + S.123)"
+        },
+        {
+          "id": "S124_127",
+          "name": "Non-monetary investment funds, other fin. intermediaries, except insurance corp. and pension funds, and captive fin.inst. and money lenders (S.124+125+127)"
+        },
+        {
+          "id": "S126",
+          "name": "Financial auxiliaries (S.126)"
+        },
+        {
+          "id": "S128_129",
+          "name": "Insurance corporations and pension funds (S.128 + S.129)"
+        },
+        {
+          "id": "S13",
+          "name": "General government (S.13)"
+        },
+        {
+          "id": "S1300",
+          "name": "General government"
+        },
+        {
+          "id": "S1311",
+          "name": "Federal government"
+        },
+        {
+          "id": "S1312",
+          "name": "Communities and regions"
+        },
+        {
+          "id": "S1313",
+          "name": "Local government"
+        },
+        {
+          "id": "S1314",
+          "name": "Social security funds"
+        },
+        {
+          "id": "S14",
+          "name": "Households (S.14)"
+        },
+        {
+          "id": "S15",
+          "name": "Non profit institutions serving households (S.15)"
+        },
+        {
+          "id": "S1M",
+          "name": "Households and non profit institutions serving households (S.14 + S.15)"
+        },
+        {
+          "id": "S2",
+          "name": "Rest of the world (S.2)"
+        },
+        {
+          "id": "S21",
+          "name": "Member states and institutions and bodies of the European Union (S.21)"
+        },
+        {
+          "id": "S211",
+          "name": "Member states of the European Union (S.211)"
+        },
+        {
+          "id": "S212",
+          "name": "Institutions and bodies of the European Union (S.212)"
+        },
+        {
+          "id": "S22",
+          "name": "Non-member countries and international organisations non-resident of EU (S.22)"
+        }
+      ],
+      "total_codes": 21,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ACCOUNT}.{SECTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "schema_version": 1
+}

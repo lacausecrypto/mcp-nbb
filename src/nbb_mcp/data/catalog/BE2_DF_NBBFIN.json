@@ -1,0 +1,282 @@
+{
+  "agency": "BE2",
+  "id": "DF_NBBFIN",
+  "version": "1.0",
+  "category": "other",
+  "is_final": true,
+  "names": {
+    "en": "Monthly financial statement of the National Bank of Belgium",
+    "fr": "Situation financière mensuelle de la Banque Nationale de Belgique",
+    "nl": "Maandelijkse financiële staat van de Nationale Bank van België",
+    "de": "Monthly financial statement of the National Bank of Belgium"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "NBBFIN_ITEM",
+      "position": 1,
+      "name": "NBBFIN_ITEM",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Assets"
+        },
+        {
+          "id": "A1",
+          "name": "Gold and gold receivables"
+        },
+        {
+          "id": "A2",
+          "name": "Claims on non-euro area residents denominated in foreign currency"
+        },
+        {
+          "id": "A21",
+          "name": "Receivables from the IMF"
+        },
+        {
+          "id": "A22",
+          "name": "Balances with banks and security investments, external loans and other external assets"
+        },
+        {
+          "id": "A3",
+          "name": "Claims on euro area residents denominated in foreign currency"
+        },
+        {
+          "id": "A4",
+          "name": "Claims on non-euro area residents denominated in euro"
+        },
+        {
+          "id": "A5",
+          "name": "Lending to euro area credit institutions related to monetary policy operations denominated in euro"
+        },
+        {
+          "id": "A51",
+          "name": "Main refinancing operations"
+        },
+        {
+          "id": "A52",
+          "name": "Longer-term refinancing operations"
+        },
+        {
+          "id": "A53",
+          "name": "Fine-tuning reverse operations"
+        },
+        {
+          "id": "A54",
+          "name": "Structural reverse operations"
+        },
+        {
+          "id": "A55",
+          "name": "Marginal lending facility"
+        },
+        {
+          "id": "A56",
+          "name": "Credits related to margin calls"
+        },
+        {
+          "id": "A6",
+          "name": "Other claims on euro area credit institutions denominated in euro"
+        },
+        {
+          "id": "A7",
+          "name": "Securities of euro area residents denominated in euro"
+        },
+        {
+          "id": "A71",
+          "name": "Securities held for monetary policy purposes"
+        },
+        {
+          "id": "A72",
+          "name": "Other securities"
+        },
+        {
+          "id": "A8",
+          "name": "Intra-eurosystem claims"
+        },
+        {
+          "id": "A81",
+          "name": "Participating interest in ECB"
+        },
+        {
+          "id": "A82",
+          "name": "Claims equivalent to the transfer of foreign reserves"
+        },
+        {
+          "id": "A83",
+          "name": "Net claims related to the allocation of euro banknotes within the Eurosystem"
+        },
+        {
+          "id": "A84",
+          "name": "Other claims within the Eurosystem (net)"
+        },
+        {
+          "id": "A9",
+          "name": "Other assets"
+        },
+        {
+          "id": "L",
+          "name": "Liabilities"
+        },
+        {
+          "id": "L1",
+          "name": "Banknotes in circulation"
+        },
+        {
+          "id": "L2",
+          "name": "Liabilities to euro area credit institutions related to monetary policy operations denominated in euro"
+        },
+        {
+          "id": "L21",
+          "name": "Current accounts"
+        },
+        {
+          "id": "L22",
+          "name": "Deposit facility"
+        },
+        {
+          "id": "L23",
+          "name": "Fixed term deposits"
+        },
+        {
+          "id": "L24",
+          "name": "Fine-tuning reverse operations"
+        },
+        {
+          "id": "L25",
+          "name": "Deposits related to margin calls"
+        },
+        {
+          "id": "L3",
+          "name": "Other liabilities to euro area credit institutions denominated in euro"
+        },
+        {
+          "id": "L4",
+          "name": "Liabilities to other euro area residents denominated in euro"
+        },
+        {
+          "id": "L41",
+          "name": "General government"
+        },
+        {
+          "id": "L42",
+          "name": "Other liabilities"
+        },
+        {
+          "id": "L5",
+          "name": "Liabilities to non-euro area residents denominated in euro"
+        },
+        {
+          "id": "L6",
+          "name": "Liabilities to euro area residents denominated in foreign currency"
+        },
+        {
+          "id": "L7",
+          "name": "Liabilities to non-euro area residents denominated in foreign currency"
+        },
+        {
+          "id": "L8",
+          "name": "Counterpart of special drawing rights allocated by the IMF"
+        },
+        {
+          "id": "L9",
+          "name": "Intra-eurosystem liabilities"
+        },
+        {
+          "id": "L91",
+          "name": "Liabilities related to promissory notes backing the issuance of ECB debt certificates"
+        },
+        {
+          "id": "L92",
+          "name": "Net liabilities related to the allocation of euro banknotes within the Eurosystem"
+        },
+        {
+          "id": "L93",
+          "name": "Other liabilities within the Eurosystem (net)"
+        },
+        {
+          "id": "L10",
+          "name": "Other liabilities"
+        },
+        {
+          "id": "L11",
+          "name": "Revaluation accounts"
+        },
+        {
+          "id": "L12",
+          "name": "Capital and reserves"
+        },
+        {
+          "id": "A85",
+          "name": "Claims relating to TARGET"
+        },
+        {
+          "id": "L94",
+          "name": "Liabilities relating to TARGET"
+        }
+      ],
+      "total_codes": 49,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{NBBFIN_ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:50+00:00",
+  "schema_version": 1
+}

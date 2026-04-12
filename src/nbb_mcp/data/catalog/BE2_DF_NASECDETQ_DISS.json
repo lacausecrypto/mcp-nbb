@@ -1,0 +1,979 @@
+{
+  "agency": "BE2",
+  "id": "DF_NASECDETQ_DISS",
+  "version": "1.0",
+  "category": "national_accounts",
+  "is_final": true,
+  "names": {
+    "en": "Detailed sector accounts – quarterly data",
+    "fr": "Comptes sectoriels détaillés – données trimestrielles",
+    "nl": "Gedetailleerde sectorrekeningen - kwartaalgegevens",
+    "de": "Detailed sector accounts – quarterly data"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ACCOUNT",
+      "position": 1,
+      "name": "ACCOUNT",
+      "codes": [
+        {
+          "id": "I",
+          "name": "Production account (I)"
+        },
+        {
+          "id": "IU_B1QG",
+          "name": "Added value (gross) / Gross domestic product (B.1g)"
+        },
+        {
+          "id": "IU_P51C",
+          "name": "Consumption of fixed capital (P.51c)"
+        },
+        {
+          "id": "IU_B1QN",
+          "name": "Added value (net) / Net domestic product (B.1n)"
+        },
+        {
+          "id": "II",
+          "name": "Distribution and use of income accounts (II)"
+        },
+        {
+          "id": "II1",
+          "name": "Primary distribution of income accounts (II.1)"
+        },
+        {
+          "id": "II11",
+          "name": "Generation of income account (II.1.1)"
+        },
+        {
+          "id": "II11R",
+          "name": "Resources"
+        },
+        {
+          "id": "II11R_B1QG",
+          "name": "Added value (gross) / Gross domestic product (B.1g)"
+        },
+        {
+          "id": "II11U",
+          "name": "Uses"
+        },
+        {
+          "id": "II11U_D1",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "II11U_D2",
+          "name": "Taxes on production and imports (D.2)"
+        },
+        {
+          "id": "II11U_D21",
+          "name": "Taxes on products (D.21)"
+        },
+        {
+          "id": "II11U_D29",
+          "name": "Other taxes on production (D.29)"
+        },
+        {
+          "id": "II11U_D3",
+          "name": "Subsidies (D.3)"
+        },
+        {
+          "id": "II11U_D31",
+          "name": "Subsidies on products (D.31)"
+        },
+        {
+          "id": "II11U_D39",
+          "name": "Other subsidies on production (D.39)"
+        },
+        {
+          "id": "II11U_B2GB3G",
+          "name": "Operating surplus and mixed income, gross (B.2g + B.3g)"
+        },
+        {
+          "id": "II11U_B2G",
+          "name": "Gross operating surplus (B.2g)"
+        },
+        {
+          "id": "II11U_B3G",
+          "name": "Gross mixed income (B.3g)"
+        },
+        {
+          "id": "II12",
+          "name": "Allocation of primary income account (II.1.2)"
+        },
+        {
+          "id": "II12R",
+          "name": "Resources"
+        },
+        {
+          "id": "II12R_B2GB3G",
+          "name": "Operating surplus and mixed income, gross (B.2g + B.3g)"
+        },
+        {
+          "id": "II12R_B2G",
+          "name": "Gross operating surplus (B.2g)"
+        },
+        {
+          "id": "II12R_B3G",
+          "name": "Gross mixed income (B.3g)"
+        },
+        {
+          "id": "II12R_D1",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "II12R_D2",
+          "name": "Taxes on production and imports (D.2)"
+        },
+        {
+          "id": "II12R_D21",
+          "name": "Taxes on products (D.21)"
+        },
+        {
+          "id": "II12R_D211",
+          "name": "of which : value added type taxes (VAT) (D.211)"
+        },
+        {
+          "id": "II12R_D29",
+          "name": "Other taxes on production (D.29)"
+        },
+        {
+          "id": "II12R_D3",
+          "name": "Subsidies (D.3)"
+        },
+        {
+          "id": "II12R_D31",
+          "name": "Subsidies on products (D.31)"
+        },
+        {
+          "id": "II12R_D39",
+          "name": "Other subsidies on production (D.39)"
+        },
+        {
+          "id": "II12R_D4",
+          "name": "Property income (D.4)"
+        },
+        {
+          "id": "II12R_D41",
+          "name": "Interest (D.41)"
+        },
+        {
+          "id": "II12R_D41G",
+          "name": "Total interest before allocation of FISIM (D.41g)"
+        },
+        {
+          "id": "II12R_D42",
+          "name": "Distributed income of corporations (D.42)"
+        },
+        {
+          "id": "II12R_D43",
+          "name": "Reinvested earnings on foreign direct investment (D.43)"
+        },
+        {
+          "id": "II12R_D44",
+          "name": "Other investment income (D.44)"
+        },
+        {
+          "id": "II12R_D45",
+          "name": "Rent (D.45)"
+        },
+        {
+          "id": "II12R_B4G",
+          "name": "Entrepreneurial income, gross (B.4g)"
+        },
+        {
+          "id": "II12U",
+          "name": "Uses"
+        },
+        {
+          "id": "II12U_D4",
+          "name": "Property income (D.4)"
+        },
+        {
+          "id": "II12U_D41",
+          "name": "Interest (D.41)"
+        },
+        {
+          "id": "II12U_D41G",
+          "name": "Total interest before allocation of FISIM (D.41g)"
+        },
+        {
+          "id": "II12U_D42",
+          "name": "Distributed income of corporations (D.42)"
+        },
+        {
+          "id": "II12U_D43",
+          "name": "Reinvested earnings on foreign direct investment (D.43)"
+        },
+        {
+          "id": "II12U_D44",
+          "name": "Other investment income (D.44)"
+        },
+        {
+          "id": "II12U_D45",
+          "name": "Rent (D.45)"
+        },
+        {
+          "id": "II12U_B5G",
+          "name": "Gross balance of primary incomes / Gross national income (B.5g)"
+        },
+        {
+          "id": "II2",
+          "name": "Secondary distribution of income account (II.2)"
+        },
+        {
+          "id": "II2R",
+          "name": "Resources"
+        },
+        {
+          "id": "II2R_B5G",
+          "name": "Gross balance of primary incomes / Gross national income (B.5g)"
+        },
+        {
+          "id": "II2R_D5",
+          "name": "Current taxes on income, wealth, etc. (D.5)"
+        },
+        {
+          "id": "II2R_D61D62",
+          "name": "Social contributions and benefits (D.61+D.62)"
+        },
+        {
+          "id": "II2R_D61",
+          "name": "Net social contributions (D.61)"
+        },
+        {
+          "id": "II2R_D62",
+          "name": "Social benefits other than social transfers in kind (D.62)"
+        },
+        {
+          "id": "II2R_D7",
+          "name": "Other current transfers (D.7)"
+        },
+        {
+          "id": "II2R_D71",
+          "name": "Net non-life insurance premiums (D.71)"
+        },
+        {
+          "id": "II2R_D72",
+          "name": "Non-life insurance claims (D.72)"
+        },
+        {
+          "id": "II2R_D74",
+          "name": "Current international cooperation (D.74)"
+        },
+        {
+          "id": "II2R_D75",
+          "name": "Miscellanous current transfers (D.75)"
+        },
+        {
+          "id": "II2U",
+          "name": "Uses"
+        },
+        {
+          "id": "II2U_D5",
+          "name": "Current taxes on income, wealth, etc. (D.5)"
+        },
+        {
+          "id": "II2U_D6",
+          "name": "Social contributions and benefits (D.61+D.62)"
+        },
+        {
+          "id": "II2U_D61",
+          "name": "Net social contributions (D.61)"
+        },
+        {
+          "id": "II2U_D62",
+          "name": "Social benefits other than social transfers in kind (D.62)"
+        },
+        {
+          "id": "II2U_D7",
+          "name": "Other current transfers (D.7)"
+        },
+        {
+          "id": "II2U_D71",
+          "name": "Net non-life insurance premiums (D.71)"
+        },
+        {
+          "id": "II2U_D72",
+          "name": "Non-life insurance claims (D.72)"
+        },
+        {
+          "id": "II2U_D74",
+          "name": "Current international cooperation (D.74)"
+        },
+        {
+          "id": "II2U_D74A",
+          "name": "of which : payable to /receivable by European institutions (D.74A)"
+        },
+        {
+          "id": "II2U_D75",
+          "name": "Miscellanous current transfers (D.75)"
+        },
+        {
+          "id": "II2U_D76",
+          "name": "VAT and GNI based EU own resources (D.76)"
+        },
+        {
+          "id": "II2U_B6G",
+          "name": "Gross disposable income (B.6g)"
+        },
+        {
+          "id": "II3",
+          "name": "Redistribution of income in kind account (II.3)"
+        },
+        {
+          "id": "II3R",
+          "name": "Resources"
+        },
+        {
+          "id": "II3R_B6G",
+          "name": "Gross disposable income (B.6g)"
+        },
+        {
+          "id": "II3R_D63",
+          "name": "Social transfers in kind (D.63)"
+        },
+        {
+          "id": "II3R_D631",
+          "name": "Social transfers in kind - non-market production (D.631)"
+        },
+        {
+          "id": "II3R_D632",
+          "name": "Social transfers in kind - purchased market production (D.632)"
+        },
+        {
+          "id": "II3U",
+          "name": "Uses"
+        },
+        {
+          "id": "II3U_D63",
+          "name": "Social transfers in kind (D.63)"
+        },
+        {
+          "id": "II3U_D631",
+          "name": "Social transfers in kind - non-market production (D.631)"
+        },
+        {
+          "id": "II3U_D632",
+          "name": "Social transfers in kind - purchased market production (D.632)"
+        },
+        {
+          "id": "II3U_B7G",
+          "name": "Adjusted gross disposable income (B.7g)"
+        },
+        {
+          "id": "II4",
+          "name": "Use of income account (II.4)"
+        },
+        {
+          "id": "II41",
+          "name": "Use of disposable income account (II.4.1)"
+        },
+        {
+          "id": "II41R",
+          "name": "Resources"
+        },
+        {
+          "id": "II41R_B6G",
+          "name": "Gross disposable income (B.6g)"
+        },
+        {
+          "id": "II41R_D8",
+          "name": "Adjustment for the change in pension entitlements (D.8)"
+        },
+        {
+          "id": "II41U",
+          "name": "Uses"
+        },
+        {
+          "id": "II41U_P3",
+          "name": "Final consumption expenditure (P.3)"
+        },
+        {
+          "id": "II41U_P31",
+          "name": "Individual consumption expenditure (P.31)"
+        },
+        {
+          "id": "II41U_P32",
+          "name": "Collective consumption expenditure (P.32)"
+        },
+        {
+          "id": "II41U_D8",
+          "name": "Adjustment for the change in pension entitlements (D.8)"
+        },
+        {
+          "id": "II41U_B8G",
+          "name": "Gross saving (B.8g)"
+        },
+        {
+          "id": "III",
+          "name": "Accumulation accounts (III)"
+        },
+        {
+          "id": "III1",
+          "name": "Capital account (III.1)"
+        },
+        {
+          "id": "III11",
+          "name": "Change in net worth due to saving and capital transfers accounts (III.1.1)"
+        },
+        {
+          "id": "III11L",
+          "name": "Changes in liabilities and net worth"
+        },
+        {
+          "id": "III11L_B8N",
+          "name": "Net saving (B.8n)"
+        },
+        {
+          "id": "III11L_D9_R",
+          "name": "Capital transfers, received (D.9r)"
+        },
+        {
+          "id": "III11L_D91_R",
+          "name": "Capital taxes, received (D.91r)"
+        },
+        {
+          "id": "III11L_D92D99_R",
+          "name": "Investment grants, received (D.92r) + Other capital transfers, received (D.99r)"
+        },
+        {
+          "id": "III11L_D92_R",
+          "name": "Investment grants, received (D.92r)"
+        },
+        {
+          "id": "III11L_D99_R",
+          "name": "Other capital transfers, received (D.99r)"
+        },
+        {
+          "id": "III11L_D9_P",
+          "name": "Capital transfers, paid (D.9p)"
+        },
+        {
+          "id": "III11L_D91_P",
+          "name": "Capital taxes, paid (D.91p)"
+        },
+        {
+          "id": "III11L_D92D99_P",
+          "name": "Investment grants, paid (D.92p) + Other capital transfers, paid (D.99p)"
+        },
+        {
+          "id": "III11L_D92_P",
+          "name": "Investment grants, paid (D.92p)"
+        },
+        {
+          "id": "III11L_D99_P",
+          "name": "Other capital transfers, paid (D.99p)"
+        },
+        {
+          "id": "III11A",
+          "name": "Changes in assets"
+        },
+        {
+          "id": "III11A_B101",
+          "name": "Changes in net worth due to saving and capital transfers (B.10.1)"
+        },
+        {
+          "id": "III12",
+          "name": "Acquisitions of non-financial assets account (III.1.2)"
+        },
+        {
+          "id": "III12L",
+          "name": "Changes in liabilities"
+        },
+        {
+          "id": "III12L_B101",
+          "name": "Changes in net worth due to saving and capital transfers (B.10.1)"
+        },
+        {
+          "id": "III12A",
+          "name": "Changes in assets"
+        },
+        {
+          "id": "III12A_P51G",
+          "name": "Gross fixed capital formation (P.51g)"
+        },
+        {
+          "id": "III12A_P51C",
+          "name": "Consumption of fixed capital (P.51c)"
+        },
+        {
+          "id": "III12A_P52P53",
+          "name": "Changes in inventories (P.52) + Acquisitions less disposals of valuables (P.53)"
+        },
+        {
+          "id": "III12A_P52",
+          "name": "Changes in inventories (P.52)"
+        },
+        {
+          "id": "III12A_P53",
+          "name": "Acquisitions less disposals of valuables (P.53)"
+        },
+        {
+          "id": "III12A_NP",
+          "name": "Acquisitions less disposals of non-financial non-produced assets (NP)"
+        },
+        {
+          "id": "III12A_B9",
+          "name": "Net lending / net borrowing (B.9)"
+        },
+        {
+          "id": "VI",
+          "name": "External account of goods and services (V.I)"
+        },
+        {
+          "id": "VIR",
+          "name": "Resources"
+        },
+        {
+          "id": "VIR_P7",
+          "name": "Imports of goods and services (P.7)"
+        },
+        {
+          "id": "VIR_P71",
+          "name": "Imports of goods (P.71)"
+        },
+        {
+          "id": "VIR_P72",
+          "name": "Imports of services (P.72)"
+        },
+        {
+          "id": "VIU",
+          "name": "Uses"
+        },
+        {
+          "id": "VIU_P6",
+          "name": "Exports of goods and services (P.6)"
+        },
+        {
+          "id": "VIU_P61",
+          "name": "Exports of goods (P.61)"
+        },
+        {
+          "id": "VIU_P62",
+          "name": "Exports of services (P.62)"
+        },
+        {
+          "id": "VIU_B11",
+          "name": "External balance of goods and services (B.11)"
+        },
+        {
+          "id": "VII",
+          "name": "External account of primary incomes and current transfers (V.II)"
+        },
+        {
+          "id": "VIIR",
+          "name": "Resources"
+        },
+        {
+          "id": "VIIR_B11",
+          "name": "External balance of goods and services (B.11)"
+        },
+        {
+          "id": "VIIR_D1",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "VIIR_D2",
+          "name": "Taxes on production and imports (D.2)"
+        },
+        {
+          "id": "VIIR_D21",
+          "name": "Taxes on products (D.21)"
+        },
+        {
+          "id": "VIIR_D29",
+          "name": "Other taxes on production (D.29)"
+        },
+        {
+          "id": "VIIR_D3",
+          "name": "Subsidies (D.3)"
+        },
+        {
+          "id": "VIIR_D31",
+          "name": "Subsidies on products (D.31)"
+        },
+        {
+          "id": "VIIR_D39",
+          "name": "Other subsidies on production (D.39)"
+        },
+        {
+          "id": "VIIR_D4",
+          "name": "Property income (D.4)"
+        },
+        {
+          "id": "VIIR_D41",
+          "name": "Interest (D.41)"
+        },
+        {
+          "id": "VIIR_D41G",
+          "name": "Total interest before allocation of FISIM (D.41g)"
+        },
+        {
+          "id": "VIIR_D42",
+          "name": "Distributed income of corporations (D.42)"
+        },
+        {
+          "id": "VIIR_D43",
+          "name": "Reinvested earnings on foreign direct investment (D.43)"
+        },
+        {
+          "id": "VIIR_D44",
+          "name": "Other investment income (D.44)"
+        },
+        {
+          "id": "VIIR_D5",
+          "name": "Current taxes on income, wealth, etc. (D.5)"
+        },
+        {
+          "id": "VIIR_D6",
+          "name": "Social contributions and benefits (D.6)"
+        },
+        {
+          "id": "VIIR_D61",
+          "name": "Net social contributions (D.61)"
+        },
+        {
+          "id": "VIIR_D62",
+          "name": "Social benefits other than social transfers in kind (D.62)"
+        },
+        {
+          "id": "VIIR_D7",
+          "name": "Other current transfers (D.7)"
+        },
+        {
+          "id": "VIIR_D71",
+          "name": "Net non-life insurance premiums (D.71)"
+        },
+        {
+          "id": "VIIR_D72",
+          "name": "Non-life insurance claims (D.72)"
+        },
+        {
+          "id": "VIIR_D74",
+          "name": "Current international cooperation (D.74)"
+        },
+        {
+          "id": "VIIR_D74A",
+          "name": "of which : payable to /receivable by European institutions (D.74A)"
+        },
+        {
+          "id": "VIIR_D75",
+          "name": "Miscellanous current transfers (D.75)"
+        },
+        {
+          "id": "VIIR_D76",
+          "name": "VAT and GNI based EU own resources (D.76)"
+        },
+        {
+          "id": "VIIR_D8",
+          "name": "Adjustment for the change in net equity of households in pension funds reserves (D.8)"
+        },
+        {
+          "id": "VIIU",
+          "name": "Uses"
+        },
+        {
+          "id": "VIIU_D1",
+          "name": "Compensation of employees (D.1)"
+        },
+        {
+          "id": "VIIU_D4",
+          "name": "Property income (D.4)"
+        },
+        {
+          "id": "VIIU_D41",
+          "name": "Interest (D.41)"
+        },
+        {
+          "id": "VIIU_D41G",
+          "name": "Total interest before allocation of FISIM (D.41g)"
+        },
+        {
+          "id": "VIIU_D42",
+          "name": "Distributed income of corporations (D.42)"
+        },
+        {
+          "id": "VIIU_D43",
+          "name": "Reinvested earnings on foreign direct investment (D.43)"
+        },
+        {
+          "id": "VIIU_D44",
+          "name": "Other investment income (D.44)"
+        },
+        {
+          "id": "VIIU_D5",
+          "name": "Current taxes on income, wealth, etc. (D.5)"
+        },
+        {
+          "id": "VIIU_D6",
+          "name": "Social contributions and benefits (D.6)"
+        },
+        {
+          "id": "VIIU_D61",
+          "name": "Net social contributions (D.61)"
+        },
+        {
+          "id": "VIIU_D62",
+          "name": "Social benefits other than social transfers in kind (D.62)"
+        },
+        {
+          "id": "VIIU_D7",
+          "name": "Other current transfers (D.7)"
+        },
+        {
+          "id": "VIIU_D71",
+          "name": "Net non-life insurance premiums (D.71)"
+        },
+        {
+          "id": "VIIU_D72",
+          "name": "Non-life insurance claims (D.72)"
+        },
+        {
+          "id": "VIIU_D74",
+          "name": "Current international cooperation (D.74)"
+        },
+        {
+          "id": "VIIU_D75",
+          "name": "Miscellanous current transfers (D.75)"
+        },
+        {
+          "id": "VIIU_D8",
+          "name": "Adjustment for the change in net equity of households in pension funds reserves (D.8)"
+        },
+        {
+          "id": "VIIU_B12",
+          "name": "Current external balance (B.12)"
+        },
+        {
+          "id": "VIII",
+          "name": "Accumulation accounts (V.III)"
+        },
+        {
+          "id": "VIII1",
+          "name": "Capital account (V.III.1)"
+        },
+        {
+          "id": "VIII11",
+          "name": "Change in net worth due to saving and capital transfers account (V.III.1.1)"
+        },
+        {
+          "id": "VIII11L",
+          "name": "Changes in liabilities and net worth"
+        },
+        {
+          "id": "VIII11L_B12",
+          "name": "Current external balance (B.12)"
+        },
+        {
+          "id": "VIII11L_D9_R",
+          "name": "Capital transfers, received (D.9r)"
+        },
+        {
+          "id": "VIII11L_D91_R",
+          "name": "Capital taxes, receivable (D.91r)"
+        },
+        {
+          "id": "VIII11L_D92_RD99_R",
+          "name": "Investment grant, receivable (D.92r) + other capital transfers, receivable (D.99r)"
+        },
+        {
+          "id": "VIII11L_D92_R",
+          "name": "Investment grant, receivable (D.92r)"
+        },
+        {
+          "id": "VIII11L_D99_R",
+          "name": "Other capital transfers, receivable (D.99r)"
+        },
+        {
+          "id": "VIII11L_D9_P",
+          "name": "Capital transfers, paid (D.9p)"
+        },
+        {
+          "id": "VIII11L_D91_P",
+          "name": "Capital taxes, payable (D.91p)"
+        },
+        {
+          "id": "VIII11L_D92_PD99_R",
+          "name": "Investment grants, payable (D.92p) + other capital transfers, payable (D.99p)"
+        },
+        {
+          "id": "VIII11L_D92_P",
+          "name": "Investment grant, payable (D.92p)"
+        },
+        {
+          "id": "VIII11L_D99_P",
+          "name": "Other capital transfers, payable (D.99p)"
+        },
+        {
+          "id": "VIII11A",
+          "name": "Changes in assets"
+        },
+        {
+          "id": "VIII11A_B101",
+          "name": "Changes in net worth due to saving and capital transfers (B.10.1)"
+        },
+        {
+          "id": "VIII12",
+          "name": "Acquisitions of non-financial assets account (V.III.1.2)"
+        }
+      ],
+      "total_codes": 205,
+      "truncated": true
+    },
+    {
+      "id": "SECTOR",
+      "position": 2,
+      "name": "SECTOR",
+      "codes": [
+        {
+          "id": "S1",
+          "name": "Total economy (S.1)"
+        },
+        {
+          "id": "S11",
+          "name": "Non financial corporations (S.11)"
+        },
+        {
+          "id": "S12",
+          "name": "Financial corporations (S.12)"
+        },
+        {
+          "id": "S121_123",
+          "name": "Central bank, deposit-taking corposations and money market funds (S.121 + S.122 + S.123)"
+        },
+        {
+          "id": "S124_127",
+          "name": "Non-monetary investment funds, other fin. intermediaries, except insurance corp. and pension funds, and captive fin.inst. and money lenders (S.124+125+127)"
+        },
+        {
+          "id": "S126",
+          "name": "Financial auxiliaries (S.126)"
+        },
+        {
+          "id": "S128_129",
+          "name": "Insurance corporations and pension funds (S.128 + S.129)"
+        },
+        {
+          "id": "S13",
+          "name": "General government (S.13)"
+        },
+        {
+          "id": "S1300",
+          "name": "General government"
+        },
+        {
+          "id": "S1311",
+          "name": "Federal government"
+        },
+        {
+          "id": "S1312",
+          "name": "Communities and regions"
+        },
+        {
+          "id": "S1313",
+          "name": "Local government"
+        },
+        {
+          "id": "S1314",
+          "name": "Social security funds"
+        },
+        {
+          "id": "S14",
+          "name": "Households (S.14)"
+        },
+        {
+          "id": "S15",
+          "name": "Non profit institutions serving households (S.15)"
+        },
+        {
+          "id": "S1M",
+          "name": "Households and non profit institutions serving households (S.14 + S.15)"
+        },
+        {
+          "id": "S2",
+          "name": "Rest of the world (S.2)"
+        },
+        {
+          "id": "S21",
+          "name": "Member states and institutions and bodies of the European Union (S.21)"
+        },
+        {
+          "id": "S211",
+          "name": "Member states of the European Union (S.211)"
+        },
+        {
+          "id": "S212",
+          "name": "Institutions and bodies of the European Union (S.212)"
+        },
+        {
+          "id": "S22",
+          "name": "Non-member countries and international organisations non-resident of EU (S.22)"
+        }
+      ],
+      "total_codes": 21,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ACCOUNT}.{SECTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:50+00:00",
+  "schema_version": 1
+}

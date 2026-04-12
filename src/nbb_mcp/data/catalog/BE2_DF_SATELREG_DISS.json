@@ -1,0 +1,488 @@
+{
+  "agency": "BE2",
+  "id": "DF_SATELREG_DISS",
+  "version": "1.0",
+  "category": "other",
+  "is_final": true,
+  "names": {
+    "en": "Regional dimension of NPI satellite accounts",
+    "fr": "Dimension régionale des comptes satellites des ISBL",
+    "nl": "Regionale dimensie van de satellietrekening van de IZW's",
+    "de": "Regional dimension of NPI satellite accounts"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 1,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "NUMB_NPI",
+          "name": "Number of NPIs (units)"
+        },
+        {
+          "id": "EMPLOY",
+          "name": "Number of employees (thousands of persons)"
+        },
+        {
+          "id": "PRC_D1",
+          "name": "Compensation of employees (millions of euro)"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    },
+    {
+      "id": "BRANCH",
+      "position": 2,
+      "name": "BRANCH",
+      "codes": [
+        {
+          "id": "TOT",
+          "name": "Total"
+        },
+        {
+          "id": "A_F",
+          "name": "Agriculture and industry (A-F)"
+        },
+        {
+          "id": "G_N",
+          "name": "Services (G-N)"
+        },
+        {
+          "id": "G",
+          "name": "Wholesale and retail trade (G)"
+        },
+        {
+          "id": "I",
+          "name": "Accomodation and food service activities (I)"
+        },
+        {
+          "id": "M72",
+          "name": "Scientific research and development (M, 72)"
+        },
+        {
+          "id": "N78",
+          "name": "Employment activities (N, 78)"
+        },
+        {
+          "id": "N79",
+          "name": "Travel agency, tour operator reservation service and related activities (N, 79)"
+        },
+        {
+          "id": "N82",
+          "name": "Office administrative, office support and other business support activities (N, 82)"
+        },
+        {
+          "id": "HJ_N",
+          "name": "Other service activities (H, J to N except 72, 78, 79 and 82)"
+        },
+        {
+          "id": "O",
+          "name": "Public administration and defence; compulsory social security (O)"
+        },
+        {
+          "id": "P",
+          "name": "Education (P)"
+        },
+        {
+          "id": "Q",
+          "name": "Human health and social work activities (Q)"
+        },
+        {
+          "id": "Q86",
+          "name": "Human health activities (Q, 86)"
+        },
+        {
+          "id": "Q87_88",
+          "name": "Social work activities (Q, 87 and 88)"
+        },
+        {
+          "id": "Q87",
+          "name": "Residential care activities (Q, 87)"
+        },
+        {
+          "id": "Q88",
+          "name": "Social work activities without accomodation (Q, 88)"
+        },
+        {
+          "id": "R",
+          "name": "Arts, entertainment and recreation (R)"
+        },
+        {
+          "id": "R90_91",
+          "name": "Arts and cultural activities (R, 90 and 91)"
+        },
+        {
+          "id": "R92_93",
+          "name": "Sports activities, amusement and recreation activities (R, 92 and 93)"
+        },
+        {
+          "id": "S_T",
+          "name": "Other service activities (S-T)"
+        },
+        {
+          "id": "S",
+          "name": "Other service activities (S)"
+        },
+        {
+          "id": "S94",
+          "name": "Activities of membership organisations (S, 94)"
+        },
+        {
+          "id": "S95_96",
+          "name": "Services to individuals (S, 95 and 96)"
+        },
+        {
+          "id": "ST95_97",
+          "name": "Services to individuals (S to T, 95 to 97)"
+        }
+      ],
+      "total_codes": 25,
+      "truncated": false
+    },
+    {
+      "id": "REGION",
+      "position": 3,
+      "name": "REGION",
+      "codes": [
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "VL",
+          "name": "Flemish Region"
+        },
+        {
+          "id": "WL",
+          "name": "Walloon Region"
+        },
+        {
+          "id": "BX",
+          "name": "Brussels-Capital Region"
+        },
+        {
+          "id": "BR",
+          "name": "Brussels"
+        },
+        {
+          "id": "000",
+          "name": "Belgium"
+        },
+        {
+          "id": "100",
+          "name": "Brussels-Capital Region"
+        },
+        {
+          "id": "200",
+          "name": "Flemish Region"
+        },
+        {
+          "id": "210",
+          "name": "Antwerp (province)"
+        },
+        {
+          "id": "211",
+          "name": "Antwerp (district)"
+        },
+        {
+          "id": "212",
+          "name": "Mechelen"
+        },
+        {
+          "id": "213",
+          "name": "Turnhout"
+        },
+        {
+          "id": "220",
+          "name": "Limburg"
+        },
+        {
+          "id": "221",
+          "name": "Hasselt"
+        },
+        {
+          "id": "222",
+          "name": "Maaseik"
+        },
+        {
+          "id": "223",
+          "name": "Tongeren"
+        },
+        {
+          "id": "230",
+          "name": "East Flanders"
+        },
+        {
+          "id": "231",
+          "name": "Aalst"
+        },
+        {
+          "id": "232",
+          "name": "Dendermonde"
+        },
+        {
+          "id": "233",
+          "name": "Eeklo"
+        },
+        {
+          "id": "234",
+          "name": "Ghent"
+        },
+        {
+          "id": "235",
+          "name": "Oudenaarde"
+        },
+        {
+          "id": "236",
+          "name": "Sint-Niklaas"
+        },
+        {
+          "id": "240",
+          "name": "Flemish Brabant"
+        },
+        {
+          "id": "241",
+          "name": "Halle-Vilvoorde"
+        },
+        {
+          "id": "242",
+          "name": "Leuven"
+        },
+        {
+          "id": "250",
+          "name": "West Flanders"
+        },
+        {
+          "id": "251",
+          "name": "Bruges"
+        },
+        {
+          "id": "252",
+          "name": "Diksmuide"
+        },
+        {
+          "id": "253",
+          "name": "Ypres"
+        },
+        {
+          "id": "254",
+          "name": "Kortrijk"
+        },
+        {
+          "id": "255",
+          "name": "Ostend"
+        },
+        {
+          "id": "256",
+          "name": "Roeselare"
+        },
+        {
+          "id": "257",
+          "name": "Tielt"
+        },
+        {
+          "id": "258",
+          "name": "Veurne"
+        },
+        {
+          "id": "300",
+          "name": "Walloon Region"
+        },
+        {
+          "id": "310",
+          "name": "Walloon Brabant"
+        },
+        {
+          "id": "320",
+          "name": "Hainaut"
+        },
+        {
+          "id": "321",
+          "name": "Ath"
+        },
+        {
+          "id": "322",
+          "name": "Charleroi"
+        },
+        {
+          "id": "323",
+          "name": "Mons"
+        },
+        {
+          "id": "324",
+          "name": "Mouscron"
+        },
+        {
+          "id": "325",
+          "name": "Soignies"
+        },
+        {
+          "id": "326",
+          "name": "Thuin"
+        },
+        {
+          "id": "327",
+          "name": "Tournai"
+        },
+        {
+          "id": "328",
+          "name": "Tournai-Mouscron"
+        },
+        {
+          "id": "329",
+          "name": "La Louvière"
+        },
+        {
+          "id": "330",
+          "name": "Liège (province)"
+        },
+        {
+          "id": "331",
+          "name": "Huy"
+        },
+        {
+          "id": "332",
+          "name": "Liège (district)"
+        },
+        {
+          "id": "333",
+          "name": "Verviers"
+        },
+        {
+          "id": "335",
+          "name": "Verviers (F)"
+        },
+        {
+          "id": "337",
+          "name": "Verviers (G)"
+        },
+        {
+          "id": "334",
+          "name": "Waremme"
+        },
+        {
+          "id": "340",
+          "name": "Luxembourg"
+        },
+        {
+          "id": "341",
+          "name": "Arlon"
+        },
+        {
+          "id": "342",
+          "name": "Bastogne"
+        },
+        {
+          "id": "343",
+          "name": "Marche-en-Famenne"
+        },
+        {
+          "id": "344",
+          "name": "Neufchâteau"
+        },
+        {
+          "id": "345",
+          "name": "Virton"
+        },
+        {
+          "id": "350",
+          "name": "Namur (province)"
+        },
+        {
+          "id": "351",
+          "name": "Dinant"
+        },
+        {
+          "id": "352",
+          "name": "Namur (district)"
+        },
+        {
+          "id": "353",
+          "name": "Philippeville"
+        },
+        {
+          "id": "400",
+          "name": "Extraregional area"
+        },
+        {
+          "id": "336",
+          "name": "German-speaking Community"
+        },
+        {
+          "id": "354",
+          "name": "Nivelles"
+        }
+      ],
+      "total_codes": 68,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ITEM}.{BRANCH}.{REGION}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "schema_version": 1
+}

@@ -1,0 +1,738 @@
+{
+  "agency": "BE2",
+  "id": "DF_QNA_DISS",
+  "version": "1.0",
+  "category": "national_accounts",
+  "is_final": true,
+  "names": {
+    "en": "GDP according to the 3 approaches – quarterly and annual data",
+    "fr": "PIB selon les 3 approches – données trimestrielles et annuelles",
+    "nl": "BBP volgens de 3 optieken - kwartaal- en jaargegevens",
+    "de": "GDP according to the 3 approaches – quarterly and annual data"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ACCOUNT",
+      "position": 1,
+      "name": "ACCOUNT",
+      "codes": [
+        {
+          "id": "1",
+          "name": "Gross value added by industry"
+        },
+        {
+          "id": "2",
+          "name": "Main categories of expenditure of GDP"
+        },
+        {
+          "id": "3",
+          "name": "Main categories of gross domestic income"
+        },
+        {
+          "id": "4",
+          "name": "Disposable income, saving and net lending or borrowing"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "INDICATOR",
+      "position": 2,
+      "name": "INDICATOR",
+      "codes": [
+        {
+          "id": "B1GM",
+          "name": "Gross domestic product"
+        },
+        {
+          "id": "B11",
+          "name": "External balance of goods and services"
+        },
+        {
+          "id": "B1G",
+          "name": "Gross value added at basic prices"
+        },
+        {
+          "id": "D21_M_D31",
+          "name": "Taxes less subsidies on products"
+        },
+        {
+          "id": "GDI",
+          "name": "Gross domestic income"
+        },
+        {
+          "id": "B2G_B3G",
+          "name": "Gross operating surplus and mixed income"
+        },
+        {
+          "id": "D1",
+          "name": "Compensation of employees"
+        },
+        {
+          "id": "D11",
+          "name": "Wages and salaries"
+        },
+        {
+          "id": "D12",
+          "name": "Employers' social contributions"
+        },
+        {
+          "id": "D2_M_D3",
+          "name": "Taxes on production and imports less subsidies"
+        },
+        {
+          "id": "P3_S13",
+          "name": "Final consumption expenditure of general government"
+        },
+        {
+          "id": "P31_S14_S15",
+          "name": "Private final consumption"
+        },
+        {
+          "id": "P5_DC",
+          "name": "Gross domestic capital formation"
+        },
+        {
+          "id": "P51",
+          "name": "Gross fixed capital formation"
+        },
+        {
+          "id": "P51_DWE",
+          "name": "Gross fixed capital formation by households in dwellings"
+        },
+        {
+          "id": "P51_ENT",
+          "name": "Gross fixed capital formation by enterprises, self-employed workers and non-profit institutions"
+        },
+        {
+          "id": "P51_PAD",
+          "name": "Gross fixed capital formation by public administrations"
+        },
+        {
+          "id": "P52",
+          "name": "Changes in stocks + Acquisitions less disposals of valuables"
+        },
+        {
+          "id": "P52_A",
+          "name": "Acquisitions less disposals of valuables"
+        },
+        {
+          "id": "P52_CI",
+          "name": "Changes in inventories"
+        },
+        {
+          "id": "P6",
+          "name": "Exports of goods and services"
+        },
+        {
+          "id": "P7",
+          "name": "Imports of goods and services"
+        }
+      ],
+      "total_codes": 22,
+      "truncated": false
+    },
+    {
+      "id": "BRANCH",
+      "position": 3,
+      "name": "BRANCH",
+      "codes": [
+        {
+          "id": "TOTN",
+          "name": "National total"
+        },
+        {
+          "id": "BORD",
+          "name": "Cross-border workers"
+        },
+        {
+          "id": "TOTD",
+          "name": "Domestic total"
+        },
+        {
+          "id": "A38",
+          "name": "A38"
+        },
+        {
+          "id": "A38_AA",
+          "name": "AA Agriculture, forestry and fishing"
+        },
+        {
+          "id": "A38_BB",
+          "name": "BB Mining and quarrying"
+        },
+        {
+          "id": "A38_CA",
+          "name": "CA Manufacture of food products, beverages and tobacco products"
+        },
+        {
+          "id": "A38_CB",
+          "name": "CB Manufacture of textiles, wearing apparel and leather products"
+        },
+        {
+          "id": "A38_CC",
+          "name": "CC Manufacture of wood and paper products, and printing"
+        },
+        {
+          "id": "A38_CD",
+          "name": "CD Manufacture of coke and refined petroleum products"
+        },
+        {
+          "id": "A38_CE",
+          "name": "CE Manufacture of chemicals and chemical products"
+        },
+        {
+          "id": "A38_CF",
+          "name": "CF Manufacture of basic pharmaceutical products and pharmaceutical preparations"
+        },
+        {
+          "id": "A38_CG",
+          "name": "CG Manufacture of rubber and plastics products, and other non-metallic mineral products"
+        },
+        {
+          "id": "A38_CH",
+          "name": "CH Manufacture of basic metals and fabricated metal products, except machinery and equipment"
+        },
+        {
+          "id": "A38_CI",
+          "name": "CI Manufacture of computer, electronic and optical products"
+        },
+        {
+          "id": "A38_CJ",
+          "name": "CJ Manufacture of electrical equipment"
+        },
+        {
+          "id": "A38_CK",
+          "name": "CK Manufacture of machinery and equipment n.e.c."
+        },
+        {
+          "id": "A38_CL",
+          "name": "CL Manufacture of transport equipment"
+        },
+        {
+          "id": "A38_CM",
+          "name": "CM Manufacture of furniture, other manufacturing, repair and installation of machinery and equipment"
+        },
+        {
+          "id": "A38_DD",
+          "name": "DD Electricity, gas, steam and air-conditioning supply"
+        },
+        {
+          "id": "A38_EE",
+          "name": "EE Water supply, sewerage, waste management and remediation activities"
+        },
+        {
+          "id": "A38_FF",
+          "name": "FF Construction"
+        },
+        {
+          "id": "A38_GG",
+          "name": "GG Wholesale and retail trade, repair of motor vehicles and motorcycles"
+        },
+        {
+          "id": "A38_HH",
+          "name": "HH Transportation and storage"
+        },
+        {
+          "id": "A38_II",
+          "name": "II Accommodation and food service activities"
+        },
+        {
+          "id": "A38_JA",
+          "name": "JA Publishing, audiovisual and broadcasting activities"
+        },
+        {
+          "id": "A38_JB",
+          "name": "JB Telecommunications"
+        },
+        {
+          "id": "A38_JC",
+          "name": "JC Computer programming, consultancy and related activities, information service activities"
+        },
+        {
+          "id": "A38_KK",
+          "name": "KK Financial and insurance activities"
+        },
+        {
+          "id": "A38_LL",
+          "name": "LL Real estate activities"
+        },
+        {
+          "id": "A38_MA",
+          "name": "MA Legal and accounting activities, activities of head offices, management consultancy activities, architecture and engineering activities, technical testing and analysis"
+        },
+        {
+          "id": "A38_MB",
+          "name": "MB Scientific research and development"
+        },
+        {
+          "id": "A38_MC",
+          "name": "MC Advertising and market research, other professional, scientific and technical activities, veterinary activities"
+        },
+        {
+          "id": "A38_NN",
+          "name": "NN Administrative and support service activities"
+        },
+        {
+          "id": "A38_OO",
+          "name": "OO Public administration and defence, compulsory social security"
+        },
+        {
+          "id": "A38_PP",
+          "name": "PP Education"
+        },
+        {
+          "id": "A38_QA",
+          "name": "QA Human health activities"
+        },
+        {
+          "id": "A38_QB",
+          "name": "QB Social work activities"
+        },
+        {
+          "id": "A38_RR",
+          "name": "RR Arts, entertainment and recreation"
+        },
+        {
+          "id": "A38_SS",
+          "name": "SS Other service activities"
+        },
+        {
+          "id": "A38_TT",
+          "name": "TT Activities of households as employers of domestic personnel and undifferentiated goods and services production of households for own use"
+        },
+        {
+          "id": "A64",
+          "name": "A64"
+        },
+        {
+          "id": "A64_01",
+          "name": "01 Crop and animal production, hunting and related service activities"
+        },
+        {
+          "id": "A64_02",
+          "name": "02 Forestry and logging"
+        },
+        {
+          "id": "A64_03",
+          "name": "03 Fishing and aquaculture"
+        },
+        {
+          "id": "A64_0509",
+          "name": "05-09 Mining and quarrying"
+        },
+        {
+          "id": "A64_1012",
+          "name": "10-12 Manufacture of food products, beverages and tobacco products"
+        },
+        {
+          "id": "A64_1315",
+          "name": "13-15 Manufacture of textiles, wearing apparel and leather products"
+        },
+        {
+          "id": "A64_16",
+          "name": "16 Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials"
+        },
+        {
+          "id": "A64_17",
+          "name": "17 Manufacture of paper and paper products"
+        },
+        {
+          "id": "A64_18",
+          "name": "18 Printing and reproduction of recorded media"
+        },
+        {
+          "id": "A64_19",
+          "name": "19 Manufacture of coke and refined petroleum products"
+        },
+        {
+          "id": "A64_20",
+          "name": "20 Manufacture of chemicals and chemical products"
+        },
+        {
+          "id": "A64_21",
+          "name": "21 Manufacture of basic pharmaceutical products and pharmaceutical preparations"
+        },
+        {
+          "id": "A64_22",
+          "name": "22 Manufacture of rubber and plastics products"
+        },
+        {
+          "id": "A64_23",
+          "name": "23 Manufacture of other non-metallic mineral products"
+        },
+        {
+          "id": "A64_24",
+          "name": "24 Manufacture of basic metals"
+        },
+        {
+          "id": "A64_25",
+          "name": "25 Manufacture of fabricated metal products, except machinery and equipment"
+        },
+        {
+          "id": "A64_26",
+          "name": "26 Manufacture of computer, electronic and optical products"
+        },
+        {
+          "id": "A64_27",
+          "name": "27 Manufacture of electrical equipment"
+        },
+        {
+          "id": "A64_28",
+          "name": "28 Manufacture of machinery and equipment n.e.c."
+        },
+        {
+          "id": "A64_29",
+          "name": "29 Manufacture of motor vehicles, trailers and semi-trailers"
+        },
+        {
+          "id": "A64_30",
+          "name": "30 Manufacture of other transport equipment"
+        },
+        {
+          "id": "A64_3132",
+          "name": "31-32 Manufacture of furniture; other manufacturing"
+        },
+        {
+          "id": "A64_33",
+          "name": "33 Repair and installation of machinery and equipment"
+        },
+        {
+          "id": "A64_35",
+          "name": "35 Electricity, gas, steam and air conditioning supply"
+        },
+        {
+          "id": "A64_36",
+          "name": "36 Water collection, treatment and supply"
+        },
+        {
+          "id": "A64_3739",
+          "name": "37-39 Sewerage; waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services"
+        },
+        {
+          "id": "A64_4143",
+          "name": "41-43 Construction"
+        },
+        {
+          "id": "A64_45",
+          "name": "45 Wholesale and retail trade and repair of motor vehicles and motorcycles"
+        },
+        {
+          "id": "A64_46",
+          "name": "46 Wholesale trade, except of motor vehicles and motorcycles"
+        },
+        {
+          "id": "A64_47",
+          "name": "47 Retail trade, except of motor vehicles and motorcycles"
+        },
+        {
+          "id": "A64_49",
+          "name": "49 Land transport and transport via pipelines"
+        },
+        {
+          "id": "A64_50",
+          "name": "50 Water transport"
+        },
+        {
+          "id": "A64_51",
+          "name": "51 Air transport"
+        },
+        {
+          "id": "A64_52",
+          "name": "52 Warehousing and support activities for transportation"
+        },
+        {
+          "id": "A64_53",
+          "name": "53 Postal and courier activities"
+        },
+        {
+          "id": "A64_5556",
+          "name": "55-56 Accommodation; food and beverage service activities"
+        },
+        {
+          "id": "A64_58",
+          "name": "58 Publishing activities"
+        },
+        {
+          "id": "A64_5960",
+          "name": "59-60 Motion picture, video and television programme production, sound recording and music publishing activities; programming and broadcasting activities"
+        },
+        {
+          "id": "A64_61",
+          "name": "Telecommunications"
+        },
+        {
+          "id": "A64_6263",
+          "name": "62-63 Computer programming, consultancy and related activities; information service activities"
+        },
+        {
+          "id": "A64_64",
+          "name": "64 Financial service activities, except insurance and pension funding"
+        },
+        {
+          "id": "A64_65",
+          "name": "65 Insurance, reinsurance and pension funding, except compulsory social security"
+        },
+        {
+          "id": "A64_66",
+          "name": "66 Activities auxiliary to financial services and insurance activities"
+        },
+        {
+          "id": "A64_68",
+          "name": "68 Real estate activities"
+        },
+        {
+          "id": "A64_6970",
+          "name": "69-70 Legal and accounting activities; activities of head offices; management consultancy activities"
+        },
+        {
+          "id": "A64_71",
+          "name": "71 Architecture and engineering activities; technical testing and analysis"
+        },
+        {
+          "id": "A64_72",
+          "name": "72 Scientific research and development"
+        },
+        {
+          "id": "A64_73",
+          "name": "73 Advertising and market research"
+        },
+        {
+          "id": "A64_7475",
+          "name": "74-75 Other professional, scientific and technical activities; veterinary activities"
+        },
+        {
+          "id": "A64_77",
+          "name": "77 Rental and leasing activities"
+        },
+        {
+          "id": "A64_78",
+          "name": "78 Employment activities"
+        },
+        {
+          "id": "A64_79",
+          "name": "79 Travel agency, tour operator reservation service and related activities"
+        },
+        {
+          "id": "A64_8082",
+          "name": "80-82 Security and investigation activities; services to buildings and landscape activities; office administrative, office support and other business support"
+        },
+        {
+          "id": "A64_84",
+          "name": "84 Public administration and defence; compulsory social security"
+        },
+        {
+          "id": "A64_85",
+          "name": "85 Education"
+        },
+        {
+          "id": "A64_86",
+          "name": "86 Human health activities"
+        },
+        {
+          "id": "A64_8788",
+          "name": "87-88 Social work activities"
+        },
+        {
+          "id": "A64_9092",
+          "name": "90-92 Creative, arts and entertainment activities; libraries archives, museums and other cultural activities; gambling and betting activities"
+        },
+        {
+          "id": "A64_93",
+          "name": "93 Sports activities and amusement and recreation activities"
+        },
+        {
+          "id": "A64_94",
+          "name": "94 Activities of membership organisations"
+        },
+        {
+          "id": "A64_95",
+          "name": "95 Repair of computers and personal and household goods"
+        },
+        {
+          "id": "A64_96",
+          "name": "96 Other personal service activities"
+        },
+        {
+          "id": "A64_9798",
+          "name": "97-98 Activities of households as employers of domestic personnel and undifferentiated goods and services production of households for own use"
+        },
+        {
+          "id": "VZ",
+          "name": "Total economy"
+        },
+        {
+          "id": "VA",
+          "name": "Agriculture, forestry and fishing"
+        },
+        {
+          "id": "VB_E",
+          "name": "Industry"
+        },
+        {
+          "id": "VF",
+          "name": "Construction"
+        },
+        {
+          "id": "VG_U",
+          "name": "Services"
+        },
+        {
+          "id": "VG_I",
+          "name": "Wholesale and retail trade; transportation; accommodation and food service activities"
+        },
+        {
+          "id": "VJ",
+          "name": "Information and communication"
+        },
+        {
+          "id": "VK",
+          "name": "Financial and insurance activities"
+        },
+        {
+          "id": "VL",
+          "name": "Real estate activities"
+        },
+        {
+          "id": "VM_N",
+          "name": "Professional, scientific and technical activities; administrative and support service activities"
+        },
+        {
+          "id": "VO",
+          "name": "Public administration and defence; education"
+        },
+        {
+          "id": "VQ",
+          "name": "Human health and social work activities"
+        },
+        {
+          "id": "VR_U",
+          "name": "Arts, entertainment and recreation; other service activities; activities of households as employers"
+        },
+        {
+          "id": "VO_P",
+          "name": "Public administration and defence; education"
+        }
+      ],
+      "total_codes": 119,
+      "truncated": false
+    },
+    {
+      "id": "PRICES",
+      "position": 4,
+      "name": "PRICES",
+      "codes": [
+        {
+          "id": "CQ",
+          "name": "Contributions to the volume change - Q to Q"
+        },
+        {
+          "id": "CY",
+          "name": "Contributions to the volume change - Y to Y"
+        },
+        {
+          "id": "D",
+          "name": "Deflator"
+        },
+        {
+          "id": "L",
+          "name": "In volume: chain linked, in millions of euro"
+        },
+        {
+          "id": "LQ",
+          "name": "Chain linked - Q to Q percentage change (reference year 2020)"
+        },
+        {
+          "id": "LY",
+          "name": "Chain linked - Y to Y percentage change (reference year 2020)"
+        },
+        {
+          "id": "V",
+          "name": "Current prices in millions of euro"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "ADJUSTMENT",
+      "position": 5,
+      "name": "ADJUSTMENT",
+      "codes": [
+        {
+          "id": "N",
+          "name": "Gross data"
+        },
+        {
+          "id": "Y",
+          "name": "Working day and seasonally adjusted"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ACCOUNT}.{INDICATOR}.{BRANCH}.{PRICES}.{ADJUSTMENT}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "schema_version": 1
+}

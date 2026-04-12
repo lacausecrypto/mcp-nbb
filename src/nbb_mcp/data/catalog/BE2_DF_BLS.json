@@ -1,0 +1,364 @@
+{
+  "agency": "BE2",
+  "id": "DF_BLS",
+  "version": "1.0",
+  "category": "surveys",
+  "is_final": true,
+  "names": {
+    "en": "Bank lending survey",
+    "fr": "Bank lending survey",
+    "nl": "Bank lending survey",
+    "de": "Bank lending survey"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "BLS_SECTOR",
+      "position": 1,
+      "name": "BLS_SECTOR",
+      "codes": [
+        {
+          "id": "S11",
+          "name": "Loans or credit lines to the entire sector of non-financial corporations"
+        },
+        {
+          "id": "S11S",
+          "name": "Loans or credit lines to small and mediumsized non-financial corporations"
+        },
+        {
+          "id": "S11L",
+          "name": "Loans or credit lines to large non-financial corporations"
+        },
+        {
+          "id": "S14H",
+          "name": "Loans to households for house purchase"
+        },
+        {
+          "id": "S14C",
+          "name": "Consumer credit and other lending to households"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "BLS_AREA",
+      "position": 2,
+      "name": "BLS_AREA",
+      "codes": [
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "EU",
+          "name": "Euro area"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    },
+    {
+      "id": "BLS_INDIC",
+      "position": 3,
+      "name": "BLS_INDIC",
+      "codes": [
+        {
+          "id": "C",
+          "name": "Change in credit standards"
+        },
+        {
+          "id": "CE",
+          "name": "Total evolution"
+        },
+        {
+          "id": "CES",
+          "name": "Short-term loans"
+        },
+        {
+          "id": "CEL",
+          "name": "Long-term loans"
+        },
+        {
+          "id": "CC",
+          "name": "Influence of cost of funds and balance sheet constraints"
+        },
+        {
+          "id": "CCC",
+          "name": "Costs related to your bank's capital position"
+        },
+        {
+          "id": "CCA",
+          "name": "Your bank's ability to access market financing (e.g. money or bond market financing, incl. true-sale securitisation)"
+        },
+        {
+          "id": "CCL",
+          "name": "Your bank's liquidity position"
+        },
+        {
+          "id": "CP",
+          "name": "Influence of pressure from competition"
+        },
+        {
+          "id": "CPO",
+          "name": "Competition from other banks"
+        },
+        {
+          "id": "CPN",
+          "name": "Competition from non-banks"
+        },
+        {
+          "id": "CPF",
+          "name": "Competition from market financing"
+        },
+        {
+          "id": "CR",
+          "name": "Influence of perception of risk"
+        },
+        {
+          "id": "CRE",
+          "name": "Expectations regarding general economic activity"
+        },
+        {
+          "id": "CRI",
+          "name": "Industry or firm-specific outlook"
+        },
+        {
+          "id": "CRR",
+          "name": "Risk on the collateral demanded"
+        },
+        {
+          "id": "CRH",
+          "name": "Housing market prospects"
+        },
+        {
+          "id": "CRC",
+          "name": "Creditworthiness of consumers"
+        },
+        {
+          "id": "CRB",
+          "name": "Borrower’s creditworthiness"
+        },
+        {
+          "id": "CI",
+          "name": "Influence of the risk tolerance"
+        },
+        {
+          "id": "CG",
+          "name": "Overall terms and conditions"
+        },
+        {
+          "id": "CT",
+          "name": "Price terms and conditions"
+        },
+        {
+          "id": "CTA",
+          "name": "Your bank's margin on average loans (wider margin = tightened, narrower margin = eased)"
+        },
+        {
+          "id": "CTR",
+          "name": "Your bank's margin on riskier loans"
+        },
+        {
+          "id": "CO",
+          "name": "Other terms and conditions"
+        },
+        {
+          "id": "CON",
+          "name": "Non-interest rate charges"
+        },
+        {
+          "id": "COS",
+          "name": "Size of the loan or credit line"
+        },
+        {
+          "id": "COC",
+          "name": "Collateral requirements"
+        },
+        {
+          "id": "COL",
+          "name": "Loan covenants"
+        },
+        {
+          "id": "COM",
+          "name": "Maturity"
+        },
+        {
+          "id": "COR",
+          "name": "Loan-to-value ratio"
+        },
+        {
+          "id": "COO",
+          "name": "Other loan size limits"
+        },
+        {
+          "id": "D",
+          "name": "Change in demand"
+        },
+        {
+          "id": "DE",
+          "name": "Total evolution"
+        },
+        {
+          "id": "DES",
+          "name": "Short-term loans"
+        },
+        {
+          "id": "DEL",
+          "name": "Long-term loans"
+        },
+        {
+          "id": "DF",
+          "name": "Influence of financing needs"
+        },
+        {
+          "id": "DFF",
+          "name": "Fixed investment"
+        },
+        {
+          "id": "DFI",
+          "name": "Inventories and working capital"
+        },
+        {
+          "id": "DFM",
+          "name": "Mergers/acquisitions and corporate restructuring"
+        },
+        {
+          "id": "DFD",
+          "name": "Debt restructuring"
+        },
+        {
+          "id": "DFH",
+          "name": "Housing market prospects"
+        },
+        {
+          "id": "DFC",
+          "name": "Consumer confidence"
+        },
+        {
+          "id": "DFE",
+          "name": "Non-housing related consumption expenditure"
+        },
+        {
+          "id": "DFS",
+          "name": "Spending on durable consumer goods, such as cars, furniture, etc."
+        },
+        {
+          "id": "DFP",
+          "name": "Securities purchases"
+        },
+        {
+          "id": "DFG",
+          "name": "General level of interest rates"
+        },
+        {
+          "id": "DFR",
+          "name": "Debt refinancing/restructuring and renegotiation"
+        },
+        {
+          "id": "DFY",
+          "name": "Regulatory and fiscal regime"
+        },
+        {
+          "id": "DFT",
+          "name": "Consumption expenditure financed through real-estate guaranteed loans"
+        },
+        {
+          "id": "DA",
+          "name": "Influence of the use of alternative finance"
+        },
+        {
+          "id": "DAF",
+          "name": "Internal financing"
+        },
+        {
+          "id": "DAB",
+          "name": "Loans from other banks"
+        },
+        {
+          "id": "DAN",
+          "name": "Loans from non-banks"
+        },
+        {
+          "id": "DAS",
+          "name": "Issuance of debt securities"
+        },
+        {
+          "id": "DAE",
+          "name": "Issuance of equity"
+        },
+        {
+          "id": "DAH",
+          "name": "Household savings"
+        },
+        {
+          "id": "DAO",
+          "name": "Other sources of finance"
+        }
+      ],
+      "total_codes": 58,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{BLS_SECTOR}.{BLS_AREA}.{BLS_INDIC}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:46+00:00",
+  "schema_version": 1
+}

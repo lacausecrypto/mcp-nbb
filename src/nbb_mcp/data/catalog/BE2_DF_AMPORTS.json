@@ -1,0 +1,252 @@
+{
+  "agency": "BE2",
+  "id": "DF_AMPORTS",
+  "version": "1.0",
+  "category": "surveys",
+  "is_final": true,
+  "names": {
+    "en": "Ports study",
+    "fr": "Etude ports",
+    "nl": "Studie havens",
+    "de": "Ports study"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "AMPORTS_PORT",
+      "position": 1,
+      "name": "AMPORTS_PORT",
+      "codes": [
+        {
+          "id": "AN",
+          "name": "Port of Antwerp"
+        },
+        {
+          "id": "GN",
+          "name": "North Sea Port Flanders"
+        },
+        {
+          "id": "ZB",
+          "name": "Port of Zeebrugge"
+        },
+        {
+          "id": "OO",
+          "name": "Port of Ostend"
+        },
+        {
+          "id": "LG",
+          "name": "Liege port complex"
+        },
+        {
+          "id": "BR",
+          "name": "Port of Brussels"
+        },
+        {
+          "id": "OZ",
+          "name": "Outside port zone"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "AMPORTS_VARIABLE",
+      "position": 2,
+      "name": "AMPORTS_VARIABLE",
+      "codes": [
+        {
+          "id": "VA",
+          "name": "Value added (in € million)"
+        },
+        {
+          "id": "PE",
+          "name": "Employment (FTE)"
+        },
+        {
+          "id": "IN",
+          "name": "Investment (in € million)"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    },
+    {
+      "id": "AMPORTS_SECTOR",
+      "position": 3,
+      "name": "AMPORTS_SECTOR",
+      "codes": [
+        {
+          "id": "TO",
+          "name": "Total"
+        },
+        {
+          "id": "DI",
+          "name": "Direct effects"
+        },
+        {
+          "id": "MA",
+          "name": "Maritime cluster"
+        },
+        {
+          "id": "CP",
+          "name": "Port trade"
+        },
+        {
+          "id": "DR",
+          "name": "Port construction and dredging"
+        },
+        {
+          "id": "GO",
+          "name": "Cargo handling"
+        },
+        {
+          "id": "HB",
+          "name": "Port authority"
+        },
+        {
+          "id": "PU",
+          "name": "Public Sector"
+        },
+        {
+          "id": "RE",
+          "name": "Shipping companies"
+        },
+        {
+          "id": "SB",
+          "name": "Shipbuilding and repair"
+        },
+        {
+          "id": "SE",
+          "name": "Shipping agents and forwarders"
+        },
+        {
+          "id": "VI",
+          "name": "Fishing"
+        },
+        {
+          "id": "NM",
+          "name": "Non-maritime cluster"
+        },
+        {
+          "id": "AD",
+          "name": "Other logistic services"
+        },
+        {
+          "id": "AI",
+          "name": "Other industries"
+        },
+        {
+          "id": "AU",
+          "name": "Car manufacturing"
+        },
+        {
+          "id": "CH",
+          "name": "Chemicals"
+        },
+        {
+          "id": "CO",
+          "name": "Trade"
+        },
+        {
+          "id": "CS",
+          "name": "Construction"
+        },
+        {
+          "id": "EN",
+          "name": "Energy"
+        },
+        {
+          "id": "ME",
+          "name": "Metalworking industry"
+        },
+        {
+          "id": "MP",
+          "name": "Electronics"
+        },
+        {
+          "id": "PE",
+          "name": "Fuel production"
+        },
+        {
+          "id": "TP",
+          "name": "Other land transport"
+        },
+        {
+          "id": "VO",
+          "name": "Food industry"
+        },
+        {
+          "id": "WE",
+          "name": "Road transport"
+        },
+        {
+          "id": "IN",
+          "name": "Indirect effects"
+        }
+      ],
+      "total_codes": 27,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{AMPORTS_PORT}.{AMPORTS_VARIABLE}.{AMPORTS_SECTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:40+00:00",
+  "schema_version": 1
+}

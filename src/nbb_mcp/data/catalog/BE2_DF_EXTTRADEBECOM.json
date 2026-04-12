@@ -1,0 +1,2075 @@
+{
+  "agency": "BE2",
+  "id": "DF_EXTTRADEBECOM",
+  "version": "1.0",
+  "category": "foreign_trade",
+  "is_final": true,
+  "names": {
+    "en": "Foreign trade - Belgium - Community concept",
+    "fr": "Commerce extérieur - Belgique - Concept communautaire",
+    "nl": "Buitenlandse handel - België - Communautaire concept",
+    "de": "Foreign trade - Belgium - Community concept"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "REPORTING",
+      "position": 0,
+      "name": "REPORTING",
+      "codes": [
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "VL",
+          "name": "Flemish Region"
+        },
+        {
+          "id": "WL",
+          "name": "Walloon Region"
+        },
+        {
+          "id": "BX",
+          "name": "Brussels-Capital Region"
+        },
+        {
+          "id": "BR",
+          "name": "Brussels"
+        },
+        {
+          "id": "000",
+          "name": "Belgium"
+        },
+        {
+          "id": "100",
+          "name": "Brussels-Capital Region"
+        },
+        {
+          "id": "200",
+          "name": "Flemish Region"
+        },
+        {
+          "id": "210",
+          "name": "Antwerp (province)"
+        },
+        {
+          "id": "211",
+          "name": "Antwerp (district)"
+        },
+        {
+          "id": "212",
+          "name": "Mechelen"
+        },
+        {
+          "id": "213",
+          "name": "Turnhout"
+        },
+        {
+          "id": "220",
+          "name": "Limburg"
+        },
+        {
+          "id": "221",
+          "name": "Hasselt"
+        },
+        {
+          "id": "222",
+          "name": "Maaseik"
+        },
+        {
+          "id": "223",
+          "name": "Tongeren"
+        },
+        {
+          "id": "230",
+          "name": "East Flanders"
+        },
+        {
+          "id": "231",
+          "name": "Aalst"
+        },
+        {
+          "id": "232",
+          "name": "Dendermonde"
+        },
+        {
+          "id": "233",
+          "name": "Eeklo"
+        },
+        {
+          "id": "234",
+          "name": "Ghent"
+        },
+        {
+          "id": "235",
+          "name": "Oudenaarde"
+        },
+        {
+          "id": "236",
+          "name": "Sint-Niklaas"
+        },
+        {
+          "id": "240",
+          "name": "Flemish Brabant"
+        },
+        {
+          "id": "241",
+          "name": "Halle-Vilvoorde"
+        },
+        {
+          "id": "242",
+          "name": "Leuven"
+        },
+        {
+          "id": "250",
+          "name": "West Flanders"
+        },
+        {
+          "id": "251",
+          "name": "Bruges"
+        },
+        {
+          "id": "252",
+          "name": "Diksmuide"
+        },
+        {
+          "id": "253",
+          "name": "Ypres"
+        },
+        {
+          "id": "254",
+          "name": "Kortrijk"
+        },
+        {
+          "id": "255",
+          "name": "Ostend"
+        },
+        {
+          "id": "256",
+          "name": "Roeselare"
+        },
+        {
+          "id": "257",
+          "name": "Tielt"
+        },
+        {
+          "id": "258",
+          "name": "Veurne"
+        },
+        {
+          "id": "300",
+          "name": "Walloon Region"
+        },
+        {
+          "id": "310",
+          "name": "Walloon Brabant"
+        },
+        {
+          "id": "320",
+          "name": "Hainaut"
+        },
+        {
+          "id": "321",
+          "name": "Ath"
+        },
+        {
+          "id": "322",
+          "name": "Charleroi"
+        },
+        {
+          "id": "323",
+          "name": "Mons"
+        },
+        {
+          "id": "324",
+          "name": "Mouscron"
+        },
+        {
+          "id": "325",
+          "name": "Soignies"
+        },
+        {
+          "id": "326",
+          "name": "Thuin"
+        },
+        {
+          "id": "327",
+          "name": "Tournai"
+        },
+        {
+          "id": "328",
+          "name": "Tournai-Mouscron"
+        },
+        {
+          "id": "329",
+          "name": "La Louvière"
+        },
+        {
+          "id": "330",
+          "name": "Liège (province)"
+        },
+        {
+          "id": "331",
+          "name": "Huy"
+        },
+        {
+          "id": "332",
+          "name": "Liège (district)"
+        },
+        {
+          "id": "333",
+          "name": "Verviers"
+        },
+        {
+          "id": "335",
+          "name": "Verviers (F)"
+        },
+        {
+          "id": "337",
+          "name": "Verviers (G)"
+        },
+        {
+          "id": "334",
+          "name": "Waremme"
+        },
+        {
+          "id": "340",
+          "name": "Luxembourg"
+        },
+        {
+          "id": "341",
+          "name": "Arlon"
+        },
+        {
+          "id": "342",
+          "name": "Bastogne"
+        },
+        {
+          "id": "343",
+          "name": "Marche-en-Famenne"
+        },
+        {
+          "id": "344",
+          "name": "Neufchâteau"
+        },
+        {
+          "id": "345",
+          "name": "Virton"
+        },
+        {
+          "id": "350",
+          "name": "Namur (province)"
+        },
+        {
+          "id": "351",
+          "name": "Dinant"
+        },
+        {
+          "id": "352",
+          "name": "Namur (district)"
+        },
+        {
+          "id": "353",
+          "name": "Philippeville"
+        },
+        {
+          "id": "400",
+          "name": "Extraregional area"
+        },
+        {
+          "id": "336",
+          "name": "German-speaking Community"
+        },
+        {
+          "id": "354",
+          "name": "Nivelles"
+        }
+      ],
+      "total_codes": 68,
+      "truncated": false
+    },
+    {
+      "id": "COUNTRY",
+      "position": 1,
+      "name": "COUNTRY",
+      "codes": [
+        {
+          "id": "A1",
+          "name": "World (all entities)"
+        },
+        {
+          "id": "E1",
+          "name": "Europe"
+        },
+        {
+          "id": "D0",
+          "name": "European Union"
+        },
+        {
+          "id": "A6",
+          "name": "Euro area"
+        },
+        {
+          "id": "AT",
+          "name": "Austria"
+        },
+        {
+          "id": "CY",
+          "name": "Cyprus"
+        },
+        {
+          "id": "DE",
+          "name": "Germany"
+        },
+        {
+          "id": "EE",
+          "name": "Estonia"
+        },
+        {
+          "id": "ES",
+          "name": "Spain"
+        },
+        {
+          "id": "FI",
+          "name": "Finland"
+        },
+        {
+          "id": "FR",
+          "name": "France"
+        },
+        {
+          "id": "GR",
+          "name": "Greece"
+        },
+        {
+          "id": "IE",
+          "name": "Ireland"
+        },
+        {
+          "id": "IT",
+          "name": "Italy"
+        },
+        {
+          "id": "LT",
+          "name": "Lithuania"
+        },
+        {
+          "id": "LU",
+          "name": "Luxembourg"
+        },
+        {
+          "id": "MT",
+          "name": "Malta"
+        },
+        {
+          "id": "NL",
+          "name": "Netherlands"
+        },
+        {
+          "id": "PT",
+          "name": "Portugal"
+        },
+        {
+          "id": "SI",
+          "name": "Slovena"
+        },
+        {
+          "id": "SK",
+          "name": "Slovakia"
+        },
+        {
+          "id": "LV",
+          "name": "Latvia"
+        },
+        {
+          "id": "D9",
+          "name": "Other contries of the European Union"
+        },
+        {
+          "id": "HU",
+          "name": "Hungary"
+        },
+        {
+          "id": "DK",
+          "name": "Denmark"
+        },
+        {
+          "id": "CZ",
+          "name": "Czech Republic"
+        },
+        {
+          "id": "BG",
+          "name": "Bulgaria"
+        },
+        {
+          "id": "PL",
+          "name": "Poland"
+        },
+        {
+          "id": "RO",
+          "name": "Romania"
+        },
+        {
+          "id": "SE",
+          "name": "Sweden"
+        },
+        {
+          "id": "HR",
+          "name": "Croatia"
+        },
+        {
+          "id": "EU",
+          "name": "European Union"
+        },
+        {
+          "id": "G0",
+          "name": "Other European countries"
+        },
+        {
+          "id": "GB",
+          "name": "United Kingdom"
+        },
+        {
+          "id": "CH",
+          "name": "Switzerland"
+        },
+        {
+          "id": "RU",
+          "name": "Russian Federation"
+        },
+        {
+          "id": "NO",
+          "name": "Norway"
+        },
+        {
+          "id": "TR",
+          "name": "Turkey"
+        },
+        {
+          "id": "BY",
+          "name": "Belarus"
+        },
+        {
+          "id": "UA",
+          "name": "Ukraine"
+        },
+        {
+          "id": "ME",
+          "name": "Montenegro"
+        },
+        {
+          "id": "XK",
+          "name": "Kosovo"
+        },
+        {
+          "id": "XS",
+          "name": "Serbia"
+        },
+        {
+          "id": "IS",
+          "name": "Iceland"
+        },
+        {
+          "id": "LI",
+          "name": "Liechtenstein"
+        },
+        {
+          "id": "AD",
+          "name": "Andorra"
+        },
+        {
+          "id": "AL",
+          "name": "Albania"
+        },
+        {
+          "id": "BA",
+          "name": "Bosnia and Herzegovina"
+        },
+        {
+          "id": "FO",
+          "name": "Faroe Islands"
+        },
+        {
+          "id": "GI",
+          "name": "Gibraltar"
+        },
+        {
+          "id": "MD",
+          "name": "Moldova (Republic of)"
+        },
+        {
+          "id": "MK",
+          "name": "Former Yugoslav Republic of Macedonia"
+        },
+        {
+          "id": "SM",
+          "name": "San Marino"
+        },
+        {
+          "id": "VA",
+          "name": "Holy See"
+        },
+        {
+          "id": "E4",
+          "name": "Africa"
+        },
+        {
+          "id": "E5",
+          "name": "North Africa countries"
+        },
+        {
+          "id": "DZ",
+          "name": "Algeria"
+        },
+        {
+          "id": "EG",
+          "name": "Egypt"
+        },
+        {
+          "id": "EH",
+          "name": "Western Sahara"
+        },
+        {
+          "id": "LY",
+          "name": "Libya"
+        },
+        {
+          "id": "MA",
+          "name": "Morocco"
+        },
+        {
+          "id": "TN",
+          "name": "Tunisia"
+        },
+        {
+          "id": "XC",
+          "name": "Ceuta"
+        },
+        {
+          "id": "XL",
+          "name": "Melilla"
+        },
+        {
+          "id": "E6",
+          "name": "Central and South Africa countries"
+        },
+        {
+          "id": "AO",
+          "name": "Angola"
+        },
+        {
+          "id": "BF",
+          "name": "Burkina Faso"
+        },
+        {
+          "id": "BI",
+          "name": "Burundi"
+        },
+        {
+          "id": "BJ",
+          "name": "Benin"
+        },
+        {
+          "id": "BW",
+          "name": "Botswana"
+        },
+        {
+          "id": "CD",
+          "name": "Congo (Democratic Republic of)"
+        },
+        {
+          "id": "CF",
+          "name": "Central African Republic"
+        },
+        {
+          "id": "CG",
+          "name": "Congo"
+        },
+        {
+          "id": "CI",
+          "name": "Côte d'Ivoire"
+        },
+        {
+          "id": "CM",
+          "name": "Cameroon"
+        },
+        {
+          "id": "CV",
+          "name": "Cape Verde"
+        },
+        {
+          "id": "DJ",
+          "name": "Djibouti"
+        },
+        {
+          "id": "ER",
+          "name": "Eritrea"
+        },
+        {
+          "id": "ET",
+          "name": "Ethiopia"
+        },
+        {
+          "id": "GA",
+          "name": "Gabon"
+        },
+        {
+          "id": "GH",
+          "name": "Ghana"
+        },
+        {
+          "id": "GM",
+          "name": "Gambia"
+        },
+        {
+          "id": "GN",
+          "name": "Guinea"
+        },
+        {
+          "id": "GQ",
+          "name": "Equatorial Guinea"
+        },
+        {
+          "id": "GW",
+          "name": "Guinea-Bissau"
+        },
+        {
+          "id": "IO",
+          "name": "British Indian Ocean Territory"
+        },
+        {
+          "id": "KE",
+          "name": "Kenya"
+        },
+        {
+          "id": "KM",
+          "name": "Comoros"
+        },
+        {
+          "id": "LR",
+          "name": "Liberia"
+        },
+        {
+          "id": "LS",
+          "name": "Lesotho"
+        },
+        {
+          "id": "MG",
+          "name": "Madagascar"
+        },
+        {
+          "id": "ML",
+          "name": "Mali"
+        },
+        {
+          "id": "MR",
+          "name": "Mauritania"
+        },
+        {
+          "id": "MU",
+          "name": "Mauritius"
+        },
+        {
+          "id": "MW",
+          "name": "Malawi"
+        },
+        {
+          "id": "MZ",
+          "name": "Mozambique"
+        },
+        {
+          "id": "NA",
+          "name": "Namibia"
+        },
+        {
+          "id": "NE",
+          "name": "Niger"
+        },
+        {
+          "id": "NG",
+          "name": "Nigeria"
+        },
+        {
+          "id": "RW",
+          "name": "Rwanda"
+        },
+        {
+          "id": "SC",
+          "name": "Seychelles"
+        },
+        {
+          "id": "SD",
+          "name": "Sudan"
+        },
+        {
+          "id": "SH",
+          "name": "Saint Helena, Ascension and Tristan da Cunha"
+        },
+        {
+          "id": "SL",
+          "name": "Sierra Leone"
+        },
+        {
+          "id": "SN",
+          "name": "Senegal"
+        },
+        {
+          "id": "SO",
+          "name": "Somalia"
+        },
+        {
+          "id": "SS",
+          "name": "South Sudan"
+        },
+        {
+          "id": "ST",
+          "name": "São Tomé and Principe"
+        },
+        {
+          "id": "SZ",
+          "name": "Swaziland"
+        },
+        {
+          "id": "TD",
+          "name": "Chad"
+        },
+        {
+          "id": "TG",
+          "name": "Togo"
+        },
+        {
+          "id": "TZ",
+          "name": "Tanzania (United Republic of)"
+        },
+        {
+          "id": "UG",
+          "name": "Uganda"
+        },
+        {
+          "id": "YT",
+          "name": "Mayotte"
+        },
+        {
+          "id": "ZA",
+          "name": "South Africa"
+        },
+        {
+          "id": "ZM",
+          "name": "Zambia"
+        },
+        {
+          "id": "ZW",
+          "name": "Zimbabwe"
+        },
+        {
+          "id": "E7",
+          "name": "America"
+        },
+        {
+          "id": "E8",
+          "name": "North American countries"
+        },
+        {
+          "id": "CA",
+          "name": "Canada"
+        },
+        {
+          "id": "GL",
+          "name": "Greenland"
+        },
+        {
+          "id": "PM",
+          "name": "St Pierre and Miquelon"
+        },
+        {
+          "id": "US",
+          "name": "United States"
+        },
+        {
+          "id": "E9",
+          "name": "Central American countries"
+        },
+        {
+          "id": "AG",
+          "name": "Antigua and Barbuda"
+        },
+        {
+          "id": "AI",
+          "name": "Anguilla"
+        },
+        {
+          "id": "AW",
+          "name": "Aruba"
+        },
+        {
+          "id": "BB",
+          "name": "Barbados"
+        },
+        {
+          "id": "BL",
+          "name": "Saint Barthélemy"
+        },
+        {
+          "id": "BM",
+          "name": "Bermuda"
+        },
+        {
+          "id": "BQ",
+          "name": "Bonaire, Sint Eustatius and Saba"
+        },
+        {
+          "id": "BS",
+          "name": "Bahamas"
+        },
+        {
+          "id": "BZ",
+          "name": "Belize"
+        },
+        {
+          "id": "CR",
+          "name": "Costa Rica"
+        },
+        {
+          "id": "CU",
+          "name": "Cuba"
+        },
+        {
+          "id": "CW",
+          "name": "Curaçao"
+        },
+        {
+          "id": "DM",
+          "name": "Dominica"
+        },
+        {
+          "id": "DO",
+          "name": "Dominican Republic"
+        },
+        {
+          "id": "GD",
+          "name": "Grenada"
+        },
+        {
+          "id": "GT",
+          "name": "Guatemala"
+        },
+        {
+          "id": "HN",
+          "name": "Honduras"
+        },
+        {
+          "id": "HT",
+          "name": "Haiti"
+        },
+        {
+          "id": "JM",
+          "name": "Jamaica"
+        },
+        {
+          "id": "KN",
+          "name": "St Kitts and Nevis"
+        },
+        {
+          "id": "KY",
+          "name": "Cayman Islands"
+        },
+        {
+          "id": "LC",
+          "name": "St Lucia"
+        },
+        {
+          "id": "MS",
+          "name": "Montserrat"
+        },
+        {
+          "id": "MX",
+          "name": "Mexico"
+        },
+        {
+          "id": "NI",
+          "name": "Nicaragua"
+        },
+        {
+          "id": "PA",
+          "name": "Panama"
+        },
+        {
+          "id": "SV",
+          "name": "El Salvador"
+        },
+        {
+          "id": "SX",
+          "name": "Sint Maarten (Dutch part)"
+        },
+        {
+          "id": "TC",
+          "name": "Turks and Caicos Islands"
+        },
+        {
+          "id": "TT",
+          "name": "Trinidad and Tobago"
+        },
+        {
+          "id": "VC",
+          "name": "St Vincent and the Grenadines"
+        },
+        {
+          "id": "VG",
+          "name": "Virgin Islands (British)"
+        },
+        {
+          "id": "VI",
+          "name": "Virgin Islands (US)"
+        },
+        {
+          "id": "F1",
+          "name": "South American countries"
+        },
+        {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        {
+          "id": "BO",
+          "name": "Bolivia, Plurinational State of"
+        },
+        {
+          "id": "BR",
+          "name": "Brazil"
+        },
+        {
+          "id": "CL",
+          "name": "Chile"
+        },
+        {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        {
+          "id": "EC",
+          "name": "Ecuador"
+        },
+        {
+          "id": "FK",
+          "name": "Falkland Islands"
+        },
+        {
+          "id": "GY",
+          "name": "Guyana"
+        },
+        {
+          "id": "PE",
+          "name": "Peru"
+        },
+        {
+          "id": "PY",
+          "name": "Paraguay"
+        },
+        {
+          "id": "SR",
+          "name": "Suriname"
+        },
+        {
+          "id": "UY",
+          "name": "Uruguay"
+        },
+        {
+          "id": "VE",
+          "name": "Venezuela, Bolivarian Republic of"
+        },
+        {
+          "id": "F2",
+          "name": "Asia"
+        },
+        {
+          "id": "F3",
+          "name": "Near and Middle East countries"
+        },
+        {
+          "id": "AE",
+          "name": "United Arab Emirates"
+        },
+        {
+          "id": "AM",
+          "name": "Armenia"
+        },
+        {
+          "id": "AZ",
+          "name": "Azerbaijan"
+        },
+        {
+          "id": "BH",
+          "name": "Bahrain"
+        },
+        {
+          "id": "GE",
+          "name": "Georgia"
+        },
+        {
+          "id": "IL",
+          "name": "Israel"
+        },
+        {
+          "id": "IQ",
+          "name": "Iraq"
+        },
+        {
+          "id": "IR",
+          "name": "Iran (Islamic Republic of)"
+        },
+        {
+          "id": "JO",
+          "name": "Jordan"
+        },
+        {
+          "id": "KW",
+          "name": "Kuwait"
+        },
+        {
+          "id": "LB",
+          "name": "Lebanon"
+        },
+        {
+          "id": "OM",
+          "name": "Oman"
+        },
+        {
+          "id": "PS",
+          "name": "Occupied Palestinian Territory"
+        },
+        {
+          "id": "QA",
+          "name": "Qatar"
+        },
+        {
+          "id": "SA",
+          "name": "Saudi Arabia"
+        },
+        {
+          "id": "SY",
+          "name": "Syrian Arab Republic"
+        },
+        {
+          "id": "YE",
+          "name": "Yemen"
+        },
+        {
+          "id": "F6",
+          "name": "Other Asian countries"
+        },
+        {
+          "id": "AF",
+          "name": "Afghanistan"
+        },
+        {
+          "id": "BD",
+          "name": "Bangladesh"
+        },
+        {
+          "id": "BN",
+          "name": "Brunei Darussalam"
+        },
+        {
+          "id": "BT",
+          "name": "Bhutan"
+        },
+        {
+          "id": "CN",
+          "name": "China (People's Republic of)"
+        },
+        {
+          "id": "HK",
+          "name": "Hong Kong"
+        },
+        {
+          "id": "ID",
+          "name": "Indonesia"
+        },
+        {
+          "id": "IN",
+          "name": "India"
+        },
+        {
+          "id": "JP",
+          "name": "Japan"
+        }
+      ],
+      "total_codes": 301,
+      "truncated": true
+    },
+    {
+      "id": "PRODUCT",
+      "position": 2,
+      "name": "PRODUCT",
+      "codes": [
+        {
+          "id": "I",
+          "name": "Live animals; animal products"
+        },
+        {
+          "id": "01",
+          "name": "Live animals"
+        },
+        {
+          "id": "0101",
+          "name": "Live horses, asses, mules and hinnies"
+        },
+        {
+          "id": "01011010",
+          "name": "Pure-bred breeding horses"
+        },
+        {
+          "id": "01011090",
+          "name": "Pure-bred breeding asses"
+        },
+        {
+          "id": "01011100",
+          "name": "Pure-bred breeding horses"
+        },
+        {
+          "id": "01011910",
+          "name": "Horses for slaughter"
+        },
+        {
+          "id": "01011990",
+          "name": "Horses (excl. those pure bred for breeding and for slaughter)"
+        },
+        {
+          "id": "01012010",
+          "name": "Live asses"
+        },
+        {
+          "id": "01012090",
+          "name": "Live mules and hinnies"
+        },
+        {
+          "id": "01012100",
+          "name": "Pure-bred breeding horses"
+        },
+        {
+          "id": "01012910",
+          "name": "Horses for slaughter"
+        },
+        {
+          "id": "01012990",
+          "name": "Live horses (excl. for slaughter, pure-bred for breeding)"
+        },
+        {
+          "id": "01013000",
+          "name": "Live asses"
+        },
+        {
+          "id": "01019000",
+          "name": "Live mules and hinnies"
+        },
+        {
+          "id": "01019011",
+          "name": "Horses for slaughter"
+        },
+        {
+          "id": "01019019",
+          "name": "Live horses (excl. those pure bred for breeding and for slaughter)"
+        },
+        {
+          "id": "01019030",
+          "name": "Live asses (excl. pure-bred for breeding)"
+        },
+        {
+          "id": "01019090",
+          "name": "Live mules and hinnies"
+        },
+        {
+          "id": "0102",
+          "name": "Live bovine animals"
+        },
+        {
+          "id": "01021010",
+          "name": "Pure-bred breeding heifers \"female bovines that have never calved\""
+        },
+        {
+          "id": "01021030",
+          "name": "Pure-bred breeding cows (excl. heifers)"
+        },
+        {
+          "id": "01021090",
+          "name": "Pure-bred breeding bovines (excl. heifers and cows)"
+        },
+        {
+          "id": "01022110",
+          "name": "Pure-bred breeding heifers \"female bovines that have never calved\""
+        },
+        {
+          "id": "01022130",
+          "name": "Pure-bred breeding cows (excl. heifers)"
+        },
+        {
+          "id": "01022190",
+          "name": "Pure-bred cattle for breeding (excl. heifers and cows)"
+        },
+        {
+          "id": "01022905",
+          "name": "Live cattle of the sub-genus Bibos or Poephagus (excl. pure-bred for breeding)"
+        },
+        {
+          "id": "01022910",
+          "name": "Live cattle of a weight <= 80 kg (excl. pure-bred for breeding)"
+        },
+        {
+          "id": "01022921",
+          "name": "Cattle of a weight > 80 kg but <= 160 kg, for slaughter"
+        },
+        {
+          "id": "01022929",
+          "name": "Live cattle of a weight > 80 kg but <= 160 kg (excl. for slaughter, pure-bred for breeding)"
+        },
+        {
+          "id": "01022941",
+          "name": "Cattle of a weight > 160 kg but <= 300 kg, for slaughter"
+        },
+        {
+          "id": "01022949",
+          "name": "Live cattle of a weight > 160 kg but <= 300 kg (excl. for slaughter, pure-bred for breeding)"
+        },
+        {
+          "id": "01022951",
+          "name": "Heifers \"female bovines that have never calved\" of a weight > 300 kg, for slaughter"
+        },
+        {
+          "id": "01022959",
+          "name": "Live heifers \"female bovines that have never calved\" of a weight > 300 kg (excl. for slaughter and pure-bred for breeding)"
+        },
+        {
+          "id": "01022961",
+          "name": "Cows of a weight > 300 kg, for slaughter (excl. heifers)"
+        },
+        {
+          "id": "01022969",
+          "name": "Live cows of a weight > 300 kg (excl. for slaughter and pure-bred for breeding and heifers)"
+        },
+        {
+          "id": "01022991",
+          "name": "Cattle of a weight > 300 kg, for slaughter (excl. heifers and cows)"
+        },
+        {
+          "id": "01022999",
+          "name": "Live cattle of a weight > 300 kg (excl. for slaughter, pure-bred for breeding and heifers and cows)"
+        },
+        {
+          "id": "01023100",
+          "name": "Pure-bred buffalo for breeding"
+        },
+        {
+          "id": "01023910",
+          "name": "Live domestic buffalo (excl. pure-bred for breeding)"
+        },
+        {
+          "id": "01023990",
+          "name": "Live buffalo (excl. domestic species and pure-bred for breeding)"
+        },
+        {
+          "id": "01029005",
+          "name": "Live domestic bovines of a weight <= 80 kg (excl. pure-bred breeding animals)"
+        },
+        {
+          "id": "01029020",
+          "name": "Bovine pure-bred breeding animals (excl. cattle and buffalo)"
+        },
+        {
+          "id": "01029021",
+          "name": "Domestic bovines of a weight of > 80 kg and <= 160 kg, for slaughter"
+        },
+        {
+          "id": "01029029",
+          "name": "Live domestic bovines of a weight of > 80 kg and <= 160 kg (excl. animals for slaughter and pure-bred breeding animals)"
+        },
+        {
+          "id": "01029041",
+          "name": "Domestic bovines of a weight of > 160 kg and <= 300 kg, for slaughter"
+        },
+        {
+          "id": "01029049",
+          "name": "Live domestic bovines of a weight of > 160 kg and <= 300 kg (excl. animals for slaughter and pure-bred breeding animals)"
+        },
+        {
+          "id": "01029051",
+          "name": "Heifers \"female domestic bovines that have never calved\" of a weight of > 300 kg, for slaughter"
+        },
+        {
+          "id": "01029059",
+          "name": "Live heifers \"female domestic bovines that have never calved\" of a weight of > 300 kg (excl. animals for slaughter and pure-bred breeding animals)"
+        },
+        {
+          "id": "01029061",
+          "name": "Cows \"female domestic bovines\" of a weight of > 300 kg, for slaughter (excl. heifers)"
+        },
+        {
+          "id": "01029069",
+          "name": "Live cows \"female domestic bovines\" of a weight of > 300 kg (excl. animals for slaughter, heifers and pure-bred breeding animals)"
+        },
+        {
+          "id": "01029071",
+          "name": "Live domestic bovines of a weight of > 300 kg, for slaughter (excl. heifers and cows)"
+        },
+        {
+          "id": "01029079",
+          "name": "Live domestic bovines of a weight of > 300 kg (excl. animals for slaughter, heifers, cows and pure-bred breeding animals)"
+        },
+        {
+          "id": "01029090",
+          "name": "Live non-domestic bovines (excl. pure-bred for breeding)"
+        },
+        {
+          "id": "01029091",
+          "name": "Live domestic bovine animals (excl. cattle and buffalo and pure-bred for breeding)"
+        },
+        {
+          "id": "01029099",
+          "name": "Live bovine animals (excl. cattle, buffalo, pure-bred for breeding and domestic species)"
+        },
+        {
+          "id": "0103",
+          "name": "Live swine"
+        },
+        {
+          "id": "01031000",
+          "name": "Pure-bred breeding swine"
+        },
+        {
+          "id": "01039110",
+          "name": "Domestic swine, weighing < 50 kg (excl. pure-bred for breeding)"
+        },
+        {
+          "id": "01039190",
+          "name": "Live non-domestic swine, weighing < 50 kg"
+        },
+        {
+          "id": "01039211",
+          "name": "Live domestic sows, having farrowed at least once, weighing >= 160 kg (excl. pure-bred for breeding)"
+        },
+        {
+          "id": "01039219",
+          "name": "Live domestic swine, weighing >= 50 kg (excl. sows having farrowed at least once and weighing >= 160 kg, and those pure-bred for breeding)"
+        },
+        {
+          "id": "01039290",
+          "name": "Live non-domestic swine, weighing >= 50 kg"
+        },
+        {
+          "id": "0104",
+          "name": "Live sheep and goats"
+        },
+        {
+          "id": "01041010",
+          "name": "Pure-bred sheep for breeding"
+        },
+        {
+          "id": "01041030",
+          "name": "Live lambs \"sheep up to a year old\" (excl. purebred breeding animals)"
+        },
+        {
+          "id": "01041080",
+          "name": "Live sheep (excl. lambs and pure-bred breeding animals)"
+        },
+        {
+          "id": "01042010",
+          "name": "Pure-bred breeding goats"
+        },
+        {
+          "id": "01042090",
+          "name": "Live goats (excl. pure-bred for breeding)"
+        },
+        {
+          "id": "0105",
+          "name": "Live poultry, 'fowls of the species Gallus domesticus, ducks, geese, turkeys and guinea fowls\""
+        },
+        {
+          "id": "01051111",
+          "name": "Grandparent and parent female chicks of fowls of the species Gallus domesticus laying stocks of a weight of <= 185 g"
+        },
+        {
+          "id": "01051119",
+          "name": "Grandparent and parent female chicks fowls of the species Gallus domesticus of a weight of <= 185 g (excl. laying stocks)"
+        },
+        {
+          "id": "01051191",
+          "name": "Laying stock \"fowls of the species Gallus domesticus\" of a weight of <= 185 g (excl. grandparent and parent female chicks)"
+        },
+        {
+          "id": "01051199",
+          "name": "Live fowls of the species Gallus domesticus of a weight of <= 185 g (excl. grandparent and parent female chicks and laying stocks)"
+        },
+        {
+          "id": "01051200",
+          "name": "Live domestic turkeys, weighing <= 185 g"
+        },
+        {
+          "id": "01051300",
+          "name": "Live domestic ducks, weighing <= 185 g"
+        },
+        {
+          "id": "01051400",
+          "name": "Live domestic geese, weighing <= 185 g"
+        },
+        {
+          "id": "01051500",
+          "name": "Live domestic guinea fowls, weighing <= 185 g"
+        },
+        {
+          "id": "01051910",
+          "name": "Live domestic geese and turkeys, weighing =< 185 g"
+        },
+        {
+          "id": "01051920",
+          "name": "Live domestic geese, weighing <= 185 g"
+        },
+        {
+          "id": "01051990",
+          "name": "Live domestic ducks and guinea fowls, weighing <= 185 g"
+        },
+        {
+          "id": "01059100",
+          "name": "Live fowls of species Gallus domesticus, weighing > 185 g (excl. turkeys and guinea fowls)"
+        },
+        {
+          "id": "01059200",
+          "name": "Live fowls of the species Gallus domesticus, weighing > 185 g but <= 2 kg"
+        },
+        {
+          "id": "01059300",
+          "name": "Live fowls of the species Gallus domesticus, weighing > 2 kg"
+        },
+        {
+          "id": "01059400",
+          "name": "Live fowls of the species Gallus domesticus, weighing > 185"
+        },
+        {
+          "id": "01059910",
+          "name": "Live domestic ducks, weighing > 185 g"
+        },
+        {
+          "id": "01059920",
+          "name": "Live domestic geese, weighing > 185 g"
+        },
+        {
+          "id": "01059930",
+          "name": "Live domestic turkeys, weighing > 185 g"
+        },
+        {
+          "id": "01059950",
+          "name": "Live domestic guinea fowls, weighing > 185 g"
+        },
+        {
+          "id": "0106",
+          "name": "Live animals (excl. horses, asses, mules, hinnies, bovine animals, swine, sheep, goats, poultry, fish, crustaceans, molluscs and other aquatic invertebrates, and microorganic cultures etc.)"
+        },
+        {
+          "id": "01060010",
+          "name": "Live domestic rabbits"
+        },
+        {
+          "id": "01060020",
+          "name": "Live pigeons"
+        },
+        {
+          "id": "01060090",
+          "name": "Live animals (excl. horses, asses, mules, hinnies, bovines, pigs, sheep, goats, domestic poultry, domestic rabbits, pigeons, fish, crustaceans, molluscs and other aquatic invertebrates and cultures of micro-organisms, etc.)"
+        },
+        {
+          "id": "01061100",
+          "name": "Live primates"
+        },
+        {
+          "id": "01061200",
+          "name": "Live whales, dolphins and porpoises (mammals of the order Cetacea); manatees and dugongs (mammals of the order Sirenia); seals, sea lions and walruses (mammals of the suborder Pinnipedia)"
+        },
+        {
+          "id": "01061300",
+          "name": "Live camels and other camelids [Camelidae]"
+        },
+        {
+          "id": "01061410",
+          "name": "Live domestic rabbits"
+        },
+        {
+          "id": "01061490",
+          "name": "Live rabbits and hares (excl. domestic rabbits)"
+        },
+        {
+          "id": "01061900",
+          "name": "Live mammals (excl. primates, whales, dolphins and porpoises, manatees and dugongs, seals, sea lions and walruses, camels and other camelids, rabbits and hares, horses, asses, mules, hinnies, bovines, pigs, sheep and goats)"
+        },
+        {
+          "id": "01061910",
+          "name": "Live domestic rabbits"
+        },
+        {
+          "id": "01061990",
+          "name": "Live mammals (excl. primates, whales, dolphins and purpoises \"mammals of the order Cetacea\", manatees and dugongs \"mammals of the order Sirenia\", horses, asses, mules, hinnies, bovines, pigs, sheep, goats and domestic rabbits)"
+        },
+        {
+          "id": "01062000",
+          "name": "Live reptiles \"e.g. snakes, turtles, alligators, caymans, iguanas, gavials and lizards\""
+        },
+        {
+          "id": "01063100",
+          "name": "Live birds of prey"
+        },
+        {
+          "id": "01063200",
+          "name": "Live psittaciformes \"incl. parrots, parrakeets, macaws and cockatoos\""
+        },
+        {
+          "id": "01063300",
+          "name": "Live ostriches, and emus [Dromaius novaehollandiae]"
+        },
+        {
+          "id": "01063910",
+          "name": "Live pigeons"
+        },
+        {
+          "id": "01063980",
+          "name": "Live birds (excl. birds of prey, psittaciformes, parrots, parrakeets, macaws, cockatoos, ostriches, emus and pigeons)"
+        },
+        {
+          "id": "01063990",
+          "name": "Live birds (excl. birds of prey, psittaciformes \"incl. parrots, parrakeets, macaws and cockatoos\" and pigeons)"
+        },
+        {
+          "id": "01064100",
+          "name": "Live bees"
+        },
+        {
+          "id": "01064900",
+          "name": "Live insects (excl. bees)"
+        },
+        {
+          "id": "01069000",
+          "name": "Live animals (excl. mammals, reptiles, birds, insects, fish, crustaceans, molluscs and other aquatic invertebrates and cultures of micro-organisms, etc.)"
+        },
+        {
+          "id": "0199",
+          "name": "Confidential traffic classified in chapter 01"
+        },
+        {
+          "id": "01999999",
+          "name": "Confidential traffic of chapter 01"
+        },
+        {
+          "id": "02",
+          "name": "Meat and edible meat offal"
+        },
+        {
+          "id": "0201",
+          "name": "Meat of bovine animals, fresh or chilled"
+        },
+        {
+          "id": "02011000",
+          "name": "Carcases or half-carcases of bovine animals, fresh or chilled"
+        },
+        {
+          "id": "02012020",
+          "name": "\"Compensated\" quarters of bovine animals with bone in, fresh or chilled"
+        },
+        {
+          "id": "02012030",
+          "name": "Unseparated or separated forequarters of bovine animals, with bone in, fresh or chilled"
+        },
+        {
+          "id": "02012050",
+          "name": "Unseparated or separated hindquarters of bovine animals, with bone in, fresh or chilled"
+        },
+        {
+          "id": "02012090",
+          "name": "Fresh or chilled bovine cuts, with bone in (excl. carcases and half-carcases, \"compensated quarters\", forequarters and hindquarters)"
+        },
+        {
+          "id": "02013000",
+          "name": "Fresh or chilled bovine meat, boneless"
+        },
+        {
+          "id": "0202",
+          "name": "Meat of bovine animals, frozen"
+        },
+        {
+          "id": "02021000",
+          "name": "Frozen bovine carcases and half-carcases"
+        },
+        {
+          "id": "02022010",
+          "name": "Frozen \"compensated\" bovine quarters, with bone in"
+        },
+        {
+          "id": "02022030",
+          "name": "Frozen unseparated or separated bovine forequarters, with bone in"
+        },
+        {
+          "id": "02022050",
+          "name": "Frozen unseparated or separated bovine hindquarters, with bone in"
+        },
+        {
+          "id": "02022090",
+          "name": "Frozen bovine cuts, with bone in (excl. carcases and half-carcases, \"compensated\" quarters, forequarters and hindquarters)"
+        },
+        {
+          "id": "02023010",
+          "name": "Frozen bovine boneless forequarters, whole or cut in max. 5 pieces, each quarter in 1 block; \"compensated\" quarters in 2 blocks, one containing the forequarter, whole or cut in max. 5 pieces, and the other the whole hindquarter, excl. the tenderloin, in one piece"
+        },
+        {
+          "id": "02023050",
+          "name": "Frozen bovine boneless crop, chuck and blade and brisket cuts"
+        },
+        {
+          "id": "02023090",
+          "name": "Frozen bovine boneless meat (excl. forequarters, whole or cut into a maximum of five pieces, each quarter being in a single block \"compensated\" quarters in two blocks, one of which contains the forequarter, whole or cut into a maximum of five pieces, and the other, the hindquarter, excl. the tenderloin, in one piece, crop, chuck and blade and brisket cuts)"
+        },
+        {
+          "id": "0203",
+          "name": "Meat of swine, fresh, chilled or frozen"
+        },
+        {
+          "id": "02031110",
+          "name": "Fresh or chilled domestic swine carcases and half-carcases"
+        },
+        {
+          "id": "02031190",
+          "name": "Fresh or chilled non-domestic swine carcases and half-carcases"
+        },
+        {
+          "id": "02031211",
+          "name": "Fresh or chilled with bone in, domestic swine hams and cuts thereof"
+        },
+        {
+          "id": "02031219",
+          "name": "Fresh or chilled with bone in, domestic swine shoulders and cuts thereof"
+        },
+        {
+          "id": "02031290",
+          "name": "Fresh or chilled hams, shoulders and cuts thereof with bone in of non-domestic swine"
+        },
+        {
+          "id": "02031911",
+          "name": "Fresh or chilled fore-ends and cuts thereof of domestic swine"
+        },
+        {
+          "id": "02031913",
+          "name": "Fresh or chilled loins and cuts thereof of domestic swine"
+        },
+        {
+          "id": "02031915",
+          "name": "Fresh or chilled bellies \"streaky\" and cuts thereof of domestic swine"
+        },
+        {
+          "id": "02031955",
+          "name": "Fresh or chilled boneless meat of domestic swine (excl. bellies and cuts thereof)"
+        },
+        {
+          "id": "02031959",
+          "name": "Fresh or chilled meat of domestic swine, with bone in (excl. carcases and half-carcases, hams, shoulders and cuts thereof, and fore-ends, loins, bellies and cuts thereof)"
+        },
+        {
+          "id": "02031990",
+          "name": "Fresh or chilled meat of non-domestic swine (excl. carcases and half-carcases, hams, shoulders and cuts thereof, with bone in)"
+        },
+        {
+          "id": "02032110",
+          "name": "Frozen domestic swine carcases and half-carcases"
+        },
+        {
+          "id": "02032190",
+          "name": "Frozen non-domestic swine carcases and half-carcases"
+        },
+        {
+          "id": "02032211",
+          "name": "Frozen hams and cuts thereof of domestic swine, with bone in"
+        },
+        {
+          "id": "02032219",
+          "name": "Frozen shoulders and cuts thereof of domestic swine, with bone in"
+        },
+        {
+          "id": "02032290",
+          "name": "Frozen hams, shoulders and cuts thereof of non-domestic swine, with bone in"
+        },
+        {
+          "id": "02032911",
+          "name": "Frozen fore-ends and cuts thereof of domestic swine"
+        },
+        {
+          "id": "02032913",
+          "name": "Frozen loins and cuts thereof of domestic swine, with bone in"
+        },
+        {
+          "id": "02032915",
+          "name": "Frozen bellies \"streaky\" and cuts thereof of domestic swine"
+        },
+        {
+          "id": "02032955",
+          "name": "Frozen boneless meat of domestic swine (excl. bellies and cuts thereof)"
+        },
+        {
+          "id": "02032959",
+          "name": "Frozen meat of domestic swine, with bone in (excl. carcases and half-carcases, hams, shoulders and cuts thereof, and fore-ends, loins, bellies and cuts thereof)"
+        },
+        {
+          "id": "02032990",
+          "name": "Frozen meat of non-domestic swine (excl. carcases and half-carcases and hams, shoulders and cuts thereof, with bone in)"
+        },
+        {
+          "id": "0204",
+          "name": "Meat of sheep or goats, fresh, chilled or frozen"
+        },
+        {
+          "id": "02041000",
+          "name": "Fresh or chilled lamb carcases and half-carcases"
+        },
+        {
+          "id": "02042100",
+          "name": "Fresh or chilled sheep carcases and half-carcases (excl. lambs)"
+        },
+        {
+          "id": "02042210",
+          "name": "Fresh or chilled sheep short forequarters"
+        },
+        {
+          "id": "02042230",
+          "name": "Fresh or chilled sheep chines and/or best ends"
+        },
+        {
+          "id": "02042250",
+          "name": "Fresh or chilled sheep legs"
+        },
+        {
+          "id": "02042290",
+          "name": "Fresh or chilled boneless cuts of sheep, with bone in (excl. carcases and half-carcases, short forequarters, chines and/or best ends, and legs)"
+        },
+        {
+          "id": "02042300",
+          "name": "Fresh or chilled boneless cuts of sheep"
+        },
+        {
+          "id": "02043000",
+          "name": "Frozen lamb carcases and half-carcases"
+        },
+        {
+          "id": "02044100",
+          "name": "Frozen sheep carcases and half-carcases (excl. lambs)"
+        },
+        {
+          "id": "02044210",
+          "name": "Frozen sheep short forequarters"
+        },
+        {
+          "id": "02044230",
+          "name": "Frozen sheep chines and/or best ends"
+        },
+        {
+          "id": "02044250",
+          "name": "Frozen sheep legs"
+        },
+        {
+          "id": "02044290",
+          "name": "Frozen cuts of sheep, with bone in (excl. carcases and half-carcases, short forequarters, chines and/or best ends, and legs)"
+        },
+        {
+          "id": "02044310",
+          "name": "Frozen meat of lambs, boneless, frozen"
+        },
+        {
+          "id": "02044390",
+          "name": "Frozen meat of sheep, boneless (excl. lamb)"
+        },
+        {
+          "id": "02045011",
+          "name": "Fresh or chilled goat carcases and half-carcases"
+        },
+        {
+          "id": "02045013",
+          "name": "Fresh or chilled goat short forequarters"
+        },
+        {
+          "id": "02045015",
+          "name": "Fresh or chilled goat chines and/or best ends"
+        },
+        {
+          "id": "02045019",
+          "name": "Fresh or chilled legs of goat"
+        },
+        {
+          "id": "02045031",
+          "name": "Fresh or chilled cuts of goat, with bone in (excl. carcases and half-carcases, short forequarters, chines and/or best ends, and legs)"
+        },
+        {
+          "id": "02045039",
+          "name": "Fresh or chilled boneless cuts of goat"
+        },
+        {
+          "id": "02045051",
+          "name": "Frozen goat carcases and half-carcases"
+        },
+        {
+          "id": "02045053",
+          "name": "Frozen goat short forequarters"
+        },
+        {
+          "id": "02045055",
+          "name": "Frozen goat chines and/or best ends"
+        },
+        {
+          "id": "02045059",
+          "name": "Frozen goat legs"
+        },
+        {
+          "id": "02045071",
+          "name": "Frozen cuts of goat, with bone in (excl. carcases and half-carcases, short forequarters, chines and/or best ends, and legs)"
+        },
+        {
+          "id": "02045079",
+          "name": "Frozen boneless cuts of goat"
+        },
+        {
+          "id": "0205",
+          "name": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen"
+        },
+        {
+          "id": "02050011",
+          "name": "Fresh or chilled meat of horses"
+        },
+        {
+          "id": "02050019",
+          "name": "Frozen meat of horses"
+        },
+        {
+          "id": "02050020",
+          "name": "Fresh or chilled meat of horses, asses, mules or hinnies"
+        },
+        {
+          "id": "02050080",
+          "name": "Frozen meat of horses, asses, mules or hinnies"
+        },
+        {
+          "id": "02050090",
+          "name": "Fresh, chilled or frozen meat of asses, mules or hinnies"
+        },
+        {
+          "id": "0206",
+          "name": "Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen"
+        },
+        {
+          "id": "02061010",
+          "name": "Fresh or chilled edible bovine offal for manufacture of pharmaceutical products"
+        },
+        {
+          "id": "02061091",
+          "name": "Fresh or chilled edible bovine livers (excl. for manufacture of pharmaceutical products)"
+        },
+        {
+          "id": "02061095",
+          "name": "Fresh or chilled edible bovine thick and thin skirt (excl. for manufacture of pharmaceutical products)"
+        },
+        {
+          "id": "02061098",
+          "name": "Fresh or chilled edible bovine offal (excl. for manufacture of pharmaceutical products, thick and thin skirt)"
+        },
+        {
+          "id": "02061099",
+          "name": "Fresh or chilled edible bovine offal (excl. for manufacture of pharmaceutical products, livers and thick and thin skirt)"
+        },
+        {
+          "id": "02062100",
+          "name": "Frozen edible bovine tongues"
+        },
+        {
+          "id": "02062200",
+          "name": "Frozen edible bovine livers"
+        },
+        {
+          "id": "02062210",
+          "name": "Frozen edible bovine livers for manufacture of pharmaceutical products"
+        },
+        {
+          "id": "02062290",
+          "name": "Frozen edible bovine livers (excl. those for manufacture of pharmaceutical products)"
+        },
+        {
+          "id": "02062910",
+          "name": "Frozen edible bovine offal for manufacture of pharmaceutical products (excl. tongues and livers)"
+        },
+        {
+          "id": "02062991",
+          "name": "Frozen edible bovine thick and thin skirt (excl. for manufacture of pharmaceutical products)"
+        },
+        {
+          "id": "02062999",
+          "name": "Frozen edible bovine offal (excl. for manufacture of pharmaceutical products, tongues, livers and thick and thin skirt)"
+        }
+      ],
+      "total_codes": 20373,
+      "truncated": true
+    },
+    {
+      "id": "FLOW",
+      "position": 3,
+      "name": "FLOW",
+      "codes": [
+        {
+          "id": "I",
+          "name": "Imports"
+        },
+        {
+          "id": "X",
+          "name": "Exports"
+        },
+        {
+          "id": "B",
+          "name": "Trade balance"
+        },
+        {
+          "id": "T",
+          "name": "Terms of trade"
+        },
+        {
+          "id": "TOT",
+          "name": "Total"
+        },
+        {
+          "id": "TOTT",
+          "name": "Total trade by both types of trader"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "CONCEPT",
+      "position": 4,
+      "name": "CONCEPT",
+      "codes": [
+        {
+          "id": "NAT",
+          "name": "National"
+        },
+        {
+          "id": "COM",
+          "name": "Community"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    },
+    {
+      "id": "DATATYPE",
+      "position": 5,
+      "name": "DATATYPE",
+      "codes": [
+        {
+          "id": "VAL",
+          "name": "Value"
+        },
+        {
+          "id": "QTY",
+          "name": "Quantity"
+        },
+        {
+          "id": "PRI",
+          "name": "Unit value/price"
+        },
+        {
+          "id": "STAT_VAL",
+          "name": "Statistical value"
+        },
+        {
+          "id": "VALUE",
+          "name": "Trade value"
+        },
+        {
+          "id": "NB_ENT",
+          "name": "Number of Enterprises"
+        },
+        {
+          "id": "NB_TR",
+          "name": "Number of Traders"
+        },
+        {
+          "id": "MASS",
+          "name": "Mass"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 9,
+      "truncated": false
+    },
+    {
+      "id": "FREQ",
+      "position": 6,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{REPORTING}.{COUNTRY}.{PRODUCT}.{FLOW}.{CONCEPT}.{DATATYPE}.{FREQ}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:35+00:00",
+  "schema_version": 1
+}

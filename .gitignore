@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.whl
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Project-local runtime data (NOT the bundled catalog in src/)
+dataflows_raw.json
+~/.cache/mcp-nbb/
+
+# Internal planning docs — local only, not part of the public repo
+PLAN.md
+
+# Claude Code / local agent state
+.claude/
+
+# Hishel / disk cache leftovers
+*.db
+*.db-journal

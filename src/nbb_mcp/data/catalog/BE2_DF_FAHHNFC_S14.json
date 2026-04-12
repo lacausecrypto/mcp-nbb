@@ -1,0 +1,592 @@
+{
+  "agency": "BE2",
+  "id": "DF_FAHHNFC_S14",
+  "version": "1.0",
+  "category": "financial_accounts",
+  "is_final": true,
+  "names": {
+    "en": "Financial accounts: Financial assets and liabilities of households",
+    "fr": "Comptes financiers: Actifs et engagements financiers des ménages",
+    "nl": "Financiële rekeningen: Financiële activa en verplichtingen van huishoudens",
+    "de": "Financial accounts: Financial assets and liabilities of households"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ACCOUNT",
+      "position": 1,
+      "name": "ACCOUNT",
+      "codes": [
+        {
+          "id": "F",
+          "name": "Financial transactions (formation of assets and new liabilities)"
+        },
+        {
+          "id": "LE",
+          "name": "Financial wealth"
+        },
+        {
+          "id": "A",
+          "name": "Formation of financial assets (flow of funds)"
+        },
+        {
+          "id": "B",
+          "name": "Claims and liabilities"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "SECTOR",
+      "position": 2,
+      "name": "SECTOR",
+      "codes": [
+        {
+          "id": "S",
+          "name": "Total"
+        },
+        {
+          "id": "S2",
+          "name": "Rest of the world"
+        },
+        {
+          "id": "S1",
+          "name": "Total Belgian economy (S.1)"
+        },
+        {
+          "id": "S1M",
+          "name": "Individuals"
+        },
+        {
+          "id": "S14",
+          "name": "Households (S.14)"
+        },
+        {
+          "id": "S15",
+          "name": "Non-profit institutions serving households (S.15)"
+        },
+        {
+          "id": "S11",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "S13",
+          "name": "General government"
+        },
+        {
+          "id": "S12",
+          "name": "Financial corporations"
+        },
+        {
+          "id": "S12K",
+          "name": "Monetary financial institutions (S.121 + S.122 + S.123)"
+        },
+        {
+          "id": "S124",
+          "name": "Non-MMF investment funds (S.124)"
+        },
+        {
+          "id": "S125",
+          "name": "Other financial intermediaries (S.125)"
+        },
+        {
+          "id": "S126",
+          "name": "Financial auxiliaries (S.126)"
+        },
+        {
+          "id": "S127",
+          "name": "Captive financial institutions and money lenders (S.127)"
+        },
+        {
+          "id": "S128",
+          "name": "Insurance corporations (S.128)"
+        },
+        {
+          "id": "S129",
+          "name": "Pension funds (S.129)"
+        },
+        {
+          "id": "I1",
+          "name": "All issuers"
+        },
+        {
+          "id": "I11",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "I12",
+          "name": "Financial institutions"
+        },
+        {
+          "id": "I13",
+          "name": "General government"
+        },
+        {
+          "id": "I131",
+          "name": "Federal government"
+        },
+        {
+          "id": "I2",
+          "name": "Rest of the world"
+        },
+        {
+          "id": "H1",
+          "name": "All holders"
+        },
+        {
+          "id": "H11",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "H121_3",
+          "name": "Monetary financial institutions"
+        },
+        {
+          "id": "H124",
+          "name": "Non-MMF investment funds"
+        },
+        {
+          "id": "H125_7",
+          "name": "Other financial corporations"
+        },
+        {
+          "id": "H128",
+          "name": "Insurance corporations"
+        },
+        {
+          "id": "H129",
+          "name": "Pension funds"
+        },
+        {
+          "id": "H13",
+          "name": "General government"
+        },
+        {
+          "id": "H14",
+          "name": "Individuals"
+        },
+        {
+          "id": "H2",
+          "name": "Rest of the world"
+        },
+        {
+          "id": "S13NC",
+          "name": "General government, non-consolidated"
+        },
+        {
+          "id": "S1300",
+          "name": "General government, consolidated"
+        },
+        {
+          "id": "S1311",
+          "name": "Federal government, consolidated"
+        },
+        {
+          "id": "S1312",
+          "name": "Communities and regions, consolidated"
+        },
+        {
+          "id": "S1313",
+          "name": "Local government, consolidated"
+        },
+        {
+          "id": "S1314",
+          "name": "Social security funds, consolidated"
+        },
+        {
+          "id": "ISC",
+          "name": "Intersectoral consolidation (-)"
+        },
+        {
+          "id": "isc",
+          "name": "Intersectoral consolidation (-)"
+        }
+      ],
+      "total_codes": 40,
+      "truncated": false
+    },
+    {
+      "id": "INSTRUMENT",
+      "position": 3,
+      "name": "INSTRUMENT",
+      "codes": [
+        {
+          "id": "F",
+          "name": "Total"
+        },
+        {
+          "id": "F1",
+          "name": "Monetary gold and special drawing rights"
+        },
+        {
+          "id": "F2",
+          "name": "Currency and deposits"
+        },
+        {
+          "id": "F3",
+          "name": "Debt securities"
+        },
+        {
+          "id": "F31",
+          "name": "Short-term debt securities"
+        },
+        {
+          "id": "F32",
+          "name": "Long-term debt securities"
+        },
+        {
+          "id": "F4",
+          "name": "Loans"
+        },
+        {
+          "id": "F6",
+          "name": "Insurance, pension and standardised guaranteed schemes"
+        },
+        {
+          "id": "FO",
+          "name": "Other assets/liabilities"
+        },
+        {
+          "id": "F21",
+          "name": "Currency"
+        },
+        {
+          "id": "F3S",
+          "name": "Short-term debt securities"
+        },
+        {
+          "id": "F3L",
+          "name": "Long-term debt securities"
+        },
+        {
+          "id": "F4S",
+          "name": "Short-term loans"
+        },
+        {
+          "id": "F4L",
+          "name": "Long-term loans"
+        },
+        {
+          "id": "F5",
+          "name": "Equity and investment fund shares or units"
+        },
+        {
+          "id": "F511",
+          "name": "Listed shares"
+        },
+        {
+          "id": "F51M",
+          "name": "Unlisted shares and other equity"
+        },
+        {
+          "id": "F52",
+          "name": "Investment fund shares or units"
+        },
+        {
+          "id": "F512",
+          "name": "Unquoted shares"
+        },
+        {
+          "id": "F519",
+          "name": "Other equity"
+        },
+        {
+          "id": "F6O",
+          "name": "Non-life insurance technical reserves"
+        },
+        {
+          "id": "F62",
+          "name": "Life insurance and annuity entitlements"
+        },
+        {
+          "id": "F6M",
+          "name": "Pension entitlements"
+        },
+        {
+          "id": "F7",
+          "name": "Financial derivatives and employee stock options"
+        },
+        {
+          "id": "X",
+          "name": "Financing requirement (-) or capacity (+)"
+        },
+        {
+          "id": "Y",
+          "name": "Financial wealth"
+        },
+        {
+          "id": "F41",
+          "name": "Short-term loans"
+        },
+        {
+          "id": "F42",
+          "name": "Long-term loans"
+        },
+        {
+          "id": "F8",
+          "name": "Other accounts receivable/payable"
+        },
+        {
+          "id": "F81",
+          "name": "Trade credit and advances"
+        },
+        {
+          "id": "F89",
+          "name": "Other accounts receivable/payable and adjustments"
+        },
+        {
+          "id": "F22_29",
+          "name": "Dépôts"
+        },
+        {
+          "id": "F22",
+          "name": "Sight deposits"
+        },
+        {
+          "id": "F29",
+          "name": "Other deposits"
+        },
+        {
+          "id": "S",
+          "name": "Financial wealth"
+        },
+        {
+          "id": "A",
+          "name": "Financial assets"
+        },
+        {
+          "id": "A2",
+          "name": "Currency and deposits"
+        },
+        {
+          "id": "A21_2",
+          "name": "Currency and sight deposits"
+        },
+        {
+          "id": "A21",
+          "name": "Currency : notes and coins"
+        },
+        {
+          "id": "A22",
+          "name": "Sight deposits"
+        },
+        {
+          "id": "A29",
+          "name": "Other deposits"
+        },
+        {
+          "id": "A291",
+          "name": "Savings deposits"
+        },
+        {
+          "id": "A292",
+          "name": "Other deposits at up to one year"
+        },
+        {
+          "id": "A293",
+          "name": "Deposits at over one year"
+        },
+        {
+          "id": "A3",
+          "name": "Debt securities"
+        },
+        {
+          "id": "A3S",
+          "name": "Short-term debt securities"
+        },
+        {
+          "id": "A3L",
+          "name": "Long-term debt securities"
+        },
+        {
+          "id": "A4",
+          "name": "Loans"
+        },
+        {
+          "id": "A5",
+          "name": "Shares and other equity"
+        },
+        {
+          "id": "A51",
+          "name": "Shares and other equity, except in investment funds"
+        },
+        {
+          "id": "A511",
+          "name": "Listed shares"
+        },
+        {
+          "id": "A512_9",
+          "name": "Unlisted shares and other equity"
+        },
+        {
+          "id": "A52",
+          "name": "Investment fund shares or units"
+        },
+        {
+          "id": "A6",
+          "name": "Insurance, pension and standardised guaranteed schemes"
+        },
+        {
+          "id": "A6O",
+          "name": "Non-life insurance technical reserves"
+        },
+        {
+          "id": "A62",
+          "name": "Life insurance and annuity entitlements"
+        },
+        {
+          "id": "A6M",
+          "name": "Pension entitlements"
+        },
+        {
+          "id": "A81",
+          "name": "Trade credit and advances"
+        },
+        {
+          "id": "AO",
+          "name": "Other financial assets"
+        },
+        {
+          "id": "L",
+          "name": "Financial liabilities"
+        },
+        {
+          "id": "LS",
+          "name": "Short-term debt securities"
+        },
+        {
+          "id": "LSI",
+          "name": "Of which intrasectoral debt securities"
+        },
+        {
+          "id": "L3L",
+          "name": "Long-term debt securities"
+        },
+        {
+          "id": "L3LI",
+          "name": "Of which intrasectoral debt securities"
+        },
+        {
+          "id": "LL",
+          "name": "Short-term loans"
+        },
+        {
+          "id": "L4SB",
+          "name": "Of which bank loans"
+        },
+        {
+          "id": "L4SN",
+          "name": "Of which intra-group loans"
+        },
+        {
+          "id": "L4SI",
+          "name": "Of which intrasectoral loans"
+        },
+        {
+          "id": "L3S",
+          "name": "Long-term loans"
+        },
+        {
+          "id": "L4LB",
+          "name": "Of which bank loans"
+        },
+        {
+          "id": "L4LN",
+          "name": "Of which intra-group loans"
+        },
+        {
+          "id": "L4LI",
+          "name": "Of which intrasectoral loans"
+        },
+        {
+          "id": "L4LH",
+          "name": "Mortgage loans"
+        },
+        {
+          "id": "L4LC",
+          "name": "Consumer credits"
+        },
+        {
+          "id": "L4LO",
+          "name": "Other credits"
+        },
+        {
+          "id": "L511",
+          "name": "Listed shares"
+        },
+        {
+          "id": "L512_9",
+          "name": "Unlisted shares and other equity"
+        },
+        {
+          "id": "LO",
+          "name": "Other financial liabilities"
+        }
+      ],
+      "total_codes": 78,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ACCOUNT}.{SECTOR}.{INSTRUMENT}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:47+00:00",
+  "schema_version": 1
+}

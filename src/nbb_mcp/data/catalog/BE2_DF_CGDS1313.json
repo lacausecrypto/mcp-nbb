@@ -1,0 +1,214 @@
+{
+  "agency": "BE2",
+  "id": "DF_CGDS1313",
+  "version": "1.0",
+  "category": "public_finances",
+  "is_final": true,
+  "names": {
+    "en": "Breakdown of local government (S.1313)",
+    "fr": "Détail des administrations locales (S.1313)",
+    "nl": "Uitsplitsing van de lokale besturen (S.1313)",
+    "de": "Breakdown of local government (S.1313)"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 1,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "CGD",
+          "name": "Consolidated gross debt"
+        },
+        {
+          "id": "CONTRIB",
+          "name": "p.m. Contribution of the subsector to the total consolidated gross debt"
+        },
+        {
+          "id": "LGF",
+          "name": "Flemish local government"
+        },
+        {
+          "id": "LGW",
+          "name": "Walloon local government"
+        },
+        {
+          "id": "LGB",
+          "name": "Brussels local government"
+        },
+        {
+          "id": "LGG",
+          "name": "German-speaking local government"
+        },
+        {
+          "id": "LGNA",
+          "name": "Local government not-allocated"
+        },
+        {
+          "id": "CLE",
+          "name": "Consolidation between local entities (-)"
+        },
+        {
+          "id": "CGLG",
+          "name": "Consolidated gross debt of the local government"
+        },
+        {
+          "id": "CALE",
+          "name": "Holdings by the local entities of consolidable assets of other subsectors"
+        },
+        {
+          "id": "CGDLE",
+          "name": "Contribution of the local entities to the consolidated gross debt"
+        },
+        {
+          "id": "TCA",
+          "name": "Consolidating elements"
+        },
+        {
+          "id": "TCAHD",
+          "name": "Breakdown by holders"
+        },
+        {
+          "id": "TCAHD_S1311",
+          "name": "Federal government"
+        },
+        {
+          "id": "TCAHD_S1312",
+          "name": "Communities and regions"
+        },
+        {
+          "id": "TCAHD_S1313",
+          "name": "Local government"
+        },
+        {
+          "id": "TCAHD_S1314",
+          "name": "Social security funds"
+        },
+        {
+          "id": "TCADS",
+          "name": "Breakdown by debtors"
+        },
+        {
+          "id": "TCADS_S1311",
+          "name": "Federal government"
+        },
+        {
+          "id": "TCADS_S1312",
+          "name": "Communities and regions"
+        },
+        {
+          "id": "TCADS_S1313",
+          "name": "Local government"
+        },
+        {
+          "id": "TCADS_S1314",
+          "name": "Social security funds"
+        },
+        {
+          "id": "TCAI",
+          "name": "Breakdown by instruments"
+        },
+        {
+          "id": "TCAI_AF2",
+          "name": "Currency and deposits (AF.2)"
+        },
+        {
+          "id": "TCAI_AF31",
+          "name": "Short-term securities (AF.31)"
+        },
+        {
+          "id": "TCAI_AF32",
+          "name": "Long-term securities (AF.32)"
+        },
+        {
+          "id": "TCAI_AF4",
+          "name": "Loans (AF.4)"
+        },
+        {
+          "id": "CONTRIB_S1300",
+          "name": "Total"
+        },
+        {
+          "id": "CONTRIB_S1311",
+          "name": "Federal government"
+        },
+        {
+          "id": "CONTRIB_S1312",
+          "name": "Communities and regions"
+        },
+        {
+          "id": "CONTRIB_S1313",
+          "name": "Local government"
+        },
+        {
+          "id": "CONTRIB_S1314",
+          "name": "Social security funds"
+        }
+      ],
+      "total_codes": 32,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:49+00:00",
+  "schema_version": 1
+}

@@ -1,0 +1,243 @@
+{
+  "agency": "BE2",
+  "id": "DF_IROLOBE2",
+  "version": "1.0",
+  "category": "exchange_interest_rates",
+  "is_final": true,
+  "names": {
+    "en": "Yield of Belgian loans on the secondary market",
+    "fr": "Rendement des emprunts des pouvoirs publics belges sur le marché secondaire",
+    "nl": "Rendement van Belgische overheidsleningen op de secundaire markt",
+    "de": "Yield of Belgian loans on the secondary market"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "IROLOBE2_MATUR",
+      "position": 1,
+      "name": "IROLOBE2_MATUR",
+      "codes": [
+        {
+          "id": "RL",
+          "name": "Gross yield rate of the reference loan (benchmark)"
+        },
+        {
+          "id": "1Y",
+          "name": "1 year"
+        },
+        {
+          "id": "2Y",
+          "name": "2 years"
+        },
+        {
+          "id": "3Y",
+          "name": "3 years"
+        },
+        {
+          "id": "4Y",
+          "name": "4 years"
+        },
+        {
+          "id": "5Y",
+          "name": "5 years"
+        },
+        {
+          "id": "6Y",
+          "name": "6 years"
+        },
+        {
+          "id": "6YM",
+          "name": "6 years and more"
+        },
+        {
+          "id": "7Y",
+          "name": "7 years"
+        },
+        {
+          "id": "8Y",
+          "name": "8 years"
+        },
+        {
+          "id": "8YM",
+          "name": "8 years and more"
+        },
+        {
+          "id": "9Y",
+          "name": "9 years"
+        },
+        {
+          "id": "10Y",
+          "name": "10 years"
+        },
+        {
+          "id": "11Y",
+          "name": "11 years"
+        },
+        {
+          "id": "12Y",
+          "name": "12 years"
+        },
+        {
+          "id": "12YM",
+          "name": "12 years and more"
+        },
+        {
+          "id": "13Y",
+          "name": "13 years"
+        },
+        {
+          "id": "14Y",
+          "name": "14 years"
+        },
+        {
+          "id": "15Y",
+          "name": "15 years"
+        },
+        {
+          "id": "16Y",
+          "name": "16 years"
+        },
+        {
+          "id": "17Y",
+          "name": "17 years"
+        },
+        {
+          "id": "18Y",
+          "name": "18 years"
+        },
+        {
+          "id": "19Y",
+          "name": "19 years"
+        },
+        {
+          "id": "20Y",
+          "name": "20 years"
+        },
+        {
+          "id": "21Y",
+          "name": "21 years"
+        },
+        {
+          "id": "22Y",
+          "name": "22 years"
+        },
+        {
+          "id": "23Y",
+          "name": "23 years"
+        },
+        {
+          "id": "24Y",
+          "name": "24 years"
+        },
+        {
+          "id": "25Y",
+          "name": "25 years"
+        },
+        {
+          "id": "26Y",
+          "name": "26 years"
+        },
+        {
+          "id": "27Y",
+          "name": "27 years"
+        },
+        {
+          "id": "28Y",
+          "name": "28 years"
+        },
+        {
+          "id": "29Y",
+          "name": "29 years"
+        },
+        {
+          "id": "30Y",
+          "name": "30 years"
+        }
+      ],
+      "total_codes": 34,
+      "truncated": false
+    },
+    {
+      "id": "IROLOBE2_TYPE",
+      "position": 2,
+      "name": "IROLOBE2_TYPE",
+      "codes": [
+        {
+          "id": "T",
+          "name": "Average yield on the whole of the loans with residual term of:"
+        },
+        {
+          "id": "A",
+          "name": "Average yield on OLOs with residual term of:"
+        },
+        {
+          "id": "F",
+          "name": "Reference rate of OLOs (yields based on a fixed residual term)"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{IROLOBE2_MATUR}.{IROLOBE2_TYPE}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:14+00:00",
+  "schema_version": 1
+}

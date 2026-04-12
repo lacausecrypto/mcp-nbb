@@ -1,0 +1,262 @@
+{
+  "agency": "BE2",
+  "id": "DF_EUROSYS",
+  "version": "1.0",
+  "category": "other",
+  "is_final": true,
+  "names": {
+    "en": "Consolidated weekly financial statement of the Eurosystem",
+    "fr": "Situation financière hebdomadaire consolidée de l'Eurosystème",
+    "nl": "Geconsolideerde financiële weekstaat van het Eurosysteem",
+    "de": "Consolidated weekly financial statement of the Eurosystem"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "EUROSYS_ITEM",
+      "position": 1,
+      "name": "EUROSYS_ITEM",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Assets"
+        },
+        {
+          "id": "A1",
+          "name": "Gold and gold receivables"
+        },
+        {
+          "id": "A2",
+          "name": "Claims on non-euro area residents denominated in foreign currency"
+        },
+        {
+          "id": "A21",
+          "name": "Receivables from the IMF"
+        },
+        {
+          "id": "A22",
+          "name": "Balances with banks and security investments, external loans and other external assets"
+        },
+        {
+          "id": "A3",
+          "name": "Claims on euro area residents denominated in foreign currency"
+        },
+        {
+          "id": "A4",
+          "name": "Claims on non-euro area residents denominated in euro"
+        },
+        {
+          "id": "A41",
+          "name": "Balances with banks, security investments and loans"
+        },
+        {
+          "id": "A42",
+          "name": "Claims arising from the credit facility under ERM II"
+        },
+        {
+          "id": "A5",
+          "name": "Lending to euro area credit institutions related to monetary policy operations denominated in euro"
+        },
+        {
+          "id": "A51",
+          "name": "Main refinancing operations"
+        },
+        {
+          "id": "A52",
+          "name": "Longer-term refinancing operations"
+        },
+        {
+          "id": "A53",
+          "name": "Fine-tuning reverse operations"
+        },
+        {
+          "id": "A54",
+          "name": "Structural reverse operations"
+        },
+        {
+          "id": "A55",
+          "name": "Marginal lending facility"
+        },
+        {
+          "id": "A56",
+          "name": "Credits related to margin calls"
+        },
+        {
+          "id": "A6",
+          "name": "Other claims on euro area credit institutions denominated in euro"
+        },
+        {
+          "id": "A7",
+          "name": "Securities of euro area residents denominated in euro"
+        },
+        {
+          "id": "A71",
+          "name": "Securities held for monetary policy purposes"
+        },
+        {
+          "id": "A72",
+          "name": "Other securities"
+        },
+        {
+          "id": "A8",
+          "name": "General government debt denominated in euro"
+        },
+        {
+          "id": "A9",
+          "name": "Other assets"
+        },
+        {
+          "id": "L",
+          "name": "Liabilities"
+        },
+        {
+          "id": "L1",
+          "name": "Banknotes in circulation"
+        },
+        {
+          "id": "L2",
+          "name": "Liabilities to euro area credit institutions related to monetary policy operations denominated in euro"
+        },
+        {
+          "id": "L21",
+          "name": "Current accounts"
+        },
+        {
+          "id": "L22",
+          "name": "Deposit facility"
+        },
+        {
+          "id": "L23",
+          "name": "Fixed-term deposits"
+        },
+        {
+          "id": "L24",
+          "name": "Fine-tuning reverse operations"
+        },
+        {
+          "id": "L25",
+          "name": "Deposits related to margin calls"
+        },
+        {
+          "id": "L3",
+          "name": "Other liabilities to euro area credit institutions denominated in euro"
+        },
+        {
+          "id": "L4",
+          "name": "Debt certificates issued"
+        },
+        {
+          "id": "L5",
+          "name": "Liabilities to other euro area residents denominated in euro"
+        },
+        {
+          "id": "L51",
+          "name": "General government"
+        },
+        {
+          "id": "L52",
+          "name": "Other liabilities"
+        },
+        {
+          "id": "L6",
+          "name": "Liabilities to non-euro area residents denominated in euro"
+        },
+        {
+          "id": "L7",
+          "name": "Liabilities to euro area residents denominated in foreign currency"
+        },
+        {
+          "id": "L8",
+          "name": "Liabilities to non-euro area residents denominated in foreign currency"
+        },
+        {
+          "id": "L81",
+          "name": "Deposits, balances and other liabilities"
+        },
+        {
+          "id": "L82",
+          "name": "Liabilities arising from the credit facility under ERM II"
+        },
+        {
+          "id": "L9",
+          "name": "Counterpart of special drawing rights allocated by the IMF"
+        },
+        {
+          "id": "L10",
+          "name": "Other liabilities"
+        },
+        {
+          "id": "L11",
+          "name": "Revaluation accounts"
+        },
+        {
+          "id": "L12",
+          "name": "Capital and reserves"
+        }
+      ],
+      "total_codes": 44,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{EUROSYS_ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:05+00:00",
+  "schema_version": 1
+}

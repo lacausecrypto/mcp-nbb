@@ -1,0 +1,165 @@
+{
+  "agency": "BE2",
+  "id": "DF_MIRCCO",
+  "version": "1.0",
+  "category": "exchange_interest_rates",
+  "is_final": true,
+  "names": {
+    "en": "MIR: Interest rates on new business",
+    "fr": "MIR: Taux d'intérêt sur les nouveaux crédits",
+    "nl": "MIR: Rentetarieven op nieuwe kredieten",
+    "de": "MIR: Interest rates on new business"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "MIRCCO_AREA",
+      "position": 1,
+      "name": "MIRCCO_AREA",
+      "codes": [
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "EU",
+          "name": "Euro area"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    },
+    {
+      "id": "MIRCCO_SECTOR",
+      "position": 2,
+      "name": "MIRCCO_SECTOR",
+      "codes": [
+        {
+          "id": "2240",
+          "name": "Non-financial corporations"
+        }
+      ],
+      "total_codes": 1,
+      "truncated": false
+    },
+    {
+      "id": "MIRCCO_INSTRUMENT",
+      "position": 3,
+      "name": "MIRCCO_INSTRUMENT",
+      "codes": [
+        {
+          "id": "A2Z1",
+          "name": "Advances on current account"
+        },
+        {
+          "id": "A2A",
+          "name": "Loans (other than bank overdraft)"
+        },
+        {
+          "id": "A2A_0",
+          "name": "Up to EUR 1 million"
+        },
+        {
+          "id": "A2A_1",
+          "name": "Over EUR 1 million"
+        },
+        {
+          "id": "A2A_2",
+          "name": "Average weighted cost of lending"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "MIRCCO_MATURITY",
+      "position": 4,
+      "name": "MIRCCO_MATURITY",
+      "codes": [
+        {
+          "id": "Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "A_F",
+          "name": "Floating rate and up to 1 year initial rate fixation"
+        },
+        {
+          "id": "A_I",
+          "name": "Over 1 and up to 5 years initial rate fixation"
+        },
+        {
+          "id": "A_J",
+          "name": "Over 5 years initial rate fixation"
+        },
+        {
+          "id": "A_K",
+          "name": "All rate durations"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{MIRCCO_AREA}.{MIRCCO_SECTOR}.{MIRCCO_INSTRUMENT}.{MIRCCO_MATURITY}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:56+00:00",
+  "schema_version": 1
+}

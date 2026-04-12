@@ -1,0 +1,187 @@
+{
+  "agency": "BE2",
+  "id": "DF_FVC",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Financial Vehicle Corporations",
+    "fr": "Sociétés-écrans opérant dans des opérations de titrisation (Financial Vehicle Corporations)",
+    "nl": "Lege financiële instellingen (Financial Vehicle Corporations)",
+    "de": "Financial Vehicle Corporations"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "FVC_ACCOUNT",
+      "position": 1,
+      "name": "FVC_ACCOUNT",
+      "codes": [
+        {
+          "id": "1",
+          "name": "Outstanding amount"
+        },
+        {
+          "id": "2",
+          "name": "Financial transactions"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    },
+    {
+      "id": "FVC_RUB",
+      "position": 2,
+      "name": "FVC_RUB",
+      "codes": [
+        {
+          "id": "A00",
+          "name": "Assets"
+        },
+        {
+          "id": "A10",
+          "name": "Deposits and loan claims"
+        },
+        {
+          "id": "A20",
+          "name": "Securitised loans"
+        },
+        {
+          "id": "A21",
+          "name": "Originated by euro area MFI"
+        },
+        {
+          "id": "A211",
+          "name": "to euro area households"
+        },
+        {
+          "id": "A212",
+          "name": "to euro area NFC"
+        },
+        {
+          "id": "A213",
+          "name": "to other euro area residents"
+        },
+        {
+          "id": "A214",
+          "name": "to non-euro area residents"
+        },
+        {
+          "id": "A22",
+          "name": "Originated by euro area general government"
+        },
+        {
+          "id": "A23",
+          "name": "Originated by euro area non-monetary financial institutions"
+        },
+        {
+          "id": "A24",
+          "name": "Originated by euro area non-financial corporations"
+        },
+        {
+          "id": "A25",
+          "name": "Originated by non-euro area residents"
+        },
+        {
+          "id": "A30",
+          "name": "Securities other than shares"
+        },
+        {
+          "id": "A40",
+          "name": "Other securitised assets"
+        },
+        {
+          "id": "AT1",
+          "name": "Other assets"
+        },
+        {
+          "id": "L00",
+          "name": "Liabilities"
+        },
+        {
+          "id": "L20",
+          "name": "Loans and deposits received"
+        },
+        {
+          "id": "L40",
+          "name": "Debt securities issued"
+        },
+        {
+          "id": "L41",
+          "name": "up to 2 years"
+        },
+        {
+          "id": "L42",
+          "name": "over 2 years"
+        },
+        {
+          "id": "LT1",
+          "name": "Other liabilities"
+        }
+      ],
+      "total_codes": 21,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{FVC_ACCOUNT}.{FVC_RUB}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "schema_version": 1
+}

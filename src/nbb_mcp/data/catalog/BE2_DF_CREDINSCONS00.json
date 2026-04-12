@@ -1,0 +1,923 @@
+{
+  "agency": "BE2",
+  "id": "DF_CREDINSCONS00",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Consolidated data based on Belgian GAAP (2000–2005)",
+    "fr": "Données consolidées selon GAAP belge (2000–2005)",
+    "nl": "Geconsolideerde gegevens volgens Belgische GAAP (2000–2005)",
+    "de": "Consolidated data based on Belgian GAAP (2000–2005)"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSCONS00_TABLE",
+      "position": 1,
+      "name": "CREDINSCONS00_TABLE",
+      "codes": [
+        {
+          "id": "1",
+          "name": "(Quarterly) General situation of credit institutions: quarterly overview by category of institutions - all credit institutions"
+        },
+        {
+          "id": "2",
+          "name": "(Monthly) Structure of off-balance-sheet transactions - all credit institutions"
+        },
+        {
+          "id": "3",
+          "name": "(Monthly) Basic components of the income statement - all credit institutions"
+        },
+        {
+          "id": "4",
+          "name": "(Quarterly) Structure of customer assets - all credit institutions"
+        },
+        {
+          "id": "5",
+          "name": "(Quarterly) Structure of interbank transactions and recourse to bankers' assets - all credit institutions"
+        },
+        {
+          "id": "6",
+          "name": "(Quarterly) Structure of loans granted - all credit institutions"
+        },
+        {
+          "id": "7",
+          "name": "(Quarterly) Structure of the securities portfolio - all credit institutions"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSCONS00_ITEM",
+      "position": 2,
+      "name": "CREDINSCONS00_ITEM",
+      "codes": [
+        {
+          "id": "1",
+          "name": "General situation of credit institutions: quarterly overview by category of institutions - all credit institutions"
+        },
+        {
+          "id": "1A",
+          "name": "Assets"
+        },
+        {
+          "id": "1A1",
+          "name": "Cashflow and interbank assets"
+        },
+        {
+          "id": "1A11",
+          "name": "Cash, balances with central banks and postal cheque offices"
+        },
+        {
+          "id": "1A12",
+          "name": "Interbank loans and advances"
+        },
+        {
+          "id": "1A121",
+          "name": "Due immediately"
+        },
+        {
+          "id": "1A122",
+          "name": "Other"
+        },
+        {
+          "id": "1A2",
+          "name": "Customer loans"
+        },
+        {
+          "id": "1A21",
+          "name": "Credit originally granted by credit institutions"
+        },
+        {
+          "id": "1A211",
+          "name": "Bills of trade"
+        },
+        {
+          "id": "1A212",
+          "name": "Own acceptances"
+        },
+        {
+          "id": "1A213",
+          "name": "Claims arising out of lease financing and similar claims"
+        },
+        {
+          "id": "1A214",
+          "name": "Loans at fixed interest"
+        },
+        {
+          "id": "1A215",
+          "name": "Mortgage loans"
+        },
+        {
+          "id": "1A216",
+          "name": "Term loans"
+        },
+        {
+          "id": "1A217",
+          "name": "Current account advances"
+        },
+        {
+          "id": "1A218",
+          "name": "Other credits"
+        },
+        {
+          "id": "1A22",
+          "name": "Other debtors"
+        },
+        {
+          "id": "1A3",
+          "name": "Securities and other negociable instruments"
+        },
+        {
+          "id": "1A31",
+          "name": "Public bills"
+        },
+        {
+          "id": "1A311",
+          "name": "Admissible for refinancing with central banks"
+        },
+        {
+          "id": "1A312",
+          "name": "Other"
+        },
+        {
+          "id": "1A32",
+          "name": "Other short-term negotiable instruments"
+        },
+        {
+          "id": "1A33",
+          "name": "Public funds"
+        },
+        {
+          "id": "1A34",
+          "name": "Other long-term debts represented by securities"
+        },
+        {
+          "id": "1A35",
+          "name": "Company shares"
+        },
+        {
+          "id": "1A36",
+          "name": "Other securities"
+        },
+        {
+          "id": "1A4",
+          "name": "Fixed assets"
+        },
+        {
+          "id": "1A41",
+          "name": "Financial fixed assets, of which :"
+        },
+        {
+          "id": "1A411",
+          "name": "Holdings consolidated according to the equity method"
+        },
+        {
+          "id": "1A412",
+          "name": "Other"
+        },
+        {
+          "id": "1A42",
+          "name": "Tangible fixed assets"
+        },
+        {
+          "id": "1A43",
+          "name": "Formation costs and intangible fixed assets"
+        },
+        {
+          "id": "1A44",
+          "name": "Variances due to consolidation and use of the equity method"
+        },
+        {
+          "id": "1A5",
+          "name": "Own shares"
+        },
+        {
+          "id": "1A6",
+          "name": "Other assets"
+        },
+        {
+          "id": "1L",
+          "name": "Liabilities"
+        },
+        {
+          "id": "1L1",
+          "name": "Interbank liabilities"
+        },
+        {
+          "id": "1L11",
+          "name": "Due immediately"
+        },
+        {
+          "id": "1L12",
+          "name": "Liabilities arising out of realisations"
+        },
+        {
+          "id": "1L13",
+          "name": "Other term liabilities or liabilities subject to notice"
+        },
+        {
+          "id": "1L2",
+          "name": "Customer liabilities"
+        },
+        {
+          "id": "1L21",
+          "name": "Deposits"
+        },
+        {
+          "id": "1L211",
+          "name": "Sight deposits"
+        },
+        {
+          "id": "1L212",
+          "name": "Term or subject to < 1 month's notice"
+        },
+        {
+          "id": "1L213",
+          "name": "Term or subject to >= 1 month's notice and <= 1 year's notice"
+        },
+        {
+          "id": "1L214",
+          "name": "Term or subject to > 1 year's notice"
+        },
+        {
+          "id": "1L215",
+          "name": "Special deposits"
+        },
+        {
+          "id": "1L216",
+          "name": "Regulated savings deposits"
+        },
+        {
+          "id": "1L217",
+          "name": "Linked to mortgage loans"
+        },
+        {
+          "id": "1L218",
+          "name": "Deposit protection system"
+        },
+        {
+          "id": "1L22",
+          "name": "Other creditors"
+        },
+        {
+          "id": "1L3",
+          "name": "Liabilities represented by a security"
+        },
+        {
+          "id": "1L31",
+          "name": "Certificates of deposit and similar liabilities"
+        },
+        {
+          "id": "1L32",
+          "name": "Savings bonds"
+        },
+        {
+          "id": "1L33",
+          "name": "Debentures"
+        },
+        {
+          "id": "1L4",
+          "name": "Reductions in value, provisions, contingency funds and deferred taxes"
+        },
+        {
+          "id": "1L5",
+          "name": "Other liabilities"
+        },
+        {
+          "id": "1L6",
+          "name": "Subordinated liabilities"
+        },
+        {
+          "id": "1L7",
+          "name": "Equity, of which :"
+        },
+        {
+          "id": "1L71",
+          "name": "Capital"
+        },
+        {
+          "id": "1L711",
+          "name": "Subscribed capital"
+        },
+        {
+          "id": "1L712",
+          "name": "Capital not called up"
+        },
+        {
+          "id": "1L72",
+          "name": "Issue premiums"
+        },
+        {
+          "id": "1L73",
+          "name": "Revaluation surpluses"
+        },
+        {
+          "id": "1L74",
+          "name": "Reserves and result brought forward"
+        },
+        {
+          "id": "1L75",
+          "name": "Variances due to consolidated and use of the equity method"
+        },
+        {
+          "id": "1L76",
+          "name": "Consolidated profit (+) or loss (-)"
+        },
+        {
+          "id": "1L8",
+          "name": "Minority interests"
+        },
+        {
+          "id": "2",
+          "name": "Structure of off-balance-sheet transactions - all credit institutions"
+        },
+        {
+          "id": "201",
+          "name": "Spot foreign exchange transactions"
+        },
+        {
+          "id": "2021",
+          "name": "Loans and advances - amounts receivable"
+        },
+        {
+          "id": "2022",
+          "name": "Loans and advances - amounts delivered"
+        },
+        {
+          "id": "2031",
+          "name": "Purchases and sales of securities and negotiable instruments - amounts receivable (sales)"
+        },
+        {
+          "id": "2032",
+          "name": "Purchases and sales of securities and negotiable instruments - amounts delivered (purchases)"
+        },
+        {
+          "id": "211",
+          "name": "Forward transactions on foreign currencies - forward foreign exchange transactions"
+        },
+        {
+          "id": "212",
+          "name": "Forward transactions on foreign currencies - currency and interest rate swaps"
+        },
+        {
+          "id": "213",
+          "name": "Forward transactions on foreign currencies - futures"
+        },
+        {
+          "id": "214",
+          "name": "Forward transactions on foreign currencies - options"
+        },
+        {
+          "id": "215",
+          "name": "Forward transactions on foreign currencies - forward exchange rate contracts"
+        },
+        {
+          "id": "2201",
+          "name": "Forward interest rate transactions - forward deposit contracts: to be placed"
+        },
+        {
+          "id": "2202",
+          "name": "Forward interest rate transactions - forward deposit contracts: receivable"
+        },
+        {
+          "id": "2203",
+          "name": "Forward interest rate transactions - interest rate swaps"
+        },
+        {
+          "id": "2204",
+          "name": "Forward interest rate transactions - futures: purchases"
+        },
+        {
+          "id": "2205",
+          "name": "Forward interest rate transactions - futures : sales"
+        },
+        {
+          "id": "2206",
+          "name": "Forward interest rate transactions - forward interest rate contracts: notional loans"
+        },
+        {
+          "id": "2207",
+          "name": "Forward interest rate transactions - forward interest rate contracts: notional advances"
+        },
+        {
+          "id": "2208",
+          "name": "Forward interest rate transactions - options issued: notional loans"
+        },
+        {
+          "id": "2209",
+          "name": "Forward interest rate transactions - options issued: notional advances"
+        },
+        {
+          "id": "2210",
+          "name": "Forward interest rate transactions - options acquired: notional loans"
+        },
+        {
+          "id": "2211",
+          "name": "Forward interest rate transactions - options acquired: notional advances"
+        },
+        {
+          "id": "2212",
+          "name": "Forward interest rate transactions - others: to be paid up"
+        },
+        {
+          "id": "2213",
+          "name": "Forward interest rate transactions - others: receivable"
+        },
+        {
+          "id": "2301",
+          "name": "Other forward transactions - securities: purchases"
+        },
+        {
+          "id": "2302",
+          "name": "Other forward transactions - securities: sales"
+        },
+        {
+          "id": "2303",
+          "name": "Other forward transactions - options issued: securities receivable"
+        },
+        {
+          "id": "2304",
+          "name": "Other forward transactions - options issued: securities to be delivered"
+        },
+        {
+          "id": "2305",
+          "name": "Other forward transactions - options acquired: securities receivable"
+        },
+        {
+          "id": "2306",
+          "name": "Other forward transactions - options acquired: securities to be delivered"
+        },
+        {
+          "id": "2307",
+          "name": "Other forward transactions - futures: purchases"
+        },
+        {
+          "id": "2308",
+          "name": "Other forward transactions - futures : sales"
+        },
+        {
+          "id": "2309",
+          "name": "Other forward transactions - others: securities purchased"
+        },
+        {
+          "id": "2310",
+          "name": "Other forward transactions - others: securities sold"
+        },
+        {
+          "id": "241",
+          "name": "Income covered in advance"
+        },
+        {
+          "id": "242",
+          "name": "Expenses covered in advance"
+        },
+        {
+          "id": "25",
+          "name": "Commitment credits used"
+        },
+        {
+          "id": "261",
+          "name": "Credit lines obtained"
+        },
+        {
+          "id": "262",
+          "name": "Credit lines granted - to credit institutions"
+        },
+        {
+          "id": "263",
+          "name": "Credit lines granted to customers  - for cash disbursement credits"
+        },
+        {
+          "id": "264",
+          "name": "Credit lines granted to customers - for commitment credits"
+        },
+        {
+          "id": "271",
+          "name": "Guarantees - assets subject to real security"
+        },
+        {
+          "id": "272",
+          "name": "Guarantees received"
+        },
+        {
+          "id": "281",
+          "name": "Securities and claims entrusted to the credit institution - for overdraft purposes"
+        },
+        {
+          "id": "282",
+          "name": "Securities and claims entrusted to the credit institution - on a fiduciary basis"
+        },
+        {
+          "id": "283",
+          "name": "Securities and claims entrusted to the credit institution- others"
+        },
+        {
+          "id": "284",
+          "name": "Securities and claims entrusted by the credit institution - on a fiduciary basis"
+        },
+        {
+          "id": "285",
+          "name": "Securities and claims entrusted by the credit institution - others"
+        },
+        {
+          "id": "29",
+          "name": "Other rights and commitments"
+        },
+        {
+          "id": "3",
+          "name": "Basic components of the income statement - all credit institutions"
+        },
+        {
+          "id": "3BL",
+          "name": "Belgian credit institutions - large banking groups"
+        },
+        {
+          "id": "3BL1",
+          "name": "Total interest result"
+        },
+        {
+          "id": "3BL2",
+          "name": "Investment income other than net interest income"
+        },
+        {
+          "id": "3BL21",
+          "name": "Income from equity and other variable interest securities"
+        },
+        {
+          "id": "3BL22",
+          "name": "Income from financial fixed assets"
+        },
+        {
+          "id": "3BL23",
+          "name": "Results from the realisation of securities and investment instruments"
+        },
+        {
+          "id": "3BL24",
+          "name": "Net profits or losses on foreign-exchange operations"
+        },
+        {
+          "id": "3BL25",
+          "name": "Net profits or losses on trading"
+        },
+        {
+          "id": "3BL3",
+          "name": "Fee and banking services income"
+        },
+        {
+          "id": "3BL4",
+          "name": "Other operating income"
+        },
+        {
+          "id": "3BL5",
+          "name": "Banking income"
+        },
+        {
+          "id": "3BL6",
+          "name": "Operating expenses"
+        },
+        {
+          "id": "3BL61",
+          "name": "Personnel expenses"
+        },
+        {
+          "id": "3BL62",
+          "name": "Fees paid for the use of financial services"
+        },
+        {
+          "id": "3BL63",
+          "name": "Value adjustments on formation costs and tangible and intangible fixed assets"
+        },
+        {
+          "id": "3BL64",
+          "name": "Other operating expenses"
+        },
+        {
+          "id": "3BL7",
+          "name": "Gross operating result (= banking income - operating expenses)"
+        },
+        {
+          "id": "3BL8",
+          "name": "Value adjustments in relation to ordinary banking operations"
+        },
+        {
+          "id": "3BL81",
+          "name": "On accounts receivable"
+        },
+        {
+          "id": "3BL82",
+          "name": "On securities and investment income"
+        },
+        {
+          "id": "3BL83",
+          "name": "For other risks and expenses"
+        },
+        {
+          "id": "3BL84",
+          "name": "Transfer to contingency reserves"
+        },
+        {
+          "id": "3BL9",
+          "name": "Net operating result"
+        },
+        {
+          "id": "3BL10",
+          "name": "Extraordinary result"
+        },
+        {
+          "id": "3BL11",
+          "name": "Taxes"
+        },
+        {
+          "id": "3BL12",
+          "name": "Transfers and withdrawals"
+        },
+        {
+          "id": "3BL13",
+          "name": "Share of income from companies accounted for by the equity method"
+        },
+        {
+          "id": "3BL14",
+          "name": "Minority interest in the result of consolidated subsidiaries"
+        },
+        {
+          "id": "3BL15",
+          "name": "Consolidated results"
+        },
+        {
+          "id": "3BT",
+          "name": "Belgian credit institutions - total"
+        },
+        {
+          "id": "3BT1",
+          "name": "Total interest result"
+        },
+        {
+          "id": "3BT2",
+          "name": "Investment income other than net interest income"
+        },
+        {
+          "id": "3BT21",
+          "name": "Income from equity and other variable interest securities"
+        },
+        {
+          "id": "3BT22",
+          "name": "Income from financial fixed assets"
+        },
+        {
+          "id": "3BT23",
+          "name": "Results from the realisation of securities and investment instruments"
+        },
+        {
+          "id": "3BT24",
+          "name": "Net profits or losses on foreign-exchange operations"
+        },
+        {
+          "id": "3BT25",
+          "name": "Net profits or losses on trading"
+        },
+        {
+          "id": "3BT3",
+          "name": "Fee and banking services income"
+        },
+        {
+          "id": "3BT4",
+          "name": "Other operating income"
+        },
+        {
+          "id": "3BT5",
+          "name": "Banking income"
+        },
+        {
+          "id": "3BT6",
+          "name": "Operating expenses"
+        },
+        {
+          "id": "3BT61",
+          "name": "Personnel expenses"
+        },
+        {
+          "id": "3BT62",
+          "name": "Fees paid for the use of financial services"
+        },
+        {
+          "id": "3BT63",
+          "name": "Value adjustments on formation costs and tangible and intangible fixed assets"
+        },
+        {
+          "id": "3BT64",
+          "name": "Other operating expenses"
+        },
+        {
+          "id": "3BT7",
+          "name": "Gross operating result (= banking income - operating expenses)"
+        },
+        {
+          "id": "3BT8",
+          "name": "Value adjustments in relation to ordinary banking operations"
+        },
+        {
+          "id": "3BT81",
+          "name": "On accounts receivable"
+        },
+        {
+          "id": "3BT82",
+          "name": "On securities and investment income"
+        },
+        {
+          "id": "3BT83",
+          "name": "For other risks and expenses"
+        },
+        {
+          "id": "3BT84",
+          "name": "Transfer to contingency reserves"
+        },
+        {
+          "id": "3BT9",
+          "name": "Net operating result"
+        },
+        {
+          "id": "3BT10",
+          "name": "Extraordinary result"
+        },
+        {
+          "id": "3BT11",
+          "name": "Taxes"
+        },
+        {
+          "id": "3BT12",
+          "name": "Transfers and withdrawals"
+        },
+        {
+          "id": "3BT13",
+          "name": "Share of income from companies accounted for by the equity method"
+        },
+        {
+          "id": "3BT14",
+          "name": "Minority interest in the result of consolidated subsidiaries"
+        },
+        {
+          "id": "3BT15",
+          "name": "Consolidated results"
+        },
+        {
+          "id": "3F",
+          "name": "Foreign credit institutions"
+        },
+        {
+          "id": "3F1",
+          "name": "Total interest result"
+        },
+        {
+          "id": "3F2",
+          "name": "Investment income other than net interest income"
+        },
+        {
+          "id": "3F21",
+          "name": "Income from equity and other variable interest securities"
+        },
+        {
+          "id": "3F22",
+          "name": "Income from financial fixed assets"
+        },
+        {
+          "id": "3F23",
+          "name": "Results from the realisation of securities and investment instruments"
+        },
+        {
+          "id": "3F24",
+          "name": "Net profits or losses on foreign-exchange operations"
+        },
+        {
+          "id": "3F25",
+          "name": "Net profits or losses on trading"
+        },
+        {
+          "id": "3F3",
+          "name": "Fee and banking services income"
+        },
+        {
+          "id": "3F4",
+          "name": "Other operating income"
+        },
+        {
+          "id": "3F5",
+          "name": "Banking income"
+        },
+        {
+          "id": "3F6",
+          "name": "Operating expenses"
+        },
+        {
+          "id": "3F61",
+          "name": "Personnel expenses"
+        },
+        {
+          "id": "3F62",
+          "name": "Fees paid for the use of financial services"
+        },
+        {
+          "id": "3F63",
+          "name": "Value adjustments on formation costs and tangible and intangible fixed assets"
+        },
+        {
+          "id": "3F64",
+          "name": "Other operating expenses"
+        },
+        {
+          "id": "3F7",
+          "name": "Gross operating result (= banking income - operating expenses)"
+        },
+        {
+          "id": "3F8",
+          "name": "Value adjustments in relation to ordinary banking operations"
+        },
+        {
+          "id": "3F81",
+          "name": "On accounts receivable"
+        },
+        {
+          "id": "3F82",
+          "name": "On securities and investment income"
+        },
+        {
+          "id": "3F83",
+          "name": "For other risks and expenses"
+        },
+        {
+          "id": "3F84",
+          "name": "Transfer to contingency reserves"
+        },
+        {
+          "id": "3F9",
+          "name": "Net operating result"
+        }
+      ],
+      "total_codes": 327,
+      "truncated": true
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{CREDINSCONS00_TABLE}.{CREDINSCONS00_ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:47+00:00",
+  "schema_version": 1
+}

@@ -1,0 +1,195 @@
+{
+  "agency": "BE2",
+  "id": "DF_NMUCI",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Non-money market collective investment undertakings governed by Belgian law",
+    "fr": "Organismes de placement collectif non monétaires de droit belge",
+    "nl": "Niet-monetaire instellingen voor collectieve belegging naar Belgisch recht",
+    "de": "Non-money market collective investment undertakings governed by Belgian law"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ACCOUNT",
+      "position": 1,
+      "name": "ACCOUNT",
+      "codes": [
+        {
+          "id": "1",
+          "name": "Outstanding amounts"
+        },
+        {
+          "id": "2",
+          "name": "Financial transactions (formation of assets and new liabilities)"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    },
+    {
+      "id": "TRANSACTION",
+      "position": 2,
+      "name": "TRANSACTION",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Financial assets"
+        },
+        {
+          "id": "A2",
+          "name": "Currency and deposits"
+        },
+        {
+          "id": "A3",
+          "name": "Securities other than shares"
+        },
+        {
+          "id": "A331",
+          "name": "Short-term securities"
+        },
+        {
+          "id": "A332",
+          "name": "Long-term securities"
+        },
+        {
+          "id": "A34",
+          "name": "Financial derivatives"
+        },
+        {
+          "id": "A5",
+          "name": "Shares and other equity"
+        },
+        {
+          "id": "A511",
+          "name": "Quoted shares"
+        },
+        {
+          "id": "A51M",
+          "name": "Non-quoted shares and other equity"
+        },
+        {
+          "id": "A52",
+          "name": "Shares of collective investment undertakings"
+        },
+        {
+          "id": "A7",
+          "name": "Other instruments (net)"
+        },
+        {
+          "id": "L",
+          "name": "Financial liabilities"
+        },
+        {
+          "id": "L1",
+          "name": "Shares issued by"
+        },
+        {
+          "id": "L11",
+          "name": "Bond UCIs"
+        },
+        {
+          "id": "L12",
+          "name": "Equity UCIs"
+        },
+        {
+          "id": "L13",
+          "name": "Index-linked UCIs with guaranteed capital"
+        },
+        {
+          "id": "L14",
+          "name": "Real estate UCIs"
+        },
+        {
+          "id": "L15",
+          "name": "Mixed UCIs"
+        },
+        {
+          "id": "L16",
+          "name": "Pension savings UCIs"
+        },
+        {
+          "id": "L17",
+          "name": "Funds of funds"
+        },
+        {
+          "id": "L1T",
+          "name": "Total net subscriptions"
+        },
+        {
+          "id": "L2",
+          "name": "Debts"
+        },
+        {
+          "id": "L3",
+          "name": "Reinvested earnings and statistical adjustments"
+        }
+      ],
+      "total_codes": 23,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ACCOUNT}.{TRANSACTION}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:48+00:00",
+  "schema_version": 1
+}

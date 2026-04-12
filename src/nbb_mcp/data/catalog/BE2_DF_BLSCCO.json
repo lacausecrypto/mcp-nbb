@@ -1,0 +1,140 @@
+{
+  "agency": "BE2",
+  "id": "DF_BLSCCO",
+  "version": "1.0",
+  "category": "surveys",
+  "is_final": true,
+  "names": {
+    "en": "Bank lending survey: banks' perception",
+    "fr": "Bank lending survey: appréciation des banques",
+    "nl": "Bank lending survey: beoordeling door banken",
+    "de": "Bank lending survey: banks' perception"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "BLSCCO_INDIC",
+      "position": 1,
+      "name": "BLSCCO_INDIC",
+      "codes": [
+        {
+          "id": "C",
+          "name": "Change in credit standards"
+        },
+        {
+          "id": "CE",
+          "name": "Change observed by respondents"
+        },
+        {
+          "id": "CEX",
+          "name": "Change expected by respondents"
+        },
+        {
+          "id": "D",
+          "name": "Change in demand"
+        },
+        {
+          "id": "DE",
+          "name": "Change observed by respondents"
+        },
+        {
+          "id": "DEX",
+          "name": "Change expected by respondents"
+        }
+      ],
+      "total_codes": 6,
+      "truncated": false
+    },
+    {
+      "id": "BLSCCO_SECTOR",
+      "position": 2,
+      "name": "BLSCCO_SECTOR",
+      "codes": [
+        {
+          "id": "S11",
+          "name": "Loans or credit lines to the entire sector of non-financial corporations"
+        }
+      ],
+      "total_codes": 1,
+      "truncated": false
+    },
+    {
+      "id": "BLSCCO_AREA",
+      "position": 3,
+      "name": "BLSCCO_AREA",
+      "codes": [
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "EU",
+          "name": "Euro area"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{BLSCCO_INDIC}.{BLSCCO_SECTOR}.{BLSCCO_AREA}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:52+00:00",
+  "schema_version": 1
+}

@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: NBB API status or upstream data issues
+    url: https://www.nbb.be/en/statistics
+    about: For problems with the underlying NBB data (missing series, stale
+      values, etc.), please contact the National Bank of Belgium directly.
+  - name: Model Context Protocol documentation
+    url: https://modelcontextprotocol.io/
+    about: Questions about MCP itself (client configuration, transport, SDKs).

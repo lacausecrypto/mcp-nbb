@@ -1,0 +1,93 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-nbb"
+version = "0.1.0"
+description = "MCP server for the National Bank of Belgium SDMX statistical API"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "mcp-nbb contributors" }]
+keywords = ["mcp", "sdmx", "nbb", "statistics", "belgium", "model-context-protocol"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+    "stamina>=24.0.0",
+    "aiolimiter>=1.1.0",
+    "pydantic>=2.0.0",
+    "rapidfuzz>=3.0.0",
+    "structlog>=24.0.0",
+    "cachetools>=5.0.0",
+    "platformdirs>=4.0.0",
+    "python-dateutil>=2.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/lacausecrypto/mcp-nbb"
+Repository = "https://github.com/lacausecrypto/mcp-nbb"
+Issues = "https://github.com/lacausecrypto/mcp-nbb/issues"
+Changelog = "https://github.com/lacausecrypto/mcp-nbb/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-recording>=0.13.0",
+    "vcrpy>=6.0.0",
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+]
+
+[project.scripts]
+mcp-nbb = "nbb_mcp.server:main"
+mcp-nbb-build-catalog = "nbb_mcp.scripts.build_catalog:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nbb_mcp"]
+# Force the JSON fiches under src/nbb_mcp/data/catalog into the wheel.
+# Hatchling's default filter excludes non-.py files inside packages.
+artifacts = [
+    "src/nbb_mcp/data/catalog/*.json",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+    "e2e: end-to-end tests that spawn the server as a subprocess",
+    "live: tests that hit the real NBB API over the network",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "SIM", "RUF"]
+ignore = [
+    "E501",   # line length handled by formatter, not critical
+    "SIM105", # try/except/pass is clearer than contextlib.suppress here
+    "SIM108", # ternary suggestions are often less readable
+    "SIM117", # nested with statements are intentional in stdio/session tests
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true

@@ -1,0 +1,223 @@
+{
+  "agency": "BE2",
+  "id": "DF_UCIDEV",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Developments of UCI",
+    "fr": "Evolutions des OPC",
+    "nl": "Verloop van de ICB's",
+    "de": "Developments of UCI"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "INSTTYPE",
+      "position": 1,
+      "name": "INSTTYPE",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Collective investment undertakings operating in Belgium as a whole"
+        },
+        {
+          "id": "M",
+          "name": "Monetary collective investment institutions"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 2,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "B",
+          "name": "UCI governed by Belgian law"
+        },
+        {
+          "id": "BC",
+          "name": "Number of compartments (end of period)"
+        },
+        {
+          "id": "BI",
+          "name": "Number of institutions (end of period)"
+        },
+        {
+          "id": "BI1",
+          "name": "Investment companies with variable capital"
+        },
+        {
+          "id": "BI11",
+          "name": "p.m. Compartments"
+        },
+        {
+          "id": "BI12",
+          "name": "p.m. Operating compartments"
+        },
+        {
+          "id": "BI2",
+          "name": "Mutual investment funds"
+        },
+        {
+          "id": "BI3",
+          "name": "Pension-saving funds"
+        },
+        {
+          "id": "BV",
+          "name": "Net inventory value (end of period)"
+        },
+        {
+          "id": "BV1",
+          "name": "Investment companies with variable capital"
+        },
+        {
+          "id": "BV2",
+          "name": "Mutual investment funds"
+        },
+        {
+          "id": "BV3",
+          "name": "Pension-saving funds"
+        },
+        {
+          "id": "BS",
+          "name": "Subscriptions"
+        },
+        {
+          "id": "BR",
+          "name": "Repayments"
+        },
+        {
+          "id": "BNC",
+          "name": "Net contributions"
+        },
+        {
+          "id": "F",
+          "name": "Foreign UCI whose shares and other equity are issued publicly in Belgium"
+        },
+        {
+          "id": "FI",
+          "name": "Number of institutions (end of period)"
+        },
+        {
+          "id": "FI1",
+          "name": "by legal form"
+        },
+        {
+          "id": "FI11",
+          "name": "Investment companies with variable capital"
+        },
+        {
+          "id": "FI111",
+          "name": "p.m. Compartments"
+        },
+        {
+          "id": "FI112",
+          "name": "Investment funds"
+        },
+        {
+          "id": "FI2",
+          "name": "by category"
+        },
+        {
+          "id": "FI21",
+          "name": "Institutions with UCITS passport"
+        },
+        {
+          "id": "FI211",
+          "name": "p.m. Compartments"
+        },
+        {
+          "id": "FI22",
+          "name": "Institutions without UCITS passport"
+        },
+        {
+          "id": "FI221",
+          "name": "p.m. Compartments"
+        },
+        {
+          "id": "FS",
+          "name": "Subscriptions in Belgium"
+        },
+        {
+          "id": "FR",
+          "name": "Repayments in Belgium"
+        },
+        {
+          "id": "FNC",
+          "name": "Net contributions in Belgium"
+        },
+        {
+          "id": "I",
+          "name": "For information purposes: Net inventory value of UCI governed by Belgian and foreign law publicly spread in Belgium (end of period)"
+        }
+      ],
+      "total_codes": 30,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{INSTTYPE}.{ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:33:00+00:00",
+  "schema_version": 1
+}

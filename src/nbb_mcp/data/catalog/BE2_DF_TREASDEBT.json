@@ -1,0 +1,886 @@
+{
+  "agency": "BE2",
+  "id": "DF_TREASDEBT",
+  "version": "1.0",
+  "category": "public_finances",
+  "is_final": true,
+  "names": {
+    "en": "Official debt and net lending/net borrowing of the Treasury",
+    "fr": "Dette et solde net à financer officiels du Trésor",
+    "nl": "Officiële schuld en netto te financieren saldo van de Schatkist",
+    "de": "Official debt and net lending/net borrowing of the Treasury"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "TREASURY_ITEM",
+      "position": 1,
+      "name": "TREASURY_ITEM",
+      "codes": [
+        {
+          "id": "TREAS_1",
+          "name": "Official debt and net financial balance of the Treasury"
+        },
+        {
+          "id": "GD",
+          "name": "Gross debt"
+        },
+        {
+          "id": "GDB",
+          "name": "Debt in Belgian francs - euros from 2002"
+        },
+        {
+          "id": "GDE",
+          "name": "Debt in euro (since 1999, only in Belgian franc until end of 1998)"
+        },
+        {
+          "id": "GDEO",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "GDEO_CO",
+          "name": "Consolidated"
+        },
+        {
+          "id": "GDEO_L",
+          "name": "of which Linear bonds"
+        },
+        {
+          "id": "GDEO_C",
+          "name": "of which Classic loans"
+        },
+        {
+          "id": "GDEO_S",
+          "name": "of which State notes"
+        },
+        {
+          "id": "GDEO_D",
+          "name": "Direct"
+        },
+        {
+          "id": "GDEO_I",
+          "name": "Indirect"
+        },
+        {
+          "id": "C_1",
+          "name": "Current"
+        },
+        {
+          "id": "C_11",
+          "name": "In the medium term"
+        },
+        {
+          "id": "C_12",
+          "name": "At short notice (excluding Postcheck)"
+        },
+        {
+          "id": "GDE1",
+          "name": "Debt at up to one year"
+        },
+        {
+          "id": "GDE1_C",
+          "name": "of which treasury certificates"
+        },
+        {
+          "id": "GDE1_B",
+          "name": "of which belgian treasury bills"
+        },
+        {
+          "id": "GDE1_I",
+          "name": "of which assets of individuals with the PCO"
+        },
+        {
+          "id": "GDE1_A",
+          "name": "of which assets of public bodies"
+        },
+        {
+          "id": "PTCH",
+          "name": "Postcheck"
+        },
+        {
+          "id": "GDF",
+          "name": "Debt in foreign currencies outside euro zone"
+        },
+        {
+          "id": "GDFO",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "GDFOE",
+          "name": "In currencies of the 'euro zone'(until end of 1998)"
+        },
+        {
+          "id": "GDFOO",
+          "name": "In others currencies"
+        },
+        {
+          "id": "GDFOO_CH",
+          "name": "CHF"
+        },
+        {
+          "id": "GDF1",
+          "name": "Debt at up to one year"
+        },
+        {
+          "id": "GDF1E",
+          "name": "In currencies of the 'euro zone'(until end of 1998)"
+        },
+        {
+          "id": "GDV",
+          "name": "Debt in foreign currencies"
+        },
+        {
+          "id": "GDVCO",
+          "name": "Consolidated"
+        },
+        {
+          "id": "GDVCO_T",
+          "name": "By Type"
+        },
+        {
+          "id": "GDVCO_TD",
+          "name": "Direct"
+        },
+        {
+          "id": "GDVCO_TI",
+          "name": "Indirect"
+        },
+        {
+          "id": "GDVCO_C",
+          "name": "By currency"
+        },
+        {
+          "id": "GDVCO_CE",
+          "name": "Euro zone"
+        },
+        {
+          "id": "GDVCO_CED",
+          "name": "DEM"
+        },
+        {
+          "id": "GDVCO_CEF",
+          "name": "FRF"
+        },
+        {
+          "id": "GDVCO_CEN",
+          "name": "NLG"
+        },
+        {
+          "id": "GDVCO_CEX",
+          "name": "XEU"
+        },
+        {
+          "id": "GDVCI_CES",
+          "name": "\"swap\""
+        },
+        {
+          "id": "GDVCO_CO",
+          "name": "Outside euro zone"
+        },
+        {
+          "id": "GDVCO_COC",
+          "name": "CHF"
+        },
+        {
+          "id": "GDFOO_JP",
+          "name": "JPY"
+        },
+        {
+          "id": "GDFOO_US",
+          "name": "USD"
+        },
+        {
+          "id": "GDVCO_COS",
+          "name": "\"swap\""
+        },
+        {
+          "id": "GDVCU",
+          "name": "Current"
+        },
+        {
+          "id": "GDVCU_M",
+          "name": "In the medium term"
+        },
+        {
+          "id": "GDVCU_MC",
+          "name": "By currency"
+        },
+        {
+          "id": "GDVCU_MCE",
+          "name": "Euro zone"
+        },
+        {
+          "id": "GDVCU_MCD",
+          "name": "DEM"
+        },
+        {
+          "id": "GDVCU_MCN",
+          "name": "NLG"
+        },
+        {
+          "id": "GDVCU_MCO",
+          "name": "Outside euro zone"
+        },
+        {
+          "id": "GDVCU_MCC",
+          "name": "CHF"
+        },
+        {
+          "id": "GDVCU_S",
+          "name": "Short term"
+        },
+        {
+          "id": "GDVCU_SI",
+          "name": "By instrument"
+        },
+        {
+          "id": "GDVCU_SIT",
+          "name": "Treasury bills"
+        },
+        {
+          "id": "GDVCU_SIO",
+          "name": "Other"
+        },
+        {
+          "id": "GDVCU_SC",
+          "name": "By currency"
+        },
+        {
+          "id": "GDVCU_SCE",
+          "name": "Euro zone"
+        },
+        {
+          "id": "GDVCU_SCD",
+          "name": "DEM"
+        },
+        {
+          "id": "GDVCU_SCF",
+          "name": "FRF"
+        },
+        {
+          "id": "GDVCU_SCN",
+          "name": "NLG"
+        },
+        {
+          "id": "GDF1O",
+          "name": "Outside euro zone"
+        },
+        {
+          "id": "GDF1O_AU",
+          "name": "AUD"
+        },
+        {
+          "id": "GDF1O_CH",
+          "name": "CHF"
+        },
+        {
+          "id": "GDF1O_GB",
+          "name": "GBP"
+        },
+        {
+          "id": "GDF1O_JP",
+          "name": "JPY"
+        },
+        {
+          "id": "GDF1O_US",
+          "name": "USD"
+        },
+        {
+          "id": "FA",
+          "name": "Financial assets"
+        },
+        {
+          "id": "FA_BE",
+          "name": "In BEF- EUR from 2002"
+        },
+        {
+          "id": "FA_BC",
+          "name": "By currency"
+        },
+        {
+          "id": "ND",
+          "name": "Net debt"
+        },
+        {
+          "id": "NBF",
+          "name": "Net balance to be financed (+)"
+        },
+        {
+          "id": "NFBM1",
+          "name": "Net financial balance (-)"
+        },
+        {
+          "id": "EWRA",
+          "name": "Empty working range"
+        },
+        {
+          "id": "TREAS_2",
+          "name": "Nominal change in official debt and net Treasury balance to be financed (BEF billions- EUR millions from 2002)"
+        },
+        {
+          "id": "NFBP1",
+          "name": "Net balance to be financed (+) by the Treasury"
+        },
+        {
+          "id": "VAR",
+          "name": "Nominal changes of the debt net of the Treasury"
+        },
+        {
+          "id": "ADJ",
+          "name": "Adjustments"
+        },
+        {
+          "id": "ADJ8",
+          "name": "(Nominal change in official Treasury debt)"
+        },
+        {
+          "id": "ADJ9",
+          "name": "(Adjustments)"
+        },
+        {
+          "id": "ADJ10",
+          "name": "Adjustments related to Belgian franc debt"
+        },
+        {
+          "id": "ADJ1",
+          "name": "Change in treasury certificates held by IMF"
+        },
+        {
+          "id": "ADJ3",
+          "name": "Reversal of liabilities and assets"
+        },
+        {
+          "id": "ADJ4",
+          "name": "Interest adjustment"
+        },
+        {
+          "id": "ADJ5",
+          "name": "Issue and exchange premiums"
+        },
+        {
+          "id": "ADJ6",
+          "name": "Credit facilities"
+        },
+        {
+          "id": "ADJ7",
+          "name": "Other"
+        },
+        {
+          "id": "ADJ11",
+          "name": "Foreign currency debt adjustments"
+        },
+        {
+          "id": "ADJ2",
+          "name": "Exchange rate differences"
+        },
+        {
+          "id": "ADJ12",
+          "name": "On consolidated debt"
+        },
+        {
+          "id": "ADJ12_CH",
+          "name": "CHF"
+        },
+        {
+          "id": "ADJ12_DEM",
+          "name": "DEM"
+        },
+        {
+          "id": "ADJ12_FRF",
+          "name": "FRF"
+        },
+        {
+          "id": "ADJ12_JPY",
+          "name": "JPY"
+        },
+        {
+          "id": "ADJ12_NLG",
+          "name": "NLG"
+        },
+        {
+          "id": "ADJ12_USD",
+          "name": "USD"
+        },
+        {
+          "id": "ADJ12_XEU",
+          "name": "XEU"
+        },
+        {
+          "id": "ADJ13",
+          "name": "On floating debt"
+        },
+        {
+          "id": "ADJ13_AUD",
+          "name": "AUD"
+        },
+        {
+          "id": "ADJ13_CH",
+          "name": "CHF"
+        },
+        {
+          "id": "ADJ13_GBP",
+          "name": "GBP"
+        },
+        {
+          "id": "ADJ13_DEM",
+          "name": "DEM"
+        },
+        {
+          "id": "ADJ13_FRF",
+          "name": "FRF"
+        },
+        {
+          "id": "ADJ13_JPY",
+          "name": "JPY"
+        },
+        {
+          "id": "ADJ13_NLG",
+          "name": "NLG"
+        },
+        {
+          "id": "ADJ13_USD",
+          "name": "USD"
+        },
+        {
+          "id": "ADJ14",
+          "name": "Linked to multi-currency swaps"
+        },
+        {
+          "id": "ADJ15",
+          "name": "Reversal of debt"
+        },
+        {
+          "id": "ADJ16",
+          "name": "Capital gains on sales of NBB gold"
+        },
+        {
+          "id": "ADJ17",
+          "name": "Asset-related adjustments"
+        },
+        {
+          "id": "ADJ18",
+          "name": "Short-term Treasury investments"
+        },
+        {
+          "id": "ADJ18_BE",
+          "name": "In BEF"
+        },
+        {
+          "id": "ADJ18_ED",
+          "name": "In foreign currencies"
+        },
+        {
+          "id": "CONTR",
+          "name": "Control"
+        },
+        {
+          "id": "TREAS_3",
+          "name": "Financing the net balance to be financed by the Treasury"
+        },
+        {
+          "id": "NFBP2",
+          "name": "Net financial balance (+) of the Treasury"
+        },
+        {
+          "id": "L",
+          "name": "New liabilities"
+        },
+        {
+          "id": "EUR",
+          "name": "In euro (since 1999) (only in Belgian franc uitil end of 1998)"
+        },
+        {
+          "id": "EUR_1",
+          "name": "Change in debt in Belgian francs"
+        },
+        {
+          "id": "EUR_11",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "EUR_12",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "EUR_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "EUR_21",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "EUR_22",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "FC",
+          "name": "In foreign currencies"
+        },
+        {
+          "id": "FCE",
+          "name": "In currencies of the 'euro zone' (until end of 1998)"
+        },
+        {
+          "id": "FCO",
+          "name": "In others currencies"
+        },
+        {
+          "id": "IVV",
+          "name": "In foreign currencies"
+        },
+        {
+          "id": "IVV_1",
+          "name": "Change in foreign currency debt"
+        },
+        {
+          "id": "IVV_11",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "IVV_12",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "IVV_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "IVV_21",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "IVV_22",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "IVV_3",
+          "name": "Breakdown by currency"
+        },
+        {
+          "id": "AUD",
+          "name": "AUD"
+        },
+        {
+          "id": "AUD_1",
+          "name": "Variation in debt"
+        },
+        {
+          "id": "AUD_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "CHF",
+          "name": "CHF"
+        },
+        {
+          "id": "CHF_1",
+          "name": "Variation in debt"
+        },
+        {
+          "id": "CHF_11",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "CHF_12",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "CHF_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "CHF_21",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "CHF_22",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "GBP",
+          "name": "GBP"
+        },
+        {
+          "id": "GBP_1",
+          "name": "Movement of debt"
+        },
+        {
+          "id": "GBP_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "DEM",
+          "name": "DEM"
+        },
+        {
+          "id": "DEM_1",
+          "name": "Variation in debt"
+        },
+        {
+          "id": "DEM_11",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "DEM_12",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "DEM_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "DEM_21",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "DEM_22",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "FRF",
+          "name": "FRF"
+        },
+        {
+          "id": "FRF_1",
+          "name": "Variation in debt"
+        },
+        {
+          "id": "FRF_11",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "FRF_12",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "FRF_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "FRF_21",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "FRF_22",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "JPY",
+          "name": "JPY"
+        },
+        {
+          "id": "JPY_1",
+          "name": "Variation in debt"
+        },
+        {
+          "id": "JPY_11",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "JPY_12",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "JPY_2",
+          "name": "Ajustements"
+        },
+        {
+          "id": "JPY_21",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "JPY_22",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "NLG",
+          "name": "NLG"
+        },
+        {
+          "id": "NLG_1",
+          "name": "Variation in debt"
+        },
+        {
+          "id": "NLG_11",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "NLG_12",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "NLG_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "NLG_21",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "NLG_22",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "USD",
+          "name": "USD"
+        },
+        {
+          "id": "USD_1",
+          "name": "Variation in debt"
+        },
+        {
+          "id": "USD_11",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "USD_12",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "USD_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "USD_21",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "USD_22",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "XEU",
+          "name": "XEU"
+        },
+        {
+          "id": "XEU_1",
+          "name": "Variation in debt"
+        },
+        {
+          "id": "XEU_11",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "XEU_12",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "XEU_2",
+          "name": "Adjustments"
+        },
+        {
+          "id": "XEU_21",
+          "name": "Debt at over one year"
+        },
+        {
+          "id": "XEU_22",
+          "name": "Debt at up ot one year"
+        },
+        {
+          "id": "A",
+          "name": "Financial asset formation"
+        },
+        {
+          "id": "CONT",
+          "name": "Control"
+        },
+        {
+          "id": "TREAS_4",
+          "name": "Composition of the net balance to be financed by the Treasury (BEF billion - EUR million)"
+        },
+        {
+          "id": "PAA",
+          "name": "Part A: National government, communities and regions (up to 1990)"
+        },
+        {
+          "id": "PAA_1",
+          "name": "Net balance to be financed (-) by the Treasury"
+        },
+        {
+          "id": "PAA_11",
+          "name": "National authority"
+        },
+        {
+          "id": "PAA_12",
+          "name": "Communities and regions"
+        },
+        {
+          "id": "PAA_2",
+          "name": "Budget transactions"
+        },
+        {
+          "id": "PAA_21",
+          "name": "Income"
+        },
+        {
+          "id": "PAA_22",
+          "name": "Expenditure"
+        }
+      ],
+      "total_codes": 250,
+      "truncated": true
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{TREASURY_ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:30+00:00",
+  "schema_version": 1
+}

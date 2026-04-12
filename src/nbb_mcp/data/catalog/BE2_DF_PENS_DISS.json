@@ -1,0 +1,252 @@
+{
+  "agency": "BE2",
+  "id": "DF_PENS_DISS",
+  "version": "1.0",
+  "category": "national_accounts",
+  "is_final": true,
+  "names": {
+    "en": "Supplementary table for accrued-to-date pension entitlements in social insurance",
+    "fr": "Tableau supplémentaire des droits à la pension acquis dans le cadre d'une assurance sociale",
+    "nl": "Aanvullende tabel voor verworven pensioenrechten in de sociale verzekering",
+    "de": "Supplementary table for accrued-to-date pension entitlements in social insurance"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 1,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "F63LS",
+          "name": "Pension entitlements (F63LS)"
+        },
+        {
+          "id": "D61",
+          "name": "Increase in pension entitlements due to social contributions (D61)"
+        },
+        {
+          "id": "D6111",
+          "name": "Employer actual social contributions (D6111)"
+        },
+        {
+          "id": "D6121",
+          "name": "Employer imputed social contributions (D6121)"
+        },
+        {
+          "id": "D6131",
+          "name": "Household actual social contributions (D6131)"
+        },
+        {
+          "id": "D6141",
+          "name": "Household social contribution supplements (D6141)"
+        },
+        {
+          "id": "D61SC",
+          "name": "Less: Pension scheme service charges (D61SC)"
+        },
+        {
+          "id": "D619",
+          "name": "Other (actuarial) change of pension entitlements in social security pension schemes (D619)"
+        },
+        {
+          "id": "D62",
+          "name": "Reduction in pension entitlements due to payment of pension benefits (D62)"
+        },
+        {
+          "id": "D8",
+          "name": "Changes in pension entitlements due to social contributions and pension benefits (D8)"
+        },
+        {
+          "id": "D81",
+          "name": "Transfers of pension entitlements between schemes (D81)"
+        },
+        {
+          "id": "D82",
+          "name": "Change in entitlements due to negotiated changes in scheme structure (D82)"
+        },
+        {
+          "id": "K7",
+          "name": "Changes in entitlements due to revaluations (K7)"
+        },
+        {
+          "id": "K5",
+          "name": "Changes in entitlements due to other changes in volume (K5)"
+        },
+        {
+          "id": "F63LE",
+          "name": "Pension entitlements (F63LE)"
+        }
+      ],
+      "total_codes": 15,
+      "truncated": false
+    },
+    {
+      "id": "TYPE",
+      "position": 2,
+      "name": "TYPE",
+      "codes": [
+        {
+          "id": "CNA",
+          "name": "Core national accounts"
+        },
+        {
+          "id": "CNGG",
+          "name": "Non-general government"
+        },
+        {
+          "id": "CNGGDCS",
+          "name": "Defined contribution schemes (A)"
+        },
+        {
+          "id": "CNGGDBS",
+          "name": "Defined benefit schemes and other non-defined contributions schemes (B)"
+        },
+        {
+          "id": "CNGGTOT",
+          "name": "Total (C)"
+        },
+        {
+          "id": "CGGO",
+          "name": "General government"
+        },
+        {
+          "id": "CGGODCS",
+          "name": "Defined contribution schemes (D)"
+        },
+        {
+          "id": "CGGODBS",
+          "name": "Defined benefit schemes for general government employees"
+        },
+        {
+          "id": "CGGOCFC",
+          "name": "Classified in financial corporations (E)"
+        },
+        {
+          "id": "CGGOCGG",
+          "name": "Classified in general government (F)"
+        },
+        {
+          "id": "NCNA",
+          "name": "Not in the core national accounts"
+        },
+        {
+          "id": "NGGO",
+          "name": "General government"
+        },
+        {
+          "id": "NGGDBS",
+          "name": "Defined benefit schemes for general government employees"
+        },
+        {
+          "id": "NGGOCGG",
+          "name": "Classified in general governments (G)"
+        },
+        {
+          "id": "NGGOSSP",
+          "name": "Social security pension schemes (H)"
+        },
+        {
+          "id": "TPS",
+          "name": "Total pension schemes (I)"
+        },
+        {
+          "id": "TCPC",
+          "name": "Counterparts: entitlements of"
+        },
+        {
+          "id": "TCPRH",
+          "name": "Resident households (J)"
+        },
+        {
+          "id": "TCPNR",
+          "name": "Non-resident households (K)"
+        }
+      ],
+      "total_codes": 19,
+      "truncated": false
+    },
+    {
+      "id": "CASE",
+      "position": 3,
+      "name": "CASE",
+      "codes": [
+        {
+          "id": "BA",
+          "name": "Base case"
+        },
+        {
+          "id": "H1",
+          "name": "Hypothesis 1 (base case discount rate minus 1%)"
+        },
+        {
+          "id": "H2",
+          "name": "Hypothesis 2 (base case discount rate plus 1%)"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{ITEM}.{TYPE}.{CASE}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:46+00:00",
+  "schema_version": 1
+}

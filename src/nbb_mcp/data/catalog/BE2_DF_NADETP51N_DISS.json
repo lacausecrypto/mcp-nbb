@@ -1,0 +1,519 @@
+{
+  "agency": "BE2",
+  "id": "DF_NADETP51N_DISS",
+  "version": "1.0",
+  "category": "national_accounts",
+  "is_final": true,
+  "names": {
+    "en": "Gross fixed capital formation by category of assets",
+    "fr": "Formation brute de capital fixe par catégorie d'actifs",
+    "nl": "Bruto-investeringen in vaste activa per categorie van activa",
+    "de": "Gross fixed capital formation by category of assets"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "CATEGORY",
+      "position": 1,
+      "name": "CATEGORY",
+      "codes": [
+        {
+          "id": "P3_AHB",
+          "name": "Final consumption expenditure of non-residents in  Belgium (P.34)"
+        },
+        {
+          "id": "P3_BHA",
+          "name": "Final consumption expenditure of residents abroad (P.33)"
+        },
+        {
+          "id": "P3_D",
+          "name": "Final consumption expenditure of households (national) (P.31 S.14)"
+        },
+        {
+          "id": "P3_N",
+          "name": "Final consumption expenditure of households in Belgium (domestic) (P.31 S.14)"
+        },
+        {
+          "id": "P3_01",
+          "name": "01. Food and non-alcoholic beverages"
+        },
+        {
+          "id": "P3_01_1",
+          "name": "01.1Food"
+        },
+        {
+          "id": "P3_01_2",
+          "name": "01.2 Non-alcoholic beverages"
+        },
+        {
+          "id": "P3_01_21",
+          "name": "01.3 Services for processing primary goods for food and non-alcoholic beverages"
+        },
+        {
+          "id": "P3_02",
+          "name": "02. Alcoholic beverages, tobacco and narcotics"
+        },
+        {
+          "id": "P3_02_1",
+          "name": "02.1 Alcoholic beverages"
+        },
+        {
+          "id": "P3_02_11",
+          "name": "02.2 Alcohol production services"
+        },
+        {
+          "id": "P3_02_2",
+          "name": "02.3 Tobacco"
+        },
+        {
+          "id": "P3_02_3",
+          "name": "02.4 Narcotics"
+        },
+        {
+          "id": "P3_03",
+          "name": "03. Clothing and footwear"
+        },
+        {
+          "id": "P3_03_1",
+          "name": "03.1 Clothing"
+        },
+        {
+          "id": "P3_03_2",
+          "name": "03.2 Footwear"
+        },
+        {
+          "id": "P3_04",
+          "name": "04. Housing, water, electricity, gas and other fuels"
+        },
+        {
+          "id": "P3_04_1",
+          "name": "04.1 Actual rentals for housing"
+        },
+        {
+          "id": "P3_04_2",
+          "name": "04.2 Imputed rentals for housing"
+        },
+        {
+          "id": "P3_04_3",
+          "name": "04.3 Goods and services for minor repairs and home security"
+        },
+        {
+          "id": "P3_04_4",
+          "name": "04.4 Water supply and miscellaneous services relating to the dwelling"
+        },
+        {
+          "id": "P3_04_5",
+          "name": "04.5 Electricity, gas and other fuels"
+        },
+        {
+          "id": "P3_05",
+          "name": "05. Furnishings, household equipment and routine maintenance of the dwelling"
+        },
+        {
+          "id": "P3_05_1",
+          "name": "05.1 Furniture and furnishings, carpets and other floor coverings"
+        },
+        {
+          "id": "P3_05_2",
+          "name": "05.2 Household textiles"
+        },
+        {
+          "id": "P3_05_3",
+          "name": "05.3 Household appliances"
+        },
+        {
+          "id": "P3_05_4",
+          "name": "05.4 Glassware, tableware and household utensils"
+        },
+        {
+          "id": "P3_05_5",
+          "name": "05.5 Tools and equipment for house and garden"
+        },
+        {
+          "id": "P3_05_6",
+          "name": "05.6 Goods and services for routine household maintenance"
+        },
+        {
+          "id": "P3_06",
+          "name": "06. Health"
+        },
+        {
+          "id": "P3_06_1",
+          "name": "06.1 Medical products, appliances and equipment"
+        },
+        {
+          "id": "P3_06_2",
+          "name": "06.2 Out-patient services"
+        },
+        {
+          "id": "P3_06_3",
+          "name": "06.3 Medical dental and paramedical services (in a hospital)"
+        },
+        {
+          "id": "P3_06_4",
+          "name": "06.4 Other health services"
+        },
+        {
+          "id": "P3_07",
+          "name": "07. Transport"
+        },
+        {
+          "id": "P3_07_04",
+          "name": "07.4 Transport services of goods"
+        },
+        {
+          "id": "P3_07_1",
+          "name": "07.1 Purchase of vehicles"
+        },
+        {
+          "id": "P3_07_2",
+          "name": "07.2 Operation of personal transport equipment"
+        },
+        {
+          "id": "P3_07_3",
+          "name": "07.3 Passenger transport services"
+        },
+        {
+          "id": "P3_08",
+          "name": "08. Communication"
+        },
+        {
+          "id": "P3_08_1",
+          "name": "08.1 Information and communication equipment"
+        },
+        {
+          "id": "P3_08_2",
+          "name": "08.2 Software excluding games"
+        },
+        {
+          "id": "P3_08_3",
+          "name": "08.3 Information and communication services"
+        },
+        {
+          "id": "P3_09",
+          "name": "09. Recreation, sport and culture"
+        },
+        {
+          "id": "P3_09_1",
+          "name": "09.1 Recreational durables"
+        },
+        {
+          "id": "P3_09_2",
+          "name": "09.2 Other recreational goods"
+        },
+        {
+          "id": "P3_09_3",
+          "name": "09.3 Garden products and pets"
+        },
+        {
+          "id": "P3_09_4",
+          "name": "09.4  Recreational services"
+        },
+        {
+          "id": "P3_09_5",
+          "name": "09.7 Newspapers, books and stationery"
+        },
+        {
+          "id": "P3_09_6",
+          "name": "09.8 Package holidays"
+        },
+        {
+          "id": "P3_09_7",
+          "name": "09.5 Cultural goods"
+        },
+        {
+          "id": "P3_09_8",
+          "name": "09.6 Cultural services"
+        },
+        {
+          "id": "P3_10",
+          "name": "10. Education"
+        },
+        {
+          "id": "P3_11",
+          "name": "11. Restaurants and accommodation services"
+        },
+        {
+          "id": "P3_11_1",
+          "name": "11.1 Restaurants and pubs"
+        },
+        {
+          "id": "P3_11_2",
+          "name": "11.2 Hotels"
+        },
+        {
+          "id": "P3_12",
+          "name": "12 Insurance and financial services"
+        },
+        {
+          "id": "P3_12_5",
+          "name": "12.1 Insurance"
+        },
+        {
+          "id": "P3_12_6",
+          "name": "12.2 Financial services"
+        },
+        {
+          "id": "P3_13",
+          "name": "13 Personal care, social protection and miscellaneous goods and services"
+        },
+        {
+          "id": "P3_12_1",
+          "name": "13.1 Personal care"
+        },
+        {
+          "id": "P3_12_3",
+          "name": "13.2 Personal effects n.e.c."
+        },
+        {
+          "id": "P3_12_4",
+          "name": "13.3 Social protection"
+        },
+        {
+          "id": "P3_12_7",
+          "name": "13.9 Other services n.e.c."
+        },
+        {
+          "id": "P3_NEF",
+          "name": "p.m. Final consumption expenditure of households (national) excluding FISIM"
+        },
+        {
+          "id": "P3_P31S14",
+          "name": "Final consumption expenditure of households (domestic concept) (P.31 S.14)"
+        },
+        {
+          "id": "P3_P311",
+          "name": "Durable goods (P.311)"
+        },
+        {
+          "id": "P3_P312K",
+          "name": "Other (P.312K)"
+        },
+        {
+          "id": "P3_P312",
+          "name": "Semi-durable goods (P.312)"
+        },
+        {
+          "id": "P3_P313",
+          "name": "Non-durable goods (P.313)"
+        },
+        {
+          "id": "P3_P314",
+          "name": "Services (P.314)"
+        },
+        {
+          "id": "P4_N",
+          "name": "Household actual final consumption (P.4)"
+        },
+        {
+          "id": "P3_S13",
+          "name": "Individual consumption expenditure of general government (P.31 S.13)"
+        },
+        {
+          "id": "P3_S13_04",
+          "name": "15.1 Housing"
+        },
+        {
+          "id": "P3_S13_06",
+          "name": "15.2 Health"
+        },
+        {
+          "id": "P3_S13_09",
+          "name": "15.3 Recreation and culture"
+        },
+        {
+          "id": "P3_S13_10",
+          "name": "15.4 Education"
+        },
+        {
+          "id": "P3_S13_12_4",
+          "name": "15.5 Social protection"
+        },
+        {
+          "id": "P3_S14",
+          "name": "Final consumption expenditure of households (national) (P.31 S.14)"
+        },
+        {
+          "id": "P3_S15",
+          "name": "Individual consumption expenditure of non-profit institutions serving households (NPISHs) (P.31 S.15)"
+        },
+        {
+          "id": "P3_S15_04",
+          "name": "14.1 Housing"
+        },
+        {
+          "id": "P3_S15_06",
+          "name": "14.2 Health"
+        },
+        {
+          "id": "P3_S15_09",
+          "name": "14.3 Recreation and culture"
+        },
+        {
+          "id": "P3_S15_10",
+          "name": "14.4 Education"
+        },
+        {
+          "id": "P3_S15_12_4",
+          "name": "14.5 Social protection"
+        },
+        {
+          "id": "P3_S15_12_7",
+          "name": "14.6 Other services"
+        },
+        {
+          "id": "TOT",
+          "name": "Fixed assets (AN.11000)"
+        },
+        {
+          "id": "AN1",
+          "name": "Dwellings (AN.11100)"
+        },
+        {
+          "id": "AN2",
+          "name": "Non-residential buildings & other structures (AN.11210 + AN.11220)"
+        },
+        {
+          "id": "AN3",
+          "name": "Machinery and equipment & weapon systems (AN.11310 + AN.11321 + AN.11322 + AN.11390 + AN.11400)"
+        },
+        {
+          "id": "AN4",
+          "name": "Transport equipment (AN.11310)"
+        },
+        {
+          "id": "AN5",
+          "name": "Computer & hardware (AN.11321)"
+        },
+        {
+          "id": "AN6",
+          "name": "Telecoms (AN.11322)"
+        },
+        {
+          "id": "AN7",
+          "name": "Other machinery and equipment & weapon systems (AN.11390 + AN.11400)"
+        },
+        {
+          "id": "AN8",
+          "name": "Cultivated biological resources (AN.11500)"
+        },
+        {
+          "id": "AN9",
+          "name": "Intellectual property products (AN.11700)"
+        },
+        {
+          "id": "AN10",
+          "name": "Research and development (AN.11710)"
+        },
+        {
+          "id": "AN11",
+          "name": "Computer software and databases (AN.11730)"
+        },
+        {
+          "id": "AN12",
+          "name": "Other intellectual property products (AN.11740 + AN.11790)"
+        }
+      ],
+      "total_codes": 99,
+      "truncated": false
+    },
+    {
+      "id": "PRICES",
+      "position": 2,
+      "name": "PRICES",
+      "codes": [
+        {
+          "id": "CQ",
+          "name": "Contributions to the volume change - Q to Q"
+        },
+        {
+          "id": "CY",
+          "name": "Contributions to the volume change - Y to Y"
+        },
+        {
+          "id": "D",
+          "name": "Deflator"
+        },
+        {
+          "id": "L",
+          "name": "In volume: chain linked, in millions of euro"
+        },
+        {
+          "id": "LQ",
+          "name": "Chain linked - Q to Q percentage change (reference year 2020)"
+        },
+        {
+          "id": "LY",
+          "name": "Chain linked - Y to Y percentage change (reference year 2020)"
+        },
+        {
+          "id": "V",
+          "name": "Current prices in millions of euro"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{CATEGORY}.{PRICES}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "schema_version": 1
+}

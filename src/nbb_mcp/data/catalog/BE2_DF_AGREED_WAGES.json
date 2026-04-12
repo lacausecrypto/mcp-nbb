@@ -1,0 +1,351 @@
+{
+  "agency": "BE2",
+  "id": "DF_AGREED_WAGES",
+  "version": "1.0",
+  "category": "prices",
+  "is_final": true,
+  "names": {
+    "en": "Collectively agreed wages",
+    "fr": "Salaires conventionnels",
+    "nl": "Regelingslonen",
+    "de": "Collectively agreed wages"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "WORKER_CATEGORY",
+      "position": 1,
+      "name": "WORKER_CATEGORY",
+      "codes": [
+        {
+          "id": "MANUAL",
+          "name": "Manual workers"
+        },
+        {
+          "id": "NO_MANUAL",
+          "name": "Non-manual workers"
+        },
+        {
+          "id": "ALL",
+          "name": "Total"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "INDEX_BASE",
+      "position": 2,
+      "name": "INDEX_BASE",
+      "codes": [
+        {
+          "id": "1914",
+          "name": "April 1914"
+        },
+        {
+          "id": "1953",
+          "name": "1953"
+        },
+        {
+          "id": "1966",
+          "name": "1966"
+        },
+        {
+          "id": "1971",
+          "name": "1971"
+        },
+        {
+          "id": "1974",
+          "name": "2nd half-year 1974 / 1st half-year 1975"
+        },
+        {
+          "id": "1981",
+          "name": "1981"
+        },
+        {
+          "id": "1988",
+          "name": "1988"
+        },
+        {
+          "id": "1996",
+          "name": "1996"
+        },
+        {
+          "id": "2004",
+          "name": "2004"
+        },
+        {
+          "id": "2010",
+          "name": "2010"
+        },
+        {
+          "id": "2013",
+          "name": "2013"
+        },
+        {
+          "id": "2015",
+          "name": "2015"
+        },
+        {
+          "id": "2016",
+          "name": "2016"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "1997",
+          "name": "1997"
+        },
+        {
+          "id": "2020",
+          "name": "2020"
+        },
+        {
+          "id": "2021",
+          "name": "2021"
+        },
+        {
+          "id": "2025",
+          "name": "2025"
+        }
+      ],
+      "total_codes": 18,
+      "truncated": false
+    },
+    {
+      "id": "INDEX_TYPE",
+      "position": 3,
+      "name": "INDEX_TYPE",
+      "codes": [
+        {
+          "id": "NCP",
+          "name": "Consumer Price Index"
+        },
+        {
+          "id": "WNICP",
+          "name": "Weights of Consumer Price Index"
+        },
+        {
+          "id": "HCP",
+          "name": "Harmonized Index of Consumer Prices"
+        },
+        {
+          "id": "INDPROD",
+          "name": "Industrial Production"
+        },
+        {
+          "id": "CONSPROD",
+          "name": "Construction Industry Production"
+        },
+        {
+          "id": "RAWMATERIALSIP",
+          "name": "Basic Materials Price Index"
+        },
+        {
+          "id": "WAGES",
+          "name": "Regulatory wages"
+        },
+        {
+          "id": "HUR",
+          "name": "Adjusted Harmonized Unemployment Rate"
+        },
+        {
+          "id": "NHU",
+          "name": "Non-harmonized Unemployment"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "LBCI",
+          "name": "Labor costs, wages, and gross salaries in industry"
+        },
+        {
+          "id": "NFT",
+          "name": "Non harmonized external trade"
+        },
+        {
+          "id": "HFT",
+          "name": "Harmonized external trade"
+        }
+      ],
+      "total_codes": 13,
+      "truncated": false
+    },
+    {
+      "id": "DERIVATION",
+      "position": 4,
+      "name": "DERIVATION",
+      "codes": [
+        {
+          "id": "INDICES",
+          "name": "Indices"
+        },
+        {
+          "id": "GROWTH_RATE",
+          "name": "Percentage of change"
+        },
+        {
+          "id": "RATE",
+          "name": "Percentage"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "GROWTH_VALUE",
+          "name": "Value of change"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "WAGES_SECTOR",
+      "position": 5,
+      "name": "WAGES_SECTOR",
+      "codes": [
+        {
+          "id": "TOT",
+          "name": "Overall"
+        },
+        {
+          "id": "MI",
+          "name": "Manufacturing industries"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    },
+    {
+      "id": "ADJUSTMENT",
+      "position": 6,
+      "name": "ADJUSTMENT",
+      "codes": [
+        {
+          "id": "N",
+          "name": "Neither seasonally adjusted nor calendar adjusted data"
+        },
+        {
+          "id": "Y",
+          "name": "Calendar and seasonally adjusted data"
+        },
+        {
+          "id": "T",
+          "name": "Trend"
+        },
+        {
+          "id": "W",
+          "name": "Calendar adjusted data, not seasonally adjusted"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "C",
+          "name": "Trend-cycle data, calendar adjusted"
+        },
+        {
+          "id": "R",
+          "name": "Trend-cycle data, not calendar adjusted"
+        },
+        {
+          "id": "K",
+          "name": "Calendar component"
+        },
+        {
+          "id": "X",
+          "name": "Seasonal component"
+        },
+        {
+          "id": "M",
+          "name": "Seasonal and calendar components"
+        },
+        {
+          "id": "I",
+          "name": "Irregular component"
+        },
+        {
+          "id": "S",
+          "name": "Seasonally adjusted data, not calendar adjusted"
+        }
+      ],
+      "total_codes": 12,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{WORKER_CATEGORY}.{INDEX_BASE}.{INDEX_TYPE}.{DERIVATION}.{WAGES_SECTOR}.{ADJUSTMENT}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:29+00:00",
+  "schema_version": 1
+}

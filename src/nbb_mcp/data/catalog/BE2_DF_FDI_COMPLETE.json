@@ -1,0 +1,415 @@
+{
+  "agency": "BE2",
+  "id": "DF_FDI_COMPLETE",
+  "version": "1.0",
+  "category": "balance_of_payments",
+  "is_final": true,
+  "names": {
+    "en": "Foreign Direct Investments",
+    "fr": "Investissements directs avec l'étranger",
+    "nl": "Directe investeringen met het buitenland",
+    "de": "Foreign Direct Investments"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "FDI_ACCOUNT",
+      "position": 1,
+      "name": "FDI_ACCOUNT",
+      "codes": [
+        {
+          "id": "F",
+          "name": "Direct investment flows"
+        },
+        {
+          "id": "S",
+          "name": "Direct investment stocks"
+        },
+        {
+          "id": "I",
+          "name": "Direct investment income"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    },
+    {
+      "id": "FDI_BALANCE",
+      "position": 2,
+      "name": "FDI_BALANCE",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Assets"
+        },
+        {
+          "id": "L",
+          "name": "Liabilities"
+        },
+        {
+          "id": "R",
+          "name": "Receipts"
+        },
+        {
+          "id": "E",
+          "name": "Expenditures"
+        },
+        {
+          "id": "N",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "FDI_DIRECTION",
+      "position": 3,
+      "name": "FDI_DIRECTION",
+      "codes": [
+        {
+          "id": "I",
+          "name": "Inward"
+        },
+        {
+          "id": "O",
+          "name": "Outward"
+        },
+        {
+          "id": "N",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    },
+    {
+      "id": "FDI_ITEM",
+      "position": 4,
+      "name": "FDI_ITEM",
+      "codes": [
+        {
+          "id": "T",
+          "name": "Total capital"
+        },
+        {
+          "id": "E",
+          "name": "Equity"
+        },
+        {
+          "id": "O",
+          "name": "Other capital"
+        },
+        {
+          "id": "I",
+          "name": "Total income"
+        },
+        {
+          "id": "D",
+          "name": "Dividends"
+        },
+        {
+          "id": "R",
+          "name": "Reinvested earnings"
+        },
+        {
+          "id": "N",
+          "name": "Debt instruments"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "FDI_AREA",
+      "position": 5,
+      "name": "FDI_AREA",
+      "codes": [
+        {
+          "id": "A1",
+          "name": "Total World"
+        },
+        {
+          "id": "CO",
+          "name": "Countries"
+        },
+        {
+          "id": "DE",
+          "name": "Germany"
+        },
+        {
+          "id": "ES",
+          "name": "Spain"
+        },
+        {
+          "id": "FI",
+          "name": "Finland"
+        },
+        {
+          "id": "FR",
+          "name": "France"
+        },
+        {
+          "id": "IT",
+          "name": "Italy"
+        },
+        {
+          "id": "LU",
+          "name": "Luxembourg"
+        },
+        {
+          "id": "NO",
+          "name": "Norway"
+        },
+        {
+          "id": "NL",
+          "name": "Netherlands"
+        },
+        {
+          "id": "GB",
+          "name": "United Kingdom"
+        },
+        {
+          "id": "SE",
+          "name": "Sweden"
+        },
+        {
+          "id": "CH",
+          "name": "Switzerland"
+        },
+        {
+          "id": "US",
+          "name": "United States of America"
+        },
+        {
+          "id": "BR",
+          "name": "Brazil"
+        },
+        {
+          "id": "JP",
+          "name": "Japan"
+        },
+        {
+          "id": "CN",
+          "name": "China"
+        },
+        {
+          "id": "HK",
+          "name": "Hong Kong"
+        },
+        {
+          "id": "DK",
+          "name": "Denmark"
+        },
+        {
+          "id": "PT",
+          "name": "Portugal"
+        },
+        {
+          "id": "AT",
+          "name": "Austria"
+        },
+        {
+          "id": "CZ",
+          "name": "Czech Republic"
+        },
+        {
+          "id": "GA",
+          "name": "Geographical areas"
+        },
+        {
+          "id": "E1",
+          "name": "Europe"
+        },
+        {
+          "id": "E4",
+          "name": "Africa"
+        },
+        {
+          "id": "E7",
+          "name": "America"
+        },
+        {
+          "id": "F2",
+          "name": "Asia"
+        },
+        {
+          "id": "GX",
+          "name": "Oceania and Polar regions"
+        },
+        {
+          "id": "EA",
+          "name": "Economic areas"
+        },
+        {
+          "id": "U2",
+          "name": "Euro area"
+        },
+        {
+          "id": "U3",
+          "name": "Europe without euro area"
+        },
+        {
+          "id": "V3",
+          "name": "EU-27"
+        },
+        {
+          "id": "V4",
+          "name": "Europe without EU-27"
+        },
+        {
+          "id": "A8",
+          "name": "OECD countries"
+        }
+      ],
+      "total_codes": 34,
+      "truncated": false
+    },
+    {
+      "id": "FDI_SECTOR",
+      "position": 6,
+      "name": "FDI_SECTOR",
+      "codes": [
+        {
+          "id": "TOT",
+          "name": "Total activities"
+        },
+        {
+          "id": "A",
+          "name": "Agriculture, forestry and fishing"
+        },
+        {
+          "id": "B",
+          "name": "Mining and quarrying"
+        },
+        {
+          "id": "C",
+          "name": "Manufacturing"
+        },
+        {
+          "id": "D",
+          "name": "Electricity and gas production and distribution"
+        },
+        {
+          "id": "E",
+          "name": "Water production and distribution"
+        },
+        {
+          "id": "F",
+          "name": "Construction"
+        },
+        {
+          "id": "TS",
+          "name": "Total services, of which:"
+        },
+        {
+          "id": "G",
+          "name": "Wholesale and repairs"
+        },
+        {
+          "id": "H",
+          "name": "Transports and storage"
+        },
+        {
+          "id": "I",
+          "name": "Hotels and restaurants"
+        },
+        {
+          "id": "J",
+          "name": "Information and communication"
+        },
+        {
+          "id": "K",
+          "name": "Financial intermediation"
+        },
+        {
+          "id": "LM",
+          "name": "Real estate, renting , professional,scientific and technical activities"
+        },
+        {
+          "id": "P",
+          "name": "Education"
+        },
+        {
+          "id": "Q",
+          "name": "Health, social, community and personal services"
+        },
+        {
+          "id": "R",
+          "name": "Recreational, cultural and sporting activities"
+        },
+        {
+          "id": "X",
+          "name": "Not allocated"
+        },
+        {
+          "id": "L1",
+          "name": "Private purchases and sales of real estate"
+        }
+      ],
+      "total_codes": 19,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{FDI_ACCOUNT}.{FDI_BALANCE}.{FDI_DIRECTION}.{FDI_ITEM}.{FDI_AREA}.{FDI_SECTOR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:59+00:00",
+  "schema_version": 1
+}

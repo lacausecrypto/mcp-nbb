@@ -1,0 +1,254 @@
+{
+  "agency": "BE2",
+  "id": "DF_EXR",
+  "version": "1.0",
+  "category": "exchange_interest_rates",
+  "is_final": true,
+  "names": {
+    "en": "Reference exchange rates of the euro in national currency units",
+    "fr": "Cours de change de référence de l'euro en unités de monnaie nationale",
+    "nl": "Referentiewisselkoersen van de euro in nationale munteenheden",
+    "de": "Reference exchange rates of the euro in national currency units"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "EXR_CURRENCY",
+      "position": 1,
+      "name": "EXR_CURRENCY",
+      "codes": [
+        {
+          "id": "USD",
+          "name": "US dollar"
+        },
+        {
+          "id": "JPY",
+          "name": "Japanese yen"
+        },
+        {
+          "id": "DKK",
+          "name": "Danish krone"
+        },
+        {
+          "id": "SEK",
+          "name": "Swedish krona"
+        },
+        {
+          "id": "GBP",
+          "name": "Pound sterling"
+        },
+        {
+          "id": "NOK",
+          "name": "Norwegian krone"
+        },
+        {
+          "id": "CZK",
+          "name": "Czech koruna"
+        },
+        {
+          "id": "CYP",
+          "name": "Cyprus pound"
+        },
+        {
+          "id": "EEK",
+          "name": "Estonian kroon"
+        },
+        {
+          "id": "HUF",
+          "name": "Hungarian forint"
+        },
+        {
+          "id": "PLN",
+          "name": "Polish zloty"
+        },
+        {
+          "id": "SIT",
+          "name": "Slovenian tolar"
+        },
+        {
+          "id": "CHF",
+          "name": "Swiss franc"
+        },
+        {
+          "id": "CAD",
+          "name": "Canadian dollar"
+        },
+        {
+          "id": "AUD",
+          "name": "Australian dollar"
+        },
+        {
+          "id": "NZD",
+          "name": "New Zealand dollar"
+        },
+        {
+          "id": "ZAR",
+          "name": "South African rand"
+        },
+        {
+          "id": "BGN",
+          "name": "Bulgarian lev"
+        },
+        {
+          "id": "HKD",
+          "name": "Hong Kong dollar"
+        },
+        {
+          "id": "ISK",
+          "name": "Icelandic krona"
+        },
+        {
+          "id": "KRW",
+          "name": "South Korean won"
+        },
+        {
+          "id": "LTL",
+          "name": "Lithuanian litas"
+        },
+        {
+          "id": "LVL",
+          "name": "Latvian lats"
+        },
+        {
+          "id": "MTL",
+          "name": "Maltese lira"
+        },
+        {
+          "id": "RON",
+          "name": "New Romanian leu"
+        },
+        {
+          "id": "ROL",
+          "name": "Romanian leu"
+        },
+        {
+          "id": "SGD",
+          "name": "Singapore dollar"
+        },
+        {
+          "id": "SKK",
+          "name": "Slovak koruna"
+        },
+        {
+          "id": "TRY",
+          "name": "New Turkish lira"
+        },
+        {
+          "id": "HRK",
+          "name": "Croatian kuna"
+        },
+        {
+          "id": "RUB",
+          "name": "Russian rouble"
+        },
+        {
+          "id": "CNY",
+          "name": "Chinese yuan renminbi"
+        },
+        {
+          "id": "IDR",
+          "name": "Indonesian rupiah"
+        },
+        {
+          "id": "MYR",
+          "name": "Malaysian ringgit"
+        },
+        {
+          "id": "PHP",
+          "name": "Philippine peso"
+        },
+        {
+          "id": "THB",
+          "name": "Thai baht"
+        },
+        {
+          "id": "MXN",
+          "name": "Mexican peso"
+        },
+        {
+          "id": "BRL",
+          "name": "Brazilian real"
+        },
+        {
+          "id": "INR",
+          "name": "Indian rupee"
+        },
+        {
+          "id": "ILS",
+          "name": "Israeli shekel"
+        }
+      ],
+      "total_codes": 40,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{EXR_CURRENCY}",
+  "common_queries": [
+    {
+      "label": "EUR/USD daily, last 30 days",
+      "key": "D.USD",
+      "params": {
+        "lastNObservations": 30
+      }
+    },
+    {
+      "label": "EUR/GBP monthly 2024",
+      "key": "M.GBP",
+      "params": {
+        "startPeriod": "2024-01",
+        "endPeriod": "2024-12"
+      }
+    },
+    {
+      "label": "EUR/JPY daily last week",
+      "key": "D.JPY",
+      "params": {
+        "lastNObservations": 7
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:11+00:00",
+  "schema_version": 1
+}

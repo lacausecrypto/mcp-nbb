@@ -1,0 +1,1010 @@
+{
+  "agency": "BE2",
+  "id": "DF_EXTERNAL_TRADE_OVERVIEW_TEST",
+  "version": "1.0",
+  "category": "foreign_trade",
+  "is_final": true,
+  "names": {
+    "en": "Foreign trade - Overview",
+    "fr": "Commerce extérieur - synthèse",
+    "nl": "Buitenlandse handel - overzicht",
+    "de": "Foreign trade - Overview"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "AREA",
+      "position": 1,
+      "name": "AREA",
+      "codes": [
+        {
+          "id": "_X",
+          "name": "Not allocated/ unspecified"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "1A",
+          "name": "International organisations"
+        },
+        {
+          "id": "1B",
+          "name": "UN organisations"
+        },
+        {
+          "id": "1C",
+          "name": "IMF (International Monetary Fund)"
+        },
+        {
+          "id": "1D",
+          "name": "WTO (World Trade Organisation)"
+        },
+        {
+          "id": "1E",
+          "name": "IBRD (International Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "1F",
+          "name": "IDA (International Development Association)"
+        },
+        {
+          "id": "1G",
+          "name": "ICSID (International Centre for Settlement of Investment Disputes)"
+        },
+        {
+          "id": "1H",
+          "name": "UNESCO (United Nations Educational, Scientific and Cultural Organisation)"
+        },
+        {
+          "id": "1J",
+          "name": "FAO (Food and Agriculture Organisation)"
+        },
+        {
+          "id": "1K",
+          "name": "WHO (World Health Organisation)"
+        },
+        {
+          "id": "1L",
+          "name": "IFAD (International Fund for Agricultural Development)"
+        },
+        {
+          "id": "1M",
+          "name": "IFC (International Finance Corporation)"
+        },
+        {
+          "id": "1N",
+          "name": "MIGA (Multilateral Investment Guarantee Agency)"
+        },
+        {
+          "id": "1O",
+          "name": "UNICEF (United Nations Children Fund)"
+        },
+        {
+          "id": "1P",
+          "name": "UNHCR (United Nations High Commissioner for Refugees)"
+        },
+        {
+          "id": "1Q",
+          "name": "UNRWA (United Nations Relief and Works Agency for Palestine)"
+        },
+        {
+          "id": "1R",
+          "name": "IAEA (International Atomic Energy Agency)"
+        },
+        {
+          "id": "1S",
+          "name": "ILO (International Labour Organisation)"
+        },
+        {
+          "id": "1T",
+          "name": "ITU (International Telecommunication Union)"
+        },
+        {
+          "id": "1U",
+          "name": "Rest of UN Organisations n.i.e."
+        },
+        {
+          "id": "1U1",
+          "name": "UNECE (United Nations Economic Commission for Europe)"
+        },
+        {
+          "id": "1U2",
+          "name": "UNFCCC (United Nations Framework Convention for Climate Change)"
+        },
+        {
+          "id": "1V",
+          "name": "Universal Postal Union"
+        },
+        {
+          "id": "1W",
+          "name": "World Bank Group"
+        },
+        {
+          "id": "4A",
+          "name": "All the European Union Institutions excluding the institutions of the euro area (changing composition)"
+        },
+        {
+          "id": "4AA",
+          "name": "All the European Union Institutions excluding the ECB"
+        },
+        {
+          "id": "4B",
+          "name": "EMS (European Monetary System)"
+        },
+        {
+          "id": "4C",
+          "name": "EIB (European Investment Bank)"
+        },
+        {
+          "id": "4D",
+          "name": "European Commission"
+        },
+        {
+          "id": "4DJ",
+          "name": "All the European Union Institutions financed via the EU Budget"
+        },
+        {
+          "id": "4E",
+          "name": "EDF (European Development Fund)"
+        },
+        {
+          "id": "4F",
+          "name": "ECB (European Central Bank)"
+        },
+        {
+          "id": "4G",
+          "name": "EIF (European Investment Fund)"
+        },
+        {
+          "id": "4H",
+          "name": "European Coal and Steel Community"
+        },
+        {
+          "id": "4I",
+          "name": "Neighbourhood Investment Facility"
+        },
+        {
+          "id": "4J",
+          "name": "Other European Union Institutions, Organs and Organisms covered by General budget"
+        },
+        {
+          "id": "4J1",
+          "name": "European Parliament"
+        },
+        {
+          "id": "4J2",
+          "name": "Council of the European Union"
+        },
+        {
+          "id": "4J3",
+          "name": "Court of Justice"
+        },
+        {
+          "id": "4J4",
+          "name": "Court of Auditors"
+        },
+        {
+          "id": "4J5",
+          "name": "European Council"
+        },
+        {
+          "id": "4J6",
+          "name": "Economic and Social Committee"
+        },
+        {
+          "id": "4J7",
+          "name": "Committee of Regions"
+        },
+        {
+          "id": "4J8",
+          "name": "Other small European Union Institutions and agencies (Ombudsman, Data Protection Supervisor etc.)"
+        },
+        {
+          "id": "4J81",
+          "name": "Agency for the Cooperation of Energy Regulators"
+        },
+        {
+          "id": "4J810",
+          "name": "European Centre for Disease Prevention and Control"
+        },
+        {
+          "id": "4J811",
+          "name": "European Centre for the Development of Vocational Training"
+        },
+        {
+          "id": "4J812",
+          "name": "European Chemicals Agency"
+        },
+        {
+          "id": "4J813",
+          "name": "European Data Protection Supervisor"
+        },
+        {
+          "id": "4J814",
+          "name": "European Defence Agency"
+        },
+        {
+          "id": "4J815",
+          "name": "European Environment Agency"
+        },
+        {
+          "id": "4J816",
+          "name": "European External Action Service"
+        },
+        {
+          "id": "4J817",
+          "name": "European Fisheries Control Agency"
+        },
+        {
+          "id": "4J818",
+          "name": "European Food Safety Authority"
+        },
+        {
+          "id": "4J819",
+          "name": "European Foundation for the Improvement of Living and Working Conditions"
+        },
+        {
+          "id": "4J82",
+          "name": "Body of European Regulators for Electronic Communications"
+        },
+        {
+          "id": "4J820",
+          "name": "European GNSS Agency"
+        },
+        {
+          "id": "4J821",
+          "name": "European Institute for Gender Equality"
+        },
+        {
+          "id": "4J822",
+          "name": "European Institute of Innovation and Technology"
+        },
+        {
+          "id": "4J823",
+          "name": "European Maritime Safety Agency"
+        },
+        {
+          "id": "4J824",
+          "name": "European Medicines Agency"
+        },
+        {
+          "id": "4J825",
+          "name": "European Monitoring Centre for Drugs and Drug Addiction"
+        },
+        {
+          "id": "4J826",
+          "name": "European Network and Information Security Agency"
+        },
+        {
+          "id": "4J827",
+          "name": "European Ombudsman"
+        },
+        {
+          "id": "4J828",
+          "name": "European Personnel Selection Office"
+        },
+        {
+          "id": "4J829",
+          "name": "European Police College"
+        },
+        {
+          "id": "4J83",
+          "name": "Community Plant Variety Office"
+        },
+        {
+          "id": "4J830",
+          "name": "European Police Office"
+        },
+        {
+          "id": "4J831",
+          "name": "European Public Prosecutor's Office (in preparation)"
+        },
+        {
+          "id": "4J832",
+          "name": "European Railway Agency"
+        },
+        {
+          "id": "4J833",
+          "name": "European School of Administration"
+        },
+        {
+          "id": "4J834",
+          "name": "European Training Foundation"
+        },
+        {
+          "id": "4J835",
+          "name": "European Union Agency for Fundamental Rights"
+        },
+        {
+          "id": "4J836",
+          "name": "European Union Institute for Security Studies"
+        },
+        {
+          "id": "4J837",
+          "name": "European Union Intellectual Property Office"
+        },
+        {
+          "id": "4J838",
+          "name": "European Union Satellite Centre"
+        },
+        {
+          "id": "4J839",
+          "name": "Publications Office of the European Union"
+        },
+        {
+          "id": "4J84",
+          "name": "Computer Emergency Response Team"
+        },
+        {
+          "id": "4J840",
+          "name": "The European Union’s Judicial Cooperation Unit"
+        },
+        {
+          "id": "4J841",
+          "name": "Translation Centre for the Bodies of the European Union"
+        },
+        {
+          "id": "4J842",
+          "name": "ATHENA Mechanism"
+        },
+        {
+          "id": "4J85",
+          "name": "European Agency for Safety and Health at Work"
+        },
+        {
+          "id": "4J86",
+          "name": "European Agency for the Management of Operational Cooperation at the External Borders"
+        },
+        {
+          "id": "4J87",
+          "name": "European Agency for the operational management of large-scale IT systems in the area of freedom, security and justice"
+        },
+        {
+          "id": "4J88",
+          "name": "European Asylum Support Office"
+        },
+        {
+          "id": "4J89",
+          "name": "European Aviation Safety Agency"
+        },
+        {
+          "id": "4M",
+          "name": "SRB (Single Resolution Board)"
+        },
+        {
+          "id": "4R",
+          "name": "EU-Africa Infrastructure Trust Fund"
+        },
+        {
+          "id": "4S",
+          "name": "ESM (European Stability Mechanism)"
+        },
+        {
+          "id": "4T",
+          "name": "Joint Committee of the European Supervisory Authorities (ESAs)"
+        },
+        {
+          "id": "4T1",
+          "name": "EBA (European Banking Authority)"
+        },
+        {
+          "id": "4T2",
+          "name": "ESMA (European Securities and Markets Authority)"
+        },
+        {
+          "id": "4T3",
+          "name": "EIOPA (European Insurance and Occupational Pensions Authority)"
+        },
+        {
+          "id": "4U",
+          "name": "EURATOM"
+        },
+        {
+          "id": "4V",
+          "name": "FEMIP (Facility for Euro-Mediterranean Investment and Partnership)"
+        },
+        {
+          "id": "4W",
+          "name": "EFSF (European Financial Stability Facility)"
+        },
+        {
+          "id": "4X",
+          "name": "All the European Union Institutions not financed via the EU Budget"
+        },
+        {
+          "id": "4Y",
+          "name": "All European Community Institutions, Organs and Organisms, including ECB, ESM and EFSF"
+        },
+        {
+          "id": "5A",
+          "name": "Other International Organisations (financial institutions)"
+        },
+        {
+          "id": "5AA",
+          "name": "Multilateral Lending Agencies"
+        },
+        {
+          "id": "5B",
+          "name": "BIS (Bank for International Settlements)"
+        },
+        {
+          "id": "5C",
+          "name": "IADB (Inter-American Development Bank)"
+        },
+        {
+          "id": "5D",
+          "name": "AfDB (African Development Bank)"
+        },
+        {
+          "id": "5E",
+          "name": "AsDB (Asian Development Bank)"
+        },
+        {
+          "id": "5F",
+          "name": "EBRD (European Bank for Reconstruction and Development)"
+        },
+        {
+          "id": "5G",
+          "name": "IIC (Inter-American Investment Corporation)"
+        },
+        {
+          "id": "5H",
+          "name": "NIB (Nordic Investment Bank)"
+        },
+        {
+          "id": "5I",
+          "name": "ECCB (Eastern Caribbean Central Bank)"
+        },
+        {
+          "id": "5J",
+          "name": "IBEC (International Bank for Economic Co-operation)"
+        },
+        {
+          "id": "5K",
+          "name": "IIB (International Investment Bank)"
+        },
+        {
+          "id": "5L",
+          "name": "CDB (Caribbean Development Bank)"
+        },
+        {
+          "id": "5M",
+          "name": "AMF (Arab Monetary Fund)"
+        },
+        {
+          "id": "5N",
+          "name": "BADEA (Banque arabe pour le développement économique en Afrique)"
+        },
+        {
+          "id": "5O",
+          "name": "BCEAO (Banque Centrale des Etats de l`Afrique de l`Ouest)"
+        },
+        {
+          "id": "5P",
+          "name": "CASDB (Central African States Development Bank)"
+        },
+        {
+          "id": "5Q",
+          "name": "African Development Fund"
+        },
+        {
+          "id": "5R",
+          "name": "Asian Development Fund"
+        },
+        {
+          "id": "5S",
+          "name": "Fonds spécial unifié de développement"
+        },
+        {
+          "id": "5T",
+          "name": "CABEI (Central American Bank for Economic Integration)"
+        },
+        {
+          "id": "5U",
+          "name": "ADC (Andean Development Corporation)"
+        },
+        {
+          "id": "5W",
+          "name": "BEAC (Banque des Etats de l`Afrique Centrale)"
+        },
+        {
+          "id": "5X",
+          "name": "Asian Infrastructure Investment Bank"
+        },
+        {
+          "id": "5Z",
+          "name": "Other International Financial Organisations n.i.e."
+        },
+        {
+          "id": "5Z1",
+          "name": "Africa Finance Corporation"
+        },
+        {
+          "id": "5Z10",
+          "name": "International Civil Aviation Organization"
+        },
+        {
+          "id": "5Z11",
+          "name": "International Cocoa Organization"
+        },
+        {
+          "id": "5Z12",
+          "name": "International Coffee Organization"
+        },
+        {
+          "id": "5Z13",
+          "name": "International Copper Study Group"
+        },
+        {
+          "id": "5Z14",
+          "name": "International Cotton Advisory Committee"
+        },
+        {
+          "id": "5Z15",
+          "name": "International Grains Council"
+        },
+        {
+          "id": "5Z16",
+          "name": "International Jute Study Group"
+        },
+        {
+          "id": "5Z17",
+          "name": "International Lead and Zinc Study Group"
+        },
+        {
+          "id": "5Z18",
+          "name": "International Maritime Organization"
+        },
+        {
+          "id": "5Z19",
+          "name": "International Maritime Satellite Organization"
+        },
+        {
+          "id": "5Z2",
+          "name": "African Development Bank Group"
+        },
+        {
+          "id": "5Z20",
+          "name": "International Olive Oil Council"
+        },
+        {
+          "id": "5Z21",
+          "name": "International Rubber Study Group"
+        },
+        {
+          "id": "5Z22",
+          "name": "International Sugar Organization"
+        },
+        {
+          "id": "5Z23",
+          "name": "Latin American and the Caribbean Economic System"
+        },
+        {
+          "id": "5Z24",
+          "name": "Latin American Energy Organization"
+        },
+        {
+          "id": "5Z25",
+          "name": "Latin American Integration Association"
+        },
+        {
+          "id": "5Z26",
+          "name": "League of Arab States"
+        },
+        {
+          "id": "5Z27",
+          "name": "Organisation of Eastern Caribbean States"
+        },
+        {
+          "id": "5Z28",
+          "name": "Organization of American States"
+        },
+        {
+          "id": "5Z29",
+          "name": "Organization of Arab Petroleum Exporting Countries"
+        },
+        {
+          "id": "5Z3",
+          "name": "Arab Fund for Economic and Social Development"
+        },
+        {
+          "id": "5Z30",
+          "name": "Organization of Central American States"
+        },
+        {
+          "id": "5Z31",
+          "name": "Organization of the Petroleum Exporting Countries"
+        },
+        {
+          "id": "5Z33",
+          "name": "South Asian Association for Regional Cooperation"
+        },
+        {
+          "id": "5Z34",
+          "name": "United Nations Conference on Trade and Development"
+        },
+        {
+          "id": "5Z35",
+          "name": "West African Economic Community"
+        },
+        {
+          "id": "5Z36",
+          "name": "West African Health Organisation"
+        },
+        {
+          "id": "5Z37",
+          "name": "West African Monetary Agency"
+        },
+        {
+          "id": "5Z38",
+          "name": "West African Monetary Institute"
+        },
+        {
+          "id": "5Z39",
+          "name": "World Council of Churches"
+        },
+        {
+          "id": "5Z4",
+          "name": "Asian Clearing Union"
+        },
+        {
+          "id": "5Z40",
+          "name": "World Intellectual Property Organization"
+        },
+        {
+          "id": "5Z41",
+          "name": "World Meteorological Organization"
+        },
+        {
+          "id": "5Z42",
+          "name": "World Tourism Organization"
+        },
+        {
+          "id": "5Z43",
+          "name": "The Nordic Development Fund"
+        },
+        {
+          "id": "5Z44",
+          "name": "The North American Development Bank"
+        },
+        {
+          "id": "5Z45",
+          "name": "International Council for the Exploration of the Sea (ICES)"
+        },
+        {
+          "id": "5Z5",
+          "name": "Colombo Plan"
+        },
+        {
+          "id": "5Z6",
+          "name": "Economic Community of West African States"
+        },
+        {
+          "id": "5Z7",
+          "name": "European Free Trade Association"
+        },
+        {
+          "id": "5Z8",
+          "name": "Fusion for Energy"
+        },
+        {
+          "id": "5Z9",
+          "name": "Intergovernmental Council of Copper Exporting Countries"
+        },
+        {
+          "id": "6A",
+          "name": "Other International Organisations (non-financial institutions)"
+        },
+        {
+          "id": "6A1",
+          "name": "African Union"
+        },
+        {
+          "id": "6A10",
+          "name": "IEA (International Energy Agency)"
+        },
+        {
+          "id": "6A11",
+          "name": "Eurasian Economic Commission"
+        },
+        {
+          "id": "6A2",
+          "name": "Association of Southeast Asian Nations"
+        },
+        {
+          "id": "6A3",
+          "name": "Caribbean Community and Common Market"
+        },
+        {
+          "id": "6A4",
+          "name": "Central American Common Market"
+        },
+        {
+          "id": "6A5",
+          "name": "East African Development Bank"
+        },
+        {
+          "id": "6A6",
+          "name": "ECOWAS Bank for Investment and Development"
+        },
+        {
+          "id": "6A7",
+          "name": "Latin American Association of Development Financing Institutions"
+        },
+        {
+          "id": "6A8",
+          "name": "OPEC Fund for International Development"
+        },
+        {
+          "id": "6A9",
+          "name": "The Permanent Court of Arbitration"
+        },
+        {
+          "id": "6B",
+          "name": "NATO (North Atlantic Treaty Organisation)"
+        },
+        {
+          "id": "6C",
+          "name": "Council of Europe"
+        },
+        {
+          "id": "6D",
+          "name": "ICRC (International Committee of the Red Cross)"
+        },
+        {
+          "id": "6E",
+          "name": "ESA (European Space Agency)"
+        },
+        {
+          "id": "6F",
+          "name": "EPO (European Patent Office)"
+        },
+        {
+          "id": "6G",
+          "name": "EUROCONTROL (European Organisation for the Safety of Air Navigation)"
+        },
+        {
+          "id": "6H",
+          "name": "EUTELSAT (European Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6I",
+          "name": "EMBL (European Molecular Biology Laboratory)"
+        },
+        {
+          "id": "6J",
+          "name": "ITSO (International Telecommunications Satellite Organisation)"
+        },
+        {
+          "id": "6K",
+          "name": "EBU/UER (European Broadcasting Union/Union européenne de radio-télévision)"
+        },
+        {
+          "id": "6L",
+          "name": "EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites)"
+        },
+        {
+          "id": "6M",
+          "name": "ESO (European Southern Observatory)"
+        },
+        {
+          "id": "6N",
+          "name": "ECMWF (European Centre for Medium-Range Weather Forecasts)"
+        },
+        {
+          "id": "6O",
+          "name": "OECD (Organisation for Economic Co-operation and Development)"
+        },
+        {
+          "id": "6P",
+          "name": "CERN (European Organisation for Nuclear Research)"
+        },
+        {
+          "id": "6Q",
+          "name": "IOM (International Organisation for Migration)"
+        },
+        {
+          "id": "6Z",
+          "name": "Other International Non-Financial Organisations n.i.e."
+        },
+        {
+          "id": "6Z1",
+          "name": "The Global Fund to Fight AIDS, Tuberculosis and Malaria"
+        },
+        {
+          "id": "7A",
+          "name": "WAEMU (West African Economic and Monetary Union)"
+        }
+      ],
+      "total_codes": 1000,
+      "truncated": true
+    },
+    {
+      "id": "FLOW",
+      "position": 2,
+      "name": "FLOW",
+      "codes": [
+        {
+          "id": "I",
+          "name": "Imports"
+        },
+        {
+          "id": "X",
+          "name": "Exports"
+        },
+        {
+          "id": "B",
+          "name": "Trade balance"
+        },
+        {
+          "id": "T",
+          "name": "Terms of trade"
+        },
+        {
+          "id": "TOT",
+          "name": "Total"
+        },
+        {
+          "id": "TOTT",
+          "name": "Total trade by both types of trader"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 7,
+      "truncated": false
+    },
+    {
+      "id": "CONCEPT",
+      "position": 3,
+      "name": "CONCEPT",
+      "codes": [
+        {
+          "id": "NAT",
+          "name": "National"
+        },
+        {
+          "id": "COM",
+          "name": "Community"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    },
+    {
+      "id": "DATATYPE",
+      "position": 4,
+      "name": "DATATYPE",
+      "codes": [
+        {
+          "id": "VAL",
+          "name": "Value"
+        },
+        {
+          "id": "QTY",
+          "name": "Quantity"
+        },
+        {
+          "id": "PRI",
+          "name": "Unit value/price"
+        },
+        {
+          "id": "STAT_VAL",
+          "name": "Statistical value"
+        },
+        {
+          "id": "VALUE",
+          "name": "Trade value"
+        },
+        {
+          "id": "NB_ENT",
+          "name": "Number of Enterprises"
+        },
+        {
+          "id": "NB_TR",
+          "name": "Number of Traders"
+        },
+        {
+          "id": "MASS",
+          "name": "Mass"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 9,
+      "truncated": false
+    },
+    {
+      "id": "UNIT",
+      "position": 5,
+      "name": "UNIT",
+      "codes": [
+        {
+          "id": "M",
+          "name": "Monthly movement"
+        },
+        {
+          "id": "C",
+          "name": "Cumulative movement"
+        },
+        {
+          "id": "I",
+          "name": "Monthly index"
+        },
+        {
+          "id": "P",
+          "name": "Percentage change, cumulative values"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{AREA}.{FLOW}.{CONCEPT}.{DATATYPE}.{UNIT}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:32:28+00:00",
+  "schema_version": 1
+}

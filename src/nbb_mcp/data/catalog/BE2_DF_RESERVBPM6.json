@@ -1,0 +1,443 @@
+{
+  "agency": "BE2",
+  "id": "DF_RESERVBPM6",
+  "version": "1.0",
+  "category": "balance_of_payments",
+  "is_final": true,
+  "names": {
+    "en": "Official reserve assets and other foreign currency assets (market value)",
+    "fr": "Avoirs de réserve officiels et autres avoirs en monnaies étrangères (valeur de marché)",
+    "nl": "Officiële reserves en overige middelen in vreemde valuta (marktwaarde)",
+    "de": "Official reserve assets and other foreign currency assets (market value)"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "BOPRESERV_ITEM",
+      "position": 0,
+      "name": "BOPRESERV_ITEM",
+      "codes": [
+        {
+          "id": "993",
+          "name": "Current account"
+        },
+        {
+          "id": "100",
+          "name": "Goods"
+        },
+        {
+          "id": "110",
+          "name": "General merchandise"
+        },
+        {
+          "id": "180",
+          "name": "Non monetary gold"
+        },
+        {
+          "id": "270",
+          "name": "Merchanting"
+        },
+        {
+          "id": "200",
+          "name": "Services"
+        },
+        {
+          "id": "150",
+          "name": "Manufacturing services"
+        },
+        {
+          "id": "160",
+          "name": "Maintenance and repair"
+        },
+        {
+          "id": "205",
+          "name": "Transportation"
+        },
+        {
+          "id": "236",
+          "name": "Travel"
+        },
+        {
+          "id": "245",
+          "name": "Telecommunication, computer and information services"
+        },
+        {
+          "id": "249",
+          "name": "Construction services"
+        },
+        {
+          "id": "253",
+          "name": "Insurance and pension services"
+        },
+        {
+          "id": "260",
+          "name": "Financial services"
+        },
+        {
+          "id": "266",
+          "name": "Royalties and license fees"
+        },
+        {
+          "id": "268",
+          "name": "Other business services"
+        },
+        {
+          "id": "287",
+          "name": "Personal, cultural and recreational services"
+        },
+        {
+          "id": "291",
+          "name": "Government services n.i.e."
+        },
+        {
+          "id": "982",
+          "name": "Services not allocated"
+        },
+        {
+          "id": "300",
+          "name": "Primary income"
+        },
+        {
+          "id": "310",
+          "name": "Compensation of employees"
+        },
+        {
+          "id": "320",
+          "name": "Investment income"
+        },
+        {
+          "id": "040",
+          "name": "Other primary income"
+        },
+        {
+          "id": "379",
+          "name": "Secondary income"
+        },
+        {
+          "id": "380",
+          "name": "General government"
+        },
+        {
+          "id": "390",
+          "name": "Other sectors"
+        },
+        {
+          "id": "994",
+          "name": "Capital account"
+        },
+        {
+          "id": "400",
+          "name": "Capital transfers"
+        },
+        {
+          "id": "480",
+          "name": "Acquisitions and disposal of non-produced non financial assets"
+        },
+        {
+          "id": "995",
+          "name": "Financial account"
+        },
+        {
+          "id": "500",
+          "name": "Direct investment"
+        },
+        {
+          "id": "505",
+          "name": "Assets"
+        },
+        {
+          "id": "510",
+          "name": "Equity capital"
+        },
+        {
+          "id": "525",
+          "name": "Reinvested earnings"
+        },
+        {
+          "id": "530",
+          "name": "Other capital"
+        },
+        {
+          "id": "555",
+          "name": "Liabilities"
+        },
+        {
+          "id": "560",
+          "name": "Equity capital"
+        },
+        {
+          "id": "575",
+          "name": "Reinvested earnings"
+        },
+        {
+          "id": "580",
+          "name": "Other capital"
+        },
+        {
+          "id": "600",
+          "name": "Portfolio investment"
+        },
+        {
+          "id": "602",
+          "name": "Assets"
+        },
+        {
+          "id": "652",
+          "name": "Liabilities"
+        },
+        {
+          "id": "910",
+          "name": "Financial derivatives"
+        },
+        {
+          "id": "700",
+          "name": "Other investment"
+        },
+        {
+          "id": "703",
+          "name": "Assets"
+        },
+        {
+          "id": "753",
+          "name": "Liabilities"
+        },
+        {
+          "id": "802",
+          "name": "Reserve assets of the NBB"
+        },
+        {
+          "id": "999",
+          "name": "Errors and omissions"
+        },
+        {
+          "id": "R_F",
+          "name": "A. Official reserve assets"
+        },
+        {
+          "id": "R_F11",
+          "name": "Monetary gold (including gold deposits and gold swaps)"
+        },
+        {
+          "id": "R_F11Z",
+          "name": "of which: monetary gold under swap for cash collateral"
+        },
+        {
+          "id": "R_F11A",
+          "name": "Gold bullion"
+        },
+        {
+          "id": "R_F11A_XGO",
+          "name": "Memo: volume in millions of fine troy ounces"
+        },
+        {
+          "id": "R_F11B",
+          "name": "Unallocated gold accounts"
+        },
+        {
+          "id": "R_F11B_XGO",
+          "name": "Memo: volume in millions of fine troy ounces"
+        },
+        {
+          "id": "R_F12",
+          "name": "SDRs"
+        },
+        {
+          "id": "R_FK",
+          "name": "IMF reserve position"
+        },
+        {
+          "id": "R_FR2",
+          "name": "Other reserve assets"
+        },
+        {
+          "id": "R_F2",
+          "name": "Currency and deposits"
+        },
+        {
+          "id": "R_F2_S121",
+          "name": "Claims on other non-euro area central banks, the IMF and the BIS"
+        },
+        {
+          "id": "R_F2_S122",
+          "name": "Claims on entities (banks)"
+        },
+        {
+          "id": "R_F2_S122A",
+          "name": "Headquartered in the euro area"
+        },
+        {
+          "id": "R_F2_S122B",
+          "name": "Headquartered outside the euro area"
+        },
+        {
+          "id": "R_FR1",
+          "name": "Securities"
+        },
+        {
+          "id": "R_FR1Z",
+          "name": "Of which: securities under repo for cash collateral"
+        },
+        {
+          "id": "R_FR1_S1H",
+          "name": "Of which: issuer headquartered in the euro area"
+        },
+        {
+          "id": "R_F3",
+          "name": "Debt securities"
+        },
+        {
+          "id": "R_F3_S",
+          "name": "Short term"
+        },
+        {
+          "id": "R_F3_L",
+          "name": "Long term"
+        },
+        {
+          "id": "R_F5",
+          "name": "Equity and investment fund shares"
+        },
+        {
+          "id": "R_F71",
+          "name": "Financial derivatives (net)"
+        },
+        {
+          "id": "R_FR41",
+          "name": "Other claims"
+        },
+        {
+          "id": "R_F4",
+          "name": "Loans to non-banks"
+        },
+        {
+          "id": "R_FR411",
+          "name": "Other"
+        },
+        {
+          "id": "RT_F",
+          "name": "B. Other foreign currency assets (not included in reserve assets)"
+        },
+        {
+          "id": "RT_FR1",
+          "name": "Securities"
+        },
+        {
+          "id": "RT_F2_S122",
+          "name": "Deposits"
+        },
+        {
+          "id": "RT_F2_S122A",
+          "name": "Headquartered in the euro area"
+        },
+        {
+          "id": "RT_F2_S122B",
+          "name": "Headquartered outside the euro area"
+        },
+        {
+          "id": "RT_F4",
+          "name": "Loans"
+        },
+        {
+          "id": "RT_F71",
+          "name": "Financial derivatives (net)"
+        },
+        {
+          "id": "RT_F11",
+          "name": "Gold"
+        },
+        {
+          "id": "RT_FR51",
+          "name": "Other"
+        }
+      ],
+      "total_codes": 83,
+      "truncated": false
+    },
+    {
+      "id": "BOPBPM6_FLOW",
+      "position": 1,
+      "name": "BOPBPM6_FLOW",
+      "codes": [
+        {
+          "id": "02",
+          "name": "Credit"
+        },
+        {
+          "id": "03",
+          "name": "Debit"
+        },
+        {
+          "id": "04",
+          "name": "Net"
+        },
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "FREQ",
+      "position": 2,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{BOPRESERV_ITEM}.{BOPBPM6_FLOW}.{FREQ}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:48+00:00",
+  "schema_version": 1
+}

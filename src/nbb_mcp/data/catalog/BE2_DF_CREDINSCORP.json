@@ -1,0 +1,932 @@
+{
+  "agency": "BE2",
+  "id": "DF_CREDINSCORP",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Credit institutions on corporate basis",
+    "fr": "Etablissements de crédit sur base sociale",
+    "nl": "Kredietinstellingen op vennootschappelijke basis",
+    "de": "Credit institutions on corporate basis"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSCORP_ITEM",
+      "position": 1,
+      "name": "CREDINSCORP_ITEM",
+      "codes": [
+        {
+          "id": "BSI",
+          "name": "Balance sheet of the credit institutions"
+        },
+        {
+          "id": "A",
+          "name": "Assets"
+        },
+        {
+          "id": "A1",
+          "name": "Liquid ressources and interbank claims"
+        },
+        {
+          "id": "A11",
+          "name": "Cash, balances with central banks and postal cheque offices"
+        },
+        {
+          "id": "A12",
+          "name": "Claims on credit institutions"
+        },
+        {
+          "id": "A121",
+          "name": "At sight"
+        },
+        {
+          "id": "A122",
+          "name": "Other claims"
+        },
+        {
+          "id": "A2",
+          "name": "Claims on clients"
+        },
+        {
+          "id": "A21",
+          "name": "Claims initially granted by the institution"
+        },
+        {
+          "id": "A211",
+          "name": "Trade bills"
+        },
+        {
+          "id": "A212",
+          "name": "Own acceptances"
+        },
+        {
+          "id": "A213",
+          "name": "Leasing claims and similar claims"
+        },
+        {
+          "id": "A214",
+          "name": "Non mortgage loans with a flat charging rate"
+        },
+        {
+          "id": "A215",
+          "name": "Mortgage loans"
+        },
+        {
+          "id": "A216",
+          "name": "Fixed-term loans"
+        },
+        {
+          "id": "A217",
+          "name": "Current account advances"
+        },
+        {
+          "id": "A218",
+          "name": "Other credits"
+        },
+        {
+          "id": "A22",
+          "name": "Other debtors"
+        },
+        {
+          "id": "A3",
+          "name": "Transferable securities and other negotiable instruments"
+        },
+        {
+          "id": "A31",
+          "name": "Government short term securities"
+        },
+        {
+          "id": "A311",
+          "name": "Eligible for refinancing at central banks"
+        },
+        {
+          "id": "A312",
+          "name": "Other"
+        },
+        {
+          "id": "A32",
+          "name": "Other short-term negotiable instruments"
+        },
+        {
+          "id": "A33",
+          "name": "Public long-term securities"
+        },
+        {
+          "id": "A34",
+          "name": "Other long-term loans represented by securities"
+        },
+        {
+          "id": "A35",
+          "name": "Corporate shares and other equity"
+        },
+        {
+          "id": "A36",
+          "name": "Other transferable securities"
+        },
+        {
+          "id": "A4",
+          "name": "Fixed assets"
+        },
+        {
+          "id": "A41",
+          "name": "Financial fixed assets"
+        },
+        {
+          "id": "A411",
+          "name": "Loans of government administrations"
+        },
+        {
+          "id": "A412",
+          "name": "Loans of other issuers"
+        },
+        {
+          "id": "A413",
+          "name": "Participations in affiliated enterprises"
+        },
+        {
+          "id": "A414",
+          "name": "Participations in other enterprises linked by a participating interest"
+        },
+        {
+          "id": "A415",
+          "name": "Other financial fixed assets"
+        },
+        {
+          "id": "A4151",
+          "name": "Shares"
+        },
+        {
+          "id": "A4152",
+          "name": "Subordonated claims on affiliated enterprises and enterprises linked by a participating interest"
+        },
+        {
+          "id": "A4153",
+          "name": "Other"
+        },
+        {
+          "id": "A42",
+          "name": "Tangible fixed assets"
+        },
+        {
+          "id": "A43",
+          "name": "Formation costs and intangible fixed assets"
+        },
+        {
+          "id": "A5",
+          "name": "Own shares"
+        },
+        {
+          "id": "A6",
+          "name": "Unrecoverable and doubtful claims"
+        },
+        {
+          "id": "A7",
+          "name": "Other assets"
+        },
+        {
+          "id": "L",
+          "name": "Liabilities"
+        },
+        {
+          "id": "L1",
+          "name": "Interbank debts"
+        },
+        {
+          "id": "L11",
+          "name": "At sight"
+        },
+        {
+          "id": "L12",
+          "name": "Debts resulting from mobilizations"
+        },
+        {
+          "id": "L13",
+          "name": "Other debts at fixed term or at notice"
+        },
+        {
+          "id": "L2",
+          "name": "Debts to clients"
+        },
+        {
+          "id": "L21",
+          "name": "Deposits"
+        },
+        {
+          "id": "L211",
+          "name": "Sight deposits"
+        },
+        {
+          "id": "L212",
+          "name": "At fixed term or at notice < 1 month"
+        },
+        {
+          "id": "L213",
+          "name": "At fixed term or at notice >= 1 month and <= 1 year"
+        },
+        {
+          "id": "L214",
+          "name": "At fixed term or at notice > 1 year"
+        },
+        {
+          "id": "L215",
+          "name": "Special deposits"
+        },
+        {
+          "id": "L216",
+          "name": "Regulated savings deposits"
+        },
+        {
+          "id": "L217",
+          "name": "Linked with mortgage loans"
+        },
+        {
+          "id": "L22",
+          "name": "Deposit guarantee scheme"
+        },
+        {
+          "id": "L23",
+          "name": "Other creditors"
+        },
+        {
+          "id": "L3",
+          "name": "Debts represented by a security"
+        },
+        {
+          "id": "L31",
+          "name": "Certificates of deposit and similar debts"
+        },
+        {
+          "id": "L32",
+          "name": "Notes"
+        },
+        {
+          "id": "L33",
+          "name": "Bonds"
+        },
+        {
+          "id": "L4",
+          "name": "Write-downs,provisions,provident funds and defferred taxes"
+        },
+        {
+          "id": "L5",
+          "name": "Other liabilities"
+        },
+        {
+          "id": "L6",
+          "name": "Subordinated debts"
+        },
+        {
+          "id": "L7",
+          "name": "Own ressources"
+        },
+        {
+          "id": "L71",
+          "name": "Capital"
+        },
+        {
+          "id": "L711",
+          "name": "Subscribed capital"
+        },
+        {
+          "id": "L712",
+          "name": "Uncalled capital"
+        },
+        {
+          "id": "L72",
+          "name": "Issue premiums"
+        },
+        {
+          "id": "L73",
+          "name": "Revaluation surpluses"
+        },
+        {
+          "id": "L74",
+          "name": "Reserves"
+        },
+        {
+          "id": "L741",
+          "name": "Statutory reserve"
+        },
+        {
+          "id": "L742",
+          "name": "Unavailable reserves"
+        },
+        {
+          "id": "L743",
+          "name": "Tax-exempt reserves"
+        },
+        {
+          "id": "L744",
+          "name": "Available reserves"
+        },
+        {
+          "id": "L75",
+          "name": "Profit brought forward (+) or loss brought forward (-)"
+        },
+        {
+          "id": "L76",
+          "name": "Profit on the year (+) or loss on the year (-)"
+        },
+        {
+          "id": "OBSI",
+          "name": "Off-balance sheet items of the credit institutions"
+        },
+        {
+          "id": "ST",
+          "name": "Spot transactions in course of settlement"
+        },
+        {
+          "id": "ST1",
+          "name": "Spot foreign exchange transactions"
+        },
+        {
+          "id": "ST2",
+          "name": "Lendings and borrowings"
+        },
+        {
+          "id": "ST21",
+          "name": "Amounts to be received"
+        },
+        {
+          "id": "ST22",
+          "name": "Amounts to be delivered"
+        },
+        {
+          "id": "ST3",
+          "name": "Purchases and sales of transferable securities and other negotiable instruments"
+        },
+        {
+          "id": "ST31",
+          "name": "Amounts to be received (sales)"
+        },
+        {
+          "id": "ST32",
+          "name": "Amounts to be delivered (purchases)"
+        },
+        {
+          "id": "FT",
+          "name": "Forward transactions"
+        },
+        {
+          "id": "FT1",
+          "name": "Forward transactions in currencies"
+        },
+        {
+          "id": "FT11",
+          "name": "Forward foreign exchange transactions"
+        },
+        {
+          "id": "FT12",
+          "name": "Currency and interest swaps"
+        },
+        {
+          "id": "FT13",
+          "name": "Currency futures transactions"
+        },
+        {
+          "id": "FT14",
+          "name": "Currency options"
+        },
+        {
+          "id": "FT15",
+          "name": "Forward exchange rate contracts"
+        },
+        {
+          "id": "FT2",
+          "name": "Forward interest rate transactions"
+        },
+        {
+          "id": "FT21",
+          "name": "Forward deposit contracts"
+        },
+        {
+          "id": "FT211",
+          "name": "To be placed"
+        },
+        {
+          "id": "FT212",
+          "name": "To be entered into"
+        },
+        {
+          "id": "FT22",
+          "name": "Interest rate swaps"
+        },
+        {
+          "id": "FT23",
+          "name": "Interest futures transactions"
+        },
+        {
+          "id": "FT231",
+          "name": "Purchases"
+        },
+        {
+          "id": "FT232",
+          "name": "Sales"
+        },
+        {
+          "id": "FT24",
+          "name": "Forward interest rate contracts"
+        },
+        {
+          "id": "FT241",
+          "name": "Notional lendings"
+        },
+        {
+          "id": "FT242",
+          "name": "Notional borrowings"
+        },
+        {
+          "id": "FT25",
+          "name": "Interest rate options"
+        },
+        {
+          "id": "FT251",
+          "name": "Options issued"
+        },
+        {
+          "id": "FT2511",
+          "name": "Notional lendings"
+        },
+        {
+          "id": "FT2512",
+          "name": "Notional borrowings"
+        },
+        {
+          "id": "FT252",
+          "name": "Options acquired"
+        },
+        {
+          "id": "FT2521",
+          "name": "Notional lendings"
+        },
+        {
+          "id": "FT2522",
+          "name": "Notional borrowings"
+        },
+        {
+          "id": "FT26",
+          "name": "Other"
+        },
+        {
+          "id": "FT261",
+          "name": "To be paid"
+        },
+        {
+          "id": "FT262",
+          "name": "To be received"
+        },
+        {
+          "id": "FT3",
+          "name": "Other forward transactions"
+        },
+        {
+          "id": "FT31",
+          "name": "Securities"
+        },
+        {
+          "id": "FT311",
+          "name": "Purchases"
+        },
+        {
+          "id": "FT312",
+          "name": "Sales"
+        },
+        {
+          "id": "FT32",
+          "name": "Options"
+        },
+        {
+          "id": "FT321",
+          "name": "Options issued"
+        },
+        {
+          "id": "FT3211",
+          "name": "Values to be received"
+        },
+        {
+          "id": "FT3212",
+          "name": "Values to be delivered"
+        },
+        {
+          "id": "FT322",
+          "name": "Options acquired"
+        },
+        {
+          "id": "FT3221",
+          "name": "Values to be received"
+        },
+        {
+          "id": "FT3222",
+          "name": "Values to be delivered"
+        },
+        {
+          "id": "FT33",
+          "name": "Futures transactions"
+        },
+        {
+          "id": "FT331",
+          "name": "Purchases"
+        },
+        {
+          "id": "FT332",
+          "name": "Sales"
+        },
+        {
+          "id": "FT34",
+          "name": "Other"
+        },
+        {
+          "id": "FT341",
+          "name": "Values purchased"
+        },
+        {
+          "id": "FT342",
+          "name": "Values sold"
+        },
+        {
+          "id": "PE",
+          "name": "Proceeds and expenses covered in advance"
+        },
+        {
+          "id": "PE1",
+          "name": "Proceeds receivable"
+        },
+        {
+          "id": "PE2",
+          "name": "Expenses payable"
+        },
+        {
+          "id": "CA",
+          "name": "Commitment appropriations"
+        },
+        {
+          "id": "CC",
+          "name": "Confirmed credit lines"
+        },
+        {
+          "id": "CC1",
+          "name": "Credit lines obtained"
+        },
+        {
+          "id": "CC2",
+          "name": "Credit lines granted"
+        },
+        {
+          "id": "CC21",
+          "name": "To credit institutions"
+        },
+        {
+          "id": "CC22",
+          "name": "To clients"
+        },
+        {
+          "id": "CC221",
+          "name": "For disbursement appropriations"
+        },
+        {
+          "id": "CC222",
+          "name": "For commitment appropriations"
+        },
+        {
+          "id": "GA",
+          "name": "Guarantees"
+        },
+        {
+          "id": "GA1",
+          "name": "Assets encumbered by secured securities"
+        },
+        {
+          "id": "GA2",
+          "name": "Guaranties obtained"
+        },
+        {
+          "id": "VC",
+          "name": "Valuables and claims entrusted"
+        },
+        {
+          "id": "VC1",
+          "name": "To the institution"
+        },
+        {
+          "id": "VC11",
+          "name": "Without cover"
+        },
+        {
+          "id": "VC12",
+          "name": "On trustee basis"
+        },
+        {
+          "id": "VC13",
+          "name": "Other"
+        },
+        {
+          "id": "VC2",
+          "name": "By the institution"
+        },
+        {
+          "id": "VC21",
+          "name": "On trustee basis"
+        },
+        {
+          "id": "VC22",
+          "name": "Other"
+        },
+        {
+          "id": "OR",
+          "name": "Other rights and commitments"
+        },
+        {
+          "id": "PLA",
+          "name": "Profit and loss account of the credit institutions as a whole"
+        },
+        {
+          "id": "R",
+          "name": "Receipts"
+        },
+        {
+          "id": "R1",
+          "name": "Operating income"
+        },
+        {
+          "id": "R2",
+          "name": "Interest and similar proceeds"
+        },
+        {
+          "id": "R2_1",
+          "name": "Interbank claims"
+        },
+        {
+          "id": "R2_2",
+          "name": "Credits"
+        },
+        {
+          "id": "R2_21",
+          "name": "Trade bills"
+        },
+        {
+          "id": "R2_22",
+          "name": "Own acceptances"
+        },
+        {
+          "id": "R2_23",
+          "name": "Leasing and similar claims"
+        },
+        {
+          "id": "R2_24",
+          "name": "Non-mortgage loans with flat charging rate"
+        },
+        {
+          "id": "R2_25",
+          "name": "Mortgage loans"
+        },
+        {
+          "id": "R2_26",
+          "name": "Fixed-term loans"
+        },
+        {
+          "id": "R2_27",
+          "name": "Other"
+        },
+        {
+          "id": "R2_3",
+          "name": "Securities and negotiable instruments to be placed and to be realised"
+        },
+        {
+          "id": "R2_4",
+          "name": "Investments in transferable securities and negotiable instruments"
+        },
+        {
+          "id": "R2_5",
+          "name": "Forward hedging transactions"
+        },
+        {
+          "id": "R2_51",
+          "name": "Currency hedging"
+        },
+        {
+          "id": "R2_52",
+          "name": "Interest rate hedging"
+        },
+        {
+          "id": "R3",
+          "name": "Income from shares and other variable-interest securities"
+        },
+        {
+          "id": "R4",
+          "name": "Commission received for financial services provided"
+        },
+        {
+          "id": "R5",
+          "name": "Other financial proceeds"
+        },
+        {
+          "id": "R51",
+          "name": "Of foreign exchange activity"
+        },
+        {
+          "id": "R52",
+          "name": "Of trading in transferable securities and other fixed-interest negotiable instruments"
+        },
+        {
+          "id": "R53",
+          "name": "Of trading in interest-rate transactions"
+        },
+        {
+          "id": "R54",
+          "name": "Of trading in variable-interest securities"
+        },
+        {
+          "id": "R55",
+          "name": "Of precious metals"
+        },
+        {
+          "id": "R56",
+          "name": "Capital gains on investment portfolio and similar operations"
+        },
+        {
+          "id": "R6",
+          "name": "Proceeds of financial fixed assets"
+        },
+        {
+          "id": "R7",
+          "name": "Release of write-downs and drawings on and use of provisions"
+        },
+        {
+          "id": "R8",
+          "name": "Other operating income"
+        },
+        {
+          "id": "R9",
+          "name": "Extraordinary proceeds"
+        },
+        {
+          "id": "R10",
+          "name": "Regularisations of tax and drawings from provisions for taxation"
+        },
+        {
+          "id": "R11",
+          "name": "Loss on the year"
+        },
+        {
+          "id": "R12",
+          "name": "Drawings on deferred taxes and on tax-exempt reserves"
+        },
+        {
+          "id": "R13",
+          "name": "Loss on the year for appropriation"
+        },
+        {
+          "id": "E",
+          "name": "Expenditure"
+        },
+        {
+          "id": "E1",
+          "name": "Operating expenditure"
+        },
+        {
+          "id": "E2",
+          "name": "Interest and similar charges"
+        },
+        {
+          "id": "E2_1",
+          "name": "Interbank debts"
+        },
+        {
+          "id": "E2_2",
+          "name": "Debts to clients"
+        },
+        {
+          "id": "E2_21",
+          "name": "Sight deposits"
+        },
+        {
+          "id": "E2_22",
+          "name": "Fixed-term deposits and special deposits"
+        },
+        {
+          "id": "E2_23",
+          "name": "Regulated savings deposits"
+        },
+        {
+          "id": "E2_24",
+          "name": "Deposits linked with mortgage loans"
+        },
+        {
+          "id": "E2_25",
+          "name": "Other debts to clients"
+        }
+      ],
+      "total_codes": 302,
+      "truncated": true
+    },
+    {
+      "id": "CREDINSCORP_TYPE",
+      "position": 2,
+      "name": "CREDINSCORP_TYPE",
+      "codes": [
+        {
+          "id": "T",
+          "name": "Credit institutions as a whole"
+        },
+        {
+          "id": "M",
+          "name": "Major credit institutions governed by belgian law"
+        },
+        {
+          "id": "O",
+          "name": "Other credit institutions governed by belgian law"
+        },
+        {
+          "id": "B",
+          "name": "Branches"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSCORP_CURR",
+      "position": 3,
+      "name": "CREDINSCORP_CURR",
+      "codes": [
+        {
+          "id": "T",
+          "name": "All currencies"
+        },
+        {
+          "id": "E",
+          "name": "Euro"
+        },
+        {
+          "id": "C",
+          "name": "Foreign currencies"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{CREDINSCORP_ITEM}.{CREDINSCORP_TYPE}.{CREDINSCORP_CURR}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "schema_version": 1
+}

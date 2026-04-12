@@ -1,0 +1,260 @@
+{
+  "agency": "BE2",
+  "id": "DF_QNAP3_DISS",
+  "version": "1.0",
+  "category": "national_accounts",
+  "is_final": true,
+  "names": {
+    "en": "Household final consumption by durability – quarterly data",
+    "fr": "Consommation finale des ménages par durabilité – données trimestrielles",
+    "nl": "Finale consumptie van  huishoudens volgens duurzaamheid - kwartaalgegevens",
+    "de": "Household final consumption by durability – quarterly data"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "TYPE",
+      "position": 1,
+      "name": "TYPE",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Data adjusted for seasonal and calendar effects - Absolute figures"
+        },
+        {
+          "id": "B",
+          "name": "Gross data"
+        },
+        {
+          "id": "CLV",
+          "name": "Estimates in volume"
+        },
+        {
+          "id": "CUP",
+          "name": "Current prices in millions of euro"
+        },
+        {
+          "id": "D73FR",
+          "name": "Current transfers of fiscal receipts"
+        },
+        {
+          "id": "D73FR_D211P",
+          "name": "VAT on products"
+        },
+        {
+          "id": "D73FR_D2122C",
+          "name": "Excise duties"
+        },
+        {
+          "id": "D73FR_D2122C_1",
+          "name": "Excise duties on mineral oil"
+        },
+        {
+          "id": "D73FR_D2122C_11",
+          "name": "Excise duties on coffee"
+        },
+        {
+          "id": "D73FR_D2122C_15",
+          "name": "Contribution to energy"
+        },
+        {
+          "id": "D73FR_D2122C_16",
+          "name": "Packing contribution"
+        },
+        {
+          "id": "D73FR_D2122C_19",
+          "name": "Contribution of the oil industry"
+        },
+        {
+          "id": "D73FR_D2122C_2",
+          "name": "Excise duties on liquefied natural gas and liquefied hydrocarbon and benzol"
+        },
+        {
+          "id": "D73FR_D2122C_3",
+          "name": "Excise duties on tobacco"
+        },
+        {
+          "id": "D73FR_D2122C_4",
+          "name": "Excise duties on brandy"
+        },
+        {
+          "id": "D73FR_D2122C_8",
+          "name": "Excise duties on beer"
+        },
+        {
+          "id": "D73FR_D2122C_9",
+          "name": "Excise duties on non-alcoholic beverages"
+        },
+        {
+          "id": "D73FR_D214G_1",
+          "name": "Taxes on insurance contracts"
+        },
+        {
+          "id": "D73FR_D214G_2",
+          "name": "Additional levy on industrial accidents premiums"
+        },
+        {
+          "id": "D73FR_D214G_3",
+          "name": "Additional levy on car insurance premiums"
+        },
+        {
+          "id": "D73FR_D214G_4",
+          "name": "Additional levy on fire insurance premiums"
+        },
+        {
+          "id": "D73FR_D29H_11",
+          "name": "Special contribution from the electricity companies"
+        },
+        {
+          "id": "D73FR_D51A_2",
+          "name": "Business' advance tax payment (PP)"
+        },
+        {
+          "id": "D73FR_D51A_4",
+          "name": "Assessments (PP)"
+        },
+        {
+          "id": "D73FR_D51A_8",
+          "name": "Tax on the worker's participation in the benefit or the capital of the company"
+        },
+        {
+          "id": "D73FR_D51B_1",
+          "name": "Advance tax payment on movable property (corp)"
+        },
+        {
+          "id": "D73FR_D51B_4",
+          "name": "Assessments (Corp)"
+        },
+        {
+          "id": "D73FR_D51X_1",
+          "name": "Assessments (non-residents)"
+        },
+        {
+          "id": "D73FR_D51X_2",
+          "name": "Assessments (PP) - Stock options"
+        },
+        {
+          "id": "P",
+          "name": "Data adjusted for seasonal and calendar effects - Percentage of GDP"
+        },
+        {
+          "id": "V",
+          "name": "Data adjusted for seasonal and calendar effects - Percentage changes"
+        }
+      ],
+      "total_codes": 31,
+      "truncated": false
+    },
+    {
+      "id": "ITEM",
+      "position": 2,
+      "name": "ITEM",
+      "codes": [
+        {
+          "id": "P31",
+          "name": "Final consumption expenditure of households (P.31 S.14)"
+        },
+        {
+          "id": "P311",
+          "name": "Durable goods (P.311)"
+        },
+        {
+          "id": "P312K",
+          "name": "Other (P.31K)"
+        },
+        {
+          "id": "P312",
+          "name": "Semi-durable goods (P.312)"
+        },
+        {
+          "id": "P313",
+          "name": "Non-durable goods (P.313)"
+        },
+        {
+          "id": "P314",
+          "name": "Services (P.314)"
+        }
+      ],
+      "total_codes": 6,
+      "truncated": false
+    },
+    {
+      "id": "ADJUSTMENT",
+      "position": 3,
+      "name": "ADJUSTMENT",
+      "codes": [
+        {
+          "id": "N",
+          "name": "Gross data"
+        },
+        {
+          "id": "Y",
+          "name": "Working day and seasonally adjusted"
+        }
+      ],
+      "total_codes": 2,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{TYPE}.{ITEM}.{ADJUSTMENT}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:48+00:00",
+  "schema_version": 1
+}

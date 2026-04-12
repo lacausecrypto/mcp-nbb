@@ -1,0 +1,951 @@
+{
+  "agency": "BE2",
+  "id": "DF_CREDINSCONS14",
+  "version": "1.0",
+  "category": "financial_institutions",
+  "is_final": true,
+  "names": {
+    "en": "Consolidated data based on IFRS « European FINREP » (2014 – 2017)",
+    "fr": "Données consolidées selon IFRS « FINREP européen » (2014 – 2017)",
+    "nl": "Geconsolideerde gegevens volgens IFRS « Europese FINREP » (2014 – 2017)",
+    "de": "Consolidated data based on IFRS « European FINREP » (2014 – 2017)"
+  },
+  "frequencies_available": [
+    "A",
+    "S",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "D",
+  "time_coverage": {
+    "start": null,
+    "end": null
+  },
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 0,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "S",
+          "name": "Half-yearly"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 5,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSCONS14_TABLE",
+      "position": 1,
+      "name": "CREDINSCONS14_TABLE",
+      "codes": [
+        {
+          "id": "1",
+          "name": "Global activity by portfolio"
+        },
+        {
+          "id": "2",
+          "name": "Global activity by product"
+        },
+        {
+          "id": "3",
+          "name": "Off-balance-sheet commitments"
+        },
+        {
+          "id": "4",
+          "name": "Securities portfolio"
+        },
+        {
+          "id": "5",
+          "name": "Loans and advances"
+        },
+        {
+          "id": "6",
+          "name": "Funding structure"
+        },
+        {
+          "id": "7",
+          "name": "Derivatives"
+        },
+        {
+          "id": "8",
+          "name": "Income statement"
+        },
+        {
+          "id": "9",
+          "name": "Regulatory capital ratios and solvency"
+        },
+        {
+          "id": "10A",
+          "name": "Non-performing loans and asset quality : total"
+        },
+        {
+          "id": "10B",
+          "name": "Non-performing loans and asset quality : domestic exposures"
+        },
+        {
+          "id": "10C",
+          "name": "Non-performing loans and asset quality : foreign exposures"
+        },
+        {
+          "id": "11",
+          "name": "Regulatory liquidity ratios"
+        },
+        {
+          "id": "12",
+          "name": "Encumbered assets"
+        }
+      ],
+      "total_codes": 14,
+      "truncated": false
+    },
+    {
+      "id": "CREDINSCONS14_ITEM",
+      "position": 2,
+      "name": "CREDINSCONS14_ITEM",
+      "codes": [
+        {
+          "id": "1",
+          "name": "Global activity by portfolio"
+        },
+        {
+          "id": "1A",
+          "name": "Total assets"
+        },
+        {
+          "id": "1A1",
+          "name": "Financial assets held for trading"
+        },
+        {
+          "id": "1A2",
+          "name": "Financial assets designated at fair value through profit and loss"
+        },
+        {
+          "id": "1A3",
+          "name": "Available-for-sale financial assets"
+        },
+        {
+          "id": "1A4",
+          "name": "Loans and receivables"
+        },
+        {
+          "id": "1A5",
+          "name": "Held-to-maturity investments"
+        },
+        {
+          "id": "1A6",
+          "name": "Derivatives - hedge accounting"
+        },
+        {
+          "id": "1A7",
+          "name": "Tangible assets"
+        },
+        {
+          "id": "1A8",
+          "name": "Goodwill and other intangible assets"
+        },
+        {
+          "id": "1A9",
+          "name": "Investments in subsidiaries, joint ventures and associates"
+        },
+        {
+          "id": "1A10",
+          "name": "Miscellaneous"
+        },
+        {
+          "id": "1L",
+          "name": "Total equity and liabilities"
+        },
+        {
+          "id": "1L1",
+          "name": "Financial liabilities held for trading"
+        },
+        {
+          "id": "1L2",
+          "name": "Financial liabilities designated at fair value through profit and loss"
+        },
+        {
+          "id": "1L3",
+          "name": "Financial liabilities measured at amortised cost"
+        },
+        {
+          "id": "1L4",
+          "name": "Derivatives - hedge accounting"
+        },
+        {
+          "id": "1L5",
+          "name": "Provisions"
+        },
+        {
+          "id": "1L6",
+          "name": "Miscellaneous"
+        },
+        {
+          "id": "1L7",
+          "name": "Total equity and minority interest"
+        },
+        {
+          "id": "2",
+          "name": "Global activity by product"
+        },
+        {
+          "id": "2A",
+          "name": "Total assets"
+        },
+        {
+          "id": "2A1",
+          "name": "Cash and cash balances with central banks"
+        },
+        {
+          "id": "2A2",
+          "name": "Loans and advances to credit institutions"
+        },
+        {
+          "id": "2A3",
+          "name": "Equity instruments"
+        },
+        {
+          "id": "2A4",
+          "name": "Debt securities"
+        },
+        {
+          "id": "2A41",
+          "name": "Central banks"
+        },
+        {
+          "id": "2A42",
+          "name": "General government"
+        },
+        {
+          "id": "2A43",
+          "name": "Credit institution"
+        },
+        {
+          "id": "2A44",
+          "name": "Other financial corporations"
+        },
+        {
+          "id": "2A45",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "2A5",
+          "name": "Derivatives"
+        },
+        {
+          "id": "2A6",
+          "name": "Loans and advances to other than credit institutions"
+        },
+        {
+          "id": "2A61",
+          "name": "General government"
+        },
+        {
+          "id": "2A62",
+          "name": "Other financial corporations"
+        },
+        {
+          "id": "2A63",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "2A64",
+          "name": "Households"
+        },
+        {
+          "id": "2A7",
+          "name": "Other assets"
+        },
+        {
+          "id": "2L",
+          "name": "Total equity and liabilities"
+        },
+        {
+          "id": "2L1",
+          "name": "Deposits (excl.subordinated)"
+        },
+        {
+          "id": "2L2",
+          "name": "Short positions"
+        },
+        {
+          "id": "2L3",
+          "name": "Derivatives"
+        },
+        {
+          "id": "2L4",
+          "name": "Debt securities issued (excl. subordinated)"
+        },
+        {
+          "id": "2L5",
+          "name": "Subordinated liabilities"
+        },
+        {
+          "id": "2L51",
+          "name": "Deposits"
+        },
+        {
+          "id": "2L52",
+          "name": "Debt securities issued"
+        },
+        {
+          "id": "2L6",
+          "name": "Other liabilities"
+        },
+        {
+          "id": "2L7",
+          "name": "Total equity"
+        },
+        {
+          "id": "3",
+          "name": "Off-balance-sheet commitments"
+        },
+        {
+          "id": "3LG",
+          "name": "Loan commitments given"
+        },
+        {
+          "id": "3LR",
+          "name": "Loan commitments received"
+        },
+        {
+          "id": "3GG",
+          "name": "Financial guarantees given"
+        },
+        {
+          "id": "3GR",
+          "name": "Financial guarantees received"
+        },
+        {
+          "id": "3OG",
+          "name": "Other commitments given"
+        },
+        {
+          "id": "3OR",
+          "name": "Other commitments received"
+        },
+        {
+          "id": "4",
+          "name": "Securities portfolio"
+        },
+        {
+          "id": "4L",
+          "name": "Total securities (long positions)"
+        },
+        {
+          "id": "4L1",
+          "name": "Equity instruments"
+        },
+        {
+          "id": "4L11",
+          "name": "Held for trading"
+        },
+        {
+          "id": "4L12",
+          "name": "Designated at fair value through profit and loss"
+        },
+        {
+          "id": "4L13",
+          "name": "Available-for-sale"
+        },
+        {
+          "id": "4L2",
+          "name": "Debt securities"
+        },
+        {
+          "id": "4L21",
+          "name": "Held for trading"
+        },
+        {
+          "id": "4L22",
+          "name": "Designated at fair value through profit and loss"
+        },
+        {
+          "id": "4L23",
+          "name": "Available-for-sale"
+        },
+        {
+          "id": "4L24",
+          "name": "Loans and receivables"
+        },
+        {
+          "id": "4L25",
+          "name": "Held-to-maturity"
+        },
+        {
+          "id": "4L3",
+          "name": "Investments in subsidiaries, joint ventures and associates"
+        },
+        {
+          "id": "4S",
+          "name": "Total short positions"
+        },
+        {
+          "id": "4S1",
+          "name": "Equity instruments"
+        },
+        {
+          "id": "4S2",
+          "name": "Debt securities"
+        },
+        {
+          "id": "5",
+          "name": "Loans and advances"
+        },
+        {
+          "id": "5T",
+          "name": "Total loans and advances"
+        },
+        {
+          "id": "5T1",
+          "name": "Held for trading"
+        },
+        {
+          "id": "5T2",
+          "name": "Designated at fair value through profit and loss"
+        },
+        {
+          "id": "5T3",
+          "name": "Available-for-sale"
+        },
+        {
+          "id": "5T4",
+          "name": "Loans and receivables"
+        },
+        {
+          "id": "5T5",
+          "name": "Held-to-maturity"
+        },
+        {
+          "id": "5O",
+          "name": "Loans and advances to other than credit institutions"
+        },
+        {
+          "id": "5O1",
+          "name": "Finance leases"
+        },
+        {
+          "id": "5O2",
+          "name": "Credit for consumption"
+        },
+        {
+          "id": "5O3",
+          "name": "Real estate collateralized loans"
+        },
+        {
+          "id": "5O4",
+          "name": "On demand [call] and short notice"
+        },
+        {
+          "id": "5O5",
+          "name": "Other"
+        },
+        {
+          "id": "6",
+          "name": "Funding structure"
+        },
+        {
+          "id": "6D",
+          "name": "Deposits (incl. subordinated)"
+        },
+        {
+          "id": "6D1",
+          "name": "Central Banks"
+        },
+        {
+          "id": "6D2",
+          "name": "Credit institutions"
+        },
+        {
+          "id": "6D3",
+          "name": "Public sector"
+        },
+        {
+          "id": "6D4",
+          "name": "Other financial corporations"
+        },
+        {
+          "id": "6D5",
+          "name": "Non-financial corporations"
+        },
+        {
+          "id": "6D6",
+          "name": "Households"
+        },
+        {
+          "id": "6D61",
+          "name": "pm Regulated deposits"
+        },
+        {
+          "id": "6U",
+          "name": "Debt securities issued (incl. subordinated)"
+        },
+        {
+          "id": "6U1",
+          "name": "Certificates of deposits"
+        },
+        {
+          "id": "6U2",
+          "name": "Asset-backed securities"
+        },
+        {
+          "id": "6U3",
+          "name": "Covered bonds"
+        },
+        {
+          "id": "6U4",
+          "name": "Hybrid contracts"
+        },
+        {
+          "id": "6U5",
+          "name": "Other debt securities issued"
+        },
+        {
+          "id": "6U51",
+          "name": "Convertible"
+        },
+        {
+          "id": "6U52",
+          "name": "Non-convertible"
+        },
+        {
+          "id": "6S",
+          "name": "Short positions"
+        },
+        {
+          "id": "6V",
+          "name": "Derivatives"
+        },
+        {
+          "id": "6O",
+          "name": "Other liabilities"
+        },
+        {
+          "id": "6E",
+          "name": "Equity and minority interest"
+        },
+        {
+          "id": "7",
+          "name": "Derivatives"
+        },
+        {
+          "id": "7C",
+          "name": "Carrying amounts"
+        },
+        {
+          "id": "7C1",
+          "name": "Derivatives classified as assets (total)"
+        },
+        {
+          "id": "7C11",
+          "name": "Held for trading"
+        },
+        {
+          "id": "7C12",
+          "name": "Hedge accounting"
+        },
+        {
+          "id": "7C121",
+          "name": "Used for micro-hedging"
+        },
+        {
+          "id": "7C1211",
+          "name": "Fair value hedges"
+        },
+        {
+          "id": "7C1212",
+          "name": "Cash flow hedges"
+        },
+        {
+          "id": "7C1213",
+          "name": "Net investment in foreign operations"
+        },
+        {
+          "id": "7C122",
+          "name": "Used for portfolio hedging of interest rate risk"
+        },
+        {
+          "id": "7C1221",
+          "name": "Fair value hedges"
+        },
+        {
+          "id": "7C1222",
+          "name": "Cash flow hedges"
+        },
+        {
+          "id": "7C2",
+          "name": "Derivatives classified as liabilities (total)"
+        },
+        {
+          "id": "7C21",
+          "name": "Held for trading"
+        },
+        {
+          "id": "7C22",
+          "name": "Hedge accounting"
+        },
+        {
+          "id": "7C221",
+          "name": "Used for micro-hedging"
+        },
+        {
+          "id": "7C2211",
+          "name": "Fair value hedges"
+        },
+        {
+          "id": "7C2212",
+          "name": "Cash flow hedges"
+        },
+        {
+          "id": "7C2213",
+          "name": "Net investment in foreign operations"
+        },
+        {
+          "id": "7C222",
+          "name": "Used for portfolio hedging of interest rate risk"
+        },
+        {
+          "id": "7C2221",
+          "name": "Fair value hedges"
+        },
+        {
+          "id": "7C2222",
+          "name": "Cash flow hedges"
+        },
+        {
+          "id": "7N",
+          "name": "Notional amounts"
+        },
+        {
+          "id": "7N1",
+          "name": "Derivatives assets + liabilities"
+        },
+        {
+          "id": "7N11",
+          "name": "Held for trading"
+        },
+        {
+          "id": "7N111",
+          "name": "Interest rate derivatives"
+        },
+        {
+          "id": "7N112",
+          "name": "Equity derivatives"
+        },
+        {
+          "id": "7N113",
+          "name": "Foreign exchange and gold derivatives"
+        },
+        {
+          "id": "7N114",
+          "name": "Credit derivatives"
+        },
+        {
+          "id": "7N115",
+          "name": "Commodity derivatives"
+        },
+        {
+          "id": "7N116",
+          "name": "Other derivatives"
+        },
+        {
+          "id": "7N12",
+          "name": "Hedge accounting"
+        },
+        {
+          "id": "7N121",
+          "name": "Used for micro-hedging"
+        },
+        {
+          "id": "7N1211",
+          "name": "Fair value hedges"
+        },
+        {
+          "id": "7N1212",
+          "name": "Cash flow hedges"
+        },
+        {
+          "id": "7N1213",
+          "name": "Net investment in foreign operations"
+        },
+        {
+          "id": "7N122",
+          "name": "Used for portfolio hedging of interest rate risk"
+        },
+        {
+          "id": "7N1221",
+          "name": "Fair value hedges"
+        },
+        {
+          "id": "7N1222",
+          "name": "Cash flow hedges"
+        },
+        {
+          "id": "8",
+          "name": "Income statement"
+        },
+        {
+          "id": "801",
+          "name": "Interest income"
+        },
+        {
+          "id": "802",
+          "name": "Interest expenses"
+        },
+        {
+          "id": "803",
+          "name": "Net interest income"
+        },
+        {
+          "id": "804",
+          "name": "Dividend income"
+        },
+        {
+          "id": "805",
+          "name": "Net fee and commission income"
+        },
+        {
+          "id": "805I",
+          "name": "Fee and commission income"
+        },
+        {
+          "id": "805E",
+          "name": "Fee and commission expenses"
+        },
+        {
+          "id": "806",
+          "name": "Gains or losses on financial assets and liabilities not measured at fair value through profit and loss"
+        },
+        {
+          "id": "807",
+          "name": "Gains or losses on financial assets and liabilities held for trading"
+        },
+        {
+          "id": "808",
+          "name": "Other fair value accounting gains and losses"
+        },
+        {
+          "id": "808F",
+          "name": "Gains or losses on financial assets and liabilities designated at fair value through profit and loss"
+        },
+        {
+          "id": "808H",
+          "name": "Gains or losses from hedge accounting"
+        },
+        {
+          "id": "809",
+          "name": "Other net operating income"
+        },
+        {
+          "id": "810",
+          "name": "Non interest income"
+        },
+        {
+          "id": "811",
+          "name": "Gross operating income (banking product)"
+        },
+        {
+          "id": "812",
+          "name": "Staff expenses"
+        },
+        {
+          "id": "813",
+          "name": "Other administrative expenses"
+        },
+        {
+          "id": "814",
+          "name": "Depreciation"
+        },
+        {
+          "id": "815",
+          "name": "Operating expenses (excl. impairment losses and provisions) (-)"
+        },
+        {
+          "id": "816",
+          "name": "Impairment losses on financial assets"
+        },
+        {
+          "id": "817",
+          "name": "Other impairments"
+        },
+        {
+          "id": "818",
+          "name": "Provisions"
+        },
+        {
+          "id": "819",
+          "name": "Impairment losses and provisions (-)"
+        },
+        {
+          "id": "820",
+          "name": "Share of the profit or loss of subsidiaries, joint ventures and associates"
+        },
+        {
+          "id": "821",
+          "name": "Net operating income"
+        },
+        {
+          "id": "822",
+          "name": "Negative goodwill immediately recognized in profit or loss"
+        },
+        {
+          "id": "823",
+          "name": "Total profit or loss from non-current assets and disposal groups classified as held for sale not qualifying as discontinued operations"
+        },
+        {
+          "id": "824",
+          "name": "Total profit or loss after tax from discontinued operations"
+        },
+        {
+          "id": "825",
+          "name": "Total profit or loss before tax and minority interest"
+        },
+        {
+          "id": "826",
+          "name": "Tax expense related to profit or loss from continuing operations (-)"
+        },
+        {
+          "id": "827",
+          "name": "Total profit and loss after tax and before minority interest"
+        },
+        {
+          "id": "828",
+          "name": "Minority interest (-)"
+        },
+        {
+          "id": "829",
+          "name": "Net profit or loss"
+        },
+        {
+          "id": "9",
+          "name": "Regulatory capital ratios and solvency"
+        },
+        {
+          "id": "91",
+          "name": "Tier 1 capital"
+        },
+        {
+          "id": "92",
+          "name": "Common equity Tier 1 capital"
+        },
+        {
+          "id": "93",
+          "name": "Risk-weighted assets"
+        },
+        {
+          "id": "931",
+          "name": "Of which credit risk"
+        },
+        {
+          "id": "932",
+          "name": "Of which market risk"
+        },
+        {
+          "id": "933",
+          "name": "Of which operational risk"
+        },
+        {
+          "id": "934",
+          "name": "Of which CVA"
+        },
+        {
+          "id": "935",
+          "name": "Of which other"
+        },
+        {
+          "id": "94",
+          "name": "Tier 1 capital ratio (%)"
+        },
+        {
+          "id": "95",
+          "name": "Common equity Tier 1 ratio, phased-in (%)"
+        },
+        {
+          "id": "96",
+          "name": "Common equity Tier 1 ratio, fully-loaded (%)"
+        },
+        {
+          "id": "97",
+          "name": "Leverage ratio, phased-in (%)"
+        },
+        {
+          "id": "10",
+          "name": "Non-performing loans and asset quality"
+        },
+        {
+          "id": "10T1",
+          "name": "Total debt securities and loans"
+        },
+        {
+          "id": "10T11",
+          "name": "Exposure"
+        },
+        {
+          "id": "10T12",
+          "name": "Non-performing exposure"
+        },
+        {
+          "id": "10T13",
+          "name": "NPE  ratio (%)"
+        },
+        {
+          "id": "10T14",
+          "name": "Coverage ratio (%)"
+        },
+        {
+          "id": "10T2",
+          "name": "Loans and advances"
+        },
+        {
+          "id": "10T21",
+          "name": "Loans and advances"
+        },
+        {
+          "id": "10T22",
+          "name": "Non-performing loans and advances"
+        }
+      ],
+      "total_codes": 260,
+      "truncated": true
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{CREDINSCONS14_TABLE}.{CREDINSCONS14_ITEM}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-04-12T16:31:48+00:00",
+  "schema_version": 1
+}
