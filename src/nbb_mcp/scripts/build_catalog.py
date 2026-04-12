@@ -114,13 +114,18 @@ def classify(stub: DataflowStub) -> str:
     }:
         return "labour_population"
 
-    if did in {
-        "DF_BOPBPM6",
-        "DF_IIP",
-        "DF_EXTDEBT",
-        "DF_RESERVBPM6",
-        "DF_ITSS",
-    } or did.startswith("DF_FDI") or did.startswith("DF_STEC"):
+    if (
+        did
+        in {
+            "DF_BOPBPM6",
+            "DF_IIP",
+            "DF_EXTDEBT",
+            "DF_RESERVBPM6",
+            "DF_ITSS",
+        }
+        or did.startswith("DF_FDI")
+        or did.startswith("DF_STEC")
+    ):
         return "balance_of_payments"
 
     if did.startswith("DF_FA") or did.startswith("DF_FINACC"):
@@ -153,11 +158,7 @@ def classify(stub: DataflowStub) -> str:
     if did.startswith("DF_REG"):
         return "regional"
 
-    if (
-        did.startswith("DF_EXTT")
-        or did.startswith("DF_EXTERNAL_TRADE")
-        or did == "DF_IEGSGEO_DISS"
-    ):
+    if did.startswith("DF_EXTT") or did.startswith("DF_EXTERNAL_TRADE") or did == "DF_IEGSGEO_DISS":
         return "foreign_trade"
 
     if (
@@ -194,8 +195,14 @@ GENERIC_QUERIES: list[CommonQuery] = [
 
 SPECIFIC_QUERIES: dict[tuple[str, str], list[CommonQuery]] = {
     ("BE2", "DF_EXR"): [
-        CommonQuery(label="EUR/USD daily, last 30 days", key="D.USD", params={"lastNObservations": 30}),
-        CommonQuery(label="EUR/GBP monthly 2024", key="M.GBP", params={"startPeriod": "2024-01", "endPeriod": "2024-12"}),
+        CommonQuery(
+            label="EUR/USD daily, last 30 days", key="D.USD", params={"lastNObservations": 30}
+        ),
+        CommonQuery(
+            label="EUR/GBP monthly 2024",
+            key="M.GBP",
+            params={"startPeriod": "2024-01", "endPeriod": "2024-12"},
+        ),
         CommonQuery(label="EUR/JPY daily last week", key="D.JPY", params={"lastNObservations": 7}),
     ],
 }
@@ -408,8 +415,12 @@ def _default_catalog_dir() -> Path:
 
 def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build the nbb-mcp enriched catalogue")
-    parser.add_argument("--force", action="store_true", help="Rebuild all fiches, ignoring existing ones")
-    parser.add_argument("--limit", type=int, default=None, help="Only process the first N dataflows (debug)")
+    parser.add_argument(
+        "--force", action="store_true", help="Rebuild all fiches, ignoring existing ones"
+    )
+    parser.add_argument(
+        "--limit", type=int, default=None, help="Only process the first N dataflows (debug)"
+    )
     parser.add_argument(
         "--only",
         type=str,

@@ -83,9 +83,7 @@ def test_bundled_catalog_multilang_names_present(bundled_catalog):
 
 def test_bundled_catalog_generic_fiches_have_common_queries(bundled_catalog):
     """Every fiche must ship at least the 2 generic common_queries."""
-    missing = [
-        (e.agency, e.id) for e in bundled_catalog.entries if len(e.common_queries) < 2
-    ]
+    missing = [(e.agency, e.id) for e in bundled_catalog.entries if len(e.common_queries) < 2]
     assert not missing, f"Fiches missing common_queries: {missing[:5]}"
 
 
@@ -98,7 +96,9 @@ def test_bundled_catalog_search_usage_examples(bundled_catalog):
 
     # French: inflation → HICP flows must dominate.
     results = bundled_catalog.search("inflation indice prix", limit=5)
-    assert any(r.entry.id.startswith("DF_HICP") or r.entry.id.startswith("DF_NICP") for r in results)
+    assert any(
+        r.entry.id.startswith("DF_HICP") or r.entry.id.startswith("DF_NICP") for r in results
+    )
 
     # Topic: GDP → DF_QNA_DISS near the top.
     results = bundled_catalog.search("GDP quarterly", limit=5)

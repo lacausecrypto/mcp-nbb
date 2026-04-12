@@ -76,18 +76,14 @@ async def test_retry_recovers_after_transient(test_settings):
     def handler(request: httpx.Request) -> httpx.Response:
         attempts["n"] += 1
         if attempts["n"] == 1:
-            return httpx.Response(
-                500, content=b"boom", headers={"content-type": "text/plain"}
-            )
+            return httpx.Response(500, content=b"boom", headers={"content-type": "text/plain"})
         return httpx.Response(
             200,
             content=b'{"data":{"dataflows":[]},"meta":{}}',
             headers={"content-type": "application/vnd.sdmx.structure+json; version=1.0"},
         )
 
-    settings = type(test_settings)(
-        **{**test_settings.__dict__, "retry_attempts": 3}
-    )
+    settings = type(test_settings)(**{**test_settings.__dict__, "retry_attempts": 3})
     client = NBBClient(settings=settings, transport=httpx.MockTransport(handler))
     result = await client.list_dataflows()
     await client.aclose()

@@ -43,7 +43,9 @@ def render_dataflow(entry: EnrichedDataflow, *, language: str = "en") -> str:
     if entry.default_frequency:
         lines.append(f"- **Default frequency**: `{entry.default_frequency}`")
     if entry.frequencies_available:
-        lines.append(f"- **Frequencies**: {', '.join(f'`{f}`' for f in entry.frequencies_available)}")
+        lines.append(
+            f"- **Frequencies**: {', '.join(f'`{f}`' for f in entry.frequencies_available)}"
+        )
     if entry.key_template:
         lines.append(f"- **Key template**: `{entry.key_template}`")
 

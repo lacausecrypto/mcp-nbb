@@ -33,6 +33,7 @@ def _combined_scorer(query: str, choice: str, **_kwargs) -> float:
     pr = fuzz.partial_ratio(query, choice) * 0.85
     return max(tsr, pr)
 
+
 _CATALOG_DIR = Path(__file__).resolve().parent / "data" / "catalog"
 _INDEX_FILENAME = "_index.json"
 _PRIVATE_PREFIX = "_"

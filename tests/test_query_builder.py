@@ -74,9 +74,7 @@ def test_multi_value_filter_uses_plus():
 
 
 def test_position_order_respected_regardless_of_input_order():
-    key = build_sdmx_key(
-        _exr_entry(), {"EXR_CURRENCY": "USD", "FREQ": "D"}
-    )
+    key = build_sdmx_key(_exr_entry(), {"EXR_CURRENCY": "USD", "FREQ": "D"})
     assert key == "D.USD"
 
 

@@ -62,8 +62,16 @@ async def run(iterations: int = 20) -> list[dict[str, Any]]:
         ),
         "nbb_compare (USD vs GBP)": lambda: compare_tool.run(
             [
-                {"dataflow_id": "DF_EXR", "label": "USD", "filters": {"FREQ": "M", "EXR_CURRENCY": "USD"}},
-                {"dataflow_id": "DF_EXR", "label": "GBP", "filters": {"FREQ": "M", "EXR_CURRENCY": "GBP"}},
+                {
+                    "dataflow_id": "DF_EXR",
+                    "label": "USD",
+                    "filters": {"FREQ": "M", "EXR_CURRENCY": "USD"},
+                },
+                {
+                    "dataflow_id": "DF_EXR",
+                    "label": "GBP",
+                    "filters": {"FREQ": "M", "EXR_CURRENCY": "GBP"},
+                },
             ],
             start_period="2024-01",
             end_period="2024-12",

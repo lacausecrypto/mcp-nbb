@@ -29,9 +29,7 @@ async def test_disk_cache_second_call_served_from_cache(test_settings, tmp_path)
         structure_ttl=3600,
         data_ttl=300,
     )
-    settings = type(test_settings)(
-        **{**test_settings.__dict__, "http_cache_enabled": True}
-    )
+    settings = type(test_settings)(**{**test_settings.__dict__, "http_cache_enabled": True})
     client = NBBClient(settings=settings, transport=cache_transport)
     await client.list_dataflows()
     await client.list_dataflows()
@@ -52,7 +50,9 @@ async def test_disk_cache_survives_new_client(test_settings, tmp_path):
     inner1 = httpx.MockTransport(handler)
     client1 = NBBClient(
         settings=test_settings,
-        transport=_DiskCacheTransport(inner1, cache_dir=cache_dir, structure_ttl=3600, data_ttl=300),
+        transport=_DiskCacheTransport(
+            inner1, cache_dir=cache_dir, structure_ttl=3600, data_ttl=300
+        ),
     )
     await client1.list_dataflows()
     await client1.aclose()
@@ -61,7 +61,9 @@ async def test_disk_cache_survives_new_client(test_settings, tmp_path):
     inner2 = httpx.MockTransport(handler)
     client2 = NBBClient(
         settings=test_settings,
-        transport=_DiskCacheTransport(inner2, cache_dir=cache_dir, structure_ttl=3600, data_ttl=300),
+        transport=_DiskCacheTransport(
+            inner2, cache_dir=cache_dir, structure_ttl=3600, data_ttl=300
+        ),
     )
     await client2.list_dataflows()
     await client2.aclose()

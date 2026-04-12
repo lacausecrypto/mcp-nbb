@@ -23,7 +23,12 @@ class NBBError(Exception):
         return f"{type(self).__name__}(code={self.code!r}, message={self.message!r})"
 
     def to_dict(self) -> dict[str, Any]:
-        return {"error": type(self).__name__, "code": self.code, "message": self.message, "details": self.details}
+        return {
+            "error": type(self).__name__,
+            "code": self.code,
+            "message": self.message,
+            "details": self.details,
+        }
 
 
 class NBBConnectionError(NBBError):

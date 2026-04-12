@@ -201,12 +201,7 @@ async def run(
     key = build_sdmx_key(entry, filters) if filters else "all"
 
     # For unfiltered topics with no period window, cap volume to last 12 obs.
-    if (
-        not filters
-        and last_n_observations is None
-        and start_period is None
-        and end_period is None
-    ):
+    if not filters and last_n_observations is None and start_period is None and end_period is None:
         last_n_observations = 12
 
     payload = await svc.client.fetch_data(

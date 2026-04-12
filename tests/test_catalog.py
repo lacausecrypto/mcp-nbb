@@ -72,7 +72,10 @@ def fiche_dir(tmp_path: Path) -> Path:
                     id="EXR_CURRENCY",
                     position=1,
                     name="Currency",
-                    codes=[CodeRef(id="USD", name="US Dollar"), CodeRef(id="GBP", name="British Pound")],
+                    codes=[
+                        CodeRef(id="USD", name="US Dollar"),
+                        CodeRef(id="GBP", name="British Pound"),
+                    ],
                 ),
             ],
         ),
@@ -106,7 +109,12 @@ def fiche_dir(tmp_path: Path) -> Path:
         "built_at": "2026-04-12T00:00:00Z",
         "dataflow_count": len(entries),
         "schema_version": 1,
-        "categories": {"exchange_interest_rates": 1, "prices": 1, "national_accounts": 1, "imf_sdds": 1},
+        "categories": {
+            "exchange_interest_rates": 1,
+            "prices": 1,
+            "national_accounts": 1,
+            "imf_sdds": 1,
+        },
         "flows": [{"agency": e.agency, "id": e.id, "category": e.category} for e in entries],
     }
     (tmp_path / "_index.json").write_text(json.dumps(index, indent=2))

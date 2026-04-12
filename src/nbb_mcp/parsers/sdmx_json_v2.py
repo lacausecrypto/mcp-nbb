@@ -143,9 +143,7 @@ def parse_data_message(payload: dict[str, Any], *, dataflow: str = "") -> DataMe
         # Ensure chronological order for downstream formatters.
         obs_list.sort(key=lambda o: o.period)
 
-        series_out.append(
-            Series(key=resolved_key, dimensions=dim_map, observations=obs_list)
-        )
+        series_out.append(Series(key=resolved_key, dimensions=dim_map, observations=obs_list))
 
     return DataMessage(dataflow=dataflow, series=series_out, raw_meta=meta)
 

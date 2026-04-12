@@ -137,16 +137,16 @@ class _DiskCacheTransport(httpx.AsyncBaseTransport):
 
     _STRIP_HEADERS = frozenset({"content-encoding", "transfer-encoding", "content-length"})
 
-    def _store(self, path: Path, request: httpx.Request, response: httpx.Response, ttl: int) -> None:
+    def _store(
+        self, path: Path, request: httpx.Request, response: httpx.Response, ttl: int
+    ) -> None:
         import base64
 
         # ``response.content`` is already decoded. Persist only headers that don't
         # imply an encoding we no longer apply (gzip/br/chunked), else httpx will
         # try to re-decode the stored decoded bytes and fail.
         headers = [
-            (k, v)
-            for k, v in response.headers.items()
-            if k.lower() not in self._STRIP_HEADERS
+            (k, v) for k, v in response.headers.items() if k.lower() not in self._STRIP_HEADERS
         ]
         entry = {
             "url": str(request.url),
@@ -168,9 +168,7 @@ class _DiskCacheTransport(httpx.AsyncBaseTransport):
         if request.method != "GET":
             return await self._inner.handle_async_request(request)
 
-        ttl = _ttl_for_path(
-            request.url.path, self._structure_ttl, self._data_ttl
-        )
+        ttl = _ttl_for_path(request.url.path, self._structure_ttl, self._data_ttl)
         if ttl is None:
             return await self._inner.handle_async_request(request)
 
@@ -254,9 +252,13 @@ def _check_response(r: httpx.Response) -> None:
         if r.status_code == 404:
             raise NBBNotFoundError(body_head.strip(), code="NOT_FOUND", details={"url": str(r.url)})
         if r.status_code == 400:
-            raise NBBValidationError(body_head.strip(), code="BAD_REQUEST", details={"url": str(r.url)})
+            raise NBBValidationError(
+                body_head.strip(), code="BAD_REQUEST", details={"url": str(r.url)}
+            )
         if r.status_code == 429:
-            raise NBBRateLimitError("Rate limit hit", code="RATE_LIMIT", details={"url": str(r.url)})
+            raise NBBRateLimitError(
+                "Rate limit hit", code="RATE_LIMIT", details={"url": str(r.url)}
+            )
         raise NBBConnectionError(
             f"HTTP {r.status_code}", code=f"HTTP_{r.status_code}", details={"url": str(r.url)}
         )
@@ -356,7 +358,9 @@ class NBBClient:
                     _check_response(response)
                     return response
 
-        raise NBBConnectionError("Exhausted retries", code="RETRIES_EXHAUSTED", details={"url": url})
+        raise NBBConnectionError(
+            "Exhausted retries", code="RETRIES_EXHAUSTED", details={"url": url}
+        )
 
     async def get_structure(
         self,

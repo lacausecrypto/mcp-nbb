@@ -73,16 +73,13 @@ async def run(
                 "total_codes": d.total_codes,
                 "truncated": d.truncated,
                 "codes": (
-                    [{"id": c.id, "name": c.name} for c in d.codes]
-                    if include_codes
-                    else None
+                    [{"id": c.id, "name": c.name} for c in d.codes] if include_codes else None
                 ),
             }
             for d in entry.dimensions
         ],
         "common_queries": [
-            {"label": q.label, "key": q.key, "params": q.params}
-            for q in entry.common_queries
+            {"label": q.label, "key": q.key, "params": q.params} for q in entry.common_queries
         ],
         "live_refresh": live,
     }
