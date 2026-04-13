@@ -24,1768 +24,1547 @@
       "id": "DF_AFCSURV",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_AFCSURV_CREDIT",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_AGREED_WAGES",
       "version": "1.0",
       "category": "prices",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_AMOLO",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_AMPORTS",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_BLS",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_BLSCCO",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_BOPBPM6",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_BSICREDINS",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_BSIMFI",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_BUSSURVH2",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_BUSSURVM",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_BUSSURVQ",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CAPSTOCK2010_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBANACCA",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBANACCA2",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBANACCA3",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBANACCE",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBANACCE2",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBANACCE3",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBANACCE4",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBRATIOSA",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBRATIOSE",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CBSOCBAL",
       "version": "1.0",
       "category": "corporate_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CCR",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CGD",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CGDCONS",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CGDHCM",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CGDS1312",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CGDS1313",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CICR",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CONSN",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CONSTRUCTION",
       "version": "1.0",
       "category": "surveys",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CRECONSURV",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CREDINSCONS00",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CREDINSCONS06",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CREDINSCONS14",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CREDINSCONS18",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CREDINSCORP",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CREDINSLOANDEP",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CREDINSNR",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_CREDNFC",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EMPLOYDETAIL_DISS",
       "version": "1.0",
       "category": "labour_population",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EMPLOY_DISS",
       "version": "1.0",
       "category": "labour_population",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EUROSYS",
       "version": "1.0",
       "category": "other",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXR",
       "version": "1.0",
       "category": "exchange_interest_rates",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTDEBT",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTERNAL_TRADE_OVERVIEW",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTERNAL_TRADE_OVERVIEW_TEST",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBECOM",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBECOM_Overview",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBECOM_Part_I_to_IV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBECOM_Part_V_to_X",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBECOM_Part_XI_to_XIV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBECOM_Part_XVIII_to_XXI",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBECOM_Part_XV_to_XVII",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBENAT",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBENAT_Overview",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBENAT_Part_I_to_IV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBENAT_Part_V_to_X",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBENAT_Part_XI_to_XIV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBENAT_Part_XVIII_to_XXI",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBENAT_Part_XV_to_XVII",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBXNAT",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBXNAT_Overview",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBXNAT_Part_I_to_IV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBXNAT_Part_V_to_X",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBXNAT_Part_XI_to_XIV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBXNAT_Part_XVIII_to_XXI",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEBXNAT_Part_XV_to_XVII",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEVLNAT",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEVLNAT_Overview",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEVLNAT_Part_I_to_IV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEVLNAT_Part_V_to_X",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEVLNAT_Part_XI_to_XIV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEVLNAT_Part_XVIII_to_XXI",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEVLNAT_Part_XV_to_XVII",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEWLNAT",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEWLNAT_Overview",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEWLNAT_Part_I_to_IV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEWLNAT_Part_V_to_X",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEWLNAT_Part_XI_to_XIV",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEWLNAT_Part_XVIII_to_XXI",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTTRADEWLNAT_Part_XV_to_XVII",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_ACTIVITY",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_ACTIVITY_SECTOR",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_ACTIVITY_SIZE",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_COUNTRY_ACTIVITY",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_COUNTRY_SIZE",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_EXPORT",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_NBR_COUNTRIES_ACTIVITY",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_PRODUCT_ACTIVITY",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_REFERENCE_POP",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_TYPE_INC",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_EXTT_TEC_TYPE_TRADER",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FAFFCL2",
       "version": "1.0",
       "category": "financial_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FAHHNFC",
       "version": "1.0",
       "category": "financial_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FAHHNFC_S14",
       "version": "1.0",
       "category": "financial_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FDI_AL",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FDI_COMPLETE",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FDI_IO",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FDI_SECTOR",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FINACC2010",
       "version": "1.0",
       "category": "financial_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FINACC2010_WEALTH",
       "version": "1.0",
       "category": "financial_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FINGOV",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FINGOV_BALANCE",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FISEC",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_FVC",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_HICP",
       "version": "1.0",
       "category": "prices",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_HICP_2025",
       "version": "1.0",
       "category": "prices",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_HISTO_NICP",
       "version": "1.0",
       "category": "prices",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_IEGSGEO_DISS",
       "version": "1.0",
       "category": "foreign_trade",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_IIP",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_INDPROD",
       "version": "1.0",
       "category": "prices",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_IRESCB",
       "version": "1.0",
       "category": "exchange_interest_rates",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_IROLOBE2",
       "version": "1.0",
       "category": "exchange_interest_rates",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_IROLOYLD",
       "version": "1.0",
       "category": "exchange_interest_rates",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_IRTRCERT",
       "version": "1.0",
       "category": "exchange_interest_rates",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_ISSHARES",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_ITSS",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_MCUCIIC",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_MIR",
       "version": "1.0",
       "category": "exchange_interest_rates",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_MIRCCO",
       "version": "1.0",
       "category": "exchange_interest_rates",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_MONAGG",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_MORTGAGE",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NADET2008_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NADETAIL_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NADETP3_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NADETP4_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NADETP51N_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NASECDET2010_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NASECDET2010_S14_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NASECDETQ_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NBBFIN",
       "version": "1.0",
       "category": "other",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFGOVCOFOG_DISS",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFGOVDETAIL_DISS",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFGOVFR_DISS",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFGOVISB_DISS",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFGOVQ_DISS",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFGOVTSC_DISS",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFGOV_DISS",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFGOV_NET_DISS",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFQADISPINC_DISS",
       "version": "1.0",
       "category": "other",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NFQA_DISS",
       "version": "1.0",
       "category": "other",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NICP",
       "version": "1.0",
       "category": "prices",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NICP_2025",
       "version": "1.0",
       "category": "prices",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_NMUCI",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_PAYSTAT",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_PENS_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_POPULA",
       "version": "1.0",
       "category": "labour_population",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_PPI",
       "version": "1.0",
       "category": "prices",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_QNAIEGSGEO_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_QNAP3_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_QNA_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGACA10",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGACA21",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGACA3",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGACA38",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGACA64",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGACSEC",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGHHINC",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGHHINC_B",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGHHINC_COMPLETE",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGHHINC_N",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGK1",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGP3S13S15",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGP3S14",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGP4",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGPOP",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGTRD",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGTRDA10",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGTRDA38",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_REGTRDA64",
       "version": "1.0",
       "category": "regional",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_RESERVBPM6",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_SATELLITE_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_SATELREG_DISS",
       "version": "1.0",
       "category": "other",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_SHS_HOLDER",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_STEC01",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_STEC02",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_STEC03",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_STEC_COMPLETE",
       "version": "1.0",
       "category": "balance_of_payments",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_STOCCOM",
       "version": "1.0",
       "category": "other",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_SUTAP21_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_SUTAP38_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_SUTAP64_DISS",
       "version": "1.0",
       "category": "national_accounts",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_TREASCOMP",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_TREASDEBT",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_TREASFIN",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_TREASREV",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_TREASURY",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_TREASVAR",
       "version": "1.0",
       "category": "public_finances",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_UCIDEV",
       "version": "1.0",
       "category": "financial_institutions",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_UNEMPLOYMENT",
       "version": "1.0",
       "category": "labour_population",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "BE2",
       "id": "DF_UNEMPLOY_RATE",
       "version": "1.0",
       "category": "labour_population",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "BOP_BPM6",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "CBS",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "CGD",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "CGO",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "CPI",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "DCS",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "DSE",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "EMP",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "EXD",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "EXR",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "FSI",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "GGD",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "GGO",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "IIP_BPM6",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "ILV1",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "ILV2",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "IND",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "INR",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "MET",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "NAG",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "OFS",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "POP",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "PPI",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "SBS",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "SPI",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "UEM",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     },
     {
       "agency": "IMF",
       "id": "WOE",
       "version": "1.0",
       "category": "imf_sdds",
-      "is_final": false,
-      "status": "built_or_skipped"
+      "is_final": true
     }
   ]
 }

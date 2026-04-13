@@ -299,6 +299,28 @@ def _write_atomic(path: Path, payload: str) -> None:
     tmp.replace(path)
 
 
+# Fields that change on every run but carry no real payload — ignored when
+# deciding whether a fiche has actually drifted.
+_VOLATILE_FIELDS = frozenset({"fetched_at"})
+
+
+def _fiche_content_equal(existing_raw: str, new_fiche: EnrichedDataflow) -> bool:
+    """Return True if ``new_fiche`` is semantically identical to an on-disk fiche.
+
+    The check ignores volatile fields (currently ``fetched_at``) so that a
+    weekly rebuild without upstream changes produces an empty diff.
+    """
+    try:
+        existing = json.loads(existing_raw)
+    except ValueError:
+        return False
+    new_data = new_fiche.model_dump(mode="json")
+    for f in _VOLATILE_FIELDS:
+        existing.pop(f, None)
+        new_data.pop(f, None)
+    return existing == new_data
+
+
 # --------------------------------------------------------------------------- #
 # Orchestration.
 # --------------------------------------------------------------------------- #
@@ -367,6 +389,15 @@ async def _build_one(
         category=category,
         multilang_names=multilang.get((stub.agency, stub.id), {}),
     )
+
+    # Skip the write if the only thing that would change is the fetched_at
+    # timestamp — otherwise every weekly rebuild would produce a noisy 200+
+    # file PR even when NBB hasn't published anything new.
+    if path.exists():
+        existing_raw = path.read_text()
+        if _fiche_content_equal(existing_raw, fiche):
+            return ("unchanged", None)
+
     _write_atomic(path, fiche.model_dump_json(indent=2))
     return ("built", None)
 
@@ -374,9 +405,15 @@ async def _build_one(
 def _write_index(
     catalog_dir: Path,
     stubs: list[DataflowStub],
-    results: list[tuple[str, str | None]],
     started_at: str,
+    *,
+    any_fiche_written: bool,
 ) -> None:
+    """Write ``_index.json`` — but only bump ``built_at`` if at least one fiche drifted.
+
+    This keeps the diff empty on a no-op run (nothing in git status), so the
+    weekly rebuild workflow never opens a spurious PR.
+    """
     categories: Counter[str] = Counter(classify(s) for s in stubs)
     flows = [
         {
@@ -384,19 +421,36 @@ def _write_index(
             "id": s.id,
             "version": s.version,
             "category": classify(s),
-            "is_final": s.is_final,
-            "status": status,
+            "is_final": True,
         }
-        for s, (status, _) in zip(stubs, results, strict=True)
+        for s in sorted(stubs, key=lambda x: (x.agency, x.id))
     ]
+
+    index_path = catalog_dir / "_index.json"
+    built_at = started_at
+    if index_path.exists() and not any_fiche_written:
+        try:
+            existing = json.loads(index_path.read_text())
+            if existing.get("built_at"):
+                built_at = existing["built_at"]
+        except ValueError:
+            pass
+
     index = {
-        "built_at": started_at,
+        "built_at": built_at,
         "dataflow_count": len(stubs),
         "schema_version": SCHEMA_VERSION,
         "categories": dict(sorted(categories.items())),
         "flows": flows,
     }
-    _write_atomic(catalog_dir / "_index.json", json.dumps(index, indent=2, ensure_ascii=False))
+    new_payload = json.dumps(index, indent=2, ensure_ascii=False)
+    if index_path.exists():
+        try:
+            if index_path.read_text() == new_payload:
+                return
+        except OSError:
+            pass
+    _write_atomic(index_path, new_payload)
 
 
 def _write_errors_report(catalog_dir: Path, errors: list[dict[str, Any]]) -> None:
@@ -476,12 +530,14 @@ async def run(argv: list[str] | None = None) -> int:
         ]
 
         results: list[tuple[str, str | None]] = []
-        built = skipped = errored = 0
+        built = skipped = unchanged = errored = 0
         for i, coro in enumerate(asyncio.as_completed(tasks), start=1):
             status, err = await coro
             results.append((status, err))
             if status == "built":
                 built += 1
+            elif status == "unchanged":
+                unchanged += 1
             elif status == "skipped":
                 skipped += 1
             else:
@@ -492,24 +548,18 @@ async def run(argv: list[str] | None = None) -> int:
                     done=i,
                     total=len(tasks),
                     built=built,
+                    unchanged=unchanged,
                     skipped=skipped,
                     errored=errored,
                 )
 
-    # asyncio.as_completed returns results out-of-order, but we still need the
-    # index to reflect every stub in the input order with its outcome. Rebuild by
-    # re-reading the disk after the fact — simpler and keeps the index accurate.
-    ordered_results: list[tuple[str, str | None]] = []
     errors: list[dict[str, Any]] = []
     for stub in stubs:
         path = _fiche_path(catalog_dir, stub.agency, stub.id)
-        if path.exists():
-            ordered_results.append(("built" if args.force else "built_or_skipped", None))
-        else:
-            ordered_results.append(("error", "fiche not written"))
+        if not path.exists():
             errors.append({"agency": stub.agency, "id": stub.id, "error": "fiche not written"})
 
-    _write_index(catalog_dir, stubs, ordered_results, started_at)
+    _write_index(catalog_dir, stubs, started_at, any_fiche_written=(built > 0))
     _write_errors_report(catalog_dir, errors)
 
     elapsed = time.monotonic() - t0

@@ -37,6 +37,11 @@ PLAN.md
 # Claude Code / local agent state
 .claude/
 
+# mcp-publisher CLI credentials (stored in the repo root after `login`).
+# NEVER commit these — they grant publish access to the MCP Registry.
+.mcpregistry_github_token
+.mcpregistry_registry_token
+
 # Hishel / disk cache leftovers
 *.db
 *.db-journal
