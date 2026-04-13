@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-04-12T16:46:18+00:00",
+  "built_at": "2026-04-13T15:01:02+00:00",
   "dataflow_count": 221,
   "schema_version": 1,
   "categories": {
@@ -25,7 +25,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -33,7 +33,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -41,7 +41,7 @@
       "version": "1.0",
       "category": "prices",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -49,7 +49,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -57,7 +57,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -65,7 +65,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -73,7 +73,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -81,7 +81,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -89,7 +89,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -97,7 +97,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -105,7 +105,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -113,7 +113,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -121,7 +121,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -129,7 +129,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -137,7 +137,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -145,7 +145,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -153,7 +153,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -161,7 +161,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -169,7 +169,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -177,7 +177,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -185,7 +185,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -193,7 +193,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -201,7 +201,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -209,7 +209,7 @@
       "version": "1.0",
       "category": "corporate_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -217,7 +217,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -225,7 +225,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -233,7 +233,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -241,7 +241,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -249,7 +249,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -257,7 +257,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -265,7 +265,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -273,7 +273,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -281,7 +281,7 @@
       "version": "1.0",
       "category": "surveys",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -289,7 +289,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -297,7 +297,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -305,7 +305,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -313,7 +313,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -321,7 +321,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -329,7 +329,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -337,7 +337,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -345,7 +345,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -353,7 +353,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -361,7 +361,7 @@
       "version": "1.0",
       "category": "labour_population",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -369,7 +369,7 @@
       "version": "1.0",
       "category": "labour_population",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -377,7 +377,7 @@
       "version": "1.0",
       "category": "other",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -385,7 +385,7 @@
       "version": "1.0",
       "category": "exchange_interest_rates",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -393,7 +393,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -401,7 +401,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -409,7 +409,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -417,7 +417,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -425,7 +425,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -433,7 +433,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -441,7 +441,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -449,7 +449,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -457,7 +457,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -465,7 +465,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -473,7 +473,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -481,7 +481,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -489,7 +489,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -497,7 +497,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -505,7 +505,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -513,7 +513,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -521,7 +521,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -529,7 +529,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -537,7 +537,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -545,7 +545,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -553,7 +553,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -561,7 +561,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -569,7 +569,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -577,7 +577,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -585,7 +585,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -593,7 +593,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -601,7 +601,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -609,7 +609,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -617,7 +617,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -625,7 +625,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -633,7 +633,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -641,7 +641,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -649,7 +649,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -657,7 +657,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -665,7 +665,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -673,7 +673,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -681,7 +681,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -689,7 +689,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -697,7 +697,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -705,7 +705,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -713,7 +713,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -721,7 +721,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -729,7 +729,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -737,7 +737,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -745,7 +745,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -753,7 +753,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -761,7 +761,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -769,7 +769,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -777,7 +777,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -785,7 +785,7 @@
       "version": "1.0",
       "category": "financial_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -793,7 +793,7 @@
       "version": "1.0",
       "category": "financial_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -801,7 +801,7 @@
       "version": "1.0",
       "category": "financial_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -809,7 +809,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -817,7 +817,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -825,7 +825,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -833,7 +833,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -841,7 +841,7 @@
       "version": "1.0",
       "category": "financial_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -849,7 +849,7 @@
       "version": "1.0",
       "category": "financial_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -857,7 +857,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -865,7 +865,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -873,7 +873,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -881,7 +881,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -889,7 +889,7 @@
       "version": "1.0",
       "category": "prices",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -897,7 +897,7 @@
       "version": "1.0",
       "category": "prices",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -905,7 +905,7 @@
       "version": "1.0",
       "category": "prices",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -913,7 +913,7 @@
       "version": "1.0",
       "category": "foreign_trade",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -921,7 +921,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -929,7 +929,7 @@
       "version": "1.0",
       "category": "prices",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -937,7 +937,7 @@
       "version": "1.0",
       "category": "exchange_interest_rates",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -945,7 +945,7 @@
       "version": "1.0",
       "category": "exchange_interest_rates",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -953,7 +953,7 @@
       "version": "1.0",
       "category": "exchange_interest_rates",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -961,7 +961,7 @@
       "version": "1.0",
       "category": "exchange_interest_rates",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -969,7 +969,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -977,7 +977,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -985,7 +985,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -993,7 +993,7 @@
       "version": "1.0",
       "category": "exchange_interest_rates",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1001,7 +1001,7 @@
       "version": "1.0",
       "category": "exchange_interest_rates",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1009,7 +1009,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1017,7 +1017,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1025,7 +1025,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1033,7 +1033,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1041,7 +1041,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1049,7 +1049,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1057,7 +1057,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1065,7 +1065,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1073,7 +1073,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1081,7 +1081,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1089,7 +1089,7 @@
       "version": "1.0",
       "category": "other",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1097,7 +1097,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1105,7 +1105,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1113,7 +1113,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1121,7 +1121,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1129,7 +1129,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1137,7 +1137,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1145,7 +1145,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1153,7 +1153,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1161,7 +1161,7 @@
       "version": "1.0",
       "category": "other",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1169,7 +1169,7 @@
       "version": "1.0",
       "category": "other",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1177,7 +1177,7 @@
       "version": "1.0",
       "category": "prices",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1185,7 +1185,7 @@
       "version": "1.0",
       "category": "prices",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1193,7 +1193,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1201,7 +1201,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1209,7 +1209,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1217,7 +1217,7 @@
       "version": "1.0",
       "category": "labour_population",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1225,7 +1225,7 @@
       "version": "1.0",
       "category": "prices",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1233,7 +1233,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1241,7 +1241,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1249,7 +1249,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1257,7 +1257,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1265,7 +1265,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1273,7 +1273,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1281,7 +1281,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1289,7 +1289,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1297,7 +1297,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1305,7 +1305,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1313,7 +1313,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1321,7 +1321,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1329,7 +1329,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1337,7 +1337,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1345,7 +1345,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1353,7 +1353,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1361,7 +1361,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1369,7 +1369,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1377,7 +1377,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1385,7 +1385,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1393,7 +1393,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1401,7 +1401,7 @@
       "version": "1.0",
       "category": "regional",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1409,7 +1409,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1417,7 +1417,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1425,7 +1425,7 @@
       "version": "1.0",
       "category": "other",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1433,7 +1433,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1441,7 +1441,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1449,7 +1449,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1457,7 +1457,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1465,7 +1465,7 @@
       "version": "1.0",
       "category": "balance_of_payments",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1473,7 +1473,7 @@
       "version": "1.0",
       "category": "other",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1481,7 +1481,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1489,7 +1489,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1497,7 +1497,7 @@
       "version": "1.0",
       "category": "national_accounts",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1505,7 +1505,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1513,7 +1513,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1521,7 +1521,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1529,7 +1529,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1537,7 +1537,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1545,7 +1545,7 @@
       "version": "1.0",
       "category": "public_finances",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1553,7 +1553,7 @@
       "version": "1.0",
       "category": "financial_institutions",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1561,7 +1561,7 @@
       "version": "1.0",
       "category": "labour_population",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "BE2",
@@ -1569,7 +1569,7 @@
       "version": "1.0",
       "category": "labour_population",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1577,7 +1577,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1585,7 +1585,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1593,7 +1593,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1601,7 +1601,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1609,7 +1609,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1617,7 +1617,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1625,7 +1625,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1633,7 +1633,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1641,7 +1641,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1649,7 +1649,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1657,7 +1657,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1665,7 +1665,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1673,7 +1673,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1681,7 +1681,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1689,7 +1689,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1697,7 +1697,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1705,7 +1705,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1713,7 +1713,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1721,7 +1721,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1729,7 +1729,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1737,7 +1737,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1745,7 +1745,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1753,7 +1753,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1761,7 +1761,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1769,7 +1769,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1777,7 +1777,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     },
     {
       "agency": "IMF",
@@ -1785,7 +1785,7 @@
       "version": "1.0",
       "category": "imf_sdds",
       "is_final": false,
-      "status": "built_or_skipped"
+      "status": "built"
     }
   ]
 }
