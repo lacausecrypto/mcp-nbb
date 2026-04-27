@@ -71,7 +71,7 @@
         },
         {
           "id": "GDE",
-          "name": "Debt in euro (since 1999, only in Belgian franc until end of 1998)"
+          "name": "Debt in euro (since 2002, only in Belgian franc until end of 2001)"
         },
         {
           "id": "GDEO",
@@ -858,7 +858,7 @@
           "name": "Expenditure"
         }
       ],
-      "total_codes": 250,
+      "total_codes": 251,
       "truncated": true
     }
   ],
@@ -881,6 +881,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:30+00:00",
+  "fetched_at": "2026-04-27T05:43:52+00:00",
   "schema_version": 1
 }
