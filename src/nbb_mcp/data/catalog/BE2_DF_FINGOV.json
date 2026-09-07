@@ -5,10 +5,10 @@
   "category": "public_finances",
   "is_final": true,
   "names": {
-    "en": "Financial government accounts: New transactions",
+    "en": "Government financial accounts: new transactions",
     "fr": "Comptes financiers des administrations publiques: Nouvelles transactions",
     "nl": "Financiële overheidsrekeningen: Nieuwe transacties",
-    "de": "Financial government accounts: New transactions"
+    "de": "Government financial accounts: new transactions"
   },
   "frequencies_available": [
     "A",
@@ -616,6 +616,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:47+00:00",
+  "fetched_at": "2026-09-07T07:37:01+00:00",
   "schema_version": 1
 }

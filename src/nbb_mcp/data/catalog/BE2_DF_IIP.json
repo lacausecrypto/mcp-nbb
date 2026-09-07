@@ -5,10 +5,10 @@
   "category": "balance_of_payments",
   "is_final": true,
   "names": {
-    "en": "International Investment Position",
+    "en": "International investment position",
     "fr": "Position extérieure globale",
     "nl": "Internationale Investeringspositie",
-    "de": "International Investment Position"
+    "de": "International investment position"
   },
   "frequencies_available": [
     "A",
@@ -1932,6 +1932,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:57+00:00",
+  "fetched_at": "2026-09-07T07:37:21+00:00",
   "schema_version": 1
 }

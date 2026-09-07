@@ -5,10 +5,10 @@
   "category": "public_finances",
   "is_final": true,
   "names": {
-    "en": "Fixed-interest securities of more than one year",
-    "fr": "Titres à revenu fixe à plus d'un an",
-    "nl": "Vastrentende effecten op meer dan een jaar",
-    "de": "Fixed-interest securities of more than one year"
+    "en": "Long-term debt securities",
+    "fr": "Titres de créance à long terme",
+    "nl": "Langlopende schuldbewijzen",
+    "de": "Long-term debt securities"
   },
   "frequencies_available": [
     "A",
@@ -427,6 +427,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:48+00:00",
+  "fetched_at": "2026-09-07T07:37:07+00:00",
   "schema_version": 1
 }

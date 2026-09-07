@@ -5,10 +5,10 @@
   "category": "national_accounts",
   "is_final": true,
   "names": {
-    "en": "Satellite accounts of NPI",
+    "en": "NPI satellite account",
     "fr": "Comptes satellites des ISBL",
     "nl": "Satellietrekening van de IZW's",
-    "de": "Satellite accounts of NPI"
+    "de": "NPI satellite account"
   },
   "frequencies_available": [
     "A",
@@ -791,6 +791,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:48+00:00",
+  "fetched_at": "2026-09-07T07:36:57+00:00",
   "schema_version": 1
 }
