@@ -5,10 +5,10 @@
   "category": "financial_institutions",
   "is_final": true,
   "names": {
-    "en": "Management companies of UCI and investment firms",
+    "en": "Management companies of UCIs and investment firms",
     "fr": "Sociétés de gestion d'OPC et entreprises d'investissement",
     "nl": "Beheersvennootschappen van ICB's en beleggingsondernemingen",
-    "de": "Management companies of UCI and investment firms"
+    "de": "Management companies of UCIs and investment firms"
   },
   "frequencies_available": [
     "A",
@@ -607,6 +607,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:44+00:00",
+  "fetched_at": "2026-09-07T07:37:44+00:00",
   "schema_version": 1
 }

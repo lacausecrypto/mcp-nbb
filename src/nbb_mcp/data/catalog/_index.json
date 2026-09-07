@@ -1,6 +1,6 @@
 {
-  "built_at": "2026-04-12T16:46:18+00:00",
-  "dataflow_count": 221,
+  "built_at": "2026-09-07T07:36:53+00:00",
+  "dataflow_count": 222,
   "schema_version": 1,
   "categories": {
     "balance_of_payments": 13,
@@ -12,7 +12,7 @@
     "imf_sdds": 27,
     "labour_population": 5,
     "national_accounts": 17,
-    "other": 6,
+    "other": 7,
     "prices": 8,
     "public_finances": 24,
     "regional": 19,
@@ -836,6 +836,13 @@
       "id": "DF_IROLOYLD",
       "version": "1.0",
       "category": "exchange_interest_rates",
+      "is_final": true
+    },
+    {
+      "agency": "BE2",
+      "id": "DF_IROLOYLD_2026",
+      "version": "1.0",
+      "category": "other",
       "is_final": true
     },
     {

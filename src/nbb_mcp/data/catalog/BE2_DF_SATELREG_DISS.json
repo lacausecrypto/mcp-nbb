@@ -68,9 +68,13 @@
         {
           "id": "PRC_D1",
           "name": "Compensation of employees (millions of euro)"
+        },
+        {
+          "id": "ADD_VAL",
+          "name": "Value added (millions of euro)"
         }
       ],
-      "total_codes": 3,
+      "total_codes": 4,
       "truncated": false
     },
     {
@@ -483,6 +487,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "fetched_at": "2026-09-07T07:37:00+00:00",
   "schema_version": 1
 }

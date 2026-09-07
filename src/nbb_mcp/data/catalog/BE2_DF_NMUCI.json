@@ -5,10 +5,10 @@
   "category": "financial_institutions",
   "is_final": true,
   "names": {
-    "en": "Non-money market collective investment undertakings governed by Belgian law",
+    "en": "Non-monetary market collective investment undertakings governed by Belgian law",
     "fr": "Organismes de placement collectif non monétaires de droit belge",
     "nl": "Niet-monetaire instellingen voor collectieve belegging naar Belgisch recht",
-    "de": "Non-money market collective investment undertakings governed by Belgian law"
+    "de": "Non-monetary market collective investment undertakings governed by Belgian law"
   },
   "frequencies_available": [
     "A",
@@ -190,6 +190,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:48+00:00",
+  "fetched_at": "2026-09-07T07:37:53+00:00",
   "schema_version": 1
 }

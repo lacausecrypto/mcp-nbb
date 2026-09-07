@@ -5,10 +5,10 @@
   "category": "financial_institutions",
   "is_final": true,
   "names": {
-    "en": "Developments of UCI",
+    "en": "Developments of UCIs",
     "fr": "Evolutions des OPC",
     "nl": "Verloop van de ICB's",
-    "de": "Developments of UCI"
+    "de": "Developments of UCIs"
   },
   "frequencies_available": [
     "A",
@@ -218,6 +218,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:33:00+00:00",
+  "fetched_at": "2026-09-07T07:37:40+00:00",
   "schema_version": 1
 }
