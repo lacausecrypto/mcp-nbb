@@ -274,9 +274,33 @@
         {
           "id": "BCG",
           "name": "Budgetary Central Government"
+        },
+        {
+          "id": "_X",
+          "name": "Not allocated/unspecified"
+        },
+        {
+          "id": "FSI19",
+          "name": "Financial Soundness Indicators (2019)"
+        },
+        {
+          "id": "FS219",
+          "name": "FSI: Sectoral Financial Statements (2019)"
+        },
+        {
+          "id": "ECC",
+          "name": "Climate Change"
+        },
+        {
+          "id": "FXI",
+          "name": "Foreign Exchange Intervention"
+        },
+        {
+          "id": "YGG",
+          "name": "Gender"
         }
       ],
-      "total_codes": 61,
+      "total_codes": 67,
       "truncated": false
     },
     {
@@ -1894,7 +1918,7 @@
           "name": "Balance of Payments, Current Account, Goods and Services, Services, Transportation, Sea Transport, Passenger, Debit, US Dollars"
         }
       ],
-      "total_codes": 65863,
+      "total_codes": 65865,
       "truncated": true
     },
     {
@@ -2767,6 +2791,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:28+00:00",
+  "fetched_at": "2026-10-19T08:12:11+00:00",
   "schema_version": 1
 }
