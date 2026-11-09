@@ -5,10 +5,10 @@
   "category": "financial_institutions",
   "is_final": true,
   "names": {
-    "en": "Credit institutions on corporate basis",
-    "fr": "Etablissements de crédit sur base sociale",
-    "nl": "Kredietinstellingen op vennootschappelijke basis",
-    "de": "Credit institutions on corporate basis"
+    "en": "Main blance sheet items of credit institutions,data on parent-company basis",
+    "fr": "Principales rubriques du bilan des établissements de crédit, données sur une base sociale",
+    "nl": "Voornaamste balansrubrieken van kredietinstellingen, gegevens op vennootschappelijke basis",
+    "de": "Main blance sheet items of credit institutions,data on parent-company basis"
   },
   "frequencies_available": [
     "A",
@@ -927,6 +927,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:49+00:00",
+  "fetched_at": "2026-11-09T10:30:52+00:00",
   "schema_version": 1
 }
