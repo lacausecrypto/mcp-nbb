@@ -11,59 +11,37 @@
     "de": "Consumer survey"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1985-01-01",
+    "end": "2026-10-31"
   },
+  "observation_count": 16516,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "CONSN_INDIC",
-      "position": 1,
+      "position": 2,
       "name": "CONSN_INDIC",
       "codes": [
         {
           "id": "CCI",
           "name": "Consumer confidence indicator"
-        },
-        {
-          "id": "COM",
-          "name": "Components"
         },
         {
           "id": "FES",
@@ -80,10 +58,6 @@
         {
           "id": "FSH",
           "name": "Forecasts of savings of households (next 12 months)"
-        },
-        {
-          "id": "OTH",
-          "name": "Other indicators"
         },
         {
           "id": "AES",
@@ -118,18 +92,14 @@
           "name": "Appraisal of actual moment whether or not it is favorable to make savings"
         }
       ],
-      "total_codes": 15,
+      "total_codes": 13,
       "truncated": false
     },
     {
       "id": "BE_AREA",
-      "position": 2,
+      "position": 3,
       "name": "BE_AREA",
       "codes": [
-        {
-          "id": "_Z",
-          "name": "Not applicable"
-        },
         {
           "id": "BE",
           "name": "Belgium"
@@ -145,261 +115,9 @@
         {
           "id": "BX",
           "name": "Brussels-Capital Region"
-        },
-        {
-          "id": "BR",
-          "name": "Brussels"
-        },
-        {
-          "id": "000",
-          "name": "Belgium"
-        },
-        {
-          "id": "100",
-          "name": "Brussels-Capital Region"
-        },
-        {
-          "id": "200",
-          "name": "Flemish Region"
-        },
-        {
-          "id": "210",
-          "name": "Antwerp (province)"
-        },
-        {
-          "id": "211",
-          "name": "Antwerp (district)"
-        },
-        {
-          "id": "212",
-          "name": "Mechelen"
-        },
-        {
-          "id": "213",
-          "name": "Turnhout"
-        },
-        {
-          "id": "220",
-          "name": "Limburg"
-        },
-        {
-          "id": "221",
-          "name": "Hasselt"
-        },
-        {
-          "id": "222",
-          "name": "Maaseik"
-        },
-        {
-          "id": "223",
-          "name": "Tongeren"
-        },
-        {
-          "id": "230",
-          "name": "East Flanders"
-        },
-        {
-          "id": "231",
-          "name": "Aalst"
-        },
-        {
-          "id": "232",
-          "name": "Dendermonde"
-        },
-        {
-          "id": "233",
-          "name": "Eeklo"
-        },
-        {
-          "id": "234",
-          "name": "Ghent"
-        },
-        {
-          "id": "235",
-          "name": "Oudenaarde"
-        },
-        {
-          "id": "236",
-          "name": "Sint-Niklaas"
-        },
-        {
-          "id": "240",
-          "name": "Flemish Brabant"
-        },
-        {
-          "id": "241",
-          "name": "Halle-Vilvoorde"
-        },
-        {
-          "id": "242",
-          "name": "Leuven"
-        },
-        {
-          "id": "250",
-          "name": "West Flanders"
-        },
-        {
-          "id": "251",
-          "name": "Bruges"
-        },
-        {
-          "id": "252",
-          "name": "Diksmuide"
-        },
-        {
-          "id": "253",
-          "name": "Ypres"
-        },
-        {
-          "id": "254",
-          "name": "Kortrijk"
-        },
-        {
-          "id": "255",
-          "name": "Ostend"
-        },
-        {
-          "id": "256",
-          "name": "Roeselare"
-        },
-        {
-          "id": "257",
-          "name": "Tielt"
-        },
-        {
-          "id": "258",
-          "name": "Veurne"
-        },
-        {
-          "id": "300",
-          "name": "Walloon Region"
-        },
-        {
-          "id": "310",
-          "name": "Walloon Brabant"
-        },
-        {
-          "id": "320",
-          "name": "Hainaut"
-        },
-        {
-          "id": "321",
-          "name": "Ath"
-        },
-        {
-          "id": "322",
-          "name": "Charleroi"
-        },
-        {
-          "id": "323",
-          "name": "Mons"
-        },
-        {
-          "id": "324",
-          "name": "Mouscron"
-        },
-        {
-          "id": "325",
-          "name": "Soignies"
-        },
-        {
-          "id": "326",
-          "name": "Thuin"
-        },
-        {
-          "id": "327",
-          "name": "Tournai"
-        },
-        {
-          "id": "328",
-          "name": "Tournai-Mouscron"
-        },
-        {
-          "id": "329",
-          "name": "La Louvière"
-        },
-        {
-          "id": "330",
-          "name": "Liège (province)"
-        },
-        {
-          "id": "331",
-          "name": "Huy"
-        },
-        {
-          "id": "332",
-          "name": "Liège (district)"
-        },
-        {
-          "id": "333",
-          "name": "Verviers"
-        },
-        {
-          "id": "335",
-          "name": "Verviers (F)"
-        },
-        {
-          "id": "337",
-          "name": "Verviers (G)"
-        },
-        {
-          "id": "334",
-          "name": "Waremme"
-        },
-        {
-          "id": "340",
-          "name": "Luxembourg"
-        },
-        {
-          "id": "341",
-          "name": "Arlon"
-        },
-        {
-          "id": "342",
-          "name": "Bastogne"
-        },
-        {
-          "id": "343",
-          "name": "Marche-en-Famenne"
-        },
-        {
-          "id": "344",
-          "name": "Neufchâteau"
-        },
-        {
-          "id": "345",
-          "name": "Virton"
-        },
-        {
-          "id": "350",
-          "name": "Namur (province)"
-        },
-        {
-          "id": "351",
-          "name": "Dinant"
-        },
-        {
-          "id": "352",
-          "name": "Namur (district)"
-        },
-        {
-          "id": "353",
-          "name": "Philippeville"
-        },
-        {
-          "id": "400",
-          "name": "Extraregional area"
-        },
-        {
-          "id": "336",
-          "name": "German-speaking Community"
-        },
-        {
-          "id": "354",
-          "name": "Nivelles"
         }
       ],
-      "total_codes": 68,
+      "total_codes": 4,
       "truncated": false
     }
   ],
@@ -422,6 +140,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:45+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:13:24+00:00",
+  "schema_version": 2
 }

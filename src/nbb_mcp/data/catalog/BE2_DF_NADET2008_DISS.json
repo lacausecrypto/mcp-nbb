@@ -11,50 +11,32 @@
     "de": "Main aggregates by branch of activity and institutional sector"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1995-01-01",
+    "end": "2025-12-31"
   },
+  "observation_count": 54877,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "INDICATOR",
-      "position": 1,
+      "position": 2,
       "name": "INDICATOR",
       "codes": [
         {
@@ -99,13 +81,9 @@
     },
     {
       "id": "BRANCH",
-      "position": 2,
+      "position": 3,
       "name": "BRANCH",
       "codes": [
-        {
-          "id": "A38",
-          "name": "A38"
-        },
         {
           "id": "A38_AA",
           "name": "AA Agriculture, forestry and fishing"
@@ -253,10 +231,6 @@
         {
           "id": "A38_TT",
           "name": "TT Activities of households as employers of domestic personnel and undifferentiated goods and services production of households for own use"
-        },
-        {
-          "id": "A64",
-          "name": "A64"
         },
         {
           "id": "A64_01",
@@ -515,34 +489,14 @@
           "name": "Total"
         }
       ],
-      "total_codes": 103,
+      "total_codes": 101,
       "truncated": false
     },
     {
       "id": "SECTOR",
-      "position": 3,
+      "position": 4,
       "name": "SECTOR",
       "codes": [
-        {
-          "id": "C",
-          "name": "Non-financial corporations"
-        },
-        {
-          "id": "F",
-          "name": "Financial and non-financial corporations"
-        },
-        {
-          "id": "G",
-          "name": "General government"
-        },
-        {
-          "id": "H",
-          "name": "Households"
-        },
-        {
-          "id": "T",
-          "name": "Total economy"
-        },
         {
           "id": "S1",
           "name": "Total economy (S.1)"
@@ -560,112 +514,32 @@
           "name": "General government (S.13)"
         },
         {
-          "id": "S1300",
-          "name": "General government"
-        },
-        {
-          "id": "S1311",
-          "name": "Federal government"
-        },
-        {
-          "id": "S1312",
-          "name": "Communities and regions"
-        },
-        {
-          "id": "S1312_BX",
-          "name": "Brussels Capital region"
-        },
-        {
-          "id": "S1312_CCF",
-          "name": "Commission of the French speaking community"
-        },
-        {
-          "id": "S1312_DE",
-          "name": "German community"
-        },
-        {
-          "id": "S1312_FR",
-          "name": "French community"
-        },
-        {
-          "id": "S1312_JCC",
-          "name": "Joint Community Commission"
-        },
-        {
-          "id": "S1312_NA",
-          "name": "Not allocated"
-        },
-        {
-          "id": "S1312_VGC",
-          "name": "Commission of the Flemish community"
-        },
-        {
-          "id": "S1312_VL",
-          "name": "Flemish community"
-        },
-        {
-          "id": "S1312_WL",
-          "name": "Walloon region"
-        },
-        {
-          "id": "S1313",
-          "name": "Local government"
-        },
-        {
-          "id": "S1314",
-          "name": "Social security funds"
-        },
-        {
           "id": "S14",
           "name": "Households (S.14)"
-        },
-        {
-          "id": "S14_15",
-          "name": "Households and Non-profit institutions serving households (S.14 + S.15)"
         },
         {
           "id": "S15",
           "name": "Non profit institutions serving households (S.15)"
         }
       ],
-      "total_codes": 26,
+      "total_codes": 6,
       "truncated": false
     },
     {
       "id": "PRICES",
-      "position": 4,
+      "position": 5,
       "name": "PRICES",
       "codes": [
         {
-          "id": "CQ",
-          "name": "Contributions to the volume change - Q to Q"
-        },
-        {
-          "id": "CY",
-          "name": "Contributions to the volume change - Y to Y"
-        },
-        {
-          "id": "D",
-          "name": "Deflator"
-        },
-        {
           "id": "L",
           "name": "In volume: chain linked, in millions of euro"
-        },
-        {
-          "id": "LQ",
-          "name": "Chain linked - Q to Q percentage change (reference year 2020)"
-        },
-        {
-          "id": "LY",
-          "name": "Chain linked - Y to Y percentage change (reference year 2020)"
         },
         {
           "id": "V",
           "name": "Current prices in millions of euro"
         }
       ],
-      "total_codes": 7,
+      "total_codes": 2,
       "truncated": false
     }
   ],
@@ -688,6 +562,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:46+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:10:43+00:00",
+  "schema_version": 2
 }

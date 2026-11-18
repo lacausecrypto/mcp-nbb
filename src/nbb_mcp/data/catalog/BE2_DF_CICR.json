@@ -11,50 +11,32 @@
     "de": "Consumer and mortgage credit according to the Central Individual Credit Register"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2007-01-01",
+    "end": "2024-04-30"
   },
+  "observation_count": 11024,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "CICR_TYPE",
-      "position": 1,
+      "position": 2,
       "name": "CICR_TYPE",
       "codes": [
         {
@@ -91,16 +73,12 @@
     },
     {
       "id": "CICR_ITEM",
-      "position": 2,
+      "position": 3,
       "name": "CICR_ITEM",
       "codes": [
         {
           "id": "NOC",
           "name": "Number of outstanding credits"
-        },
-        {
-          "id": "OOC",
-          "name": "Outstanding overdue credits"
         },
         {
           "id": "OON",
@@ -109,10 +87,6 @@
         {
           "id": "OOA",
           "name": "Arrears (x € 1000)"
-        },
-        {
-          "id": "NC",
-          "name": "New credits"
         },
         {
           "id": "NCN",
@@ -125,10 +99,6 @@
         {
           "id": "NO",
           "name": "Number of new overdue credits"
-        },
-        {
-          "id": "BO",
-          "name": "Number of borrowers with at least one"
         },
         {
           "id": "BOC",
@@ -211,7 +181,7 @@
           "name": "Credit amount"
         }
       ],
-      "total_codes": 29,
+      "total_codes": 26,
       "truncated": false
     }
   ],
@@ -234,6 +204,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:55+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:12:40+00:00",
+  "schema_version": 2
 }

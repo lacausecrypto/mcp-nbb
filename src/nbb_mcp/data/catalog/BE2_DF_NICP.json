@@ -12,20 +12,19 @@
   },
   "frequencies_available": [
     "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1900-01-01",
+    "end": "2025-12-31"
   },
+  "observation_count": 96493,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
@@ -33,34 +32,18 @@
           "name": "Annual"
         },
         {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "NBB_COICOP",
-      "position": 1,
+      "position": 2,
       "name": "NBB_COICOP",
       "codes": [
-        {
-          "id": "_Z",
-          "name": "Not applicable"
-        },
         {
           "id": "99_9_9_9_99",
           "name": "General index"
@@ -82,10 +65,6 @@
           "name": "Index less petroleum products"
         },
         {
-          "id": "CLASS_F",
-          "name": "Functional classification"
-        },
-        {
           "id": "1_00_0_0_0_00",
           "name": "Foodstuffs"
         },
@@ -100,10 +79,6 @@
         {
           "id": "4_00_0_0_0_00",
           "name": "Rent"
-        },
-        {
-          "id": "CLASS_P",
-          "name": "Classification by product group"
         },
         {
           "id": "01",
@@ -856,14 +831,26 @@
         {
           "id": "05_5_2_2",
           "name": "Little accessoires for the home and the garden"
+        },
+        {
+          "id": "05_6",
+          "name": "Goods & services for house maintenance"
+        },
+        {
+          "id": "05_6_1",
+          "name": "Non-durable household goods"
+        },
+        {
+          "id": "05_6_1_1",
+          "name": "Cleaning and maintenance products"
         }
       ],
-      "total_codes": 419,
+      "total_codes": 409,
       "truncated": true
     },
     {
       "id": "INDEX_BASE",
-      "position": 2,
+      "position": 3,
       "name": "INDEX_BASE",
       "codes": [
         {
@@ -903,109 +890,29 @@
           "name": "2004"
         },
         {
-          "id": "2010",
-          "name": "2010"
-        },
-        {
           "id": "2013",
           "name": "2013"
-        },
-        {
-          "id": "2015",
-          "name": "2015"
-        },
-        {
-          "id": "2016",
-          "name": "2016"
-        },
-        {
-          "id": "_Z",
-          "name": "Not applicable"
-        },
-        {
-          "id": "1997",
-          "name": "1997"
-        },
-        {
-          "id": "2020",
-          "name": "2020"
-        },
-        {
-          "id": "2021",
-          "name": "2021"
-        },
-        {
-          "id": "2025",
-          "name": "2025"
         }
       ],
-      "total_codes": 18,
+      "total_codes": 10,
       "truncated": false
     },
     {
       "id": "INDEX_TYPE",
-      "position": 3,
+      "position": 4,
       "name": "INDEX_TYPE",
       "codes": [
         {
           "id": "NCP",
           "name": "Consumer Price Index"
-        },
-        {
-          "id": "WNICP",
-          "name": "Weights of Consumer Price Index"
-        },
-        {
-          "id": "HCP",
-          "name": "Harmonized Index of Consumer Prices"
-        },
-        {
-          "id": "INDPROD",
-          "name": "Industrial Production"
-        },
-        {
-          "id": "CONSPROD",
-          "name": "Construction Industry Production"
-        },
-        {
-          "id": "RAWMATERIALSIP",
-          "name": "Basic Materials Price Index"
-        },
-        {
-          "id": "WAGES",
-          "name": "Regulatory wages"
-        },
-        {
-          "id": "HUR",
-          "name": "Adjusted Harmonized Unemployment Rate"
-        },
-        {
-          "id": "NHU",
-          "name": "Non-harmonized Unemployment"
-        },
-        {
-          "id": "_Z",
-          "name": "Not applicable"
-        },
-        {
-          "id": "LBCI",
-          "name": "Labor costs, wages, and gross salaries in industry"
-        },
-        {
-          "id": "NFT",
-          "name": "Non harmonized external trade"
-        },
-        {
-          "id": "HFT",
-          "name": "Harmonized external trade"
         }
       ],
-      "total_codes": 13,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "DERIVATION",
-      "position": 4,
+      "position": 5,
       "name": "DERIVATION",
       "codes": [
         {
@@ -1015,21 +922,9 @@
         {
           "id": "GROWTH_RATE",
           "name": "Percentage of change"
-        },
-        {
-          "id": "RATE",
-          "name": "Percentage"
-        },
-        {
-          "id": "_Z",
-          "name": "Not applicable"
-        },
-        {
-          "id": "GROWTH_VALUE",
-          "name": "Value of change"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     }
   ],
@@ -1052,6 +947,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:54+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:14:59+00:00",
+  "schema_version": 2
 }

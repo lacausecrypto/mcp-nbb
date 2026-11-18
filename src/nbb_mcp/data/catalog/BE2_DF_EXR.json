@@ -17,15 +17,17 @@
     "M",
     "D"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1999-01-01",
+    "end": "2026-11-17"
   },
+  "observation_count": 261780,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
@@ -54,7 +56,7 @@
     },
     {
       "id": "EXR_CURRENCY",
-      "position": 1,
+      "position": 2,
       "name": "EXR_CURRENCY",
       "codes": [
         {
@@ -249,6 +251,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:11+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:37+00:00",
+  "schema_version": 2
 }

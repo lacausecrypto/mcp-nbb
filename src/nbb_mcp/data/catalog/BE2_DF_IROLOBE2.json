@@ -12,29 +12,26 @@
   },
   "frequencies_available": [
     "A",
-    "S",
     "Q",
     "M",
     "D"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1978-01-01",
+    "end": "2026-12-31"
   },
+  "observation_count": 409841,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
         },
         {
           "id": "Q",
@@ -49,12 +46,12 @@
           "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 4,
       "truncated": false
     },
     {
       "id": "IROLOBE2_MATUR",
-      "position": 1,
+      "position": 2,
       "name": "IROLOBE2_MATUR",
       "codes": [
         {
@@ -199,7 +196,7 @@
     },
     {
       "id": "IROLOBE2_TYPE",
-      "position": 2,
+      "position": 3,
       "name": "IROLOBE2_TYPE",
       "codes": [
         {
@@ -238,6 +235,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:14+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:58+00:00",
+  "schema_version": 2
 }

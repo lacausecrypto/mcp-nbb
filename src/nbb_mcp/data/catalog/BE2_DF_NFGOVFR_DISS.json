@@ -11,68 +11,34 @@
     "de": "Taxes and actual social contributions withheld to fund other sub-sectors"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1995-01-01",
+    "end": "2025-12-31"
   },
+  "observation_count": 992,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "TYPE",
-      "position": 1,
+      "position": 2,
       "name": "TYPE",
       "codes": [
-        {
-          "id": "A",
-          "name": "Data adjusted for seasonal and calendar effects - Absolute figures"
-        },
-        {
-          "id": "B",
-          "name": "Gross data"
-        },
-        {
-          "id": "CLV",
-          "name": "Estimates in volume"
-        },
-        {
-          "id": "CUP",
-          "name": "Current prices in millions of euro"
-        },
         {
           "id": "D73FR",
           "name": "Current transfers of fiscal receipts"
@@ -100,10 +66,6 @@
         {
           "id": "D73FR_D2122C_16",
           "name": "Packing contribution"
-        },
-        {
-          "id": "D73FR_D2122C_19",
-          "name": "Contribution of the oil industry"
         },
         {
           "id": "D73FR_D2122C_2",
@@ -172,22 +134,14 @@
         {
           "id": "D73FR_D51X_2",
           "name": "Assessments (PP) - Stock options"
-        },
-        {
-          "id": "P",
-          "name": "Data adjusted for seasonal and calendar effects - Percentage of GDP"
-        },
-        {
-          "id": "V",
-          "name": "Data adjusted for seasonal and calendar effects - Percentage changes"
         }
       ],
-      "total_codes": 31,
+      "total_codes": 24,
       "truncated": false
     },
     {
       "id": "SECTOR",
-      "position": 2,
+      "position": 3,
       "name": "SECTOR",
       "codes": [
         {
@@ -234,6 +188,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:06+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:12:02+00:00",
+  "schema_version": 2
 }

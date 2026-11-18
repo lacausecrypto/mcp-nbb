@@ -12,20 +12,19 @@
   },
   "frequencies_available": [
     "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "S"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2014-01-01",
+    "end": "2025-12-31"
   },
+  "observation_count": 1416,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
@@ -35,43 +34,19 @@
         {
           "id": "S",
           "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "PAYSTAT_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "PAYSTAT_ITEM",
       "codes": [
         {
-          "id": "PAYFA_1",
-          "name": "Payment cards  and accepting devices"
-        },
-        {
-          "id": "PAYFA_11",
-          "name": "Cards issued by resident PSPs"
-        },
-        {
           "id": "PAYFA_111",
           "name": "Total number of cards (irrespective of the number of functions on the card)"
-        },
-        {
-          "id": "PAYFA_12",
-          "name": "Terminals provided by resident PSPs"
         },
         {
           "id": "PAYFA_121",
@@ -84,10 +59,6 @@
         {
           "id": "PAYFA_122",
           "name": "Point of Sale (POS) terminals"
-        },
-        {
-          "id": "PAYFA_2",
-          "name": "Payment transactions involving non-MFI's"
         },
         {
           "id": "PAYFA_21",
@@ -122,24 +93,12 @@
           "name": "Electronic card payments with cards issued by resident PSPs (except cards with an e-money function only)"
         },
         {
-          "id": "PAYFA_24",
-          "name": "E-money payment transactions with e-money issued by resident PSPs"
-        },
-        {
           "id": "PAYFA_25",
           "name": "Cheques"
         },
         {
           "id": "PAYFA_26",
           "name": "Money remittance"
-        },
-        {
-          "id": "PTIC",
-          "name": "Payments transactions: initiation channels"
-        },
-        {
-          "id": "PTIC_1",
-          "name": "Credit transfers"
         },
         {
           "id": "PTIC_11",
@@ -174,10 +133,6 @@
           "name": "Online banking based"
         },
         {
-          "id": "PTIC_12221",
-          "name": "of which: E-commerce"
-        },
-        {
           "id": "PTIC_1223",
           "name": "Through mobile payment solution"
         },
@@ -186,52 +141,12 @@
           "name": "of which: peer to peer (P2P) payment solution"
         },
         {
-          "id": "PTIC_2",
-          "name": "Direct debits (domiciliations)"
-        },
-        {
           "id": "PTIC_21",
           "name": "Initiated in a file/batch"
         },
         {
           "id": "PTIC_22",
           "name": "Initiated on a single payment basis"
-        },
-        {
-          "id": "PTIC_3",
-          "name": "E-money payments"
-        },
-        {
-          "id": "PTIC_31",
-          "name": "With cards on which e-money can be stored directly"
-        },
-        {
-          "id": "PTIC_32",
-          "name": "From e-money account"
-        },
-        {
-          "id": "PTIC_321",
-          "name": "Through a card"
-        },
-        {
-          "id": "PTIC_322",
-          "name": "Through mobile payment solution"
-        },
-        {
-          "id": "PTIC_3221",
-          "name": "of which: peer to peer (P2P) payment solution"
-        },
-        {
-          "id": "PTIC_323",
-          "name": "Through other means"
-        },
-        {
-          "id": "PTIC_4",
-          "name": "Card payments with cards issued by resident PSPs (except cards with an e-money function only)"
-        },
-        {
-          "id": "PTIC_41",
-          "name": "Initiated non-electronically"
         },
         {
           "id": "PTIC_42",
@@ -258,28 +173,12 @@
           "name": "Initiated in other way"
         },
         {
-          "id": "PTSCA",
-          "name": "Payments transactions: strong customer authentication"
-        },
-        {
-          "id": "PTSCA_1",
-          "name": "Credit transfers"
-        },
-        {
           "id": "PTSCA_11",
           "name": "Initiated electronically"
         },
         {
           "id": "PTSCA_111",
           "name": "Initiated non-remotely"
-        },
-        {
-          "id": "PTSCA_1111",
-          "name": "SCA used"
-        },
-        {
-          "id": "PTSCA_1112",
-          "name": "SCA not-used"
         },
         {
           "id": "PTSCA_112",
@@ -292,38 +191,6 @@
         {
           "id": "PTSCA_1122",
           "name": "SCA not-used"
-        },
-        {
-          "id": "PTSCA_2",
-          "name": "E-money payments"
-        },
-        {
-          "id": "PTSCA_21",
-          "name": "Initiated non-remotely"
-        },
-        {
-          "id": "PTSCA_211",
-          "name": "SCA used"
-        },
-        {
-          "id": "PTSCA_212",
-          "name": "SCA not-used"
-        },
-        {
-          "id": "PTSCA_22",
-          "name": "Initiated remotely"
-        },
-        {
-          "id": "PTSCA_221",
-          "name": "SCA used"
-        },
-        {
-          "id": "PTSCA_222",
-          "name": "SCA not-used"
-        },
-        {
-          "id": "PTSCA_3",
-          "name": "Card payments with cards issued by resident PSPs (except cards with an e-money function only)"
         },
         {
           "id": "PTSCA_31",
@@ -352,50 +219,6 @@
         {
           "id": "PTSCA_3122",
           "name": "SCA not-used"
-        },
-        {
-          "id": "PTCPCW",
-          "name": "Payments transactions: card payments and cash withdrawals by terminal/point of sale location"
-        },
-        {
-          "id": "PTCPCW_4",
-          "name": "Card payments with cards issued by resident PSPs (except cards with an e-money function only)"
-        },
-        {
-          "id": "PTCPCW_41",
-          "name": "Initiated non-electronically"
-        },
-        {
-          "id": "PTCPCW_411",
-          "name": "Initiated non-remotely"
-        },
-        {
-          "id": "PTCPCW_4111",
-          "name": "In Belgium"
-        },
-        {
-          "id": "PTCPCW_4112",
-          "name": "In another country of the euro area"
-        },
-        {
-          "id": "PTCPCW_4113",
-          "name": "Outside euro area"
-        },
-        {
-          "id": "PTCPCW_412",
-          "name": "Initiated remotely"
-        },
-        {
-          "id": "PTCPCW_4121",
-          "name": "In Belgium"
-        },
-        {
-          "id": "PTCPCW_4122",
-          "name": "In another country of the euro area"
-        },
-        {
-          "id": "PTCPCW_4123",
-          "name": "Outside euro area"
         },
         {
           "id": "PTCPCW_42",
@@ -434,10 +257,6 @@
           "name": "Outside euro area"
         },
         {
-          "id": "PTCPCW_5",
-          "name": "Cash withdrawals with cards issued by resident PSPs (except cards with an e-money function only)"
-        },
-        {
           "id": "PTCPCW_51",
           "name": "In Belgium"
         },
@@ -450,12 +269,12 @@
           "name": "Outside euro area"
         }
       ],
-      "total_codes": 98,
+      "total_codes": 56,
       "truncated": false
     },
     {
       "id": "PAYSTAT_TYPE",
-      "position": 2,
+      "position": 3,
       "name": "PAYSTAT_TYPE",
       "codes": [
         {
@@ -494,6 +313,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:46+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:13:43+00:00",
+  "schema_version": 2
 }

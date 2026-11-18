@@ -1,0 +1,1038 @@
+{
+  "agency": "IMF",
+  "id": "YGG",
+  "version": "1.0",
+  "category": "imf_sdds",
+  "is_final": true,
+  "names": {
+    "en": "Gender",
+    "fr": "Gender",
+    "nl": "Gender",
+    "de": "Gender"
+  },
+  "frequencies_available": [
+    "A",
+    "Q",
+    "M",
+    "D"
+  ],
+  "default_frequency": "M",
+  "time_coverage": {
+    "start": "1953-01-01",
+    "end": "2026-11-18"
+  },
+  "observation_count": 178782,
+  "availability_filtered": true,
+  "dimensions": [
+    {
+      "id": "DATA_DOMAIN",
+      "position": 1,
+      "name": "DATA_DOMAIN",
+      "codes": [
+        {
+          "id": "BOP6",
+          "name": "Balance of Payments (BPM6)"
+        },
+        {
+          "id": "IIP6",
+          "name": "International Investment Position (BPM6)"
+        },
+        {
+          "id": "NAG",
+          "name": "National Accounts - GDP"
+        },
+        {
+          "id": "IND",
+          "name": "Ind. Of Economic Activity"
+        },
+        {
+          "id": "SBS",
+          "name": "Accumulation Accounts (Sectoral Balance Sheets)"
+        },
+        {
+          "id": "EMP",
+          "name": "Employment"
+        },
+        {
+          "id": "UEM",
+          "name": "Unemployment"
+        },
+        {
+          "id": "WOE",
+          "name": "Wages/earnings"
+        },
+        {
+          "id": "CPI",
+          "name": "Consumer price indices"
+        },
+        {
+          "id": "PPI",
+          "name": "Producer price indices"
+        },
+        {
+          "id": "GGO",
+          "name": "General Government Operations"
+        },
+        {
+          "id": "GGD",
+          "name": "General government gross debt"
+        },
+        {
+          "id": "CGO",
+          "name": "Central government operations"
+        },
+        {
+          "id": "CGD",
+          "name": "Central government debt"
+        },
+        {
+          "id": "DCS",
+          "name": "Depository Corporations Survey"
+        },
+        {
+          "id": "CBS",
+          "name": "Central Bank Survey"
+        },
+        {
+          "id": "OFS",
+          "name": "Other Financial Corporations (OFC) survey"
+        },
+        {
+          "id": "INR",
+          "name": "Interest rates"
+        },
+        {
+          "id": "DSE",
+          "name": "Debt Securities"
+        },
+        {
+          "id": "SPI",
+          "name": "Share price index"
+        },
+        {
+          "id": "ILV1",
+          "name": "Official reserve assets"
+        },
+        {
+          "id": "ILV2",
+          "name": "Template on International Reserves and Foreign Currency Liquidity"
+        },
+        {
+          "id": "MET",
+          "name": "Merchandise trade"
+        },
+        {
+          "id": "EXD",
+          "name": "External debt"
+        },
+        {
+          "id": "EXR",
+          "name": "Exchange rates"
+        },
+        {
+          "id": "POP",
+          "name": "Population"
+        },
+        {
+          "id": "FSI",
+          "name": "Financial Soundness Indicators"
+        },
+        {
+          "id": "YGG",
+          "name": "Gender"
+        }
+      ],
+      "total_codes": 28,
+      "truncated": false
+    },
+    {
+      "id": "REF_AREA",
+      "position": 2,
+      "name": "REF_AREA",
+      "codes": [
+        {
+          "id": "BE",
+          "name": "Belgium"
+        }
+      ],
+      "total_codes": 1,
+      "truncated": false
+    },
+    {
+      "id": "INDICATOR",
+      "position": 3,
+      "name": "INDICATOR",
+      "codes": [
+        {
+          "id": "BCA_BP6_EUR",
+          "name": "Balance of Payments, Current Account, Total, Net, Euros"
+        },
+        {
+          "id": "BG_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Goods and Services,Goods , Net, Euros"
+        },
+        {
+          "id": "BXG_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Goods and Services, Goods , Credit, Euros"
+        },
+        {
+          "id": "BMG_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Goods and Services, Goods , Debit, Euros"
+        },
+        {
+          "id": "BS_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Goods and Services, Services, Net, Euros"
+        },
+        {
+          "id": "BXS_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Goods and Services, Services, Credit, Euros"
+        },
+        {
+          "id": "BMS_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Goods and Services, Services, Debit, Euros"
+        },
+        {
+          "id": "BIP_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Primary income, Net, Euros"
+        },
+        {
+          "id": "BXIP_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Primary income, Credit, Euros"
+        },
+        {
+          "id": "BMIP_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Primary income, Debit, Euros"
+        },
+        {
+          "id": "BIS_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Secondary income, Net, Euros"
+        },
+        {
+          "id": "BXIS_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Secondary income, Credit, Euros"
+        },
+        {
+          "id": "BMIS_BP6_EUR",
+          "name": "Balance of Payments, Current Account,  Secondary income, Debit, Euros"
+        },
+        {
+          "id": "BK_BP6_EUR",
+          "name": "Balance of Payments, Capital  Account, Total, Net, Euros"
+        },
+        {
+          "id": "BK_CD_BP6_EUR",
+          "name": "Balance of Payments, Capital Account, Total, Credit, Euros"
+        },
+        {
+          "id": "BK_DB_BP6_EUR",
+          "name": "Balance of Payments, Capital Account, Total, Debit, Euros"
+        },
+        {
+          "id": "BF_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Net lending (+) / net borrowing (-) (balance from financial account), Euros"
+        },
+        {
+          "id": "BFD_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Net lending (+) / net borrowing (-) (balance from financial account), Direct investment, , Euros"
+        },
+        {
+          "id": "BFDA_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Net lending (+) / net borrowing (-) (balance from financial account), Direct investment, Net acquisition of financial assets, Euros"
+        },
+        {
+          "id": "BFDL_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Net lending (+) / net borrowing (-) (balance from financial account), Direct investment, Net incurrence of liabilities, Euros"
+        },
+        {
+          "id": "BFP_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Portfolio investment, Euros"
+        },
+        {
+          "id": "BFPA_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Portfolio investment, Net acquisition of financial assets, Euros"
+        },
+        {
+          "id": "BFPL_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Portfolio investment, Net incurrence of liabilities, Euros"
+        },
+        {
+          "id": "BFF_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Financial derivatives (other than reserves) and employee stock options, Euros"
+        },
+        {
+          "id": "BFO_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Other investment, Euros"
+        },
+        {
+          "id": "BFOA_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Other investment, Net acquisition of financial assets, Euros"
+        },
+        {
+          "id": "BFOL_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Other investment, Net incurrence of liabilities, Euros"
+        },
+        {
+          "id": "BFRA_BP6_EUR",
+          "name": "Balance of Payments, Financial account, Reserve assets, Euros"
+        },
+        {
+          "id": "BOP_BP6_EUR",
+          "name": "Balance of Payments, Net errors and omissions, Euros"
+        },
+        {
+          "id": "IA_BP6_EUR",
+          "name": "IIP Assets, Total , Euros"
+        },
+        {
+          "id": "IAD_BP6_EUR",
+          "name": "IIP Assets,  Direct investment, Euros"
+        },
+        {
+          "id": "IAP_BP6_EUR",
+          "name": "IIP Assets, Portfolio investment , Euros"
+        },
+        {
+          "id": "IAPE_BP6_EUR",
+          "name": "IIP Assets, Portfolio investment, Equity and investment fund shares , Euros"
+        },
+        {
+          "id": "IAPD_BP6_EUR",
+          "name": "IIP Assets, Portfolio investment, Debt securities , Euros"
+        },
+        {
+          "id": "IAO_BP6_EUR",
+          "name": "IIP Assets,    Other investment , Euros"
+        },
+        {
+          "id": "IAR_BP6_EUR",
+          "name": "IIP Assets,  Reserve assets , Euros"
+        },
+        {
+          "id": "IL_BP6_EUR",
+          "name": "IIP Liabilities, Total , Euros"
+        },
+        {
+          "id": "ILD_BP6_EUR",
+          "name": "IIP Liabilities,  Direct investment, Euros"
+        },
+        {
+          "id": "ILP_BP6_EUR",
+          "name": "IIP Liabilities, Portfolio investment , Euros"
+        },
+        {
+          "id": "ILPE_BP6_EUR",
+          "name": "IIP Liabilities, Portfolio investment, Equity and investment fund shares , Euros"
+        },
+        {
+          "id": "ILPD_BP6_EUR",
+          "name": "IIP Liabilities, Portfolio investment, Debt securities , Euros"
+        },
+        {
+          "id": "ILO_BP6_EUR",
+          "name": "IIP Liabilities,    Other investment , Euros"
+        },
+        {
+          "id": "RAFA_EUR",
+          "name": "International Reserves, Official Reserve Assets, Euros"
+        },
+        {
+          "id": "RAFAFX_EUR",
+          "name": "International Reserves, Official Reserve Assets, Foreign Currency Reserves (in Convertible Foreign Currencies), Euros"
+        },
+        {
+          "id": "RAFAFXS_EUR",
+          "name": "International Reserves, Official Reserve Assets, Foreign Currency Reserves (in Convertible Foreign Currencies), Securities, Euros"
+        },
+        {
+          "id": "RAFAFXCD_EUR",
+          "name": "International Reserves, Official Reserve Assets, Foreign Currency Reserves (in Convertible Foreign Currencies), Total Currency and Deposits with:, Euros"
+        },
+        {
+          "id": "RAFAIMF_EUR",
+          "name": "International Reserves, Official Reserve Assets, IMF Reserve Position, Euros"
+        },
+        {
+          "id": "RAFASDR_EUR",
+          "name": "International Reserves, Official Reserve Assets, SDRs, Euros"
+        },
+        {
+          "id": "RAFAGOLD_EUR",
+          "name": "International Reserves, Official Reserve Assets, Gold (Including Gold Deposits and, If Appropriate, Gold Swapped), Euros"
+        },
+        {
+          "id": "RAFAGOLDV_OZT",
+          "name": "International Reserves, Official Reserve Assets, Gold (Including Gold Deposits and, If Appropriate, Gold Swapped), Volume in Millions of Fine Troy Ounces, Fine Troy Ounces"
+        },
+        {
+          "id": "RAFAO_EUR",
+          "name": "International Reserves, Official Reserve Assets, Other Reserve Assets (Specify), Euros"
+        },
+        {
+          "id": "RAFAOF_EUR",
+          "name": "International Reserves, Official Reserve Assets, Other Reserve Assets (Specify), Financial Derivatives, Euros"
+        },
+        {
+          "id": "RAFAOL_EUR",
+          "name": "International Reserves, Official Reserve Assets, Other Reserve Assets (Specify), Loans to Non-bank Nonresidents, Euros"
+        },
+        {
+          "id": "RAOFA_EUR",
+          "name": "International Reserves, Other Foreign Currency Assets (Specify), Euros"
+        },
+        {
+          "id": "FSKRTC_PT",
+          "name": "Financial,  Financial Soundness Indicators, Core Set, Deposit Takers, Capital Adequacy, Regulatory Tier 1 Capital to Risk-Weighted Assets, Percent"
+        },
+        {
+          "id": "FSKNL_PT",
+          "name": "Financial,  Financial Soundness Indicators, Core Set, Deposit Takers, Capital Adequacy, Non-performing Loans Net of Provisions to Capital, Percent"
+        },
+        {
+          "id": "FSANL_PT",
+          "name": "Financial,  Financial Soundness Indicators, Core Set, Deposit Takers, Asset Quality, Non-performing Loans to Total Gross Loans, Percent"
+        },
+        {
+          "id": "FSERA_PT",
+          "name": "Financial,  Financial Soundness Indicators, Core Set, Deposit Takers, Earnings and Profitability, Return on Assets, Percent"
+        },
+        {
+          "id": "FSLS_PT",
+          "name": "Financial,  Financial Soundness Indicators, Core Set, Deposit Takers, Liquidity, Liquid Assets to Short Term Liabilities, Percent"
+        },
+        {
+          "id": "FSSNO_PT",
+          "name": "Financial,  Financial Soundness Indicators, Core Set, Deposit Takers, Sensitivity to Market Risk, Net Open Position in Foreign Exchange to Capital, Percent"
+        },
+        {
+          "id": "FSREPRR_PC_CP_A_PT",
+          "name": "Financial,  Financial Soundness Indicators, Core Set, Real Estate Markets, Residential Real Estate Prices, Percentage change, corresponding period previous year, Percent"
+        },
+        {
+          "id": "FITB_PA",
+          "name": "Financial, Interest Rates, Government Securities, Treasury Bills, Percent per Annum"
+        },
+        {
+          "id": "FIGB_10Y_PA",
+          "name": "Financial, Interest Rates, Government Securities, Government Bonds, 10-Year, Percent per Annum"
+        },
+        {
+          "id": "FPE_IX",
+          "name": "Financial Market Prices, Equities, Index"
+        },
+        {
+          "id": "GBR_G01_CA_EUR",
+          "name": "Fiscal, Budgetary Central Government, Revenue, 2001 Manual, Cash, Euros"
+        },
+        {
+          "id": "GBADL_T_G01_CA_EUR",
+          "name": "Fiscal, Budgetary Central Government, Assets and Liabilities, Liabilities, Classification of transactions in assets and liabilities, 2001 Manual, Cash, Euros"
+        },
+        {
+          "id": "GBX_G01_CA_EUR",
+          "name": "Fiscal, Budgetary Central Government, Memo Item: Expenditure, 2001 Manual, Cash, Euros"
+        },
+        {
+          "id": "GCALN_NC_G01_AC_EUR",
+          "name": "Fiscal, Central Government, Assets and Liabilities, Debt (at Nominal Value), National currency, Classification of the stocks of assets and liabilities, 2001 Manual, Euros"
+        },
+        {
+          "id": "GCALN_FX_G01_AC_EUR",
+          "name": "Fiscal, Central Government, Assets and Liabilities, Debt (at Nominal Value), Foreign currency, Classification of the stocks of assets and liabilities, 2001 Manual, Euros"
+        },
+        {
+          "id": "GBADL_T_XDC_G01_CA_EUR",
+          "name": "Fiscal, Budgetary Central Government, Assets and Liabilities, Liabilities, Domestic currency, Classification of transactions in assets and liabilities, 2001 Manual, Cash, Euros"
+        },
+        {
+          "id": "GBADL_T_FX_G01_CA_EUR",
+          "name": "Fiscal, Budgetary Central Government, Assets and Liabilities, Liabilities, Foreign currency, Classification of transactions in assets and liabilities, 2001 Manual, Cash, Euros"
+        },
+        {
+          "id": "GGR_G01_AC_EUR",
+          "name": "Fiscal, General Government, Revenue, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGRT_G01_AC_EUR",
+          "name": "Fiscal, General Government, Revenue, Tax, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGRS_G01_AC_EUR",
+          "name": "Fiscal, General Government, Revenue, Social Contributions, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGRG_G01_AC_EUR",
+          "name": "Fiscal, General Government, Revenue, Grants, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGRO_G01_AC_EUR",
+          "name": "Fiscal, General Government, Revenue, Other Revenue, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGECE_G01_AC_EUR",
+          "name": "Fiscal, General Government, Expense, Compensation of Employees, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGEGS_G01_AC_EUR",
+          "name": "Fiscal, General Government, Expense, Use of Goods and Services, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGEKC_G01_AC_EUR",
+          "name": "Fiscal, General Government, Expense, Consumption of Fixed Capital, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGEI_G01_AC_EUR",
+          "name": "Fiscal, General Government, Expense, Interest, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGEST_G01_AC_EUR",
+          "name": "Fiscal, General Government, Expense, Subsidies, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGEG_G01_AC_EUR",
+          "name": "Fiscal, General Government, Expense, Grants, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGES_G01_AC_EUR",
+          "name": "Fiscal, General Government, Expense, Social Benefits, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGEO_G01_AC_EUR",
+          "name": "Fiscal, General Government, Expense, Other, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGXCBG_G01_AC_EUR",
+          "name": "Fiscal, General Government, Gross operating balance, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGXCBN_G01_AC_EUR",
+          "name": "Fiscal, General Government, Net operating balance, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGADAN_T_G01_AC_EUR",
+          "name": "Fiscal, General Government, Assets and Liabilities, Non-financial Assets, Classification of transactions in assets and liabilities, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGXCNL_G01_AC_EUR",
+          "name": "Fiscal, General Government, Net lending/borrowing, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGADAF_T_G01_AC_EUR",
+          "name": "Fiscal, General Government, Assets and Liabilities, Financial Assets, Classification of transactions in assets and liabilities, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGADAFD_T_G01_AC_EUR",
+          "name": "Fiscal, General Government, Assets and Liabilities, Financial Assets, Domestic, Classification of transactions in assets and liabilities, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGADAFF_T_G01_AC_EUR",
+          "name": "Fiscal, General Government, Assets and Liabilities, Financial Assets, Foreign, Classification of transactions in assets and liabilities, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGADL_T_G01_AC_EUR",
+          "name": "Fiscal, General Government, Assets and Liabilities, Liabilities, Classification of transactions in assets and liabilities, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGADLD_T_G01_AC_EUR",
+          "name": "Fiscal, General Government, Assets and Liabilities, Liabilities, Domestic, Classification of transactions in assets and liabilities, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGADLF_T_G01_AC_EUR",
+          "name": "Fiscal, General Government, Assets and Liabilities, Liabilities, Foreign, Classification of transactions in assets and liabilities, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGX_G01_AC_EUR",
+          "name": "Fiscal, General Government, Memo Item: Expenditure, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGE_G01_AC_EUR",
+          "name": "Fiscal, General Government, Expense, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGADANF_T_G01_AC_EUR",
+          "name": "Fiscal, General Government, Assets and Liabilities, Non-financial Assets, Fixed Assets, Classification of transactions in assets and liabilities, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GGADANN_T_G01_AC_EUR",
+          "name": "Fiscal, General Government, Assets and Liabilities, Non-financial Assets, Non-produced Assets, Classification of transactions in assets and liabilities, 2001 Manual, Accrual, Euros"
+        },
+        {
+          "id": "GBADAF_T_G01_CA_EUR",
+          "name": "Fiscal, Budgetary Central Government, Assets and Liabilities, Financial Assets, Classification of transactions in assets and liabilities, 2001 Manual, Cash, Euros"
+        },
+        {
+          "id": "GCALG_G01_CA_EUR",
+          "name": "Fiscal, Central Government, Assets and Liabilities, Guaranteed Debt (at Market Value), Classification of the stocks of assets and liabilities, 2001 Manual, Cash, Euros"
+        },
+        {
+          "id": "NCP_SA_EUR",
+          "name": "National Accounts, Household Consumption Expenditure, incl. NPISHs, Nominal, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NCGG_SA_EUR",
+          "name": "National Accounts, Public Final Consumption Expenditure, General Government, Nominal, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NFI_SA_EUR",
+          "name": "National Accounts, Gross Capital Formation, Gross Fixed Capital Formation, Corporations, Households, and Non-profit Institutions Serving Households Nominal, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NX_SA_EUR",
+          "name": "National Accounts, External Sector, Exports of Goods and Services, Nominal, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NM_SA_EUR",
+          "name": "National Accounts, External Sector, Imports of Goods and Services, Nominal, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NGDP_SA_EUR",
+          "name": "National Accounts, Gross Domestic Product, Nominal, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "PPPI_IX",
+          "name": "Prices, Producer Price Index, All Commodities, Index"
+        },
+        {
+          "id": "PCPI_IX",
+          "name": "Consumer Price Index, All items"
+        },
+        {
+          "id": "TXG_FOB_EUR",
+          "name": "External Trade, Goods, Value of Exports, Free on Board (FOB), Euros"
+        },
+        {
+          "id": "TMG_CIF_EUR",
+          "name": "External Trade, Goods, Value of Imports, Cost Insurance Freight (CIF), Euros"
+        },
+        {
+          "id": "NGDP_R_CH_SA_EUR",
+          "name": "National Accounts, Gross Domestic Product, Real, Reference chained, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NCPH_R_CH_SA_EUR",
+          "name": "National Accounts, Private Final Consumption Expenditure, Households and Non-profit Institutions Serving Households, Real, Reference chained, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NCG_R_CH_SA_EUR",
+          "name": "National Accounts, Public Final Consumption Expenditure, Real, Reference chained, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NFI_R_CH_SA_EUR",
+          "name": "National Accounts, Gross Capital Formation, Gross Fixed Capital Formation, Real, Reference chained, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NX_R_CH_SA_EUR",
+          "name": "National Accounts, External Sector, Exports of Goods and Services, Real, Reference chained, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NM_R_CH_SA_EUR",
+          "name": "National Accounts, External Sector, Imports of Goods and Services, Real, Reference chained, Seasonally adjusted, Euros"
+        },
+        {
+          "id": "NS_NFC_LO_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Liabilities, Other accounts receivable/payable, Euros"
+        },
+        {
+          "id": "NS_NFC_AT_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Assets, Euros"
+        },
+        {
+          "id": "NS_NFC_AG_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Assets, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_NFC_AC_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Assets, Currency and deposits, Euros"
+        },
+        {
+          "id": "NS_NFC_AD_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Assets, Debt securities, Euros"
+        },
+        {
+          "id": "NS_NFC_AL_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Assets, Loans, Euros"
+        },
+        {
+          "id": "NS_NFC_AE_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Assets, Equity and investment fund shares, Euros"
+        },
+        {
+          "id": "NS_NFC_AI_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Assets, Insurance, pension and standardized guarantee schemes, Euros"
+        },
+        {
+          "id": "NS_NFC_AF_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Assets, Financial derivatives and employee stock options, Euros"
+        },
+        {
+          "id": "NS_NFC_AO_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Assets, Other accounts receivable/payable, Euros"
+        },
+        {
+          "id": "NS_NFC_LT_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Liabilities, Euros"
+        },
+        {
+          "id": "NS_NFC_LG_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Liabilities, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_NFC_LC_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Liabilities, Currency and deposits, Euros"
+        },
+        {
+          "id": "NS_NFC_LD_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Liabilities, Debt securities, Euros"
+        },
+        {
+          "id": "NS_NFC_LL_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Liabilities, Loans, Euros"
+        },
+        {
+          "id": "NS_NFC_LE_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Liabilities, Equity and investment fund shares, Euros"
+        },
+        {
+          "id": "NS_NFC_LI_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Liabilities, Insurance, pension and standardized guarantee schemes, Euros"
+        },
+        {
+          "id": "NS_NFC_LF_EUR",
+          "name": "National Accounts, Sectoral, Non-financial corporations, Liabilities, Financial derivatives and employee stock options, Euros"
+        },
+        {
+          "id": "NS_CB_AT_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Assets, Euros"
+        },
+        {
+          "id": "NS_CB_AG_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Assets, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_CB_AC_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Assets, Currency and deposits, Euros"
+        },
+        {
+          "id": "NS_CB_AD_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Assets, Debt securities, Euros"
+        },
+        {
+          "id": "NS_CB_AL_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Assets, Loans, Euros"
+        },
+        {
+          "id": "NS_CB_AE_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Assets, Equity and investment fund shares, Euros"
+        },
+        {
+          "id": "NS_CB_AI_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Assets, Insurance, pension and standardized guarantee schemes, Euros"
+        },
+        {
+          "id": "NS_CB_AF_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Assets, Financial derivatives and employee stock options, Euros"
+        },
+        {
+          "id": "NS_CB_AO_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Assets, Other accounts receivable/payable, Euros"
+        },
+        {
+          "id": "NS_CB_LT_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Liabilities, Euros"
+        },
+        {
+          "id": "NS_CB_LG_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Liabilities, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_CB_LC_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Liabilities, Currency and deposits, Euros"
+        },
+        {
+          "id": "NS_CB_LD_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Liabilities, Debt securities, Euros"
+        },
+        {
+          "id": "NS_CB_LL_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Liabilities, Loans, Euros"
+        },
+        {
+          "id": "NS_CB_LE_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Liabilities, Equity and investment fund shares, Euros"
+        },
+        {
+          "id": "NS_CB_LI_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Liabilities, Insurance, pension and standardized guarantee schemes, Euros"
+        },
+        {
+          "id": "NS_CB_LF_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Liabilities, Financial derivatives and employee stock options, Euros"
+        },
+        {
+          "id": "NS_CB_LO_EUR",
+          "name": "National Accounts, Sectoral, Central bank, Liabilities, Other accounts receivable/payable, Euros"
+        },
+        {
+          "id": "NS_ODX_AT_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Assets, Euros"
+        },
+        {
+          "id": "NS_ODX_AG_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Assets, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_ODX_AC_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Assets, Currency and deposits, Euros"
+        },
+        {
+          "id": "NS_ODX_AD_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Assets, Debt securities, Euros"
+        },
+        {
+          "id": "NS_ODX_AL_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Assets, Loans, Euros"
+        },
+        {
+          "id": "NS_ODX_AE_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Assets, Equity and investment fund shares, Euros"
+        },
+        {
+          "id": "NS_ODX_AI_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Assets, Insurance, pension and standardized guarantee schemes, Euros"
+        },
+        {
+          "id": "NS_ODX_AF_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Assets, Financial derivatives and employee stock options, Euros"
+        },
+        {
+          "id": "NS_ODX_AO_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Assets, Other accounts receivable/payable, Euros"
+        },
+        {
+          "id": "NS_ODX_LT_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Liabilities, Euros"
+        },
+        {
+          "id": "NS_ODX_LG_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Liabilities, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_ODX_LC_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Liabilities, Currency and deposits, Euros"
+        },
+        {
+          "id": "NS_ODX_LD_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Liabilities, Debt securities, Euros"
+        },
+        {
+          "id": "NS_ODX_LL_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Liabilities, Loans, Euros"
+        },
+        {
+          "id": "NS_ODX_LE_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Liabilities, Equity and investment fund shares, Euros"
+        },
+        {
+          "id": "NS_ODX_LI_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Liabilities, Insurance, pension and standardized guarantee schemes, Euros"
+        },
+        {
+          "id": "NS_ODX_LF_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Liabilities, Financial derivatives and employee stock options, Euros"
+        },
+        {
+          "id": "NS_ODX_LO_EUR",
+          "name": "National Accounts, Sectoral, Other deposittaking corporations (excl. moneymarket funds), Liabilities, Other accounts receivable/payable, Euros"
+        },
+        {
+          "id": "NS_MMF_AT_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Assets, Euros"
+        },
+        {
+          "id": "NS_MMF_AG_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Assets, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_MMF_AC_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Assets, Currency and deposits, Euros"
+        },
+        {
+          "id": "NS_MMF_AD_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Assets, Debt securities, Euros"
+        },
+        {
+          "id": "NS_MMF_AL_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Assets, Loans, Euros"
+        },
+        {
+          "id": "NS_MMF_AE_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Assets, Equity and investment fund shares, Euros"
+        },
+        {
+          "id": "NS_MMF_AI_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Assets, Insurance, pension and standardized guarantee schemes, Euros"
+        },
+        {
+          "id": "NS_MMF_AF_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Assets, Financial derivatives and employee stock options, Euros"
+        },
+        {
+          "id": "NS_MMF_AO_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Assets, Other accounts receivable/payable, Euros"
+        },
+        {
+          "id": "NS_MMF_LT_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Liabilities, Euros"
+        },
+        {
+          "id": "NS_MMF_LG_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Liabilities, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_MMF_LC_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Liabilities, Currency and deposits, Euros"
+        },
+        {
+          "id": "NS_MMF_LD_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Liabilities, Debt securities, Euros"
+        },
+        {
+          "id": "NS_MMF_LL_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Liabilities, Loans, Euros"
+        },
+        {
+          "id": "NS_MMF_LE_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Liabilities, Equity and investment fund shares, Euros"
+        },
+        {
+          "id": "NS_MMF_LI_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Liabilities, Insurance, pension and standardized guarantee schemes, Euros"
+        },
+        {
+          "id": "NS_MMF_LF_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Liabilities, Financial derivatives and employee stock options, Euros"
+        },
+        {
+          "id": "NS_MMF_LO_EUR",
+          "name": "National Accounts, Sectoral, Moneymarket funds, Liabilities, Other accounts receivable/payable, Euros"
+        },
+        {
+          "id": "NS_IPF_AT_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Assets, Euros"
+        },
+        {
+          "id": "NS_IPF_AG_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Assets, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_IPF_AC_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Assets, Currency and deposits, Euros"
+        },
+        {
+          "id": "NS_IPF_AD_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Assets, Debt securities, Euros"
+        },
+        {
+          "id": "NS_IPF_AL_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Assets, Loans, Euros"
+        },
+        {
+          "id": "NS_IPF_AE_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Assets, Equity and investment fund shares, Euros"
+        },
+        {
+          "id": "NS_IPF_AI_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Assets, Insurance, pension and standardized guarantee schemes, Euros"
+        },
+        {
+          "id": "NS_IPF_AF_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Assets, Financial derivatives and employee stock options, Euros"
+        },
+        {
+          "id": "NS_IPF_AO_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Assets, Other accounts receivable/payable, Euros"
+        },
+        {
+          "id": "NS_IPF_LT_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Liabilities, Euros"
+        },
+        {
+          "id": "NS_IPF_LG_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Liabilities, Monetary gold and SDRs, Euros"
+        },
+        {
+          "id": "NS_IPF_LC_EUR",
+          "name": "National Accounts, Sectoral, Insurance corporations and pension funds, Liabilities, Currency and deposits, Euros"
+        }
+      ],
+      "total_codes": 948,
+      "truncated": true
+    },
+    {
+      "id": "COUNTERPART_AREA",
+      "position": 4,
+      "name": "COUNTERPART_AREA",
+      "codes": [
+        {
+          "id": "_Z",
+          "name": "Not applicable"
+        },
+        {
+          "id": "US",
+          "name": "United States"
+        },
+        {
+          "id": "W1",
+          "name": "Rest of the World"
+        }
+      ],
+      "total_codes": 3,
+      "truncated": false
+    },
+    {
+      "id": "FREQ",
+      "position": 5,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "A",
+          "name": "Annual"
+        },
+        {
+          "id": "Q",
+          "name": "Quarterly"
+        },
+        {
+          "id": "M",
+          "name": "Monthly"
+        },
+        {
+          "id": "D",
+          "name": "Daily"
+        }
+      ],
+      "total_codes": 4,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{DATA_DOMAIN}.{REF_AREA}.{INDICATOR}.{COUNTERPART_AREA}.{FREQ}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-11-18T19:11:49+00:00",
+  "schema_version": 2
+}

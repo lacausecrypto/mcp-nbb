@@ -1,0 +1,180 @@
+{
+  "agency": "BE2",
+  "id": "DF_IROLOYLD_2026",
+  "version": "1.0",
+  "category": "other",
+  "is_final": true,
+  "names": {
+    "en": "Long-term interest rate for convergence purposes",
+    "fr": "Taux d'intérêt à long terme aux fins de la convergence",
+    "nl": "Langetermijnrente voor convergentiedoeleinden",
+    "de": "Long-term interest rate for convergence purposes"
+  },
+  "frequencies_available": [
+    "M"
+  ],
+  "default_frequency": "M",
+  "time_coverage": {
+    "start": "1983-05-01",
+    "end": "2026-10-31"
+  },
+  "observation_count": 10237,
+  "availability_filtered": true,
+  "dimensions": [
+    {
+      "id": "FREQ",
+      "position": 1,
+      "name": "FREQ",
+      "codes": [
+        {
+          "id": "M",
+          "name": "Monthly"
+        }
+      ],
+      "total_codes": 1,
+      "truncated": false
+    },
+    {
+      "id": "REF_AREA",
+      "position": 2,
+      "name": "REF_AREA",
+      "codes": [
+        {
+          "id": "AT",
+          "name": "Austria"
+        },
+        {
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "id": "BG",
+          "name": "Bulgaria"
+        },
+        {
+          "id": "CY",
+          "name": "Cyprus"
+        },
+        {
+          "id": "CZ",
+          "name": "Czech Republic"
+        },
+        {
+          "id": "DE",
+          "name": "Germany"
+        },
+        {
+          "id": "DK",
+          "name": "Denmark"
+        },
+        {
+          "id": "EE",
+          "name": "Estonia"
+        },
+        {
+          "id": "ES",
+          "name": "Spain"
+        },
+        {
+          "id": "FI",
+          "name": "Finland"
+        },
+        {
+          "id": "FR",
+          "name": "France"
+        },
+        {
+          "id": "GR",
+          "name": "Greece"
+        },
+        {
+          "id": "HR",
+          "name": "Croatia"
+        },
+        {
+          "id": "HU",
+          "name": "Hungary"
+        },
+        {
+          "id": "IE",
+          "name": "Ireland"
+        },
+        {
+          "id": "IT",
+          "name": "Italy"
+        },
+        {
+          "id": "LT",
+          "name": "Lithuania"
+        },
+        {
+          "id": "LU",
+          "name": "Luxembourg"
+        },
+        {
+          "id": "LV",
+          "name": "Latvia"
+        },
+        {
+          "id": "MT",
+          "name": "Malta"
+        },
+        {
+          "id": "NL",
+          "name": "Netherlands"
+        },
+        {
+          "id": "PL",
+          "name": "Poland"
+        },
+        {
+          "id": "PT",
+          "name": "Portugal"
+        },
+        {
+          "id": "RO",
+          "name": "Romania"
+        },
+        {
+          "id": "SE",
+          "name": "Sweden"
+        },
+        {
+          "id": "SI",
+          "name": "Slovenia"
+        },
+        {
+          "id": "SK",
+          "name": "Slovakia"
+        },
+        {
+          "id": "U2",
+          "name": "Euro area"
+        }
+      ],
+      "total_codes": 28,
+      "truncated": false
+    }
+  ],
+  "primary_measure": "OBS_VALUE",
+  "key_template": "{FREQ}.{REF_AREA}",
+  "common_queries": [
+    {
+      "label": "Latest value",
+      "key": "all",
+      "params": {
+        "lastNObservations": 1
+      }
+    },
+    {
+      "label": "Last 12 observations",
+      "key": "all",
+      "params": {
+        "lastNObservations": 12
+      }
+    }
+  ],
+  "etag": null,
+  "fetched_at": "2026-11-18T19:12:27+00:00",
+  "schema_version": 2
+}

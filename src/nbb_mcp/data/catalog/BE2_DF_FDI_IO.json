@@ -12,20 +12,19 @@
   },
   "frequencies_available": [
     "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "Q"
   ],
-  "default_frequency": "D",
+  "default_frequency": "Q",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2008-01-01",
+    "end": "2026-06-30"
   },
+  "observation_count": 97554,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
@@ -33,28 +32,16 @@
           "name": "Annual"
         },
         {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
           "id": "Q",
           "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "FDI_ACCOUNT",
-      "position": 1,
+      "position": 2,
       "name": "FDI_ACCOUNT",
       "codes": [
         {
@@ -75,7 +62,7 @@
     },
     {
       "id": "FDI_BALANCE",
-      "position": 2,
+      "position": 3,
       "name": "FDI_BALANCE",
       "codes": [
         {
@@ -104,7 +91,7 @@
     },
     {
       "id": "FDI_DIRECTION",
-      "position": 3,
+      "position": 4,
       "name": "FDI_DIRECTION",
       "codes": [
         {
@@ -125,7 +112,7 @@
     },
     {
       "id": "FDI_ITEM",
-      "position": 4,
+      "position": 5,
       "name": "FDI_ITEM",
       "codes": [
         {
@@ -162,16 +149,12 @@
     },
     {
       "id": "FDI_AREA",
-      "position": 5,
+      "position": 6,
       "name": "FDI_AREA",
       "codes": [
         {
           "id": "A1",
           "name": "Total World"
-        },
-        {
-          "id": "CO",
-          "name": "Countries"
         },
         {
           "id": "DE",
@@ -254,10 +237,6 @@
           "name": "Czech Republic"
         },
         {
-          "id": "GA",
-          "name": "Geographical areas"
-        },
-        {
           "id": "E1",
           "name": "Europe"
         },
@@ -278,36 +257,24 @@
           "name": "Oceania and Polar regions"
         },
         {
-          "id": "EA",
-          "name": "Economic areas"
-        },
-        {
           "id": "U2",
           "name": "Euro area"
-        },
-        {
-          "id": "U3",
-          "name": "Europe without euro area"
         },
         {
           "id": "V3",
           "name": "EU-27"
         },
         {
-          "id": "V4",
-          "name": "Europe without EU-27"
-        },
-        {
           "id": "A8",
           "name": "OECD countries"
         }
       ],
-      "total_codes": 34,
+      "total_codes": 29,
       "truncated": false
     },
     {
       "id": "FDI_SECTOR",
-      "position": 6,
+      "position": 7,
       "name": "FDI_SECTOR",
       "codes": [
         {
@@ -410,6 +377,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:46+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:14:39+00:00",
+  "schema_version": 2
 }

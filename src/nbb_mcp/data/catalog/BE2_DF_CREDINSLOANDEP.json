@@ -11,31 +11,22 @@
     "de": "Loans and deposits, data on territorial basis"
   },
   "frequencies_available": [
-    "A",
-    "S",
     "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1998-12-01",
+    "end": "2026-09-30"
   },
+  "observation_count": 69362,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
-        {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
         {
           "id": "Q",
           "name": "Quarterly"
@@ -43,24 +34,16 @@
         {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "CREDINSLOANDEP_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "CREDINSLOANDEP_ITEM",
       "codes": [
-        {
-          "id": "L",
-          "name": "Loans originally granted by credit institutions"
-        },
         {
           "id": "LTA",
           "name": "Total, adjusted for loans securitised or otherwise transferred"
@@ -126,10 +109,6 @@
           "name": "Lending for house purchase"
         },
         {
-          "id": "DH",
-          "name": "Deposits and other receivables held with credit institutions"
-        },
-        {
           "id": "D",
           "name": "Deposits and other receivables held with credit institutions"
         },
@@ -154,12 +133,12 @@
           "name": "Repos"
         }
       ],
-      "total_codes": 24,
+      "total_codes": 22,
       "truncated": false
     },
     {
       "id": "CREDINSLOANDEP_TYPE",
-      "position": 2,
+      "position": 3,
       "name": "CREDINSLOANDEP_TYPE",
       "codes": [
         {
@@ -180,7 +159,7 @@
     },
     {
       "id": "CREDINSLOANDEP_SECTOR",
-      "position": 3,
+      "position": 4,
       "name": "CREDINSLOANDEP_SECTOR",
       "codes": [
         {
@@ -235,6 +214,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:49+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:10:47+00:00",
+  "schema_version": 2
 }

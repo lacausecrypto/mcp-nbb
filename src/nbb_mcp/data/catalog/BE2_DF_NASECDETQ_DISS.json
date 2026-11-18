@@ -11,56 +11,34 @@
     "de": "Detailed sector accounts – quarterly data"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "Q"
   ],
-  "default_frequency": "D",
+  "default_frequency": "Q",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1999-01-01",
+    "end": "2026-06-30"
   },
+  "observation_count": 54340,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
           "id": "Q",
           "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "ACCOUNT",
-      "position": 1,
+      "position": 2,
       "name": "ACCOUNT",
       "codes": [
-        {
-          "id": "I",
-          "name": "Production account (I)"
-        },
         {
           "id": "IU_B1QG",
           "name": "Added value (gross) / Gross domestic product (B.1g)"
@@ -72,18 +50,6 @@
         {
           "id": "IU_B1QN",
           "name": "Added value (net) / Net domestic product (B.1n)"
-        },
-        {
-          "id": "II",
-          "name": "Distribution and use of income accounts (II)"
-        },
-        {
-          "id": "II1",
-          "name": "Primary distribution of income accounts (II.1)"
-        },
-        {
-          "id": "II11",
-          "name": "Generation of income account (II.1.1)"
         },
         {
           "id": "II11R",
@@ -136,10 +102,6 @@
         {
           "id": "II11U_B3G",
           "name": "Gross mixed income (B.3g)"
-        },
-        {
-          "id": "II12",
-          "name": "Allocation of primary income account (II.1.2)"
         },
         {
           "id": "II12R",
@@ -258,10 +220,6 @@
           "name": "Gross balance of primary incomes / Gross national income (B.5g)"
         },
         {
-          "id": "II2",
-          "name": "Secondary distribution of income account (II.2)"
-        },
-        {
           "id": "II2R",
           "name": "Resources"
         },
@@ -358,10 +316,6 @@
           "name": "Gross disposable income (B.6g)"
         },
         {
-          "id": "II3",
-          "name": "Redistribution of income in kind account (II.3)"
-        },
-        {
           "id": "II3R",
           "name": "Resources"
         },
@@ -402,14 +356,6 @@
           "name": "Adjusted gross disposable income (B.7g)"
         },
         {
-          "id": "II4",
-          "name": "Use of income account (II.4)"
-        },
-        {
-          "id": "II41",
-          "name": "Use of disposable income account (II.4.1)"
-        },
-        {
           "id": "II41R",
           "name": "Resources"
         },
@@ -444,18 +390,6 @@
         {
           "id": "II41U_B8G",
           "name": "Gross saving (B.8g)"
-        },
-        {
-          "id": "III",
-          "name": "Accumulation accounts (III)"
-        },
-        {
-          "id": "III1",
-          "name": "Capital account (III.1)"
-        },
-        {
-          "id": "III11",
-          "name": "Change in net worth due to saving and capital transfers accounts (III.1.1)"
         },
         {
           "id": "III11L",
@@ -514,10 +448,6 @@
           "name": "Changes in net worth due to saving and capital transfers (B.10.1)"
         },
         {
-          "id": "III12",
-          "name": "Acquisitions of non-financial assets account (III.1.2)"
-        },
-        {
           "id": "III12L",
           "name": "Changes in liabilities"
         },
@@ -542,24 +472,12 @@
           "name": "Changes in inventories (P.52) + Acquisitions less disposals of valuables (P.53)"
         },
         {
-          "id": "III12A_P52",
-          "name": "Changes in inventories (P.52)"
-        },
-        {
-          "id": "III12A_P53",
-          "name": "Acquisitions less disposals of valuables (P.53)"
-        },
-        {
           "id": "III12A_NP",
           "name": "Acquisitions less disposals of non-financial non-produced assets (NP)"
         },
         {
           "id": "III12A_B9",
           "name": "Net lending / net borrowing (B.9)"
-        },
-        {
-          "id": "VI",
-          "name": "External account of goods and services (V.I)"
         },
         {
           "id": "VIR",
@@ -596,10 +514,6 @@
         {
           "id": "VIU_B11",
           "name": "External balance of goods and services (B.11)"
-        },
-        {
-          "id": "VII",
-          "name": "External account of primary incomes and current transfers (V.II)"
         },
         {
           "id": "VIIR",
@@ -786,18 +700,6 @@
           "name": "Current external balance (B.12)"
         },
         {
-          "id": "VIII",
-          "name": "Accumulation accounts (V.III)"
-        },
-        {
-          "id": "VIII1",
-          "name": "Capital account (V.III.1)"
-        },
-        {
-          "id": "VIII11",
-          "name": "Change in net worth due to saving and capital transfers account (V.III.1.1)"
-        },
-        {
           "id": "VIII11L",
           "name": "Changes in liabilities and net worth"
         },
@@ -854,16 +756,32 @@
           "name": "Changes in net worth due to saving and capital transfers (B.10.1)"
         },
         {
-          "id": "VIII12",
-          "name": "Acquisitions of non-financial assets account (V.III.1.2)"
+          "id": "VIII12L",
+          "name": "Changes in liabilities"
+        },
+        {
+          "id": "VIII12L_B101",
+          "name": "Changes in net worth due to saving and capital transfers (B.10.1)"
+        },
+        {
+          "id": "VIII12A",
+          "name": "Changes in assets"
+        },
+        {
+          "id": "VIII12A_NP",
+          "name": "Acquisitions less disposals of non-financial non-produced assets (NP)"
+        },
+        {
+          "id": "VIII12A_B9",
+          "name": "Net lending / net borrowing (B.9)"
         }
       ],
-      "total_codes": 205,
-      "truncated": true
+      "total_codes": 184,
+      "truncated": false
     },
     {
       "id": "SECTOR",
-      "position": 2,
+      "position": 3,
       "name": "SECTOR",
       "codes": [
         {
@@ -879,52 +797,8 @@
           "name": "Financial corporations (S.12)"
         },
         {
-          "id": "S121_123",
-          "name": "Central bank, deposit-taking corposations and money market funds (S.121 + S.122 + S.123)"
-        },
-        {
-          "id": "S124_127",
-          "name": "Non-monetary investment funds, other fin. intermediaries, except insurance corp. and pension funds, and captive fin.inst. and money lenders (S.124+125+127)"
-        },
-        {
-          "id": "S126",
-          "name": "Financial auxiliaries (S.126)"
-        },
-        {
-          "id": "S128_129",
-          "name": "Insurance corporations and pension funds (S.128 + S.129)"
-        },
-        {
           "id": "S13",
           "name": "General government (S.13)"
-        },
-        {
-          "id": "S1300",
-          "name": "General government"
-        },
-        {
-          "id": "S1311",
-          "name": "Federal government"
-        },
-        {
-          "id": "S1312",
-          "name": "Communities and regions"
-        },
-        {
-          "id": "S1313",
-          "name": "Local government"
-        },
-        {
-          "id": "S1314",
-          "name": "Social security funds"
-        },
-        {
-          "id": "S14",
-          "name": "Households (S.14)"
-        },
-        {
-          "id": "S15",
-          "name": "Non profit institutions serving households (S.15)"
         },
         {
           "id": "S1M",
@@ -933,25 +807,9 @@
         {
           "id": "S2",
           "name": "Rest of the world (S.2)"
-        },
-        {
-          "id": "S21",
-          "name": "Member states and institutions and bodies of the European Union (S.21)"
-        },
-        {
-          "id": "S211",
-          "name": "Member states of the European Union (S.211)"
-        },
-        {
-          "id": "S212",
-          "name": "Institutions and bodies of the European Union (S.212)"
-        },
-        {
-          "id": "S22",
-          "name": "Non-member countries and international organisations non-resident of EU (S.22)"
         }
       ],
-      "total_codes": 21,
+      "total_codes": 6,
       "truncated": false
     }
   ],
@@ -974,6 +832,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:50+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:38+00:00",
+  "schema_version": 2
 }

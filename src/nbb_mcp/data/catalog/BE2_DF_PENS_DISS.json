@@ -11,50 +11,32 @@
     "de": "Supplementary table for accrued-to-date pension entitlements in social insurance"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2015-01-01",
+    "end": "2021-12-31"
   },
+  "observation_count": 1395,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "ITEM",
-      "position": 1,
+      "position": 2,
       "name": "ITEM",
       "codes": [
         {
@@ -123,17 +105,9 @@
     },
     {
       "id": "TYPE",
-      "position": 2,
+      "position": 3,
       "name": "TYPE",
       "codes": [
-        {
-          "id": "CNA",
-          "name": "Core national accounts"
-        },
-        {
-          "id": "CNGG",
-          "name": "Non-general government"
-        },
         {
           "id": "CNGGDCS",
           "name": "Defined contribution schemes (A)"
@@ -147,16 +121,8 @@
           "name": "Total (C)"
         },
         {
-          "id": "CGGO",
-          "name": "General government"
-        },
-        {
           "id": "CGGODCS",
           "name": "Defined contribution schemes (D)"
-        },
-        {
-          "id": "CGGODBS",
-          "name": "Defined benefit schemes for general government employees"
         },
         {
           "id": "CGGOCFC",
@@ -165,18 +131,6 @@
         {
           "id": "CGGOCGG",
           "name": "Classified in general government (F)"
-        },
-        {
-          "id": "NCNA",
-          "name": "Not in the core national accounts"
-        },
-        {
-          "id": "NGGO",
-          "name": "General government"
-        },
-        {
-          "id": "NGGDBS",
-          "name": "Defined benefit schemes for general government employees"
         },
         {
           "id": "NGGOCGG",
@@ -191,10 +145,6 @@
           "name": "Total pension schemes (I)"
         },
         {
-          "id": "TCPC",
-          "name": "Counterparts: entitlements of"
-        },
-        {
           "id": "TCPRH",
           "name": "Resident households (J)"
         },
@@ -203,12 +153,12 @@
           "name": "Non-resident households (K)"
         }
       ],
-      "total_codes": 19,
+      "total_codes": 11,
       "truncated": false
     },
     {
       "id": "CASE",
-      "position": 3,
+      "position": 4,
       "name": "CASE",
       "codes": [
         {
@@ -247,6 +197,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:46+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:10:44+00:00",
+  "schema_version": 2
 }
