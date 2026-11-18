@@ -11,103 +11,37 @@
     "de": "Consolidated gross debt of general government: consolidating elements"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1995-01-01",
+    "end": "2025-12-31"
   },
+  "observation_count": 558,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "ELEMENTS",
-      "position": 1,
+      "position": 2,
       "name": "ELEMENTS",
       "codes": [
         {
-          "id": "CGD",
-          "name": "Consolidated gross debt"
-        },
-        {
-          "id": "CONTRIB",
-          "name": "p.m. Contribution of the subsector to the total consolidated gross debt"
-        },
-        {
-          "id": "LGF",
-          "name": "Flemish local government"
-        },
-        {
-          "id": "LGW",
-          "name": "Walloon local government"
-        },
-        {
-          "id": "LGB",
-          "name": "Brussels local government"
-        },
-        {
-          "id": "LGG",
-          "name": "German-speaking local government"
-        },
-        {
-          "id": "LGNA",
-          "name": "Local government not-allocated"
-        },
-        {
-          "id": "CLE",
-          "name": "Consolidation between local entities (-)"
-        },
-        {
-          "id": "CGLG",
-          "name": "Consolidated gross debt of the local government"
-        },
-        {
-          "id": "CALE",
-          "name": "Holdings by the local entities of consolidable assets of other subsectors"
-        },
-        {
-          "id": "CGDLE",
-          "name": "Contribution of the local entities to the consolidated gross debt"
-        },
-        {
           "id": "TCA",
           "name": "Consolidating elements"
-        },
-        {
-          "id": "TCAHD",
-          "name": "Breakdown by holders"
         },
         {
           "id": "TCAHD_S1311",
@@ -126,10 +60,6 @@
           "name": "Social security funds"
         },
         {
-          "id": "TCADS",
-          "name": "Breakdown by debtors"
-        },
-        {
           "id": "TCADS_S1311",
           "name": "Federal government"
         },
@@ -144,10 +74,6 @@
         {
           "id": "TCADS_S1314",
           "name": "Social security funds"
-        },
-        {
-          "id": "TCAI",
-          "name": "Breakdown by instruments"
         },
         {
           "id": "TCAI_AF2",
@@ -186,7 +112,7 @@
           "name": "Social security funds"
         }
       ],
-      "total_codes": 32,
+      "total_codes": 18,
       "truncated": false
     }
   ],
@@ -209,6 +135,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:31+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:50+00:00",
+  "schema_version": 2
 }

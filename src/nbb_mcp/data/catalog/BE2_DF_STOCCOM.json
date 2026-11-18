@@ -11,35 +11,22 @@
     "de": "Stocks and commodities market"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
     "M",
     "D"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1990-12-31",
+    "end": "2026-11-18"
   },
+  "observation_count": 53077,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
-        {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
         {
           "id": "M",
           "name": "Monthly"
@@ -49,18 +36,14 @@
           "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "STOCCOM_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "STOCCOM_ITEM",
       "codes": [
-        {
-          "id": "STOC",
-          "name": "Stock market"
-        },
         {
           "id": "BEL20",
           "name": "BEL 20"
@@ -82,27 +65,11 @@
           "name": "Belgian Share Price Index"
         },
         {
-          "id": "COM",
-          "name": "Commodities market"
-        },
-        {
           "id": "GOLD",
           "name": "Gold in Brussels (EUR/kg)"
-        },
-        {
-          "id": "SGOLD",
-          "name": "Sales price gold"
-        },
-        {
-          "id": "PGOLD",
-          "name": "Purchase price of gold"
-        },
-        {
-          "id": "BRENT",
-          "name": "Brent (USD/barrel)"
         }
       ],
-      "total_codes": 11,
+      "total_codes": 6,
       "truncated": false
     }
   ],
@@ -125,6 +92,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:01+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:12:24+00:00",
+  "schema_version": 2
 }

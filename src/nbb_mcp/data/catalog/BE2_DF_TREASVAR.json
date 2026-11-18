@@ -12,20 +12,19 @@
   },
   "frequencies_available": [
     "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1979-01-01",
+    "end": "2026-09-30"
   },
+  "observation_count": 82490,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
@@ -33,34 +32,18 @@
           "name": "Annual"
         },
         {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "TREASURY_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "TREASURY_ITEM",
       "codes": [
-        {
-          "id": "TREAS_1",
-          "name": "Official debt and net financial balance of the Treasury"
-        },
         {
           "id": "GD",
           "name": "Gross debt"
@@ -71,7 +54,7 @@
         },
         {
           "id": "GDE",
-          "name": "Debt in euro (since 1999, only in Belgian franc until end of 1998)"
+          "name": "Debt in euro (since 2002, only in Belgian franc until end of 2001)"
         },
         {
           "id": "GDEO",
@@ -102,18 +85,6 @@
           "name": "Indirect"
         },
         {
-          "id": "C_1",
-          "name": "Current"
-        },
-        {
-          "id": "C_11",
-          "name": "In the medium term"
-        },
-        {
-          "id": "C_12",
-          "name": "At short notice (excluding Postcheck)"
-        },
-        {
           "id": "GDE1",
           "name": "Debt at up to one year"
         },
@@ -132,10 +103,6 @@
         {
           "id": "GDE1_A",
           "name": "of which assets of public bodies"
-        },
-        {
-          "id": "PTCH",
-          "name": "Postcheck"
         },
         {
           "id": "GDF",
@@ -174,20 +141,12 @@
           "name": "Consolidated"
         },
         {
-          "id": "GDVCO_T",
-          "name": "By Type"
-        },
-        {
           "id": "GDVCO_TD",
           "name": "Direct"
         },
         {
           "id": "GDVCO_TI",
           "name": "Indirect"
-        },
-        {
-          "id": "GDVCO_C",
-          "name": "By currency"
         },
         {
           "id": "GDVCO_CE",
@@ -242,10 +201,6 @@
           "name": "In the medium term"
         },
         {
-          "id": "GDVCU_MC",
-          "name": "By currency"
-        },
-        {
           "id": "GDVCU_MCE",
           "name": "Euro zone"
         },
@@ -270,20 +225,12 @@
           "name": "Short term"
         },
         {
-          "id": "GDVCU_SI",
-          "name": "By instrument"
-        },
-        {
           "id": "GDVCU_SIT",
           "name": "Treasury bills"
         },
         {
           "id": "GDVCU_SIO",
           "name": "Other"
-        },
-        {
-          "id": "GDVCU_SC",
-          "name": "By currency"
         },
         {
           "id": "GDVCU_SCE",
@@ -342,20 +289,8 @@
           "name": "Net debt"
         },
         {
-          "id": "NBF",
-          "name": "Net balance to be financed (+)"
-        },
-        {
           "id": "NFBM1",
           "name": "Net financial balance (-)"
-        },
-        {
-          "id": "EWRA",
-          "name": "Empty working range"
-        },
-        {
-          "id": "TREAS_2",
-          "name": "Nominal change in official debt and net Treasury balance to be financed (BEF billions- EUR millions from 2002)"
         },
         {
           "id": "NFBP1",
@@ -510,14 +445,6 @@
           "name": "In foreign currencies"
         },
         {
-          "id": "CONTR",
-          "name": "Control"
-        },
-        {
-          "id": "TREAS_3",
-          "name": "Financing the net balance to be financed by the Treasury"
-        },
-        {
           "id": "NFBP2",
           "name": "Net financial balance (+) of the Treasury"
         },
@@ -534,24 +461,8 @@
           "name": "Change in debt in Belgian francs"
         },
         {
-          "id": "EUR_11",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "EUR_12",
-          "name": "Debt at up ot one year"
-        },
-        {
           "id": "EUR_2",
           "name": "Adjustments"
-        },
-        {
-          "id": "EUR_21",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "EUR_22",
-          "name": "Debt at up ot one year"
         },
         {
           "id": "FC",
@@ -564,38 +475,6 @@
         {
           "id": "FCO",
           "name": "In others currencies"
-        },
-        {
-          "id": "IVV",
-          "name": "In foreign currencies"
-        },
-        {
-          "id": "IVV_1",
-          "name": "Change in foreign currency debt"
-        },
-        {
-          "id": "IVV_11",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "IVV_12",
-          "name": "Debt at up ot one year"
-        },
-        {
-          "id": "IVV_2",
-          "name": "Adjustments"
-        },
-        {
-          "id": "IVV_21",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "IVV_22",
-          "name": "Debt at up ot one year"
-        },
-        {
-          "id": "IVV_3",
-          "name": "Breakdown by currency"
         },
         {
           "id": "AUD",
@@ -630,14 +509,6 @@
           "name": "Adjustments"
         },
         {
-          "id": "CHF_21",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "CHF_22",
-          "name": "Debt at up ot one year"
-        },
-        {
           "id": "GBP",
           "name": "GBP"
         },
@@ -650,62 +521,6 @@
           "name": "Adjustments"
         },
         {
-          "id": "DEM",
-          "name": "DEM"
-        },
-        {
-          "id": "DEM_1",
-          "name": "Variation in debt"
-        },
-        {
-          "id": "DEM_11",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "DEM_12",
-          "name": "Debt at up ot one year"
-        },
-        {
-          "id": "DEM_2",
-          "name": "Adjustments"
-        },
-        {
-          "id": "DEM_21",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "DEM_22",
-          "name": "Debt at up ot one year"
-        },
-        {
-          "id": "FRF",
-          "name": "FRF"
-        },
-        {
-          "id": "FRF_1",
-          "name": "Variation in debt"
-        },
-        {
-          "id": "FRF_11",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "FRF_12",
-          "name": "Debt at up ot one year"
-        },
-        {
-          "id": "FRF_2",
-          "name": "Adjustments"
-        },
-        {
-          "id": "FRF_21",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "FRF_22",
-          "name": "Debt at up ot one year"
-        },
-        {
           "id": "JPY",
           "name": "JPY"
         },
@@ -714,52 +529,8 @@
           "name": "Variation in debt"
         },
         {
-          "id": "JPY_11",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "JPY_12",
-          "name": "Debt at up ot one year"
-        },
-        {
           "id": "JPY_2",
           "name": "Ajustements"
-        },
-        {
-          "id": "JPY_21",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "JPY_22",
-          "name": "Debt at up ot one year"
-        },
-        {
-          "id": "NLG",
-          "name": "NLG"
-        },
-        {
-          "id": "NLG_1",
-          "name": "Variation in debt"
-        },
-        {
-          "id": "NLG_11",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "NLG_12",
-          "name": "Debt at up ot one year"
-        },
-        {
-          "id": "NLG_2",
-          "name": "Adjustments"
-        },
-        {
-          "id": "NLG_21",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "NLG_22",
-          "name": "Debt at up ot one year"
         },
         {
           "id": "USD",
@@ -770,96 +541,196 @@
           "name": "Variation in debt"
         },
         {
-          "id": "USD_11",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "USD_12",
-          "name": "Debt at up ot one year"
-        },
-        {
           "id": "USD_2",
           "name": "Adjustments"
-        },
-        {
-          "id": "USD_21",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "USD_22",
-          "name": "Debt at up ot one year"
-        },
-        {
-          "id": "XEU",
-          "name": "XEU"
-        },
-        {
-          "id": "XEU_1",
-          "name": "Variation in debt"
-        },
-        {
-          "id": "XEU_11",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "XEU_12",
-          "name": "Debt at up ot one year"
-        },
-        {
-          "id": "XEU_2",
-          "name": "Adjustments"
-        },
-        {
-          "id": "XEU_21",
-          "name": "Debt at over one year"
-        },
-        {
-          "id": "XEU_22",
-          "name": "Debt at up ot one year"
         },
         {
           "id": "A",
           "name": "Financial asset formation"
         },
         {
-          "id": "CONT",
-          "name": "Control"
-        },
-        {
-          "id": "TREAS_4",
-          "name": "Composition of the net balance to be financed by the Treasury (BEF billion - EUR million)"
-        },
-        {
-          "id": "PAA",
-          "name": "Part A: National government, communities and regions (up to 1990)"
-        },
-        {
-          "id": "PAA_1",
+          "id": "NFBM2",
           "name": "Net balance to be financed (-) by the Treasury"
         },
         {
-          "id": "PAA_11",
-          "name": "National authority"
+          "id": "GCOM",
+          "name": "of which GermanCommunity"
         },
         {
-          "id": "PAA_12",
-          "name": "Communities and regions"
-        },
-        {
-          "id": "PAA_2",
+          "id": "BO",
           "name": "Budget transactions"
         },
         {
-          "id": "PAA_21",
+          "id": "BOR",
           "name": "Income"
         },
         {
-          "id": "PAA_22",
+          "id": "BOE",
           "name": "Expenditure"
+        },
+        {
+          "id": "OO",
+          "name": "Other transactions"
+        },
+        {
+          "id": "LO_1",
+          "name": "Current income (up to 1990)"
+        },
+        {
+          "id": "LO_2",
+          "name": "Capital income (up to 1990)"
+        },
+        {
+          "id": "LO_3",
+          "name": "Current expenses (up to 1990)"
+        },
+        {
+          "id": "LO_4",
+          "name": "Capital expenditure (until 1990)"
+        },
+        {
+          "id": "LO_5",
+          "name": "Current income (up to 1991)"
+        },
+        {
+          "id": "LO_6",
+          "name": "Capital income (up to 1991)"
+        },
+        {
+          "id": "TOT",
+          "name": "Total revenue"
+        },
+        {
+          "id": "CUR",
+          "name": "Current revenue"
+        },
+        {
+          "id": "CUFR",
+          "name": "Fiscal revenue"
+        },
+        {
+          "id": "DT",
+          "name": "Direct taxes"
+        },
+        {
+          "id": "DTPI",
+          "name": "Advance levy on professional income"
+        },
+        {
+          "id": "DTAP",
+          "name": "Advance payments"
+        },
+        {
+          "id": "DTCO",
+          "name": "Assessment of companies"
+        },
+        {
+          "id": "DTNP",
+          "name": "Assessment of natural persons"
+        },
+        {
+          "id": "DTFA",
+          "name": "Financial assets"
+        },
+        {
+          "id": "DTSW",
+          "name": "Gaming and betting and entertainment app."
+        },
+        {
+          "id": "DTRT",
+          "name": "Road taxes"
+        },
+        {
+          "id": "DTVB",
+          "name": "Traffic taxes"
+        },
+        {
+          "id": "DTBI",
+          "name": "Tax on vehicle registration"
+        },
+        {
+          "id": "DTEV",
+          "name": "Eurovignette"
+        },
+        {
+          "id": "DTCA",
+          "name": "Excise compensation tax"
+        },
+        {
+          "id": "DTNG",
+          "name": "Not ventilated"
+        },
+        {
+          "id": "DTDI",
+          "name": "Various"
+        },
+        {
+          "id": "DTO",
+          "name": "Other"
+        },
+        {
+          "id": "CED",
+          "name": "Customs and excise duties"
+        },
+        {
+          "id": "CD",
+          "name": "Customs duties"
+        },
+        {
+          "id": "ED",
+          "name": "Excise duties"
+        },
+        {
+          "id": "EDM",
+          "name": "Excise duties on mineral oils"
+        },
+        {
+          "id": "EDT",
+          "name": "Excise duties on tobacco"
+        },
+        {
+          "id": "EDO",
+          "name": "Other excise duties"
+        },
+        {
+          "id": "CEDO",
+          "name": "Other"
+        },
+        {
+          "id": "VRR",
+          "name": "VAT, registration fees and royalties"
+        },
+        {
+          "id": "VAT",
+          "name": "VAT, stamp duties and similar taxes"
+        },
+        {
+          "id": "RF",
+          "name": "Registration fees"
+        },
+        {
+          "id": "RO",
+          "name": "Other"
+        },
+        {
+          "id": "CUNF",
+          "name": "Non-tax revenues"
+        },
+        {
+          "id": "CAP",
+          "name": "Capital revenue"
+        },
+        {
+          "id": "CAFR",
+          "name": "Tax revenues"
+        },
+        {
+          "id": "CANF",
+          "name": "Non-tax revenues"
         }
       ],
-      "total_codes": 250,
-      "truncated": true
+      "total_codes": 171,
+      "truncated": false
     }
   ],
   "primary_measure": "OBS_VALUE",
@@ -881,6 +752,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:54+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:15:31+00:00",
+  "schema_version": 2
 }

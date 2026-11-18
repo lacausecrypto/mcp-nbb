@@ -11,60 +11,34 @@
     "de": "Annual accounts of companies (2009 - 2015)"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2009-01-01",
+    "end": "2015-12-31"
   },
+  "observation_count": 4120364,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "CBANACCE_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "CBANACCE_ITEM",
       "codes": [
-        {
-          "id": "1000_",
-          "name": "Balance sheet after appropriation"
-        },
-        {
-          "id": "2000_",
-          "name": "Assets"
-        },
         {
           "id": "3000_20_28",
           "name": "20/28 : Fixed assets"
@@ -234,24 +208,12 @@
           "name": "20/58 : Total assets"
         },
         {
-          "id": "45000_",
-          "name": "Equity and liabilities"
-        },
-        {
-          "id": "46000_",
-          "name": "Equity"
-        },
-        {
           "id": "47000_10_15",
           "name": "10/15 : Equity positive balance"
         },
         {
           "id": "48000_10_15",
           "name": "10/15 : Equity negative balance"
-        },
-        {
-          "id": "49000_",
-          "name": "Of which"
         },
         {
           "id": "50000_10",
@@ -464,10 +426,6 @@
         {
           "id": "102000_10_49",
           "name": "10/49 : Total equity and liabilities"
-        },
-        {
-          "id": "103000_",
-          "name": "Income statement"
         },
         {
           "id": "104000_9800",
@@ -722,10 +680,6 @@
           "name": "9905 : Loss of the period available for appropriation (-)"
         },
         {
-          "id": "167000_",
-          "name": "Appropriation account"
-        },
-        {
           "id": "168000_9906",
           "name": "9906 : Profit to be appropriated (+)"
         },
@@ -806,20 +760,8 @@
           "name": "696 : Other beneficiaries"
         },
         {
-          "id": "188000_",
-          "name": "Explanatory disclosures"
-        },
-        {
-          "id": "189000_",
-          "name": "Statement of formation expenses"
-        },
-        {
           "id": "190000_20P",
           "name": "20P : Net book value at the end of the preceding period"
-        },
-        {
-          "id": "191000_",
-          "name": "Movements during the period"
         },
         {
           "id": "192000_8002",
@@ -838,10 +780,6 @@
           "name": "20 : Net book value at the end of the period"
         },
         {
-          "id": "195500_",
-          "name": "Of which"
-        },
-        {
           "id": "196000_200_2",
           "name": "200/2 : Formation or capital increase expenses, loan issue expenses and other formation expenses"
         },
@@ -850,26 +788,66 @@
           "name": "204 : Restructuring costs"
         },
         {
-          "id": "198000_",
-          "name": "Statement of intangible fixed assets"
+          "id": "200000_8059P",
+          "name": "8059P : Acquisition value at the end of the preceding period"
         },
         {
-          "id": "199000_",
-          "name": "Total of intangible fixed assets"
+          "id": "202000_8029",
+          "name": "8029 : Acquisitions, including produced fixed assets"
+        },
+        {
+          "id": "203000_8039",
+          "name": "8039 : Sales and disposals"
+        },
+        {
+          "id": "204000_8049",
+          "name": "8049 : Transfers from one heading to another"
+        },
+        {
+          "id": "205000_8059",
+          "name": "8059 : Acquisition value at the end of the period"
+        },
+        {
+          "id": "206000_8129P",
+          "name": "8129P : Amortizations and amounts written off at the end of the preceding period"
+        },
+        {
+          "id": "208000_8079",
+          "name": "8079 : Written"
+        },
+        {
+          "id": "209000_8089",
+          "name": "8089 : Reversed"
+        },
+        {
+          "id": "210000_8099",
+          "name": "8099 : Acquisitions from third parties"
+        },
+        {
+          "id": "211000_8109",
+          "name": "8109 : Cancelled owing to sales and disposals"
+        },
+        {
+          "id": "212000_8119",
+          "name": "8119 : Transferred from one heading to another"
+        },
+        {
+          "id": "213000_8129",
+          "name": "8129 :  Amortizations and amounts written off at the end of the period"
+        },
+        {
+          "id": "214000_21",
+          "name": "21 : Net book value at the end of the period"
         }
       ],
-      "total_codes": 1255,
+      "total_codes": 933,
       "truncated": true
     },
     {
       "id": "SECTOR",
-      "position": 2,
+      "position": 3,
       "name": "SECTOR",
       "codes": [
-        {
-          "id": "1",
-          "name": "1 : By activity sector"
-        },
         {
           "id": "PU200",
           "name": "PU200 : All non-financial enterprises"
@@ -1611,74 +1589,46 @@
           "name": "PU405 : Portfolio companies and management of holdings"
         },
         {
-          "id": "PU416",
-          "name": "PU416 : Human health and social care activities"
-        },
-        {
           "id": "PU410",
           "name": "PU410 : Healthcare and social work"
-        },
-        {
-          "id": "DE9701",
-          "name": "DE9701 : Human healthcare"
-        },
-        {
-          "id": "DE8511",
-          "name": "DE8511 : Hospital activities"
         },
         {
           "id": "DE851A",
           "name": "DE851A : Healthcare and veterinary services"
         },
         {
-          "id": "DE9702",
-          "name": "DE9702 : Medical and dental practices"
-        },
-        {
-          "id": "DE9703",
-          "name": "DE9703 : Other human healthcare"
-        },
-        {
           "id": "DE853",
           "name": "DE853 : Social work activities"
         },
         {
-          "id": "DE9704",
-          "name": "DE9704 : Provision of medical and social services with accommodation"
+          "id": "PU450",
+          "name": "PU450 : All branches of industry (Annual accounts associations)"
         },
         {
-          "id": "DE9705",
-          "name": "DE9705 : Provision of social services with accommodation for persons with mental disability or psychiatric problems and drug and alcohol addicts"
+          "id": "FJV008",
+          "name": "FJV008 : Cooperative companies with limited responsibility"
         },
         {
-          "id": "DE9710",
-          "name": "DE9710 : Elderly homes and social work activities for the elderly and disabled"
+          "id": "FJV014",
+          "name": "FJV014 : Public limited companies"
         },
         {
-          "id": "DE9706",
-          "name": "DE9706 : Other provision of social services with accommodation"
+          "id": "FJV015",
+          "name": "FJV015 : Private companies with limited responsibility"
         },
         {
-          "id": "DE88",
-          "name": "DE88 : Social work activities without accommodation"
-        },
-        {
-          "id": "DE9708",
-          "name": "DE9708 : Day nurseries and child care"
+          "id": "FJV016",
+          "name": "FJV016 : Cooperative companies"
         }
       ],
-      "total_codes": 232,
-      "truncated": true
+      "total_codes": 193,
+      "truncated": false
     },
     {
       "id": "AMNR",
-      "position": 3,
+      "position": 4,
       "name": "AMNR",
       "codes": [
-        {
-          "id": "A",
-          "name": "Values"
-        },
         {
           "id": "AC",
           "name": "Complete"
@@ -1688,16 +1638,8 @@
           "name": "Abbreviated"
         },
         {
-          "id": "AM",
-          "name": "Micro"
-        },
-        {
           "id": "AT",
           "name": "Total"
-        },
-        {
-          "id": "N",
-          "name": "Number of enterprises"
         },
         {
           "id": "NC",
@@ -1708,15 +1650,11 @@
           "name": "Abbreviated"
         },
         {
-          "id": "NM",
-          "name": "Micro"
-        },
-        {
           "id": "NT",
           "name": "Total"
         }
       ],
-      "total_codes": 10,
+      "total_codes": 6,
       "truncated": false
     }
   ],
@@ -1739,6 +1677,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:49+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:10:48+00:00",
+  "schema_version": 2
 }

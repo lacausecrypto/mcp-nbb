@@ -11,50 +11,32 @@
     "de": "Consumer price index - historical overview"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1900-01-01",
+    "end": "2025-12-31"
   },
+  "observation_count": 1164,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "INDEX_BASE",
-      "position": 1,
+      "position": 2,
       "name": "INDEX_BASE",
       "codes": [
         {
@@ -94,133 +76,37 @@
           "name": "2004"
         },
         {
-          "id": "2010",
-          "name": "2010"
-        },
-        {
           "id": "2013",
           "name": "2013"
-        },
-        {
-          "id": "2015",
-          "name": "2015"
-        },
-        {
-          "id": "2016",
-          "name": "2016"
-        },
-        {
-          "id": "_Z",
-          "name": "Not applicable"
-        },
-        {
-          "id": "1997",
-          "name": "1997"
-        },
-        {
-          "id": "2020",
-          "name": "2020"
-        },
-        {
-          "id": "2021",
-          "name": "2021"
-        },
-        {
-          "id": "2025",
-          "name": "2025"
         }
       ],
-      "total_codes": 18,
+      "total_codes": 10,
       "truncated": false
     },
     {
       "id": "INDEX_TYPE",
-      "position": 2,
+      "position": 3,
       "name": "INDEX_TYPE",
       "codes": [
         {
           "id": "NCP",
           "name": "Consumer Price Index"
-        },
-        {
-          "id": "WNICP",
-          "name": "Weights of Consumer Price Index"
-        },
-        {
-          "id": "HCP",
-          "name": "Harmonized Index of Consumer Prices"
-        },
-        {
-          "id": "INDPROD",
-          "name": "Industrial Production"
-        },
-        {
-          "id": "CONSPROD",
-          "name": "Construction Industry Production"
-        },
-        {
-          "id": "RAWMATERIALSIP",
-          "name": "Basic Materials Price Index"
-        },
-        {
-          "id": "WAGES",
-          "name": "Regulatory wages"
-        },
-        {
-          "id": "HUR",
-          "name": "Adjusted Harmonized Unemployment Rate"
-        },
-        {
-          "id": "NHU",
-          "name": "Non-harmonized Unemployment"
-        },
-        {
-          "id": "_Z",
-          "name": "Not applicable"
-        },
-        {
-          "id": "LBCI",
-          "name": "Labor costs, wages, and gross salaries in industry"
-        },
-        {
-          "id": "NFT",
-          "name": "Non harmonized external trade"
-        },
-        {
-          "id": "HFT",
-          "name": "Harmonized external trade"
         }
       ],
-      "total_codes": 13,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "DERIVATION",
-      "position": 3,
+      "position": 4,
       "name": "DERIVATION",
       "codes": [
         {
           "id": "INDICES",
           "name": "Indices"
-        },
-        {
-          "id": "GROWTH_RATE",
-          "name": "Percentage of change"
-        },
-        {
-          "id": "RATE",
-          "name": "Percentage"
-        },
-        {
-          "id": "_Z",
-          "name": "Not applicable"
-        },
-        {
-          "id": "GROWTH_VALUE",
-          "name": "Value of change"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     }
   ],
@@ -243,6 +129,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:50+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:28+00:00",
+  "schema_version": 2
 }

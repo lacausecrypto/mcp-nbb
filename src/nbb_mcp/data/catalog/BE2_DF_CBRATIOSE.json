@@ -11,50 +11,32 @@
     "de": "Financial ratios of companies"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2009-01-01",
+    "end": "2022-12-31"
   },
+  "observation_count": 3906300,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "CBRATIOSE_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "CBRATIOSE_ITEM",
       "codes": [
         {
@@ -167,13 +149,9 @@
     },
     {
       "id": "SECTOR",
-      "position": 2,
+      "position": 3,
       "name": "SECTOR",
       "codes": [
-        {
-          "id": "1",
-          "name": "1 : By activity sector"
-        },
         {
           "id": "PU200",
           "name": "PU200 : All non-financial enterprises"
@@ -927,10 +905,6 @@
           "name": "DE9701 : Human healthcare"
         },
         {
-          "id": "DE8511",
-          "name": "DE8511 : Hospital activities"
-        },
-        {
           "id": "DE851A",
           "name": "DE851A : Healthcare and veterinary services"
         },
@@ -969,14 +943,22 @@
         {
           "id": "DE9708",
           "name": "DE9708 : Day nurseries and child care"
+        },
+        {
+          "id": "DE88A",
+          "name": "DE88A : Adapted work companies"
+        },
+        {
+          "id": "PU4082",
+          "name": "PU4082 : Education"
         }
       ],
-      "total_codes": 232,
+      "total_codes": 220,
       "truncated": true
     },
     {
       "id": "VALNR",
-      "position": 3,
+      "position": 4,
       "name": "VALNR",
       "codes": [
         {
@@ -1065,7 +1047,7 @@
     },
     {
       "id": "SCHEME",
-      "position": 4,
+      "position": 5,
       "name": "SCHEME",
       "codes": [
         {
@@ -1083,13 +1065,9 @@
         {
           "id": "T",
           "name": "Complete + Abbreviated + Micro"
-        },
-        {
-          "id": "U",
-          "name": "Complete + Abbreviated"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 4,
       "truncated": false
     }
   ],
@@ -1112,6 +1090,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:08+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:31+00:00",
+  "schema_version": 2
 }

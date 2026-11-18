@@ -11,50 +11,32 @@
     "de": "Household final consumption by durability – annual data"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1995-01-01",
+    "end": "2025-12-31"
   },
+  "observation_count": 6076,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "CATEGORY",
-      "position": 1,
+      "position": 2,
       "name": "CATEGORY",
       "codes": [
         {
@@ -370,10 +352,6 @@
           "name": "15.5 Social protection"
         },
         {
-          "id": "P3_S14",
-          "name": "Final consumption expenditure of households (national) (P.31 S.14)"
-        },
-        {
           "id": "P3_S15",
           "name": "Individual consumption expenditure of non-profit institutions serving households (NPISHs) (P.31 S.15)"
         },
@@ -454,44 +432,24 @@
           "name": "Other intellectual property products (AN.11740 + AN.11790)"
         }
       ],
-      "total_codes": 99,
+      "total_codes": 98,
       "truncated": false
     },
     {
       "id": "PRICES",
-      "position": 2,
+      "position": 3,
       "name": "PRICES",
       "codes": [
         {
-          "id": "CQ",
-          "name": "Contributions to the volume change - Q to Q"
-        },
-        {
-          "id": "CY",
-          "name": "Contributions to the volume change - Y to Y"
-        },
-        {
-          "id": "D",
-          "name": "Deflator"
-        },
-        {
           "id": "L",
           "name": "In volume: chain linked, in millions of euro"
-        },
-        {
-          "id": "LQ",
-          "name": "Chain linked - Q to Q percentage change (reference year 2020)"
-        },
-        {
-          "id": "LY",
-          "name": "Chain linked - Y to Y percentage change (reference year 2020)"
         },
         {
           "id": "V",
           "name": "Current prices in millions of euro"
         }
       ],
-      "total_codes": 7,
+      "total_codes": 2,
       "truncated": false
     }
   ],
@@ -514,6 +472,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:48+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:09+00:00",
+  "schema_version": 2
 }

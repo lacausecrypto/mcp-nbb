@@ -12,301 +12,33 @@
   },
   "frequencies_available": [
     "A",
-    "S",
     "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2015-01-01",
+    "end": "2026-09-30"
   },
+  "observation_count": 185842727,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "REPORTING",
-      "position": 0,
+      "position": 1,
       "name": "REPORTING",
       "codes": [
         {
-          "id": "_Z",
-          "name": "Not applicable"
-        },
-        {
-          "id": "BE",
-          "name": "Belgium"
-        },
-        {
           "id": "VL",
           "name": "Flemish Region"
-        },
-        {
-          "id": "WL",
-          "name": "Walloon Region"
-        },
-        {
-          "id": "BX",
-          "name": "Brussels-Capital Region"
-        },
-        {
-          "id": "BR",
-          "name": "Brussels"
-        },
-        {
-          "id": "000",
-          "name": "Belgium"
-        },
-        {
-          "id": "100",
-          "name": "Brussels-Capital Region"
-        },
-        {
-          "id": "200",
-          "name": "Flemish Region"
-        },
-        {
-          "id": "210",
-          "name": "Antwerp (province)"
-        },
-        {
-          "id": "211",
-          "name": "Antwerp (district)"
-        },
-        {
-          "id": "212",
-          "name": "Mechelen"
-        },
-        {
-          "id": "213",
-          "name": "Turnhout"
-        },
-        {
-          "id": "220",
-          "name": "Limburg"
-        },
-        {
-          "id": "221",
-          "name": "Hasselt"
-        },
-        {
-          "id": "222",
-          "name": "Maaseik"
-        },
-        {
-          "id": "223",
-          "name": "Tongeren"
-        },
-        {
-          "id": "230",
-          "name": "East Flanders"
-        },
-        {
-          "id": "231",
-          "name": "Aalst"
-        },
-        {
-          "id": "232",
-          "name": "Dendermonde"
-        },
-        {
-          "id": "233",
-          "name": "Eeklo"
-        },
-        {
-          "id": "234",
-          "name": "Ghent"
-        },
-        {
-          "id": "235",
-          "name": "Oudenaarde"
-        },
-        {
-          "id": "236",
-          "name": "Sint-Niklaas"
-        },
-        {
-          "id": "240",
-          "name": "Flemish Brabant"
-        },
-        {
-          "id": "241",
-          "name": "Halle-Vilvoorde"
-        },
-        {
-          "id": "242",
-          "name": "Leuven"
-        },
-        {
-          "id": "250",
-          "name": "West Flanders"
-        },
-        {
-          "id": "251",
-          "name": "Bruges"
-        },
-        {
-          "id": "252",
-          "name": "Diksmuide"
-        },
-        {
-          "id": "253",
-          "name": "Ypres"
-        },
-        {
-          "id": "254",
-          "name": "Kortrijk"
-        },
-        {
-          "id": "255",
-          "name": "Ostend"
-        },
-        {
-          "id": "256",
-          "name": "Roeselare"
-        },
-        {
-          "id": "257",
-          "name": "Tielt"
-        },
-        {
-          "id": "258",
-          "name": "Veurne"
-        },
-        {
-          "id": "300",
-          "name": "Walloon Region"
-        },
-        {
-          "id": "310",
-          "name": "Walloon Brabant"
-        },
-        {
-          "id": "320",
-          "name": "Hainaut"
-        },
-        {
-          "id": "321",
-          "name": "Ath"
-        },
-        {
-          "id": "322",
-          "name": "Charleroi"
-        },
-        {
-          "id": "323",
-          "name": "Mons"
-        },
-        {
-          "id": "324",
-          "name": "Mouscron"
-        },
-        {
-          "id": "325",
-          "name": "Soignies"
-        },
-        {
-          "id": "326",
-          "name": "Thuin"
-        },
-        {
-          "id": "327",
-          "name": "Tournai"
-        },
-        {
-          "id": "328",
-          "name": "Tournai-Mouscron"
-        },
-        {
-          "id": "329",
-          "name": "La Louvière"
-        },
-        {
-          "id": "330",
-          "name": "Liège (province)"
-        },
-        {
-          "id": "331",
-          "name": "Huy"
-        },
-        {
-          "id": "332",
-          "name": "Liège (district)"
-        },
-        {
-          "id": "333",
-          "name": "Verviers"
-        },
-        {
-          "id": "335",
-          "name": "Verviers (F)"
-        },
-        {
-          "id": "337",
-          "name": "Verviers (G)"
-        },
-        {
-          "id": "334",
-          "name": "Waremme"
-        },
-        {
-          "id": "340",
-          "name": "Luxembourg"
-        },
-        {
-          "id": "341",
-          "name": "Arlon"
-        },
-        {
-          "id": "342",
-          "name": "Bastogne"
-        },
-        {
-          "id": "343",
-          "name": "Marche-en-Famenne"
-        },
-        {
-          "id": "344",
-          "name": "Neufchâteau"
-        },
-        {
-          "id": "345",
-          "name": "Virton"
-        },
-        {
-          "id": "350",
-          "name": "Namur (province)"
-        },
-        {
-          "id": "351",
-          "name": "Dinant"
-        },
-        {
-          "id": "352",
-          "name": "Namur (district)"
-        },
-        {
-          "id": "353",
-          "name": "Philippeville"
-        },
-        {
-          "id": "400",
-          "name": "Extraregional area"
-        },
-        {
-          "id": "336",
-          "name": "German-speaking Community"
-        },
-        {
-          "id": "354",
-          "name": "Nivelles"
         }
       ],
-      "total_codes": 68,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "COUNTRY",
-      "position": 1,
+      "position": 2,
       "name": "COUNTRY",
       "codes": [
         {
@@ -762,10 +494,6 @@
           "name": "Uganda"
         },
         {
-          "id": "YT",
-          "name": "Mayotte"
-        },
-        {
           "id": "ZA",
           "name": "South Africa"
         },
@@ -1108,14 +836,18 @@
         {
           "id": "JP",
           "name": "Japan"
+        },
+        {
+          "id": "KG",
+          "name": "Kyrgyz, Republic"
         }
       ],
-      "total_codes": 301,
+      "total_codes": 271,
       "truncated": true
     },
     {
       "id": "PRODUCT",
-      "position": 2,
+      "position": 3,
       "name": "PRODUCT",
       "codes": [
         {
@@ -1129,34 +861,6 @@
         {
           "id": "0101",
           "name": "Live horses, asses, mules and hinnies"
-        },
-        {
-          "id": "01011010",
-          "name": "Pure-bred breeding horses"
-        },
-        {
-          "id": "01011090",
-          "name": "Pure-bred breeding asses"
-        },
-        {
-          "id": "01011100",
-          "name": "Pure-bred breeding horses"
-        },
-        {
-          "id": "01011910",
-          "name": "Horses for slaughter"
-        },
-        {
-          "id": "01011990",
-          "name": "Horses (excl. those pure bred for breeding and for slaughter)"
-        },
-        {
-          "id": "01012010",
-          "name": "Live asses"
-        },
-        {
-          "id": "01012090",
-          "name": "Live mules and hinnies"
         },
         {
           "id": "01012100",
@@ -1179,36 +883,8 @@
           "name": "Live mules and hinnies"
         },
         {
-          "id": "01019011",
-          "name": "Horses for slaughter"
-        },
-        {
-          "id": "01019019",
-          "name": "Live horses (excl. those pure bred for breeding and for slaughter)"
-        },
-        {
-          "id": "01019030",
-          "name": "Live asses (excl. pure-bred for breeding)"
-        },
-        {
-          "id": "01019090",
-          "name": "Live mules and hinnies"
-        },
-        {
           "id": "0102",
           "name": "Live bovine animals"
-        },
-        {
-          "id": "01021010",
-          "name": "Pure-bred breeding heifers \"female bovines that have never calved\""
-        },
-        {
-          "id": "01021030",
-          "name": "Pure-bred breeding cows (excl. heifers)"
-        },
-        {
-          "id": "01021090",
-          "name": "Pure-bred breeding bovines (excl. heifers and cows)"
         },
         {
           "id": "01022110",
@@ -1283,56 +959,8 @@
           "name": "Live buffalo (excl. domestic species and pure-bred for breeding)"
         },
         {
-          "id": "01029005",
-          "name": "Live domestic bovines of a weight <= 80 kg (excl. pure-bred breeding animals)"
-        },
-        {
           "id": "01029020",
           "name": "Bovine pure-bred breeding animals (excl. cattle and buffalo)"
-        },
-        {
-          "id": "01029021",
-          "name": "Domestic bovines of a weight of > 80 kg and <= 160 kg, for slaughter"
-        },
-        {
-          "id": "01029029",
-          "name": "Live domestic bovines of a weight of > 80 kg and <= 160 kg (excl. animals for slaughter and pure-bred breeding animals)"
-        },
-        {
-          "id": "01029041",
-          "name": "Domestic bovines of a weight of > 160 kg and <= 300 kg, for slaughter"
-        },
-        {
-          "id": "01029049",
-          "name": "Live domestic bovines of a weight of > 160 kg and <= 300 kg (excl. animals for slaughter and pure-bred breeding animals)"
-        },
-        {
-          "id": "01029051",
-          "name": "Heifers \"female domestic bovines that have never calved\" of a weight of > 300 kg, for slaughter"
-        },
-        {
-          "id": "01029059",
-          "name": "Live heifers \"female domestic bovines that have never calved\" of a weight of > 300 kg (excl. animals for slaughter and pure-bred breeding animals)"
-        },
-        {
-          "id": "01029061",
-          "name": "Cows \"female domestic bovines\" of a weight of > 300 kg, for slaughter (excl. heifers)"
-        },
-        {
-          "id": "01029069",
-          "name": "Live cows \"female domestic bovines\" of a weight of > 300 kg (excl. animals for slaughter, heifers and pure-bred breeding animals)"
-        },
-        {
-          "id": "01029071",
-          "name": "Live domestic bovines of a weight of > 300 kg, for slaughter (excl. heifers and cows)"
-        },
-        {
-          "id": "01029079",
-          "name": "Live domestic bovines of a weight of > 300 kg (excl. animals for slaughter, heifers, cows and pure-bred breeding animals)"
-        },
-        {
-          "id": "01029090",
-          "name": "Live non-domestic bovines (excl. pure-bred for breeding)"
         },
         {
           "id": "01029091",
@@ -1431,30 +1059,6 @@
           "name": "Live domestic guinea fowls, weighing <= 185 g"
         },
         {
-          "id": "01051910",
-          "name": "Live domestic geese and turkeys, weighing =< 185 g"
-        },
-        {
-          "id": "01051920",
-          "name": "Live domestic geese, weighing <= 185 g"
-        },
-        {
-          "id": "01051990",
-          "name": "Live domestic ducks and guinea fowls, weighing <= 185 g"
-        },
-        {
-          "id": "01059100",
-          "name": "Live fowls of species Gallus domesticus, weighing > 185 g (excl. turkeys and guinea fowls)"
-        },
-        {
-          "id": "01059200",
-          "name": "Live fowls of the species Gallus domesticus, weighing > 185 g but <= 2 kg"
-        },
-        {
-          "id": "01059300",
-          "name": "Live fowls of the species Gallus domesticus, weighing > 2 kg"
-        },
-        {
           "id": "01059400",
           "name": "Live fowls of the species Gallus domesticus, weighing > 185"
         },
@@ -1477,18 +1081,6 @@
         {
           "id": "0106",
           "name": "Live animals (excl. horses, asses, mules, hinnies, bovine animals, swine, sheep, goats, poultry, fish, crustaceans, molluscs and other aquatic invertebrates, and microorganic cultures etc.)"
-        },
-        {
-          "id": "01060010",
-          "name": "Live domestic rabbits"
-        },
-        {
-          "id": "01060020",
-          "name": "Live pigeons"
-        },
-        {
-          "id": "01060090",
-          "name": "Live animals (excl. horses, asses, mules, hinnies, bovines, pigs, sheep, goats, domestic poultry, domestic rabbits, pigeons, fish, crustaceans, molluscs and other aquatic invertebrates and cultures of micro-organisms, etc.)"
         },
         {
           "id": "01061100",
@@ -1515,14 +1107,6 @@
           "name": "Live mammals (excl. primates, whales, dolphins and porpoises, manatees and dugongs, seals, sea lions and walruses, camels and other camelids, rabbits and hares, horses, asses, mules, hinnies, bovines, pigs, sheep and goats)"
         },
         {
-          "id": "01061910",
-          "name": "Live domestic rabbits"
-        },
-        {
-          "id": "01061990",
-          "name": "Live mammals (excl. primates, whales, dolphins and purpoises \"mammals of the order Cetacea\", manatees and dugongs \"mammals of the order Sirenia\", horses, asses, mules, hinnies, bovines, pigs, sheep, goats and domestic rabbits)"
-        },
-        {
           "id": "01062000",
           "name": "Live reptiles \"e.g. snakes, turtles, alligators, caymans, iguanas, gavials and lizards\""
         },
@@ -1547,10 +1131,6 @@
           "name": "Live birds (excl. birds of prey, psittaciformes, parrots, parrakeets, macaws, cockatoos, ostriches, emus and pigeons)"
         },
         {
-          "id": "01063990",
-          "name": "Live birds (excl. birds of prey, psittaciformes \"incl. parrots, parrakeets, macaws and cockatoos\" and pigeons)"
-        },
-        {
           "id": "01064100",
           "name": "Live bees"
         },
@@ -1561,14 +1141,6 @@
         {
           "id": "01069000",
           "name": "Live animals (excl. mammals, reptiles, birds, insects, fish, crustaceans, molluscs and other aquatic invertebrates and cultures of micro-organisms, etc.)"
-        },
-        {
-          "id": "0199",
-          "name": "Confidential traffic classified in chapter 01"
-        },
-        {
-          "id": "01999999",
-          "name": "Confidential traffic of chapter 01"
         },
         {
           "id": "02",
@@ -1823,10 +1395,6 @@
           "name": "Frozen goat carcases and half-carcases"
         },
         {
-          "id": "02045053",
-          "name": "Frozen goat short forequarters"
-        },
-        {
           "id": "02045055",
           "name": "Frozen goat chines and/or best ends"
         },
@@ -1847,24 +1415,12 @@
           "name": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen"
         },
         {
-          "id": "02050011",
-          "name": "Fresh or chilled meat of horses"
-        },
-        {
-          "id": "02050019",
-          "name": "Frozen meat of horses"
-        },
-        {
           "id": "02050020",
           "name": "Fresh or chilled meat of horses, asses, mules or hinnies"
         },
         {
           "id": "02050080",
           "name": "Frozen meat of horses, asses, mules or hinnies"
-        },
-        {
-          "id": "02050090",
-          "name": "Fresh, chilled or frozen meat of asses, mules or hinnies"
         },
         {
           "id": "0206",
@@ -1875,10 +1431,6 @@
           "name": "Fresh or chilled edible bovine offal for manufacture of pharmaceutical products"
         },
         {
-          "id": "02061091",
-          "name": "Fresh or chilled edible bovine livers (excl. for manufacture of pharmaceutical products)"
-        },
-        {
           "id": "02061095",
           "name": "Fresh or chilled edible bovine thick and thin skirt (excl. for manufacture of pharmaceutical products)"
         },
@@ -1887,24 +1439,12 @@
           "name": "Fresh or chilled edible bovine offal (excl. for manufacture of pharmaceutical products, thick and thin skirt)"
         },
         {
-          "id": "02061099",
-          "name": "Fresh or chilled edible bovine offal (excl. for manufacture of pharmaceutical products, livers and thick and thin skirt)"
-        },
-        {
           "id": "02062100",
           "name": "Frozen edible bovine tongues"
         },
         {
           "id": "02062200",
           "name": "Frozen edible bovine livers"
-        },
-        {
-          "id": "02062210",
-          "name": "Frozen edible bovine livers for manufacture of pharmaceutical products"
-        },
-        {
-          "id": "02062290",
-          "name": "Frozen edible bovine livers (excl. those for manufacture of pharmaceutical products)"
         },
         {
           "id": "02062910",
@@ -1917,14 +1457,206 @@
         {
           "id": "02062999",
           "name": "Frozen edible bovine offal (excl. for manufacture of pharmaceutical products, tongues, livers and thick and thin skirt)"
+        },
+        {
+          "id": "02063000",
+          "name": "Fresh or chilled edible offal of swine"
+        },
+        {
+          "id": "02064100",
+          "name": "Frozen edible livers of swine"
+        },
+        {
+          "id": "02064900",
+          "name": "Edible offal of swine, frozen (excl. livers)"
+        },
+        {
+          "id": "02068010",
+          "name": "Fresh or chilled edible offal of sheep, goats, horses, asses, mules and hinnies, for manufacture of pharmaceutical products"
+        },
+        {
+          "id": "02068091",
+          "name": "Fresh or chilled edible offal of horses, asses, mules and hinnies (excl. for manufacture of pharmaceutical products)"
+        },
+        {
+          "id": "02068099",
+          "name": "Fresh or chilled edible offal of sheep and goats (excl. for manufacture of pharmaceutical products)"
+        },
+        {
+          "id": "02069010",
+          "name": "Frozen edible offal of sheep, goats, horses, mules and hinnies, for manufacture of pharmaceutical products"
+        },
+        {
+          "id": "02069091",
+          "name": "Frozen edible offal of horses, asses, mules and hinnies (excl. for manufacture of pharmaceutical products)"
+        },
+        {
+          "id": "02069099",
+          "name": "Frozen edible offal of sheep and goats (excl. for manufacture of pharmaceutical products)"
+        },
+        {
+          "id": "0207",
+          "name": "Meat and edible offal of fowls of the species Gallus domesticus, ducks, geese, turkeys and guinea fowls, fresh, chilled or frozen"
+        },
+        {
+          "id": "02071110",
+          "name": "Fresh or chilled, plucked and gutted fowls of species Gallus domesticus, with heads and feet, known as \"83% chickens\""
+        },
+        {
+          "id": "02071130",
+          "name": "Fresh or chilled, plucked and drawn fowls of species Gallus domesticus, without heads and feet but with necks, hearts, livers and gizzards, known as \"70% chickens\""
+        },
+        {
+          "id": "02071190",
+          "name": "Fresh or chilled, plucked and drawn fowls of species Gallus domesticus, without heads, feet, necks, hearts, livers and gizzards, known as \"65% chickens\", and other forms of fresh or chilled fowl, not cut in pieces (excl. \"83% and 70% chickens\")"
+        },
+        {
+          "id": "02071210",
+          "name": "Frozen fowls of species Gallus domesticus, plucked and drawn, without heads and feet but with necks, hearts, livers and gizzards, known as \"70% chickens\""
+        },
+        {
+          "id": "02071290",
+          "name": "Frozen fowls of species Gallus domesticus, plucked and drawn, without heads, feet, necks, hearts, livers and gizzards, known as \"65% chickens\", and other forms of fowl, not cut in pieces (excl. \"70% chickens\")"
+        },
+        {
+          "id": "02071310",
+          "name": "Fresh or chilled boneless cuts of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071320",
+          "name": "Fresh or chilled halves or quarters of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071330",
+          "name": "Fresh or chilled whole wings, with or without tips, of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071340",
+          "name": "Fresh or chilled backs, necks, backs with necks attached, rumps and wing-tips of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071350",
+          "name": "Fresh or chilled breasts and cuts thereof of fowls of the species Gallus domesticus, with bone in"
+        },
+        {
+          "id": "02071360",
+          "name": "Fresh or chilled legs and cuts thereof of fowls of the species Gallus domesticus, with bone in"
+        },
+        {
+          "id": "02071370",
+          "name": "Fresh or chilled cuts of fowls of the species Gallus domesticus, with bone in (excl. halves and quarters, whole wings, with or without tips, backs, necks, backs with necks attached, rumps and wing-tips, breasts, legs and parts thereof)"
+        },
+        {
+          "id": "02071391",
+          "name": "Fresh or chilled edible livers of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071399",
+          "name": "Fresh or chilled edible offal of fowls of the species Gallus domesticus (excl. livers)"
+        },
+        {
+          "id": "02071410",
+          "name": "Frozen boneless cuts of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071420",
+          "name": "Frozen halves or quarters of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071430",
+          "name": "Frozen whole wings, with or without tips, of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071440",
+          "name": "Frozen backs, necks, backs with necks attached, rumps and wing-tips of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071450",
+          "name": "Frozen breasts and cuts thereof of fowls of the species Gallus domesticus, with bone in"
+        },
+        {
+          "id": "02071460",
+          "name": "Frozen legs and cuts thereof of fowls of the species Gallus domesticus, with bone in"
+        },
+        {
+          "id": "02071470",
+          "name": "Frozen cuts of fowls of the species Gallus domesticus, with bone in (excl. halves or quarters, whole wings, with or without tips, backs, necks, backs with necks attached, rumps and wing-tips, breasts, legs and cuts thereof)"
+        },
+        {
+          "id": "02071491",
+          "name": "Frozen edible livers of fowls of the species Gallus domesticus"
+        },
+        {
+          "id": "02071499",
+          "name": "Frozen edible offal of fowls of the species Gallus domesticus (excl. livers)"
+        },
+        {
+          "id": "02072410",
+          "name": "Fresh or chilled, plucked and drawn turkeys of the species domesticus, without heads and feet but with necks, hearts, livers and gizzards, known as \"80% turkeys\""
+        },
+        {
+          "id": "02072490",
+          "name": "Fresh or chilled, plucked and drawn turkeys of the species domesticus, without heads, feet, necks, hearts, livers and gizzards, known as \"73% turkeys\", and other forms of fresh or chilled turkeys, not cut in pieces (excl. \"80% turkeys\")"
+        },
+        {
+          "id": "02072510",
+          "name": "Frozen turkeys of the species domesticus, plucked and drawn, without heads and feet but with necks, hearts, livers and gizzards, known as \"80% turkeys\""
+        },
+        {
+          "id": "02072590",
+          "name": "Frozen turkeys of the species domesticus, plucked and drawn, without heads, feet, necks, hearts, livers and gizzards, known as \"73% turkeys\", and other forms of turkeys, not cut in pieces (excl. \"80% turkeys\")"
+        },
+        {
+          "id": "02072610",
+          "name": "Fresh or chilled boneless cuts of turkeys of the species domesticus"
+        },
+        {
+          "id": "02072620",
+          "name": "Fresh or chilled halves or quarters of turkeys of the species domesticus"
+        },
+        {
+          "id": "02072630",
+          "name": "Fresh or chilled whole wings, with or without tips, of turkeys of the species domesticus"
+        },
+        {
+          "id": "02072640",
+          "name": "Fresh or chilled backs, necks, backs with necks attached, rumps and wing-tips of turkeys of the species domesticus"
+        },
+        {
+          "id": "02072650",
+          "name": "Fresh or chilled breasts and cuts thereof of turkeys of the species domesticus, with bone in"
+        },
+        {
+          "id": "02072660",
+          "name": "Fresh or chilled drumsticks and cuts thereof of turkeys of the species domesticus, with bone in"
+        },
+        {
+          "id": "02072670",
+          "name": "Fresh or chilled legs and cuts thereof of turkeys of the species domesticus, with bone in (excl. drumsticks)"
+        },
+        {
+          "id": "02072680",
+          "name": "Fresh or chilled cuts of turkeys of the species domesticus, with bone in (excl. halves or quarters, whole wings, with or without tips, backs, necks, backs with necks attached, rumps and wing-tips, breasts, legs and cuts thereof)"
+        },
+        {
+          "id": "02072691",
+          "name": "Fresh or chilled edible livers of turkeys of the species domesticus"
+        },
+        {
+          "id": "02072699",
+          "name": "Fresh or chilled edible offal of turkeys of the species domesticus (excl. livers)"
+        },
+        {
+          "id": "02072710",
+          "name": "Frozen boneless cuts of turkeys of the species domesticus"
         }
       ],
-      "total_codes": 20373,
+      "total_codes": 12230,
       "truncated": true
     },
     {
       "id": "FLOW",
-      "position": 3,
+      "position": 4,
       "name": "FLOW",
       "codes": [
         {
@@ -1934,51 +1666,27 @@
         {
           "id": "X",
           "name": "Exports"
-        },
-        {
-          "id": "B",
-          "name": "Trade balance"
-        },
-        {
-          "id": "T",
-          "name": "Terms of trade"
-        },
-        {
-          "id": "TOT",
-          "name": "Total"
-        },
-        {
-          "id": "TOTT",
-          "name": "Total trade by both types of trader"
-        },
-        {
-          "id": "_Z",
-          "name": "Not applicable"
-        }
-      ],
-      "total_codes": 7,
-      "truncated": false
-    },
-    {
-      "id": "CONCEPT",
-      "position": 4,
-      "name": "CONCEPT",
-      "codes": [
-        {
-          "id": "NAT",
-          "name": "National"
-        },
-        {
-          "id": "COM",
-          "name": "Community"
         }
       ],
       "total_codes": 2,
       "truncated": false
     },
     {
-      "id": "DATATYPE",
+      "id": "CONCEPT",
       "position": 5,
+      "name": "CONCEPT",
+      "codes": [
+        {
+          "id": "NAT",
+          "name": "National"
+        }
+      ],
+      "total_codes": 1,
+      "truncated": false
+    },
+    {
+      "id": "DATATYPE",
+      "position": 6,
       "name": "DATATYPE",
       "codes": [
         {
@@ -1988,51 +1696,19 @@
         {
           "id": "QTY",
           "name": "Quantity"
-        },
-        {
-          "id": "PRI",
-          "name": "Unit value/price"
-        },
-        {
-          "id": "STAT_VAL",
-          "name": "Statistical value"
-        },
-        {
-          "id": "VALUE",
-          "name": "Trade value"
-        },
-        {
-          "id": "NB_ENT",
-          "name": "Number of Enterprises"
-        },
-        {
-          "id": "NB_TR",
-          "name": "Number of Traders"
-        },
-        {
-          "id": "MASS",
-          "name": "Mass"
-        },
-        {
-          "id": "_Z",
-          "name": "Not applicable"
         }
       ],
-      "total_codes": 9,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "FREQ",
-      "position": 6,
+      "position": 7,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
         },
         {
           "id": "Q",
@@ -2041,13 +1717,9 @@
         {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 3,
       "truncated": false
     }
   ],
@@ -2070,6 +1742,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:26+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:12:23+00:00",
+  "schema_version": 2
 }

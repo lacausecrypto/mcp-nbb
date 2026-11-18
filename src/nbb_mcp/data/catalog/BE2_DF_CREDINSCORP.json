@@ -5,37 +5,28 @@
   "category": "financial_institutions",
   "is_final": true,
   "names": {
-    "en": "Credit institutions on corporate basis",
-    "fr": "Etablissements de crédit sur base sociale",
-    "nl": "Kredietinstellingen op vennootschappelijke basis",
-    "de": "Credit institutions on corporate basis"
+    "en": "Main blance sheet items of credit institutions,data on parent-company basis",
+    "fr": "Principales rubriques du bilan des établissements de crédit, données sur une base sociale",
+    "nl": "Voornaamste balansrubrieken van kredietinstellingen, gegevens op vennootschappelijke basis",
+    "de": "Main blance sheet items of credit institutions,data on parent-company basis"
   },
   "frequencies_available": [
-    "A",
-    "S",
     "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1992-10-01",
+    "end": "2026-09-30"
   },
+  "observation_count": 69563,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
-        {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
         {
           "id": "Q",
           "name": "Quarterly"
@@ -43,24 +34,16 @@
         {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "CREDINSCORP_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "CREDINSCORP_ITEM",
       "codes": [
-        {
-          "id": "BSI",
-          "name": "Balance sheet of the credit institutions"
-        },
         {
           "id": "A",
           "name": "Assets"
@@ -172,10 +155,6 @@
         {
           "id": "A41",
           "name": "Financial fixed assets"
-        },
-        {
-          "id": "A411",
-          "name": "Loans of government administrations"
         },
         {
           "id": "A412",
@@ -370,20 +349,8 @@
           "name": "Profit on the year (+) or loss on the year (-)"
         },
         {
-          "id": "OBSI",
-          "name": "Off-balance sheet items of the credit institutions"
-        },
-        {
-          "id": "ST",
-          "name": "Spot transactions in course of settlement"
-        },
-        {
           "id": "ST1",
           "name": "Spot foreign exchange transactions"
-        },
-        {
-          "id": "ST2",
-          "name": "Lendings and borrowings"
         },
         {
           "id": "ST21",
@@ -394,24 +361,12 @@
           "name": "Amounts to be delivered"
         },
         {
-          "id": "ST3",
-          "name": "Purchases and sales of transferable securities and other negotiable instruments"
-        },
-        {
           "id": "ST31",
           "name": "Amounts to be received (sales)"
         },
         {
           "id": "ST32",
           "name": "Amounts to be delivered (purchases)"
-        },
-        {
-          "id": "FT",
-          "name": "Forward transactions"
-        },
-        {
-          "id": "FT1",
-          "name": "Forward transactions in currencies"
         },
         {
           "id": "FT11",
@@ -434,14 +389,6 @@
           "name": "Forward exchange rate contracts"
         },
         {
-          "id": "FT2",
-          "name": "Forward interest rate transactions"
-        },
-        {
-          "id": "FT21",
-          "name": "Forward deposit contracts"
-        },
-        {
           "id": "FT211",
           "name": "To be placed"
         },
@@ -454,20 +401,12 @@
           "name": "Interest rate swaps"
         },
         {
-          "id": "FT23",
-          "name": "Interest futures transactions"
-        },
-        {
           "id": "FT231",
           "name": "Purchases"
         },
         {
           "id": "FT232",
           "name": "Sales"
-        },
-        {
-          "id": "FT24",
-          "name": "Forward interest rate contracts"
         },
         {
           "id": "FT241",
@@ -478,24 +417,12 @@
           "name": "Notional borrowings"
         },
         {
-          "id": "FT25",
-          "name": "Interest rate options"
-        },
-        {
-          "id": "FT251",
-          "name": "Options issued"
-        },
-        {
           "id": "FT2511",
           "name": "Notional lendings"
         },
         {
           "id": "FT2512",
           "name": "Notional borrowings"
-        },
-        {
-          "id": "FT252",
-          "name": "Options acquired"
         },
         {
           "id": "FT2521",
@@ -506,24 +433,12 @@
           "name": "Notional borrowings"
         },
         {
-          "id": "FT26",
-          "name": "Other"
-        },
-        {
           "id": "FT261",
           "name": "To be paid"
         },
         {
           "id": "FT262",
           "name": "To be received"
-        },
-        {
-          "id": "FT3",
-          "name": "Other forward transactions"
-        },
-        {
-          "id": "FT31",
-          "name": "Securities"
         },
         {
           "id": "FT311",
@@ -534,24 +449,12 @@
           "name": "Sales"
         },
         {
-          "id": "FT32",
-          "name": "Options"
-        },
-        {
-          "id": "FT321",
-          "name": "Options issued"
-        },
-        {
           "id": "FT3211",
           "name": "Values to be received"
         },
         {
           "id": "FT3212",
           "name": "Values to be delivered"
-        },
-        {
-          "id": "FT322",
-          "name": "Options acquired"
         },
         {
           "id": "FT3221",
@@ -562,10 +465,6 @@
           "name": "Values to be delivered"
         },
         {
-          "id": "FT33",
-          "name": "Futures transactions"
-        },
-        {
           "id": "FT331",
           "name": "Purchases"
         },
@@ -574,20 +473,12 @@
           "name": "Sales"
         },
         {
-          "id": "FT34",
-          "name": "Other"
-        },
-        {
           "id": "FT341",
           "name": "Values purchased"
         },
         {
           "id": "FT342",
           "name": "Values sold"
-        },
-        {
-          "id": "PE",
-          "name": "Proceeds and expenses covered in advance"
         },
         {
           "id": "PE1",
@@ -602,24 +493,12 @@
           "name": "Commitment appropriations"
         },
         {
-          "id": "CC",
-          "name": "Confirmed credit lines"
-        },
-        {
           "id": "CC1",
           "name": "Credit lines obtained"
         },
         {
-          "id": "CC2",
-          "name": "Credit lines granted"
-        },
-        {
           "id": "CC21",
           "name": "To credit institutions"
-        },
-        {
-          "id": "CC22",
-          "name": "To clients"
         },
         {
           "id": "CC221",
@@ -630,24 +509,12 @@
           "name": "For commitment appropriations"
         },
         {
-          "id": "GA",
-          "name": "Guarantees"
-        },
-        {
           "id": "GA1",
           "name": "Assets encumbered by secured securities"
         },
         {
           "id": "GA2",
           "name": "Guaranties obtained"
-        },
-        {
-          "id": "VC",
-          "name": "Valuables and claims entrusted"
-        },
-        {
-          "id": "VC1",
-          "name": "To the institution"
         },
         {
           "id": "VC11",
@@ -662,10 +529,6 @@
           "name": "Other"
         },
         {
-          "id": "VC2",
-          "name": "By the institution"
-        },
-        {
           "id": "VC21",
           "name": "On trustee basis"
         },
@@ -676,10 +539,6 @@
         {
           "id": "OR",
           "name": "Other rights and commitments"
-        },
-        {
-          "id": "PLA",
-          "name": "Profit and loss account of the credit institutions as a whole"
         },
         {
           "id": "R",
@@ -856,55 +715,163 @@
         {
           "id": "E2_25",
           "name": "Other debts to clients"
+        },
+        {
+          "id": "E2_3",
+          "name": "Debts represented by a security"
+        },
+        {
+          "id": "E2_31",
+          "name": "Certificates of deposit and similar debts"
+        },
+        {
+          "id": "E2_32",
+          "name": "Notes"
+        },
+        {
+          "id": "E2_33",
+          "name": "Mortgage loans"
+        },
+        {
+          "id": "E2_4",
+          "name": "Subordinated debts"
+        },
+        {
+          "id": "E2_5",
+          "name": "Forward hedging transactions"
+        },
+        {
+          "id": "E2_51",
+          "name": "Currency hedging"
+        },
+        {
+          "id": "E2_52",
+          "name": "Interest-rate hedging"
+        },
+        {
+          "id": "E3",
+          "name": "Commission paid for recourse to financial services"
+        },
+        {
+          "id": "E4",
+          "name": "Other financial costs"
+        },
+        {
+          "id": "E4_1",
+          "name": "Of foreign exchange activity"
+        },
+        {
+          "id": "E4_2",
+          "name": "Of trading in fixed-interest securities and negotiable instruments"
+        },
+        {
+          "id": "E4_3",
+          "name": "Of trading in interest-rate transactions"
+        },
+        {
+          "id": "E4_4",
+          "name": "Of trading in variable-interest securities"
+        },
+        {
+          "id": "E4_5",
+          "name": "Of precious metals"
+        },
+        {
+          "id": "E4_6",
+          "name": "Capital losses on investment portfolio and similar operations"
+        },
+        {
+          "id": "E5",
+          "name": "Remunerations, social charges and pensions"
+        },
+        {
+          "id": "E6",
+          "name": "Depreciation and write-downs on non-financial fixed assets"
+        },
+        {
+          "id": "E7",
+          "name": "Other operating costs"
+        },
+        {
+          "id": "E8",
+          "name": "Write-downs and provisions"
+        },
+        {
+          "id": "E9",
+          "name": "Extraordinary expenditure"
+        },
+        {
+          "id": "E10",
+          "name": "Taxes"
+        },
+        {
+          "id": "E11",
+          "name": "Profit on the year"
+        },
+        {
+          "id": "E12",
+          "name": "Transfers to deferred taxes and to tax-exempt reserves"
+        },
+        {
+          "id": "E13",
+          "name": "Profit on the year for appropriation"
+        },
+        {
+          "id": "AN01",
+          "name": "Interest and similar proceeds from: (1)"
+        },
+        {
+          "id": "AN011",
+          "name": "Interbank claims"
+        },
+        {
+          "id": "AN012",
+          "name": "Credits"
+        },
+        {
+          "id": "AN0121",
+          "name": "Trade bills"
+        },
+        {
+          "id": "AN0122",
+          "name": "Own acceptances"
+        },
+        {
+          "id": "AN0123",
+          "name": "Leasing and similar claims"
+        },
+        {
+          "id": "AN0124",
+          "name": "Non-mortgage consumer loans"
         }
       ],
-      "total_codes": 302,
+      "total_codes": 269,
       "truncated": true
     },
     {
       "id": "CREDINSCORP_TYPE",
-      "position": 2,
+      "position": 3,
       "name": "CREDINSCORP_TYPE",
       "codes": [
         {
           "id": "T",
           "name": "Credit institutions as a whole"
-        },
-        {
-          "id": "M",
-          "name": "Major credit institutions governed by belgian law"
-        },
-        {
-          "id": "O",
-          "name": "Other credit institutions governed by belgian law"
-        },
-        {
-          "id": "B",
-          "name": "Branches"
         }
       ],
-      "total_codes": 4,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "CREDINSCORP_CURR",
-      "position": 3,
+      "position": 4,
       "name": "CREDINSCORP_CURR",
       "codes": [
         {
           "id": "T",
           "name": "All currencies"
-        },
-        {
-          "id": "E",
-          "name": "Euro"
-        },
-        {
-          "id": "C",
-          "name": "Foreign currencies"
         }
       ],
-      "total_codes": 3,
+      "total_codes": 1,
       "truncated": false
     }
   ],
@@ -927,6 +894,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:49+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:10:43+00:00",
+  "schema_version": 2
 }

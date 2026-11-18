@@ -11,76 +11,34 @@
     "de": "All social balance sheets - globalisations"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2009-01-01",
+    "end": "2020-12-31"
   },
+  "observation_count": 2029656,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "CBSOCBAL_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "CBSOCBAL_ITEM",
       "codes": [
-        {
-          "id": "919000_",
-          "name": "Social balance sheet"
-        },
-        {
-          "id": "920000_",
-          "name": "Statement of the persons employed"
-        },
-        {
-          "id": "921000_",
-          "name": "Employees for whom the enterprise submitted a dimona declaration or who are recorded in the general personnel register"
-        },
-        {
-          "id": "938000_",
-          "name": "During the current period"
-        },
-        {
-          "id": "939000_",
-          "name": "Average number of employees"
-        },
-        {
-          "id": "940000_",
-          "name": "Full-time"
-        },
         {
           "id": "941000_1001",
           "name": "1001 : Total"
@@ -92,10 +50,6 @@
         {
           "id": "943000_10012",
           "name": "10012 : Women"
-        },
-        {
-          "id": "944000_",
-          "name": "Part-time"
         },
         {
           "id": "945000_1002",
@@ -110,10 +64,6 @@
           "name": "10022 : Women"
         },
         {
-          "id": "948000_",
-          "name": "Total in full-time equivalents (fte)"
-        },
-        {
           "id": "949000_1003",
           "name": "1003 : Total"
         },
@@ -124,14 +74,6 @@
         {
           "id": "951000_10032",
           "name": "10032: Women"
-        },
-        {
-          "id": "952000_",
-          "name": "Number of hours actually worked"
-        },
-        {
-          "id": "953000_",
-          "name": "Full-time"
         },
         {
           "id": "954000_1011",
@@ -146,10 +88,6 @@
           "name": "10112: Women"
         },
         {
-          "id": "957000_",
-          "name": "Part-time"
-        },
-        {
           "id": "958000_1012",
           "name": "1012: Total"
         },
@@ -160,10 +98,6 @@
         {
           "id": "960000_10122",
           "name": "10122: Women"
-        },
-        {
-          "id": "961000_",
-          "name": "Total"
         },
         {
           "id": "962000_1013",
@@ -178,14 +112,6 @@
           "name": "10132: Women"
         },
         {
-          "id": "965000_",
-          "name": "Personnel costs"
-        },
-        {
-          "id": "966000_",
-          "name": "Full-time"
-        },
-        {
           "id": "967000_1021",
           "name": "1021: Total"
         },
@@ -196,10 +122,6 @@
         {
           "id": "969000_10212",
           "name": "10212: Women"
-        },
-        {
-          "id": "970000_",
-          "name": "Part-time"
         },
         {
           "id": "971000_1022",
@@ -214,10 +136,6 @@
           "name": "10222: Women"
         },
         {
-          "id": "974000_",
-          "name": "Total"
-        },
-        {
           "id": "975000_1023",
           "name": "1023: Total"
         },
@@ -228,10 +146,6 @@
         {
           "id": "977000_10232",
           "name": "10232: Women"
-        },
-        {
-          "id": "978000_",
-          "name": "Advantages in addition to wages"
         },
         {
           "id": "979000_1033",
@@ -246,14 +160,6 @@
           "name": "10332 : Women"
         },
         {
-          "id": "982000_",
-          "name": "During the preceding period"
-        },
-        {
-          "id": "983000_",
-          "name": "Average number of employees in fte"
-        },
-        {
           "id": "984000_1003P",
           "name": "1003P : Total"
         },
@@ -264,10 +170,6 @@
         {
           "id": "986000_10032P",
           "name": "10032P : Women"
-        },
-        {
-          "id": "987000_",
-          "name": "Number of hours actually worked"
         },
         {
           "id": "988000_1013P",
@@ -282,10 +184,6 @@
           "name": "10132P : Women"
         },
         {
-          "id": "991000_",
-          "name": "Personnel costs"
-        },
-        {
           "id": "992000_1023P",
           "name": "1023P : Total"
         },
@@ -296,10 +194,6 @@
         {
           "id": "994000_10232P",
           "name": "10232P : Women"
-        },
-        {
-          "id": "995000_",
-          "name": "Advantages in addition to wages"
         },
         {
           "id": "996000_1033P",
@@ -314,14 +208,6 @@
           "name": "10332P : Women"
         },
         {
-          "id": "999000_",
-          "name": "At the closing date of the period"
-        },
-        {
-          "id": "1000000_",
-          "name": "Number of employees"
-        },
-        {
           "id": "1001000_1051",
           "name": "1051 : Full-time"
         },
@@ -332,14 +218,6 @@
         {
           "id": "1003000_1053",
           "name": "1053 : Total in full-time equivalents (fte)"
-        },
-        {
-          "id": "1004000_",
-          "name": "By nature of the employment contract"
-        },
-        {
-          "id": "1005000_",
-          "name": "Contract for an indefinite period"
         },
         {
           "id": "1006000_1101",
@@ -354,10 +232,6 @@
           "name": "1103 : Total in fte"
         },
         {
-          "id": "1009000_",
-          "name": "Contract for a definite period"
-        },
-        {
           "id": "1010000_1111",
           "name": "1111 : Full-time"
         },
@@ -368,10 +242,6 @@
         {
           "id": "1012000_1113",
           "name": "1113 : Total in fte"
-        },
-        {
-          "id": "1013000_",
-          "name": "Contract for the execution of a specifically assigned work"
         },
         {
           "id": "1014000_1121",
@@ -386,10 +256,6 @@
           "name": "1123 : Total in fte"
         },
         {
-          "id": "1017000_",
-          "name": "Replacement contract"
-        },
-        {
           "id": "1018000_1131",
           "name": "1131 : Full-time"
         },
@@ -400,14 +266,6 @@
         {
           "id": "1020000_1133",
           "name": "1133 : Total in fte"
-        },
-        {
-          "id": "1021000_",
-          "name": "According to gender and study level"
-        },
-        {
-          "id": "1022000_",
-          "name": "Men"
         },
         {
           "id": "1023000_1201",
@@ -422,10 +280,6 @@
           "name": "1203 : Total in fte"
         },
         {
-          "id": "1026000_",
-          "name": "Primary education"
-        },
-        {
           "id": "1027000_12001",
           "name": "12001 : Full-time"
         },
@@ -436,10 +290,6 @@
         {
           "id": "1029000_12003",
           "name": "12003 : Total in fte"
-        },
-        {
-          "id": "1030000_",
-          "name": "Secondary education"
         },
         {
           "id": "1031000_12011",
@@ -454,10 +304,6 @@
           "name": "12013 : Total in fte"
         },
         {
-          "id": "1034000_",
-          "name": "Higher non-university education"
-        },
-        {
           "id": "1035000_12021",
           "name": "12021 : Full-time"
         },
@@ -468,10 +314,6 @@
         {
           "id": "1037000_12023",
           "name": "12023 : Total in fte"
-        },
-        {
-          "id": "1038000_",
-          "name": "University education"
         },
         {
           "id": "1039000_12031",
@@ -486,10 +328,6 @@
           "name": "12033 : Total in fte"
         },
         {
-          "id": "1042000_",
-          "name": "Women"
-        },
-        {
           "id": "1043000_1211",
           "name": "1211 : Full-time"
         },
@@ -500,10 +338,6 @@
         {
           "id": "1045000_1213",
           "name": "1213 : Total in fte"
-        },
-        {
-          "id": "1046000_",
-          "name": "Primary education"
         },
         {
           "id": "1047000_12101",
@@ -518,10 +352,6 @@
           "name": "12103 : Total in fte"
         },
         {
-          "id": "1050000_",
-          "name": "Secondary education"
-        },
-        {
           "id": "1051000_12111",
           "name": "12111 : Full-time"
         },
@@ -532,10 +362,6 @@
         {
           "id": "1053000_12113",
           "name": "12113 : Total in fte"
-        },
-        {
-          "id": "1054000_",
-          "name": "Higher non-university education"
         },
         {
           "id": "1055000_12121",
@@ -550,10 +376,6 @@
           "name": "12123 : Total in fte"
         },
         {
-          "id": "1058000_",
-          "name": "University education"
-        },
-        {
           "id": "1059000_12131",
           "name": "12131 : Full-time"
         },
@@ -564,14 +386,6 @@
         {
           "id": "1061000_12133",
           "name": "12133 : Total in fte"
-        },
-        {
-          "id": "1062000_",
-          "name": "By professional category"
-        },
-        {
-          "id": "1063000_",
-          "name": "Management staff"
         },
         {
           "id": "1064000_1301",
@@ -586,10 +400,6 @@
           "name": "1303 : Total in fte"
         },
         {
-          "id": "1067000_",
-          "name": "Employees"
-        },
-        {
           "id": "1068000_1341",
           "name": "1341 : Full-time"
         },
@@ -600,10 +410,6 @@
         {
           "id": "1070000_1343",
           "name": "1343 : Total in full-time equivalents (fte)"
-        },
-        {
-          "id": "1071000_",
-          "name": "Workers"
         },
         {
           "id": "1072000_1321",
@@ -618,10 +424,6 @@
           "name": "1323 : Total in full-time equivalents (fte)"
         },
         {
-          "id": "1075000_",
-          "name": "Others"
-        },
-        {
           "id": "1076000_1331",
           "name": "1331 : Full-time"
         },
@@ -634,24 +436,12 @@
           "name": "1333 : Total in full-time equivalents (fte)"
         },
         {
-          "id": "1079000_",
-          "name": "Hired temporatry staff and personnel placed at the entreprise's disposal during the period"
-        },
-        {
-          "id": "1080000_",
-          "name": "Average number of persons employed"
-        },
-        {
           "id": "1081000_1501",
           "name": "1501 : Hired temporary staff"
         },
         {
           "id": "1082000_1502",
           "name": "1502 : Personnel placed at the enterprise's disposal"
-        },
-        {
-          "id": "1083000_",
-          "name": "Number of hours actually worked"
         },
         {
           "id": "1084000_1511",
@@ -662,28 +452,12 @@
           "name": "1512 : Personnel placed at the enterprise's disposal"
         },
         {
-          "id": "1086000_",
-          "name": "Costs for the enterprise"
-        },
-        {
           "id": "1087000_1521",
           "name": "1521 : Hired temporary staff"
         },
         {
           "id": "1087500_1522",
           "name": "1522 : Personnel placed at the enterprise's disposal"
-        },
-        {
-          "id": "1088000_",
-          "name": "List of personnel movements during the period"
-        },
-        {
-          "id": "1089000_",
-          "name": "Entries"
-        },
-        {
-          "id": "1090000_",
-          "name": "Number of employees for whom the enterprise submitted a dimona declaration or who have been recorded in the general personnel register during the financial year"
         },
         {
           "id": "1091000_2051",
@@ -698,14 +472,6 @@
           "name": "2053 : Total in fte"
         },
         {
-          "id": "1094000_",
-          "name": "By nature of employment contract"
-        },
-        {
-          "id": "1095000_",
-          "name": "Contract for an indefinite period"
-        },
-        {
           "id": "1096000_2101",
           "name": "2101 : Full-time"
         },
@@ -716,10 +482,6 @@
         {
           "id": "1098000_2103",
           "name": "2103 : Total in fte"
-        },
-        {
-          "id": "1099000_",
-          "name": "Contract for a definite period"
         },
         {
           "id": "1100000_2111",
@@ -734,10 +496,6 @@
           "name": "2113 : Total in fte"
         },
         {
-          "id": "1103000_",
-          "name": "Contract for the execution of a specifically assigned work"
-        },
-        {
           "id": "1104000_2121",
           "name": "2121 : Full-time"
         },
@@ -748,10 +506,6 @@
         {
           "id": "1106000_2123",
           "name": "2123 : Total in fte"
-        },
-        {
-          "id": "1107000_",
-          "name": "Replacement contract"
         },
         {
           "id": "1108000_2131",
@@ -766,14 +520,6 @@
           "name": "2133 : Total in fte"
         },
         {
-          "id": "1111000_",
-          "name": "Departures"
-        },
-        {
-          "id": "1112000_",
-          "name": "Number of employees whose contract-termination date has been entered in dimona declaration or in the general personnel register during the accounting period"
-        },
-        {
           "id": "1113000_3051",
           "name": "3051 : Full-time"
         },
@@ -784,14 +530,6 @@
         {
           "id": "1115000_3053",
           "name": "3053 : Total in fte"
-        },
-        {
-          "id": "1116000_",
-          "name": "By nature of employment contract"
-        },
-        {
-          "id": "1117000_",
-          "name": "Contract for an indefinite period"
         },
         {
           "id": "1118000_3101",
@@ -806,10 +544,6 @@
           "name": "3103 : Total in fte"
         },
         {
-          "id": "1121000_",
-          "name": "Contract for a definite period"
-        },
-        {
           "id": "1122000_3111",
           "name": "3111 : Full-time"
         },
@@ -820,10 +554,6 @@
         {
           "id": "1124000_3113",
           "name": "3113 : Total in fte"
-        },
-        {
-          "id": "1125000_",
-          "name": "Contract for the execution of a specifically assigned work"
         },
         {
           "id": "1126000_3121",
@@ -838,10 +568,6 @@
           "name": "3123 : Total in fte"
         },
         {
-          "id": "1129000_",
-          "name": "Replacement contract"
-        },
-        {
           "id": "1130000_3131",
           "name": "3131 : Full-time"
         },
@@ -854,22 +580,170 @@
           "name": "3133 : Total in fte"
         },
         {
-          "id": "1133000_",
-          "name": "By reason of termination of contract"
+          "id": "1135000_3401",
+          "name": "3401 : Full-time"
+        },
+        {
+          "id": "1136000_3402",
+          "name": "3402 : Part-time"
+        },
+        {
+          "id": "1137000_3403",
+          "name": "3403 : Total in fte"
+        },
+        {
+          "id": "1139000_3411",
+          "name": "3411 : Full-time"
+        },
+        {
+          "id": "1140000_3412",
+          "name": "3412 : Part-time"
+        },
+        {
+          "id": "1141000_3413",
+          "name": "3413 : Total in fte"
+        },
+        {
+          "id": "1143000_3421",
+          "name": "3421 : Full-time"
+        },
+        {
+          "id": "1144000_3422",
+          "name": "3422 : Part-time"
+        },
+        {
+          "id": "1145000_3423",
+          "name": "3423 : Total in fte"
+        },
+        {
+          "id": "1147000_3431",
+          "name": "3431 : Full-time"
+        },
+        {
+          "id": "1148000_3432",
+          "name": "3432 : Part-time"
+        },
+        {
+          "id": "1149000_3433",
+          "name": "3433 : Total in fte"
+        },
+        {
+          "id": "1151000_3501",
+          "name": "3501 : Full-time"
+        },
+        {
+          "id": "1152000_3502",
+          "name": "3502 : Part-time"
+        },
+        {
+          "id": "1153000_3503",
+          "name": "3503 : Total in fte"
+        },
+        {
+          "id": "1157000_5801",
+          "name": "5801 : Men"
+        },
+        {
+          "id": "1158000_5811",
+          "name": "5811 : Women"
+        },
+        {
+          "id": "1160000_5802",
+          "name": "5802 : Men"
+        },
+        {
+          "id": "1161000_5812",
+          "name": "5812 : Women"
+        },
+        {
+          "id": "1163000_5803",
+          "name": "5803 : Men"
+        },
+        {
+          "id": "1164000_5813",
+          "name": "5813 : Women"
+        },
+        {
+          "id": "1165000_58031",
+          "name": "58031 : Men"
+        },
+        {
+          "id": "1166000_58131",
+          "name": "58131 : Women"
+        },
+        {
+          "id": "1168000_58032",
+          "name": "58032 : Men"
+        },
+        {
+          "id": "1169000_58132",
+          "name": "58132 : Women"
+        },
+        {
+          "id": "1171000_58033",
+          "name": "58033 : Men"
+        },
+        {
+          "id": "1171500_58133",
+          "name": "58133 : Women"
+        },
+        {
+          "id": "1174000_5821",
+          "name": "5821 : Men"
+        },
+        {
+          "id": "1175000_5831",
+          "name": "5831 : Women"
+        },
+        {
+          "id": "1177000_5822",
+          "name": "5822 : Men"
+        },
+        {
+          "id": "1178000_5832",
+          "name": "5832 : Women"
+        },
+        {
+          "id": "1180000_5823",
+          "name": "5823 : Men"
+        },
+        {
+          "id": "1181000_5833",
+          "name": "5833 : Women"
+        },
+        {
+          "id": "1184000_5841",
+          "name": "5841 : Men"
+        },
+        {
+          "id": "1185000_5851",
+          "name": "5851 : Women"
+        },
+        {
+          "id": "1187000_5842",
+          "name": "5842 : Men"
+        },
+        {
+          "id": "1188000_5852",
+          "name": "5852 : Women"
+        },
+        {
+          "id": "1190000_5843",
+          "name": "5843 : Men"
+        },
+        {
+          "id": "1191000_5853",
+          "name": "5853 : Women"
         }
       ],
-      "total_codes": 261,
-      "truncated": true
+      "total_codes": 174,
+      "truncated": false
     },
     {
       "id": "SECTOR",
-      "position": 2,
+      "position": 3,
       "name": "SECTOR",
       "codes": [
-        {
-          "id": "1",
-          "name": "1 : By activity sector"
-        },
         {
           "id": "PU200",
           "name": "PU200 : All non-financial enterprises"
@@ -1665,20 +1539,20 @@
         {
           "id": "DE9708",
           "name": "DE9708 : Day nurseries and child care"
+        },
+        {
+          "id": "DE88A",
+          "name": "DE88A : Adapted work companies"
         }
       ],
-      "total_codes": 232,
+      "total_codes": 230,
       "truncated": true
     },
     {
       "id": "AMNR",
-      "position": 3,
+      "position": 4,
       "name": "AMNR",
       "codes": [
-        {
-          "id": "A",
-          "name": "Values"
-        },
         {
           "id": "AC",
           "name": "Complete"
@@ -1694,10 +1568,6 @@
         {
           "id": "AT",
           "name": "Total"
-        },
-        {
-          "id": "N",
-          "name": "Number of enterprises"
         },
         {
           "id": "NC",
@@ -1716,7 +1586,7 @@
           "name": "Total"
         }
       ],
-      "total_codes": 10,
+      "total_codes": 8,
       "truncated": false
     }
   ],
@@ -1739,6 +1609,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:13+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:35+00:00",
+  "schema_version": 2
 }

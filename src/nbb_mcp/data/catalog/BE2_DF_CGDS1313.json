@@ -11,59 +11,37 @@
     "de": "Breakdown of local government (S.1313)"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2014-01-01",
+    "end": "2025-12-31"
   },
+  "observation_count": 120,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "ITEM",
-      "position": 1,
+      "position": 2,
       "name": "ITEM",
       "codes": [
         {
           "id": "CGD",
           "name": "Consolidated gross debt"
-        },
-        {
-          "id": "CONTRIB",
-          "name": "p.m. Contribution of the subsector to the total consolidated gross debt"
         },
         {
           "id": "LGF",
@@ -100,93 +78,9 @@
         {
           "id": "CGDLE",
           "name": "Contribution of the local entities to the consolidated gross debt"
-        },
-        {
-          "id": "TCA",
-          "name": "Consolidating elements"
-        },
-        {
-          "id": "TCAHD",
-          "name": "Breakdown by holders"
-        },
-        {
-          "id": "TCAHD_S1311",
-          "name": "Federal government"
-        },
-        {
-          "id": "TCAHD_S1312",
-          "name": "Communities and regions"
-        },
-        {
-          "id": "TCAHD_S1313",
-          "name": "Local government"
-        },
-        {
-          "id": "TCAHD_S1314",
-          "name": "Social security funds"
-        },
-        {
-          "id": "TCADS",
-          "name": "Breakdown by debtors"
-        },
-        {
-          "id": "TCADS_S1311",
-          "name": "Federal government"
-        },
-        {
-          "id": "TCADS_S1312",
-          "name": "Communities and regions"
-        },
-        {
-          "id": "TCADS_S1313",
-          "name": "Local government"
-        },
-        {
-          "id": "TCADS_S1314",
-          "name": "Social security funds"
-        },
-        {
-          "id": "TCAI",
-          "name": "Breakdown by instruments"
-        },
-        {
-          "id": "TCAI_AF2",
-          "name": "Currency and deposits (AF.2)"
-        },
-        {
-          "id": "TCAI_AF31",
-          "name": "Short-term securities (AF.31)"
-        },
-        {
-          "id": "TCAI_AF32",
-          "name": "Long-term securities (AF.32)"
-        },
-        {
-          "id": "TCAI_AF4",
-          "name": "Loans (AF.4)"
-        },
-        {
-          "id": "CONTRIB_S1300",
-          "name": "Total"
-        },
-        {
-          "id": "CONTRIB_S1311",
-          "name": "Federal government"
-        },
-        {
-          "id": "CONTRIB_S1312",
-          "name": "Communities and regions"
-        },
-        {
-          "id": "CONTRIB_S1313",
-          "name": "Local government"
-        },
-        {
-          "id": "CONTRIB_S1314",
-          "name": "Social security funds"
         }
       ],
-      "total_codes": 32,
+      "total_codes": 10,
       "truncated": false
     }
   ],
@@ -209,6 +103,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:49+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:12:26+00:00",
+  "schema_version": 2
 }

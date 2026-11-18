@@ -17,15 +17,17 @@
     "M",
     "D"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
     "start": null,
     "end": null
   },
+  "observation_count": null,
+  "availability_filtered": false,
   "dimensions": [
     {
       "id": "TABLE_IDENTIFIER",
-      "position": 0,
+      "position": 1,
       "name": "TABLE_IDENTIFIER",
       "codes": [
         {
@@ -50,7 +52,7 @@
     },
     {
       "id": "FREQ",
-      "position": 1,
+      "position": 2,
       "name": "FREQ",
       "codes": [
         {
@@ -79,7 +81,7 @@
     },
     {
       "id": "REF_AREA",
-      "position": 2,
+      "position": 3,
       "name": "REF_AREA",
       "codes": [
         {
@@ -888,7 +890,7 @@
     },
     {
       "id": "UNIT_MEASURE",
-      "position": 3,
+      "position": 4,
       "name": "UNIT_MEASURE",
       "codes": [
         {
@@ -1697,7 +1699,7 @@
     },
     {
       "id": "COUNTERPART_AREA",
-      "position": 4,
+      "position": 5,
       "name": "COUNTERPART_AREA",
       "codes": [
         {
@@ -2506,7 +2508,7 @@
     },
     {
       "id": "INDICATOR",
-      "position": 5,
+      "position": 6,
       "name": "INDICATOR",
       "codes": [
         {
@@ -2999,7 +3001,7 @@
     },
     {
       "id": "ACTIVITY",
-      "position": 6,
+      "position": 7,
       "name": "ACTIVITY",
       "codes": [
         {
@@ -3808,7 +3810,7 @@
     },
     {
       "id": "PRODUCT",
-      "position": 7,
+      "position": 8,
       "name": "PRODUCT",
       "codes": [
         {
@@ -4617,7 +4619,7 @@
     },
     {
       "id": "FLOW",
-      "position": 8,
+      "position": 9,
       "name": "FLOW",
       "codes": [
         {
@@ -4714,7 +4716,7 @@
     },
     {
       "id": "NUMBER_EMPLOYEES",
-      "position": 9,
+      "position": 10,
       "name": "NUMBER_EMPLOYEES",
       "codes": [
         {
@@ -4819,7 +4821,7 @@
     },
     {
       "id": "TYPE_CTRL",
-      "position": 10,
+      "position": 11,
       "name": "TYPE_CTRL",
       "codes": [
         {
@@ -4852,7 +4854,7 @@
     },
     {
       "id": "EXP_INTENS",
-      "position": 11,
+      "position": 12,
       "name": "EXP_INTENS",
       "codes": [
         {
@@ -4907,6 +4909,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:56+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:12:04+00:00",
+  "schema_version": 2
 }

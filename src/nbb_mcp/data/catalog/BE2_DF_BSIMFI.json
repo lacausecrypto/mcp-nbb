@@ -11,50 +11,32 @@
     "de": "Main balance sheet items of the monetary financial institutions, data on territorial basis"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1996-12-01",
+    "end": "2026-09-30"
   },
+  "observation_count": 28358,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "MBSI_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "MBSI_ITEM",
       "codes": [
         {
@@ -212,14 +194,6 @@
         {
           "id": "A4",
           "name": "Money market paper"
-        },
-        {
-          "id": "A4EU",
-          "name": "Euro"
-        },
-        {
-          "id": "A4FC",
-          "name": "Foreign currencies"
         },
         {
           "id": "A5",
@@ -386,7 +360,7 @@
           "name": "Remaining liabilities"
         }
       ],
-      "total_codes": 82,
+      "total_codes": 80,
       "truncated": false
     }
   ],
@@ -409,6 +383,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:46+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:13:38+00:00",
+  "schema_version": 2
 }

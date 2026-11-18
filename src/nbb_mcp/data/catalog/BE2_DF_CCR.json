@@ -11,31 +11,22 @@
     "de": "CCR : Credit granted to resident non-financial corporations"
   },
   "frequencies_available": [
-    "A",
-    "S",
     "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2005-01-01",
+    "end": "2021-11-30"
   },
+  "observation_count": 8865,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
-        {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
         {
           "id": "Q",
           "name": "Quarterly"
@@ -43,18 +34,14 @@
         {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "CCR_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "CCR_ITEM",
       "codes": [
         {
@@ -75,7 +62,7 @@
     },
     {
       "id": "CCR_UNIT",
-      "position": 2,
+      "position": 3,
       "name": "CCR_UNIT",
       "codes": [
         {
@@ -100,7 +87,7 @@
     },
     {
       "id": "CCR_REGIO",
-      "position": 3,
+      "position": 4,
       "name": "CCR_REGIO",
       "codes": [
         {
@@ -125,7 +112,7 @@
     },
     {
       "id": "CCR_SIZE",
-      "position": 4,
+      "position": 5,
       "name": "CCR_SIZE",
       "codes": [
         {
@@ -154,71 +141,15 @@
     },
     {
       "id": "CCR_BRANCH",
-      "position": 5,
+      "position": 6,
       "name": "CCR_BRANCH",
       "codes": [
         {
           "id": "ALL",
           "name": "All branches of activity"
-        },
-        {
-          "id": "A",
-          "name": "Products of agriculture, forestry and fishing"
-        },
-        {
-          "id": "C",
-          "name": "Manufactured products"
-        },
-        {
-          "id": "D_E",
-          "name": "Energy en water supply, werage, waste management and remediation services"
-        },
-        {
-          "id": "F",
-          "name": "Constructions and construction works"
-        },
-        {
-          "id": "G",
-          "name": "Wholesale and retail trade serv.;repair serv.of motor vehicles and motorcycl."
-        },
-        {
-          "id": "H",
-          "name": "Transportation and storage services"
-        },
-        {
-          "id": "I",
-          "name": "Accommodation and food services"
-        },
-        {
-          "id": "J",
-          "name": "Information and communication services"
-        },
-        {
-          "id": "K",
-          "name": "Financial and insurance services"
-        },
-        {
-          "id": "L",
-          "name": "Real estate services"
-        },
-        {
-          "id": "M",
-          "name": "Professional, scientific and technical services"
-        },
-        {
-          "id": "N",
-          "name": "Administrative and support services"
-        },
-        {
-          "id": "Q",
-          "name": "Human health and social work services"
-        },
-        {
-          "id": "ZZZ",
-          "name": "Other branches of activity"
         }
       ],
-      "total_codes": 15,
+      "total_codes": 1,
       "truncated": false
     }
   ],
@@ -241,6 +172,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:19+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:38+00:00",
+  "schema_version": 2
 }

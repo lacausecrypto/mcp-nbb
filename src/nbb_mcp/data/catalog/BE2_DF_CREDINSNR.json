@@ -11,50 +11,32 @@
     "de": "Number of credit institutions registered"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "Q"
   ],
-  "default_frequency": "D",
+  "default_frequency": "Q",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1999-10-01",
+    "end": "2026-06-30"
   },
+  "observation_count": 3532,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
           "id": "Q",
           "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "CREDINSNR_AREA",
-      "position": 1,
+      "position": 2,
       "name": "CREDINSNR_AREA",
       "codes": [
         {
@@ -116,10 +98,6 @@
         {
           "id": "B_CN",
           "name": "CN - China"
-        },
-        {
-          "id": "NB_GB",
-          "name": "GB - United Kingdom"
         },
         {
           "id": "B_JP",
@@ -230,7 +208,7 @@
           "name": "DK - Denmark"
         }
       ],
-      "total_codes": 43,
+      "total_codes": 42,
       "truncated": false
     }
   ],
@@ -253,6 +231,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:50+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:10:57+00:00",
+  "schema_version": 2
 }

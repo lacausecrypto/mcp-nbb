@@ -5,27 +5,26 @@
   "category": "financial_institutions",
   "is_final": true,
   "names": {
-    "en": "Management companies of UCI and investment firms",
+    "en": "Management companies of UCIs and investment firms",
     "fr": "Sociétés de gestion d'OPC et entreprises d'investissement",
     "nl": "Beheersvennootschappen van ICB's en beleggingsondernemingen",
-    "de": "Management companies of UCI and investment firms"
+    "de": "Management companies of UCIs and investment firms"
   },
   "frequencies_available": [
     "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "Q"
   ],
-  "default_frequency": "D",
+  "default_frequency": "Q",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1998-01-01",
+    "end": "2026-06-30"
   },
+  "observation_count": 26809,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
@@ -33,28 +32,16 @@
           "name": "Annual"
         },
         {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
           "id": "Q",
           "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "ACCOUNT",
-      "position": 1,
+      "position": 2,
       "name": "ACCOUNT",
       "codes": [
         {
@@ -79,7 +66,7 @@
     },
     {
       "id": "INSTTYPE",
-      "position": 2,
+      "position": 3,
       "name": "INSTTYPE",
       "codes": [
         {
@@ -104,13 +91,9 @@
     },
     {
       "id": "ITEM",
-      "position": 3,
+      "position": 4,
       "name": "ITEM",
       "codes": [
-        {
-          "id": "1",
-          "name": "Balance sheet"
-        },
         {
           "id": "A",
           "name": "Total assets"
@@ -356,10 +339,6 @@
           "name": "Income (+) or loss (-) at the end of the period"
         },
         {
-          "id": "2",
-          "name": "Profit and loss account"
-        },
-        {
           "id": "R01",
           "name": "Interest received and similar proceeds"
         },
@@ -556,16 +535,8 @@
           "name": "Profit (loss) on the year for appropriation (+)(-)"
         },
         {
-          "id": "3",
-          "name": "Movement in assets managed"
-        },
-        {
           "id": "AUM",
           "name": "Assets under management"
-        },
-        {
-          "id": "4",
-          "name": "Distribution"
         },
         {
           "id": "D",
@@ -584,7 +555,7 @@
           "name": "Belgian-registered branches governed by the law of non-member state of the EEA"
         }
       ],
-      "total_codes": 119,
+      "total_codes": 115,
       "truncated": false
     }
   ],
@@ -607,6 +578,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:44+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:14:14+00:00",
+  "schema_version": 2
 }

@@ -5,62 +5,40 @@
   "category": "national_accounts",
   "is_final": true,
   "names": {
-    "en": "Satellite accounts of NPI",
+    "en": "NPI satellite account",
     "fr": "Comptes satellites des ISBL",
     "nl": "Satellietrekening van de IZW's",
-    "de": "Satellite accounts of NPI"
+    "de": "NPI satellite account"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2009-01-01",
+    "end": "2023-12-31"
   },
+  "observation_count": 31260,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "ACCOUNT",
-      "position": 1,
+      "position": 2,
       "name": "ACCOUNT",
       "codes": [
-        {
-          "id": "I",
-          "name": "Production account (I)"
-        },
         {
           "id": "IR",
           "name": "Resources"
@@ -122,18 +100,6 @@
           "name": "Added value (net) / Net domestic product (B.1n)"
         },
         {
-          "id": "II",
-          "name": "Distribution and use of income accounts (II)"
-        },
-        {
-          "id": "II1",
-          "name": "Primary distribution of income accounts (II.1)"
-        },
-        {
-          "id": "II11",
-          "name": "Generation of income account (II.1.1)"
-        },
-        {
           "id": "II11R",
           "name": "Resources"
         },
@@ -190,10 +156,6 @@
           "name": "Mixed income, gross (B.3g)"
         },
         {
-          "id": "II12",
-          "name": "Allocation of primary income account (II.1.2)"
-        },
-        {
           "id": "II12R",
           "name": "Resources"
         },
@@ -240,10 +202,6 @@
         {
           "id": "II12U_B5G",
           "name": "Balance of gross primary incomes / National income (B.5g)"
-        },
-        {
-          "id": "II2",
-          "name": "Secondary distribution of income account (II.2)"
         },
         {
           "id": "II2R",
@@ -402,10 +360,6 @@
           "name": "Disposable income, gross (B.6g)"
         },
         {
-          "id": "II3",
-          "name": "Redistribution of income in kind account (II.3)"
-        },
-        {
           "id": "II3R",
           "name": "Resources"
         },
@@ -428,14 +382,6 @@
         {
           "id": "II3U_B7G",
           "name": "Adjusted disposable income, gross (B.7g)"
-        },
-        {
-          "id": "II4",
-          "name": "Use of income account (II.4)"
-        },
-        {
-          "id": "II41",
-          "name": "Use of disposable income account (II.4.1)"
         },
         {
           "id": "II41R",
@@ -466,18 +412,6 @@
           "name": "Saving, gross (B.8g)"
         },
         {
-          "id": "III",
-          "name": "Accumulation accounts (III)"
-        },
-        {
-          "id": "III1",
-          "name": "Capital account (III.1)"
-        },
-        {
-          "id": "III11",
-          "name": "Change in net worth due to saving and capital transfers accounts (III.1.1)"
-        },
-        {
           "id": "III11L",
           "name": "Changes in liabilities"
         },
@@ -500,10 +434,6 @@
         {
           "id": "III11A_B101",
           "name": "Changes in net worth due to saving and capital transfers (B.10.1)"
-        },
-        {
-          "id": "III12",
-          "name": "Acquisitions of non-financial assets account (III.1.2)"
         },
         {
           "id": "III12L",
@@ -542,10 +472,6 @@
           "name": "Net lending / net borrowing (B.9)"
         },
         {
-          "id": "PM",
-          "name": "Additional aggregates"
-        },
-        {
           "id": "PM_B1G",
           "name": "Gross value added"
         },
@@ -560,10 +486,6 @@
         {
           "id": "PRC_D1",
           "name": "Compensation of employees (D.1)"
-        },
-        {
-          "id": "PRC_K1",
-          "name": "Consumption of fixed capital (K.1)"
         },
         {
           "id": "PRC_D2939",
@@ -590,10 +512,6 @@
           "name": "From rest of the world"
         },
         {
-          "id": "LI",
-          "name": "Labour inputs"
-        },
-        {
           "id": "EMPLOY",
           "name": "Number of employees (thousands of persons)"
         },
@@ -602,12 +520,12 @@
           "name": "Number of hours (thousands)"
         }
       ],
-      "total_codes": 136,
+      "total_codes": 120,
       "truncated": false
     },
     {
       "id": "BRANCH",
-      "position": 2,
+      "position": 3,
       "name": "BRANCH",
       "codes": [
         {
@@ -716,13 +634,9 @@
     },
     {
       "id": "SECTOR",
-      "position": 3,
+      "position": 4,
       "name": "SECTOR",
       "codes": [
-        {
-          "id": "S11_12",
-          "name": "Corporations (S.11+S.12)"
-        },
         {
           "id": "S11_12_TOT",
           "name": "Total"
@@ -752,10 +666,6 @@
           "name": "Not allocated transactions"
         },
         {
-          "id": "S1",
-          "name": "Total economy (S.1)"
-        },
-        {
           "id": "S1_TOT",
           "name": "Total"
         },
@@ -768,7 +678,7 @@
           "name": "Other"
         }
       ],
-      "total_codes": 12,
+      "total_codes": 10,
       "truncated": false
     }
   ],
@@ -791,6 +701,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:48+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:27+00:00",
+  "schema_version": 2
 }

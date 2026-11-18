@@ -11,31 +11,22 @@
     "de": "Consolidated data based on Belgian GAAP (2000–2005)"
   },
   "frequencies_available": [
-    "A",
-    "S",
     "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1999-12-01",
+    "end": "2005-12-31"
   },
+  "observation_count": 5788,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
-        {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
         {
           "id": "Q",
           "name": "Quarterly"
@@ -43,18 +34,14 @@
         {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "CREDINSCONS00_TABLE",
-      "position": 1,
+      "position": 2,
       "name": "CREDINSCONS00_TABLE",
       "codes": [
         {
@@ -91,13 +78,9 @@
     },
     {
       "id": "CREDINSCONS00_ITEM",
-      "position": 2,
+      "position": 3,
       "name": "CREDINSCONS00_ITEM",
       "codes": [
-        {
-          "id": "1",
-          "name": "General situation of credit institutions: quarterly overview by category of institutions - all credit institutions"
-        },
         {
           "id": "1A",
           "name": "Assets"
@@ -371,10 +354,6 @@
           "name": "Minority interests"
         },
         {
-          "id": "2",
-          "name": "Structure of off-balance-sheet transactions - all credit institutions"
-        },
-        {
           "id": "201",
           "name": "Spot foreign exchange transactions"
         },
@@ -567,14 +546,6 @@
           "name": "Other rights and commitments"
         },
         {
-          "id": "3",
-          "name": "Basic components of the income statement - all credit institutions"
-        },
-        {
-          "id": "3BL",
-          "name": "Belgian credit institutions - large banking groups"
-        },
-        {
           "id": "3BL1",
           "name": "Total interest result"
         },
@@ -685,10 +656,6 @@
         {
           "id": "3BL15",
           "name": "Consolidated results"
-        },
-        {
-          "id": "3BT",
-          "name": "Belgian credit institutions - total"
         },
         {
           "id": "3BT1",
@@ -803,10 +770,6 @@
           "name": "Consolidated results"
         },
         {
-          "id": "3F",
-          "name": "Foreign credit institutions"
-        },
-        {
           "id": "3F1",
           "name": "Total interest result"
         },
@@ -893,9 +856,33 @@
         {
           "id": "3F9",
           "name": "Net operating result"
+        },
+        {
+          "id": "3F10",
+          "name": "Extraordinary result"
+        },
+        {
+          "id": "3F11",
+          "name": "Taxes"
+        },
+        {
+          "id": "3F12",
+          "name": "Transfers and withdrawals"
+        },
+        {
+          "id": "3F13",
+          "name": "Share of income from companies accounted for by the equity method"
+        },
+        {
+          "id": "3F14",
+          "name": "Minority interest in the result of consolidated subsidiaries"
+        },
+        {
+          "id": "3F15",
+          "name": "Consolidated results"
         }
       ],
-      "total_codes": 327,
+      "total_codes": 316,
       "truncated": true
     }
   ],
@@ -918,6 +905,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:47+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:14:22+00:00",
+  "schema_version": 2
 }

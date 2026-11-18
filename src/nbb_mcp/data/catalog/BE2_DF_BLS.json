@@ -11,50 +11,32 @@
     "de": "Bank lending survey"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "Q"
   ],
-  "default_frequency": "D",
+  "default_frequency": "Q",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2002-10-01",
+    "end": "2021-12-31"
   },
+  "observation_count": 16254,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
           "id": "Q",
           "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "BLS_SECTOR",
-      "position": 1,
+      "position": 2,
       "name": "BLS_SECTOR",
       "codes": [
         {
@@ -83,7 +65,7 @@
     },
     {
       "id": "BLS_AREA",
-      "position": 2,
+      "position": 3,
       "name": "BLS_AREA",
       "codes": [
         {
@@ -100,13 +82,9 @@
     },
     {
       "id": "BLS_INDIC",
-      "position": 3,
+      "position": 4,
       "name": "BLS_INDIC",
       "codes": [
-        {
-          "id": "C",
-          "name": "Change in credit standards"
-        },
         {
           "id": "CE",
           "name": "Total evolution"
@@ -136,10 +114,6 @@
           "name": "Your bank's liquidity position"
         },
         {
-          "id": "CP",
-          "name": "Influence of pressure from competition"
-        },
-        {
           "id": "CPO",
           "name": "Competition from other banks"
         },
@@ -150,10 +124,6 @@
         {
           "id": "CPF",
           "name": "Competition from market financing"
-        },
-        {
-          "id": "CR",
-          "name": "Influence of perception of risk"
         },
         {
           "id": "CRE",
@@ -188,20 +158,12 @@
           "name": "Overall terms and conditions"
         },
         {
-          "id": "CT",
-          "name": "Price terms and conditions"
-        },
-        {
           "id": "CTA",
           "name": "Your bank's margin on average loans (wider margin = tightened, narrower margin = eased)"
         },
         {
           "id": "CTR",
           "name": "Your bank's margin on riskier loans"
-        },
-        {
-          "id": "CO",
-          "name": "Other terms and conditions"
         },
         {
           "id": "CON",
@@ -232,10 +194,6 @@
           "name": "Other loan size limits"
         },
         {
-          "id": "D",
-          "name": "Change in demand"
-        },
-        {
           "id": "DE",
           "name": "Total evolution"
         },
@@ -246,10 +204,6 @@
         {
           "id": "DEL",
           "name": "Long-term loans"
-        },
-        {
-          "id": "DF",
-          "name": "Influence of financing needs"
         },
         {
           "id": "DFF",
@@ -304,10 +258,6 @@
           "name": "Consumption expenditure financed through real-estate guaranteed loans"
         },
         {
-          "id": "DA",
-          "name": "Influence of the use of alternative finance"
-        },
-        {
           "id": "DAF",
           "name": "Internal financing"
         },
@@ -336,7 +286,7 @@
           "name": "Other sources of finance"
         }
       ],
-      "total_codes": 58,
+      "total_codes": 50,
       "truncated": false
     }
   ],
@@ -359,6 +309,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:46+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:12:00+00:00",
+  "schema_version": 2
 }

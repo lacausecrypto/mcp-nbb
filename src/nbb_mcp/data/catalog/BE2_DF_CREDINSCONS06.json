@@ -12,20 +12,19 @@
   },
   "frequencies_available": [
     "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "Q"
   ],
-  "default_frequency": "D",
+  "default_frequency": "Q",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2006-01-01",
+    "end": "2014-06-30"
   },
+  "observation_count": 7877,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
@@ -33,28 +32,16 @@
           "name": "Annual"
         },
         {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
           "id": "Q",
           "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "CREDINSCONS06_TABLE",
-      "position": 1,
+      "position": 2,
       "name": "CREDINSCONS06_TABLE",
       "codes": [
         {
@@ -95,13 +82,9 @@
     },
     {
       "id": "CREDINSCONS06_ITEM",
-      "position": 2,
+      "position": 3,
       "name": "CREDINSCONS06_ITEM",
       "codes": [
-        {
-          "id": "1",
-          "name": "Global activity by portfolio"
-        },
         {
           "id": "1TA",
           "name": "Total - Total assets"
@@ -423,10 +406,6 @@
           "name": "Total equity and minority interest"
         },
         {
-          "id": "2",
-          "name": "Global activity by product"
-        },
-        {
           "id": "2A",
           "name": "Total assets"
         },
@@ -543,10 +522,6 @@
           "name": "Total equity and minority interest"
         },
         {
-          "id": "3",
-          "name": "Off-balance-sheet commitments"
-        },
-        {
           "id": "3LG",
           "name": "Loan commitments given"
         },
@@ -569,10 +544,6 @@
         {
           "id": "3OR",
           "name": "Other commitments received"
-        },
-        {
-          "id": "4",
-          "name": "Securities portfolio"
         },
         {
           "id": "4L",
@@ -663,10 +634,6 @@
           "name": "Debt instruments"
         },
         {
-          "id": "5",
-          "name": "Loans and advances"
-        },
-        {
           "id": "5T",
           "name": "Total loans and advances"
         },
@@ -725,10 +692,6 @@
         {
           "id": "5O8",
           "name": "Others"
-        },
-        {
-          "id": "6",
-          "name": "Funding structure"
         },
         {
           "id": "6D",
@@ -819,14 +782,6 @@
           "name": "Equity and minority interest"
         },
         {
-          "id": "7",
-          "name": "Derivatives"
-        },
-        {
-          "id": "7C",
-          "name": "Carrying amounts"
-        },
-        {
           "id": "7C1",
           "name": "Derivatives classified as assets (total)"
         },
@@ -897,9 +852,41 @@
         {
           "id": "7C222",
           "name": "Used for portfolio hedging of interest rate risk"
+        },
+        {
+          "id": "7C2221",
+          "name": "Fair value hedges"
+        },
+        {
+          "id": "7C2222",
+          "name": "Cash flow hedges"
+        },
+        {
+          "id": "7N1",
+          "name": "Derivatives assets + liabilities"
+        },
+        {
+          "id": "7N11",
+          "name": "Held for trading"
+        },
+        {
+          "id": "7N111",
+          "name": "Interest rate derivatives"
+        },
+        {
+          "id": "7N112",
+          "name": "Equity derivatives"
+        },
+        {
+          "id": "7N113",
+          "name": "Currency (fx) derivatives"
+        },
+        {
+          "id": "7N114",
+          "name": "Credit derivatives"
         }
       ],
-      "total_codes": 254,
+      "total_codes": 244,
       "truncated": true
     }
   ],
@@ -922,6 +909,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:47+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:14:41+00:00",
+  "schema_version": 2
 }

@@ -11,31 +11,22 @@
     "de": "Credit granted to non-financial corporations (Consolidated balance sheet of credit institutions - Scheme A)"
   },
   "frequencies_available": [
-    "A",
-    "S",
     "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1980-10-01",
+    "end": "2026-09-30"
   },
+  "observation_count": 10841,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
-        {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
         {
           "id": "Q",
           "name": "Quarterly"
@@ -43,18 +34,14 @@
         {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "CREDNFC_UNIT",
-      "position": 1,
+      "position": 2,
       "name": "CREDNFC_UNIT",
       "codes": [
         {
@@ -87,7 +74,7 @@
     },
     {
       "id": "CREDNFC_MATURITY",
-      "position": 2,
+      "position": 3,
       "name": "CREDNFC_MATURITY",
       "codes": [
         {
@@ -112,7 +99,7 @@
     },
     {
       "id": "CREDNFC_REGIO",
-      "position": 3,
+      "position": 4,
       "name": "CREDNFC_REGIO",
       "codes": [
         {
@@ -147,6 +134,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:50+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:05+00:00",
+  "schema_version": 2
 }

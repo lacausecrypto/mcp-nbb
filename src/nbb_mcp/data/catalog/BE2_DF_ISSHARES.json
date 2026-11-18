@@ -12,20 +12,19 @@
   },
   "frequencies_available": [
     "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1999-01-01",
+    "end": "2025-01-31"
   },
+  "observation_count": 6075,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
@@ -33,34 +32,18 @@
           "name": "Annual"
         },
         {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "ITEM",
-      "position": 1,
+      "position": 2,
       "name": "ITEM",
       "codes": [
-        {
-          "id": "A",
-          "name": "Amount of the financial transactions (in millions of euro)"
-        },
         {
           "id": "AF",
           "name": "Company formations"
@@ -122,10 +105,6 @@
           "name": "Other"
         },
         {
-          "id": "N",
-          "name": "Number of companies (in units)"
-        },
-        {
           "id": "NF",
           "name": "Company formations"
         },
@@ -138,7 +117,7 @@
           "name": "Capital reductions"
         }
       ],
-      "total_codes": 20,
+      "total_codes": 18,
       "truncated": false
     }
   ],
@@ -161,6 +140,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:32+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:13:31+00:00",
+  "schema_version": 2
 }

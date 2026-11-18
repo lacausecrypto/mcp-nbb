@@ -11,56 +11,34 @@
     "de": "Detailed sector accounts – annual data"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "A"
   ],
-  "default_frequency": "D",
+  "default_frequency": "A",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1995-01-01",
+    "end": "2025-12-31"
   },
+  "observation_count": 69161,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "ACCOUNT",
-      "position": 1,
+      "position": 2,
       "name": "ACCOUNT",
       "codes": [
-        {
-          "id": "I",
-          "name": "Production account (I)"
-        },
         {
           "id": "IR",
           "name": "Resources"
@@ -104,18 +82,6 @@
         {
           "id": "IU_B1QN",
           "name": "Added value (net) / Net domestic product (B.1n)"
-        },
-        {
-          "id": "II",
-          "name": "Distribution and use of income accounts (II)"
-        },
-        {
-          "id": "II1",
-          "name": "Primary distribution of income accounts (II.1)"
-        },
-        {
-          "id": "II11",
-          "name": "Generation of income account (II.1.1)"
         },
         {
           "id": "II11R",
@@ -188,10 +154,6 @@
         {
           "id": "II11U_B3G",
           "name": "Gross mixed income (B.3g)"
-        },
-        {
-          "id": "II12",
-          "name": "Allocation of primary income account (II.1.2)"
         },
         {
           "id": "II12R",
@@ -382,16 +344,8 @@
           "name": "Gross balance of primary incomes / Gross national income (B.5g)"
         },
         {
-          "id": "II121",
-          "name": "Entrepreneurial income accounts (II.1.2.1)"
-        },
-        {
           "id": "II121_B4G",
           "name": "Gross entrepreneurial income (B.4g)"
-        },
-        {
-          "id": "II2",
-          "name": "Secondary distribution of income account (II.2)"
         },
         {
           "id": "II2R",
@@ -750,10 +704,6 @@
           "name": "Gross disposable income (B.6g)"
         },
         {
-          "id": "II3",
-          "name": "Redistribution of income in kind account (II.3)"
-        },
-        {
           "id": "II3R",
           "name": "Resources"
         },
@@ -794,14 +744,6 @@
           "name": "Adjusted gross disposable income (B.7g)"
         },
         {
-          "id": "II4",
-          "name": "Use of income account (II.4)"
-        },
-        {
-          "id": "II41",
-          "name": "Use of disposable income account (II.4.1)"
-        },
-        {
           "id": "II41R",
           "name": "Resources"
         },
@@ -838,10 +780,6 @@
           "name": "Gross saving (B.8g)"
         },
         {
-          "id": "II42",
-          "name": "Use of adjusted disposable income account (II.4.2)"
-        },
-        {
           "id": "II42R",
           "name": "Resources"
         },
@@ -856,14 +794,58 @@
         {
           "id": "II42U",
           "name": "Uses"
+        },
+        {
+          "id": "II42U_P4",
+          "name": "Actual final consumption (P.4)"
+        },
+        {
+          "id": "II42U_P41",
+          "name": "Actual individual consumption (P.41)"
+        },
+        {
+          "id": "II42U_P42",
+          "name": "Actual collective consumption (P.42)"
+        },
+        {
+          "id": "II42U_D8",
+          "name": "Adjustment for the change in pension entitlements (D.8)"
+        },
+        {
+          "id": "II42U_B8G",
+          "name": "Gross saving (B.8g)"
+        },
+        {
+          "id": "III11L",
+          "name": "Changes in liabilities and net worth"
+        },
+        {
+          "id": "III11L_B8N",
+          "name": "Net saving (B.8n)"
+        },
+        {
+          "id": "III11L_D9_R",
+          "name": "Capital transfers, received (D.9r)"
+        },
+        {
+          "id": "III11L_D91_R",
+          "name": "Capital taxes, received (D.91r)"
+        },
+        {
+          "id": "III11L_D92_R",
+          "name": "Investment grants, received (D.92r)"
+        },
+        {
+          "id": "III11L_D92_R_S13",
+          "name": "Of the general government"
         }
       ],
-      "total_codes": 405,
+      "total_codes": 384,
       "truncated": true
     },
     {
       "id": "SECTOR",
-      "position": 2,
+      "position": 3,
       "name": "SECTOR",
       "codes": [
         {
@@ -899,36 +881,12 @@
           "name": "General government (S.13)"
         },
         {
-          "id": "S1300",
-          "name": "General government"
-        },
-        {
-          "id": "S1311",
-          "name": "Federal government"
-        },
-        {
-          "id": "S1312",
-          "name": "Communities and regions"
-        },
-        {
-          "id": "S1313",
-          "name": "Local government"
-        },
-        {
-          "id": "S1314",
-          "name": "Social security funds"
-        },
-        {
           "id": "S14",
           "name": "Households (S.14)"
         },
         {
           "id": "S15",
           "name": "Non profit institutions serving households (S.15)"
-        },
-        {
-          "id": "S1M",
-          "name": "Households and non profit institutions serving households (S.14 + S.15)"
         },
         {
           "id": "S2",
@@ -951,7 +909,7 @@
           "name": "Non-member countries and international organisations non-resident of EU (S.22)"
         }
       ],
-      "total_codes": 21,
+      "total_codes": 15,
       "truncated": false
     }
   ],
@@ -974,6 +932,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:49+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:26+00:00",
+  "schema_version": 2
 }

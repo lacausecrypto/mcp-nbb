@@ -11,56 +11,34 @@
     "de": "Monetary policy of the ESCB: main interest rates"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
     "D"
   ],
   "default_frequency": "D",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1999-01-01",
+    "end": "2026-11-18"
   },
+  "observation_count": 32754,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
-        {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
         {
           "id": "D",
           "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "IRESCB_RATE",
-      "position": 1,
+      "position": 2,
       "name": "IRESCB_RATE",
       "codes": [
-        {
-          "id": "STC",
-          "name": "Standard tender credits"
-        },
         {
           "id": "STC_F",
           "name": "Fixed rate or minimum bid rate"
@@ -86,7 +64,7 @@
           "name": "Deposit facilities"
         }
       ],
-      "total_codes": 7,
+      "total_codes": 6,
       "truncated": false
     }
   ],
@@ -109,6 +87,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:09+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:51+00:00",
+  "schema_version": 2
 }

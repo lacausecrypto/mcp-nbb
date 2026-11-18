@@ -11,50 +11,32 @@
     "de": "MFI interest rates (MIR)"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2003-01-01",
+    "end": "2026-09-30"
   },
+  "observation_count": 62257,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
-          "id": "Q",
-          "name": "Quarterly"
-        },
-        {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "MIR_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "MIR_ITEM",
       "codes": [
         {
@@ -70,10 +52,6 @@
           "name": "Amount of new business"
         },
         {
-          "id": "IA",
-          "name": "Auxiliary information"
-        },
-        {
           "id": "DIS",
           "name": "Dispersion of interest rates on new business"
         },
@@ -82,24 +60,16 @@
           "name": "Breakdown info factors of interest rates on new business"
         },
         {
-          "id": "SCR",
-          "name": "Statistics of cash receipts"
-        },
-        {
-          "id": "DISTB",
-          "name": "Dispersion of interest rate effects on new issues of treasury bonds"
-        },
-        {
           "id": "_Z",
           "name": "Not applicable"
         }
       ],
-      "total_codes": 9,
+      "total_codes": 6,
       "truncated": false
     },
     {
       "id": "MIR_SECTOR",
-      "position": 2,
+      "position": 3,
       "name": "MIR_SECTOR",
       "codes": [
         {
@@ -111,20 +81,16 @@
           "name": "Households"
         },
         {
-          "id": "0000",
-          "name": "Total"
-        },
-        {
           "id": "_Z",
           "name": "not applicable"
         }
       ],
-      "total_codes": 4,
+      "total_codes": 3,
       "truncated": false
     },
     {
       "id": "MIR_INSTRUMENT",
-      "position": 3,
+      "position": 4,
       "name": "MIR_INSTRUMENT",
       "codes": [
         {
@@ -142,10 +108,6 @@
         {
           "id": "L23",
           "name": "Redeemable at up to 3 months notice"
-        },
-        {
-          "id": "A20",
-          "name": "Loans in EUR"
         },
         {
           "id": "A2Z1",
@@ -188,10 +150,6 @@
           "name": "Loans for consumption and other purposes"
         },
         {
-          "id": "1CB",
-          "name": "Cash bonds"
-        },
-        {
           "id": "CB_1",
           "name": "Cost-of-borrowing indicator for households for house purchase"
         },
@@ -208,25 +166,17 @@
           "name": "Cost-of-borrowing indicator for new short-term loans to households and non-financial corporations"
         }
       ],
-      "total_codes": 20,
+      "total_codes": 18,
       "truncated": false
     },
     {
       "id": "MIR_MATURITY",
-      "position": 4,
+      "position": 5,
       "name": "MIR_MATURITY",
       "codes": [
         {
           "id": "Z",
           "name": "Not applicable"
-        },
-        {
-          "id": "LX",
-          "name": "Deposits maturity"
-        },
-        {
-          "id": "L_1",
-          "name": "Below 1 month"
         },
         {
           "id": "L_F",
@@ -243,10 +193,6 @@
         {
           "id": "L_H",
           "name": "Over 2 years"
-        },
-        {
-          "id": "AXN",
-          "name": "Loans maturity (new business)"
         },
         {
           "id": "A_D",
@@ -293,10 +239,6 @@
           "name": "Annual percent rate of charge"
         },
         {
-          "id": "AXO",
-          "name": "Loans maturity (outstanding amounts)"
-        },
-        {
           "id": "O_F",
           "name": "Up to 1 year"
         },
@@ -307,34 +249,14 @@
         {
           "id": "O_J",
           "name": "Over 5 years"
-        },
-        {
-          "id": "CBX",
-          "name": "Cash bonds maturity"
-        },
-        {
-          "id": "CB1",
-          "name": "With 1 year maturity"
-        },
-        {
-          "id": "CB3",
-          "name": "With 3 years maturity"
-        },
-        {
-          "id": "CB5",
-          "name": "With 5 years maturity"
-        },
-        {
-          "id": "CB10",
-          "name": "With maturity between 5 an 10 years (interval)"
         }
       ],
-      "total_codes": 28,
+      "total_codes": 19,
       "truncated": false
     },
     {
       "id": "MIR_QUARTILE",
-      "position": 5,
+      "position": 6,
       "name": "MIR_QUARTILE",
       "codes": [
         {
@@ -359,7 +281,7 @@
     },
     {
       "id": "MIR_FACTOR",
-      "position": 6,
+      "position": 7,
       "name": "MIR_FACTOR",
       "codes": [
         {
@@ -402,6 +324,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:50+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:14:23+00:00",
+  "schema_version": 2
 }

@@ -11,50 +11,32 @@
     "de": "Consolidated data based on IFRS « European FINREP » (2018 - ...)"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "Q"
   ],
-  "default_frequency": "D",
+  "default_frequency": "Q",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2018-01-01",
+    "end": "2026-06-30"
   },
+  "observation_count": 9810,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
           "id": "Q",
           "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "CREDINSCONS18_TABLE",
-      "position": 1,
+      "position": 2,
       "name": "CREDINSCONS18_TABLE",
       "codes": [
         {
@@ -119,13 +101,9 @@
     },
     {
       "id": "CREDINSCONS18_ITEM",
-      "position": 2,
+      "position": 3,
       "name": "CREDINSCONS18_ITEM",
       "codes": [
-        {
-          "id": "1",
-          "name": "Global activity by portfolio"
-        },
         {
           "id": "1A",
           "name": "Total assets"
@@ -201,10 +179,6 @@
         {
           "id": "1L7",
           "name": "Total equity and minority interest"
-        },
-        {
-          "id": "2",
-          "name": "Global activity by product"
         },
         {
           "id": "2A",
@@ -315,10 +289,6 @@
           "name": "Total equity"
         },
         {
-          "id": "3",
-          "name": "Off-balance-sheet commitments"
-        },
-        {
           "id": "3LG",
           "name": "Loan commitments given"
         },
@@ -341,10 +311,6 @@
         {
           "id": "3OR",
           "name": "Other commitments received"
-        },
-        {
-          "id": "4",
-          "name": "Securities portfolio"
         },
         {
           "id": "4L",
@@ -411,10 +377,6 @@
           "name": "Debt securities"
         },
         {
-          "id": "5",
-          "name": "Loans and advances"
-        },
-        {
           "id": "5T",
           "name": "Total loans and advances"
         },
@@ -461,10 +423,6 @@
         {
           "id": "5O5",
           "name": "Other"
-        },
-        {
-          "id": "6",
-          "name": "Funding structure"
         },
         {
           "id": "6D",
@@ -547,14 +505,6 @@
           "name": "Equity and minority interest"
         },
         {
-          "id": "7",
-          "name": "Derivatives"
-        },
-        {
-          "id": "7C",
-          "name": "Carrying amounts"
-        },
-        {
           "id": "7C1",
           "name": "Derivatives classified as assets (total)"
         },
@@ -635,10 +585,6 @@
           "name": "Cash flow hedges"
         },
         {
-          "id": "7N",
-          "name": "Notional amounts"
-        },
-        {
           "id": "7N1",
           "name": "Derivatives assets + liabilities"
         },
@@ -701,10 +647,6 @@
         {
           "id": "7N1222",
           "name": "Cash flow hedges"
-        },
-        {
-          "id": "8",
-          "name": "Income statement"
         },
         {
           "id": "801",
@@ -839,10 +781,6 @@
           "name": "Net profit or loss"
         },
         {
-          "id": "9",
-          "name": "Regulatory capital ratios and solvency"
-        },
-        {
           "id": "91",
           "name": "Tier 1 capital"
         },
@@ -891,14 +829,6 @@
           "name": "Leverage ratio, phased-in (%)"
         },
         {
-          "id": "10",
-          "name": "Non-performing loans and asset quality"
-        },
-        {
-          "id": "10T1",
-          "name": "Total debt securities and loans"
-        },
-        {
           "id": "10T11",
           "name": "Exposure"
         },
@@ -915,15 +845,67 @@
           "name": "Coverage ratio (%)"
         },
         {
-          "id": "10T2",
+          "id": "10T21",
           "name": "Loans and advances"
         },
         {
-          "id": "10T21",
+          "id": "10T22",
+          "name": "Non-performing loans and advances"
+        },
+        {
+          "id": "10T23",
+          "name": "NPL  ratio (%)"
+        },
+        {
+          "id": "10T24",
+          "name": "Coverage ratio (%)"
+        },
+        {
+          "id": "10T251",
           "name": "Loans and advances"
+        },
+        {
+          "id": "10T252",
+          "name": "Non-performing loans and advances"
+        },
+        {
+          "id": "10T253",
+          "name": "NPL  ratio (%)"
+        },
+        {
+          "id": "10T254",
+          "name": "Coverage ratio (%)"
+        },
+        {
+          "id": "10T261",
+          "name": "Loans and advances"
+        },
+        {
+          "id": "10T262",
+          "name": "Non-performing loans and advances"
+        },
+        {
+          "id": "10T263",
+          "name": "NPL  ratio (%)"
+        },
+        {
+          "id": "10T264",
+          "name": "Coverage ratio (%)"
+        },
+        {
+          "id": "10T2651",
+          "name": "Loans and advances"
+        },
+        {
+          "id": "10T2652",
+          "name": "Non-performing loans and advances"
+        },
+        {
+          "id": "10T2653",
+          "name": "NPL  ratio (%)"
         }
       ],
-      "total_codes": 261,
+      "total_codes": 238,
       "truncated": true
     }
   ],
@@ -946,6 +928,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:49+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:15:20+00:00",
+  "schema_version": 2
 }

@@ -5,27 +5,26 @@
   "category": "financial_institutions",
   "is_final": true,
   "names": {
-    "en": "Non-money market collective investment undertakings governed by Belgian law",
+    "en": "Non-monetary market collective investment undertakings governed by Belgian law",
     "fr": "Organismes de placement collectif non monétaires de droit belge",
     "nl": "Niet-monetaire instellingen voor collectieve belegging naar Belgisch recht",
-    "de": "Non-money market collective investment undertakings governed by Belgian law"
+    "de": "Non-monetary market collective investment undertakings governed by Belgian law"
   },
   "frequencies_available": [
     "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "Q"
   ],
-  "default_frequency": "D",
+  "default_frequency": "Q",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1998-01-01",
+    "end": "2026-06-30"
   },
+  "observation_count": 5710,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
@@ -33,28 +32,16 @@
           "name": "Annual"
         },
         {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
           "id": "Q",
           "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 2,
       "truncated": false
     },
     {
       "id": "ACCOUNT",
-      "position": 1,
+      "position": 2,
       "name": "ACCOUNT",
       "codes": [
         {
@@ -71,7 +58,7 @@
     },
     {
       "id": "TRANSACTION",
-      "position": 2,
+      "position": 3,
       "name": "TRANSACTION",
       "codes": [
         {
@@ -123,10 +110,6 @@
           "name": "Financial liabilities"
         },
         {
-          "id": "L1",
-          "name": "Shares issued by"
-        },
-        {
           "id": "L11",
           "name": "Bond UCIs"
         },
@@ -167,7 +150,7 @@
           "name": "Reinvested earnings and statistical adjustments"
         }
       ],
-      "total_codes": 23,
+      "total_codes": 22,
       "truncated": false
     }
   ],
@@ -190,6 +173,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:48+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:15:31+00:00",
+  "schema_version": 2
 }

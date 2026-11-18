@@ -12,20 +12,20 @@
   },
   "frequencies_available": [
     "A",
-    "S",
     "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "2000-01-01",
+    "end": "2026-09-30"
   },
+  "observation_count": 39647,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "BOPRESERV_ITEM",
-      "position": 0,
+      "position": 1,
       "name": "BOPRESERV_ITEM",
       "codes": [
         {
@@ -366,7 +366,7 @@
     },
     {
       "id": "BOPBPM6_FLOW",
-      "position": 1,
+      "position": 2,
       "name": "BOPBPM6_FLOW",
       "codes": [
         {
@@ -391,16 +391,12 @@
     },
     {
       "id": "FREQ",
-      "position": 2,
+      "position": 3,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
         },
         {
           "id": "Q",
@@ -409,13 +405,9 @@
         {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 3,
       "truncated": false
     }
   ],
@@ -438,6 +430,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:48+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:11:18+00:00",
+  "schema_version": 2
 }

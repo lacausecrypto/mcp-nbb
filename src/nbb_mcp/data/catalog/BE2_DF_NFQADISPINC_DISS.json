@@ -11,50 +11,32 @@
     "de": "Income, savings, and net lending/borrowing – quarterly and annual data"
   },
   "frequencies_available": [
-    "A",
-    "S",
-    "Q",
-    "M",
-    "D"
+    "Q"
   ],
-  "default_frequency": "D",
+  "default_frequency": "Q",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1999-01-01",
+    "end": "2026-06-30"
   },
+  "observation_count": 2860,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
-          "id": "A",
-          "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
-        },
-        {
           "id": "Q",
           "name": "Quarterly"
-        },
-        {
-          "id": "M",
-          "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "INDICATOR",
-      "position": 1,
+      "position": 2,
       "name": "INDICATOR",
       "codes": [
         {
@@ -115,44 +97,20 @@
     },
     {
       "id": "PRICES",
-      "position": 2,
+      "position": 3,
       "name": "PRICES",
       "codes": [
-        {
-          "id": "CQ",
-          "name": "Contributions to the volume change - Q to Q"
-        },
-        {
-          "id": "CY",
-          "name": "Contributions to the volume change - Y to Y"
-        },
-        {
-          "id": "D",
-          "name": "Deflator"
-        },
-        {
-          "id": "L",
-          "name": "In volume: chain linked, in millions of euro"
-        },
-        {
-          "id": "LQ",
-          "name": "Chain linked - Q to Q percentage change (reference year 2020)"
-        },
-        {
-          "id": "LY",
-          "name": "Chain linked - Y to Y percentage change (reference year 2020)"
-        },
         {
           "id": "V",
           "name": "Current prices in millions of euro"
         }
       ],
-      "total_codes": 7,
+      "total_codes": 1,
       "truncated": false
     },
     {
       "id": "ADJUSTMENT",
-      "position": 3,
+      "position": 4,
       "name": "ADJUSTMENT",
       "codes": [
         {
@@ -187,6 +145,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:32:42+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:14:21+00:00",
+  "schema_version": 2
 }

@@ -12,29 +12,25 @@
   },
   "frequencies_available": [
     "A",
-    "S",
     "Q",
-    "M",
-    "D"
+    "M"
   ],
-  "default_frequency": "D",
+  "default_frequency": "M",
   "time_coverage": {
-    "start": null,
-    "end": null
+    "start": "1996-01-01",
+    "end": "2026-09-30"
   },
+  "observation_count": 8913,
+  "availability_filtered": true,
   "dimensions": [
     {
       "id": "FREQ",
-      "position": 0,
+      "position": 1,
       "name": "FREQ",
       "codes": [
         {
           "id": "A",
           "name": "Annual"
-        },
-        {
-          "id": "S",
-          "name": "Half-yearly"
         },
         {
           "id": "Q",
@@ -43,18 +39,14 @@
         {
           "id": "M",
           "name": "Monthly"
-        },
-        {
-          "id": "D",
-          "name": "Daily"
         }
       ],
-      "total_codes": 5,
+      "total_codes": 3,
       "truncated": false
     },
     {
       "id": "MONAGG_ITEM",
-      "position": 1,
+      "position": 2,
       "name": "MONAGG_ITEM",
       "codes": [
         {
@@ -107,7 +99,7 @@
     },
     {
       "id": "MONAGG_REGIO",
-      "position": 2,
+      "position": 3,
       "name": "MONAGG_REGIO",
       "codes": [
         {
@@ -142,6 +134,6 @@
     }
   ],
   "etag": null,
-  "fetched_at": "2026-04-12T16:31:45+00:00",
-  "schema_version": 1
+  "fetched_at": "2026-11-18T19:15:00+00:00",
+  "schema_version": 2
 }
