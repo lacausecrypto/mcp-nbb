@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from typing import Any
 
 
@@ -21,6 +22,14 @@ class NBBError(Exception):
 
     def __repr__(self) -> str:  # pragma: no cover
         return f"{type(self).__name__}(code={self.code!r}, message={self.message!r})"
+
+    def __str__(self) -> str:
+        # MCP servers forward only ``str(exc)`` to the model, so the actionable
+        # details (valid dimensions, codes, key template) must live in the string.
+        head = f"[{self.code}] {self.message}"
+        if not self.details:
+            return head
+        return f"{head}\ndetails: {json.dumps(self.details, ensure_ascii=False, default=str)}"
 
     def to_dict(self) -> dict[str, Any]:
         return {

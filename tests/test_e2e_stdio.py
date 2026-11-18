@@ -1,4 +1,4 @@
-"""End-to-end tests: spawn the FastMCP server via stdio and speak the protocol.
+"""End-to-end tests: spawn the MCP server via stdio and speak the protocol.
 
 These tests cover the offline-friendly tools only (``nbb_search``,
 ``nbb_describe``, ``nbb_status``) and the three static/templated resources.
@@ -67,7 +67,7 @@ async def test_e2e_initialize_and_list_tools():
     async with stdio_client(_server_params()) as (read, write):
         async with ClientSession(read, write) as session:
             init = await session.initialize()
-            assert init.serverInfo.name == "nbb"
+            assert init.server_info.name == "nbb"
 
             tools = await session.list_tools()
             names = {t.name for t in tools.tools}
@@ -94,7 +94,7 @@ async def test_e2e_list_resources_and_templates():
             assert "nbb://catalog" in static_uris
 
             templates = await session.list_resource_templates()
-            template_uris = {r.uriTemplate for r in templates.resourceTemplates}
+            template_uris = {r.uri_template for r in templates.resource_templates}
             assert "nbb://dataflow/{agency}/{dataflow_id}" in template_uris
             assert "nbb://category/{category}" in template_uris
 
@@ -105,9 +105,10 @@ async def test_e2e_call_nbb_status():
             await session.initialize()
 
             result = await session.call_tool("nbb_status", {})
-            assert not result.isError
+            assert not result.is_error
             payload = json.loads(_text_payload(result))
-            assert payload["catalog"]["dataflow_count"] == 221
+            index = json.loads((CATALOG / "_index.json").read_text())
+            assert payload["catalog"]["dataflow_count"] == index["dataflow_count"]
             assert "exchange_interest_rates" in payload["catalog"]["categories"]
             assert payload["api"]["base_url"].startswith("https://")
 
@@ -120,7 +121,7 @@ async def test_e2e_call_nbb_search():
                 "nbb_search",
                 {"query": "exchange rate of the euro", "limit": 5},
             )
-            assert not result.isError
+            assert not result.is_error
             payload = json.loads(_text_payload(result))
             assert payload["count"] >= 1
             assert any(hit["id"] == "DF_EXR" for hit in payload["results"])
@@ -134,7 +135,7 @@ async def test_e2e_call_nbb_describe():
                 "nbb_describe",
                 {"dataflow_id": "DF_EXR", "agency": "BE2", "include_codes": False},
             )
-            assert not result.isError
+            assert not result.is_error
             payload = json.loads(_text_payload(result))
             assert payload["id"] == "DF_EXR"
             assert payload["key_template"] == "{FREQ}.{EXR_CURRENCY}"
@@ -172,6 +173,8 @@ async def test_e2e_tool_error_surfaces_as_structured_error():
                 "nbb_describe",
                 {"dataflow_id": "DF_DOES_NOT_EXIST", "agency": "BE2"},
             )
-            # FastMCP reports tool exceptions via isError=True or error content.
+            # The error code and actionable details must reach the model.
             text = _text_payload(result)
-            assert result.isError or "UNKNOWN_FLOW" in text or "Unknown dataflow" in text
+            assert result.is_error
+            assert "[UNKNOWN_FLOW]" in text
+            assert '"did_you_mean"' in text

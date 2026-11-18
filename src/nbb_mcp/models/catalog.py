@@ -42,6 +42,10 @@ class EnrichedDataflow(BaseModel):
     frequencies_available: list[str] = Field(default_factory=list)
     default_frequency: str | None = None
     time_coverage: TimeCoverage = Field(default_factory=TimeCoverage)
+    # Observations upstream at build time (from the actual content constraint).
+    observation_count: int | None = None
+    # True when dimension codes / frequencies were narrowed to those holding data.
+    availability_filtered: bool = False
     dimensions: list[CatalogDimension] = Field(default_factory=list)
     primary_measure: str = "OBS_VALUE"
     key_template: str | None = None

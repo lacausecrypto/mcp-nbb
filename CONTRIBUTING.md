@@ -18,7 +18,6 @@ python -m venv .venv              # or: uv venv
 .venv/bin/pytest                     # full unit + integration suite
 .venv/bin/pytest -m e2e              # end-to-end MCP stdio tests
 .venv/bin/pytest -m "not e2e"        # skip slower tests
-.venv/bin/pytest --cov=nbb_mcp       # with coverage
 ```
 
 All PRs must keep the test suite green. E2E tests spawn the server as a
@@ -29,11 +28,12 @@ subprocess — they run on macOS, Linux and Windows.
 ```bash
 .venv/bin/ruff check src tests
 .venv/bin/ruff format --check src tests
+.venv/bin/mypy src                   # strict mode, must stay clean
 ```
 
 ### Rebuilding the bundled catalogue
 
-The 221 enriched fiches under `src/nbb_mcp/data/catalog/` are regenerated
+The enriched fiches under `src/nbb_mcp/data/catalog/` are regenerated
 from the live NBB API:
 
 ```bash

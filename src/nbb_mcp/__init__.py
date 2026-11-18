@@ -1,3 +1,6 @@
 """MCP server for the National Bank of Belgium SDMX statistical API."""
 
-__version__ = "0.1.0"
+from importlib.metadata import version as _dist_version
+
+# Single source of truth: the installed distribution metadata (pyproject.toml).
+__version__ = _dist_version("mcp-nbb")

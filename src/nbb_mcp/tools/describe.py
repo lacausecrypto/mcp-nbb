@@ -64,6 +64,10 @@ async def run(
         "primary_measure": entry.primary_measure,
         "default_frequency": entry.default_frequency,
         "frequencies_available": entry.frequencies_available,
+        "time_coverage": entry.time_coverage.model_dump(),
+        "observation_count": entry.observation_count,
+        "codes_reflect_available_data": entry.availability_filtered,
+        "catalog_fetched_at": entry.fetched_at,
         "key_template": entry.key_template,
         "dimensions": [
             {

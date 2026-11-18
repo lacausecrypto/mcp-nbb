@@ -1,8 +1,10 @@
-"""Tests for the MCP resources (markdown rendering) and the FastMCP wiring."""
+"""Tests for the MCP resources (markdown rendering) and the MCPServer wiring."""
 
 from __future__ import annotations
 
 import asyncio
+
+import pytest
 
 from nbb_mcp.catalog import Catalog
 from nbb_mcp.models.catalog import (
@@ -12,6 +14,7 @@ from nbb_mcp.models.catalog import (
     EnrichedDataflow,
     TimeCoverage,
 )
+from nbb_mcp.models.errors import NBBCatalogError
 from nbb_mcp.resources.catalog_uri import (
     render_catalog_summary,
     render_category,
@@ -99,14 +102,16 @@ def test_render_category_lists_matching_flows():
     assert "DF_EXR" not in md  # wrong category
 
 
-def test_render_category_empty():
+def test_render_category_unknown_raises_with_valid_list():
     cat = _make_catalog()
-    md = render_category(cat, "nonexistent_category")
-    assert "No dataflows" in md
+    with pytest.raises(NBBCatalogError) as exc:
+        render_category(cat, "nonexistent_category")
+    assert exc.value.code == "UNKNOWN_CATEGORY"
+    assert "prices" in exc.value.details["valid_categories"]
 
 
 # ---------------------------------------------------------------------------
-# FastMCP server registration
+# MCPServer registration
 # ---------------------------------------------------------------------------
 
 
@@ -132,7 +137,7 @@ def test_server_registers_three_resource_uris():
     static = asyncio.run(mcp.list_resources())
     templates = asyncio.run(mcp.list_resource_templates())
     static_uris = {str(r.uri) for r in static}
-    template_uris = {r.uriTemplate for r in templates}
+    template_uris = {r.uri_template for r in templates}
     assert "nbb://catalog" in static_uris
     assert "nbb://dataflow/{agency}/{dataflow_id}" in template_uris
     assert "nbb://category/{category}" in template_uris

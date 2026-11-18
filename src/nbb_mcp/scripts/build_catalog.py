@@ -1,8 +1,10 @@
 """Build the enriched dataflow catalogue bundled with nbb-mcp.
 
-For each of the 221 dataflows exposed by ``https://nsidisseminate-stat.nbb.be/rest``
-this script fetches the full DSD + codelists, classifies the flow into one of the
-14 categories, and writes a single JSON fiche to ``src/nbb_mcp/data/catalog/``.
+For each dataflow exposed by ``https://nsidisseminate-stat.nbb.be/rest`` this
+script fetches the full DSD + codelists and the actual content constraint
+(codes that hold data, time coverage, observation count), classifies the flow
+into one of the 14 categories, and writes a single JSON fiche to
+``src/nbb_mcp/data/catalog/``.
 
 Features:
     * Multi-language names: fetches the dataflow listing in en/fr/nl/de and merges
@@ -25,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import dataclasses
 import json
 import sys
 import time
@@ -43,15 +46,20 @@ from ..models.catalog import (
     EnrichedDataflow,
     TimeCoverage,
 )
-from ..models.errors import NBBError
-from ..models.sdmx import DataflowDetail, DataflowStub
-from ..parsers.sdmx_json_v1 import parse_dataflow_detail, parse_dataflow_list
+from ..models.errors import NBBError, NBBNotFoundError
+from ..models.sdmx import AvailableConstraint, DataflowDetail, DataflowStub
+from ..parsers.sdmx_json_v1 import (
+    parse_available_constraint,
+    parse_dataflow_detail,
+    parse_dataflow_list,
+)
 
 log = get_logger("nbb_mcp.build_catalog")
 
 SUPPORTED_LANGUAGES = ("en", "fr", "nl", "de")
 DEFAULT_CONCURRENCY = 5
-SCHEMA_VERSION = 1
+DEFAULT_BUILD_TIMEOUT = 120.0
+SCHEMA_VERSION = 2
 MAX_CODES_PER_DIMENSION = 200
 
 # --------------------------------------------------------------------------- #
@@ -213,8 +221,13 @@ SPECIFIC_QUERIES: dict[tuple[str, str], list[CommonQuery]] = {
 # --------------------------------------------------------------------------- #
 
 
+# Preference when several frequencies hold data: monthly/quarterly are the
+# usual headline granularity; daily only wins when it is the sole finer option.
+_FREQ_PREFERENCE = ("M", "Q", "D", "A", "S", "W", "B")
+
+
 def _detect_default_frequency(freq_codes: list[str]) -> str | None:
-    for preferred in ("D", "M", "Q", "A"):
+    for preferred in _FREQ_PREFERENCE:
         if preferred in freq_codes:
             return preferred
     return freq_codes[0] if freq_codes else None
@@ -226,7 +239,14 @@ def build_fiche(
     *,
     category: str,
     multilang_names: dict[str, str],
+    available: AvailableConstraint | None = None,
 ) -> EnrichedDataflow:
+    """Build a fiche; ``available`` narrows codes to those that hold data.
+
+    The DSD codelists are generic (``CL_FREQ`` lists A/S/Q/M/D for every flow),
+    so without the actual content constraint the frequencies and codes in the
+    fiche describe what *could* exist, not what the flow publishes.
+    """
     dimensions: list[CatalogDimension] = []
     freq_codes: list[str] = []
     primary_measure = "OBS_VALUE"
@@ -234,9 +254,13 @@ def build_fiche(
     if detail.structure:
         primary_measure = detail.structure.primary_measure
         for d in sorted(detail.structure.dimensions, key=lambda x: x.position):
-            total = len(d.codes)
+            codes = d.codes
+            if available is not None and d.id in available.values:
+                keep = set(available.values[d.id])
+                codes = [c for c in d.codes if c.id in keep]
+            total = len(codes)
             truncated = total > MAX_CODES_PER_DIMENSION
-            raw_codes = d.codes[:MAX_CODES_PER_DIMENSION] if truncated else d.codes
+            raw_codes = codes[:MAX_CODES_PER_DIMENSION] if truncated else codes
             dimensions.append(
                 CatalogDimension(
                     id=d.id,
@@ -248,7 +272,7 @@ def build_fiche(
                 )
             )
             if d.id == "FREQ":
-                freq_codes = [c.id for c in d.codes]
+                freq_codes = [c.id for c in codes]
 
     key_template = ".".join(f"{{{d.id}}}" for d in dimensions) if dimensions else None
 
@@ -265,7 +289,7 @@ def build_fiche(
 
     # Note: NBB marks every published dataflow as ``isFinal: false`` (via an
     # ``NonProductionDataflow`` annotation). This is a platform convention, not a
-    # real usability signal — all 221 flows are the canonical production data.
+    # real usability signal — all published flows are the canonical production data.
     # We therefore force ``is_final=True`` at build time. The field is still
     # preserved on the model in case a future agency sends real final/non-final
     # distinctions.
@@ -278,7 +302,12 @@ def build_fiche(
         names=names,
         frequencies_available=freq_codes,
         default_frequency=_detect_default_frequency(freq_codes),
-        time_coverage=TimeCoverage(),
+        time_coverage=TimeCoverage(
+            start=available.start if available else None,
+            end=available.end if available else None,
+        ),
+        observation_count=available.observation_count if available else None,
+        availability_filtered=available is not None,
         dimensions=dimensions,
         primary_measure=primary_measure,
         key_template=key_template,
@@ -299,26 +328,40 @@ def _write_atomic(path: Path, payload: str) -> None:
     tmp.replace(path)
 
 
-# Fields that change on every run but carry no real payload — ignored when
-# deciding whether a fiche has actually drifted.
-_VOLATILE_FIELDS = frozenset({"fetched_at"})
+# Fields that move with every upstream publication (or every run) — ignored when
+# deciding whether a fiche has drifted, so the weekly rebuild stays quiet. They
+# are still refreshed once a fiche is older than ``_VOLATILE_REFRESH_DAYS``.
+_VOLATILE_FIELDS = frozenset({"fetched_at", "observation_count", "time_coverage"})
+_VOLATILE_REFRESH_DAYS = 90
 
 
-def _fiche_content_equal(existing_raw: str, new_fiche: EnrichedDataflow) -> bool:
+def _fiche_content_equal(
+    existing_raw: str, new_fiche: EnrichedDataflow, *, now: datetime | None = None
+) -> bool:
     """Return True if ``new_fiche`` is semantically identical to an on-disk fiche.
 
-    The check ignores volatile fields (currently ``fetched_at``) so that a
-    weekly rebuild without upstream changes produces an empty diff.
+    Volatile fields are ignored unless the existing fiche is stale (older than
+    ``_VOLATILE_REFRESH_DAYS``), in which case it is reported as drifted so the
+    coverage metadata gets refreshed.
     """
     try:
         existing = json.loads(existing_raw)
     except ValueError:
         return False
+    if not isinstance(existing, dict):
+        return False
+    fetched_at = existing.get("fetched_at")
+    try:
+        age = (now or datetime.now(UTC)) - datetime.fromisoformat(str(fetched_at))
+    except ValueError:
+        return False
+    if age.days >= _VOLATILE_REFRESH_DAYS:
+        return False
     new_data = new_fiche.model_dump(mode="json")
     for f in _VOLATILE_FIELDS:
         existing.pop(f, None)
         new_data.pop(f, None)
-    return existing == new_data
+    return bool(existing == new_data)
 
 
 # --------------------------------------------------------------------------- #
@@ -377,6 +420,26 @@ async def _build_one(
             )
             return ("error", f"{exc.code}: {exc.message}")
 
+        # A 404 here means the flow currently holds no data: keep the full DSD
+        # codelists rather than failing the fiche. Anything else is an error.
+        available: AvailableConstraint | None
+        try:
+            available = parse_available_constraint(
+                await client.get_available_constraint(stub.agency, stub.id, stub.version)
+            )
+        except NBBNotFoundError:
+            log.warning("catalog.availability.none", agency=stub.agency, id=stub.id)
+            available = None
+        except NBBError as exc:
+            log.error(
+                "catalog.availability.failed",
+                agency=stub.agency,
+                id=stub.id,
+                code=exc.code,
+                message=exc.message,
+            )
+            return ("error", f"availability {exc.code}: {exc.message}")
+
     try:
         detail = parse_dataflow_detail(payload)
     except NBBError as exc:
@@ -388,6 +451,7 @@ async def _build_one(
         detail,
         category=category,
         multilang_names=multilang.get((stub.agency, stub.id), {}),
+        available=available,
     )
 
     # Skip the write if the only thing that would change is the fetched_at
@@ -483,6 +547,13 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     )
     parser.add_argument("--concurrency", type=int, default=DEFAULT_CONCURRENCY)
     parser.add_argument(
+        "--timeout",
+        type=float,
+        default=DEFAULT_BUILD_TIMEOUT,
+        help="Per-request timeout in seconds (availability queries on the large "
+        "external-trade flows take well over the 30s interactive default)",
+    )
+    parser.add_argument(
         "--output-dir",
         type=Path,
         default=None,
@@ -493,7 +564,7 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
 
 async def run(argv: list[str] | None = None) -> int:
     args = _parse_args(argv)
-    settings: Settings = get_settings()
+    settings: Settings = dataclasses.replace(get_settings(), api_timeout=args.timeout)
     configure_logging(level=settings.log_level, fmt="console")
 
     catalog_dir = args.output_dir or _default_catalog_dir()
@@ -506,6 +577,9 @@ async def run(argv: list[str] | None = None) -> int:
     async with nbb_client(settings) as client:
         list_payload = await client.list_dataflows()
         stubs = parse_dataflow_list(list_payload)
+        # The index always describes the full upstream list, even on a partial
+        # (--only / --limit) rebuild.
+        all_stubs = list(stubs)
         log.info("catalog.list.fetched", count=len(stubs))
 
         if args.only:
@@ -524,16 +598,21 @@ async def run(argv: list[str] | None = None) -> int:
         log.info("catalog.multilang.merged", flows_with_names=len(multilang))
 
         sem = asyncio.Semaphore(args.concurrency)
-        tasks = [
-            _build_one(client, stub, catalog_dir, multilang, sem, force=args.force)
-            for stub in stubs
-        ]
 
-        results: list[tuple[str, str | None]] = []
+        async def _tagged(stub: DataflowStub) -> tuple[DataflowStub, str, str | None]:
+            status, err = await _build_one(
+                client, stub, catalog_dir, multilang, sem, force=args.force
+            )
+            return stub, status, err
+
+        tasks = [_tagged(stub) for stub in stubs]
+
         built = skipped = unchanged = errored = 0
+        errors: list[dict[str, Any]] = []
         for i, coro in enumerate(asyncio.as_completed(tasks), start=1):
-            status, err = await coro
-            results.append((status, err))
+            stub, status, err = await coro
+            if err is not None:
+                errors.append({"agency": stub.agency, "id": stub.id, "error": err})
             if status == "built":
                 built += 1
             elif status == "unchanged":
@@ -553,13 +632,13 @@ async def run(argv: list[str] | None = None) -> int:
                     errored=errored,
                 )
 
-    errors: list[dict[str, Any]] = []
     for stub in stubs:
         path = _fiche_path(catalog_dir, stub.agency, stub.id)
-        if not path.exists():
+        if not path.exists() and not any(e["id"] == stub.id for e in errors):
             errors.append({"agency": stub.agency, "id": stub.id, "error": "fiche not written"})
+    errors.sort(key=lambda e: (e["agency"], e["id"]))
 
-    _write_index(catalog_dir, stubs, started_at, any_fiche_written=(built > 0))
+    _write_index(catalog_dir, all_stubs, started_at, any_fiche_written=(built > 0))
     _write_errors_report(catalog_dir, errors)
 
     elapsed = time.monotonic() - t0

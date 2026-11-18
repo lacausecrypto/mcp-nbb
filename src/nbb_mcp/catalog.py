@@ -13,14 +13,16 @@ from collections import defaultdict
 from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 from rapidfuzz import fuzz, process
+from rapidfuzz.utils import default_process
 
 from .models.catalog import EnrichedDataflow
 from .models.errors import NBBCatalogError
 
 
-def _combined_scorer(query: str, choice: str, **_kwargs) -> float:
+def _combined_scorer(query: str, choice: str, **_kwargs: Any) -> float:
     """Hybrid scorer for long multilingual haystacks.
 
     ``token_set_ratio`` is strong on multi-word queries against long documents but
@@ -127,30 +129,49 @@ class Catalog:
     def agencies(self) -> dict[str, int]:
         return {agency: len(items) for agency, items in sorted(self._by_agency.items())}
 
-    def index_metadata(self, directory: Path | None = None) -> dict | None:
+    def index_metadata(self, directory: Path | None = None) -> dict[str, Any] | None:
         """Return the raw ``_index.json`` content if present (summary for nbb_status)."""
         base = directory or _CATALOG_DIR
         index = base / _INDEX_FILENAME
         if not index.is_file():
             return None
         try:
-            return json.loads(index.read_text())
-        except (OSError, ValueError):
-            return None
+            data = json.loads(index.read_text())
+        except (OSError, ValueError) as exc:
+            raise NBBCatalogError(
+                f"Unreadable catalogue index: {exc}",
+                code="INVALID_INDEX",
+                details={"file": str(index)},
+            ) from exc
+        if not isinstance(data, dict):
+            raise NBBCatalogError("Catalogue index is not an object", code="INVALID_INDEX")
+        return data
 
     # ------------------------------------------------------------------ #
     # Lookup
     # ------------------------------------------------------------------ #
 
     def get(self, agency: str, dataflow_id: str) -> EnrichedDataflow:
-        try:
-            return self._by_key[(agency, dataflow_id)]
-        except KeyError as exc:
-            raise NBBCatalogError(
-                f"Unknown dataflow '{agency}/{dataflow_id}'",
-                code="UNKNOWN_FLOW",
-                details={"agency": agency, "id": dataflow_id},
-            ) from exc
+        hit = self._by_key.get((agency, dataflow_id))
+        if hit is not None:
+            return hit
+        close = process.extract(
+            dataflow_id,
+            [e.id for e in self._entries],
+            scorer=fuzz.WRatio,
+            processor=default_process,
+            limit=5,
+        )
+        raise NBBCatalogError(
+            f"Unknown dataflow '{agency}/{dataflow_id}'",
+            code="UNKNOWN_FLOW",
+            details={
+                "agency": agency,
+                "id": dataflow_id,
+                "did_you_mean": [m for m, score, _ in close if score >= 88],
+                "agencies": sorted(self._by_agency),
+            },
+        )
 
     def list_dataflows(
         self,
