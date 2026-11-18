@@ -5,6 +5,7 @@ from __future__ import annotations
 import pytest
 
 from nbb_mcp.formatter import format_data_message
+from nbb_mcp.models.errors import NBBValidationError
 from nbb_mcp.models.sdmx import DataMessage, Observation, Series
 
 
@@ -74,7 +75,7 @@ def test_token_budget_truncates_and_emits_hint():
     assert len(r.data) == 5
     assert r.data[-1]["period"] == "2024-12-01"
     assert r.next_page_hint is not None
-    assert r.next_page_hint["retry_with"]["max_observations"] == 5
+    assert r.next_page_hint["retry_with"]["oldest_returned_period"] == "2024-08-01"
 
 
 def test_missing_values_handled():
@@ -122,7 +123,7 @@ def test_series_format_groups_observations_per_series():
 
 
 def test_invalid_format_raises():
-    with pytest.raises(ValueError):
+    with pytest.raises(NBBValidationError):
         format_data_message(_msg([]), fmt="banana")
 
 

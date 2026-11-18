@@ -6,6 +6,8 @@ from typing import Any
 
 from ..services import get_services
 
+MAX_LIMIT = 50
+
 
 def _localised_name(names: dict[str, str], language: str) -> str:
     return names.get(language) or names.get("en") or next(iter(names.values()), "")
@@ -20,6 +22,7 @@ async def run(
     include_non_final: bool = False,
     limit: int = 10,
 ) -> dict[str, Any]:
+    limit = min(max(1, int(limit)), MAX_LIMIT)
     svc = get_services()
     if category == "all":
         category = None
@@ -56,6 +59,8 @@ async def run(
                 ],
                 "key_template": r.entry.key_template,
                 "default_frequency": r.entry.default_frequency,
+                "frequencies_available": r.entry.frequencies_available,
+                "time_coverage": r.entry.time_coverage.model_dump(),
                 "common_queries": [
                     {"label": q.label, "key": q.key, "params": q.params}
                     for q in r.entry.common_queries[:3]

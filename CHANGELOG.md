@@ -6,6 +6,64 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+Breaking: requires `mcp` 2.x; `nbb_quick` returns one headline series per
+topic; `nbb_compare` rejects specs matching several series. Next release
+should be 0.2.0.
+
+### Fixed
+- **Fresh installs were broken**: `mcp>=1.0.0` resolved to mcp 2.x, where
+  `mcp.server.fastmcp` no longer exists, so `mcp-nbb` 0.1.2 crashed on import.
+  Migrated to `MCPServer` (mcp 2.x) and pinned `mcp>=2.3.0,<3`.
+- Tool errors lost their actionable content: only the bare message reached the
+  model (and mcp 2.x would have replaced it with a generic text). `NBBError`
+  is now converted to `ToolError`/`ResourceError` and its text carries the
+  `[CODE]` plus a `details` JSON (valid dimensions, codes, `did_you_mean`).
+- Token budget not enforced: `max_observations` was ignored by
+  `format="series"`, and per-series stats were unbounded
+  (`nbb_quick("gdp")` returned ~62k tokens). New `max_series` cap (default 20)
+  and truncation hints naming the oldest returned period.
+- Catalogue frequencies were wrong for every flow: `FREQ` listed the generic
+  `CL_FREQ` codelist, so `default_frequency` was `D` everywhere (GDP included)
+  and `time_coverage` was always empty. Fiches are now enriched from the
+  `availableconstraint` endpoint: only codes that hold data, real frequencies,
+  time coverage and observation count (schema version 2).
+- `nbb_quick` ignored `frequency` on every topic but `exchange_rate`, silently
+  ignored `currency`, and fetched whole flows (539 series for `gdp`). Each
+  topic now targets a verified headline series; `currency` on another topic is
+  an error.
+- `nbb_compare`: quarterly→semester and weekly periods were bucketed wrongly,
+  daily→weekly did not aggregate, an invalid `frequency` was accepted, upsampling
+  was silently attempted, and an ambiguous spec silently used the first of
+  N series. Added a `max_periods` row cap.
+- `nbb_status`: API call counters were never updated, and `version` reported
+  0.1.0 (now read from package metadata).
+- `NBB_LOG_LEVEL` / `NBB_LOG_FORMAT` were ignored by the server.
+- Settings were frozen at import time and malformed `NBB_*` values silently
+  fell back to defaults; they are now read per instance and raise `ConfigError`.
+- Corrupt disk-cache entries raised instead of being treated as misses;
+  expired entries are now removed on read.
+- `build_catalog`: `--only`/`--limit` overwrote `_index.json` with the partial
+  selection; failed fiches with an existing file were missing from
+  `_build_errors.json`; added `--timeout` (default 120 s) for the large
+  external-trade flows.
+- `format="table"` was identical to `summary`; it now omits per-series stats.
+- Unknown category resource now errors with the valid list instead of
+  rendering an empty page.
+
+### Changed
+- Catalogue refreshed: 223 flows (adds `DF_IROLOYLD_2026`, `IMF_YGG`),
+  ~6 MB instead of ~9 MB. Coverage/observation-count changes alone no longer
+  count as drift (refreshed at most every 90 days) to keep weekly PRs quiet.
+- Tools declare MCP annotations (`read_only_hint`, `open_world_hint`).
+- Dropped unused dependencies `cachetools` and `python-dateutil`; raised
+  floors to tested versions (verified with `uv --resolution lowest-direct`).
+- CI: Python 3.11–3.14 matrix, `mypy --strict` (was declared but never run,
+  12 errors), lowest-deps job, catalogue/wheel checks derived from
+  `_index.json` instead of a hard-coded 221, actions bumped to latest majors
+  and pinned by SHA, least-privilege `permissions`.
+- The weekly catalogue workflow now runs the test suite before opening its PR
+  (PRs opened with `GITHUB_TOKEN` never trigger CI).
+
 ## [0.1.2] — 2026-04-12
 
 ### Fixed

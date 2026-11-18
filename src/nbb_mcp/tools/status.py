@@ -38,6 +38,7 @@ async def run() -> dict[str, Any]:
             "agencies": cat.agencies(),
             "built_at": meta.get("built_at"),
             "schema_version": meta.get("schema_version"),
+            "flows_with_time_coverage": sum(1 for e in cat.entries if e.time_coverage.end),
         },
         "cache": _disk_cache_stats(svc.settings.http_cache_path),
         "api": {
@@ -46,8 +47,10 @@ async def run() -> dict[str, Any]:
             if len(svc.settings.user_agent) > 80
             else svc.settings.user_agent,
             "origin": svc.settings.origin,
-            "call_count": svc.stats.api_call_count,
-            "last_call_at": svc.stats.last_api_call_at,
-            "last_error": svc.stats.last_api_error,
+            "request_count": svc.client.stats.request_count,
+            "cache_hits": svc.client.stats.cache_hits,
+            "error_count": svc.client.stats.error_count,
+            "last_request_at": svc.client.stats.last_request_at,
+            "last_error": svc.client.stats.last_error,
         },
     }

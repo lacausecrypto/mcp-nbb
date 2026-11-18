@@ -13,6 +13,8 @@ details that the LLM can act on (valid dimensions, valid codes, key template).
 
 from __future__ import annotations
 
+from collections.abc import Mapping
+
 from .models.catalog import EnrichedDataflow
 from .models.errors import NBBValidationError
 
@@ -23,7 +25,7 @@ def _valid_dim_ids(entry: EnrichedDataflow) -> list[str]:
 
 def build_sdmx_key(
     entry: EnrichedDataflow,
-    filters: dict[str, str | list[str]] | None = None,
+    filters: Mapping[str, str | list[str]] | None = None,
 ) -> str:
     """Build an SDMX REST key from a filters dict, using the catalog DSD."""
     if not filters:

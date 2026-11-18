@@ -67,6 +67,15 @@ class DataflowDetail(BaseModel):
     structure: DataStructure | None = None
 
 
+class AvailableConstraint(BaseModel):
+    """Actual content constraint: which codes hold data, over which time range."""
+
+    values: dict[str, list[str]] = Field(default_factory=dict)
+    start: str | None = None
+    end: str | None = None
+    observation_count: int | None = None
+
+
 class Observation(BaseModel):
     period: str
     value: float | None = None

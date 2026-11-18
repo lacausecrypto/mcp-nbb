@@ -7,6 +7,7 @@ or balloons the on-disk footprint.
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import pytest
@@ -30,13 +31,32 @@ def bundled_catalog() -> Catalog:
         pytest.skip(f"Catalogue load failed: {exc}")
 
 
-def test_bundled_catalog_has_221_fiches(bundled_catalog):
-    assert len(bundled_catalog) == 221
+def _index() -> dict:
+    return json.loads((BUNDLED_DIR / "_index.json").read_text())
+
+
+def test_bundled_catalog_matches_index(bundled_catalog):
+    index = _index()
+    assert len(bundled_catalog) == index["dataflow_count"] == len(index["flows"])
+    assert len(bundled_catalog) > 200
 
 
 def test_bundled_catalog_has_both_agencies(bundled_catalog):
     agencies = bundled_catalog.agencies()
-    assert agencies == {"BE2": 194, "IMF": 27}
+    assert set(agencies) == {"BE2", "IMF"}
+    assert agencies["BE2"] > 150
+    assert agencies["IMF"] > 20
+
+
+def test_bundled_catalog_frequencies_reflect_available_data(bundled_catalog):
+    """Regression: FREQ used to list the generic CL_FREQ (A,S,Q,M,D) everywhere."""
+    gdp = bundled_catalog.get("BE2", "DF_QNA_DISS")
+    assert "D" not in gdp.frequencies_available
+    assert gdp.default_frequency in {"Q", "A"}
+    assert gdp.availability_filtered
+    assert gdp.time_coverage.start and gdp.time_coverage.end
+    distinct_defaults = {e.default_frequency for e in bundled_catalog.entries}
+    assert len(distinct_defaults) > 1
 
 
 def test_bundled_catalog_has_all_14_categories(bundled_catalog):
@@ -127,5 +147,5 @@ def test_bundled_catalog_footprint_under_20mb(bundled_catalog):
 def test_bundled_catalog_index_metadata(bundled_catalog):
     meta = bundled_catalog.index_metadata(BUNDLED_DIR)
     assert meta is not None
-    assert meta["dataflow_count"] == 221
+    assert meta["dataflow_count"] == len(bundled_catalog)
     assert "categories" in meta

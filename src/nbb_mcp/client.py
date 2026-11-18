@@ -18,11 +18,14 @@ Design note on caching:
 
 from __future__ import annotations
 
+import base64
+import binascii
 import hashlib
 import json
 import time
 from collections.abc import AsyncIterator, Mapping
 from contextlib import asynccontextmanager
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -34,6 +37,7 @@ from .config import Settings, get_settings
 from .logging import get_logger
 from .models.errors import (
     NBBConnectionError,
+    NBBError,
     NBBNotFoundError,
     NBBParseError,
     NBBRateLimitError,
@@ -48,7 +52,13 @@ SDMX_STRUCTURE_JSON = "application/vnd.sdmx.structure+json"
 SDMX_DATA_JSON = "application/vnd.sdmx.data+json"
 SDMX_CONTENT_TYPE_PREFIX = "application/vnd.sdmx."
 
-STRUCTURE_SEGMENTS = ("/dataflow/", "/datastructure/", "/codelist/", "/conceptscheme/")
+STRUCTURE_SEGMENTS = (
+    "/dataflow/",
+    "/datastructure/",
+    "/codelist/",
+    "/conceptscheme/",
+    "/availableconstraint/",
+)
 DATA_SEGMENT = "/data/"
 
 
@@ -118,20 +128,18 @@ class _DiskCacheTransport(httpx.AsyncBaseTransport):
             return None
         try:
             entry = json.loads(path.read_text())
-        except (OSError, ValueError):
+            stored_at = float(entry["stored_at"])
+            if (time.time() - stored_at) > ttl:
+                path.unlink(missing_ok=True)
+                return None
+            body = base64.b64decode(entry["body_b64"], validate=True)
+            headers = [(str(k), str(v)) for k, v in entry["headers"]]
+            status = int(entry["status"])
+        except (OSError, ValueError, KeyError, TypeError, binascii.Error) as exc:
+            # A torn or foreign file is a miss; it gets overwritten on refresh.
+            log.warning("nbb.cache.corrupt_entry", path=str(path), error=str(exc))
             return None
-        stored_at = float(entry.get("stored_at", 0))
-        if (time.time() - stored_at) > ttl:
-            return None
-        import base64
-
-        body = base64.b64decode(entry.get("body_b64", ""))
-        headers = [(k, v) for k, v in entry.get("headers", [])]
-        resp = httpx.Response(
-            status_code=int(entry.get("status", 200)),
-            headers=headers,
-            content=body,
-        )
+        resp = httpx.Response(status_code=status, headers=headers, content=body)
         resp.extensions["from_cache"] = True
         return resp
 
@@ -140,8 +148,6 @@ class _DiskCacheTransport(httpx.AsyncBaseTransport):
     def _store(
         self, path: Path, request: httpx.Request, response: httpx.Response, ttl: int
     ) -> None:
-        import base64
-
         # ``response.content`` is already decoded. Persist only headers that don't
         # imply an encoding we no longer apply (gzip/br/chunked), else httpx will
         # try to re-decode the stored decoded bytes and fail.
@@ -268,6 +274,30 @@ def _check_response(r: httpx.Response) -> None:
         )
 
 
+@dataclass
+class ClientStats:
+    """Per-process usage counters surfaced by ``nbb_status``."""
+
+    request_count: int = 0
+    cache_hits: int = 0
+    error_count: int = 0
+    last_request_at: float | None = None
+    last_error: str | None = None
+
+
+def _json_object(response: httpx.Response, kind: str) -> dict[str, Any]:
+    try:
+        payload = response.json()
+    except ValueError as exc:
+        raise NBBParseError(f"Invalid JSON in {kind} response", code="JSON_DECODE") from exc
+    if not isinstance(payload, dict):
+        raise NBBParseError(
+            f"Expected a JSON object in {kind} response, got {type(payload).__name__}",
+            code="INVALID_ROOT",
+        )
+    return payload
+
+
 class NBBClient:
     """Async HTTP client for the NBB SDMX REST endpoint."""
 
@@ -294,6 +324,7 @@ class NBBClient:
             max_rate=self.settings.rate_limit_requests,
             time_period=self.settings.rate_limit_period,
         )
+        self.stats = ClientStats()
 
     async def aclose(self) -> None:
         await self._client.aclose()
@@ -305,6 +336,24 @@ class NBBClient:
         await self.aclose()
 
     async def _request(
+        self,
+        method: str,
+        url: str,
+        *,
+        accept: str,
+        params: Mapping[str, Any] | None = None,
+        language: str | None = None,
+    ) -> httpx.Response:
+        try:
+            return await self._request_with_retry(
+                method, url, accept=accept, params=params, language=language
+            )
+        except NBBError as exc:
+            self.stats.error_count += 1
+            self.stats.last_error = f"{exc.code}: {exc.message}"[:300]
+            raise
+
+    async def _request_with_retry(
         self,
         method: str,
         url: str,
@@ -348,7 +397,11 @@ class NBBClient:
                             details={"url": url},
                         ) from exc
 
-                    from_cache = response.extensions.get("from_cache", False)
+                    from_cache = bool(response.extensions.get("from_cache", False))
+                    self.stats.request_count += 1
+                    self.stats.last_request_at = time.time()
+                    if from_cache:
+                        self.stats.cache_hits += 1
                     log.info(
                         "nbb.request",
                         method=method,
@@ -377,10 +430,7 @@ class NBBClient:
         response = await self._request(
             "GET", path, accept=SDMX_STRUCTURE_JSON, params=params, language=language
         )
-        try:
-            return response.json()
-        except ValueError as exc:
-            raise NBBParseError("Invalid JSON in structure response", code="JSON_DECODE") from exc
+        return _json_object(response, "structure")
 
     async def get_data(
         self,
@@ -390,10 +440,7 @@ class NBBClient:
     ) -> dict[str, Any]:
         """GET an SDMX-JSON data response (data+json)."""
         response = await self._request("GET", path, accept=SDMX_DATA_JSON, params=params)
-        try:
-            return response.json()
-        except ValueError as exc:
-            raise NBBParseError("Invalid JSON in data response", code="JSON_DECODE") from exc
+        return _json_object(response, "data")
 
     # Convenience wrappers -------------------------------------------------
 
@@ -417,6 +464,15 @@ class NBBClient:
             f"dataflow/{agency}/{dataflow_id}/{version}",
             params={"references": references},
             language=language,
+        )
+
+    async def get_available_constraint(
+        self, agency: str, dataflow_id: str, version: str = "1.0"
+    ) -> dict[str, Any]:
+        """Actual content constraint: codes that hold data, time range, obs count."""
+        ref = build_flow_ref(agency, dataflow_id, version)
+        return await self.get_structure(
+            f"availableconstraint/{ref}/all/all/all", params={"mode": "available"}
         )
 
     async def fetch_data(
@@ -456,6 +512,7 @@ async def nbb_client(settings: Settings | None = None) -> AsyncIterator[NBBClien
 __all__ = [
     "SDMX_DATA_JSON",
     "SDMX_STRUCTURE_JSON",
+    "ClientStats",
     "NBBClient",
     "_DiskCacheTransport",
     "_check_response",

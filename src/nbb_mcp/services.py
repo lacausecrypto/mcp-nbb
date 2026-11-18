@@ -21,9 +21,6 @@ from .config import Settings, get_settings
 @dataclass
 class ServiceStats:
     started_at: float = field(default_factory=time.time)
-    api_call_count: int = 0
-    last_api_call_at: float | None = None
-    last_api_error: str | None = None
 
 
 class Services:

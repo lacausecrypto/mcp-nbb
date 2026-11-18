@@ -4,11 +4,20 @@ from __future__ import annotations
 
 from typing import Any
 
-from ..formatter import format_data_message
+from ..formatter import DEFAULT_MAX_SERIES, format_data_message, validate_format
 from ..models.errors import NBBValidationError
 from ..parsers.sdmx_json_v2 import parse_data_message
 from ..query_builder import build_sdmx_key
 from ..services import get_services
+
+
+def validate_obs_counts(*counts: int | None) -> None:
+    bad = [c for c in counts if c is not None and c < 1]
+    if bad:
+        raise NBBValidationError(
+            f"last_n_observations / first_n_observations must be >= 1, got {bad}",
+            code="INVALID_OBS_COUNT",
+        )
 
 
 async def run(
@@ -23,8 +32,11 @@ async def run(
     last_n_observations: int | None = None,
     first_n_observations: int | None = None,
     max_observations: int = 200,
+    max_series: int = DEFAULT_MAX_SERIES,
     format: str = "summary",
 ) -> dict[str, Any]:
+    validate_format(format)
+    validate_obs_counts(last_n_observations, first_n_observations)
     if key and filters:
         raise NBBValidationError(
             "Pass either 'key' or 'filters', not both.",
@@ -54,6 +66,7 @@ async def run(
         msg,
         fmt=format,
         max_observations=max_observations,
+        max_series=max_series,
         dataflow_ref=dataflow_ref,
         key=key,
         entry=entry,

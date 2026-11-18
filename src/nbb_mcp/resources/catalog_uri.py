@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from ..catalog import Catalog
 from ..models.catalog import EnrichedDataflow
+from ..models.errors import NBBCatalogError
 
 
 def render_catalog_summary(cat: Catalog, *, language: str = "en") -> str:
@@ -86,10 +87,16 @@ def render_dataflow(entry: EnrichedDataflow, *, language: str = "en") -> str:
 
 
 def render_category(cat: Catalog, category: str, *, language: str = "en") -> str:
+    if category not in cat.categories():
+        raise NBBCatalogError(
+            f"Unknown category '{category}'",
+            code="UNKNOWN_CATEGORY",
+            details={"valid_categories": sorted(cat.categories())},
+        )
     items = cat.list_dataflows(category=category, include_non_final=False)
     lines = [f"# Category `{category}`", ""]
     if not items:
-        lines.append("_No dataflows in this category._")
+        lines.append("_No final dataflows in this category._")
         return "\n".join(lines)
     lines.append(f"**{len(items)} dataflows**")
     lines.append("")

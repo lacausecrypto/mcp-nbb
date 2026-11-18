@@ -317,7 +317,37 @@ async def test_compare_rejects_too_many_series(services_with_data_handler):
     assert exc.value.code == "TOO_MANY_SERIES"
 
 
-async def test_compare_aligns_two_series(services_with_data_handler):
+@pytest.fixture
+def services_with_single_series(data_payload):
+    """Same cassette, trimmed to one series — what a fully specified key returns."""
+    trimmed = json.loads(json.dumps(data_payload))
+    series = trimmed["data"]["dataSets"][0]["series"]
+    first = next(iter(series))
+    trimmed["data"]["dataSets"][0]["series"] = {first: series[first]}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            200,
+            content=json.dumps(trimmed).encode(),
+            headers={"content-type": "application/vnd.sdmx.data+json; version=2.0"},
+        )
+
+    svc = _make_services(handler)
+    reset_services(svc)
+    yield svc
+    reset_services(None)
+
+
+async def test_compare_rejects_ambiguous_spec(services_with_data_handler):
+    with pytest.raises(NBBValidationError) as exc:
+        await compare_tool.run(
+            [{"dataflow_id": "DF_EXR", "label": "A"}, {"dataflow_id": "DF_EXR", "label": "B"}]
+        )
+    assert exc.value.code == "AMBIGUOUS_SERIES"
+    assert exc.value.details["key_template"] == "{FREQ}.{EXR_CURRENCY}"
+
+
+async def test_compare_aligns_two_series(services_with_single_series):
     r = await compare_tool.run(
         [
             {"dataflow_id": "DF_EXR", "label": "EXR1"},
