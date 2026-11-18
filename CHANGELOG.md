@@ -6,9 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.2.0] — 2026-11-18
+
+- **Installs work again**: 0.1.2 crashed on any fresh install because `mcp`
+  2.x removed `FastMCP`; the server now runs on `mcp` 2.x.
+- **Responses fit the model's context**: `nbb_quick("gdp")` dropped from
+  ~62k to ~450 tokens; every data tool honours `max_observations` and the
+  new `max_series` cap.
+- **`nbb_quick` returns the headline series** of each topic (GDP volume SA,
+  HICP % change, deposit facility rate…), and `frequency` works on all topics.
+- **Errors tell the model how to fix the call**: `[CODE]` plus valid
+  dimensions, codes and `did_you_mean` suggestions.
+- **Accurate catalogue**: only codes that hold data, real frequencies and time
+  coverage for all 223 flows.
+
 Breaking: requires `mcp` 2.x; `nbb_quick` returns one headline series per
-topic; `nbb_compare` rejects specs matching several series. Next release
-should be 0.2.0.
+topic (last 24 observations by default); `nbb_compare` rejects specs matching
+several series.
 
 ### Fixed
 - **Fresh installs were broken**: `mcp>=1.0.0` resolved to mcp 2.x, where
@@ -129,7 +143,8 @@ Initial public release.
 - **Community files**: `LICENSE` (MIT), `SECURITY.md`, `CONTRIBUTING.md`,
   `CODE_OF_CONDUCT.md`, issue and PR templates.
 
-[Unreleased]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/lacausecrypto/mcp-nbb/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/lacausecrypto/mcp-nbb/releases/tag/v0.1.0
